@@ -437,6 +437,13 @@ sensor:
   - platform: command_line
     command: python3 -c "import requests; print(requests.get('https://pypi.python.org/pypi/homeassistant/json').json()['info']['version'])"
     name: HA release
+  #
+  # GITHUB INTEGRATION
+  #
+  - platform: github
+    access_token: !secret github_ha_integration_personal_accesss_token
+    repositories:
+      - path: 'philipp089/Home-Assistant-Config'
 #
 #
 ###LIGHT GROUPS###
