@@ -1,0 +1,14 @@
+id: '1630840375853'
+alias: Batteriewarnung - Thermostat Badezimmer
+description: ''
+trigger:
+- platform: state
+  to: '33'
+  entity_id: sensor.thermostat_badezimmer_batterie_prozent
+condition: []
+action:
+- service: notify.mobile_app_sm_n975f
+  data:
+    message: Bitte tausche die Batterien beim Thermostat im Badezimmer. Es werden
+      zwei AAA-Batterien benötigt.
+mode: single

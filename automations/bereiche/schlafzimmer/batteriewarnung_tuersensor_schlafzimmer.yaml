@@ -1,0 +1,14 @@
+id: '1630840163506'
+alias: Batteriewarnung - Türsensor Schlafzimmer
+description: ''
+trigger:
+- platform: state
+  to: '33'
+  entity_id: sensor.tuersensor_schlafzimmer_batterie_prozent
+condition: []
+action:
+- service: notify.mobile_app_sm_n975f
+  data:
+    message: Bitte tausche die Batterien beim Türsensor im Schlafzimmer. Es werden
+      zwei AAA-Batterien benötigt.
+mode: single

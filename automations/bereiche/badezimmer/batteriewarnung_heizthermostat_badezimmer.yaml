@@ -1,0 +1,14 @@
+id: '1630839917799'
+alias: Batteriewarnung - Heizthermostat Badezimmer
+description: ''
+trigger:
+- platform: state
+  entity_id: sensor.heizthermostat_badezimmer_batterie_prozent
+  to: '33'
+condition: []
+action:
+- service: notify.mobile_app_sm_n975f
+  data:
+    message: Bitte tausche die Batterien beim Heizthermostat im Badezimmer. Es werden
+      zwei AA-Batterien benötigt.
+mode: single

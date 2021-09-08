@@ -1,0 +1,90 @@
+blueprint:
+  name: deCONZ - Philips Hue Dimmer Switch - Custom Actions
+  description: Freely customizable actions for Philips Hue Dimmer Switch buttons.
+  domain: automation
+  input:
+    remote:
+      name: Dimmer Switch
+      selector:
+        device:
+          integration: deconz
+          manufacturer: Philips
+          entity:
+            domain: sensor
+            device_class: battery
+    on_press:
+      name: Button 1 (ON) press actions
+      default: []
+      selector:
+        action: {}
+    on_hold:
+      name: Button 1 (ON) hold actions
+      default: []
+      selector:
+        action: {}
+    up_press:
+      name: Button 2 (UP) press actions
+      default: []
+      selector:
+        action: {}
+    up_hold:
+      name: Button 2 (UP) hold actions
+      default: []
+      selector:
+        action: {}
+    down_press:
+      name: Button 3 (DOWN) press actions
+      default: []
+      selector:
+        action: {}
+    down_hold:
+      name: Button 3 (DOWN) hold actions
+      default: []
+      selector:
+        action: {}
+    off_press:
+      name: Button 4 (OFF) press actions
+      default: []
+      selector:
+        action: {}
+    off_hold:
+      name: Button 4 (OFF) hold actions
+      default: []
+      selector:
+        action: {}
+  source_url: https://gist.github.com/sbyx/67f72210c5f95564adc592fb021d259e
+mode: restart
+max_exceeded: silent
+trigger:
+- platform: event
+  event_type: deconz_event
+  event_data:
+    device_id: !input 'remote'
+action:
+- variables:
+    event: '{{ trigger.event.data.event }}'
+- choose:
+  - conditions:
+    - '{{ event == 1002 }}'
+    sequence: !input 'on_press'
+  - conditions:
+    - '{{ event == 1001 }}'
+    sequence: !input 'on_hold'
+  - conditions:
+    - '{{ event == 2002 }}'
+    sequence: !input 'up_press'
+  - conditions:
+    - '{{ event == 2001 }}'
+    sequence: !input 'up_hold'
+  - conditions:
+    - '{{ event == 3002 }}'
+    sequence: !input 'down_press'
+  - conditions:
+    - '{{ event == 3001 }}'
+    sequence: !input 'down_hold'
+  - conditions:
+    - '{{ event == 4002 }}'
+    sequence: !input 'off_press'
+  - conditions:
+    - '{{ event == 4001 }}'
+    sequence: !input 'off_hold'

@@ -1,0 +1,57 @@
+# Example .gitignore file for your config dir.
+# An * ensures that everything will be ignored.
+*.log
+*.db
+*.db-shm
+*.db-wal
+*.pyc
+*.py
+*.json
+._*
+__pycache__
+*.conf
+*.log.1
+*.gz
+*.js
+*.backup
+*.svg
+*.png
+*.JPG
+*.js.map
+
+# Whitelist
+!*.yaml
+!.gitignore
+!*.md
+!scripts.yaml
+!.gitkeep
+
+# Ignore folders
+.storage
+.cloud
+.google.token
+.ssh
+.vscode
+tts
+node-red
+deps
+
+# Specific file ignores
+.config_entries.json
+.homekit.state
+.ios.conf
+.spotify-token-cache
+.google.token
+.tradfri_psk.conf
+.uuid
+core
+html5_push_registrations.conf
+image
+ip_bans.yaml
+known_devices.yaml
+neighbours
+secrets.yaml
+google_calendars.yaml
+frigate.yml
+.ps4-games.BC60A7BEDB04_cc99.json
+token-192.168.178.70.txt

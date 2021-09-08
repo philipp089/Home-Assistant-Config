@@ -1,0 +1,150 @@
+Google - Light:
+  ### Fonts ###
+  primary-font-family: "'Open Sans','Rubik',Roboto,sans-serif"
+  paper-font-common-base_-_font-family: "var(--primary-font-family)"
+  paper-font-common-code_-_font-family: "var(--primary-font-family)"
+  paper-font-body_-_font-family: "var(--primary-font-family)"
+  paper-font-subhead_-_font-family: "var(--primary-font-family)"
+  paper-font-headline_-_font-family: "var(--primary-font-family)"
+  paper-font-caption_-_font-family: "var(--primary-font-family)"
+  paper-font-title_-_font-family: "var(--primary-font-family)"
+
+  ha-card-border-radius: "0px"
+  ha-card-header-color: "#757575"
+  ha-card-box-shadow: "0px 0px 0px #eeeeee"
+
+  ### Main Interface Colors ###
+  app-header-background-color: "#ffffff"
+  primary-color: "#666666"
+  light-primary-color: "#e6e6e6"
+  primary-background-color: "#f2f2f2"
+  secondary-background-color: "#ffffff"
+  divider-color: "#e6e6e6"
+  ### Text ###
+  primary-text-color: var(--primary-color)
+  secondary-text-color: "#999999"
+  text-primary-color: "#b3b3b3"
+  disabled-text-color: "#a1a1a1"
+  ### Sidebar Menu ###
+  sidebar-background-color: "#ffffff"
+  sidebar-icon-color: "#757575"
+  sidebar-text-color: "#333333"
+  sidebar-selected-background-color: var(--primary-background-color)
+  sidebar-selected-icon-color: "#4285F4"
+  sidebar-selected-text-color: var(--sidebar-selected-icon-color)
+  ### States and Badges ###
+  state-icon-color: "#808080"
+  state-icon-active-color: "#f4b400"
+  state-icon-unavailable-color: var(--disabled-text-color)
+  ### Sliders ###
+  paper-slider-knob-color: "#4285F4"
+  paper-slider-knob-start-color: "#a0c3ff"
+  paper-slider-pin-color: "#a0c3ff"
+  paper-slider-active-color: "#a0c3ff"
+  paper-slider-secondary-color: var(--light-primary-color)
+  paper-slider-container-color: "#e6e6e6"
+  ### Labels ###
+  label-badge-background-color: "#0f9d58"
+  label-badge-text-color: "#f2f2f2"
+  label-badge-red: "#a0c3ff"
+  ### Cards ###
+  paper-card-background-color: "#ffffff"
+  paper-listbox-background-color: "#ffffff"
+  ### Toggles ###
+  paper-toggle-button-checked-button-color: "#4285f4"
+  paper-toggle-button-checked-bar-color: "#4285f4"
+  paper-toggle-button-unchecked-button-color: "#4285f4"
+  paper-toggle-button-unchecked-bar-color: "#e6e6e6"
+
+  ### Dialog ###
+  paper-dialog-background-color: "#ffffff"
+
+  ### Table row ###
+  table-row-background-color: var(--primary-background-color)
+  table-row-alternative-background-color: var(--secondary-background-color)
+
+  iron-overlay-backdrop-background-color: "#ffffff"
+  mdc-theme-primary: "#4285f4"
+  mdc-theme-secondary: '#F4B400'
+  accent-color: '#F4B400'
+
+  switch-checked-color: "var(--paper-toggle-button-checked-button-color)"
+  switch-unchecked-button-color: "var(--paper-toggle-button-unchecked-button-color)"
+  switch-unchecked-color: "var(--paper-toggle-button-unchecked-bar-color)"
+  switch-unchecked-track-color: "var(--paper-toggle-button-unchecked-bar-color)"
+
+
+Google - Dark:
+  ### Fonts ###
+  primary-font-family: "'Open Sans','Rubik',Roboto,sans-serif"
+  paper-font-common-base_-_font-family: "var(--primary-font-family)"
+  paper-font-common-code_-_font-family: "var(--primary-font-family)"
+  paper-font-body_-_font-family: "var(--primary-font-family)"
+  paper-font-subhead_-_font-family: "var(--primary-font-family)"
+  paper-font-headline_-_font-family: "var(--primary-font-family)"
+  paper-font-caption_-_font-family: "var(--primary-font-family)"
+  paper-font-title_-_font-family: "var(--primary-font-family)"
+
+  ha-card-border-radius: "0px"
+  ha-card-header-color: "#e6e6e6"
+  ha-card-box-shadow: "0px 0px 0px #000000"
+
+  ### Main Interface Colors ###
+  app-header-background-color: "#000000"
+  primary-color: "#ffffff"
+  light-primary-color: "#2b2b2b"
+  primary-background-color: "#000000"
+  secondary-background-color: "#2b2b2b"
+  divider-color: "#2b2b2b"
+  ### Text ###
+  primary-text-color: var(--primary-color)
+  secondary-text-color: "#d7d7d7"
+  text-primary-color: "#ffffff"
+  disabled-text-color: "#a1a1a1"
+  ### Sidebar Menu ###
+  sidebar-background-color: "#000000"
+  sidebar-icon-color: "#ffffff"
+  sidebar-text-color: "#ffffff"
+  sidebar-selected-background-color: var(--primary-background-color)
+  sidebar-selected-icon-color: "#4285F4"
+  sidebar-selected-text-color: var(--sidebar-selected-icon-color)
+  ### States and Badges ###
+  state-icon-color: "#ffffff"
+  state-icon-active-color: "#ffb750"
+  state-icon-unavailable-color: var(--disabled-text-color)
+  ### Sliders ###
+  paper-slider-knob-color: "#4285F4"
+  paper-slider-knob-start-color: "#8eb8ff"
+  paper-slider-pin-color: "#8eb8ff"
+  paper-slider-active-color: "#8eb8ff"
+  paper-slider-secondary-color: var(--light-primary-color)
+  paper-slider-container-color: "#a1a1a1"
+  ### Labels ###
+  label-badge-background-color: "#252B36"
+  label-badge-text-color: "#F1F1F1"
+  label-badge-red: "#6C7B9B"
+  ### Cards ###
+  paper-card-background-color: "#2b2b2b"
+  card-background-color: var(--paper-card-background-color)
+  paper-listbox-background-color: "#000000"
+  ### Toggles ###
+  paper-toggle-button-checked-button-color: "#4285F4"
+  paper-toggle-button-checked-bar-color: "#4285F4"
+  paper-toggle-button-unchecked-button-color: "#4285F4"
+  paper-toggle-button-unchecked-bar-color: "#c1c1c1"
+
+  ### Dialog ###
+  paper-dialog-background-color: "#2b2b2b"
+
+  ### Table row ###
+  table-row-background-color: var(--primary-background-color)
+  table-row-alternative-background-color: var(--secondary-background-color)
+
+  iron-overlay-backdrop-background-color: "#000000"
+  mdc-theme-primary: "#4285F4"
+  mdc-theme-secondary: '#F4B400'
+
+  switch-checked-color: "var(--paper-toggle-button-checked-button-color)"
+  switch-unchecked-button-color: "var(--paper-toggle-button-unchecked-button-color)"
+  switch-unchecked-color: "var(--paper-toggle-button-unchecked-bar-color)"
+  switch-unchecked-track-color: "var(--paper-toggle-button-unchecked-bar-color)"

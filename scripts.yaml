@@ -1,0 +1,555 @@
+wohnzimmer_colorloop:
+  alias: Schlafzimmer Colorloop
+  sequence:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.00085a49a49f84
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 0
+      milliseconds: 100
+  - service: light.turn_on
+    data:
+      effect: colorloop
+      brightness_pct: 80
+    target:
+      area_id: 4b464753ae28423c9ad179a3027094eb
+  mode: single
+  icon: mdi:lightbulb-outline
+lautstarke_reset:
+  sequence:
+  - service: media_player.volume_set
+    target:
+      entity_id:
+      - media_player.sonos_wohnzimmer_couch
+      - media_player.sonos_wohnzimmer_arc
+      - media_player.sonos_werkstatt
+      - media_player.sonos_schlafzimmer
+      - media_player.kuche
+      - media_player.bad
+    data:
+      volume_level: 0.1
+  mode: single
+  alias: Lautstärke Reset
+spotify_hip_hop_auf_sonos:
+  alias: Spotify Playlist Elektro auf Sonos Wohnzimmer
+  sequence:
+  - service: media_player.volume_set
+    target:
+      entity_id:
+      - media_player.sonos_wohnzimmer_arc
+      - media_player.sonos_wohnzimmer_couch
+    data:
+      volume_level: 0.25
+  - service: media_player.play_media
+    data:
+      media_content_id: https://open.spotify.com/playlist/5dV18GMH2nBimD8u0jU2Bh?si=e53a7fd51bd34358
+      media_content_type: playlist
+    target:
+      entity_id:
+      - media_player.sonos_wohnzimmer_arc
+      - media_player.sonos_wohnzimmer_couch
+  mode: single
+  icon: mdi:spotify
+wohnzimmer_hell:
+  alias: Wohnzimmer hell
+  sequence:
+  - service: light.turn_on
+    target:
+      area_id: 9b7ff4c63c5040569f459d83159fe925
+    data:
+      kelvin: 3300
+      brightness_pct: 100
+      transition: 2
+  mode: single
+  icon: mdi:lightbulb-outline
+wohnzimmer_medium:
+  alias: Wohnzimmer medium
+  sequence:
+  - service: light.turn_on
+    target:
+      area_id: 9b7ff4c63c5040569f459d83159fe925
+    data:
+      transition: 2
+      kelvin: 3000
+      brightness_pct: 50
+  mode: single
+  icon: mdi:lightbulb-outline
+wohnzimmer_nacht:
+  alias: Wohnzimmer Nacht
+  sequence:
+  - service: light.turn_on
+    data:
+      transition: 2
+      kelvin: 2500
+      brightness_pct: 25
+    target:
+      area_id: 9b7ff4c63c5040569f459d83159fe925
+  mode: single
+  icon: mdi:lightbulb-outline
+wohnzimmer_aus:
+  sequence:
+  - service: switch.turn_off
+    target:
+      entity_id: switch.00085a49a49c0f
+  mode: single
+  alias: Wohnzimmer aus
+  icon: mdi:lightbulb-outline
+wohnzimmer_konzentration:
+  alias: Wohnzimmer Konzentration
+  sequence:
+  - service: light.turn_on
+    target:
+      area_id: 9b7ff4c63c5040569f459d83159fe925
+    data:
+      kelvin: 5300
+      brightness_pct: 100
+      transition: 2
+  mode: single
+  icon: mdi:lightbulb-outline
+wohnzimmer_konzentration_50:
+  alias: Wohnzimmer Konzentration 50
+  sequence:
+  - service: light.turn_on
+    target:
+      area_id: 9b7ff4c63c5040569f459d83159fe925
+    data:
+      transition: 2
+      kelvin: 5300
+      brightness_pct: 50
+  mode: single
+  icon: mdi:lightbulb-outline
+wohnzimmer_sexy_light:
+  sequence:
+  - service: light.turn_on
+    data:
+      transition: 2
+      color_name: red
+      brightness_pct: 50
+    target:
+      entity_id:
+      - light.lichtgruppe_wohnzimmer_deckenleuchte
+      - light.licht_wohnzimmer_kleine_lampe
+      - light.extended_color_light_23
+  - service: light.turn_on
+    target:
+      entity_id: light.dimmable_light_5
+    data:
+      brightness_pct: 1
+  mode: single
+  alias: Wohnzimmer Sexy Light
+  icon: mdi:lightbulb-outline
+badezimmer_hell:
+  alias: Badezimmer hell
+  sequence:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.hmip_bsm_00085a49a4a57e
+  - service: switch.turn_on
+    target:
+      entity_id: switch.circadian_lighting_circadian_lighting
+  - service: light.turn_on
+    target:
+      area_id: f6aab624c505454fa71527ad60cf71ed
+  mode: single
+  icon: mdi:lightbulb-outline
+badezimmer_medium:
+  alias: Badezimmer medium
+  sequence:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.hmip_bsm_00085a49a4a57e
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 0
+      milliseconds: 100
+  - scene: scene.badezimmer_medium
+  mode: single
+  icon: mdi:lightbulb-outline
+badezimmer_nacht:
+  alias: Badezimmer Nacht
+  sequence:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.hmip_bsm_00085a49a4a57e
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 0
+      milliseconds: 100
+  - scene: scene.badezimmer_nacht
+  mode: single
+  icon: mdi:lightbulb-outline
+badezimmer_aus:
+  alias: Badezimmer aus
+  sequence:
+  - scene: scene.badezimmer_aus
+  - service: switch.turn_off
+    target:
+      entity_id: switch.hmip_bsm_00085a49a4a57e
+  mode: single
+  icon: mdi:lightbulb-outline
+badezimmer_konzentration:
+  alias: Badezimmer Konzentration
+  sequence:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.hmip_bsm_00085a49a4a57e
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 0
+      milliseconds: 100
+  - scene: scene.badezimmer_konzentration
+  mode: single
+  icon: mdi:lightbulb-outline
+badezimmer_konzentration_50:
+  alias: Badezimmer Konzentration 50
+  sequence:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.hmip_bsm_00085a49a4a57e
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 0
+      milliseconds: 100
+  - scene: scene.badezimmer_konzentration_50
+  mode: single
+  icon: mdi:lightbulb-outline
+badezimmer_sexy_light:
+  alias: Badezimmer Sexy Light
+  sequence:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.hmip_bsm_00085a49a4a57e
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 0
+      milliseconds: 100
+  - scene: scene.badezimmer_sexy_light
+  mode: single
+  icon: mdi:lightbulb-outline
+badezimmer_colorloop:
+  alias: Badezimmer Colorloop
+  sequence:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.hmip_bsm_00085a49a4a57e
+  - service: light.turn_on
+    target:
+      entity_id: light.extended_color_light_21
+    data:
+      color_temp: 440
+      brightness: 200
+      effect: colorloop
+  mode: single
+  icon: mdi:lightbulb-outline
+flur_hell:
+  sequence:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.00085a49a4b411
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 0
+      milliseconds: 100
+  - scene: scene.flur_hell
+  mode: single
+  alias: Flur hell
+  icon: mdi:lightbulb-outline
+flur_medium:
+  alias: Flur medium
+  sequence:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.00085a49a4b411
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 0
+      milliseconds: 100
+  - scene: scene.flur_medium
+  mode: single
+  icon: mdi:lightbulb-outline
+flur_nacht:
+  alias: Flur Nacht
+  sequence:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.00085a49a4b411
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 0
+      milliseconds: 100
+  - scene: scene.flur_nacht
+  mode: single
+  icon: mdi:lightbulb-outline
+flur_konzentration:
+  alias: Flur Konzentration
+  sequence:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.00085a49a4b411
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 0
+      milliseconds: 100
+  - scene: scene.flur_konzentration
+  mode: single
+  icon: mdi:lightbulb-outline
+flur_aus:
+  alias: Flur aus
+  sequence:
+  - scene: scene.flur_aus
+  - service: switch.turn_off
+    target:
+      entity_id: switch.00085a49a4b411
+  mode: single
+  icon: mdi:lightbulb-outline
+flur_konzentration_50:
+  alias: Flur Konzentration 50
+  sequence:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.00085a49a4b411
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 0
+      milliseconds: 100
+  - scene: scene.flur_konzentration_50
+  mode: single
+  icon: mdi:lightbulb-outline
+werkstatt_hell:
+  alias: Werkstatt hell
+  sequence:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.00085a49a49be1
+  - scene: scene.werkstatt_hell
+  mode: single
+  icon: mdi:lightbulb-outline
+werkstatt_medium:
+  alias: Werkstatt medium
+  sequence:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.00085a49a49be1
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 0
+      milliseconds: 100
+  - scene: scene.werkstatt_medium
+  mode: single
+  icon: mdi:lightbulb-outline
+werkstatt_nacht:
+  alias: Werkstatt Nacht
+  sequence:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.00085a49a49be1
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 0
+      milliseconds: 100
+  - scene: scene.werkstatt_nacht
+  mode: single
+  icon: mdi:lightbulb-outline
+werkstatt_aus:
+  alias: Werkstatt aus
+  sequence:
+  - scene: scene.werkstatt_aus
+  - service: switch.turn_off
+    target:
+      entity_id: switch.00085a49a49be1
+  mode: single
+  icon: mdi:lightbulb-outline
+werkstatt_konzentration_50:
+  sequence:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.00085a49a49be1
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 0
+      milliseconds: 100
+  - scene: scene.werkstatt_konzentration_50
+  mode: single
+  alias: Werkstatt Konzentration 50
+  icon: mdi:lightbulb-outline
+werkstatt_konzentration:
+  alias: Werkstatt Konzentration
+  sequence:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.00085a49a49be1
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 0
+      milliseconds: 100
+  - scene: scene.werkstatt_konzentration
+  mode: single
+  icon: mdi:lightbulb-outline
+circadian_light_tageslicht:
+  alias: Circadian Light - Tageslicht
+  sequence:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.circadian_lighting_circadian_lighting
+  mode: single
+wohnzimmer_tageslicht:
+  alias: Wohnzimmer Tageslicht an
+  sequence:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.circadian_lighting_wohnzimmer
+  mode: single
+  icon: mdi:lightbulb-outline
+schlafzimmer_nacht:
+  alias: Schlafzimmer Nacht
+  sequence:
+  - service: light.turn_on
+    data:
+      transition: 2
+      kelvin: 2500
+      brightness_pct: 5
+    target:
+      entity_id:
+      - light.extended_color_light_2
+      - light.extended_color_light_3_2
+  - service: light.turn_off
+    target:
+      entity_id:
+      - light.color_temperature_light_18
+      - light.licht_schlafzimmer_standleuchte
+  - service: switch.turn_off
+    target:
+      entity_id: switch.00085a49a49f84
+  mode: single
+  icon: mdi:lightbulb-outline
+schlafzimmer_hell:
+  alias: Schlafzimmer hell
+  sequence:
+  - service: light.turn_on
+    data:
+      kelvin: 3300
+      brightness_pct: 100
+      transition: 2
+    target:
+      area_id: 4b464753ae28423c9ad179a3027094eb
+  mode: single
+  icon: mdi:lightbulb-outline
+schlafzimmer_medium:
+  alias: Schlafzimmer medium
+  sequence:
+  - service: light.turn_on
+    data:
+      transition: 2
+      kelvin: 3000
+      brightness_pct: 50
+    target:
+      area_id: 4b464753ae28423c9ad179a3027094eb
+  mode: single
+  icon: mdi:lightbulb-outline
+schlafzimmer_aus:
+  alias: Schlafzimmer aus
+  sequence:
+  - service: switch.turn_off
+    target:
+      entity_id: switch.00085a49a49f84
+  mode: single
+  icon: mdi:lightbulb-outline
+schlafzimmer_konzentration:
+  alias: Schlafzimmer Konzentration
+  sequence:
+  - service: light.turn_on
+    data:
+      kelvin: 5300
+      brightness_pct: 100
+      transition: 2
+    target:
+      area_id: 4b464753ae28423c9ad179a3027094eb
+  mode: single
+  icon: mdi:lightbulb-outline
+schlafzimmer_konzentration_50:
+  alias: Schlafzimmer Konzentration 50
+  sequence:
+  - service: light.turn_on
+    data:
+      transition: 2
+      kelvin: 5300
+      brightness_pct: 50
+    target:
+      area_id: 4b464753ae28423c9ad179a3027094eb
+  mode: single
+  icon: mdi:lightbulb-outline
+schlafzimmer_sexy_light:
+  alias: Schlafzimmer Sexy Light
+  sequence:
+  - service: light.turn_on
+    data:
+      transition: 2
+      color_name: red
+      brightness_pct: 50
+    target:
+      area_id: 4b464753ae28423c9ad179a3027094eb
+  mode: single
+  icon: mdi:lightbulb-outline
+wohnzimmer_colorloop_2:
+  alias: Wohnzimmer Colorloop
+  sequence:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.00085a49a49c0f
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 0
+      milliseconds: 100
+  - service: light.turn_on
+    data:
+      effect: colorloop
+      brightness_pct: 80
+      transition: 2
+    target:
+      entity_id:
+      - light.licht_wohnzimmer_kleine_lampe
+      - light.extended_color_light_23
+      - light.lichtgruppe_wohnzimmer_deckenleuchte
+  mode: single
+  icon: mdi:lightbulb-outline
+wohnzimmer_tageslicht_aus:
+  alias: Wohnzimmer Tageslicht aus
+  sequence:
+  - service: switch.turn_off
+    target:
+      entity_id: switch.circadian_lighting_wohnzimmer
+  mode: single
+  icon: mdi:lightbulb-outline
+schlafzimmer_tageslicht_an:
+  alias: Schlafzimmer Tageslicht an
+  sequence:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.circadian_lighting_schlafzimmer
+  mode: single
+  icon: mdi:lightbulb-outline
+schlafzimmer_tageslicht_aus:
+  alias: Schlafzimmer Tageslicht aus
+  sequence:
+  - service: switch.turn_off
+    target:
+      entity_id: switch.circadian_lighting_schlafzimmer
+  mode: single
+  icon: mdi:lightbulb-outline

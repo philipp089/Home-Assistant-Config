@@ -1,0 +1,573 @@
+- id: '1629312683309'
+  alias: Lichtwecker
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: sensor.minutes_next_alarm_philipp
+    id: trigger_id
+    to: '3'
+  condition: []
+  action:
+  - service: light.turn_on
+    data:
+      transition: 180
+      kelvin: 3200
+      brightness: 255
+    target:
+      entity_id:
+      - light.dimmable_light_22
+      - light.extended_color_light_2
+      - light.licht_schlafzimmer_standleuchte
+      - light.extended_color_light_3_2
+      - light.licht_nachttischleuchte_philipp
+  - delay:
+      hours: 0
+      minutes: 2
+      seconds: 0
+      milliseconds: 0
+  - service: switch.turn_on
+    target:
+      entity_id: switch.00085a49a49f84
+  mode: single
+- id: '1629620807604'
+  alias: Bewegungsmelder Eingang aus
+  description: Bewegungsmelder Eingang aus
+  trigger:
+  - type: no_motion
+    platform: device
+    device_id: 548bd2b8acd64e39af0ea4bb11d3c0ad
+    entity_id: binary_sensor.presence_12
+    domain: binary_sensor
+    for:
+      hours: 0
+      minutes: 3
+      seconds: 0
+      milliseconds: 0
+  condition: []
+  action:
+  - service: switch.turn_off
+    target:
+      entity_id: switch.00085a49a4b411
+  - service: light.turn_off
+    target:
+      entity_id:
+      - light.color_temperature_light_13
+      - light.color_temperature_light_14
+      - light.color_temperature_light_15
+  mode: single
+- id: '1629621124674'
+  alias: Bewegungsmelder Einfang 08:00 - 22:00
+  description: Bewegungsmelder Einfang 08:00 - 22:00
+  trigger:
+  - type: motion
+    platform: device
+    device_id: 548bd2b8acd64e39af0ea4bb11d3c0ad
+    entity_id: binary_sensor.presence_12
+    domain: binary_sensor
+  - platform: state
+    entity_id: binary_sensor.eingang_motion
+    to: 'on'
+  condition:
+  - condition: time
+    before: '22:00'
+    after: 08:00
+  action:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.circadian_lighting_circadian_lighting
+  - service: light.turn_on
+    target:
+      entity_id: light.lichtgruppe_flur_deckenleuchte
+  - service: switch.turn_on
+    target:
+      entity_id: switch.00085a49a4b411
+  mode: single
+- id: '1629622256127'
+  alias: Wandschalter Werkstatt an
+  description: Wandschalter Wohnzimmer
+  trigger:
+  - platform: state
+    entity_id: switch.00085a49a49be1
+    from: 'off'
+    to: 'on'
+  condition: []
+  action:
+  - scene: scene.wohnzimmer_hell
+  mode: single
+- id: '1629622588437'
+  alias: Wandschalter Werkstatt aus
+  description: Wandschalter Werkstatt aus
+  trigger:
+  - platform: state
+    from: 'on'
+    to: 'off'
+    entity_id: switch.00085a49a49be1
+  condition: []
+  action:
+  - scene: scene.werkstatt_aus
+  mode: single
+- id: '1629623467305'
+  alias: Wandschalter Badezimmer an
+  description: Wandschalter Badezimmer an
+  trigger:
+  - platform: state
+    to: 'on'
+    entity_id: switch.hmip_bsm_00085a49a4a57e
+  condition: []
+  action:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.circadian_lighting_circadian_lighting
+  - service: light.turn_on
+    target:
+      entity_id:
+      - light.color_temperature_light_16
+      - light.color_temperature_light_17
+      - light.extended_color_light_21
+  mode: single
+- id: '1629623534033'
+  alias: Wandschalter Badezimmer aus
+  description: Wandschalter Werkstatt aus
+  trigger:
+  - platform: state
+    to: 'off'
+    entity_id: switch.hmip_bsm_00085a49a4a57e
+  condition: []
+  action:
+  - service: light.turn_off
+    target:
+      entity_id: light.badezimmer
+  mode: single
+- id: '1629624341727'
+  alias: Wandschalter Schlafzimmer an
+  description: Wandschalter Schlafzimmer an
+  trigger:
+  - platform: state
+    from: 'off'
+    to: 'on'
+    entity_id: switch.00085a49a49f84
+  condition: []
+  action:
+  - scene: scene.schlafzimmer_hell
+  mode: single
+- id: '1629624395342'
+  alias: Wandschalter Schlafzimmer aus
+  description: Wandschalter Schlafzimmer aus
+  trigger:
+  - platform: state
+    to: 'off'
+    entity_id: switch.00085a49a49f84
+  condition: []
+  action:
+  - service: light.turn_off
+    target:
+      area_id: 4b464753ae28423c9ad179a3027094eb
+  mode: single
+- id: '1629826267357'
+  alias: Bewegungsmelder Wohnzimmer Kamin Flur
+  description: ''
+  trigger:
+  - type: motion
+    platform: device
+    device_id: 2ed776ffb8ac4e50a3c318ba860dee49
+    entity_id: binary_sensor.presence_9
+    domain: binary_sensor
+  condition: []
+  action:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.00085a49a4b411
+  mode: single
+- id: '1629826678796'
+  alias: Bewegungsmelder Wohnzimmer Kamin Flur aus
+  description: ''
+  trigger:
+  - type: no_motion
+    platform: device
+    device_id: 2ed776ffb8ac4e50a3c318ba860dee49
+    entity_id: binary_sensor.presence_9
+    domain: binary_sensor
+    for:
+      hours: 0
+      minutes: 3
+      seconds: 0
+      milliseconds: 0
+  condition: []
+  action:
+  - service: script.flur_aus
+  mode: single
+- id: '1630162475082'
+  alias: Media Player leise bei Anruf
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: sensor.sm_n975f_phone_state
+    to: ringing
+  condition: []
+  action:
+  - service: media_player.volume_set
+    target:
+      entity_id:
+      - media_player.sonos_wohnzimmer_couch
+      - media_player.sonos_wohnzimmer_arc
+      - media_player.sonos_werkstatt
+      - media_player.sonos_schlafzimmer
+    data:
+      volume_level: 0.1
+  mode: single
+- id: '1630163829406'
+  alias: Smartphone Akku leer
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: sensor.sm_n975f_battery_level
+    to: '20'
+    from: '21'
+  condition: []
+  action:
+  - service: notify.mobile_app_sm_n975f
+    data:
+      message: Bitte lade das Smartphone auf. Es verbleiben nur noch 20% Akku.
+  mode: single
+- id: '1630216074327'
+  alias: deCONZ - IKEA Tradfri Schlafzimmer
+  description: ''
+  use_blueprint:
+    path: Bram_Kragten/deconz-ikea-five-button-remote-for-lights.yaml
+    input:
+      remote: b2ad82a7b7c848669b7286a48c0ff4c8
+      button_left_short:
+      - service: script.schlafzimmer_nacht
+      button_left_long:
+      - service: script.schlafzimmer_sexy_light
+      button_right_short:
+      - service: script.schlafzimmer_medium
+      button_right_long:
+      - service: script.schlafzimmer_hell
+      light:
+        entity_id: light.schlafzimmer
+- id: '1630219218437'
+  alias: deCONZ - Philips Dimmschalter
+  description: ''
+  use_blueprint:
+    path: sbyx/deconz-hue-dimmer-switch.yaml
+    input:
+      remote: 7f611988d45f6e230321ffd8d770dfbc
+      on_press:
+      - service: script.wohnzimmer_hell
+      on_hold:
+      - service: script.wohnzimmer_medium
+      off_press:
+      - service: script.wohnzimmer_aus
+      off_hold:
+      - service: script.wohnzimmer_nacht
+      up_press:
+      - service: script.wohnzimmer_konzentration
+      up_hold:
+      - service: script.wohnzimmer_konzentration_50
+      down_press:
+      - service: script.wohnzimmer_sexy_light
+      down_hold:
+      - service: script.wohnzimmer_colorloop
+- id: '1630221547334'
+  alias: Bewegungsmelder Werkstatt an
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.presence_18
+    to: 'on'
+  condition:
+  - condition: time
+    after: 07:00
+    before: '22:00'
+  action:
+  - service: script.werkstatt_hell
+  mode: single
+- id: '1630222239628'
+  alias: Bewegungsmelder Werkstatt Licht aus
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.presence_18
+    to: 'off'
+    for: '1:00:00'
+  condition: []
+  action:
+  - service: script.werkstatt_aus
+  mode: single
+- id: '1630590265616'
+  alias: Frigate Wohnzimmer Fenster SD Aufnahme
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.wohnzimmer_fenster_sd_person_motion
+    to: 'on'
+  condition: []
+  action:
+  - service: camera.record
+    target:
+      entity_id: camera.wohnzimmer_fenster_sd
+    data:
+      filename: /media/frigate/recordings/Frigate_Recordings/{{ entity_id.name }}_{{
+        now().strftime("%Y%m%d-%H%M%S") }}.mp4
+      lookback: 5
+      duration: 20
+  mode: single
+- id: '1630859903320'
+  alias: Licht Wohnzimmer an
+  description: ''
+  trigger:
+  - platform: state
+    to: '1'
+    entity_id: sensor.wohnzimmer_fenster_sd_person
+  condition:
+  - condition: and
+    conditions:
+    - condition: state
+      entity_id: switch.00085a49a49c0f
+      state: 'off'
+    - condition: and
+      conditions:
+      - condition: state
+        entity_id: binary_sensor.presence_9
+        state: 'on'
+  action:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.00085a49a49c0f
+  - service: light.turn_on
+    target:
+      entity_id:
+      - light.licht_wohnzimmer_kleine_lampe
+      - light.dimmable_light_5
+      - light.extended_color_light_3
+      - light.extended_color_light_4
+      - light.extended_color_light_6
+      - light.extended_color_light_23
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 0
+      milliseconds: 100
+  - service: switch.turn_on
+    target:
+      entity_id: switch.circadian_lighting_circadian_lighting
+  mode: single
+- id: '1630863846639'
+  alias: Licht Schlafzimmer an
+  description: ''
+  trigger:
+  - platform: state
+    to: '1'
+    entity_id: sensor.schlafzimmer_sd_person
+  condition:
+  - condition: and
+    conditions:
+    - condition: state
+      state: 'off'
+      entity_id: switch.00085a49a49f84
+    - condition: and
+      conditions:
+      - condition: state
+        entity_id: binary_sensor.presence_24
+        state: 'on'
+      - condition: and
+        conditions:
+        - condition: time
+          after: 06:00
+          before: '22:00'
+  action:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.00085a49a49f84
+  - service: light.turn_on
+    target:
+      entity_id:
+      - light.licht_schlafzimmer_standleuchte
+      - light.extended_color_light_3_2
+      - light.extended_color_light_2
+      - light.color_temperature_light_18
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 0
+      milliseconds: 100
+  - service: switch.turn_on
+    target:
+      entity_id: switch.circadian_lighting_circadian_lighting
+  mode: single
+- id: '1630937644882'
+  alias: Proximity - Haus leer
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: proximity.home
+    to: '1'
+    for:
+      hours: 0
+      minutes: 5
+      seconds: 0
+      milliseconds: 0
+  condition: []
+  action:
+  - service: light.turn_off
+    target:
+      area_id:
+      - f6aab624c505454fa71527ad60cf71ed
+      - 04366801e60c4c599cc9d39e07493fe0
+      - 4b464753ae28423c9ad179a3027094eb
+      - c6acd19307984c2eb4d2ceb8376084fb
+      - 9b7ff4c63c5040569f459d83159fe925
+  mode: single
+- id: '1631036979120'
+  alias: Wandschalterabfrage Wohnzimmer hell
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: script.wohnzimmer_hell
+    to: 'on'
+  condition:
+  - condition: state
+    entity_id: switch.00085a49a49c0f
+    state: 'off'
+  action:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.00085a49a49c0f
+  - service: light.turn_on
+    target:
+      entity_id: light.lichtgruppe_wohnzimmer_deckenleuchte
+    data:
+      transition: 2
+      kelvin: 3300
+      brightness_pct: 100
+  mode: single
+- id: '1631039403000'
+  alias: Wandschalterabfrage Wohnzimmer medium
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: script.wohnzimmer_medium
+    to: 'on'
+  condition:
+  - condition: state
+    entity_id: switch.00085a49a49c0f
+    state: 'off'
+  action:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.00085a49a49c0f
+  mode: single
+- id: '1631040045715'
+  alias: Wandschalterabfrage Wohnzimmer nacht
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: script.wohnzimmer_nacht
+    to: 'on'
+  condition:
+  - condition: state
+    entity_id: switch.00085a49a49c0f
+    state: 'off'
+  action:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.00085a49a49c0f
+  mode: single
+- id: '1631043708265'
+  alias: Wandschalter Wohnzimmer aus
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.00085a49a49c0f
+    to: 'off'
+  condition: []
+  action:
+  - service: light.turn_off
+    target:
+      area_id: 9b7ff4c63c5040569f459d83159fe925
+  mode: single
+- id: '1631044702858'
+  alias: Wandschalter Wohnzimmer tagsüber
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.00085a49a49c0f
+    to: 'on'
+  condition:
+  - condition: state
+    entity_id: sun.sun
+    state: above_horizon
+  action:
+  - service: script.turn_on
+    target:
+      entity_id: script.wohnzimmer_hell
+  mode: single
+- id: '1631044733272'
+  alias: Wandschalter Wohnzimmer Nacht
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.00085a49a49c0f
+    to: 'on'
+  condition:
+  - condition: state
+    entity_id: sun.sun
+    state: below_horizon
+  action:
+  - service: script.turn_on
+    target:
+      entity_id: script.wohnzimmer_nacht
+  mode: single
+- id: '1631047791417'
+  alias: Wandschalter Wohnzimmer - Deckenleuchte Wohnzimmer Sync aus
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.00085a49a49c0f
+    to: 'off'
+  condition: []
+  action:
+  - service: light.turn_off
+    target:
+      entity_id: light.lichtgruppe_wohnzimmer_deckenleuchte
+  mode: single
+- id: '1631047942491'
+  alias: Deckenleuchte Wohnzimmer - Wandschalter Wohnzimmer Sync an
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: light.lichtgruppe_wohnzimmer_deckenleuchte
+    to: 'on'
+  condition: []
+  action:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.00085a49a49c0f
+  mode: single
+- id: '1631048434265'
+  alias: Deckenleuchte Wohnzimmer - Wandschalter Wohnzimmer Sync aus
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: light.lichtgruppe_wohnzimmer_deckenleuchte
+    to: 'off'
+  condition: []
+  action:
+  - service: switch.turn_off
+    target:
+      entity_id: switch.00085a49a49c0f
+  mode: single
+- id: '1631048550175'
+  alias: Wandschalter Wohnzimmer - Deckenleuchte Wohnzimmer Sync an
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.00085a49a49c0f
+    to: 'on'
+  condition: []
+  action:
+  - service: light.turn_on
+    target:
+      entity_id: light.lichtgruppe_wohnzimmer_deckenleuchte
+  mode: single
