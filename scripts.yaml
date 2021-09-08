@@ -32,6 +32,7 @@ lautstarke_reset:
       volume_level: 0.1
   mode: single
   alias: Lautstärke Reset
+  icon: mdi:speaker-multiple
 spotify_hip_hop_auf_sonos:
   alias: Spotify Playlist Elektro auf Sonos Wohnzimmer
   sequence:
@@ -146,12 +147,13 @@ badezimmer_hell:
   - service: switch.turn_on
     target:
       entity_id: switch.hmip_bsm_00085a49a4a57e
-  - service: switch.turn_on
-    target:
-      entity_id: switch.circadian_lighting_circadian_lighting
   - service: light.turn_on
     target:
       area_id: f6aab624c505454fa71527ad60cf71ed
+    data:
+      transition: 2
+      kelvin: 3300
+      brightness_pct: 100
   mode: single
   icon: mdi:lightbulb-outline
 badezimmer_medium:
@@ -160,12 +162,13 @@ badezimmer_medium:
   - service: switch.turn_on
     target:
       entity_id: switch.hmip_bsm_00085a49a4a57e
-  - delay:
-      hours: 0
-      minutes: 0
-      seconds: 0
-      milliseconds: 100
-  - scene: scene.badezimmer_medium
+  - service: light.turn_on
+    target:
+      area_id: f6aab624c505454fa71527ad60cf71ed
+    data:
+      transition: 2
+      kelvin: 3000
+      brightness_pct: 50
   mode: single
   icon: mdi:lightbulb-outline
 badezimmer_nacht:
@@ -174,18 +177,18 @@ badezimmer_nacht:
   - service: switch.turn_on
     target:
       entity_id: switch.hmip_bsm_00085a49a4a57e
-  - delay:
-      hours: 0
-      minutes: 0
-      seconds: 0
-      milliseconds: 100
-  - scene: scene.badezimmer_nacht
+  - service: light.turn_on
+    target:
+      area_id: f6aab624c505454fa71527ad60cf71ed
+    data:
+      transition: 2
+      kelvin: 2500
+      brightness_pct: 25
   mode: single
   icon: mdi:lightbulb-outline
 badezimmer_aus:
   alias: Badezimmer aus
   sequence:
-  - scene: scene.badezimmer_aus
   - service: switch.turn_off
     target:
       entity_id: switch.hmip_bsm_00085a49a4a57e
@@ -197,12 +200,13 @@ badezimmer_konzentration:
   - service: switch.turn_on
     target:
       entity_id: switch.hmip_bsm_00085a49a4a57e
-  - delay:
-      hours: 0
-      minutes: 0
-      seconds: 0
-      milliseconds: 100
-  - scene: scene.badezimmer_konzentration
+  - service: light.turn_on
+    target:
+      area_id: f6aab624c505454fa71527ad60cf71ed
+    data:
+      transition: 2
+      kelvin: 5300
+      brightness_pct: 100
   mode: single
   icon: mdi:lightbulb-outline
 badezimmer_konzentration_50:
@@ -211,12 +215,13 @@ badezimmer_konzentration_50:
   - service: switch.turn_on
     target:
       entity_id: switch.hmip_bsm_00085a49a4a57e
-  - delay:
-      hours: 0
-      minutes: 0
-      seconds: 0
-      milliseconds: 100
-  - scene: scene.badezimmer_konzentration_50
+  - service: light.turn_on
+    target:
+      area_id: f6aab624c505454fa71527ad60cf71ed
+    data:
+      transition: 2
+      kelvin: 5300
+      brightness_pct: 50
   mode: single
   icon: mdi:lightbulb-outline
 badezimmer_sexy_light:
@@ -225,12 +230,11 @@ badezimmer_sexy_light:
   - service: switch.turn_on
     target:
       entity_id: switch.hmip_bsm_00085a49a4a57e
-  - delay:
-      hours: 0
-      minutes: 0
-      seconds: 0
-      milliseconds: 100
-  - scene: scene.badezimmer_sexy_light
+  - service: light.turn_on
+    data:
+      transition: 2
+      color_name: red
+      brightness_pct: 25
   mode: single
   icon: mdi:lightbulb-outline
 badezimmer_colorloop:
@@ -243,9 +247,9 @@ badezimmer_colorloop:
     target:
       entity_id: light.extended_color_light_21
     data:
-      color_temp: 440
-      brightness: 200
       effect: colorloop
+      transition: 2
+      brightness_pct: 80
   mode: single
   icon: mdi:lightbulb-outline
 flur_hell:
@@ -253,12 +257,13 @@ flur_hell:
   - service: switch.turn_on
     target:
       entity_id: switch.00085a49a4b411
-  - delay:
-      hours: 0
-      minutes: 0
-      seconds: 0
-      milliseconds: 100
-  - scene: scene.flur_hell
+  - service: light.turn_on
+    target:
+      area_id: 04366801e60c4c599cc9d39e07493fe0
+    data:
+      transition: 2
+      kelvin: 3300
+      brightness_pct: 100
   mode: single
   alias: Flur hell
   icon: mdi:lightbulb-outline
@@ -268,12 +273,13 @@ flur_medium:
   - service: switch.turn_on
     target:
       entity_id: switch.00085a49a4b411
-  - delay:
-      hours: 0
-      minutes: 0
-      seconds: 0
-      milliseconds: 100
-  - scene: scene.flur_medium
+  - service: light.turn_on
+    target:
+      area_id: 04366801e60c4c599cc9d39e07493fe0
+    data:
+      transition: 2
+      kelvin: 3000
+      brightness_pct: 50
   mode: single
   icon: mdi:lightbulb-outline
 flur_nacht:
@@ -282,12 +288,13 @@ flur_nacht:
   - service: switch.turn_on
     target:
       entity_id: switch.00085a49a4b411
-  - delay:
-      hours: 0
-      minutes: 0
-      seconds: 0
-      milliseconds: 100
-  - scene: scene.flur_nacht
+  - service: light.turn_on
+    target:
+      area_id: 04366801e60c4c599cc9d39e07493fe0
+    data:
+      transition: 2
+      kelvin: 2500
+      brightness_pct: 25
   mode: single
   icon: mdi:lightbulb-outline
 flur_konzentration:
@@ -296,21 +303,26 @@ flur_konzentration:
   - service: switch.turn_on
     target:
       entity_id: switch.00085a49a4b411
-  - delay:
-      hours: 0
-      minutes: 0
-      seconds: 0
-      milliseconds: 100
-  - scene: scene.flur_konzentration
+  - service: light.turn_on
+    target:
+      area_id: 04366801e60c4c599cc9d39e07493fe0
+    data:
+      transition: 2
+      brightness_pct: 100
+      kelvin: 5300
   mode: single
   icon: mdi:lightbulb-outline
 flur_aus:
   alias: Flur aus
   sequence:
-  - scene: scene.flur_aus
   - service: switch.turn_off
     target:
       entity_id: switch.00085a49a4b411
+  - service: light.turn_off
+    target:
+      area_id: 04366801e60c4c599cc9d39e07493fe0
+    data:
+      transition: 2
   mode: single
   icon: mdi:lightbulb-outline
 flur_konzentration_50:
@@ -319,12 +331,13 @@ flur_konzentration_50:
   - service: switch.turn_on
     target:
       entity_id: switch.00085a49a4b411
-  - delay:
-      hours: 0
-      minutes: 0
-      seconds: 0
-      milliseconds: 100
-  - scene: scene.flur_konzentration_50
+  - service: light.turn_on
+    target:
+      area_id: 04366801e60c4c599cc9d39e07493fe0
+    data:
+      transition: 2
+      kelvin: 5300
+      brightness_pct: 100
   mode: single
   icon: mdi:lightbulb-outline
 werkstatt_hell:
@@ -333,7 +346,13 @@ werkstatt_hell:
   - service: switch.turn_on
     target:
       entity_id: switch.00085a49a49be1
-  - scene: scene.werkstatt_hell
+  - service: light.turn_on
+    target:
+      area_id: c6acd19307984c2eb4d2ceb8376084fb
+    data:
+      transition: 2
+      kelvin: 3300
+      brightness_pct: 100
   mode: single
   icon: mdi:lightbulb-outline
 werkstatt_medium:
@@ -342,12 +361,13 @@ werkstatt_medium:
   - service: switch.turn_on
     target:
       entity_id: switch.00085a49a49be1
-  - delay:
-      hours: 0
-      minutes: 0
-      seconds: 0
-      milliseconds: 100
-  - scene: scene.werkstatt_medium
+  - service: light.turn_on
+    target:
+      area_id: c6acd19307984c2eb4d2ceb8376084fb
+    data:
+      transition: 2
+      kelvin: 3000
+      brightness_pct: 50
   mode: single
   icon: mdi:lightbulb-outline
 werkstatt_nacht:
@@ -356,18 +376,18 @@ werkstatt_nacht:
   - service: switch.turn_on
     target:
       entity_id: switch.00085a49a49be1
-  - delay:
-      hours: 0
-      minutes: 0
-      seconds: 0
-      milliseconds: 100
-  - scene: scene.werkstatt_nacht
+  - service: light.turn_on
+    target:
+      area_id: c6acd19307984c2eb4d2ceb8376084fb
+    data:
+      transition: 2
+      kelvin: 2500
+      brightness_pct: 25
   mode: single
   icon: mdi:lightbulb-outline
 werkstatt_aus:
   alias: Werkstatt aus
   sequence:
-  - scene: scene.werkstatt_aus
   - service: switch.turn_off
     target:
       entity_id: switch.00085a49a49be1
@@ -378,12 +398,12 @@ werkstatt_konzentration_50:
   - service: switch.turn_on
     target:
       entity_id: switch.00085a49a49be1
-  - delay:
-      hours: 0
-      minutes: 0
-      seconds: 0
-      milliseconds: 100
-  - scene: scene.werkstatt_konzentration_50
+  - service: light.turn_on
+    target:
+      area_id: c6acd19307984c2eb4d2ceb8376084fb
+    data:
+      kelvin: 5300
+      brightness_pct: 50
   mode: single
   alias: Werkstatt Konzentration 50
   icon: mdi:lightbulb-outline
@@ -393,12 +413,13 @@ werkstatt_konzentration:
   - service: switch.turn_on
     target:
       entity_id: switch.00085a49a49be1
-  - delay:
-      hours: 0
-      minutes: 0
-      seconds: 0
-      milliseconds: 100
-  - scene: scene.werkstatt_konzentration
+  - service: light.turn_on
+    target:
+      area_id: c6acd19307984c2eb4d2ceb8376084fb
+    data:
+      transition: 2
+      kelvin: 5300
+      brightness_pct: 100
   mode: single
   icon: mdi:lightbulb-outline
 circadian_light_tageslicht:
@@ -551,5 +572,71 @@ schlafzimmer_tageslicht_aus:
   - service: switch.turn_off
     target:
       entity_id: switch.circadian_lighting_schlafzimmer
+  mode: single
+  icon: mdi:lightbulb-outline
+flur_tageslicht:
+  alias: Flur Tageslicht an
+  sequence:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.00085a49a4b411
+  - service: switch.turn_on
+    target:
+      entity_id: switch.circadian_lighting_flur
+  mode: single
+  icon: mdi:lightbulb-outline
+flur_tageslicht_aus:
+  alias: Flur Tageslicht aus
+  sequence:
+  - service: switch.turn_off
+    target:
+      entity_id: switch.00085a49a4b411
+  - service: switch.turn_off
+    target:
+      entity_id: switch.circadian_lighting_flur
+  mode: single
+  icon: mdi:lightbulb-outline
+werkstatt_tageslicht_an:
+  alias: Werkstatt Tageslicht an
+  sequence:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.00085a49a49be1
+  - service: switch.turn_on
+    target:
+      entity_id: switch.circadian_lighting_werkstatt
+  mode: single
+  icon: mdi:lightbulb-outline
+werkstatt_tageslicht_aus:
+  alias: Werkstatt Tageslicht aus
+  sequence:
+  - service: switch.turn_off
+    target:
+      entity_id: switch.00085a49a49be1
+  - service: switch.turn_off
+    target:
+      entity_id: switch.circadian_lighting_werkstatt
+  mode: single
+  icon: mdi:lightbulb-outline
+badezimmer_tageslicht_an:
+  alias: Badezimmer Tageslicht an
+  sequence:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.hmip_bsm_00085a49a4a57e
+  - service: switch.turn_on
+    target:
+      entity_id: switch.circadian_lighting_badezimmer
+  mode: single
+  icon: mdi:lightbulb-outline
+badezimmer_tageslicht_aus:
+  alias: Badezimmer Tageslicht aus
+  sequence:
+  - service: switch.turn_off
+    target:
+      entity_id: switch.hmip_bsm_00085a49a4a57e
+  - service: switch.turn_off
+    target:
+      entity_id: switch.circadian_lighting_badezimmer
   mode: single
   icon: mdi:lightbulb-outline
