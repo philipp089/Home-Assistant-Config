@@ -138,18 +138,6 @@
     target:
       entity_id: light.badezimmer
   mode: single
-- id: '1629624341727'
-  alias: Wandschalter Schlafzimmer an
-  description: Wandschalter Schlafzimmer an
-  trigger:
-  - platform: state
-    from: 'off'
-    to: 'on'
-    entity_id: switch.00085a49a49f84
-  condition: []
-  action:
-  - scene: scene.schlafzimmer_hell
-  mode: single
 - id: '1629624395342'
   alias: Wandschalter Schlafzimmer aus
   description: Wandschalter Schlafzimmer aus
@@ -501,7 +489,7 @@
   action:
   - service: script.turn_on
     target:
-      entity_id: script.wohnzimmer_hell
+      entity_id: script.wohnzimmer_tageslicht
   mode: single
 - id: '1631044733272'
   alias: Wandschalter Wohnzimmer Nacht
@@ -570,4 +558,36 @@
   - service: light.turn_on
     target:
       entity_id: light.lichtgruppe_wohnzimmer_deckenleuchte
+  mode: single
+- id: '1631105644028'
+  alias: Wandschalter Schlafzimmer Nacht
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.00085a49a49f84
+    to: 'on'
+  condition:
+  - condition: state
+    entity_id: sun.sun
+    state: below_horizon
+  action:
+  - service: script.turn_on
+    target:
+      entity_id: script.schlafzimmer_nacht
+  mode: single
+- id: '1631105700179'
+  alias: Wandschalter Schlafzimmer tagsüber
+  description: ''
+  trigger:
+  - platform: state
+    to: 'on'
+    entity_id: switch.00085a49a49f84
+  condition:
+  - condition: state
+    entity_id: sun.sun
+    state: above_horizon
+  action:
+  - service: script.turn_on
+    target:
+      entity_id: script.schlafzimmer_tageslicht_an
   mode: single
