@@ -242,22 +242,6 @@ sensor:
             33 
           {% endif %}
   #
-  # THERMOSTAT SCHLAFZIMMER BATTERIE PROZENT
-  #
-  - platform: template
-    sensors:
-      thermostat_schlafzimmer_batterie_prozent:
-        friendly_name: "Thermostat Schlafzimmer Batterie Prozent"
-        unit_of_measurement: "%"
-        value_template: >-
-          {% if is_state_attr('binary_sensor.000a1a49a12cad_low_bat', 'battery', 'High')   %}
-            100
-          {% elif is_state_attr('binary_sensor.000a1a49a12cad_low_bat', 'battery', 'Medium')   %}
-            66
-          {% else %}
-            33 
-          {% endif %}
-  #
   # LICHTSENSOR PFLANZSCHRANK BATTERIE PROZENT
   #
   - platform: template
