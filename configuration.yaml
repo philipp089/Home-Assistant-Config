@@ -511,6 +511,31 @@ light:
       - light.color_temperature_light_16
       - light.color_temperature_light_17
 #
+# CAMERA MOTION SENSORS
+#
+binary_sensor:
+  - platform: mqtt
+    name: "Schlafzimmer Motion"
+    state_topic: BlueIris/Schlafzimmer_HD
+    payload_on: "1"
+    payload_off: "0"
+    device_class: motion
+    off_delay: 30
+  - platform: mqtt
+    name: "Wohnzimmer Motion"
+    state_topic: BlueIris/Wohnz_Fenster_HD
+    payload_on: "1"
+    payload_off: "0"
+    device_class: motion
+    off_delay: 30
+  - platform: mqtt
+    name: "Eingang Motion"
+    state_topic: BlueIris/Eingang_HD
+    payload_on: "1"
+    payload_off: "0"
+    device_class: motion
+    off_delay: 30
+#
 # HOMEMATIC INTEGRATION
 #
 homematic:
@@ -577,36 +602,6 @@ tplink:
     - host: 192.168.178.63
     - host: 192.168.178.75
 #
-# MQTT
-#
-mqtt:
-  broker: 192.168.178.35
-#
-# CAMERA MOTION SENSORS
-#
-binary_sensor:
-  - platform: mqtt
-    name: "Schlafzimmer Motion"
-    state_topic: BlueIris/Schlafzimmer_HD
-    payload_on: "1"
-    payload_off: "0"
-    device_class: motion
-    off_delay: 30
-  - platform: mqtt
-    name: "Wohnzimmer Motion"
-    state_topic: BlueIris/Wohnz_Fenster_HD
-    payload_on: "1"
-    payload_off: "0"
-    device_class: motion
-    off_delay: 30
-  - platform: mqtt
-    name: "Eingang Motion"
-    state_topic: BlueIris/Eingang_HD
-    payload_on: "1"
-    payload_off: "0"
-    device_class: motion
-    off_delay: 30
-#
 # SAMSUNG TV INTEGRATION
 #
 media_player:
@@ -647,57 +642,57 @@ proximity:
 #
 # CIRCADIAN LIGHTING
 #
+      #
+      # CIRCADIAN LIGHTING WOHNZIMMER
+      #
 circadian_lighting:
 switch:
   - platform: circadian_lighting
     name:  "Wohnzimmer"
     lights_ct:
-      #
-      # CIRCADIAN LIGHTING WOHNZIMMER
-      #
       - light.licht_wohnzimmer_kleine_lampe
       - light.dimmable_light_5
       - light.extended_color_light_6
       - light.extended_color_light_4
       - light.extended_color_light_3
       - light.extended_color_light_23
-  - platform: circadian_lighting
-    name: "Schlafzimmer"
-    lights_ct:
       #
       # CIRCADIAN LIGHTING SCHLAFZIMMER
       #
+  - platform: circadian_lighting
+    name: "Schlafzimmer"
+    lights_ct:
       - light.extended_color_light_3_2
       - light.extended_color_light_2
       - light.color_temperature_light_18
       - light.licht_schlafzimmer_standleuchte
-  - platform: circadian_lighting
-    name: "Werkstatt"
-    lights_ct:
       #
       # CIRCADIAN LIGHTING WERKSTATT
       #
+  - platform: circadian_lighting
+    name: "Werkstatt"
+    lights_ct:
       - light.color_temperature_light_7
       - light.color_temperature_light_8
       - light.color_temperature_light_9
       - light.color_temperature_light_10
       - light.color_temperature_light_11
       - light.color_temperature_light_12
-  - platform: circadian_lighting
-    name: "Badezimmer"
-    lights_ct:
       #
       # CIRCADIAN LIGHTING BADEZIMMER
       #
+  - platform: circadian_lighting
+    name: "Badezimmer"
+    lights_ct:
       - light.extended_color_light_21
       - light.color_temperature_light_16
       - light.color_temperature_light_17
-  - platform: circadian_lighting
-    name: "Flur"
-    lights_ct:
       #
       # CIRCADIAN LIGHTING FLUR
       #
+  - platform: circadian_lighting
+    name: "Flur"
+    lights_ct:
       - light.color_temperature_light_13
       - light.color_temperature_light_14
       - light.color_temperature_light_15
