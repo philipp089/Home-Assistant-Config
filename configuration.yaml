@@ -12,6 +12,8 @@ lovelace:
 #
 homeassistant:
   customize: !include customize.yaml
+  whitelist_external_dirs:
+      - "/media/PiNAS-Files/Recordings_Person_Detection"
 #
 # SET MODE TO AUTO-DISCOVERY (RECOMMENDATION FOR RASPBEE II)
 #
@@ -443,7 +445,7 @@ sensor:
   - platform: github
     access_token: !secret github_ha_integration_personal_accesss_token
     repositories:
-      - path: 'philipp089/Home-Assistant-Config'
+      - path: "philipp089/Home-Assistant-Config"
 #
 #
 ###LIGHT GROUPS###
@@ -535,6 +537,25 @@ binary_sensor:
     payload_off: "0"
     device_class: motion
     off_delay: 30
+#
+# FFMPEG INTEGRATION
+#
+ffmpeg:
+#
+# CAMERA COMPONENT
+#
+camera:
+  - platform: ffmpeg
+    name: Eingang HD
+    input: !secret Camera_Eingang_Source
+
+  - platform: ffmpeg
+    name: Wohnzimmer HD
+    input: !secret Camera_Wohnzimmer_Source
+
+  - platform: ffmpeg
+    name: Schlafzimmer HD
+    input: !secret Camera_Schlafzimmer_Source
 #
 # HOMEMATIC INTEGRATION
 #
@@ -642,13 +663,13 @@ proximity:
 #
 # CIRCADIAN LIGHTING
 #
-      #
-      # CIRCADIAN LIGHTING WOHNZIMMER
-      #
+#
+# CIRCADIAN LIGHTING WOHNZIMMER
+#
 circadian_lighting:
 switch:
   - platform: circadian_lighting
-    name:  "Wohnzimmer"
+    name: "Wohnzimmer"
     lights_ct:
       - light.licht_wohnzimmer_kleine_lampe
       - light.dimmable_light_5
@@ -696,3 +717,8 @@ switch:
       - light.color_temperature_light_13
       - light.color_temperature_light_14
       - light.color_temperature_light_15
+#
+# PINAS MOUNT NAS FOLDER MEDIA BROWSER
+#
+shell_command:
+  mount_nas_folder_person_detection_recordings: !secret Mount_Path_Person_Detection_Recordings

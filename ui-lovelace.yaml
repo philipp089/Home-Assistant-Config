@@ -4623,30 +4623,12 @@ views:
               action: navigate
               navigation_path: /lovelace/default-view
           #
-          ###CAMERA WOHNZIMMER LEVEL##############################################
+          ###CAMERA WOHNZIMMER LIVE STREAM##############################################
           #
           - type: horizontal-stack
             cards:
               - type: "custom:frigate-card"
-                camera_entity: camera.wohnzimmer_fenster_sd
-                frigate_url: http://frigate
-                motion_entity: binary_sensor.wohnzimmer_fenster_sd_person_motion
-                view_default: live
-      #
-      ###CAMERAS TAB SCHLAFZIMMER LABEL CARD###################################################
-      #
-      - type: vertical-stack
-        cards:
-          - type: "custom:button-card"
-            template: label_card
-            name: Schlafzimmer
-          #
-          ###CAMERA SCHLAFZIMMER LEVEL##############################################
-          #
-          - type: horizontal-stack
-            cards:
-              - type: "custom:frigate-card"
-                camera_entity: camera.schlafzimmer_sd
+                camera_entity: camera.wohnzimmer_hd
                 frigate_url: http://frigate
                 motion_entity: binary_sensor.schlafzimmer_sd_person_motion
                 view_default: live
@@ -4657,14 +4639,32 @@ views:
             cards:
               - type: "custom:button-card"
                 template: label_card
-                name: Eingang
+                name: Schlafzimmer
               #
-              ###CAMERA SCHLAFZIMMER LEVEL##############################################
+              ###CAMERA SCHLAFZIMMER LIVE STREAM##############################################
               #
               - type: horizontal-stack
                 cards:
                   - type: "custom:frigate-card"
-                    camera_entity: camera.eingang_sd
+                    camera_entity: camera.schlafzimmer_hd
+                    frigate_url: http://frigate
+                    motion_entity: binary_sensor.schlafzimmer_sd_person_motion
+                    view_default: live
+          #
+          ###CAMERAS TAB SCHLAFZIMMER LABEL CARD###################################################
+          #
+          - type: vertical-stack
+            cards:
+              - type: "custom:button-card"
+                template: label_card
+                name: Eingang
+              #
+              ###CAMERA SCHLAFZIMMER LIVE STREAM##############################################
+              #
+              - type: horizontal-stack
+                cards:
+                  - type: "custom:frigate-card"
+                    camera_entity: camera.eingang_hd
                     frigate_url: http://frigate
                     motion_entity: binary_sensor.eingang_sd_person_motion
                     view_default: live

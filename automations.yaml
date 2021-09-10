@@ -50,10 +50,9 @@
       entity_id: switch.00085a49a4b411
   - service: light.turn_off
     target:
-      entity_id:
-      - light.color_temperature_light_13
-      - light.color_temperature_light_14
-      - light.color_temperature_light_15
+      area_id: 04366801e60c4c599cc9d39e07493fe0
+    data:
+      transition: 2
   mode: single
 - id: '1629621124674'
   alias: Bewegungsmelder Einfang 08:00 - 22:00
@@ -74,10 +73,7 @@
   action:
   - service: switch.turn_on
     target:
-      entity_id: switch.circadian_lighting_circadian_lighting
-  - service: light.turn_on
-    target:
-      entity_id: light.lichtgruppe_flur_deckenleuchte
+      entity_id: switch.circadian_lighting_flur
   - service: switch.turn_on
     target:
       entity_id: switch.00085a49a4b411
@@ -152,7 +148,7 @@
       area_id: 4b464753ae28423c9ad179a3027094eb
   mode: single
 - id: '1629826267357'
-  alias: Bewegungsmelder Wohnzimmer Kamin Flur
+  alias: Bewegungsmelder Wohnzimmer Kamin Flur nachts
   description: ''
   trigger:
   - type: motion
@@ -160,11 +156,15 @@
     device_id: 2ed776ffb8ac4e50a3c318ba860dee49
     entity_id: binary_sensor.presence_9
     domain: binary_sensor
-  condition: []
+  condition:
+  - condition: state
+    entity_id: sun.sun
+    state: below_horizon
   action:
   - service: switch.turn_on
     target:
       entity_id: switch.00085a49a4b411
+  - service: script.flur_nacht
   mode: single
 - id: '1629826678796'
   alias: Bewegungsmelder Wohnzimmer Kamin Flur aus
@@ -489,4 +489,181 @@
   - service: script.turn_on
     target:
       entity_id: script.schlafzimmer_tageslicht_an
+  mode: single
+- id: '1631178215439'
+  alias: OBJECT DETECTION - PERSON - Licht Wohnzimmer Nacht
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: sensor.wohnzimmer_fenster_sd_person
+    to: '1'
+  condition:
+  - condition: state
+    entity_id: sun.sun
+    state: below_horizon
+  action:
+  - service: script.wohnzimmer_nacht
+  mode: single
+- id: '1631178399903'
+  alias: OBJECT DETECTION - PERSON - Licht Wohnzimmer tagsüber
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: sensor.wohnzimmer_fenster_sd_person
+    to: '1'
+  condition:
+  - condition: state
+    entity_id: sun.sun
+    state: above_horizon
+  action:
+  - service: script.wohnzimmer_tageslicht
+  mode: single
+- id: '1631210187146'
+  alias: Bewegungsmelder Wohnzimmer Kamin Flur tagsüber
+  description: ''
+  trigger:
+  - type: motion
+    platform: device
+    device_id: 2ed776ffb8ac4e50a3c318ba860dee49
+    entity_id: binary_sensor.presence_9
+    domain: binary_sensor
+  condition:
+  - condition: state
+    entity_id: sun.sun
+    state: above_horizon
+  action:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.00085a49a4b411
+  - service: script.flur_tageslicht
+  mode: single
+- id: '1631214382819'
+  alias: OBJECT DETECTION - FULL HD CAPTURE PERSON - Wohnzimmer
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: sensor.wohnzimmer_fenster_sd_person
+    to: '1'
+  condition: []
+  action:
+  - service: camera.record
+    target:
+      entity_id: camera.wohnzimmer_hd
+    data:
+      duration: 10
+      lookback: 10
+      filename: /media/PiNAS-Files/Recordings_Person_Detection/Wohnzimmer_HD_OD_Person_Recording_{{
+        now().strftime("%Y-%m-%d--%H_%M_%S") }}.mp4
+  mode: single
+- id: '1631216110226'
+  alias: OBJECT DETECTION - SNAPSHOT CAPTURE CAT - Wohnzimmer
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: sensor.wohnzimmer_fenster_sd_cat
+    to: '1'
+  condition: []
+  action:
+  - service: camera.snapshot
+    target:
+      entity_id: camera.wohnzimmer_hd
+    data:
+      filename: /media/PiNAS-Files/Recordings_Person_Detection/Wohnzimmer_HD_OD_Cat_Snapshot_{{
+        now().strftime("%Y-%m-%d--%H_%M_%S") }}.jpg
+  mode: single
+- id: '1631217840293'
+  alias: MOUNT NAS FOLDER - PiNAS - PERSON DETECTION RECORDINGS
+  description: ''
+  trigger:
+  - platform: homeassistant
+    event: start
+  condition: []
+  action:
+  - service: shell_command.mount_nas_folder_person_detection_recordings
+  mode: single
+- id: '1631221460646'
+  alias: OBJECT DETECTION - FULL HD CAPTURE CAT - Wohnzimmer
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: sensor.wohnzimmer_fenster_sd_cat
+    to: '1'
+  condition: []
+  action:
+  - service: camera.record
+    target:
+      entity_id: camera.wohnzimmer_hd
+    data:
+      duration: 10
+      lookback: 20
+      filename: /media/PiNAS-Files/Recordings_Person_Detection/Wohnzimmer_HD_OD_Cat_Recording_{{
+        now().strftime("%Y-%m-%d--%H_%M_%S") }}.mp4
+  mode: single
+- id: '1631221594058'
+  alias: MOTION DETECTION - SNAPSHOT CAPTURE PERSON - Eingang
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.presence_12
+    to: 'on'
+  condition: []
+  action:
+  - service: camera.snapshot
+    target:
+      entity_id: camera.eingang_hd
+    data:
+      filename: /media/PiNAS-Files/Recordings_Person_Detection/Eingang_HD_MD_Person_Snapshot_{{
+        now().strftime("%Y-%m-%d--%H_%M_%S") }}.jpg
+  mode: single
+- id: '1631255967930'
+  alias: OBJECT DETECTION - FULL HD CAPTURE PERSON - Eingang
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: sensor.eingang_sd_person
+    to: '1'
+  condition: []
+  action:
+  - service: camera.record
+    target:
+      entity_id: camera.eingang_hd
+    data:
+      duration: 15
+      lookback: 15
+      filename: /media/PiNAS-Files/Recordings_Person_Detection/Eingang_HD_OD_Person_Recording_{{
+        now().strftime("%Y-%m-%d--%H_%M_%S") }}.mp4
+  mode: single
+- id: '1631255994517'
+  alias: OBJECT DETECTION - FULL HD CAPTURE PERSON - Schlafzimmer
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: sensor.schlafzimmer_sd_person
+    to: '1'
+  condition: []
+  action:
+  - service: camera.record
+    target:
+      entity_id: camera.schlafzimmer_hd
+    data:
+      duration: 10
+      lookback: 10
+      filename: /media/PiNAS-Files/Recordings_Person_Detection/Schlafzimmer_HD_OD_Person_Recording_{{
+        now().strftime("%Y-%m-%d--%H_%M_%S") }}.mp4
+  mode: single
+- id: '1631269247726'
+  alias: OBJECT DETECTION - SNAPSHOT CAPTURE PERSON - Wohnzimmer
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: sensor.wohnzimmer_fenster_sd_person
+    to: '1'
+  condition: []
+  action:
+  - service: camera.snapshot
+    target:
+      entity_id: camera.wohnzimmer_hd
+    data:
+      filename: /media/PiNAS-Files/Recordings_Person_Detection/Wohnzimmer_HD_OD_Person_Snapshot_{{
+        now().strftime("%Y-%m-%d--%H_%M_%S") }}.jpg
   mode: single

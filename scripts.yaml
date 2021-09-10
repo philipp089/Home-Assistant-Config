@@ -451,6 +451,9 @@ schlafzimmer_nacht:
       minutes: 0
       seconds: 0
       milliseconds: 500
+  - service: switch.turn_off
+    target:
+      entity_id: switch.circadian_lighting_schlafzimmer
   - service: light.turn_on
     data:
       transition: 2
@@ -573,6 +576,9 @@ flur_tageslicht:
   - service: switch.turn_on
     target:
       entity_id: switch.00085a49a4b411
+  - service: light.turn_on
+    target:
+      area_id: 04366801e60c4c599cc9d39e07493fe0
   - service: switch.turn_on
     target:
       entity_id: switch.circadian_lighting_flur
