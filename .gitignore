@@ -1,5 +1,6 @@
-# Example .gitignore file for your config dir.
-# An * ensures that everything will be ignored.
+#
+# Filetype ignores
+#
 *.log
 *.db
 *.db-shm
@@ -20,15 +21,19 @@ __pycache__
 *.jpg
 *.js.map
 *.html
-
+*.zip
+*.txt
+#
 # Whitelist
+#
 !*.yaml
 !.gitignore
 !*.md
 !scripts.yaml
 !.gitkeep
-
-# Ignore folders
+#
+# Folder ignores
+#
 .storage
 .cloud
 .google.token
@@ -38,10 +43,9 @@ tts
 node-red
 deps
 www
-custom_components/webrtc/**
-
-
-# Specific file ignores
+#
+# Specific File ignores
+#
 .config_entries.json
 .homekit.state
 .ios.conf
@@ -62,8 +66,6 @@ frigate.yml
 token-192.168.178.70.txt
 index.html
 rtsp2webrtc_v4_aarch64
-themes/lovelace-themes-master/LICENSE
-themes/lovelace-themes-master/README.md
-themes/lovelace-themes-master.zip
-themes/lovelace-themes-master/info.md
-themes/lovelace-themes-master/.github/ISSUE_TEMPLATE/feature_request.md
+
+
+
