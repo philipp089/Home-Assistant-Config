@@ -19,6 +19,7 @@ __pycache__
 *.JPG
 *.jpg
 *.js.map
+*.html
 
 # Whitelist
 !*.yaml
