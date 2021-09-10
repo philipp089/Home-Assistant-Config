@@ -557,6 +557,10 @@ camera:
     name: Schlafzimmer HD
     input: !secret Camera_Schlafzimmer_Source
 #
+# STREAM
+#
+stream:
+#
 # HOMEMATIC INTEGRATION
 #
 homematic:

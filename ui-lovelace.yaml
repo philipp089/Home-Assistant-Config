@@ -4627,11 +4627,8 @@ views:
           #
           - type: horizontal-stack
             cards:
-              - type: "custom:frigate-card"
-                camera_entity: camera.wohnzimmer_hd
-                frigate_url: http://frigate
-                motion_entity: binary_sensor.schlafzimmer_sd_person_motion
-                view_default: live
+              - type: "custom:webrtc-camera"
+                entity: "camera.wohnzimmer_hd"
           #
           ###CAMERAS TAB SCHLAFZIMMER LABEL CARD###################################################
           #
@@ -4645,11 +4642,8 @@ views:
               #
               - type: horizontal-stack
                 cards:
-                  - type: "custom:frigate-card"
-                    camera_entity: camera.schlafzimmer_hd
-                    frigate_url: http://frigate
-                    motion_entity: binary_sensor.schlafzimmer_sd_person_motion
-                    view_default: live
+                  - type: "custom:webrtc-camera"
+                    entity: "camera.schlafzimmer_hd"
           #
           ###CAMERAS TAB SCHLAFZIMMER LABEL CARD###################################################
           #
@@ -4663,11 +4657,8 @@ views:
               #
               - type: horizontal-stack
                 cards:
-                  - type: "custom:frigate-card"
-                    camera_entity: camera.eingang_hd
-                    frigate_url: http://frigate
-                    motion_entity: binary_sensor.eingang_sd_person_motion
-                    view_default: live
+                  - type: "custom:webrtc-camera"
+                    entity: "camera.eingang_hd"
   #
   ###CAMERAS TAB END##############################################################
   #

@@ -550,10 +550,10 @@
     target:
       entity_id: camera.wohnzimmer_hd
     data:
-      duration: 10
-      lookback: 10
       filename: /media/PiNAS-Files/Recordings_Person_Detection/Wohnzimmer_HD_OD_Person_Recording_{{
         now().strftime("%Y-%m-%d--%H_%M_%S") }}.mp4
+      duration: '15'
+      lookback: '15'
   mode: single
 - id: '1631216110226'
   alias: OBJECT DETECTION - SNAPSHOT CAPTURE CAT - Wohnzimmer
@@ -620,16 +620,16 @@
   description: ''
   trigger:
   - platform: state
-    entity_id: sensor.eingang_sd_person
     to: '1'
+    entity_id: sensor.eingang_sd_person
   condition: []
   action:
   - service: camera.record
     target:
       entity_id: camera.eingang_hd
     data:
-      duration: 15
-      lookback: 15
+      duration: 30
+      lookback: 30
       filename: /media/PiNAS-Files/Recordings_Person_Detection/Eingang_HD_OD_Person_Recording_{{
         now().strftime("%Y-%m-%d--%H_%M_%S") }}.mp4
   mode: single
@@ -646,8 +646,8 @@
     target:
       entity_id: camera.schlafzimmer_hd
     data:
-      duration: 10
-      lookback: 10
+      duration: 30
+      lookback: 15
       filename: /media/PiNAS-Files/Recordings_Person_Detection/Schlafzimmer_HD_OD_Person_Recording_{{
         now().strftime("%Y-%m-%d--%H_%M_%S") }}.mp4
   mode: single
@@ -666,4 +666,58 @@
     data:
       filename: /media/PiNAS-Files/Recordings_Person_Detection/Wohnzimmer_HD_OD_Person_Snapshot_{{
         now().strftime("%Y-%m-%d--%H_%M_%S") }}.jpg
+  mode: single
+- id: '1631270447390'
+  alias: MOTION DETECTION - SEND CAMERA SNAPSHOT - Eingang
+  description: ''
+  use_blueprint:
+    path: vorion/send-camera-snapshot-notification-on-motion.yaml
+    input:
+      notification_message: '{{ motion_sensor_name }} hat Bewegung erkannt!'
+      camera: camera.eingang_hd
+      notify_device: fac89688300f48feab9317e8f694c80f
+      notification_title: Bewegung erkannt!
+      motion_sensor: binary_sensor.presence_12
+      delay: 0
+- id: '1631271481801'
+  alias: MOTION DETECTION - SEND CAMERA SNAPSHOT - Wohnzimmer
+  description: ''
+  use_blueprint:
+    path: vorion/send-camera-snapshot-notification-on-motion.yaml
+    input:
+      notification_message: '{{ motion_sensor_name }} hat Bewegung erkannt!'
+      camera: camera.wohnzimmer_hd
+      notify_device: fac89688300f48feab9317e8f694c80f
+      notification_title: Bewegung erkannt!
+      delay: 0
+      motion_sensor: binary_sensor.presence_9
+- id: '1631271510067'
+  alias: MOTION DETECTION - SEND CAMERA SNAPSHOT - Schlafzimmer
+  description: ''
+  use_blueprint:
+    path: vorion/send-camera-snapshot-notification-on-motion.yaml
+    input:
+      notification_message: '{{ motion_sensor_name }} hat Bewegung erkannt!'
+      camera: camera.schlafzimmer_hd
+      notify_device: fac89688300f48feab9317e8f694c80f
+      notification_title: Bewegung erkannt!
+      delay: 0
+      motion_sensor: binary_sensor.presence_24
+- id: '1631273015825'
+  alias: MOTION DETECTION - FULL HD CAPTURE PERSON - Eingang
+  description: ''
+  trigger:
+  - platform: state
+    to: 'on'
+    entity_id: binary_sensor.presence_12
+  condition: []
+  action:
+  - service: camera.record
+    target:
+      entity_id: camera.eingang_hd
+    data:
+      duration: 30
+      lookback: 30
+      filename: /media/PiNAS-Files/Recordings_Person_Detection/Eingang_HD_MD_Person_Recording_{{
+        now().strftime("%Y-%m-%d--%H_%M_%S") }}.mp4
   mode: single
