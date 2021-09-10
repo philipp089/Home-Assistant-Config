@@ -35,7 +35,7 @@ __pycache__
 tts
 node-red
 deps
-www/tmp
+www
 
 # Specific file ignores
 .config_entries.json
