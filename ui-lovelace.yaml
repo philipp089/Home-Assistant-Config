@@ -5238,14 +5238,14 @@ views:
             cards:
               - type: "custom:button-card"
                 template: person_detect_card
-                entity: sensor.wohnzimmer_fenster_sd_person
+                entity: sensor.wohnzimmer_fenster_person
                 name: Personen Wohnzimmer
               #
               ###ALARM WOHNZIMMER CAT DETECT #######################################################
               #
               - type: "custom:button-card"
                 template: cat_detect_card
-                entity: sensor.wohnzimmer_fenster_sd_cat
+                entity: sensor.wohnzimmer_fenster_cat
                 name: Katze Wohnzimmer
           #
           ###ALARM WOHNZIMMER DOOR SENSOR#######################################################
@@ -5283,7 +5283,7 @@ views:
                   #
                   - type: "custom:button-card"
                     template: person_detect_card
-                    entity: sensor.schlafzimmer_sd_person
+                    entity: sensor.schlafzimmer_person
                     name: Personen Wohnzimmer
                   #
                   ###ALARM SCHLAFZIMMER CAT DETECT #######################################################
@@ -5292,7 +5292,7 @@ views:
                 cards:
                   - type: "custom:button-card"
                     template: cat_detect_card
-                    entity: sensor.schlafzimmer_sd_cat
+                    entity: sensor.schlafzimmer_cat
                     name: Katze Wohnzimmer
                   #
                   ###ALARM SCHLAFZIMMER DOOR SENSOR#######################################################
@@ -5323,7 +5323,7 @@ views:
                   #
                   - type: "custom:button-card"
                     template: person_detect_card
-                    entity: sensor.eingang_sd_person
+                    entity: sensor.eingang_person
                     name: Personen Wohnzimmer
                   #
                   ###ALARM EINGANG CAT DETECT #######################################################
@@ -5332,7 +5332,7 @@ views:
                 cards:
                   - type: "custom:button-card"
                     template: cat_detect_card
-                    entity: sensor.eingang_sd_cat
+                    entity: sensor.eingang_cat
                     name: Katze Wohnzimmer
                   #
                   ###ALARM EINGANG DOOR SENSOR#######################################################
