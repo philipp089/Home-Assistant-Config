@@ -38,7 +38,8 @@ tts
 node-red
 deps
 www
-custom_components/webrtc/www/
+custom_components/webrtc/**
+
 
 # Specific file ignores
 .config_entries.json
@@ -60,3 +61,9 @@ frigate.yml
 .ps4-games.BC60A7BEDB04_cc99.json
 token-192.168.178.70.txt
 index.html
+rtsp2webrtc_v4_aarch64
+themes/lovelace-themes-master/LICENSE
+themes/lovelace-themes-master/README.md
+themes/lovelace-themes-master.zip
+themes/lovelace-themes-master/info.md
+themes/lovelace-themes-master/.github/ISSUE_TEMPLATE/feature_request.md
