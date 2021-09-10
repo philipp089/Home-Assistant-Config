@@ -557,9 +557,25 @@ camera:
     name: Schlafzimmer HD
     input: !secret Camera_Schlafzimmer_Source
 #
-# STREAM
+# CAMERA COMPONENT GENERIC
 #
-stream:
+  - platform: generic
+    name: Eingang HD Generic
+    still_image_url: !secret Camera_URL_Eingang
+    stream_source: !secret Camera_Eingang_Source
+    verify_ssl: false
+
+  - platform: generic
+    name: Wohnzimmer HD Generic
+    still_image_url: !secret Camera_URL_Wohnzimmer
+    stream_source: !secret Camera_Wohnzimmer_Source
+    verify_ssl: false
+
+  - platform: generic
+    name: Schlafzimmer HD Generic
+    still_image_url: !secret Camera_URL_Schlafzimmer
+    stream_source: !secret Camera_Schlafzimmer_Source
+    verify_ssl: false
 #
 # HOMEMATIC INTEGRATION
 #

@@ -548,7 +548,7 @@
   action:
   - service: camera.record
     target:
-      entity_id: camera.wohnzimmer_hd
+      entity_id: camera.wohnzimmer_hd_generic
     data:
       filename: /media/PiNAS-Files/Recordings_Person_Detection/Wohnzimmer_HD_OD_Person_Recording_{{
         now().strftime("%Y-%m-%d--%H_%M_%S") }}.mp4

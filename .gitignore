@@ -38,6 +38,7 @@ tts
 node-red
 deps
 www
+custom_components/webrtc/www/
 
 # Specific file ignores
 .config_entries.json
