@@ -538,6 +538,14 @@ binary_sensor:
     device_class: motion
     off_delay: 30
 #
+# WERKTAGE
+#
+  - platform: workday
+    country: DE
+    province: BY
+    add_holidays:
+    #  - YYYY-MM-DD
+#
 # FFMPEG INTEGRATION
 #
 ffmpeg:
@@ -742,3 +750,12 @@ switch:
 #
 shell_command:
   mount_nas_folder_person_detection_recordings: !secret Mount_Path_Person_Detection_Recordings
+  move_frigate_files_to_nas: "mv /media/frigate/clips/*.mp4 /media/PiNAS-Files/Recordings_Person_Detection/"
+#
+# TIMER
+#
+timer:
+  bewegungsmelder_flur:
+    duration: "00:03:00"
+    name: Timer Bewegungsmelder Flur
+    icon: "mdi:alarm"

@@ -28,7 +28,7 @@ resources:
     type: module
   - url: /hacsfiles/atomic-calendar-revive/atomic-calendar-revive.js
     type: module
-  - url: /hacsfiles/frigate-hass-card/frigate-hass-card.js
+  - url: /hacsfiles/lovelace-swipe-navigation/swipe-navigation.js
     type: module
 #
 ###CUSTOM HEADER################################################################
@@ -44,6 +44,7 @@ custom_header:
   tab_indicator_color: "rgb(153, 153, 153)"
   tabs_color:
     alarm: "rgb(219, 68, 55)"
+    automations: "rgb(66, 133, 244)"
     batterien: "rgb(219, 68, 55)"
     desktop: "rgb(15, 157, 88)"
     gesundheit: "rgb(15, 157, 88)"
@@ -1140,6 +1141,15 @@ button_card_templates:
 ###BUTTON CARD TEMPLATES END####################################################
 #
 #
+###SWIPE NAVIGATION##############################################################
+#
+swipe_nav:
+  wrap: false
+  animate: swipe
+  skip_tabs: 
+  prevent_default: true
+  swipe_amount: 30
+#
 ###HOME TAB#####################################################################
 #
 title: Schaltzentrale
@@ -1326,10 +1336,15 @@ views:
                   action: navigate
                   navigation_path: /lovelace/kalender
               #
-              ###HOME QUICK ACCESS BATTERIEN##################################################
+              ###HOME QUICK ACCESS AUTOMATIONS##################################################
               #
               - type: "custom:button-card"
-                template: empty_card
+                template: quick_access
+                entity_picture: /local/Icon_Automations.svg
+                name: Automations
+                tap_action:
+                  action: navigate
+                  navigation_path: /lovelace/automations
 
           #
           ###HOME WOHNZIMMER LABEL CARD###################################################
@@ -3861,6 +3876,7 @@ views:
               ###PC CPU EMPTY CARD############################################################
               #
               - type: "custom:button-card"
+                template: empty_card
                 styles:
                   card:
                     - height: 100%
@@ -5428,7 +5444,7 @@ views:
             tap_action:
               action: navigate
               navigation_path: /lovelace/default-view
-    #
+  #
   ###CALENDAR TAB BEGIN##########################################################
   #
   - title: Kalender
@@ -5457,3 +5473,85 @@ views:
             whitelist: "word1,word2"
           - entity: calendar.philipp
             blacklist: "word1, word2"
+  #
+  ###AUTOMATIONS TAB BEGIN##########################################################
+  #
+  - title: Automations
+    icon: "mdi:cog-outline"
+    path: automations
+    theme: Google-Light
+    #
+    ###TAGESRHYTMUS WERKTAGS TAB LABEL CARD#####################################################
+    #
+    cards:
+      - type: vertical-stack
+        cards:
+          - type: "custom:button-card"
+            template: label_card
+            name: Modi Werktags
+            tap_action:
+              action: navigate
+              navigation_path: /lovelace/default-view
+          #
+          ###TAGMODUS WERKTAGS #######################################################
+          #
+          - type: horizontal-stack
+            cards:
+              - type: entities
+                entities:
+                  - entity: input_datetime.tagmodus_werktags
+                    time:
+          #
+          ###NACHTMODUS WERKTAGS #######################################################
+          #
+          - type: horizontal-stack
+            cards:
+              - type: entities
+                entities:
+                  - entity: input_datetime.nachtmodus_werktags
+                    time:
+    #
+    ###TAGESRHYTMUS WOCHENENDE TAB LABEL CARD#####################################################
+    #
+          - type: "custom:button-card"
+            template: label_card
+            name: Modi Wochenende
+            tap_action:
+              action: navigate
+              navigation_path: /lovelace/default-view
+          #
+          ###TAGMODUS WOCHENENDE #######################################################
+          #
+          - type: horizontal-stack
+            cards:
+              - type: entities
+                entities:
+                  - entity: input_datetime.tagmodus_wochenende
+                    time:
+          #
+          ###NACHTMODUS WOCHENENDE #######################################################
+          #
+          - type: horizontal-stack
+            cards:
+              - type: entities
+                entities:
+                  - entity: input_datetime.nachtmodus_wochenende
+                    time:
+    #
+    ###TAGESRHYTMUS WOCHENENDE TAB LABEL CARD#####################################################
+    #
+          - type: "custom:button-card"
+            template: label_card
+            name: Lichtwecker
+            tap_action:
+              action: navigate
+              navigation_path: /lovelace/default-view
+          #
+          ###TAGMODUS WOCHENENDE #######################################################
+          #
+          - type: horizontal-stack
+            cards:
+              - type: entities
+                entities:
+                  - entity: input_boolean.lichtwecker
+                  

@@ -1,34 +1,3 @@
-- id: '1629312683309'
-  alias: Lichtwecker
-  description: ''
-  trigger:
-  - platform: state
-    entity_id: sensor.minutes_next_alarm_philipp
-    id: trigger_id
-    to: '3'
-  condition: []
-  action:
-  - service: light.turn_on
-    data:
-      transition: 180
-      kelvin: 3200
-      brightness: 255
-    target:
-      entity_id:
-      - light.dimmable_light_22
-      - light.extended_color_light_2
-      - light.licht_schlafzimmer_standleuchte
-      - light.extended_color_light_3_2
-      - light.licht_nachttischleuchte_philipp
-  - delay:
-      hours: 0
-      minutes: 2
-      seconds: 0
-      milliseconds: 0
-  - service: switch.turn_on
-    target:
-      entity_id: switch.00085a49a49f84
-  mode: single
 - id: '1629620807604'
   alias: Bewegungsmelder Eingang aus
   description: Bewegungsmelder Eingang aus
@@ -55,8 +24,8 @@
       transition: 2
   mode: single
 - id: '1629621124674'
-  alias: Bewegungsmelder Einfang 08:00 - 22:00
-  description: Bewegungsmelder Einfang 08:00 - 22:00
+  alias: MOTION SENSOR - Bewegungsmelder Eingang Tag - Werktags
+  description: MOTION SENSOR - Bewegungsmelder Eingang Tag - Werktags
   trigger:
   - type: motion
     platform: device
@@ -68,84 +37,16 @@
     to: 'on'
   condition:
   - condition: time
-    before: '22:00'
-    after: 08:00
+    before: input_datetime.nachtmodus_werktags
+    after: input_datetime.tagmodus_werktags
+  - condition: state
+    entity_id: binary_sensor.workday_sensor
+    state: 'off'
   action:
-  - service: switch.turn_on
-    target:
-      entity_id: switch.circadian_lighting_flur
+  - service: script.flur_tageslicht
   - service: switch.turn_on
     target:
       entity_id: switch.00085a49a4b411
-  mode: single
-- id: '1629622256127'
-  alias: Wandschalter Werkstatt an
-  description: Wandschalter Wohnzimmer
-  trigger:
-  - platform: state
-    entity_id: switch.00085a49a49be1
-    from: 'off'
-    to: 'on'
-  condition: []
-  action:
-  - scene: scene.wohnzimmer_hell
-  mode: single
-- id: '1629622588437'
-  alias: Wandschalter Werkstatt aus
-  description: Wandschalter Werkstatt aus
-  trigger:
-  - platform: state
-    from: 'on'
-    to: 'off'
-    entity_id: switch.00085a49a49be1
-  condition: []
-  action:
-  - scene: scene.werkstatt_aus
-  mode: single
-- id: '1629623467305'
-  alias: Wandschalter Badezimmer an
-  description: Wandschalter Badezimmer an
-  trigger:
-  - platform: state
-    to: 'on'
-    entity_id: switch.hmip_bsm_00085a49a4a57e
-  condition: []
-  action:
-  - service: switch.turn_on
-    target:
-      entity_id: switch.circadian_lighting_circadian_lighting
-  - service: light.turn_on
-    target:
-      entity_id:
-      - light.color_temperature_light_16
-      - light.color_temperature_light_17
-      - light.extended_color_light_21
-  mode: single
-- id: '1629623534033'
-  alias: Wandschalter Badezimmer aus
-  description: Wandschalter Werkstatt aus
-  trigger:
-  - platform: state
-    to: 'off'
-    entity_id: switch.hmip_bsm_00085a49a4a57e
-  condition: []
-  action:
-  - service: light.turn_off
-    target:
-      entity_id: light.badezimmer
-  mode: single
-- id: '1629624395342'
-  alias: Wandschalter Schlafzimmer aus
-  description: Wandschalter Schlafzimmer aus
-  trigger:
-  - platform: state
-    to: 'off'
-    entity_id: switch.00085a49a49f84
-  condition: []
-  action:
-  - service: light.turn_off
-    target:
-      area_id: 4b464753ae28423c9ad179a3027094eb
   mode: single
 - id: '1629826267357'
   alias: Bewegungsmelder Wohnzimmer Kamin Flur nachts
@@ -306,63 +207,8 @@
       - c6acd19307984c2eb4d2ceb8376084fb
       - 9b7ff4c63c5040569f459d83159fe925
   mode: single
-- id: '1631036979120'
-  alias: Wandschalterabfrage Wohnzimmer hell
-  description: ''
-  trigger:
-  - platform: state
-    entity_id: script.wohnzimmer_hell
-    to: 'on'
-  condition:
-  - condition: state
-    entity_id: switch.00085a49a49c0f
-    state: 'off'
-  action:
-  - service: switch.turn_on
-    target:
-      entity_id: switch.00085a49a49c0f
-  - service: light.turn_on
-    target:
-      entity_id: light.lichtgruppe_wohnzimmer_deckenleuchte
-    data:
-      transition: 2
-      kelvin: 3300
-      brightness_pct: 100
-  mode: single
-- id: '1631039403000'
-  alias: Wandschalterabfrage Wohnzimmer medium
-  description: ''
-  trigger:
-  - platform: state
-    entity_id: script.wohnzimmer_medium
-    to: 'on'
-  condition:
-  - condition: state
-    entity_id: switch.00085a49a49c0f
-    state: 'off'
-  action:
-  - service: switch.turn_on
-    target:
-      entity_id: switch.00085a49a49c0f
-  mode: single
-- id: '1631040045715'
-  alias: Wandschalterabfrage Wohnzimmer nacht
-  description: ''
-  trigger:
-  - platform: state
-    entity_id: script.wohnzimmer_nacht
-    to: 'on'
-  condition:
-  - condition: state
-    entity_id: switch.00085a49a49c0f
-    state: 'off'
-  action:
-  - service: switch.turn_on
-    target:
-      entity_id: switch.00085a49a49c0f
-  mode: single
 - id: '1631043708265'
-  alias: Wandschalter Wohnzimmer aus
+  alias: LICHT - Wandschalter Wohnzimmer aus
   description: ''
   trigger:
   - platform: state
@@ -370,41 +216,34 @@
     to: 'off'
   condition: []
   action:
-  - service: light.turn_off
-    target:
-      area_id: 9b7ff4c63c5040569f459d83159fe925
+  - service: script.wohnzimmer_aus
   mode: single
-- id: '1631044702858'
-  alias: Wandschalter Wohnzimmer tagsüber
+- id: '1631044733272'
+  alias: LICHT - Wandschalter Wohnzimmer Tag - Wochenende/Urlaub
   description: ''
   trigger:
   - platform: state
     entity_id: switch.00085a49a49c0f
     to: 'on'
   condition:
+  - condition: time
+    after: input_datetime.tagmodus_wochenende
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    - sun
+    before: input_datetime.nachtmodus_wochenende
   - condition: state
-    entity_id: sun.sun
-    state: above_horizon
+    entity_id: binary_sensor.workday_sensor
+    state: 'off'
   action:
   - service: script.turn_on
     target:
       entity_id: script.wohnzimmer_tageslicht
-  mode: single
-- id: '1631044733272'
-  alias: Wandschalter Wohnzimmer Nacht
-  description: ''
-  trigger:
-  - platform: state
-    entity_id: switch.00085a49a49c0f
-    to: 'on'
-  condition:
-  - condition: state
-    entity_id: sun.sun
-    state: below_horizon
-  action:
-  - service: script.turn_on
-    target:
-      entity_id: script.wohnzimmer_nacht
   mode: single
 - id: '1631047791417'
   alias: Wandschalter Wohnzimmer - Deckenleuchte Wohnzimmer Sync aus
@@ -458,38 +297,6 @@
     target:
       entity_id: light.lichtgruppe_wohnzimmer_deckenleuchte
   mode: single
-- id: '1631105644028'
-  alias: Wandschalter Schlafzimmer Nacht
-  description: ''
-  trigger:
-  - platform: state
-    entity_id: switch.00085a49a49f84
-    to: 'on'
-  condition:
-  - condition: state
-    entity_id: sun.sun
-    state: below_horizon
-  action:
-  - service: script.turn_on
-    target:
-      entity_id: script.schlafzimmer_nacht
-  mode: single
-- id: '1631105700179'
-  alias: Wandschalter Schlafzimmer tagsüber
-  description: ''
-  trigger:
-  - platform: state
-    to: 'on'
-    entity_id: switch.00085a49a49f84
-  condition:
-  - condition: state
-    entity_id: sun.sun
-    state: above_horizon
-  action:
-  - service: script.turn_on
-    target:
-      entity_id: script.schlafzimmer_tageslicht_an
-  mode: single
 - id: '1631178215439'
   alias: OBJECT DETECTION - PERSON - Licht Wohnzimmer Nacht
   description: ''
@@ -535,6 +342,9 @@
   - service: switch.turn_on
     target:
       entity_id: switch.00085a49a4b411
+  - service: light.turn_on
+    target:
+      area_id: 04366801e60c4c599cc9d39e07493fe0
   - service: script.flur_tageslicht
   mode: single
 - id: '1631214382819'
@@ -720,4 +530,649 @@
       lookback: 30
       filename: /media/PiNAS-Files/Recordings_Person_Detection/Eingang_HD_MD_Person_Recording_{{
         now().strftime("%Y-%m-%d--%H_%M_%S") }}.mp4
+  mode: single
+- id: '1631366464842'
+  alias: LICHT - Wandschalter Wohnzimmer Nacht - Werktags
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.00085a49a49c0f
+    to: 'on'
+  condition:
+  - condition: time
+    after: input_datetime.nachtmodus_werktags
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    - sun
+    before: input_datetime.tagmodus_werktags
+  - condition: state
+    entity_id: binary_sensor.workday_sensor
+    state: 'on'
+  action:
+  - service: script.turn_on
+    target:
+      entity_id: script.wohnzimmer_nacht
+  mode: single
+- id: '1631366601194'
+  alias: LICHT - Wandschalter Wohnzimmer Tag - Werktags
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.00085a49a49c0f
+    to: 'on'
+  condition:
+  - condition: time
+    after: input_datetime.tagmodus_werktags
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    - sun
+    before: input_datetime.nachtmodus_werktags
+  - condition: state
+    entity_id: binary_sensor.workday_sensor
+    state: 'on'
+  action:
+  - service: script.turn_on
+    target:
+      entity_id: script.wohnzimmer_tageslicht
+  mode: single
+- id: '1631366755112'
+  alias: LICHT - Wandschalter Wohnzimmer Nacht - Wochenende/Urlaub
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.00085a49a49c0f
+    to: 'on'
+  condition:
+  - condition: time
+    after: input_datetime.nachtmodus_wochenende
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    - sun
+    before: input_datetime.tagmodus_wochenende
+  - condition: state
+    entity_id: binary_sensor.workday_sensor
+    state: 'off'
+  action:
+  - service: script.turn_on
+    target:
+      entity_id: script.wohnzimmer_nacht
+  mode: single
+- id: '1631377802779'
+  alias: LICHT - Wandschalter Schlafzimmer aus
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.00085a49a49f84
+    to: 'off'
+  condition: []
+  action:
+  - service: script.schlafzimmer_aus
+  mode: single
+- id: '1631377878173'
+  alias: LICHT - Wandschalter Schlafzimmer Nacht - Werktags
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.00085a49a49f84
+    to: 'on'
+  condition:
+  - condition: time
+    after: input_datetime.nachtmodus_werktags
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    - sun
+    before: input_datetime.tagmodus_werktags
+  - condition: state
+    entity_id: binary_sensor.workday_sensor
+    state: 'on'
+  action:
+  - service: script.turn_on
+    target:
+      entity_id: script.schlafzimmer_nacht
+  mode: single
+- id: '1631377966864'
+  alias: LICHT - Wandschalter Schlafzimmer Nacht - Wochenende/Urlaub
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.00085a49a49f84
+    to: 'on'
+  condition:
+  - condition: time
+    after: input_datetime.nachtmodus_wochenende
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    - sun
+    before: input_datetime.tagmodus_wochenende
+  - condition: state
+    entity_id: binary_sensor.workday_sensor
+    state: 'off'
+  action:
+  - service: script.turn_on
+    target:
+      entity_id: script.schlafzimmer_nacht
+  mode: single
+- id: '1631378119012'
+  alias: LICHT - Wandschalter Schlafzimmer Tag - Werktags
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.00085a49a49f84
+    to: 'on'
+  condition:
+  - condition: time
+    after: input_datetime.tagmodus_werktags
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    - sun
+    before: input_datetime.nachtmodus_werktags
+  - condition: state
+    entity_id: binary_sensor.workday_sensor
+    state: 'on'
+  action:
+  - service: script.turn_on
+    target:
+      entity_id: script.schlafzimmer_tageslicht_an
+  mode: single
+- id: '1631378221690'
+  alias: LICHT - Wandschalter Schlafzimmer Tag - Wochenende/Urlaub
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.00085a49a49f84
+    to: 'on'
+  condition:
+  - condition: time
+    after: input_datetime.tagmodus_wochenende
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    - sun
+    before: input_datetime.nachtmodus_wochenende
+  - condition: state
+    entity_id: binary_sensor.workday_sensor
+    state: 'off'
+  action:
+  - service: script.turn_on
+    target:
+      entity_id: script.schlafzimmer_tageslicht_an
+  mode: single
+- id: '1631378662274'
+  alias: LICHT - Wandschalter Werkstatt aus
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.00085a49a49be1
+    to: 'off'
+  condition: []
+  action:
+  - service: script.werkstatt_aus
+  mode: single
+- id: '1631378722968'
+  alias: LICHT - Wandschalter Werkstatt Nacht - Werktags
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.00085a49a49be1
+    to: 'on'
+  condition:
+  - condition: time
+    after: input_datetime.nachtmodus_werktags
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    - sun
+    before: input_datetime.tagmodus_werktags
+  - condition: state
+    entity_id: binary_sensor.workday_sensor
+    state: 'on'
+  action:
+  - service: script.turn_on
+    target:
+      entity_id: script.werkstatt_nacht
+  mode: single
+- id: '1631379090949'
+  alias: LICHT - Wandschalter Werkstatt Nacht - Wochenende/Urlaub
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.00085a49a49be1
+    to: 'on'
+  condition:
+  - condition: time
+    after: input_datetime.nachtmodus_wochenende
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    - sun
+    before: input_datetime.tagmodus_wochenende
+  - condition: state
+    entity_id: binary_sensor.workday_sensor
+    state: 'off'
+  action:
+  - service: script.turn_on
+    target:
+      entity_id: script.werkstatt_nacht
+  mode: single
+- id: '1631379147115'
+  alias: LICHT - Wandschalter Werkstatt Tag - Werktags
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.00085a49a49be1
+    to: 'on'
+  condition:
+  - condition: time
+    after: input_datetime.tagmodus_werktags
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    - sun
+    before: input_datetime.nachtmodus_werktags
+  - condition: state
+    entity_id: binary_sensor.workday_sensor
+    state: 'on'
+  action:
+  - service: script.turn_on
+    target:
+      entity_id: script.werkstatt_tageslicht_an
+  mode: single
+- id: '1631379212499'
+  alias: LICHT - Wandschalter Werkstatt Tag - Wochenende/Urlaub
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.00085a49a49be1
+    to: 'on'
+  condition:
+  - condition: time
+    after: input_datetime.tagmodus_wochenende
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    - sun
+    before: input_datetime.nachtmodus_wochenende
+  - condition: state
+    entity_id: binary_sensor.workday_sensor
+    state: 'off'
+  action:
+  - service: script.turn_on
+    target:
+      entity_id: script.werkstatt_tageslicht_an
+  mode: single
+- id: '1631379866625'
+  alias: LICHT - Wandschalter Badezimmer aus
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.hmip_bsm_00085a49a4a57e
+    to: 'off'
+  condition: []
+  action:
+  - service: script.turn_on
+    target:
+      entity_id: script.badezimmer_aus
+  mode: single
+- id: '1631379923167'
+  alias: LICHT - Wandschalter Badezimmer Nacht - Werktags
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.hmip_bsm_00085a49a4a57e
+    to: 'on'
+  condition:
+  - condition: time
+    after: input_datetime.nachtmodus_werktags
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    - sun
+    before: input_datetime.tagmodus_werktags
+  - condition: state
+    entity_id: binary_sensor.workday_sensor
+    state: 'on'
+  action:
+  - service: script.turn_on
+    target:
+      entity_id: script.badezimmer_nacht
+  mode: single
+- id: '1631379985933'
+  alias: LICHT - Wandschalter Badezimmer Nacht - Wochenende/Urlaub
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.hmip_bsm_00085a49a4a57e
+    to: 'on'
+  condition:
+  - condition: time
+    after: input_datetime.nachtmodus_wochenende
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    - sun
+    before: input_datetime.tagmodus_wochenende
+  - condition: state
+    entity_id: binary_sensor.workday_sensor
+    state: 'off'
+  action:
+  - service: script.turn_on
+    target:
+      entity_id: script.badezimmer_nacht
+  mode: single
+- id: '1631380075556'
+  alias: LICHT - Wandschalter Badezimmer Tag - Werktags
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.hmip_bsm_00085a49a4a57e
+    to: 'on'
+  condition:
+  - condition: time
+    after: input_datetime.tagmodus_werktags
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    - sun
+    before: input_datetime.nachtmodus_werktags
+  - condition: state
+    entity_id: binary_sensor.workday_sensor
+    state: 'on'
+  action:
+  - service: script.turn_on
+    target:
+      entity_id: script.badezimmer_tageslicht_an
+  mode: single
+- id: '1631380268367'
+  alias: LICHT - Wandschalter Badezimmer Tag - Wochenende/Urlaub
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: switch.hmip_bsm_00085a49a4a57e
+    to: 'on'
+  condition:
+  - condition: time
+    after: input_datetime.tagmodus_wochenende
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+    - sun
+    before: input_datetime.nachtmodus_wochenende
+  - condition: state
+    entity_id: binary_sensor.workday_sensor
+    state: 'off'
+  action:
+  - service: script.turn_on
+    target:
+      entity_id: script.badezimmer_tageslicht_an
+  mode: single
+- id: '1631384831806'
+  alias: FRIGATE - Move Files to NAS daily
+  description: ''
+  trigger:
+  - platform: time
+    at: 02:00
+  condition: []
+  action:
+  - service: shell_command.move_frigate_files_to_nas
+  mode: single
+- id: '1631391610174'
+  alias: MOTION SENSOR - Wohnzimmer Kamin - LICHT - Flur an - Werktags tagsüber
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.presence_9
+    to: 'on'
+  condition:
+  - condition: time
+    after: input_datetime.tagmodus_werktags
+    before: input_datetime.nachtmodus_werktags
+  - condition: state
+    entity_id: binary_sensor.workday_sensor
+    state: 'on'
+  action:
+  - service: script.turn_on
+    target:
+      entity_id: script.flur_tageslicht
+  mode: single
+- id: '1631391677966'
+  alias: MOTION SENSOR - Wohnzimmer Kamin - LICHT - Flur an - Werktags Nacht
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.presence_9
+    to: 'on'
+  condition:
+  - condition: time
+    after: input_datetime.nachtmodus_werktags
+    before: input_datetime.tagmodus_werktags
+  - condition: state
+    entity_id: binary_sensor.workday_sensor
+    state: 'on'
+  action:
+  - service: script.turn_on
+    target:
+      entity_id: script.flur_nacht
+  mode: single
+- id: '1631391762180'
+  alias: MOTION SENSOR - Wohnzimmer Kamin - LICHT - Flur an - Wochenende Nacht
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.presence_9
+    to: 'on'
+  condition:
+  - condition: time
+    after: input_datetime.nachtmodus_wochenende
+    before: input_datetime.tagmodus_wochenende
+  - condition: state
+    entity_id: binary_sensor.workday_sensor
+    state: 'off'
+  action:
+  - service: script.turn_on
+    target:
+      entity_id: script.flur_nacht
+  mode: single
+- id: '1631391812468'
+  alias: MOTION SENSOR - Wohnzimmer Kamin - LICHT - Flur an - Wochenende tagsüber
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.presence_9
+    to: 'on'
+  condition:
+  - condition: time
+    after: input_datetime.tagmodus_werktags
+    before: input_datetime.nachtmodus_werktags
+  - condition: state
+    entity_id: binary_sensor.workday_sensor
+    state: 'off'
+  action:
+  - service: script.turn_on
+    target:
+      entity_id: script.flur_tageslicht
+  mode: single
+- id: '1631392127589'
+  alias: MOTION SENSOR - Wohnzimmer Kamin - LICHT - Flur Timer
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.presence_9
+    to: 'on'
+  condition: []
+  action:
+  - service: timer.start
+    data:
+      duration: '0'
+    target:
+      entity_id: timer.bewegungsmelder_flur
+  mode: single
+- id: '1631393429707'
+  alias: MOTION SENSOR - Wohnzimmer Kamin - LICHT - Flur aus
+  description: ''
+  trigger:
+  - platform: event
+    event_type: timer.finished
+    event_data:
+      entity_id: timer.bewegungsmelder_flur
+  condition: []
+  action:
+  - service: script.turn_on
+    target:
+      entity_id: script.flur_aus
+  mode: single
+- id: '1631398918230'
+  alias: MOTION SENSOR - Flur - LICHT - Flur aus
+  description: ''
+  trigger:
+  - platform: event
+    event_type: timer.finished
+    event_data:
+      entity_id: timer.bewegungsmelder_flur
+  condition: []
+  action:
+  - service: script.turn_on
+    target:
+      entity_id: script.flur_aus
+  mode: single
+- id: '1631398974078'
+  alias: MOTION SENSOR - Flur - LICHT - Flur an - Werktags Nacht
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.presence_12
+    to: 'on'
+  condition:
+  - condition: time
+    after: input_datetime.nachtmodus_werktags
+    before: input_datetime.tagmodus_werktags
+  - condition: state
+    entity_id: binary_sensor.workday_sensor
+    state: 'on'
+  action:
+  - service: script.turn_on
+    target:
+      entity_id: script.flur_nacht
+  mode: single
+- id: '1631399071620'
+  alias: MOTION SENSOR - Flur - LICHT - Flur an - Werktags tagsüber
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.presence_12
+    to: 'on'
+  condition:
+  - condition: time
+    after: input_datetime.tagmodus_werktags
+    before: input_datetime.nachtmodus_werktags
+  - condition: state
+    entity_id: binary_sensor.workday_sensor
+    state: 'on'
+  action:
+  - service: script.turn_on
+    target:
+      entity_id: script.flur_tageslicht
+  mode: single
+- id: '1631399107802'
+  alias: MOTION SENSOR - Flur - LICHT - Flur an - Wochenende Nacht
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.presence_12
+    to: 'on'
+  condition:
+  - condition: time
+    after: input_datetime.nachtmodus_wochenende
+    before: input_datetime.tagmodus_wochenende
+  - condition: state
+    entity_id: binary_sensor.workday_sensor
+    state: 'off'
+  action:
+  - service: script.turn_on
+    target:
+      entity_id: script.flur_nacht
+  mode: single
+- id: '1631399155092'
+  alias: MOTION SENSOR - Flur - LICHT - Flur an - Wochenende tagsüber
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.presence_12
+    to: 'on'
+  condition:
+  - condition: time
+    after: input_datetime.tagmodus_werktags
+    before: input_datetime.nachtmodus_werktags
+  - condition: state
+    entity_id: binary_sensor.workday_sensor
+    state: 'off'
+  action:
+  - service: script.turn_on
+    target:
+      entity_id: script.flur_tageslicht
   mode: single

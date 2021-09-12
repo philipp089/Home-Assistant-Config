@@ -61,6 +61,9 @@ wohnzimmer_medium:
 wohnzimmer_nacht:
   alias: Wohnzimmer Nacht
   sequence:
+  - service: switch.turn_off
+    target:
+      entity_id: switch.circadian_lighting_wohnzimmer
   - service: light.turn_on
     data:
       transition: 2
@@ -75,6 +78,9 @@ wohnzimmer_aus:
   - service: switch.turn_off
     target:
       entity_id: switch.00085a49a49c0f
+  - service: light.turn_off
+    target:
+      area_id: 9b7ff4c63c5040569f459d83159fe925
   mode: single
   alias: Wohnzimmer aus
   icon: mdi:lightbulb-outline
@@ -158,6 +164,9 @@ badezimmer_nacht:
   - service: switch.turn_on
     target:
       entity_id: switch.hmip_bsm_00085a49a4a57e
+  - service: switch.turn_off
+    target:
+      entity_id: switch.circadian_lighting_badezimmer
   - service: light.turn_on
     target:
       area_id: f6aab624c505454fa71527ad60cf71ed
@@ -272,6 +281,19 @@ flur_nacht:
   - service: switch.turn_on
     target:
       entity_id: switch.00085a49a4b411
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 0
+      milliseconds: 100
+  - service: switch.turn_off
+    target:
+      entity_id: switch.circadian_lighting_flur
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 0
+      milliseconds: 100
   - service: light.turn_on
     target:
       area_id: 04366801e60c4c599cc9d39e07493fe0
@@ -439,7 +461,6 @@ schlafzimmer_nacht:
       milliseconds: 500
   - service: light.turn_on
     data:
-      transition: 2
       kelvin: 2500
       brightness_pct: 5
     target:
@@ -579,6 +600,8 @@ flur_tageslicht:
   - service: light.turn_on
     target:
       area_id: 04366801e60c4c599cc9d39e07493fe0
+    data:
+      brightness_pct: 100
   - service: switch.turn_on
     target:
       entity_id: switch.circadian_lighting_flur

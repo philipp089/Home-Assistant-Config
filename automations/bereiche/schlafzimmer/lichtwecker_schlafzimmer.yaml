@@ -1,12 +1,15 @@
 id: '1629312683309758942'
-alias: Lichtwecker
+alias: LICHT - Lichtwecker
 description: ''
 trigger:
 - platform: state
   entity_id: sensor.minutes_next_alarm_philipp
   id: trigger_id
   to: '3'
-condition: []
+condition: 
+- condition: state
+  entity_id: input_boolean.lichtwecker
+  state: 'on'
 action:
 - service: light.turn_on
   data:
