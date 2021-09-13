@@ -23,68 +23,6 @@
     data:
       transition: 2
   mode: single
-- id: '1629621124674'
-  alias: MOTION SENSOR - Bewegungsmelder Eingang Tag - Werktags
-  description: MOTION SENSOR - Bewegungsmelder Eingang Tag - Werktags
-  trigger:
-  - type: motion
-    platform: device
-    device_id: 548bd2b8acd64e39af0ea4bb11d3c0ad
-    entity_id: binary_sensor.presence_12
-    domain: binary_sensor
-  - platform: state
-    entity_id: binary_sensor.eingang_motion
-    to: 'on'
-  condition:
-  - condition: time
-    before: input_datetime.nachtmodus_werktags
-    after: input_datetime.tagmodus_werktags
-  - condition: state
-    entity_id: binary_sensor.workday_sensor
-    state: 'off'
-  action:
-  - service: script.flur_tageslicht
-  - service: switch.turn_on
-    target:
-      entity_id: switch.00085a49a4b411
-  mode: single
-- id: '1629826267357'
-  alias: Bewegungsmelder Wohnzimmer Kamin Flur nachts
-  description: ''
-  trigger:
-  - type: motion
-    platform: device
-    device_id: 2ed776ffb8ac4e50a3c318ba860dee49
-    entity_id: binary_sensor.presence_9
-    domain: binary_sensor
-  condition:
-  - condition: state
-    entity_id: sun.sun
-    state: below_horizon
-  action:
-  - service: switch.turn_on
-    target:
-      entity_id: switch.00085a49a4b411
-  - service: script.flur_nacht
-  mode: single
-- id: '1629826678796'
-  alias: Bewegungsmelder Wohnzimmer Kamin Flur aus
-  description: ''
-  trigger:
-  - type: no_motion
-    platform: device
-    device_id: 2ed776ffb8ac4e50a3c318ba860dee49
-    entity_id: binary_sensor.presence_9
-    domain: binary_sensor
-    for:
-      hours: 0
-      minutes: 3
-      seconds: 0
-      milliseconds: 0
-  condition: []
-  action:
-  - service: script.flur_aus
-  mode: single
 - id: '1630162475082'
   alias: Media Player leise bei Anruf
   description: ''
@@ -105,7 +43,7 @@
       volume_level: 0.1
   mode: single
 - id: '1630163829406'
-  alias: Smartphone Akku leer
+  alias: SMARTPHONE - Notification Akku leer
   description: ''
   trigger:
   - platform: state
@@ -185,7 +123,7 @@
   - service: script.werkstatt_aus
   mode: single
 - id: '1630937644882'
-  alias: Proximity - Haus leer
+  alias: PROXIMITY - Haus leer
   description: ''
   trigger:
   - platform: state
@@ -206,6 +144,16 @@
       - 4b464753ae28423c9ad179a3027094eb
       - c6acd19307984c2eb4d2ceb8376084fb
       - 9b7ff4c63c5040569f459d83159fe925
+  - service: climate.set_temperature
+    data_template:
+      entity_id:
+      - climate.000a1a49a12c97
+      - climate.000a1a49a12cad
+      - climate.000a1a49a12d0a
+      - climate.000a1a49a12e89
+      - climate.000a1a49a13110
+      temperature:
+        '[object Object]':
   mode: single
 - id: '1631043708265'
   alias: LICHT - Wandschalter Wohnzimmer aus
@@ -245,21 +193,8 @@
     target:
       entity_id: script.wohnzimmer_tageslicht
   mode: single
-- id: '1631047791417'
-  alias: Wandschalter Wohnzimmer - Deckenleuchte Wohnzimmer Sync aus
-  description: ''
-  trigger:
-  - platform: state
-    entity_id: switch.00085a49a49c0f
-    to: 'off'
-  condition: []
-  action:
-  - service: light.turn_off
-    target:
-      entity_id: light.lichtgruppe_wohnzimmer_deckenleuchte
-  mode: single
 - id: '1631047942491'
-  alias: Deckenleuchte Wohnzimmer - Wandschalter Wohnzimmer Sync an
+  alias: SYNC - Deckenleuchte Wohnzimmer - Wandschalter Wohnzimmer Sync an
   description: ''
   trigger:
   - platform: state
@@ -272,7 +207,7 @@
       entity_id: switch.00085a49a49c0f
   mode: single
 - id: '1631048434265'
-  alias: Deckenleuchte Wohnzimmer - Wandschalter Wohnzimmer Sync aus
+  alias: SYNC - Deckenleuchte Wohnzimmer - Wandschalter Wohnzimmer Sync aus
   description: ''
   trigger:
   - platform: state
@@ -283,19 +218,6 @@
   - service: switch.turn_off
     target:
       entity_id: switch.00085a49a49c0f
-  mode: single
-- id: '1631048550175'
-  alias: Wandschalter Wohnzimmer - Deckenleuchte Wohnzimmer Sync an
-  description: ''
-  trigger:
-  - platform: state
-    entity_id: switch.00085a49a49c0f
-    to: 'on'
-  condition: []
-  action:
-  - service: light.turn_on
-    target:
-      entity_id: light.lichtgruppe_wohnzimmer_deckenleuchte
   mode: single
 - id: '1631178215439'
   alias: OBJECT DETECTION - PERSON - Licht Wohnzimmer Nacht
@@ -324,28 +246,6 @@
     state: above_horizon
   action:
   - service: script.wohnzimmer_tageslicht
-  mode: single
-- id: '1631210187146'
-  alias: Bewegungsmelder Wohnzimmer Kamin Flur tagsüber
-  description: ''
-  trigger:
-  - type: motion
-    platform: device
-    device_id: 2ed776ffb8ac4e50a3c318ba860dee49
-    entity_id: binary_sensor.presence_9
-    domain: binary_sensor
-  condition:
-  - condition: state
-    entity_id: sun.sun
-    state: above_horizon
-  action:
-  - service: switch.turn_on
-    target:
-      entity_id: switch.00085a49a4b411
-  - service: light.turn_on
-    target:
-      area_id: 04366801e60c4c599cc9d39e07493fe0
-  - service: script.flur_tageslicht
   mode: single
 - id: '1631214382819'
   alias: OBJECT DETECTION - FULL HD CAPTURE PERSON - Wohnzimmer
@@ -382,7 +282,7 @@
         now().strftime("%Y-%m-%d--%H_%M_%S") }}.jpg
   mode: single
 - id: '1631217840293'
-  alias: MOUNT NAS FOLDER - PiNAS - PERSON DETECTION RECORDINGS
+  alias: PiNAS - MOUNT NAS FOLDER  - PERSON DETECTION RECORDINGS
   description: ''
   trigger:
   - platform: homeassistant
@@ -408,22 +308,6 @@
       lookback: 20
       filename: /media/PiNAS-Files/Recordings_Person_Detection/Wohnzimmer_HD_OD_Cat_Recording_{{
         now().strftime("%Y-%m-%d--%H_%M_%S") }}.mp4
-  mode: single
-- id: '1631221594058'
-  alias: MOTION DETECTION - SNAPSHOT CAPTURE PERSON - Eingang
-  description: ''
-  trigger:
-  - platform: state
-    entity_id: binary_sensor.presence_12
-    to: 'on'
-  condition: []
-  action:
-  - service: camera.snapshot
-    target:
-      entity_id: camera.eingang_hd
-    data:
-      filename: /media/PiNAS-Files/Recordings_Person_Detection/Eingang_HD_MD_Person_Snapshot_{{
-        now().strftime("%Y-%m-%d--%H_%M_%S") }}.jpg
   mode: single
 - id: '1631255967930'
   alias: OBJECT DETECTION - FULL HD CAPTURE PERSON - Eingang
@@ -513,24 +397,6 @@
       notification_title: Bewegung erkannt!
       delay: 0
       motion_sensor: binary_sensor.presence_24
-- id: '1631273015825'
-  alias: MOTION DETECTION - FULL HD CAPTURE PERSON - Eingang
-  description: ''
-  trigger:
-  - platform: state
-    to: 'on'
-    entity_id: binary_sensor.presence_12
-  condition: []
-  action:
-  - service: camera.record
-    target:
-      entity_id: camera.eingang_hd
-    data:
-      duration: 30
-      lookback: 30
-      filename: /media/PiNAS-Files/Recordings_Person_Detection/Eingang_HD_MD_Person_Recording_{{
-        now().strftime("%Y-%m-%d--%H_%M_%S") }}.mp4
-  mode: single
 - id: '1631366464842'
   alias: LICHT - Wandschalter Wohnzimmer Nacht - Werktags
   description: ''
@@ -972,7 +838,7 @@
       entity_id: script.badezimmer_tageslicht_an
   mode: single
 - id: '1631384831806'
-  alias: FRIGATE - Move Files to NAS daily
+  alias: PINAS - FRIGATE - Move Files to PiNAS daily
   description: ''
   trigger:
   - platform: time
@@ -1175,4 +1041,90 @@
   - service: script.turn_on
     target:
       entity_id: script.flur_tageslicht
+  mode: single
+- id: '1631554392510'
+  alias: PLANZSCHRANK - LICHT - Tagesbeginn - Wachstum
+  description: ''
+  trigger:
+  - platform: time
+    at: input_datetime.pflanzschrank_tagesbeginn_wachstum
+  condition:
+  - condition: state
+    entity_id: input_select.pflanzschrank_phase
+    state: Wachstum
+  action:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.steckdose_pflanzschrank_licht
+  mode: single
+- id: '1631554449079'
+  alias: PLANZSCHRANK - LICHT - Nacht - Wachstum
+  description: ''
+  trigger:
+  - platform: time
+    at: input_datetime.pflanzschrank_nachtbeginn_wachstum
+  condition:
+  - condition: state
+    entity_id: input_select.pflanzschrank_phase
+    state: Wachstum
+  action:
+  - service: switch.turn_off
+    target:
+      entity_id: switch.steckdose_pflanzschrank_licht
+  mode: single
+- id: '1631554492879'
+  alias: PLANZSCHRANK - LICHT - Nacht - Blüte
+  description: ''
+  trigger:
+  - platform: time
+    at: input_datetime.pflanzschrank_nachtbeginn_blute
+  condition:
+  - condition: state
+    entity_id: input_select.pflanzschrank_phase
+    state: Blüte
+  action:
+  - service: switch.turn_off
+    target:
+      entity_id: switch.steckdose_pflanzschrank_licht
+  mode: single
+- id: '1631554548781'
+  alias: PLANZSCHRANK - LICHT - Tagesbeginn - Blüte
+  description: ''
+  trigger:
+  - platform: time
+    at: input_datetime.pflanzschrank_tagesbeginn_blute
+  condition:
+  - condition: state
+    entity_id: input_select.pflanzschrank_phase
+    state: Blüte
+  action:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.steckdose_pflanzschrank_licht
+  mode: single
+- id: '1631561076383'
+  alias: LICHT - PERSON DETECTION - Wohnzimmer an
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: sensor.wohnzimmer_fenster_person
+    to: '1'
+  condition: []
+  action:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.00085a49a49c0f
+  mode: single
+- id: '1631561143405'
+  alias: LICHT - PERSON DETECTION - Schlafzimmer an
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: sensor.schlafzimmer_person
+    to: '1'
+  condition: []
+  action:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.00085a49a49f84
   mode: single

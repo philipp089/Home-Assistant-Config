@@ -3136,6 +3136,107 @@ views:
                 styles:
                   card:
                     - height: 100%
+        #
+        ###PFLANZSCHRANK WACHSTUM TAB LABEL CARD#####################################################
+        #
+          - type: vertical-stack
+            cards:
+              - type: "custom:button-card"
+                template: label_card
+                name: Zeiten
+                tap_action:
+                  action: navigate
+                  navigation_path: /lovelace/default-view
+              #
+              ###PFLANZSCHRANK PHASEN WERKTAGS #######################################################
+              #
+              - type: horizontal-stack
+                cards:
+                  - type: entities
+                    entities:
+                      - entity: input_select.pflanzschrank_phase
+              #
+              ###PFLANZSCHRANK WACHSTUM BEGINN#######################################################
+              #
+              - type: horizontal-stack
+                cards:
+                  - type: entities
+                    entities:
+                      - entity: input_datetime.pflanzschrank_tagesbeginn_wachstum
+                        time:
+              #
+              ###PFLANZSCHRANK WACHSTUM ENDE#######################################################
+              #
+              - type: horizontal-stack
+                cards:
+                  - type: entities
+                    entities:
+                      - entity: input_datetime.pflanzschrank_nachtbeginn_wachstum
+              #
+              ###PFLANZSCHRANK BLÜTE BEGINN#######################################################
+              #
+              - type: horizontal-stack
+                cards:
+                  - type: entities
+                    entities:
+                      - entity: input_datetime.pflanzschrank_tagesbeginn_blute
+                        time:
+              #
+              ###PFLANZSCHRANK BLÜTE ENDE#######################################################
+              #
+              - type: horizontal-stack
+                cards:
+                  - type: entities
+                    entities:
+                      - entity: input_datetime.pflanzschrank_nachtbeginn_blute
+        #
+        ###PFLANZSCHRANK ABLUFT LABEL CARD#####################################################
+        #
+          - type: vertical-stack
+            cards:
+              - type: "custom:button-card"
+                template: label_card
+                name: Abluft
+                tap_action:
+                  action: navigate
+                  navigation_path: /lovelace/default-view
+              #
+              ###PFLANZSCHRANK ABLUFT START#######################################################
+              #
+              - type: horizontal-stack
+                cards:
+                  - type: entities
+                    entities:
+                      - entity: input_datetime.pflanzschrank_abluft_start
+                        time:
+              #
+              ###PFLANZSCHRANK ABLUFT ENDE#######################################################
+              #
+              - type: horizontal-stack
+                cards:
+                  - type: entities
+                    entities:
+                      - entity: input_datetime.pflanzschrank_abluft_aus
+                        time:
+        #
+        ###PFLANZSCHRANK WACHSTUM TAB LABEL CARD#####################################################
+        #
+          - type: vertical-stack
+            cards:
+              - type: "custom:button-card"
+                template: label_card
+                name: Mindest-Luftfeuchtigkeit
+                tap_action:
+                  action: navigate
+                  navigation_path: /lovelace/default-view
+              #
+              ###PFLANZSCHRANK MIN LUFTFEUCHTE#######################################################
+              #
+              - type: horizontal-stack
+                cards:
+                  - type: entities
+                    entities:
+                      - entity: input_number.pflanzschrank_luftfeuchtigkeit
           #
           ###PFLANZSCHRANK PLUGS LABEL CARD###############################################
           #
@@ -3145,7 +3246,7 @@ views:
                 template: label_card
                 name: Steckdosen
           #
-          ###PFLANZSCHRANK PLUG LICHT#####################################################
+          ###PFLANZSCHRANK PLUG GESAMT#####################################################
           #
           - type: horizontal-stack
             cards:
@@ -3154,14 +3255,14 @@ views:
                 entity: switch.steckdose_pflanzen_gesamt
                 name: Hauptschalter
               #
-              ###PFLANZSCHRANK PLUG ABLUFT####################################################
+              ###PFLANZSCHRANK PLUG LICHT####################################################
               #
               - type: "custom:button-card"
                 template: plugs_card
                 entity: switch.steckdose_pflanzschrank_licht
                 name: Licht
           #
-          ###PFLANZSCHRANK PLUG LUFTBEFEUCHTER############################################
+          ###PFLANZSCHRANK PLUG ABLUFT############################################
           #
           - type: horizontal-stack
             cards:
@@ -3175,7 +3276,7 @@ views:
               - type: "custom:button-card"
                 template: plugs_card
                 entity: switch.steckdose_luftbefeuchter_pflanzschrank
-                name: Luftbefeuchter
+                name: Luftbefeuchter    
   #
   ###PFLANZSCHRANK TAB END########################################################
   #
@@ -5538,7 +5639,7 @@ views:
                   - entity: input_datetime.nachtmodus_wochenende
                     time:
     #
-    ###TAGESRHYTMUS WOCHENENDE TAB LABEL CARD#####################################################
+    ###AUTOMATIONS - LICHTWECKER LABEL CARD#####################################################
     #
           - type: "custom:button-card"
             template: label_card
@@ -5547,11 +5648,56 @@ views:
               action: navigate
               navigation_path: /lovelace/default-view
           #
-          ###TAGMODUS WOCHENENDE #######################################################
+          ###AUTOMATIONS - LICHTWECKER#######################################################
           #
           - type: horizontal-stack
             cards:
               - type: entities
                 entities:
                   - entity: input_boolean.lichtwecker
-                  
+    #
+    ###AUTOMATIONS - TEMPERATUR HAUS LEER LABEL CARD#####################################################
+    #
+          - type: "custom:button-card"
+            template: label_card
+            name: Temperatur - Haus leer
+            tap_action:
+              action: navigate
+              navigation_path: /lovelace/default-view
+          #
+          ###AUTOMATIONS - TEMPERATUR HAUS LEER#######################################################
+          #
+          - type: horizontal-stack
+            cards:
+              - type: entities
+                entities:
+                  - entity: input_number.heizung_temperatur_away
+        #
+        ###AUTOMATIONS LUFTBEFEUCHTER ZEITEN LABEL CARD#####################################################
+        #
+          - type: vertical-stack
+            cards:
+              - type: "custom:button-card"
+                template: label_card
+                name: Luftbeufeuchter - Zeiten
+                tap_action:
+                  action: navigate
+                  navigation_path: /lovelace/default-view
+              #
+              ###AUTOMATIONS LUFTBEFEUCHTER STARTZEIT#######################################################
+              #
+              - type: horizontal-stack
+                cards:
+                  - type: entities
+                    entities:
+                      - entity: input_datetime.luftbefeuchter_wohnzimmer_startzeit
+                        time:
+              #
+              ###AUTOMATIONS LUFTBEFEUCHTER ENDZEIT#######################################################
+              #
+              - type: horizontal-stack
+                cards:
+                  - type: entities
+                    entities:
+                      - entity: input_datetime.luftbefeuchter_wohnzimmer_endzeit
+                        time:

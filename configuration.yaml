@@ -759,3 +759,25 @@ timer:
     duration: "00:03:00"
     name: Timer Bewegungsmelder Flur
     icon: "mdi:alarm"
+  bewegungsmelder_kueche:
+    duration: "00:03:00"
+    name: Timer Bewegungsmelder Küche
+    icon: "mdi:alarm"
+  bewegungsmelder_werkstatt:
+    duration: "00:03:00"
+    name: Timer Bewegungsmelder Werkstatt
+    icon: "mdi:alarm"
+  bewegungsmelder_schlafzimmer:
+    duration: "00:03:00"
+    name: Timer Bewegungsmelder Schlafzimmer
+    icon: "mdi:alarm"
+  bewegungsmelder_wohnzimmer:
+    duration: "00:03:00"
+    name: Timer Bewegungsmelder Wohnzimmer
+    icon: "mdi:alarm"
+#
+# FOLDER WATCHER
+#
+folder_watcher:
+  - folder: /media/frigate/clips/
+  - folder: /media/PiNAS-Files/Recordings_Person_Detection/
