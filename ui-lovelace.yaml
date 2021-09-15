@@ -3237,6 +3237,14 @@ views:
                   - type: entities
                     entities:
                       - entity: input_number.pflanzschrank_luftfeuchtigkeit
+              #
+              ###PFLANZSCHRANK MAX LUFTFEUCHTE#######################################################
+              #
+              - type: horizontal-stack
+                cards:
+                  - type: entities
+                    entities:
+                      - entity: input_number.pflanzschrank_maximale_luftfeuchtigkeit
           #
           ###PFLANZSCHRANK PLUGS LABEL CARD###############################################
           #
@@ -5355,14 +5363,14 @@ views:
             cards:
               - type: "custom:button-card"
                 template: person_detect_card
-                entity: sensor.wohnzimmer_fenster_person
+                entity: sensor.wohnzimmer_person
                 name: Personen Wohnzimmer
               #
               ###ALARM WOHNZIMMER CAT DETECT #######################################################
               #
               - type: "custom:button-card"
                 template: cat_detect_card
-                entity: sensor.wohnzimmer_fenster_cat
+                entity: sensor.wohnzimmer_cat
                 name: Katze Wohnzimmer
           #
           ###ALARM WOHNZIMMER DOOR SENSOR#######################################################

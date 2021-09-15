@@ -637,6 +637,7 @@ google:
 tplink:
   discovery: false
   switch:
+    - host: 192.168.178.34
     - host: 192.168.178.38
     - host: 192.168.178.39
     - host: 192.168.178.40
@@ -647,6 +648,7 @@ tplink:
     - host: 192.168.178.53
     - host: 192.168.178.54
     - host: 192.168.178.55
+    - host: 192.168.178.60
     - host: 192.168.178.62
     - host: 192.168.178.63
     - host: 192.168.178.75
@@ -775,9 +777,40 @@ timer:
     duration: "00:03:00"
     name: Timer Bewegungsmelder Wohnzimmer
     icon: "mdi:alarm"
+  luftbefeuchter_wohnzimmer:
+    duration: "00:15:00"
+    name: Timer Luftbefeuchter Wohnzimmer
+    icon: "mdi:alarm"
 #
 # FOLDER WATCHER
 #
 folder_watcher:
   - folder: /media/frigate/clips/
   - folder: /media/PiNAS-Files/Recordings_Person_Detection/
+#
+# API INTEGRATION
+#
+api:
+#
+# TELEGRAM BOT INTEGRATION
+#
+telegram_bot:
+  - platform: polling
+    api_key: !secret telegram_token
+    allowed_chat_ids: 
+      - !secret telegram_chat
+#
+# TELEGRAM NOTIFY
+#
+notify:
+  - platform: telegram
+    name: Telegram Smart Home Alerts Bot
+    chat_id: !secret telegram_chat
+#
+# SSL
+#
+#http:  
+#  ssl_certificate: !secret ssl_fullchain_path
+#  ssl_key: !secret ssl_privkey_path
+#  ip_ban_enabled: true
+#  login_attempts_threshold: 5

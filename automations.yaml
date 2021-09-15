@@ -219,68 +219,6 @@
     target:
       entity_id: switch.00085a49a49c0f
   mode: single
-- id: '1631178215439'
-  alias: OBJECT DETECTION - PERSON - Licht Wohnzimmer Nacht
-  description: ''
-  trigger:
-  - platform: state
-    entity_id: sensor.wohnzimmer_fenster_sd_person
-    to: '1'
-  condition:
-  - condition: state
-    entity_id: sun.sun
-    state: below_horizon
-  action:
-  - service: script.wohnzimmer_nacht
-  mode: single
-- id: '1631178399903'
-  alias: OBJECT DETECTION - PERSON - Licht Wohnzimmer tagsüber
-  description: ''
-  trigger:
-  - platform: state
-    entity_id: sensor.wohnzimmer_fenster_sd_person
-    to: '1'
-  condition:
-  - condition: state
-    entity_id: sun.sun
-    state: above_horizon
-  action:
-  - service: script.wohnzimmer_tageslicht
-  mode: single
-- id: '1631214382819'
-  alias: OBJECT DETECTION - FULL HD CAPTURE PERSON - Wohnzimmer
-  description: ''
-  trigger:
-  - platform: state
-    entity_id: sensor.wohnzimmer_fenster_sd_person
-    to: '1'
-  condition: []
-  action:
-  - service: camera.record
-    target:
-      entity_id: camera.wohnzimmer_hd_generic
-    data:
-      filename: /media/PiNAS-Files/Recordings_Person_Detection/Wohnzimmer_HD_OD_Person_Recording_{{
-        now().strftime("%Y-%m-%d--%H_%M_%S") }}.mp4
-      duration: '15'
-      lookback: '15'
-  mode: single
-- id: '1631216110226'
-  alias: OBJECT DETECTION - SNAPSHOT CAPTURE CAT - Wohnzimmer
-  description: ''
-  trigger:
-  - platform: state
-    entity_id: sensor.wohnzimmer_fenster_sd_cat
-    to: '1'
-  condition: []
-  action:
-  - service: camera.snapshot
-    target:
-      entity_id: camera.wohnzimmer_hd
-    data:
-      filename: /media/PiNAS-Files/Recordings_Person_Detection/Wohnzimmer_HD_OD_Cat_Snapshot_{{
-        now().strftime("%Y-%m-%d--%H_%M_%S") }}.jpg
-  mode: single
 - id: '1631217840293'
   alias: PiNAS - MOUNT NAS FOLDER  - PERSON DETECTION RECORDINGS
   description: ''
@@ -290,76 +228,6 @@
   condition: []
   action:
   - service: shell_command.mount_nas_folder_person_detection_recordings
-  mode: single
-- id: '1631221460646'
-  alias: OBJECT DETECTION - FULL HD CAPTURE CAT - Wohnzimmer
-  description: ''
-  trigger:
-  - platform: state
-    entity_id: sensor.wohnzimmer_fenster_sd_cat
-    to: '1'
-  condition: []
-  action:
-  - service: camera.record
-    target:
-      entity_id: camera.wohnzimmer_hd
-    data:
-      duration: 10
-      lookback: 20
-      filename: /media/PiNAS-Files/Recordings_Person_Detection/Wohnzimmer_HD_OD_Cat_Recording_{{
-        now().strftime("%Y-%m-%d--%H_%M_%S") }}.mp4
-  mode: single
-- id: '1631255967930'
-  alias: OBJECT DETECTION - FULL HD CAPTURE PERSON - Eingang
-  description: ''
-  trigger:
-  - platform: state
-    to: '1'
-    entity_id: sensor.eingang_sd_person
-  condition: []
-  action:
-  - service: camera.record
-    target:
-      entity_id: camera.eingang_hd
-    data:
-      duration: 30
-      lookback: 30
-      filename: /media/PiNAS-Files/Recordings_Person_Detection/Eingang_HD_OD_Person_Recording_{{
-        now().strftime("%Y-%m-%d--%H_%M_%S") }}.mp4
-  mode: single
-- id: '1631255994517'
-  alias: OBJECT DETECTION - FULL HD CAPTURE PERSON - Schlafzimmer
-  description: ''
-  trigger:
-  - platform: state
-    entity_id: sensor.schlafzimmer_sd_person
-    to: '1'
-  condition: []
-  action:
-  - service: camera.record
-    target:
-      entity_id: camera.schlafzimmer_hd
-    data:
-      duration: 30
-      lookback: 15
-      filename: /media/PiNAS-Files/Recordings_Person_Detection/Schlafzimmer_HD_OD_Person_Recording_{{
-        now().strftime("%Y-%m-%d--%H_%M_%S") }}.mp4
-  mode: single
-- id: '1631269247726'
-  alias: OBJECT DETECTION - SNAPSHOT CAPTURE PERSON - Wohnzimmer
-  description: ''
-  trigger:
-  - platform: state
-    entity_id: sensor.wohnzimmer_fenster_sd_person
-    to: '1'
-  condition: []
-  action:
-  - service: camera.snapshot
-    target:
-      entity_id: camera.wohnzimmer_hd
-    data:
-      filename: /media/PiNAS-Files/Recordings_Person_Detection/Wohnzimmer_HD_OD_Person_Snapshot_{{
-        now().strftime("%Y-%m-%d--%H_%M_%S") }}.jpg
   mode: single
 - id: '1631270447390'
   alias: MOTION DETECTION - SEND CAMERA SNAPSHOT - Eingang
@@ -1115,16 +983,55 @@
     target:
       entity_id: switch.00085a49a49c0f
   mode: single
-- id: '1631561143405'
-  alias: LICHT - PERSON DETECTION - Schlafzimmer an
+- id: '1631619123405'
+  alias: LUFTBEFEUCHTER Wohnzimmer an
   description: ''
   trigger:
-  - platform: state
-    entity_id: sensor.schlafzimmer_person
-    to: '1'
-  condition: []
+  - platform: time_pattern
+    hours: /2
+  condition:
+  - condition: time
+    after: input_datetime.luftbefeuchter_wohnzimmer_startzeit
+    before: input_datetime.luftbefeuchter_wohnzimmer_endzeit
   action:
   - service: switch.turn_on
     target:
-      entity_id: switch.00085a49a49f84
+      entity_id:
+      - switch.steckdose_wohnzimmer_luftbefeuchter
+      - switch.steckdose_wohnzimmer_luftbefeuchter_fenster
+  - service: timer.start
+    data:
+      duration: '0'
+    target:
+      entity_id: timer.luftbefeuchter_wohnzimmer
+  mode: single
+- id: '1631622192860'
+  alias: LUFTBEFEUCHTER Wohnzimmer aus
+  description: ''
+  trigger:
+  - platform: event
+    event_type: timer.finished
+    event_data:
+      entity_id: timer.luftbefeuchter_wohnzimmer
+  condition: []
+  action:
+  - service: switch.turn_off
+    target:
+      entity_id:
+      - switch.steckdose_wohnzimmer_luftbefeuchter
+      - switch.steckdose_wohnzimmer_luftbefeuchter_fenster
+  mode: single
+- id: '1631638421876'
+  alias: Telegram Test
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: automation.batteriewarnung_bewegungsmelder_wohnzimmer_tv_2
+    to: 'on'
+  condition: []
+  action:
+  - service: notify.telegram_smart_home_alerts_bot
+    data:
+      message: Test
+      title: Test
   mode: single
