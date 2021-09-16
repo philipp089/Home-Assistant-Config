@@ -13,9 +13,9 @@ condition:
   - condition: state
     entity_id: input_boolean.person_detection_frigate_video_to_telegram
     state: "on"
-#  - condition: state
-#    entity_id: device_tracker.sm_n975f
-#    state: "away"
+  - condition: state
+    entity_id: device_tracker.sm_n975f
+    state: "not_home"
 action:
   - delay:
       hours: 0
