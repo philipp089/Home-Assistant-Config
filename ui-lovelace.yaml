@@ -5709,3 +5709,30 @@ views:
                     entities:
                       - entity: input_datetime.luftbefeuchter_wohnzimmer_endzeit
                         time:
+        #
+        ###PERSON/CAT DETECTION TAB LABEL CARD#####################################################
+        #
+          - type: vertical-stack
+            cards:
+              - type: "custom:button-card"
+                template: label_card
+                name: Person/Cat Detection
+                tap_action:
+                  action: navigate
+                  navigation_path: /lovelace/default-view
+              #
+              ###PERSON DETECTION INPUT BOOLEAN#######################################################
+              #
+              - type: horizontal-stack
+                cards:
+                  - type: entities
+                    entities:
+                      - entity: input_boolean.person_detection_frigate_video_to_telegram
+              #
+              ###CAT DETECTION INPUT BOOLEAN#######################################################
+              #
+              - type: horizontal-stack
+                cards:
+                  - type: entities
+                    entities:
+                      - entity: input_boolean.cat_detection_frigate_video_to_telegram

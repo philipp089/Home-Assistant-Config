@@ -1,0 +1,33 @@
+alias: CAT DETECTION - FRIGATE VIDEO TO TELEGRAM
+description: Cat detection in cameras from Frigate
+trigger:
+  - platform: mqtt
+    topic: frigate/events
+condition:
+  - condition: template
+    value_template: '{{ trigger.payload_json["type"] == "end" }}'
+  - condition: and
+    conditions:
+      condition: template
+      value_template: '{{trigger.payload_json["after"]["label"] == "cat" }}'
+  - condition: state
+    entity_id: input_boolean.cat_detection_frigate_video_to_telegram
+    state: "on"
+action:
+  - delay:
+      hours: 0
+      minutes: 1
+      seconds: 0
+      milliseconds: 0
+  - service: notify.telegram_smart_home_alerts_bot
+    data:
+      message: Video of alert
+      data:
+        video:
+          - url: !secret frigate_video_url
+            timeout: 1000
+            caption: >-
+              Video {{trigger.payload_json["after"]["label"]}} detected on
+              {{trigger.payload_json["after"]["camera"]}}, Event ID
+              '{{trigger.payload_json["after"]["id"]}}''
+mode: parallel

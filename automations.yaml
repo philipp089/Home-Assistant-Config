@@ -1021,17 +1021,3 @@
       - switch.steckdose_wohnzimmer_luftbefeuchter
       - switch.steckdose_wohnzimmer_luftbefeuchter_fenster
   mode: single
-- id: '1631638421876'
-  alias: Telegram Test
-  description: ''
-  trigger:
-  - platform: state
-    entity_id: automation.batteriewarnung_bewegungsmelder_wohnzimmer_tv_2
-    to: 'on'
-  condition: []
-  action:
-  - service: notify.telegram_smart_home_alerts_bot
-    data:
-      message: Test
-      title: Test
-  mode: single

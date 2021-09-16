@@ -36,6 +36,7 @@ automation pflanzschrank: !include_dir_list ./automations/bereiche/pflanzschrank
 automation schlafzimmer: !include_dir_list ./automations/bereiche/schlafzimmer
 automation werkstatt: !include_dir_list ./automations/bereiche/werkstatt
 automation wohnzimmer: !include_dir_list ./automations/bereiche/wohnzimmer
+automation frigate: !include_dir_list ./automations/frigate
 script: !include scripts.yaml
 scene: !include scenes.yaml
 #
