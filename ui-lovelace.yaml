@@ -1144,7 +1144,7 @@ button_card_templates:
 ###SWIPE NAVIGATION##############################################################
 #
 swipe_nav:
-  wrap: false
+  wrap: true
   animate: swipe
   skip_tabs: 
   prevent_default: true

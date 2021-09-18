@@ -754,6 +754,7 @@ switch:
 shell_command:
   mount_nas_folder_person_detection_recordings: !secret Mount_Path_Person_Detection_Recordings
   move_frigate_files_to_nas: "mv /media/frigate/clips/*.mp4 /media/PiNAS-Files/Recordings_Person_Detection/"
+  move_frigate_image_files_to_nas: "mv /media/frigate/clips/*.jpg /media/PiNAS-Files/Recordings_Person_Detection/"
 #
 # TIMER
 #

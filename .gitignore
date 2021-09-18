@@ -42,7 +42,8 @@ __pycache__
 tts
 node-red
 deps
-www
+www/community
+www/tmp
 #
 # Specific File ignores
 #

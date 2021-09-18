@@ -706,14 +706,14 @@
       entity_id: script.badezimmer_tageslicht_an
   mode: single
 - id: '1631384831806'
-  alias: PINAS - FRIGATE - Move Files to PiNAS daily
+  alias: PINAS - FRIGATE - Move Image-Files to PiNAS daily
   description: ''
   trigger:
   - platform: time
     at: 02:00
   condition: []
   action:
-  - service: shell_command.move_frigate_files_to_nas
+  - service: shell_command.move_frigate_image_files_to_nas
   mode: single
 - id: '1631391610174'
   alias: MOTION SENSOR - Wohnzimmer Kamin - LICHT - Flur an - Werktags tagsüber
