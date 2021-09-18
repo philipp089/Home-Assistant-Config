@@ -13,7 +13,6 @@ __pycache__
 *.conf
 *.log.1
 *.gz
-*.js
 *.backup
 *.svg
 *.png
@@ -31,7 +30,6 @@ __pycache__
 !*.md
 !scripts.yaml
 !.gitkeep
-!.config.js
 #
 # Folder ignores
 #
