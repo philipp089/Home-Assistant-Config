@@ -1188,7 +1188,7 @@ views:
                 name: Licht
                 tap_action:
                   action: navigate
-                  navigation_path: /lovelace/licht
+                  navigation_path: /db-mobile/licht
               #
               ###HOME QUICK ACCESS MEDIA######################################################
               #
@@ -1198,7 +1198,7 @@ views:
                 name: Media
                 tap_action:
                   action: navigate
-                  navigation_path: /lovelace/media
+                  navigation_path: /db-mobile/media
               #
               ###HOME QUICK ACCESS PLUGS######################################################
               #
@@ -1208,7 +1208,7 @@ views:
                 name: Plugs
                 tap_action:
                   action: navigate
-                  navigation_path: /lovelace/plugs
+                  navigation_path: /db-mobile/plugs
               #
               ###HOME QUICK ACCESS PFLANZEN###################################################
               #
@@ -1218,7 +1218,7 @@ views:
                 name: Pflanzen
                 tap_action:
                   action: navigate
-                  navigation_path: /lovelace/pflanzen
+                  navigation_path: /db-mobile/pflanzen
           #
           ###HOME QUICK ACCESS TEMPS######################################################
           #
@@ -1230,7 +1230,7 @@ views:
                 name: Temperatur
                 tap_action:
                   action: navigate
-                  navigation_path: /lovelace/temperatur
+                  navigation_path: /db-mobile/temperatur
               #
               ###HOME QUICK ACCESS RASPBERRY##################################################
               #
@@ -1240,7 +1240,7 @@ views:
                 name: Raspberry
                 tap_action:
                   action: navigate
-                  navigation_path: /lovelace/raspberry
+                  navigation_path: /db-mobile/raspberry
               #
               ###HOME QUICK ACCESS DESKTOP####################################################
               #
@@ -1250,7 +1250,7 @@ views:
                 name: Desktop
                 tap_action:
                   action: navigate
-                  navigation_path: /lovelace/desktop
+                  navigation_path: /db-mobile/desktop
               #
               ###HOME QUICK ACCESS  PLAYSTATION###############################################
               #
@@ -1260,7 +1260,7 @@ views:
                 name: Playstation
                 tap_action:
                   action: navigate
-                  navigation_path: /lovelace/playstation
+                  navigation_path: /db-mobile/playstation
           #
           ###HOME QUICK ACCESS WETTER#####################################################
           #
@@ -1272,7 +1272,7 @@ views:
                 name: Wetter
                 tap_action:
                   action: navigate
-                  navigation_path: /lovelace/wetter
+                  navigation_path: /db-mobile/wetter
               #
               ###HOME QUICK ACCESS CAMERAS####################################################
               #
@@ -1282,7 +1282,7 @@ views:
                 name: Kameras
                 tap_action:
                   action: navigate
-                  navigation_path: /lovelace/kameras
+                  navigation_path: /db-mobile/kameras
               #
               ###HOME QUICK ACCESS SMARTPHONE#################################################
               #
@@ -1292,7 +1292,7 @@ views:
                 name: Smartphone
                 tap_action:
                   action: navigate
-                  navigation_path: /lovelace/smartphone
+                  navigation_path: /db-mobile/smartphone
               #
               ###HOME QUICK ACCESS BATTERIEN##################################################
               #
@@ -1302,7 +1302,7 @@ views:
                 name: Batterien
                 tap_action:
                   action: navigate
-                  navigation_path: /lovelace/batterien
+                  navigation_path: /db-mobile/batterien
           #
           ###HOME QUICK ACCESS ALARM######################################################
           #
@@ -1314,7 +1314,7 @@ views:
                 name: Alarm
                 tap_action:
                   action: navigate
-                  navigation_path: /lovelace/alarm
+                  navigation_path: /db-mobile/alarm
               #
               ###HOME QUICK ACCESS HEALTH####################################################
               #
@@ -1324,7 +1324,7 @@ views:
                 name: Gesundheit
                 tap_action:
                   action: navigate
-                  navigation_path: /lovelace/gesundheit
+                  navigation_path: /db-mobile/gesundheit
               #
               ###HOME QUICK ACCESS CALENDAR#################################################
               #
@@ -1334,7 +1334,7 @@ views:
                 name: Kalender
                 tap_action:
                   action: navigate
-                  navigation_path: /lovelace/kalender
+                  navigation_path: /db-mobile/kalender
               #
               ###HOME QUICK ACCESS AUTOMATIONS##################################################
               #
@@ -1344,7 +1344,7 @@ views:
                 name: Automations
                 tap_action:
                   action: navigate
-                  navigation_path: /lovelace/automations
+                  navigation_path: /db-mobile/automations
 
           #
           ###HOME WOHNZIMMER LABEL CARD###################################################
@@ -1940,7 +1940,7 @@ views:
         name: Wohnzimmer
         tap_action:
           action: navigate
-          navigation_path: /lovelace/default-view
+          navigation_path: /db-mobile/default-view
       #
       ###LICHTER WOHNZIMMER LIGHTMODE HELL############################################
       #
@@ -2771,7 +2771,7 @@ views:
             name: Wohnzimmer
             tap_action:
               action: navigate
-              navigation_path: /lovelace/default-view
+              navigation_path: /db-mobile/default-view
           #
           ###MEDIA MEDIA PLAYER CHROMECAST WOHNZIMMER#####################################
           #
@@ -2940,7 +2940,7 @@ views:
             name: Wohnzimmer
             tap_action:
               action: navigate
-              navigation_path: /lovelace/default-view
+              navigation_path: /db-mobile/default-view
           #
           ###PLUGS WOHNZIMMER PLUG FERNSEHER##############################################
           #
@@ -3051,7 +3051,7 @@ views:
             name: Pflanzschrank
             tap_action:
               action: navigate
-              navigation_path: /lovelace/default-view
+              navigation_path: /db-mobile/default-view
           #
           ###PFLANZSCHRANK CURRENT ILLUMINATION###########################################
           #
@@ -3146,7 +3146,7 @@ views:
                 name: Zeiten
                 tap_action:
                   action: navigate
-                  navigation_path: /lovelace/default-view
+                  navigation_path: /db-mobile/default-view
               #
               ###PFLANZSCHRANK PHASEN WERKTAGS #######################################################
               #
@@ -3199,7 +3199,7 @@ views:
                 name: Abluft
                 tap_action:
                   action: navigate
-                  navigation_path: /lovelace/default-view
+                  navigation_path: /db-mobile/default-view
               #
               ###PFLANZSCHRANK ABLUFT START#######################################################
               #
@@ -3228,7 +3228,7 @@ views:
                 name: Mindest-Luftfeuchtigkeit
                 tap_action:
                   action: navigate
-                  navigation_path: /lovelace/default-view
+                  navigation_path: /db-mobile/default-view
               #
               ###PFLANZSCHRANK MIN LUFTFEUCHTE#######################################################
               #
@@ -3309,7 +3309,7 @@ views:
             name: Wohnzimmer
             tap_action:
               action: navigate
-              navigation_path: /lovelace/default-view
+              navigation_path: /db-mobile/default-view
           #
           ###TEMPS WOHNZIMMER ACTUAL TEMPERATURE##########################################
           #
@@ -3760,7 +3760,7 @@ views:
             name: Home Assistant
             tap_action:
               action: navigate
-              navigation_path: /lovelace/default-view
+              navigation_path: /db-mobile/default-view
           #
           ###RASPBERRY HOME ASSISTANT CPU USAGE###########################################
           #
@@ -3905,7 +3905,7 @@ views:
             name: CPU
             tap_action:
               action: navigate
-              navigation_path: /lovelace/default-view
+              navigation_path: /db-mobile/default-view
           #
           ###PC CPU USAGE#################################################################
           #
@@ -4542,7 +4542,7 @@ views:
             name: Playstation 4
             tap_action:
               action: navigate
-              navigation_path: /lovelace/default-view
+              navigation_path: /db-mobile/default-view
       #
       ###PLAYSTATION TAB MEDIA PLAYER CARD############################################################
       #
@@ -4629,11 +4629,11 @@ views:
             name: Wetter
             tap_action:
               action: navigate
-              navigation_path: /lovelace/default-view
+              navigation_path: /db-mobile/default-view
           #
           ###WETTER WEATHER CARD##########################################################
           #
-          - type: custom:weather-card
+          - type: "custom:weather-card"
             entity: weather.home
             name: Zuhause
           #
@@ -4746,7 +4746,7 @@ views:
             name: Wohnzimmer
             tap_action:
               action: navigate
-              navigation_path: /lovelace/default-view
+              navigation_path: /db-mobile/default-view
           #
           ###CAMERA WOHNZIMMER LIVE STREAM##############################################
           #
@@ -4805,7 +4805,7 @@ views:
             name: Smartphone
             tap_action:
               action: navigate
-              navigation_path: /lovelace/default-view
+              navigation_path: /db-mobile/default-view
           #
           ###SMARTPHONE BATTERY LEVEL##############################################
           #
@@ -5241,7 +5241,7 @@ views:
             name: Batterien
             tap_action:
               action: navigate
-              navigation_path: /lovelace/default-view
+              navigation_path: /db-mobile/default-view
           #
           ###BATTERIEN TAB BATTERY CARD###################################################
           #
@@ -5339,7 +5339,7 @@ views:
             name: Wohnzimmer
             tap_action:
               action: navigate
-              navigation_path: /lovelace/default-view
+              navigation_path: /db-mobile/default-view
           #
           ###ALARM WOHNZIMMER MOTION SENSOR KAMIN #######################################################
           #
@@ -5552,7 +5552,7 @@ views:
             name: Gesundheit
             tap_action:
               action: navigate
-              navigation_path: /lovelace/default-view
+              navigation_path: /db-mobile/default-view
   #
   ###CALENDAR TAB BEGIN##########################################################
   #
@@ -5571,7 +5571,7 @@ views:
             name: Philipp
             tap_action:
               action: navigate
-              navigation_path: /lovelace/default-view
+              navigation_path: /db-mobile/default-view
       #
       ###CALENDAR TAB ATOMIC CALENDAR REVICE PHILIPP#####################################################
       #
@@ -5600,7 +5600,7 @@ views:
             name: Modi Werktags
             tap_action:
               action: navigate
-              navigation_path: /lovelace/default-view
+              navigation_path: /db-mobile/default-view
           #
           ###TAGMODUS WERKTAGS #######################################################
           #
@@ -5627,7 +5627,7 @@ views:
             name: Modi Wochenende
             tap_action:
               action: navigate
-              navigation_path: /lovelace/default-view
+              navigation_path: /db-mobile/default-view
           #
           ###TAGMODUS WOCHENENDE #######################################################
           #
@@ -5654,7 +5654,7 @@ views:
             name: Lichtwecker
             tap_action:
               action: navigate
-              navigation_path: /lovelace/default-view
+              navigation_path: /db-mobile/default-view
           #
           ###AUTOMATIONS - LICHTWECKER#######################################################
           #
@@ -5671,7 +5671,7 @@ views:
             name: Temperatur - Haus leer
             tap_action:
               action: navigate
-              navigation_path: /lovelace/default-view
+              navigation_path: /db-mobile/default-view
           #
           ###AUTOMATIONS - TEMPERATUR HAUS LEER#######################################################
           #
@@ -5690,7 +5690,7 @@ views:
                 name: Luftbeufeuchter - Zeiten
                 tap_action:
                   action: navigate
-                  navigation_path: /lovelace/default-view
+                  navigation_path: /db-mobile/default-view
               #
               ###AUTOMATIONS LUFTBEFEUCHTER STARTZEIT#######################################################
               #
@@ -5719,7 +5719,7 @@ views:
                 name: Person/Cat Detection
                 tap_action:
                   action: navigate
-                  navigation_path: /lovelace/default-view
+                  navigation_path: /db-mobile/default-view
               #
               ###PERSON DETECTION INPUT BOOLEAN#######################################################
               #

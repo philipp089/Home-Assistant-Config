@@ -325,10 +325,13 @@ flur_aus:
     target:
       entity_id: switch.00085a49a4b411
   - service: light.turn_off
-    target:
-      area_id: 04366801e60c4c599cc9d39e07493fe0
     data:
       transition: 2
+    target:
+      entity_id:
+      - light.color_temperature_light_13
+      - light.color_temperature_light_14
+      - light.color_temperature_light_15
   mode: single
   icon: mdi:lightbulb-outline
 flur_konzentration_50:

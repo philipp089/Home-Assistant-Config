@@ -1021,3 +1021,13 @@
       - switch.steckdose_wohnzimmer_luftbefeuchter
       - switch.steckdose_wohnzimmer_luftbefeuchter_fenster
   mode: single
+- id: '1632057508009'
+  alias: PINAS - FRIGATE - Move Video-Files to PiNAS daily
+  description: ''
+  trigger:
+  - platform: time
+    at: 02:00
+  condition: []
+  action:
+  - service: shell_command.move_frigate_files_to_nas
+  mode: single

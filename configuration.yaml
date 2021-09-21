@@ -6,7 +6,14 @@ default_config:
 # LOVELACE YAML MODE
 #
 lovelace:
-  mode: yaml
+  mode: storage
+  dashboards:
+    db-mobile:
+      mode: yaml
+      title: Mobile Dashboard
+      icon: "mdi:cellphone-android"
+      show_in_sidebar: true
+      filename: ui-lovelace.yaml
 #
 # ALLOW CUSTOMISATION OVER CUSTOMIZE.YAML FILE
 #
@@ -23,6 +30,21 @@ discovery:
 #
 frontend:
   themes: !include themes.yaml
+#
+# COLOR EXTRACTOR
+#
+color_extractor:
+#
+# INFLUXDB INTEGRATION
+#
+influxdb:
+  host: 192.168.178.35
+  port: 8086
+  database: !secret Influx_DB_Database
+  username: !secret Influx_DB_User
+  password: !secret Influx_DB_Pass
+  max_retries: 3
+  default_measurement: state
 #
 # INCLUDES
 #
