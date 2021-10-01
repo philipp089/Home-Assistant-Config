@@ -22,6 +22,11 @@ homeassistant:
   whitelist_external_dirs:
       - "/media/PiNAS-Files/Recordings_Person_Detection"
 #
+# AUTH PROVIDERS
+#
+  auth_providers:
+    - type: homeassistant
+#
 # SET MODE TO AUTO-DISCOVERY (RECOMMENDATION FOR RASPBEE II)
 #
 discovery:
@@ -30,6 +35,14 @@ discovery:
 #
 frontend:
   themes: !include themes.yaml
+#
+# LOGGER
+#
+logger:
+  default: info
+  logs:
+    homeassistant.components.shell_command: debug
+    homeassistant.components.webhook: debug
 #
 # COLOR EXTRACTOR
 #
@@ -638,7 +651,7 @@ homematic:
       password: !secret homematic_password
       path: /groups
   hosts:
-    ccu3-webui:
+    ccu3:
       host: 192.168.178.37
       username: !secret homematic_username
       password: !secret homematic_password
@@ -692,9 +705,9 @@ media_player:
 #
 wake_on_lan:
 
-samsungtv:
-  - host: 192.168.178.70
-    mac: !secret samsung_mac_adress
+#samsungtv:
+#  - host: 192.168.178.70
+#    mac: !secret samsung_mac_adress
 #
 # WITHINGS BODY+ INTEGRATION
 #

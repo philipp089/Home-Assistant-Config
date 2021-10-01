@@ -193,32 +193,6 @@
     target:
       entity_id: script.wohnzimmer_tageslicht
   mode: single
-- id: '1631047942491'
-  alias: SYNC - Deckenleuchte Wohnzimmer - Wandschalter Wohnzimmer Sync an
-  description: ''
-  trigger:
-  - platform: state
-    entity_id: light.lichtgruppe_wohnzimmer_deckenleuchte
-    to: 'on'
-  condition: []
-  action:
-  - service: switch.turn_on
-    target:
-      entity_id: switch.00085a49a49c0f
-  mode: single
-- id: '1631048434265'
-  alias: SYNC - Deckenleuchte Wohnzimmer - Wandschalter Wohnzimmer Sync aus
-  description: ''
-  trigger:
-  - platform: state
-    entity_id: light.lichtgruppe_wohnzimmer_deckenleuchte
-    to: 'off'
-  condition: []
-  action:
-  - service: switch.turn_off
-    target:
-      entity_id: switch.00085a49a49c0f
-  mode: single
 - id: '1631217840293'
   alias: PiNAS - MOUNT NAS FOLDER  - PERSON DETECTION RECORDINGS
   description: ''
@@ -710,7 +684,7 @@
   description: ''
   trigger:
   - platform: time
-    at: 02:00
+    at: 03:00
   condition: []
   action:
   - service: shell_command.move_frigate_image_files_to_nas
@@ -1030,4 +1004,28 @@
   condition: []
   action:
   - service: shell_command.move_frigate_files_to_nas
+  mode: single
+- id: '1632889086015'
+  alias: PLANZSCHRANK - ABLUFT - Start
+  description: ''
+  trigger:
+  - platform: time
+    at: input_datetime.pflanzschrank_abluft_start
+  condition: []
+  action:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.steckdose_pflanzschrank_abluft
+  mode: single
+- id: '1632889117332'
+  alias: PLANZSCHRANK - ABLUFT - Aus
+  description: ''
+  trigger:
+  - platform: time
+    at: input_datetime.pflanzschrank_abluft_aus
+  condition: []
+  action:
+  - service: switch.turn_off
+    target:
+      entity_id: switch.steckdose_pflanzschrank_abluft
   mode: single

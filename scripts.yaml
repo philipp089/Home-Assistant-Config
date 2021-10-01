@@ -75,9 +75,6 @@ wohnzimmer_nacht:
   icon: mdi:lightbulb-outline
 wohnzimmer_aus:
   sequence:
-  - service: switch.turn_off
-    target:
-      entity_id: switch.00085a49a49c0f
   - service: light.turn_off
     target:
       area_id: 9b7ff4c63c5040569f459d83159fe925
@@ -397,9 +394,9 @@ werkstatt_nacht:
 werkstatt_aus:
   alias: Werkstatt aus
   sequence:
-  - service: switch.turn_off
+  - service: light.turn_off
     target:
-      entity_id: switch.00085a49a49be1
+      area_id: c6acd19307984c2eb4d2ceb8376084fb
   mode: single
   icon: mdi:lightbulb-outline
 werkstatt_konzentration_50:
@@ -445,14 +442,14 @@ wohnzimmer_tageslicht:
 schlafzimmer_nacht:
   alias: Schlafzimmer Nacht
   sequence:
-  - service: switch.turn_off
+  - service: light.turn_off
     target:
-      entity_id: switch.00085a49a49f84
+      entity_id: light.color_temperature_light_18
   - delay:
       hours: 0
       minutes: 0
-      seconds: 1
-      milliseconds: 0
+      seconds: 0
+      milliseconds: 100
   - service: light.turn_off
     target:
       entity_id:
@@ -461,7 +458,7 @@ schlafzimmer_nacht:
       hours: 0
       minutes: 0
       seconds: 0
-      milliseconds: 500
+      milliseconds: 100
   - service: light.turn_on
     data:
       kelvin: 2500
@@ -527,9 +524,6 @@ schlafzimmer_medium:
 schlafzimmer_aus:
   alias: Schlafzimmer aus
   sequence:
-  - service: switch.turn_off
-    target:
-      entity_id: switch.00085a49a49f84
   - service: light.turn_off
     target:
       area_id: 4b464753ae28423c9ad179a3027094eb
@@ -667,3 +661,575 @@ wohnzimmer_colorloop:
       effect: colorloop
   mode: single
   icon: mdi:lightbulb-outline
+wohnzimmer_fernseher_an_aus:
+  alias: Wohnzimmer Fernseher an/aus
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: power
+  mode: single
+  icon: mdi:television
+samsung_q7_series_power_toggle:
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: power_toggle
+  mode: single
+  alias: SAMSUNG Q7 SERIES - Power Toggle
+  icon: mdi:television
+samsung_q7_series_power_on:
+  alias: SAMSUNG Q7 SERIES - Power On
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: power_on
+  mode: single
+  icon: mdi:television
+samsung_q7_series_power_off:
+  alias: SAMSUNG Q7 SERIES - Power Off
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: power_off
+  mode: single
+  icon: mdi:television
+samsung_q7_series_sound_mute:
+  alias: SAMSUNG Q7 SERIES - Sound mute
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: sound_mute
+  mode: single
+  icon: mdi:television
+samsung_q7_series_sound_increase:
+  alias: SAMSUNG Q7 SERIES - Sound increase
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: sound_increase
+  mode: single
+  icon: mdi:television
+samsung_q7_series_sound_decrease:
+  alias: SAMSUNG Q7 SERIES - Sound decrease
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: sound_decrease
+  mode: single
+  icon: mdi:television
+samsung_q7_series_channel_increase:
+  alias: SAMSUNG Q7 SERIES - Channel increase
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: channel_increase
+  mode: single
+  icon: mdi:television
+samsung_q7_series_channel_decrease:
+  alias: SAMSUNG Q7 SERIES - Channel decrease
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: channel_decrease
+  mode: single
+  icon: mdi:television
+samsung_q7_series_channel_pre:
+  alias: SAMSUNG Q7 SERIES - Channel pre
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: channel_pre
+  mode: single
+  icon: mdi:television
+samsung_q7_series_channel_list:
+  alias: SAMSUNG Q7 SERIES - Channel list
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: channel_list
+  mode: single
+  icon: mdi:television
+samsung_q7_series_channel_guide:
+  alias: SAMSUNG Q7 SERIES - Channel guide
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: channel_guide
+  mode: single
+  icon: mdi:television
+samsung_q7_series_channel_0:
+  alias: SAMSUNG Q7 SERIES - Channel 0
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: channel_0
+  mode: single
+  icon: mdi:television
+samsung_q7_series_channel_1:
+  alias: SAMSUNG Q7 SERIES - Channel 1
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: channel_1
+  mode: single
+  icon: mdi:television
+samsung_q7_series_channel_2:
+  alias: SAMSUNG Q7 SERIES - Channel 2
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: channel_2
+  mode: single
+  icon: mdi:television
+samsung_q7_series_channel_3:
+  alias: SAMSUNG Q7 SERIES - Channel 3
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: channel_3
+  mode: single
+  icon: mdi:television
+samsung_q7_series_channel_4:
+  alias: SAMSUNG Q7 SERIES - Channel 4
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: channel_4
+  mode: single
+  icon: mdi:television
+samsung_q7_series_channel_5:
+  alias: SAMSUNG Q7 SERIES - Channel 5
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: channel_5
+  mode: single
+  icon: mdi:television
+samsung_q7_series_channel_6:
+  alias: SAMSUNG Q7 SERIES - Channel 6
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: channel_6
+  mode: single
+  icon: mdi:television
+samsung_q7_series_channel_7:
+  alias: SAMSUNG Q7 SERIES - Channel 7
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: channel_7
+  mode: single
+  icon: mdi:television
+samsung_q7_series_channel_8:
+  alias: SAMSUNG Q7 SERIES - Channel 8
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: channel_8
+  mode: single
+  icon: mdi:television
+samsung_q7_series_channel_9:
+  alias: SAMSUNG Q7 SERIES - Channel 9
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: channel_9
+  mode: single
+  icon: mdi:television
+samsung_q7_series_navigation_right:
+  alias: SAMSUNG Q7 SERIES - Navigation right
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: navigation_right
+  mode: single
+  icon: mdi:television
+samsung_q7_series_navigation_up:
+  alias: SAMSUNG Q7 SERIES - Navigation up
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: navigation_up
+  mode: single
+  icon: mdi:television
+samsung_q7_series_navigation_down:
+  alias: SAMSUNG Q7 SERIES - Navigation down
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: navigation_down
+  mode: single
+  icon: mdi:television
+samsung_q7_series_navigation_left:
+  alias: SAMSUNG Q7 SERIES - Navigation left
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: navigation_left
+  mode: single
+  icon: mdi:television
+samsung_q7_series_navigation_ok:
+  alias: SAMSUNG Q7 SERIES - Navigation ok
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: navigation_ok
+  mode: single
+  icon: mdi:television
+samsung_q7_series_navigation_return:
+  alias: SAMSUNG Q7 SERIES - Navigation return
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: navigation_return
+  mode: single
+  icon: mdi:television
+samsung_q7_series_navigation_exit:
+  alias: SAMSUNG Q7 SERIES - Navigation exit
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: navigation_exit
+  mode: single
+  icon: mdi:television
+samsung_q7_series_navigation_smart:
+  alias: SAMSUNG Q7 SERIES - Navigation smart
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: navigation_smart
+  mode: single
+  icon: mdi:television
+samsung_q7_series_navigation_menu:
+  alias: SAMSUNG Q7 SERIES - Navigation menu
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: navigation_menu
+  mode: single
+  icon: mdi:television
+samsung_q7_series_navigation_back:
+  alias: SAMSUNG Q7 SERIES - Navigation back
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: navigation_back
+  mode: single
+  icon: mdi:television
+samsung_q7_series_input_select:
+  alias: SAMSUNG Q7 SERIES - Input select
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: input_select
+  mode: single
+  icon: mdi:television
+samsung_q7_series_input_dtv:
+  alias: SAMSUNG Q7 SERIES - Input dtv
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: input_dtv
+  mode: single
+  icon: mdi:television
+samsung_q7_series_input_antenna:
+  alias: SAMSUNG Q7 SERIES - Input antenna
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: input_antenna
+  mode: single
+  icon: mdi:television
+samsung_q7_series_input_hdmi:
+  alias: SAMSUNG Q7 SERIES - Input HDMI
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: input_hdmi
+  mode: single
+  icon: mdi:television
+samsung_q7_series_input_hdmi_1:
+  alias: SAMSUNG Q7 SERIES - Input HDMI 1
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: input_hdmi_1
+  mode: single
+  icon: mdi:television
+samsung_q7_series_input_hdmi_2:
+  alias: SAMSUNG Q7 SERIES - Input HDMI 2
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: input_hdmi_2
+  mode: single
+  icon: mdi:television
+samsung_q7_series_input_hdmi_3:
+  alias: SAMSUNG Q7 SERIES - Input HDMI 3
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: input_hdmi_3
+  mode: single
+  icon: mdi:television
+samsung_q7_series_input_hdmi_4:
+  alias: SAMSUNG Q7 SERIES - Input HDMI 4
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: input_hdmi_4
+  mode: single
+  icon: mdi:television
+samsung_q7_series_input_component:
+  alias: SAMSUNG Q7 SERIES - Input Component
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: input_component
+  mode: single
+  icon: mdi:television
+samsung_q7_series_option_red:
+  alias: SAMSUNG Q7 SERIES - Option red
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: option_red
+  mode: single
+  icon: mdi:television
+samsung_q7_series_option_green:
+  alias: SAMSUNG Q7 SERIES - Option green
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: option_green
+  mode: single
+  icon: mdi:television
+samsung_q7_series_option_yellow:
+  alias: SAMSUNG Q7 SERIES - Option yellow
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: option_yellow
+  mode: single
+  icon: mdi:television
+samsung_q7_series_option_blue:
+  alias: SAMSUNG Q7 SERIES - Option blue
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: option_blue
+  mode: single
+  icon: mdi:television
+samsung_q7_series_option_tools:
+  alias: SAMSUNG Q7 SERIES - Option tools
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: option_tools
+  mode: single
+  icon: mdi:television
+samsung_q7_series_option_info:
+  alias: SAMSUNG Q7 SERIES - Option info
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: option_info
+  mode: single
+  icon: mdi:television
+samsung_q7_series_player_back:
+  alias: SAMSUNG Q7 SERIES - Player back
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: player_back
+  mode: single
+  icon: mdi:television
+samsung_q7_series_player_pause:
+  alias: SAMSUNG Q7 SERIES - Player pause
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: player_pause
+  mode: single
+  icon: mdi:television
+samsung_q7_series_player_play:
+  alias: SAMSUNG Q7 SERIES - Player play
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: player_play
+  mode: single
+  icon: mdi:television
+samsung_q7_series_player_forward:
+  alias: SAMSUNG Q7 SERIES - Player forward
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: player_forward
+  mode: single
+  icon: mdi:television
+samsung_q7_series_player_stop:
+  alias: SAMSUNG Q7 SERIES - Player stop
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: player_stop
+  mode: single
+  icon: mdi:television

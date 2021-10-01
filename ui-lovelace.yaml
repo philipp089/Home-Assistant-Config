@@ -4904,7 +4904,7 @@ views:
                     padding: 0px;
                   }
                 entities:
-                  - sensor.sm_n975f_batterietemperatur
+                  - sensor.sm_n975f_battery_temperature
                 name: Akku-Temperatur
           #
           ###SMARTPHONE IS CHARGING####################################################
@@ -4952,7 +4952,7 @@ views:
             cards:
               - type: "custom:button-card"
                 template: state_card
-                entity: sensor.sm_n975f_audio_sensor
+                entity: sensor.sm_n975f_ringer_mode
                 name: Klingelton
                 size: "14%"
                 state:
@@ -4983,7 +4983,7 @@ views:
             cards:
               - type: "custom:button-card"
                 template: state_card
-                entity: sensor.sm_n975f_storage_sensor
+                entity: sensor.sm_n975f_internal_storage
                 name: Gerätespeicher intern
                 size: "13%"
                 state:
@@ -5081,12 +5081,11 @@ views:
                 entity: sensor.local_time_philipp_smartphone
                 name: nächster Alarm
                 icon: mdi:alarm
-                size: "26%"
                 styles:
                   name:
-                    - margin-left: -47.3%
+                    - margin-left: -70.5%
                   img_cell:
-                    - margin-left: -54.3%
+                    - margin-left: -74%
           #
           ###SMARTPHONE LAST REBOOT#########################################################
           #
