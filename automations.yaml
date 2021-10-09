@@ -885,7 +885,7 @@
       entity_id: script.flur_tageslicht
   mode: single
 - id: '1631554392510'
-  alias: PLANZSCHRANK - LICHT - Tagesbeginn - Wachstum
+  alias: PFLANZSCHRANK - LICHT - Tagesbeginn - Wachstum
   description: ''
   trigger:
   - platform: time
@@ -900,7 +900,7 @@
       entity_id: switch.steckdose_pflanzschrank_licht
   mode: single
 - id: '1631554449079'
-  alias: PLANZSCHRANK - LICHT - Nacht - Wachstum
+  alias: PFLANZSCHRANK - LICHT - Nacht - Wachstum
   description: ''
   trigger:
   - platform: time
@@ -915,7 +915,7 @@
       entity_id: switch.steckdose_pflanzschrank_licht
   mode: single
 - id: '1631554492879'
-  alias: PLANZSCHRANK - LICHT - Nacht - Blüte
+  alias: PFLANZSCHRANK - LICHT - Nacht - Blüte
   description: ''
   trigger:
   - platform: time
@@ -930,7 +930,7 @@
       entity_id: switch.steckdose_pflanzschrank_licht
   mode: single
 - id: '1631554548781'
-  alias: PLANZSCHRANK - LICHT - Tagesbeginn - Blüte
+  alias: PFLANZSCHRANK - LICHT - Tagesbeginn - Blüte
   description: ''
   trigger:
   - platform: time
@@ -1006,7 +1006,7 @@
   - service: shell_command.move_frigate_files_to_nas
   mode: single
 - id: '1632889086015'
-  alias: PLANZSCHRANK - ABLUFT - Start
+  alias: PFLANZSCHRANK - ABLUFT - Start
   description: ''
   trigger:
   - platform: time
@@ -1018,7 +1018,7 @@
       entity_id: switch.steckdose_pflanzschrank_abluft
   mode: single
 - id: '1632889117332'
-  alias: PLANZSCHRANK - ABLUFT - Aus
+  alias: PFLANZSCHRANK - ABLUFT - Aus
   description: ''
   trigger:
   - platform: time
@@ -1028,4 +1028,38 @@
   - service: switch.turn_off
     target:
       entity_id: switch.steckdose_pflanzschrank_abluft
+  mode: single
+- id: '1633816061836'
+  alias: PFLANZSCHRANK - LUFTBEFEUCHTER an
+  description: ''
+  trigger:
+  - platform: time_pattern
+    hours: /2
+  condition:
+  - condition: time
+    after: input_datetime.pflanzschrank_luftbefeuchter_startzeit
+    before: input_datetime.pflanzschrank_luftbefeuchter_endzeit
+  action:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.steckdose_luftbefeuchter_pflanzschrank
+  - service: timer.start
+    data:
+      duration: '0'
+    target:
+      entity_id: timer.luftbefeuchter_pflanzschrank
+  mode: single
+- id: '1633816218133'
+  alias: PFLANZSCHRANK - LUFTBEFEUCHTER aus
+  description: ''
+  trigger:
+  - platform: event
+    event_type: timer.finished
+    event_data:
+      entity_id: timer.luftbefeuchter_pflanzschrank
+  condition: []
+  action:
+  - service: switch.turn_off
+    target:
+      entity_id: switch.steckdose_luftbefeuchter_pflanzschrank
   mode: single

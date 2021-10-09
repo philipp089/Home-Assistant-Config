@@ -688,6 +688,7 @@ tplink:
     - host: 192.168.178.62
     - host: 192.168.178.63
     - host: 192.168.178.75
+    - host: 192.168.178.82
 #
 # SAMSUNG TV INTEGRATION
 #
@@ -817,6 +818,10 @@ timer:
   luftbefeuchter_wohnzimmer:
     duration: "00:15:00"
     name: Timer Luftbefeuchter Wohnzimmer
+    icon: "mdi:alarm"
+  luftbefeuchter_pflanzschrank:
+    duration: "00:15:00"
+    name: Timer Luftbefeuchter Pflanzschrank
     icon: "mdi:alarm"
 #
 # FOLDER WATCHER

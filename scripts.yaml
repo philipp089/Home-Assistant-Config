@@ -37,6 +37,9 @@ spotify_hip_hop_auf_sonos:
 wohnzimmer_hell:
   alias: Wohnzimmer hell
   sequence:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.00085a49a49c0f
   - service: light.turn_on
     target:
       area_id: 9b7ff4c63c5040569f459d83159fe925
@@ -44,6 +47,9 @@ wohnzimmer_hell:
       kelvin: 3300
       brightness_pct: 100
       transition: 2
+  - service: switch.turn_off
+    target:
+      entity_id: switch.circadian_lighting_wohnzimmer
   mode: single
   icon: mdi:lightbulb-outline
 wohnzimmer_medium:
@@ -947,17 +953,6 @@ samsung_q7_series_navigation_left:
       command: navigation_left
   mode: single
   icon: mdi:television
-samsung_q7_series_navigation_ok:
-  alias: SAMSUNG Q7 SERIES - Navigation ok
-  sequence:
-  - service: remote.send_command
-    target:
-      entity_id: remote.broadlink_rm4_pro_remote
-    data:
-      device: Samsung_Q7_Series_(55)
-      command: navigation_ok
-  mode: single
-  icon: mdi:television
 samsung_q7_series_navigation_return:
   alias: SAMSUNG Q7 SERIES - Navigation return
   sequence:
@@ -1231,5 +1226,82 @@ samsung_q7_series_player_stop:
     data:
       device: Samsung_Q7_Series_(55)
       command: player_stop
+  mode: single
+  icon: mdi:television
+samsung_q7_series_navigation_okay:
+  alias: SAMSUNG Q7 SERIES - Navigation ok
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: navigation_ok
+  mode: single
+  icon: mdi:television
+samsung_q7_series_netflix:
+  alias: SAMSUNG Q7 SERIES - Netflix
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: power_on
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 2
+      milliseconds: 0
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: navigation_smart
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 1
+      milliseconds: 0
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: navigation_right
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 1
+      milliseconds: 0
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: navigation_right
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 1
+      milliseconds: 0
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: navigation_return
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 1
+      milliseconds: 0
+  - service: remote.send_command
+    target:
+      entity_id: remote.broadlink_rm4_pro_remote
+    data:
+      device: Samsung_Q7_Series_(55)
+      command: navigation_return
   mode: single
   icon: mdi:television

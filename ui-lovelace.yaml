@@ -1353,6 +1353,10 @@ views:
             template: label_card
             name: Wohnzimmer
           #
+          ###HOME WOHNZIMMER LABEL CARD###################################################
+          #
+
+          #
           ###HOME MEDIA PLAYER CHROMECAST WOHNZIMMER######################################
           #
           - type: "custom:mini-media-player"
@@ -2773,6 +2777,150 @@ views:
               action: navigate
               navigation_path: /db-mobile/default-view
           #
+          ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 PRO WOHNZIMMER POWER#######################
+          #
+          - type: horizontal-stack
+            cards: 
+              - type: "custom:button-card"
+                template: empty_card
+                icon: mdi:power
+                size: 60%
+                color: "#E50914"
+                tap_action:
+                  action: call-service
+                  service: script.turn_on
+                  service_data:
+                    entity_id: script.samsung_q7_series_power_toggle
+          #
+          ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 PRO WOHNZIMMER NETFLIX#######################
+          #
+              - type: "custom:button-card"
+                template: "quick_access"
+                entity_picture: /local/Icon_Netflix.svg
+                tap_action:
+                  action: call-service
+                  service: script.turn_on
+                  service_data:
+                    entity_id: script.samsung_q7_series_netflix
+          #
+          ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 PRO WOHNZIMMER AMAZON PRIME#######################
+          # 
+              - type: "custom:button-card"
+                template: "quick_access"
+                entity_picture: /local/Icon_Amazon_Prime.svg
+                tap_action:
+                  action: call-service
+                  service: script.turn_on
+                  service_data:
+                    entity_id: script.samsung_q7_series_amazon_prime
+          #
+          ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 PRO WOHNZIMMER POWER#######################
+          #
+          - type: horizontal-stack
+            cards: 
+              - type: "custom:button-card"
+                template: "quick_access"
+                entity_picture: /local/Icon_Back_Arrow.svg
+                size: 60%
+                color: "#808080"
+                tap_action:
+                  action: call-service
+                  service: script.turn_on
+                  service_data:
+                    entity_id: script.samsung_q7_series_navigation_back
+          #
+          ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 PRO WOHNZIMMER NETFLIX#######################
+          #
+              - type: "custom:button-card"
+                template: empty_card
+                icon: "mdi:arrow-up-bold-circle"
+                size: 60%
+                color: "#4285F4"
+                tap_action:
+                  action: call-service
+                  service: script.turn_on
+                  service_data:
+                    entity_id: script.samsung_q7_series_navigation_up
+          #
+          ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 PRO WOHNZIMMER AMAZON PRIME#######################
+          # 
+              - type: "custom:button-card"
+                template: empty_card
+                icon: "mdi:home-outline"
+                size: 50%
+                color: "#808080"
+                tap_action:
+                  action: call-service
+                  service: script.turn_on
+                  service_data:
+                    entity_id: script.samsung_q7_series_navigation_smart
+          #
+          ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 PRO WOHNZIMMER POWER#######################
+          #
+          - type: horizontal-stack
+            cards: 
+              - type: "custom:button-card"
+                template: empty_card
+                icon: "mdi:arrow-left-bold-circle"
+                size: 60%
+                color: "#4285F4"
+                tap_action:
+                  action: call-service
+                  service: script.turn_on
+                  service_data:
+                    entity_id: script.samsung_q7_series_navigation_left
+          #
+          ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 PRO WOHNZIMMER NETFLIX#######################
+          #
+              - type: "custom:button-card"
+                template: empty_card
+                icon: "mdi:keyboard-return"
+                size: 40%
+                color: "#808080"
+                tap_action:
+                  action: call-service
+                  service: script.turn_on
+                  service_data:
+                    entity_id: script.samsung_q7_series_navigation_return
+          #
+          ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 PRO WOHNZIMMER AMAZON PRIME#######################
+          # 
+              - type: "custom:button-card"
+                template: empty_card
+                icon: "mdi:arrow-right-bold-circle"
+                size: 60%
+                color: "#4285F4"
+                tap_action:
+                  action: call-service
+                  service: script.turn_on
+                  service_data:
+                    entity_id: script.samsung_q7_series_navigation_right
+          #
+          ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 PRO WOHNZIMMER POWER#######################
+          #
+          - type: horizontal-stack
+            cards: 
+              - type: "custom:button-card"
+                template: empty_card
+          #
+          ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 PRO WOHNZIMMER NETFLIX#######################
+          #
+              - type: "custom:button-card"
+                template: empty_card
+                icon: "mdi:arrow-down-bold-circle"
+                size: 60%
+                color: "#4285F4"
+                tap_action:
+                  action: call-service
+                  service: script.turn_on
+                  service_data:
+                    entity_id: script.samsung_q7_series_navigation_down
+          #
+          ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 PRO WOHNZIMMER AMAZON PRIME#######################
+          # 
+              - type: "custom:button-card"
+                template: empty_card
+          #
           ###MEDIA MEDIA PLAYER CHROMECAST WOHNZIMMER#####################################
           #
           - type: "custom:mini-media-player"
@@ -3219,6 +3367,35 @@ views:
                       - entity: input_datetime.pflanzschrank_abluft_aus
                         time:
         #
+        ###PFLANZSCHRANK VENTILATION LABEL CARD#####################################################
+        #
+          - type: vertical-stack
+            cards:
+              - type: "custom:button-card"
+                template: label_card
+                name: Ventilation
+                tap_action:
+                  action: navigate
+                  navigation_path: /db-mobile/default-view
+              #
+              ###PFLANZSCHRANK VENTILATION START#######################################################
+              #
+              - type: horizontal-stack
+                cards:
+                  - type: entities
+                    entities:
+                      - entity: input_datetime.pflanzschrank_ventilation_startzeit
+                        time:
+              #
+              ###PFLANZSCHRANK VENTILATION ENDE#######################################################
+              #
+              - type: horizontal-stack
+                cards:
+                  - type: entities
+                    entities:
+                      - entity: input_datetime.pflanzschrank_ventilation_endzeit
+                        time:
+        #
         ###PFLANZSCHRANK WACHSTUM TAB LABEL CARD#####################################################
         #
           - type: vertical-stack
@@ -3284,7 +3461,134 @@ views:
               - type: "custom:button-card"
                 template: plugs_card
                 entity: switch.steckdose_luftbefeuchter_pflanzschrank
-                name: Luftbefeuchter    
+                name: Luftbefeuchter
+          #
+          ###PFLANZSCHRANK PLUG VENTILATION VORNE############################################
+          #
+          - type: horizontal-stack
+            cards:
+              - type: "custom:button-card"
+                template: plugs_card
+                entity: switch.steckdose_pflanzschrank_ventilation_vorne
+                name: Ventilation vorne
+              #
+              ###PFLANZSCHRANK PLUG VENTILATION HINTEN############################################
+              #
+              - type: "custom:button-card"
+                template: plugs_card
+                entity: switch.steckdose_pflanzschrank_ventilation_hinten
+                name: Ventilation hinten  
+    #
+    ###PFLANZSCHRANK LABEL CARD#####################################################
+    #
+          - type: vertical-stack
+            cards:
+              - type: "custom:button-card"
+                template: label_card
+                name: Stromverbrauch
+                tap_action:
+                  action: navigate
+                  navigation_path: /db-mobile/default-view
+          #
+          ###PFLANZSCHRANK CURRENT CONSUMPTION###########################################
+          #
+          - type: horizontal-stack
+            cards:
+              - type: "custom:mini-graph-card"
+                aspect_ratio: 1/1
+                font_size: 75
+                height: 210
+                hour24: true
+                hours_to_show: 24
+                points_per_hour: 1
+                line_color: "#F4B400"
+                line_width: 6
+                show:
+                  icon: true
+                  labels: true
+                style: |
+                  ha-card {
+                    box-shadow: 0px 0px 0px 0px;
+                    color: 'rgb(140,140,140)';
+                    padding: 0px;
+                  }
+                entities:
+                  - sensor.hauptschalter_pflanzschrank_current_consumption
+                name: Stromverbrauch aktuell
+              #
+              ###PFLANZSCHRANK VOLTAGE#######################################################
+              #
+              - type: "custom:mini-graph-card"
+                aspect_ratio: 1/1
+                font_size: 75
+                height: 210
+                hour24: true
+                hours_to_show: 24
+                points_per_hour: 1
+                line_color: "#4285F4"
+                line_width: 6
+                show:
+                  icon: true
+                  labels: true
+                style: |
+                  ha-card {
+                    box-shadow: 0px 0px 0px 0px;
+                    color: 'rgb(140,140,140)';
+                    padding: 0px;
+                  }
+                entities:
+                  - sensor.hauptschalter_pflanzschrank_voltage
+                name: Voltage aktuell
+          #
+          ###PFLANZSCHRANK CONSUMPTION TODAY#############################################
+          #
+          - type: horizontal-stack
+            cards:
+              - type: "custom:mini-graph-card"
+                aspect_ratio: 1/1
+                font_size: 75
+                height: 210
+                hour24: true
+                hours_to_show: 24
+                points_per_hour: 1
+                line_color: "#db4437"
+                line_width: 6
+                show:
+                  icon: true
+                  labels: true
+                style: |
+                  ha-card {
+                    box-shadow: 0px 0px 0px 0px;
+                    color: 'rgb(140,140,140)';
+                    padding: 0px;
+                  }
+                entities:
+                  - sensor.hauptschalter_pflanzschrank_today_s_consumption
+                name: Stromverbrauch heute
+              #
+              ###PFLANZSCHRANK CONSUMPTION TOTAL#########################################
+              #
+              - type: "custom:mini-graph-card"
+                aspect_ratio: 1/1
+                font_size: 75
+                height: 210
+                hour24: true
+                hours_to_show: 24
+                points_per_hour: 1
+                line_color: "#db4437"
+                line_width: 6
+                show:
+                  icon: true
+                  labels: true
+                style: |
+                  ha-card {
+                    box-shadow: 0px 0px 0px 0px;
+                    color: 'rgb(140,140,140)';
+                    padding: 0px;
+                  }
+                entities:
+                  - sensor.hauptschalter_pflanzschrank_total_consumption
+                name: Stromverbrauch gesamt
   #
   ###PFLANZSCHRANK TAB END########################################################
   #
