@@ -1352,6 +1352,9 @@ views:
           - type: "custom:button-card"
             template: label_card
             name: Wohnzimmer
+            tap_action:
+              action: navigate
+              navigation_path: /db-mobile/default-view
           #
           ###HOME WOHNZIMMER LABEL CARD###################################################
           #
@@ -1581,6 +1584,9 @@ views:
           - type: "custom:button-card"
             template: label_card
             name: Dachterrasse
+            tap_action:
+              action: navigate
+              navigation_path: /db-mobile/default-view
           #
           ###HOME DACHTERRASSE WANDSCHALTER###############################################
           #
@@ -1725,6 +1731,9 @@ views:
           - type: "custom:button-card"
             template: label_card
             name: Badezimmer
+            tap_action:
+              action: navigate
+              navigation_path: /db-mobile/default-view
           #
           ###HOME BADEZIMMER GOOGLE NEST MINI MINI MEDIA PLAYER###########################
           #
@@ -1801,6 +1810,9 @@ views:
           - type: "custom:button-card"
             template: label_card
             name: Flur
+            tap_action:
+              action: navigate
+              navigation_path: /db-mobile/default-view
           #
           ###HOME FlUR WANDSCHALTER#######################################################
           #
@@ -1832,6 +1844,9 @@ views:
           - type: "custom:button-card"
             template: label_card
             name: Werkstatt
+            tap_action:
+              action: navigate
+              navigation_path: /db-mobile/default-view
           #
           ###HOME WERKSTATT MEDIA PLAYER SONOS PLAY ONE###################################
           #
@@ -1886,6 +1901,9 @@ views:
           - type: "custom:button-card"
             template: label_card
             name: Küche
+            tap_action:
+              action: navigate
+              navigation_path: /db-mobile/default-view
           #
           ###HOME KÜCHE GOOGLE NEST MINI MINI MEDIA PLAYER################################
           #
@@ -2145,6 +2163,9 @@ views:
           - type: "custom:button-card"
             template: label_card
             name: Schlafzimmer
+            tap_action:
+              action: navigate
+              navigation_path: /db-mobile/default-view
           #
           ###LICHTER SCHLAFZIMMER LIGHTMODE HELL##########################################
           #
@@ -2342,6 +2363,9 @@ views:
           - type: "custom:button-card"
             template: label_card
             name: Badezimmer
+            tap_action:
+              action: navigate
+              navigation_path: /db-mobile/default-view
           #
           ###LICHTER BADEZIMMER LIGHTMODE HELL############################################
           #
@@ -2505,6 +2529,9 @@ views:
           - type: "custom:button-card"
             template: label_card
             name: Flur
+            tap_action:
+              action: navigate
+              navigation_path: /db-mobile/default-view
           #
           ###LICHTER FLUR LIGHTMODE HELL##################################################
           #
@@ -2631,6 +2658,9 @@ views:
           - type: "custom:button-card"
             template: label_card
             name: Werkstatt
+            tap_action:
+              action: navigate
+              navigation_path: /db-mobile/default-view
           #
           ###LICHTER WERKSTATT LIGHTMODE HELL#############################################
           #
@@ -2986,6 +3016,9 @@ views:
           - type: "custom:button-card"
             template: label_card
             name: Schlafzimmer
+            tap_action:
+              action: navigate
+              navigation_path: /db-mobile/default-view
           #
           ###MEDIA MEDIA PLAYER CHROMECAST SCHLAFZIMMER###################################
           #
@@ -3016,6 +3049,9 @@ views:
           - type: "custom:button-card"
             template: label_card
             name: Badezimmer
+            tap_action:
+              action: navigate
+              navigation_path: /db-mobile/default-view
           #
           ###MEDIA MEDIA PLAYER SONOS BADEZIMMER##########################################
           #
@@ -3034,6 +3070,9 @@ views:
           - type: "custom:button-card"
             template: label_card
             name: Werkstatt
+            tap_action:
+              action: navigate
+              navigation_path: /db-mobile/default-view
           #
           ###MEDIA MEDIA PLAYER SONOS WERKSTATT###########################################
           #
@@ -3052,6 +3091,9 @@ views:
           - type: "custom:button-card"
             template: label_card
             name: Küche
+            tap_action:
+              action: navigate
+              navigation_path: /db-mobile/default-view
           #
           ###MEDIA MEDIA PLAYER GOOGLE NEST MINI KÜCHE####################################
           #
@@ -3159,6 +3201,9 @@ views:
           - type: "custom:button-card"
             template: label_card
             name: Schlafzimmer
+            tap_action:
+              action: navigate
+              navigation_path: /db-mobile/default-view
           #
           ###PLUGS SCHLAFZIMMER PLUG FERNSEHER############################################
           #
@@ -3276,7 +3321,6 @@ views:
                 entities:
                   - sensor.000eda499c8411_actual_temperature
                 name: Temperatur
-
               #
               ###PFLANZSCHRANK PLACEHOLDER EMPTY CARD#########################################
               #
@@ -3291,7 +3335,7 @@ views:
             cards:
               - type: "custom:button-card"
                 template: label_card
-                name: Zeiten
+                name: Lichtzyklen
                 tap_action:
                   action: navigate
                   navigation_path: /db-mobile/default-view
@@ -3402,10 +3446,28 @@ views:
             cards:
               - type: "custom:button-card"
                 template: label_card
-                name: Mindest-Luftfeuchtigkeit
+                name: Luftfeuchtigkeit
                 tap_action:
                   action: navigate
                   navigation_path: /db-mobile/default-view
+              #
+              ###PFLANZSCHRANK LUFTBEFEUCHTER START#######################################################
+              #
+              - type: horizontal-stack
+                cards:
+                  - type: entities
+                    entities:
+                      - entity: input_datetime.pflanzschrank_luftbefeuchter_startzeit
+                        time:
+              #
+              ###PFLANZSCHRANK LUFTBEFEUCHTER ENDE#######################################################
+              #
+              - type: horizontal-stack
+                cards:
+                  - type: entities
+                    entities:
+                      - entity: input_datetime.pflanzschrank_luftbefeuchter_endzeit
+                        time:
               #
               ###PFLANZSCHRANK MIN LUFTFEUCHTE#######################################################
               #
@@ -3720,6 +3782,9 @@ views:
               - type: "custom:button-card"
                 template: label_card
                 name: Schlafzimmer
+                tap_action:
+                  action: navigate
+                  navigation_path: /db-mobile/default-view
           #
           ###TEMPS SCHLAFZIMMER ACTUAL TEMPERATURE########################################
           #
@@ -3802,6 +3867,9 @@ views:
               - type: "custom:button-card"
                 template: label_card
                 name: Badezimmer
+                tap_action:
+                  action: navigate
+                  navigation_path: /db-mobile/default-view
           #
           ###TEMPS BADEZIMMER ACTUAL TEMPERATURE##########################################
           #
@@ -3884,6 +3952,9 @@ views:
               - type: "custom:button-card"
                 template: label_card
                 name: Werkstatt
+                tap_action:
+                  action: navigate
+                  navigation_path: /db-mobile/default-view
           #
           ###TEMPS WERKSTATT ACTUAL TEMPERATURE###########################################
           #
@@ -3966,6 +4037,9 @@ views:
               - type: "custom:button-card"
                 template: label_card
                 name: Küche
+                tap_action:
+                  action: navigate
+                  navigation_path: /db-mobile/default-view
           #
           ###TEMPS KÜCHE ACTUAL TEMPERATURE###############################################
           #
@@ -4343,6 +4417,9 @@ views:
           - type: "custom:button-card"
             template: label_card
             name: GeForce 2080 TI 01
+            tap_action:
+              action: navigate
+              navigation_path: /db-mobile/default-view
           #
           ###PC GTX 2080 01 USAGE#########################################################
           #
@@ -4520,6 +4597,9 @@ views:
           - type: "custom:button-card"
             template: label_card
             name: GeForce GTX 2080 02
+            tap_action:
+              action: navigate
+              navigation_path: /db-mobile/default-view
           #
           ###PC GTX 2080 02 USAGE#########################################################
           #
@@ -4697,6 +4777,9 @@ views:
           - type: "custom:button-card"
             template: label_card
             name: HDDs/SSDs
+            tap_action:
+              action: navigate
+              navigation_path: /db-mobile/default-view
           #
           ###PC HDDs/SSDs (C:) SAMSUNG EVO 840 01 TEMPERATURE#############################
           #
@@ -5066,6 +5149,9 @@ views:
               - type: "custom:button-card"
                 template: label_card
                 name: Schlafzimmer
+                tap_action:
+                  action: navigate
+                  navigation_path: /db-mobile/default-view
               #
               ###CAMERA SCHLAFZIMMER LIVE STREAM##############################################
               #
@@ -5081,6 +5167,9 @@ views:
               - type: "custom:button-card"
                 template: label_card
                 name: Eingang
+                tap_action:
+                  action: navigate
+                  navigation_path: /db-mobile/default-view
               #
               ###CAMERA SCHLAFZIMMER LIVE STREAM##############################################
               #
@@ -5414,6 +5503,9 @@ views:
               - type: "custom:button-card"
                 template: label_card
                 name: Netzwerk
+                tap_action:
+                  action: navigate
+                  navigation_path: /db-mobile/default-view
           #
           ###SMARTPHONE WIFI####################################################
           #
@@ -5697,6 +5789,9 @@ views:
               - type: "custom:button-card"
                 template: label_card
                 name: Schlafzimmer
+                tap_action:
+                  action: navigate
+                  navigation_path: /db-mobile/default-view
               #
               ###ALARM SCHLAFZIMMER MOTION SENSOR#######################################################
               #
@@ -5737,6 +5832,9 @@ views:
               - type: "custom:button-card"
                 template: label_card
                 name: Eingang
+                tap_action:
+                  action: navigate
+                  navigation_path: /db-mobile/default-view
               #
               ###ALARM EINGANG MOTION SENSOR#######################################################
               #
@@ -5777,6 +5875,9 @@ views:
               - type: "custom:button-card"
                 template: label_card
                 name: Badezimmer
+                tap_action:
+                  action: navigate
+                  navigation_path: /db-mobile/default-view
               #
               ###ALARM BADEZIMMER MOTION SENSOR#######################################################
               #
@@ -5823,6 +5924,9 @@ views:
               - type: "custom:button-card"
                 template: label_card
                 name: Küche
+                tap_action:
+                  action: navigate
+                  navigation_path: /db-mobile/default-view
               #
               ###ALARM KÜCHE MOTION SENSOR#######################################################
               #
