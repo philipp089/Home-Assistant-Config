@@ -1305,3 +1305,212 @@ samsung_q7_series_netflix:
       command: navigation_return
   mode: single
   icon: mdi:television
+sony_bravia_power_on:
+  alias: SONY BRAVIA - Power On
+  sequence:
+  - service: remote.send_command
+    data:
+      device: Sony_Bravia_TV_Schlafzimmer
+      command: power_on
+    target:
+      entity_id: remote.broadlink_rm4_mini_remote
+  mode: single
+  icon: mdi:television
+sony_bravia_power_off:
+  alias: SONY BRAVIA - Power Off
+  sequence:
+  - service: remote.send_command
+    data:
+      device: Sony_Bravia_TV_Schlafzimmer
+      command: power_off
+    target:
+      entity_id: remote.broadlink_rm4_mini_remote
+  mode: single
+  icon: mdi:television
+sony_bravia_source:
+  alias: SONY BRAVIA - Source
+  sequence:
+  - service: remote.send_command
+    data:
+      device: Sony_Bravia_TV_Schlafzimmer
+      command: source
+    target:
+      entity_id: remote.broadlink_rm4_mini_remote
+  mode: single
+  icon: mdi:television
+sony_bravia_volume_up:
+  alias: SONY BRAVIA - Volume up
+  sequence:
+  - service: remote.send_command
+    data:
+      device: Sony_Bravia_TV_Schlafzimmer
+      command: volume_up
+    target:
+      entity_id: remote.broadlink_rm4_mini_remote
+  mode: single
+  icon: mdi:television
+sony_bravia_volume_down:
+  alias: SONY BRAVIA - Volume down
+  sequence:
+  - service: remote.send_command
+    data:
+      device: Sony_Bravia_TV_Schlafzimmer
+      command: volume_down
+    target:
+      entity_id: remote.broadlink_rm4_mini_remote
+  mode: single
+  icon: mdi:television
+sony_bravia_volume_mute:
+  alias: SONY BRAVIA - Volume mute
+  sequence:
+  - service: remote.send_command
+    data:
+      device: Sony_Bravia_TV_Schlafzimmer
+      command: volume_mute
+    target:
+      entity_id: remote.broadlink_rm4_mini_remote
+  mode: single
+  icon: mdi:television
+sony_bravia_program_up:
+  alias: SONY BRAVIA - Program up
+  sequence:
+  - service: remote.send_command
+    data:
+      device: Sony_Bravia_TV_Schlafzimmer
+      command: program_up
+    target:
+      entity_id: remote.broadlink_rm4_mini_remote
+  mode: single
+  icon: mdi:television
+sony_bravia_program_down:
+  alias: SONY BRAVIA - Program Down
+  sequence:
+  - service: remote.send_command
+    data:
+      device: Sony_Bravia_TV_Schlafzimmer
+      command: program_down
+    target:
+      entity_id: remote.broadlink_rm4_mini_remote
+  mode: single
+  icon: mdi:television
+sony_bravia_menu:
+  alias: SONY BRAVIA - Menu
+  sequence:
+  - service: remote.send_command
+    data:
+      device: Sony_Bravia_TV_Schlafzimmer
+      command: menu
+    target:
+      entity_id: remote.broadlink_rm4_mini_remote
+  mode: single
+  icon: mdi:television
+sony_bravia_return:
+  alias: SONY BRAVIA - Return
+  sequence:
+  - service: remote.send_command
+    data:
+      device: Sony_Bravia_TV_Schlafzimmer
+      command: return
+    target:
+      entity_id: remote.broadlink_rm4_mini_remote
+  mode: single
+  icon: mdi:television
+sony_bravia_brightness:
+  alias: SONY BRAVIA - Brightness
+  sequence:
+  - service: remote.send_command
+    data:
+      device: Sony_Bravia_TV_Schlafzimmer
+      command: brightness
+    target:
+      entity_id: remote.broadlink_rm4_mini_remote
+  mode: single
+  icon: mdi:television
+sony_bravia_wheel_center:
+  alias: SONY BRAVIA - Wheel Center
+  sequence:
+  - service: remote.send_command
+    data:
+      device: Sony_Bravia_TV_Schlafzimmer
+      command: wheel_center
+    target:
+      entity_id: remote.broadlink_rm4_mini_remote
+  mode: single
+  icon: mdi:television
+sony_bravia_wheel_up:
+  alias: SONY BRAVIA - Wheel Up
+  sequence:
+  - service: remote.send_command
+    data:
+      device: Sony_Bravia_TV_Schlafzimmer
+      command: wheel_up
+    target:
+      entity_id: remote.broadlink_rm4_mini_remote
+  mode: single
+  icon: mdi:television
+sony_bravia_wheel_right:
+  alias: SONY BRAVIA - Wheel Right
+  sequence:
+  - service: remote.send_command
+    data:
+      device: Sony_Bravia_TV_Schlafzimmer
+      command: wheel_right
+    target:
+      entity_id: remote.broadlink_rm4_mini_remote
+  mode: single
+  icon: mdi:television
+sony_bravia_wheel_down:
+  alias: SONY BRAVIA - Wheel Down
+  sequence:
+  - service: remote.send_command
+    data:
+      device: Sony_Bravia_TV_Schlafzimmer
+      command: wheel_down
+    target:
+      entity_id: remote.broadlink_rm4_mini_remote
+  mode: single
+  icon: mdi:television
+sony_bravia_wheel_left:
+  alias: SONY BRAVIA - Wheel Left
+  sequence:
+  - service: remote.send_command
+    data:
+      device: Sony_Bravia_TV_Schlafzimmer
+      command: wheel_left
+    target:
+      entity_id: remote.broadlink_rm4_mini_remote
+  mode: single
+  icon: mdi:television
+sony_bravia_program:
+  alias: SONY BRAVIA - Program
+  sequence:
+  - service: remote.send_command
+    data:
+      device: Sony_Bravia_TV_Schlafzimmer
+      command: program
+    target:
+      entity_id: remote.broadlink_rm4_mini_remote
+  mode: single
+  icon: mdi:television
+sony_bravia_text:
+  alias: SONY BRAVIA - Text
+  sequence:
+  - service: remote.send_command
+    data:
+      device: Sony_Bravia_TV_Schlafzimmer
+      command: text
+    target:
+      entity_id: remote.broadlink_rm4_mini_remote
+  mode: single
+  icon: mdi:television
+sony_bravia_bildformat:
+  alias: SONY BRAVIA - Bildformat
+  sequence:
+  - service: remote.send_command
+    data:
+      device: Sony_Bravia_TV_Schlafzimmer
+      command: bildformat
+    target:
+      entity_id: remote.broadlink_rm4_mini_remote
+  mode: single
+  icon: mdi:television

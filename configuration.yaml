@@ -424,6 +424,69 @@ sensor:
             33 
           {% endif %}
   #
+  # WANDSCHALTER WERKSTATT kWh
+  #
+  - platform: template
+    sensors:
+      wandschalter_werkstatt_verbrauch:
+        friendly_name: "Wandschalter Werkstatt Verbrauch"
+        unit_of_measurement: "kWh"
+        value_template: "{{ state_attr('switch.00085a49a49be1', 'today_energy_kwh') }}"
+  #
+  # WANDSCHALTER WOHNZIMMER kWh
+  #
+  - platform: template
+    sensors:
+      wandschalter_wohnzimmer_verbrauch:
+        friendly_name: "Wandschalter Wohnzimmer Verbrauch"
+        unit_of_measurement: "kWh"
+        value_template: "{{ state_attr('switch.00085a49a49c0f', 'today_energy_kwh') }}"
+  #
+  # WANDSCHALTER SCHLAFZIMMER kWh
+  #
+  - platform: template
+    sensors:
+      wandschalter_schlafzimmer_verbrauch:
+        friendly_name: "Wandschalter Schlafzimmer Verbrauch"
+        unit_of_measurement: "kWh"
+        value_template: "{{ state_attr('switch.00085a49a49f84', 'today_energy_kwh') }}"
+  #
+  # WANDSCHALTER FLUR kWh
+  #
+  - platform: template
+    sensors:
+      wandschalter_flur_verbrauch:
+        friendly_name: "Wandschalter Flur Verbrauch"
+        unit_of_measurement: "kWh"
+        value_template: "{{ state_attr('switch.00085a49a4b411', 'today_energy_kwh') }}"
+  #
+  # WANDSCHALTER KÜCHE kWh
+  #
+  - platform: template
+    sensors:
+      wandschalter_kueche_verbrauch:
+        friendly_name: "Wandschalter Küche Verbrauch"
+        unit_of_measurement: "kWh"
+        value_template: "{{ state_attr('switch.hmip_bsm_00085a49a49be7', 'today_energy_kwh') }}"
+  #
+  # WANDSCHALTER DACHTERRASSE kWh
+  #
+  - platform: template
+    sensors:
+      wandschalter_dachterrasse_verbrauch:
+        friendly_name: "Wandschalter Dachterrasse Verbrauch"
+        unit_of_measurement: "kWh"
+        value_template: "{{ state_attr('switch.hmip_bsm_00085a49a49c91', 'today_energy_kwh') }}"
+  #
+  # WANDSCHALTER BADEZIMMER kWh
+  #
+  - platform: template
+    sensors:
+      wandschalter_badezimmer_verbrauch:
+        friendly_name: "Wandschalter Badezimmer Verbrauch"
+        unit_of_measurement: "kWh"
+        value_template: "{{ state_attr('switch.hmip_bsm_00085a49a4a57e', 'today_energy_kwh') }}"
+  #
   # SENSOR LOKALE UHRZEIT SMARTPHONE PHILIPP
   #
   - platform: template
