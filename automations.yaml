@@ -127,13 +127,13 @@
   description: ''
   trigger:
   - platform: state
-    entity_id: proximity.home
     to: '1'
     for:
       hours: 0
       minutes: 5
       seconds: 0
       milliseconds: 0
+    entity_id: proximity.home
   condition: []
   action:
   - service: light.turn_off
@@ -153,7 +153,7 @@
       - climate.000a1a49a12e89
       - climate.000a1a49a13110
       temperature:
-        '[object Object]':
+        '[object Object]': 12
   mode: single
 - id: '1631043708265'
   alias: LICHT - Wandschalter Wohnzimmer aus

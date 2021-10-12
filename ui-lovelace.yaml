@@ -645,7 +645,7 @@ button_card_templates:
         - grid-template-columns: 1fr 1fr
         - grid-template-rows: 1fr min-content
       icon:
-        - margin-top: "-47%"
+        - margin-top: "-46%"
         - margin-left: 2%
       img_cell:
         - justify-content: start
@@ -1412,6 +1412,7 @@ views:
             cards:
               - type: "custom:button-card"
                 template: wall_switch_card
+                size: "110%"
                 entity: switch.00085a49a49c0f
                 name: gesamt
                 custom_fields:
@@ -1423,11 +1424,17 @@ views:
                         style="width: 12px; height: 12px; color: #b3b3b3;">
                         </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
                     ]]]
+                styles:
+                  icon:
+                    - margin-top: "-31%"
+                    - margin-left: "-18%"
               #
               ###HOME WOHNZIMMER DECKENLEUCHTE################################################
               #
               - type: "custom:button-card"
                 template: light_card
+                icon: "mdi:ceiling-light-outline"
+                size: "110%"
                 entity: light.lichtgruppe_wohnzimmer_deckenleuchte
                 name: Deckenleuchte
                 custom_fields:
@@ -1439,29 +1446,19 @@ views:
                         style="width: 12px; height: 12px; color: #b3b3b3;">
                         </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
                     ]]]
-          #
-          ###HOME WOHNZIMMER STEHLAMPE####################################################
-          #
+                styles:
+                  icon:
+                    - margin-top: "-45%"
+                    - margin-left: "-17%"
+              #
+              ###HOME WOHNZIMMER KLEINE LAMPE#################################################
+              #
           - type: horizontal-stack
             cards:
               - type: "custom:button-card"
                 template: light_card
-                entity: light.dimmable_light_5
-                name: Stehlampe
-                custom_fields:
-                  brightness: |
-                    [[[
-                      var bri = Math.ceil(states['light.dimmable_light_5'].attributes.brightness / 255.0 * 100.0);
-                      return `<ha-icon
-                        icon="mdi:brightness-7"
-                        style="width: 12px; height: 12px; color: #b3b3b3;">
-                        </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
-                    ]]]
-              #
-              ###HOME WOHNZIMMER KLEINE LAMPE#################################################
-              #
-              - type: "custom:button-card"
-                template: light_card
+                icon: "mdi:lamp-outline"
+                size: "110%"
                 entity: light.licht_wohnzimmer_kleine_lampe
                 name: Kleine Lampe
                 custom_fields:
@@ -1473,12 +1470,40 @@ views:
                         style="width: 12px; height: 12px; color: #b3b3b3;">
                         </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
                     ]]]
+                styles:
+                  icon:
+                    - margin-top: "-35%"
+                    - margin-left: "-17%"
+          #
+          ###HOME WOHNZIMMER STEHLAMPE####################################################
+          #
+
+              - type: "custom:button-card"
+                template: light_card
+                icon: "mdi:floor-lamp-outline"
+                size: "110%"
+                entity: light.dimmable_light_5
+                name: Stehlampe
+                custom_fields:
+                  brightness: |
+                    [[[
+                      var bri = Math.ceil(states['light.dimmable_light_5'].attributes.brightness / 255.0 * 100.0);
+                      return `<ha-icon
+                        icon="mdi:brightness-7"
+                        style="width: 12px; height: 12px; color: #b3b3b3;">
+                        </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
+                    ]]]
+                styles:
+                  icon:
+                    - margin-top: "-35%"
+                    - margin-left: "-31%"
           #
           ###HOME WOHNZIMMER LIGHT STRIP##################################################
           #
           - type: horizontal-stack
             cards:
               - type: "custom:button-card"
+                size: "110%"
                 template: lightstrip_card
                 entity: light.extended_color_light_23
                 name: Lightstrip PC
@@ -1491,6 +1516,10 @@ views:
                         style="width: 12px; height: 12px; color: #b3b3b3;">
                         </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
                     ]]]
+                styles:
+                  icon:
+                    - margin-top: "-37%"
+                    - margin-left: "-8%"
               #
               ###HOME WOHNZIMMER PLACEHOLDER##################################################
               #
@@ -1503,15 +1532,25 @@ views:
             cards:
               - type: "custom:button-card"
                 template: tv_card
+                size: "100%"
                 entity: media_player.samsung_tv_tizen
                 name: Fernseher
+                styles:
+                  icon:
+                    - margin-top: "-42%"
+                    - margin-left: "-4%"
               #
               ###HOME WOHNZIMMER PLAYSTATION##################################################
               #
               - type: "custom:button-card"
                 template: playstation_card
+                size: "110%"
                 entity: media_player.playstation_4
                 name: Playstation
+                styles:
+                  icon:
+                    - margin-top: "-45%"
+                    - margin-left: "-6%"
           #
           ###HOME WOHNZIMMER STECKDOSE FERNSEHER##########################################
           #
@@ -1519,17 +1558,27 @@ views:
             cards:
               - type: "custom:button-card"
                 template: plugs_card
+                size: "110%"
                 entity: switch.steckdose_wohnzimmer_fernseher
                 name: Fernseher
+                styles:
+                  icon:
+                    - margin-top: "-41%"
+                    - margin-left: "-20%"
               #
               ###HOME WOHNZIMMER STECKDOSE PLAYSTATION########################################
               #
               - type: "custom:button-card"
                 template: plugs_card
+                size: "110%"
                 entity: switch.steckdose_wohnzimmer_playstation
                 name: Playstation
                 tap_action:
                   action: more-info
+                styles:
+                  icon:
+                    - margin-top: "-41%"
+                    - margin-left: "-20%"
           #
           ###HOME WOHNZIMMER STECKDOSE SONOS COUCH########################################
           #
@@ -1537,17 +1586,27 @@ views:
             cards:
               - type: "custom:button-card"
                 template: plugs_card
+                size: "110%"
                 entity: switch.steckdose_wohnz_sonos_couch
                 name: Sonos Couch
+                styles:
+                  icon:
+                    - margin-top: "-41%"
+                    - margin-left: "-20%"
               #
               ###HOME WOHNZIMMER STECKDOSE COMPUTER###########################################
               #
               - type: "custom:button-card"
                 template: plugs_card
+                size: "110%"
                 entity: switch.steckdose_wohnzimmer_computer
                 name: Computer
                 tap_action:
                   action: more-info
+                styles:
+                  icon:
+                    - margin-top: "-41%"
+                    - margin-left: "-20%"
           #
           ###HOME WOHNZIMMER STECKDOSE STEHLAMPE##########################################
           #
@@ -1555,8 +1614,13 @@ views:
             cards:
               - type: "custom:button-card"
                 template: plugs_card
+                size: "110%"
                 entity: switch.steckdose_wohnzimmer_stehlampe
                 name: Stehlampe
+                styles:
+                  icon:
+                    - margin-top: "-41%"
+                    - margin-left: "-20%"
               #
               ###HOME WOHNZIMMER PLACEHOLDER EMPTY CARD#######################################
               #
@@ -1569,15 +1633,23 @@ views:
             cards:
               - type: "custom:button-card"
                 template: humidifier_card
+                size: "110%"
                 entity: switch.steckdose_wohnzimmer_luftbefeuchter
                 name: Luftbefeuchter
+                styles:
+                  icon:
+                    - margin-left: "-12%"
               #
               ###HOME WOHNZIMMER LUFTBEFEUCHTER 02############################################
               #
               - type: "custom:button-card"
                 template: humidifier_card
+                size: "110%"
                 entity: switch.steckdose_wohnzimmer_luftbefeuchter_fenster
                 name: Luftbefeuchter Fenster
+                styles:
+                  icon:
+                    - margin-left: "-12%"
           #
           ###HOME DACHTERRASSE LABEL CARD#################################################
           #
@@ -1594,8 +1666,13 @@ views:
             cards:
               - type: "custom:button-card"
                 template: wall_switch_card_02
+                size: "110%"
                 entity: switch.hmip_bsm_00085a49a49c91
                 name: Licht
+                styles:
+                  icon:
+                    - margin-top: "-31%"
+                    - margin-left: "-18%"
               #
               ###HOME DACHTERRASSE PLACEHOLDER EMPTY CARD#####################################
               #
@@ -1639,6 +1716,7 @@ views:
             cards:
               - type: "custom:button-card"
                 template: wall_switch_card
+                size: "110%"
                 entity: switch.00085a49a49f84
                 name: gesamt
                 custom_fields:
@@ -1650,11 +1728,17 @@ views:
                         style="width: 12px; height: 12px; color: #b3b3b3;">
                         </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
                     ]]]
+                styles:
+                  icon:
+                    - margin-top: "-31%"
+                    - margin-left: "-18%"
               #
               ###HOME SCHLAFZIMMER DECKENLEUCHTE##############################################
               #
               - type: "custom:button-card"
                 template: light_card
+                icon: "mdi:ceiling-light-outline"
+                size: "110%"
                 entity: light.color_temperature_light_18
                 name: Deckenleuchte
                 custom_fields:
@@ -1666,13 +1750,19 @@ views:
                         style="width: 12px; height: 12px; color: #b3b3b3;">
                         </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
                     ]]]
+                styles:
+                  icon:
+                    - margin-top: "-45%"
+                    - margin-left: "-17%"
           #
-          ###HOME SCHLAFZIMMER PHILIPS GO#################################################
+          ###HOME SCHLAFZIMMER PHILIPS HUE GO#################################################
           #
           - type: horizontal-stack
             cards:
               - type: "custom:button-card"
                 template: light_card
+                icon: "mdi:wall-sconce-round-variant-outline"
+                size: "110%"
                 entity: light.extended_color_light_2
                 name: Philips Go
                 custom_fields:
@@ -1684,11 +1774,17 @@ views:
                         style="width: 12px; height: 12px; color: #b3b3b3;">
                         </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
                     ]]]
+                styles:
+                  icon:
+                    - margin-top: "-48%"
+                    - margin-left: "-16%"
               #
               ###HOME SCHLAFZIMMER PHILIPP NACHTTISCHLEUCHTE##################################
               #
               - type: "custom:button-card"
                 template: light_card
+                icon: "mdi:lamp-outline"
+                size: "110%"
                 entity: light.extended_color_light_3_2
                 name: Nachttisschleuchte
                 custom_fields:
@@ -1700,6 +1796,10 @@ views:
                         style="width: 12px; height: 12px; color: #b3b3b3;">
                         </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
                     ]]]
+                styles:
+                  icon:
+                    - margin-top: "-35%"
+                    - margin-left: "-17%"
           #
           ###HOME SCHLAFZIMMER STANDLEUCHTE###############################################
           #
@@ -1707,6 +1807,8 @@ views:
             cards:
               - type: "custom:button-card"
                 template: light_card
+                icon: "mdi:floor-lamp-outline"
+                size: "110%"
                 entity: light.licht_schlafzimmer_standleuchte
                 name: Standleuchte
                 custom_fields:
@@ -1718,13 +1820,22 @@ views:
                         style="width: 12px; height: 12px; color: #b3b3b3;">
                         </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
                     ]]]
+                styles:
+                  icon:
+                    - margin-top: "-35%"
+                    - margin-left: "-31%"
               #
-              ###HOME SCHLAFZIMMER PLACEHOLDER################################################
+              ###HOME SCHLAFZIMMER STECKDOSE FERNSEHER################################################
               #
               - type: "custom:button-card"
                 template: plugs_card
+                size: "110%"
                 entity: switch.steckdose_schlafzimmer_fernseher
                 name: Fernseher
+                styles:
+                  icon:
+                    - margin-top: "-41%"
+                    - margin-left: "-20%"
           #
           ###HOME BADEZIMMER LABEL CARD###################################################
           #
@@ -1754,6 +1865,7 @@ views:
             cards:
               - type: "custom:button-card"
                 template: wall_switch_card
+                size: "110%"
                 entity: switch.hmip_bsm_00085a49a4a57e
                 name: gesamt
                 custom_fields:
@@ -1765,11 +1877,17 @@ views:
                         style="width: 12px; height: 12px; color: #b3b3b3;">
                         </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
                     ]]]
+                styles:
+                  icon:
+                    - margin-top: "-31%"
+                    - margin-left: "-18%"
               #
               ###HOME BADEZIMMER DECKENLEUCHTE################################################
               #
               - type: "custom:button-card"
                 template: light_card
+                icon: "mdi:ceiling-light-outline"
+                size: "110%"
                 entity: light.extended_color_light_21
                 name: Deckenleuchte
                 custom_fields:
@@ -1781,6 +1899,10 @@ views:
                         style="width: 12px; height: 12px; color: #b3b3b3;">
                         </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
                     ]]]
+                styles:
+                  icon:
+                    - margin-top: "-45%"
+                    - margin-left: "-17%"
           #
           ###HOME BADEZIMMER SPIEGELBELEUCHTUNG###########################################
           #
@@ -1819,14 +1941,21 @@ views:
           - type: horizontal-stack
             cards:
               - type: "custom:button-card"
+                size: "110%"
                 template: wall_switch_card_02
                 entity: switch.00085a49a4b411
                 name: Treppenbeleuchtung
+                styles:
+                  icon:
+                    - margin-top: "-31%"
+                    - margin-left: "-18%"
               #
               ###HOME FLUR TREPPENBELEUCHTUNG#################################################
               #
               - type: "custom:button-card"
                 template: light_card
+                icon: "mdi:ceiling-light-outline"
+                size: "110%"
                 entity: light.lichtgruppe_flur_deckenleuchte
                 name: Deckenleuchte
                 custom_fields:
@@ -1838,6 +1967,10 @@ views:
                         style="width: 12px; height: 12px; color: #b3b3b3;">
                         </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
                     ]]]
+                styles:
+                  icon:
+                    - margin-top: "-45%"
+                    - margin-left: "-17%"
           #
           ###HOME WERKSTATT LABEL CARD####################################################
           #
@@ -1867,6 +2000,7 @@ views:
             cards:
               - type: "custom:button-card"
                 template: wall_switch_card
+                size: "110%"
                 entity: switch.00085a49a49be1
                 name: gesamt
                 custom_fields:
@@ -1878,11 +2012,17 @@ views:
                         style="width: 12px; height: 12px; color: #b3b3b3;">
                         </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
                     ]]]
+                styles:
+                  icon:
+                    - margin-top: "-31%"
+                    - margin-left: "-18%"
               #
               ###HOME WERKSTATT DECKENLEUCHTE#################################################
               #
               - type: "custom:button-card"
                 template: light_card
+                icon: "mdi:ceiling-light-outline"
+                size: "110%"
                 entity: light.lichtgruppe_werkstatt_deckenleuchte
                 name: Deckenleuchte
                 custom_fields:
@@ -1894,6 +2034,10 @@ views:
                         style="width: 12px; height: 12px; color: #b3b3b3;">
                         </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
                     ]]]
+                styles:
+                  icon:
+                    - margin-top: "-45%"
+                    - margin-left: "-17%"
 
           #
           ###HOME KÜCHE LABEL CARD########################################################
@@ -1924,6 +2068,7 @@ views:
             cards:
               - type: "custom:button-card"
                 template: wall_switch_card
+                size: "110%"
                 entity: switch.hmip_bsm_00085a49a49be7
                 name: gesamt
               #                custom_fields:
@@ -1935,6 +2080,10 @@ views:
               #                        style="width: 12px; height: 12px; color: #b3b3b3;">
               #                        </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
               #                    ]]]
+                styles:
+                  icon:
+                    - margin-top: "-31%"
+                    - margin-left: "-18%"
               #
               ###HOME KÜCHE DECKENLEUCHTE#####################################################
               #
@@ -2073,6 +2222,7 @@ views:
             cards:
               - type: "custom:button-card"
                 template: wall_switch_card
+                size: "110%"
                 entity: switch.00085a49a49c0f
                 name: gesamt
                 custom_fields:
@@ -2084,11 +2234,17 @@ views:
                         style="width: 12px; height: 12px; color: #b3b3b3;">
                         </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
                     ]]]
+                styles:
+                  icon:
+                    - margin-top: "-31%"
+                    - margin-left: "-18%"
               #
               ###LICHTER WOHNZIMMER DECKENLEUCHTE#############################################
               #
               - type: "custom:button-card"
                 template: light_card
+                icon: "mdi:ceiling-light-outline"
+                size: "110%"
                 entity: light.lichtgruppe_wohnzimmer_deckenleuchte
                 name: Deckenleuchte
                 custom_fields:
@@ -2100,29 +2256,19 @@ views:
                         style="width: 12px; height: 12px; color: #b3b3b3;">
                         </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
                     ]]]
+                styles:
+                  icon:
+                    - margin-top: "-45%"
+                    - margin-left: "-17%"
           #
-          ###LICHTER WOHNZIMMER STEHLAMPE#################################################
+          ###LICHTER WOHNZIMMER KLEINE LAMPE#################################################
           #
           - type: horizontal-stack
             cards:
               - type: "custom:button-card"
                 template: light_card
-                entity: light.dimmable_light_5
-                name: Stehlampe
-                custom_fields:
-                  brightness: |
-                    [[[
-                      var bri = Math.ceil(states['light.dimmable_light_5'].attributes.brightness / 255.0 * 100.0);
-                      return `<ha-icon
-                        icon="mdi:brightness-7"
-                        style="width: 12px; height: 12px; color: #b3b3b3;">
-                        </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
-                    ]]]
-              #
-              ###LICHTER WOHNZIMMER KLEINE LAMPE##############################################
-              #
-              - type: "custom:button-card"
-                template: light_card
+                icon: "mdi:lamp-outline"
+                size: "110%"
                 entity: light.licht_wohnzimmer_kleine_lampe
                 name: Kleine Lampe
                 custom_fields:
@@ -2134,6 +2280,33 @@ views:
                         style="width: 12px; height: 12px; color: #b3b3b3;">
                         </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
                     ]]]
+                styles:
+                  icon:
+                    - margin-top: "-35%"
+                    - margin-left: "-17%"
+              #
+              ###LICHTER WOHNZIMMER STEHLAMPE##############################################
+              #
+              - type: "custom:button-card"
+                template: light_card
+                icon: "mdi:floor-lamp-outline"
+                size: "110%"
+                entity: light.dimmable_light_5
+                name: Stehlampe
+                custom_fields:
+                  brightness: |
+                    [[[
+                      var bri = Math.ceil(states['light.dimmable_light_5'].attributes.brightness / 255.0 * 100.0);
+                      return `<ha-icon
+                        icon="mdi:brightness-7"
+                        style="width: 12px; height: 12px; color: #b3b3b3;">
+                        </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
+                    ]]]
+                styles:
+                  icon:
+                    - margin-top: "-35%"
+                    - margin-left: "-31%"
+
           #
           ###LICHTER WOHNZIMMER LIGHTSTRIP################################################
           #
@@ -2141,6 +2314,7 @@ views:
             cards:
               - type: "custom:button-card"
                 template: lightstrip_card
+                size: "110%"
                 entity: light.extended_color_light_23
                 name: Lightstrip PC
                 custom_fields:
@@ -2152,6 +2326,10 @@ views:
                         style="width: 12px; height: 12px; color: #b3b3b3;">
                         </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
                     ]]]
+                styles:
+                  icon:
+                    - margin-top: "-37%"
+                    - margin-left: "-8%"
               #
               ###LICHTER WOHNZIMMER PLACEHOLDER###############################################
               #
@@ -2273,6 +2451,7 @@ views:
             cards:
               - type: "custom:button-card"
                 template: wall_switch_card
+                size: "110%"
                 entity: switch.00085a49a49f84
                 name: gesamt
                 custom_fields:
@@ -2284,11 +2463,17 @@ views:
                         style="width: 12px; height: 12px; color: #b3b3b3;">
                         </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
                     ]]]
+                styles:
+                  icon:
+                    - margin-top: "-31%"
+                    - margin-left: "-18%"
               #
               ###LICHTER SCHLAFZIMMER DECKENLEUCHTE###########################################
               #
               - type: "custom:button-card"
                 template: light_card
+                icon: "mdi:ceiling-light-outline"
+                size: "110%"
                 entity: light.color_temperature_light_18
                 name: Deckenleuchte
                 custom_fields:
@@ -2300,47 +2485,19 @@ views:
                         style="width: 12px; height: 12px; color: #b3b3b3;">
                         </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
                     ]]]
+                styles:
+                  icon:
+                    - margin-top: "-45%"
+                    - margin-left: "-17%"
           #
-          ###LICHTER SCHLAFZIMMER NACHTTISCHLEUCHTE#######################################
-          #
-          - type: horizontal-stack
-            cards:
-              - type: "custom:button-card"
-                template: light_card
-                entity: light.extended_color_light_3_2
-                name: Nachttischleuchte
-                custom_fields:
-                  brightness: |
-                    [[[
-                      var bri = Math.ceil(states['light.extended_color_light_3_2'].attributes.brightness / 255.0 * 100.0);
-                      return `<ha-icon
-                        icon="mdi:brightness-7"
-                        style="width: 12px; height: 12px; color: #b3b3b3;">
-                        </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
-                    ]]]
-              #
-              ###LICHTER SCHLAFZIMMER STANDLEUCHTE############################################
-              #
-              - type: "custom:button-card"
-                template: light_card
-                entity: light.licht_schlafzimmer_standleuchte
-                name: Standleuchte
-                custom_fields:
-                  brightness: |
-                    [[[
-                      var bri = Math.ceil(states['light.licht_schlafzimmer_standleuchte'].attributes.brightness / 255.0 * 100.0);
-                      return `<ha-icon
-                        icon="mdi:brightness-7"
-                        style="width: 12px; height: 12px; color: #b3b3b3;">
-                        </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
-                    ]]]
-          #
-          ###LICHTER SCHLAFZIMMER KLEINE LAMPE############################################
+          ###LICHTER SCHLAFZIMMER PHILIPS HUE GO#######################################
           #
           - type: horizontal-stack
             cards:
               - type: "custom:button-card"
                 template: light_card
+                icon: "mdi:wall-sconce-round-variant-outline"
+                size: "110%"
                 entity: light.extended_color_light_2
                 name: Philips Go
                 custom_fields:
@@ -2352,6 +2509,56 @@ views:
                         style="width: 12px; height: 12px; color: #b3b3b3;">
                         </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
                     ]]]
+                styles:
+                  icon:
+                    - margin-top: "-48%"
+                    - margin-left: "-16%"
+              #
+              ###LICHTER SCHLAFZIMMER NACHTTISCHLEUCHTE############################################
+              #
+              - type: "custom:button-card"
+                template: light_card
+                icon: "mdi:lamp-outline"
+                size: "110%"
+                entity: light.extended_color_light_3_2
+                name: Nachttischleuchte
+                custom_fields:
+                  brightness: |
+                    [[[
+                      var bri = Math.ceil(states['light.extended_color_light_3_2'].attributes.brightness / 255.0 * 100.0);
+                      return `<ha-icon
+                        icon="mdi:brightness-7"
+                        style="width: 12px; height: 12px; color: #b3b3b3;">
+                        </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
+                    ]]]
+                styles:
+                  icon:
+                    - margin-top: "-35%"
+                    - margin-left: "-17%"
+          #
+          ###LICHTER SCHLAFZIMMER STANDLEUCHTE############################################
+          #
+          - type: horizontal-stack
+            cards:
+              - type: "custom:button-card"
+                template: light_card
+                icon: "mdi:floor-lamp-outline"
+                size: "110%"
+                entity: light.licht_schlafzimmer_standleuchte
+                name: Standleuchte
+                custom_fields:
+                  brightness: |
+                    [[[
+                      var bri = Math.ceil(states['light.licht_schlafzimmer_standleuchte'].attributes.brightness / 255.0 * 100.0);
+                      return `<ha-icon
+                        icon="mdi:brightness-7"
+                        style="width: 12px; height: 12px; color: #b3b3b3;">
+                        </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
+                    ]]]
+                styles:
+                  icon:
+                    - margin-top: "-35%"
+                    - margin-left: "-31%"
               #
               ###LICHTER SCHLAFZIMMER PLACEHOLDER EMPTY CARD##################################
               #
@@ -2473,6 +2680,7 @@ views:
             cards:
               - type: "custom:button-card"
                 template: wall_switch_card
+                size: "110%"
                 entity: switch.hmip_bsm_00085a49a4a57e
                 name: gesamt
                 custom_fields:
@@ -2484,11 +2692,17 @@ views:
                         style="width: 12px; height: 12px; color: #b3b3b3;">
                         </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
                     ]]]
+                styles:
+                  icon:
+                    - margin-top: "-31%"
+                    - margin-left: "-18%"
               #
               ###LICHTER BADEZIMMER DECKENLEUCHTE#############################################
               #
               - type: "custom:button-card"
                 template: light_card
+                icon: "mdi:ceiling-light-outline"
+                size: "110%"
                 entity: light.extended_color_light_21
                 name: Deckenleuchte
                 custom_fields:
@@ -2500,6 +2714,10 @@ views:
                         style="width: 12px; height: 12px; color: #b3b3b3;">
                         </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
                     ]]]
+                styles:
+                  icon:
+                    - margin-top: "-45%"
+                    - margin-left: "-17%"
           #
           ###LICHTER BADEZIMMER SPIEGELBELEUCHTUNG########################################
           #
@@ -2625,22 +2843,20 @@ views:
             cards:
               - type: "custom:button-card"
                 template: wall_switch_card
+                size: "110%"
                 entity: switch.00085a49a4b411
                 name: Treppenbeleuchtung
-                custom_fields:
-                  brightness: |
-              #                    [[[
-              #                      var bri = Math.ceil(states['light.flur'].attributes.brightness / 255.0 * 100.0);
-              #                      return `<ha-icon
-              #                        icon="mdi:brightness-7"
-              #                        style="width: 12px; height: 12px; color: #b3b3b3;">
-              #                        </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
-              #                    ]]]
+                styles:
+                  icon:
+                    - margin-top: "-31%"
+                    - margin-left: "-18%"
               #
               ###LICHTER FLUR FLURBELEUCHTUNG#################################################
               #
               - type: "custom:button-card"
                 template: light_card
+                icon: "mdi:ceiling-light-outline"
+                size: "110%"
                 entity: light.lichtgruppe_flur_deckenleuchte
                 name: Flurbeleuchtung
                 custom_fields:
@@ -2652,6 +2868,10 @@ views:
                         style="width: 12px; height: 12px; color: #b3b3b3;">
                         </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
                     ]]]
+                styles:
+                  icon:
+                    - margin-top: "-45%"
+                    - margin-left: "-17%"
           #
           ###LICHTER WERKSTATT LABEL CARD#################################################
           #
@@ -2754,6 +2974,7 @@ views:
             cards:
               - type: "custom:button-card"
                 template: wall_switch_card
+                size: "110%"
                 entity: switch.00085a49a49be1
                 name: gesamt
                 custom_fields:
@@ -2765,11 +2986,17 @@ views:
                         style="width: 12px; height: 12px; color: #b3b3b3;">
                         </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
                     ]]]
+                styles:
+                  icon:
+                    - margin-top: "-31%"
+                    - margin-left: "-18%"
               #
               ###LICHTER WERKSTATT DECKENLEUCHTE##############################################
               #
               - type: "custom:button-card"
                 template: light_card
+                icon: "mdi:ceiling-light-outline"
+                size: "110%"
                 entity: light.lichtgruppe_werkstatt_deckenleuchte
                 name: Deckenleuchte
                 custom_fields:
@@ -2781,6 +3008,10 @@ views:
                         style="width: 12px; height: 12px; color: #b3b3b3;">
                         </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
                     ]]]
+                styles:
+                  icon:
+                    - margin-top: "-45%"
+                    - margin-left: "-17%"
   #
   ###LICHTER TAB END##############################################################
   #
@@ -5524,7 +5755,7 @@ views:
   ###SMARTPHONE TAB BEGIN#########################################################
   #
   - title: Smartphone
-    icon: "mdi:cellphone-android"
+    icon: "mdi:cellphone"
     path: smartphone
     theme: Google-Light
     #
