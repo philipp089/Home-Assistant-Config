@@ -29,3 +29,10 @@ As the name suggests, in the Light-Tab I handle all my light-scripts. I almost e
 Remote Controls for two televisions and all Media-Players (several Sonos devices, Google Nest Minis) are integrated to this dashboard.
 
 ![02_Media_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/136970867-b626a1a4-eb24-4d7d-a948-54e21be33d8f.png)
+
+## Desktop App
+
+The Desktop-App is made with Tileboard. For now i only have the first Tab finished.
+
+![Home_Tab_Desktop_UI_v03_web](https://user-images.githubusercontent.com/66092908/136972172-35ea2c69-f50e-4e4f-9beb-c53e5d942822.png)
+
