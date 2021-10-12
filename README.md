@@ -10,7 +10,7 @@ The Home-Tab contains a custom-header with each tab above the Presence-Status. T
 
 ![00_Home_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/136935635-e3cf26ef-dedb-43b9-99ff-d768a4b3abfb.png)
 
-The  Home-Tab contains a group of custom button cards for each room. 
+Aside from that, the  Home-Tab contains a group of custom button cards for each room. 
 
 ![00_Home_Tab_Mockup_002](https://user-images.githubusercontent.com/66092908/136957946-fa5c33fa-66e3-4609-a5c6-4d84aa4a6167.png)
 
