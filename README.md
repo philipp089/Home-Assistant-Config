@@ -18,3 +18,7 @@ The Plugs- and the Air-Humidifier Card are custom button card templates as well 
 
 ![00_Home_Tab_Mockup_003](https://user-images.githubusercontent.com/66092908/136957977-2c61efd8-c5bc-45e9-ada0-07d7296a4bce.png)
 
+### The Light - Tab
+
+As the name suggests, in the Light-Tab i handle all my light-scripts. I almost exclusively use Philips Hue bulbs connected to a Raspbee II from dresden electronics as my Zigbee-Gateway. An old IKEA Floalt Panel is the exception.
+
