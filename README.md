@@ -23,3 +23,10 @@ The Plugs- and the Air-Humidifier Card are custom button card templates as well 
 As the name suggests, in the Light-Tab I handle all my light-scripts. I almost exclusively use Philips Hue bulbs connected to a Raspbee II from dresden electronics as my Zigbee-Gateway. An old IKEA Floalt Panel is the exception. Each of the scenes is also controllable via speech over Google Assistant.
 
 ![01_Light_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/136964666-65aad241-69d2-48fc-acb1-351d812ada39.png)
+
+### The Media - Tab
+
+Remote Control and all Media-Players are integrated to this dashboard.
+
+![02_Media_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/136966752-40006dec-dbd0-4b8d-b5c9-3ca42d0d8b59.png)
+
