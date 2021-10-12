@@ -30,6 +30,11 @@ Remote Controls for two televisions and all Media-Players (several Sonos devices
 
 ![02_Media_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/136970867-b626a1a4-eb24-4d7d-a948-54e21be33d8f.png)
 
+### The Plugs - Tab
+
+![03_Plugs_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/136991419-7eebee44-6a5c-42a1-b2d4-052333bddb9c.png)
+
+
 ## Desktop App
 
 ### The Home - Tab
