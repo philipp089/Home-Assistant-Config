@@ -28,5 +28,4 @@ As the name suggests, in the Light-Tab I handle all my light-scripts. I almost e
 
 Remote Controls for two televisions and all Media-Players (several Sonos devices, Google Nest Minis) are integrated to this dashboard.
 
-![02_Media_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/136970638-663df134-e544-4a3f-adb9-3d21972a0eff.png)
-
+![02_Media_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/136970867-b626a1a4-eb24-4d7d-a948-54e21be33d8f.png)
