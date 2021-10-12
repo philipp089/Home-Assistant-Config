@@ -8,8 +8,9 @@ The Home-Tab is the default Tab and a great way to start searching through featu
 
 The Home-Tab contains a custom-header with each tab above the Presence-Status. The quick access area below is maybe my mostly used way to navigate through the app, as it gives direct access to all dashboards.
 
-![](X:\Smart Home\Documentation\00_Home_Tab_Mockup_001.png)
+![00_Home_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/136935635-e3cf26ef-dedb-43b9-99ff-d768a4b3abfb.png)
 
 The  Home-Tab contains a group of custom button cards for each room. 
 
-![](X:\Smart Home\Documentation\00_Home_Tab_Mockup_002.png)
+![00_Home_Tab_Mockup_002](https://user-images.githubusercontent.com/66092908/136935674-7db4e0c3-4f8e-405d-acd0-8feb2ea1ec7d.png)
+
