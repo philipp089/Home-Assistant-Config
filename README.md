@@ -12,8 +12,9 @@ The Home-Tab contains a custom-header with each tab above the Presence-Status. T
 
 The  Home-Tab contains a group of custom button cards for each room. 
 
-![00_Home_Tab_Mockup_002](https://user-images.githubusercontent.com/66092908/136935674-7db4e0c3-4f8e-405d-acd0-8feb2ea1ec7d.png)
+![00_Home_Tab_Mockup_002](https://user-images.githubusercontent.com/66092908/136957946-fa5c33fa-66e3-4609-a5c6-4d84aa4a6167.png)
 
 The Plugs- and the Air-Humidifier Card are custom button card templates as well as all other button card type.
 
-![00_Home_Tab_Mockup_003](https://user-images.githubusercontent.com/66092908/136937465-d3b07788-dd7d-4b0d-a978-465a1647f90b.png)
+![00_Home_Tab_Mockup_003](https://user-images.githubusercontent.com/66092908/136957977-2c61efd8-c5bc-45e9-ada0-07d7296a4bce.png)
+
