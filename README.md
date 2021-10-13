@@ -82,7 +82,7 @@ Work in Progress
 
 ### The Automations - Tab
 
-
+![14_Automations_Tab_Mockup_003](https://user-images.githubusercontent.com/66092908/137140931-0eedc065-37e2-4d6b-a6cf-8978a2cacf5f.png)
 
 ## Desktop App
 
