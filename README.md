@@ -48,6 +48,10 @@ A simple dashboard to view all the temperatures in the flat. In my setup i use H
 
 ![06_Raspberry_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/137117712-94a21cba-13fe-4d62-9682-dde8638ed7ee.png)
 
+### The Desktop - PC - Tab
+
+![07_Desktop_PC_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/137187009-eeec948b-f07d-422e-8f43-6abee5f7ea00.png)
+
 ### The Playstation - Tab
 
 ![08_Playstation_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/137130444-2cc23d53-589e-46f0-8639-75ef7e384366.png)
