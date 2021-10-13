@@ -58,7 +58,7 @@ A simple dashboard to view all the temperatures in the flat. In my setup i use H
 
 ### The Camera - Tab
 
-![10_Camera_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/137128973-bb1fe00a-a404-4ac1-9967-9b4c17fbfe02.png)
+![10_Camera_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/137129537-e5ca7e22-fc2c-46a4-9a83-a1b6b000bbde.png)
 
 ## Desktop App
 
