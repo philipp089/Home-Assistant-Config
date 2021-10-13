@@ -46,7 +46,7 @@ A simple dashboard to view all the temperatures in the flat. In my setup i use H
 
 ### The Raspberry - Tab
 
-![06_Raspberry_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/137115284-a1361f33-7f02-4246-b14e-f3450171407a.png)
+![06_Raspberry_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/137117712-94a21cba-13fe-4d62-9682-dde8638ed7ee.png)
 
 ## Desktop App
 
