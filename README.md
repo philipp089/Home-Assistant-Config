@@ -8,7 +8,7 @@ The Home-Tab is the default Tab and a great way to start searching through featu
 
 The Home-Tab contains a custom-header with each tab above the Presence-Status. The quick access area below is maybe my mostly used way to navigate through the app, as it gives direct access to all dashboards.
 
-![00_Home_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/136935635-e3cf26ef-dedb-43b9-99ff-d768a4b3abfb.png)
+![00_Home_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/137134145-41009012-8ecd-4d56-a489-8c1a34a5138a.png)
 
 Aside from that, the  Home-Tab contains a group of custom button cards for each room. 
 
