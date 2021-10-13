@@ -36,7 +36,7 @@ Remote Controls for two televisions and all Media-Players (several Sonos devices
 
 ### The Plants - Tab
 
-I still have to evaluate the Xiami-Plant-Sensors until that, this is still empty.
+I still have to evaluate the Xiami-Plant-Sensors until that, this dashboard is empty.
 
 ### The Climate - Tab
 
