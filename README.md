@@ -50,7 +50,7 @@ A simple dashboard to view all the temperatures in the flat. In my setup i use H
 
 ### The Playstation - Tab
 
-![08_Playstation_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/137125420-00cd90e7-8b4d-404a-9567-1d7924baf285.png)
+![08_Playstation_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/137130444-2cc23d53-589e-46f0-8639-75ef7e384366.png)
 
 ### The Weather - Tab
 
