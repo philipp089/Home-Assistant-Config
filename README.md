@@ -64,6 +64,10 @@ A simple dashboard to view all the temperatures in the flat. In my setup i use H
 
 ![11_Smartphone_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/137131923-fbef05ce-0239-47b1-bc36-563e243bffc3.png)
 
+### The Battery - Tab
+
+![12_Battery_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/137132822-427117fe-e4dc-4c2d-8d92-263b880bea53.png)
+
 ## Desktop App
 
 ### The Home - Tab
