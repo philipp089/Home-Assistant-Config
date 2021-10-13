@@ -72,6 +72,18 @@ A simple dashboard to view all the temperatures in the flat. In my setup i use H
 
 ![13_Alarm_Tab_Mockup_003](https://user-images.githubusercontent.com/66092908/137138137-6d73f593-c7c9-4b7a-9afa-44fc430b7c3a.png)
 
+### The Health - Tab
+
+Work in Progress
+
+### The Calender - Tab
+
+Work in Progress
+
+### The Automations - Tab
+
+
+
 ## Desktop App
 
 ### The Home - Tab
