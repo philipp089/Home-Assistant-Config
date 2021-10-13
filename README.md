@@ -34,6 +34,16 @@ Remote Controls for two televisions and all Media-Players (several Sonos devices
 
 ![03_Plugs_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/136991419-7eebee44-6a5c-42a1-b2d4-052333bddb9c.png)
 
+### The Plants - Tab
+
+I still have to evaluate the Xiami-Plant-Sensors until that, this is still empty.
+
+### The Climate - Tab
+
+A simple dashboard to view all the temperatures in the flat. In my setup i use Homematic HmiP-eTRV-2 devices.
+
+![05_Climate_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/137110687-9d66edf3-b99f-4fc0-af66-555620895293.png)
+
 
 ## Desktop App
 
