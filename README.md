@@ -52,6 +52,10 @@ A simple dashboard to view all the temperatures in the flat. In my setup i use H
 
 ![08_Playstation_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/137125420-00cd90e7-8b4d-404a-9567-1d7924baf285.png)
 
+### The Weather - Tab
+
+![09_Weather_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/137126423-4183dece-c998-4464-9aa7-68747d882a2c.png)
+
 ## Desktop App
 
 ### The Home - Tab
