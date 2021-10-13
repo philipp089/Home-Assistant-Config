@@ -44,6 +44,9 @@ A simple dashboard to view all the temperatures in the flat. In my setup i use H
 
 ![05_Climate_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/137110687-9d66edf3-b99f-4fc0-af66-555620895293.png)
 
+### The Raspberry - Tab
+
+![06_Raspberry_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/137115284-a1361f33-7f02-4246-b14e-f3450171407a.png)
 
 ## Desktop App
 
