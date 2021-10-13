@@ -686,7 +686,7 @@ button_card_templates:
     show_icon: true
     show_name: true
     show_state: true
-    size: 100%
+    size: 110%
     state:
       - styles:
           icon:
@@ -712,8 +712,8 @@ button_card_templates:
         - grid-template-columns: 1fr 1fr
         - grid-template-rows: 1fr min-content
       icon:
-        - margin-top: "-43%"
-        - margin-left: "-10%"
+        - margin-top: "-44%"
+        - margin-left: "-15%"
       img_cell:
         - justify-content: start
         - align-items: start
@@ -6042,14 +6042,15 @@ views:
             cards:
               - type: "custom:button-card"
                 template: state_card
+                size: "24%"
                 entity: sensor.local_time_philipp_smartphone
                 name: nächster Alarm
                 icon: mdi:alarm
                 styles:
                   name:
-                    - margin-left: -70.5%
+                    - margin-left: -47%
                   img_cell:
-                    - margin-left: -74%
+                    - margin-left: -54%
           #
           ###SMARTPHONE LAST REBOOT#########################################################
           #
