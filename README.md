@@ -32,7 +32,7 @@ Remote Controls for two televisions and all Media-Players (several Sonos devices
 
 ### The Plugs - Tab
 
-![03_Plugs_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/136991419-7eebee44-6a5c-42a1-b2d4-052333bddb9c.png)
+![03_Plugs_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/137471461-754f39ea-b89c-4f6d-9b45-9203f6019832.png)
 
 ### The Plants - Tab
 
