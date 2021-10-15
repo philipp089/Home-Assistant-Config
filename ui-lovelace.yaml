@@ -682,7 +682,7 @@ button_card_templates:
             style="width: 60%; height: 50px; color: #b3b3b3;">
             </ha-icon>` ;
         ]]]
-    icon: "mdi:power-plug"
+    icon: "mdi:power-plug-outline"
     show_icon: true
     show_name: true
     show_state: true
@@ -821,7 +821,7 @@ button_card_templates:
     custom_fields:
       switch: |
         [[[
-          if(entity.state == 'on') return `<ha-icon
+          if(entity.state == '1') return `<ha-icon
             icon="mdi:toggle-switch"
             style="width: 60%; height: 50px; color: #4285f4;">
             </ha-icon>` ;
@@ -903,7 +903,7 @@ button_card_templates:
     custom_fields:
       switch: |
         [[[
-          if(entity.state == 'on') return `<ha-icon
+          if(entity.state == '1') return `<ha-icon
             icon="mdi:toggle-switch"
             style="width: 60%; height: 50px; color: #4285f4;">
             </ha-icon>` ;
@@ -5527,6 +5527,7 @@ views:
           - type: horizontal-stack
             cards:
               - type: "custom:button-card"
+                aspect_ratio: "1/1"
                 color: "#003791"
                 color_type: card
                 icon: "mdi:sony-playstation"
@@ -5542,6 +5543,7 @@ views:
               ###PLAYSTATION TAB X BUTTON##################################################
               #
               - type: "custom:button-card"
+                aspect_ratio: "1/1"
                 color: "#91b8e3"
                 color_type: icon
                 icon: "mdi:window-close"
@@ -5549,6 +5551,7 @@ views:
               ###PLAYSTATION TAB TRIANGLE BUTTON##################################################
               #
               - type: "custom:button-card"
+                aspect_ratio: "1/1"
                 color: "#1fd0c8"
                 color_type: icon
                 icon: "mdi:triangle-outline"
@@ -5556,6 +5559,7 @@ views:
               ###PLAYSTATION TAB SQUARE BUTTON##################################################
               #
               - type: "custom:button-card"
+                aspect_ratio: "1/1"
                 color: "#d4aad2"
                 color_type: icon
                 icon: "mdi:square-outline"
@@ -5563,6 +5567,7 @@ views:
               ###PLAYSTATION TAB CIRCLE BUTTON##################################################
               #
               - type: "custom:button-card"
+                aspect_ratio: "1/1"
                 color: "#f57b8a"
                 color_type: icon
                 icon: "mdi:circle-outline"
