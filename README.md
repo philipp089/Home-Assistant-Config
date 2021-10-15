@@ -16,7 +16,7 @@ Aside from that, the  Home-Tab contains a group of custom button cards for each 
 
 The Plugs- and the Air-Humidifier Card are custom button card templates as well as all other button card type.
 
-![00_Home_Tab_Mockup_003](https://user-images.githubusercontent.com/66092908/137135107-d1fabef5-bae7-4875-9d34-f32810e59919.png)
+![00_Home_Tab_Mockup_003](https://user-images.githubusercontent.com/66092908/137471175-e28e7fba-3cb9-4846-bbb1-09f9de7edeb6.png)
 
 ### The Light - Tab
 
