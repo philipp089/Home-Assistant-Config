@@ -70,7 +70,7 @@ button_card_templates:
     color_type: label-card
     styles:
       card:
-        - box-shadow: 1px 1px 1px 1px
+        - box-shadow: 1px 1px 1px 1px var(--divider-color)
         - background: var(--secondary-background-color)
       name:
         - color: var(--primary-text-color)
@@ -85,7 +85,6 @@ button_card_templates:
     styles:
       card:
         - text-transform: uppercase
-        - color: "rgb(140,140,140)"
         - font-size: 10px
         - font-family: Roboto
         - font-weight: bold
@@ -106,7 +105,6 @@ button_card_templates:
     styles:
       card:
         - text-transform: uppercase
-        - color: "rgb(140,140,140)"
         - font-size: 10px
         - font-family: Roboto
         - font-weight: bold
@@ -154,12 +152,11 @@ button_card_templates:
     state:
       - styles:
           icon:
-            - color: "rgb(180,180,180)"
+            - color: var(--secondary-text-color)
         value: "off"
     styles:
       card:
         - text-transform: uppercase
-        - color: "rgb(140,140,140)"
         - font-size: 10px
         - font-family: Roboto
         - border-radius: 2px
@@ -170,7 +167,7 @@ button_card_templates:
           - align-self: start
           - justify-self: end
           - text-transform: uppercase
-          - color: "rgb(180,180,180)"
+          - color: var(--secondary-text-color)
           - font-size: 10px
           - font-family: Roboto
           - font-weight: regular
@@ -195,13 +192,13 @@ button_card_templates:
         - margin: none
       name:
         - text-transform: uppercase
-        - color: "rgb(140,140,140)"
+        - color: var(--primary-text-color)
         - font-size: 12px
         - font-family: Roboto
         - justify-self: start
       state:
         - text-transform: uppercase
-        - color: "rgb(180,180,180)"
+        - color: var(--secondary-text-color)
         - font-size: 10px
         - font-family: Roboto
         - justify-self: start
@@ -234,12 +231,12 @@ button_card_templates:
     state:
       - styles:
           icon:
-            - color: "rgb(180,180,180)"
+            - color: var(--secondary-text-color)
         value: "off"
     styles:
       card:
         - text-transform: uppercase
-        - color: "rgb(140,140,140)"
+        - color: var(--secondary-text-color)
         - font-size: 10px
         - font-family: Roboto
         - border-radius: 2px
@@ -250,7 +247,7 @@ button_card_templates:
           - align-self: start
           - justify-self: end
           - text-transform: uppercase
-          - color: "rgb(180,180,180)"
+          - color: var(--secondary-text-color)
           - font-size: 10px
           - font-family: Roboto
           - font-weight: regular
@@ -275,13 +272,13 @@ button_card_templates:
         - margin: none
       name:
         - text-transform: uppercase
-        - color: "rgb(140,140,140)"
+        - color: var(--primary-text-color)
         - font-size: 12px
         - font-family: Roboto
         - justify-self: start
       state:
         - text-transform: uppercase
-        - color: "rgb(180,180,180)"
+        - color: var(--secondary-text-color)
         - font-size: 10px
         - font-family: Roboto
         - justify-self: start
@@ -322,12 +319,12 @@ button_card_templates:
     state:
       - styles:
           icon:
-            - color: "rgb(180,180,180)"
+            - color: var(--secondary-text-color)
         value: "off"
     styles:
       card:
         - text-transform: uppercase
-        - color: "rgb(140,140,140)"
+        - color: var(--secondary-text-color)
         - font-size: 10px
         - font-family: Roboto
         - border-radius: 2px
@@ -338,7 +335,7 @@ button_card_templates:
           - align-self: start
           - justify-self: end
           - text-transform: uppercase
-          - color: "rgb(180,180,180)"
+          - color: var(--secondary-text-color)
           - font-size: 10px
           - font-family: Roboto
           - font-weight: regular
@@ -363,13 +360,13 @@ button_card_templates:
         - margin: none
       name:
         - text-transform: uppercase
-        - color: "rgb(140,140,140)"
+        - color: var(--primary-text-color)
         - font-size: 12px
         - font-family: Roboto
         - justify-self: start
       state:
         - text-transform: uppercase
-        - color: "rgb(180,180,180)"
+        - color: var(--secondary-text-color)
         - font-size: 10px
         - font-family: Roboto
         - justify-self: start
@@ -410,12 +407,12 @@ button_card_templates:
     state:
       - styles:
           icon:
-            - color: "rgb(180,180,180)"
+            - color: var(--secondary-text-color)
         value: "off"
     styles:
       card:
         - text-transform: uppercase
-        - color: "rgb(140,140,140)"
+        - color: var(--primary-text-color)
         - font-size: 10px
         - font-family: Roboto
         - border-radius: 2px
@@ -426,7 +423,7 @@ button_card_templates:
           - align-self: start
           - justify-self: end
           - text-transform: uppercase
-          - color: "rgb(180,180,180)"
+          - color: var(--secondary-text-color)
           - font-size: 10px
           - font-family: Roboto
           - font-weight: regular
@@ -451,13 +448,13 @@ button_card_templates:
         - margin: none
       name:
         - text-transform: uppercase
-        - color: "rgb(140,140,140)"
+        - color: var(--primary-text-color)
         - font-size: 12px
         - font-family: Roboto
         - justify-self: start
       state:
         - text-transform: uppercase
-        - color: "rgb(180,180,180)"
+        - color: var(--secondary-text-color)
         - font-size: 10px
         - font-family: Roboto
         - justify-self: start
@@ -488,12 +485,12 @@ button_card_templates:
     state:
       - styles:
           icon:
-            - color: "rgb(180,180,180)"
+            - color: var(--secondary-text-color)
         value: "off"
     styles:
       card:
         - text-transform: uppercase
-        - color: "rgb(140,140,140)"
+        - color: var(--primary-text-color)
         - font-size: 10px
         - font-family: Roboto
         - border-radius: 2px
@@ -518,13 +515,13 @@ button_card_templates:
         - margin: none
       name:
         - text-transform: uppercase
-        - color: "rgb(140,140,140)"
+        - color: var(--primary-text-color)
         - font-size: 12px
         - font-family: Roboto
         - justify-self: start
       state:
         - text-transform: uppercase
-        - color: "rgb(180,180,180)"
+        - color: var(--secondary-text-color)
         - font-size: 10px
         - font-family: Roboto
         - justify-self: start
@@ -555,12 +552,12 @@ button_card_templates:
     state:
       - styles:
           icon:
-            - color: "rgb(180,180,180)"
+            - color: var(--secondary-text-color)
         value: "off"
     styles:
       card:
         - text-transform: uppercase
-        - color: "rgb(140,140,140)"
+        - color: var(--primary-text-color)
         - font-size: 10px
         - font-family: Roboto
         - border-radius: 2px
@@ -585,13 +582,13 @@ button_card_templates:
         - margin: none
       name:
         - text-transform: uppercase
-        - color: "rgb(140,140,140)"
+        - color: var(--primary-text-color)
         - font-size: 12px
         - font-family: Roboto
         - justify-self: start
       state:
         - text-transform: uppercase
-        - color: "rgb(180,180,180)"
+        - color: var(--secondary-text-color)
         - font-size: 10px
         - font-family: Roboto
         - justify-self: start
@@ -622,12 +619,12 @@ button_card_templates:
     state:
       - styles:
           icon:
-            - color: "rgb(180,180,180)"
+            - color: var(--secondary-text-color)
         value: "off"
     styles:
       card:
         - text-transform: uppercase
-        - color: "rgb(140,140,140)"
+        - color: var(--primary-text-color)
         - font-size: 10px
         - font-family: Roboto
         - border-radius: 2px
@@ -652,13 +649,13 @@ button_card_templates:
         - margin: none
       name:
         - text-transform: uppercase
-        - color: "rgb(140,140,140)"
+        - color: var(--primary-text-color)
         - font-size: 12px
         - font-family: Roboto
         - justify-self: start
       state:
         - text-transform: uppercase
-        - color: "rgb(180,180,180)"
+        - color: var(--secondary-text-color)
         - font-size: 10px
         - font-family: Roboto
         - justify-self: start
@@ -689,12 +686,12 @@ button_card_templates:
     state:
       - styles:
           icon:
-            - color: "rgb(180,180,180)"
+            - color: var(--secondary-text-color)
         value: "off"
     styles:
       card:
         - text-transform: uppercase
-        - color: "rgb(140,140,140)"
+        - color: var(--primary-text-color)
         - font-size: 10px
         - font-family: Roboto
         - border-radius: 2px
@@ -719,13 +716,13 @@ button_card_templates:
         - margin: none
       name:
         - text-transform: uppercase
-        - color: "rgb(140,140,140)"
+        - color: var(--primary-text-color)
         - font-size: 12px
         - font-family: Roboto
         - justify-self: start
       state:
         - text-transform: uppercase
-        - color: "rgb(180,180,180)"
+        - color: var(--secondary-text-color)
         - font-size: 10px
         - font-family: Roboto
         - justify-self: start
@@ -760,12 +757,12 @@ button_card_templates:
         color: "#DB4437"
         icon: "mdi:motion-sensor"
       - value: "off"
-        color: "rgb(180,180,180)"
+        color: var(--secondary-text-color)
         icon: "mdi:motion-sensor-off"
     styles:
       card:
         - text-transform: uppercase
-        - color: "rgb(140,140,140)"
+        - color: var(--primary-text-color)
         - font-size: 10px
         - font-family: Roboto
         - border-radius: 2px
@@ -776,7 +773,7 @@ button_card_templates:
           - align-self: start
           - justify-self: end
           - text-transform: uppercase
-          - color: "rgb(180,180,180)"
+          - color: var(--secondary-text-color)
           - font-size: 10px
           - font-family: Roboto
           - font-weight: regular
@@ -801,13 +798,13 @@ button_card_templates:
         - margin: none
       name:
         - text-transform: uppercase
-        - color: "rgb(140,140,140)"
+        - color: var(--primary-text-color)
         - font-size: 12px
         - font-family: Roboto
         - justify-self: start
       state:
         - text-transform: uppercase
-        - color: "rgb(180,180,180)"
+        - color: var(--secondary-text-color)
         - font-size: 10px
         - font-family: Roboto
         - justify-self: start
@@ -842,12 +839,12 @@ button_card_templates:
         color: "#DB4437"
         icon: "mdi:account-check-outline"
       - value: "0"
-        color: "rgb(180,180,180)"
+        color: var(--secondary-text-color)
         icon: "mdi:account-outline"
     styles:
       card:
         - text-transform: uppercase
-        - color: "rgb(140,140,140)"
+        - color: var(--primary-text-color)
         - font-size: 10px
         - font-family: Roboto
         - border-radius: 2px
@@ -858,7 +855,7 @@ button_card_templates:
           - align-self: start
           - justify-self: end
           - text-transform: uppercase
-          - color: "rgb(180,180,180)"
+          - color: var(--secondary-text-color)
           - font-size: 10px
           - font-family: Roboto
           - font-weight: regular
@@ -883,13 +880,13 @@ button_card_templates:
         - margin: none
       name:
         - text-transform: uppercase
-        - color: "rgb(140,140,140)"
+        - color: var(--primary-text-color)
         - font-size: 12px
         - font-family: Roboto
         - justify-self: start
       state:
         - text-transform: uppercase
-        - color: "rgb(180,180,180)"
+        - color: var(--secondary-text-color)
         - font-size: 10px
         - font-family: Roboto
         - justify-self: start
@@ -923,11 +920,11 @@ button_card_templates:
       - value: ">0"
         color: "#DB4437"
       - value: "0"
-        color: "rgb(180,180,180)"
+        color: var(--secondary-text-color)
     styles:
       card:
         - text-transform: uppercase
-        - color: "rgb(140,140,140)"
+        - color: var(--primary-text-color)
         - font-size: 10px
         - font-family: Roboto
         - border-radius: 2px
@@ -938,7 +935,7 @@ button_card_templates:
           - align-self: start
           - justify-self: end
           - text-transform: uppercase
-          - color: "rgb(180,180,180)"
+          - color: var(--secondary-text-color)
           - font-size: 10px
           - font-family: Roboto
           - font-weight: regular
@@ -963,13 +960,13 @@ button_card_templates:
         - margin: none
       name:
         - text-transform: uppercase
-        - color: "rgb(140,140,140)"
+        - color: var(--primary-text-color)
         - font-size: 12px
         - font-family: Roboto
         - justify-self: start
       state:
         - text-transform: uppercase
-        - color: "rgb(180,180,180)"
+        - color: var(--secondary-text-color)
         - font-size: 10px
         - font-family: Roboto
         - justify-self: start
@@ -1005,11 +1002,11 @@ button_card_templates:
         color: "#4285F4"
       - value: "off"
         icon: "mdi:door"
-        color: "rgb(180,180,180)"
+        color: var(--secondary-text-color)
     styles:
       card:
         - text-transform: uppercase
-        - color: "rgb(140,140,140)"
+        - color: var(--primary-text-color)
         - font-size: 10px
         - font-family: Roboto
         - border-radius: 2px
@@ -1020,7 +1017,7 @@ button_card_templates:
           - align-self: start
           - justify-self: end
           - text-transform: uppercase
-          - color: "rgb(180,180,180)"
+          - color: var(--secondary-text-color)
           - font-size: 10px
           - font-family: Roboto
           - font-weight: regular
@@ -1045,13 +1042,13 @@ button_card_templates:
         - margin: none
       name:
         - text-transform: uppercase
-        - color: "rgb(140,140,140)"
+        - color: var(--primary-text-color)
         - font-size: 12px
         - font-family: Roboto
         - justify-self: start
       state:
         - text-transform: uppercase
-        - color: "rgb(180,180,180)"
+        - color: var(--secondary-text-color)
         - font-size: 10px
         - font-family: Roboto
         - justify-self: start
@@ -1063,7 +1060,6 @@ button_card_templates:
     styles:
       card:
         - text-transform: uppercase
-        - color: "rgb(140,140,140)"
         - font-size: 10px
         - font-family: Roboto
         - border-radius: 2px
@@ -1084,7 +1080,6 @@ button_card_templates:
     styles:
       card:
         - text-transform: uppercase
-        - color: "rgb(140,140,140)"
         - font-size: 10px
         - font-family: Roboto
         - font-weight: bold
@@ -3835,7 +3830,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -3859,7 +3854,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -3885,7 +3880,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -4141,7 +4136,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -4165,7 +4160,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -4191,7 +4186,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -4215,7 +4210,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -4266,7 +4261,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -4290,7 +4285,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -4375,7 +4370,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -4399,7 +4394,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -4460,7 +4455,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -4484,7 +4479,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -4545,7 +4540,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -4569,7 +4564,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -4630,7 +4625,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -4654,7 +4649,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -4729,7 +4724,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -4752,7 +4747,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -4777,7 +4772,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -4800,7 +4795,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -4874,7 +4869,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -4897,7 +4892,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -4923,7 +4918,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -5010,7 +5005,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -5033,7 +5028,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -5059,7 +5054,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -5190,7 +5185,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -5213,7 +5208,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -5239,7 +5234,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -5536,7 +5531,7 @@ views:
                       color: "#ffffff"
                       icon: "mdi:sony-playstation"
                     - value: "off"
-                      color: "rgb(180,180,180)"
+                      color: var(--secondary-text-color)
                       icon: "mdi:sony-playstation"
               #
               ###PLAYSTATION TAB X BUTTON##################################################
@@ -5624,7 +5619,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -5648,7 +5643,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -5674,7 +5669,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -5794,7 +5789,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -5818,7 +5813,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -5844,7 +5839,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -5868,7 +5863,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -6128,7 +6123,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -6152,7 +6147,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -6178,7 +6173,7 @@ views:
                 style: |
                   ha-card {
                     box-shadow: 0px 0px 0px 0px;
-                    color: 'rgb(140,140,140)';
+                    color: var(--primary-text-color);
                     padding: 0px;
                   }
                 entities:
@@ -6285,7 +6280,7 @@ views:
               .entity-row .name {
                 font-size: 12px;
                 text-transform: uppercase;
-                color: 'rgb(140,140,140)';
+                color: var(--primary-text-color);
                 font-family: Roboto;
               }
 
