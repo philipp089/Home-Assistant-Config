@@ -128,7 +128,7 @@ Google - Dark:
   paper-slider-pin-color: "#a0c3ff"
   paper-slider-active-color: "#a0c3ff"
   paper-slider-secondary-color: var(--light-primary-color)
-  paper-slider-container-color: "#e6e6e6"
+  paper-slider-container-color: "#999999"
   ### Labels ###
   label-badge-background-color: "#0f9d58"
   label-badge-text-color: "#f2f2f2"

@@ -127,7 +127,7 @@ button_card_templates:
           var bri = Math.ceil(states['light.wohnzimmer'].attributes.brightness / 255.0 * 100.0);
           return `<ha-icon
             icon="mdi:brightness-7"
-            style="width: 12px; height: 12px; color: #b3b3b3;">
+            style="width: 12px; height: 12px; color: var(--text-primary-color);">
             </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
         ]]]
       switch: |
@@ -139,7 +139,7 @@ button_card_templates:
         else
           return `<ha-icon
             icon="mdi:toggle-switch-off"
-            style="width: 60%; height: 50px; color: #b3b3b3;">
+            style="width: 60%; height: 50px; color: var(--text-primary-color);">
             </ha-icon>` ;
         ]]]
     hold_action:
@@ -152,7 +152,7 @@ button_card_templates:
     state:
       - styles:
           icon:
-            - color: var(--secondary-text-color)
+            - color: var(--text-primary-color)
         value: "off"
     styles:
       card:
@@ -218,7 +218,7 @@ button_card_templates:
         else
           return `<ha-icon
             icon="mdi:toggle-switch-off"
-            style="width: 60%; height: 50px; color: #b3b3b3;">
+            style="width: 60%; height: 50px; color: var(--text-primary-color);">
             </ha-icon>` ;
         ]]]
     hold_action:
@@ -231,7 +231,7 @@ button_card_templates:
     state:
       - styles:
           icon:
-            - color: var(--secondary-text-color)
+            - color: var(--text-primary-color)
         value: "off"
     styles:
       card:
@@ -294,7 +294,7 @@ button_card_templates:
           var bri = Math.ceil(states['light.lichtgruppe_wohnzimmer_deckenleuchte'].attributes.brightness / 255.0 * 100.0);
           return `<ha-icon
             icon="mdi:brightness-7"
-            style="width: 12px; height: 12px; color: #b3b3b3;">
+            style="width: 12px; height: 12px; color: var(--text-primary-color);">
             </ha-icon>` + ' '+ (bri ? bri : '0') + '%';
         ]]]
       switch: |
@@ -306,7 +306,7 @@ button_card_templates:
         else
           return `<ha-icon
             icon="mdi:toggle-switch-off"
-            style="width: 60%; height: 50px; color: #b3b3b3;">
+            style="width: 60%; height: 50px; color: var(--text-primary-color);">
             </ha-icon>` ;
         ]]]
     hold_action:
@@ -319,7 +319,7 @@ button_card_templates:
     state:
       - styles:
           icon:
-            - color: var(--secondary-text-color)
+            - color: var(--text-primary-color)
         value: "off"
     styles:
       card:
@@ -407,7 +407,7 @@ button_card_templates:
     state:
       - styles:
           icon:
-            - color: var(--secondary-text-color)
+            - color: var(--text-primary-color)
         value: "off"
     styles:
       card:
@@ -485,7 +485,7 @@ button_card_templates:
     state:
       - styles:
           icon:
-            - color: var(--secondary-text-color)
+            - color: var(--text-primary-color)
         value: "off"
     styles:
       card:
@@ -552,7 +552,7 @@ button_card_templates:
     state:
       - styles:
           icon:
-            - color: var(--secondary-text-color)
+            - color: var(--text-primary-color)
         value: "off"
     styles:
       card:
@@ -619,7 +619,7 @@ button_card_templates:
     state:
       - styles:
           icon:
-            - color: var(--secondary-text-color)
+            - color: var(--text-primary-color)
         value: "off"
     styles:
       card:
@@ -686,7 +686,7 @@ button_card_templates:
     state:
       - styles:
           icon:
-            - color: var(--secondary-text-color)
+            - color: var(--text-primary-color)
         value: "off"
     styles:
       card:
@@ -757,7 +757,7 @@ button_card_templates:
         color: "#DB4437"
         icon: "mdi:motion-sensor"
       - value: "off"
-        color: var(--secondary-text-color)
+        color: var(--text-primary-color)
         icon: "mdi:motion-sensor-off"
     styles:
       card:
@@ -839,7 +839,7 @@ button_card_templates:
         color: "#DB4437"
         icon: "mdi:account-check-outline"
       - value: "0"
-        color: var(--secondary-text-color)
+        color: var(--text-primary-color)
         icon: "mdi:account-outline"
     styles:
       card:
@@ -920,7 +920,7 @@ button_card_templates:
       - value: ">0"
         color: "#DB4437"
       - value: "0"
-        color: var(--secondary-text-color)
+        color: var(--text-primary-color)
     styles:
       card:
         - text-transform: uppercase
