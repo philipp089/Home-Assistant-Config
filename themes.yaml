@@ -97,16 +97,16 @@ Google - Dark:
 
   ### Main Interface Colors ###
   app-header-background-color: "#333333"
-  primary-color: "#333333"
+  primary-color: "#b3b3b3"
   light-primary-color: "#e6e6e6"
-  primary-background-color: "#666666"
+  primary-background-color: "#4d4d4d"
   secondary-background-color: "#333333"
   divider-color: "#282828"
   button-card-light-color: "#f2f2f2"
   ### Text ###
   primary-text-color: "#b3b3b3"
   label-card-primary-color: "#333333"
-  secondary-text-color: "#808080"
+  secondary-text-color: "#999999"
   text-primary-color: "#b3b3b3"
   disabled-text-color: "#a1a1a1"
   mmp-text-color: "#b3b3b3"
@@ -152,6 +152,7 @@ Google - Dark:
   iron-overlay-backdrop-background-color: "#4d4d4"
   mdc-theme-primary: "#4285f4"
   mdc-theme-secondary: '#F4B400'
+  mdc-theme-on-primary: "#f2f2f2"
   accent-color: '#F4B400'
 
   switch-checked-color: "var(--paper-toggle-button-checked-button-color)"
