@@ -84,13 +84,13 @@ button_card_templates:
     color: "rgb(255, 255, 255)"
     styles:
       card:
+        - box-shadow: 1px 1px 1px 1px var(--divider-color)
         - text-transform: uppercase
         - font-size: 10px
         - font-family: Roboto
         - font-weight: bold
         - border-radius: 2px
         - padding: 8px
-        - box-shadow: 0px 0px 0px 0px
   #
   ###BUTTON CARD TEMPLATE QUICK ACCESS CARD#######################################
   #
@@ -104,13 +104,13 @@ button_card_templates:
     size: 70%
     styles:
       card:
+        - box-shadow: 1px 1px 1px 1px var(--divider-color)
         - text-transform: uppercase
         - font-size: 10px
         - font-family: Roboto
         - font-weight: bold
         - border-radius: 2px
         - padding: 10%
-        - box-shadow: 0px 0px 0px 0px
       img_cell:
         - padding: "-2px"
         - justify-content: middle
@@ -161,7 +161,7 @@ button_card_templates:
         - font-family: Roboto
         - border-radius: 2px
         - padding: 10%
-        - box-shadow: 0px 0px 0px 0px
+        - box-shadow: 1px 1px 1px 1px var(--divider-color)
       custom_fields:
         brightness:
           - align-self: start
@@ -241,7 +241,7 @@ button_card_templates:
         - font-family: Roboto
         - border-radius: 2px
         - padding: 10%
-        - box-shadow: 0px 0px 0px 0px
+        - box-shadow: 1px 1px 1px 1px var(--divider-color)
       custom_fields:
         brightness:
           - align-self: start
@@ -329,7 +329,7 @@ button_card_templates:
         - font-family: Roboto
         - border-radius: 2px
         - padding: 10%
-        - box-shadow: 0px 0px 0px 0px
+        - box-shadow: 1px 1px 1px 1px var(--divider-color)
       custom_fields:
         brightness:
           - align-self: start
@@ -417,7 +417,7 @@ button_card_templates:
         - font-family: Roboto
         - border-radius: 2px
         - padding: 10%
-        - box-shadow: 0px 0px 0px 0px
+        - box-shadow: 1px 1px 1px 1px var(--divider-color)
       custom_fields:
         brightness:
           - align-self: start
@@ -495,7 +495,7 @@ button_card_templates:
         - font-family: Roboto
         - border-radius: 2px
         - padding: 10%
-        - box-shadow: 0px 0px 0px 0px
+        - box-shadow: 1px 1px 1px 1px var(--divider-color)
       custom_fields:
         switch:
           - align-self: start
@@ -562,7 +562,7 @@ button_card_templates:
         - font-family: Roboto
         - border-radius: 2px
         - padding: 10%
-        - box-shadow: 0px 0px 0px 0px
+        - box-shadow: 1px 1px 1px 1px var(--divider-color)
       custom_fields:
         switch:
           - align-self: start
@@ -629,7 +629,7 @@ button_card_templates:
         - font-family: Roboto
         - border-radius: 2px
         - padding: 10%
-        - box-shadow: 0px 0px 0px 0px
+        - box-shadow: 1px 1px 1px 1px var(--divider-color)
       custom_fields:
         switch:
           - align-self: start
@@ -696,7 +696,7 @@ button_card_templates:
         - font-family: Roboto
         - border-radius: 2px
         - padding: 10%
-        - box-shadow: 0px 0px 0px 0px
+        - box-shadow: 1px 1px 1px 1px var(--divider-color)
       custom_fields:
         switch:
           - align-self: start
@@ -767,7 +767,7 @@ button_card_templates:
         - font-family: Roboto
         - border-radius: 2px
         - padding: 10%
-        - box-shadow: 0px 0px 0px 0px
+        - box-shadow: 1px 1px 1px 1px var(--divider-color)
       custom_fields:
         brightness:
           - align-self: start
@@ -849,7 +849,7 @@ button_card_templates:
         - font-family: Roboto
         - border-radius: 2px
         - padding: 10%
-        - box-shadow: 0px 0px 0px 0px
+        - box-shadow: 1px 1px 1px 1px var(--divider-color)
       custom_fields:
         brightness:
           - align-self: start
@@ -929,7 +929,7 @@ button_card_templates:
         - font-family: Roboto
         - border-radius: 2px
         - padding: 10%
-        - box-shadow: 0px 0px 0px 0px
+        - box-shadow: 1px 1px 1px 1px var(--divider-color)
       custom_fields:
         brightness:
           - align-self: start
@@ -1011,7 +1011,7 @@ button_card_templates:
         - font-family: Roboto
         - border-radius: 2px
         - padding: 10%
-        - box-shadow: 0px 0px 0px 0px
+        - box-shadow: 1px 1px 1px 1px var(--divider-color)
       custom_fields:
         brightness:
           - align-self: start
@@ -1064,7 +1064,7 @@ button_card_templates:
         - font-family: Roboto
         - border-radius: 2px
         - padding: 10%
-        - box-shadow: 0px 0px 0px 0px
+        - box-shadow: 1px 1px 1px 1px var(--divider-color)
   #
   ###BUTTON CARD TEMPLATE LIGHT MODE CARD#########################################
   #
@@ -1085,7 +1085,7 @@ button_card_templates:
         - font-weight: bold
         - border-radius: 2px
         - padding: 10%
-        - box-shadow: 0px 0px 0px 0px
+        - box-shadow: 1px 1px 1px 1px var(--divider-color)
       img_cell:
         - padding: "-2px"
         - justify-content: middle
@@ -1110,7 +1110,7 @@ button_card_templates:
         - font-family: Roboto
         - border-radius: 2px
         - padding: 1%
-        - box-shadow: 0px 0px 0px 0px
+        - box-shadow: 1px 1px 1px 1px var(--divider-color)
       img_cell:
         - align-self: center
         - justify-self: center
@@ -1362,8 +1362,7 @@ views:
             name: Chromecast Wohnzimmer
             style: |
               ha-card {
-                box-shadow: 0px 0px 0px 0px;
-                webkit-shadow: 0px 0px 0px 0px;
+                box-shadow: 1px 1px 1px 1px var(--divider-color);
               }
           #
           ###HOME MEDIA PLAYER FERNSEHER WOHNZIMMER#######################################
@@ -1374,8 +1373,7 @@ views:
             name: Fernseher Wohnzimmer
             style: |
               ha-card {
-                box-shadow: 0px 0px 0px 0px;
-                webkit-shadow: 0px 0px 0px 0px;
+                box-shadow: 1px 1px 1px 1px var(--divider-color);
               }
           #
           ###HOME WOHNZIMMER SONOS MINI MEDIA PLAYER######################################
@@ -1397,7 +1395,7 @@ views:
             artwork: cover
             style: |
               ha-card {
-                box-shadow: 0px 0px 0px 0px;
+                box-shadow: 1px 1px 1px 1px var(--divider-color);
               }
           #
           ###HOME WOHNZIMMER GESAMT#######################################################
@@ -1687,8 +1685,7 @@ views:
             name: Chromecast Schlafzimmer
             style: |
               ha-card {
-                box-shadow: 0px 0px 0px 0px;
-                webkit-shadow: 0px 0px 0px 0px;
+                box-shadow: 1px 1px 1px 1px var(--divider-color);
               }
           #
           ###HOME SCHLAFZIMMER SONOS MINI MEDIA PLAYER####################################
@@ -1700,8 +1697,7 @@ views:
             name: Sonos One Schlafzimmer
             style: |
               ha-card {
-                box-shadow: 0px 0px 0px 0px;
-                webkit-shadow: 0px 0px 0px 0px;
+                box-shadow: 1px 1px 1px 1px var(--divider-color);
               }
           #
           ###HOME SCHLAFZIMMER WANDSCHALTER###############################################
@@ -1849,8 +1845,7 @@ views:
             name: Google Nest Mini Badezimmer
             style: |
               ha-card {
-                box-shadow: 0px 0px 0px 0px;
-                webkit-shadow: 0px 0px 0px 0px;
+                box-shadow: 1px 1px 1px 1px var(--divider-color);
               }
           #
           ###HOME BADEZIMMER WANDSCHALTER#################################################
@@ -1984,7 +1979,7 @@ views:
             name: Sonos Play:1 Werkstatt
             style: |
               ha-card {
-                box-shadow: 0px 0px 0px 0px;
+                box-shadow: 1px 1px 1px 1px var(--divider-color);
                 webkit-shadow: 0px 0px 0px 0px;
               }
           #
@@ -2052,7 +2047,7 @@ views:
             name: Google Nest Mini Küche
             style: |
               ha-card {
-                box-shadow: 0px 0px 0px 0px;
+                box-shadow: 1px 1px 1px 1px var(--divider-color);
                 webkit-shadow: 0px 0px 0px 0px;
               }
           #
@@ -3310,7 +3305,7 @@ views:
             name: Chromecast
             style: |
               ha-card {
-                box-shadow: 0px 0px 0px 0px;
+                box-shadow: 1px 1px 1px 1px var(--divider-color);
                 webkit-shadow: 0px 0px 0px 0px;
               }
           #
@@ -3322,7 +3317,7 @@ views:
             name: Fernseher
             style: |
               ha-card {
-                box-shadow: 0px 0px 0px 0px;
+                box-shadow: 1px 1px 1px 1px var(--divider-color);
                 webkit-shadow: 0px 0px 0px 0px;
               }
           #
@@ -3334,7 +3329,7 @@ views:
             name: Playstation
             style: |
               ha-card {
-                box-shadow: 0px 0px 0px 0px;
+                box-shadow: 1px 1px 1px 1px var(--divider-color);
                 webkit-shadow: 0px 0px 0px 0px;
               }
           #
@@ -3346,7 +3341,7 @@ views:
             name: Sonos Arc Wohnzimmer
             style: |
               ha-card {
-                box-shadow: 0px 0px 0px 0px;
+                box-shadow: 1px 1px 1px 1px var(--divider-color);
                 webkit-shadow: 0px 0px 0px 0px;
               }
           #
@@ -3358,7 +3353,7 @@ views:
             name: Sonos Couch Wohnzimmer
             style: |
               ha-card {
-                box-shadow: 0px 0px 0px 0px;
+                box-shadow: 1px 1px 1px 1px var(--divider-color);
                 webkit-shadow: 0px 0px 0px 0px;
               }
           #
@@ -3595,7 +3590,7 @@ views:
             name: Chromecast
             style: |
               ha-card {
-                box-shadow: 0px 0px 0px 0px;
+                box-shadow: 1px 1px 1px 1px var(--divider-color);
                 webkit-shadow: 0px 0px 0px 0px;
               }
           #
@@ -3607,7 +3602,7 @@ views:
             name: Sonos One Schlafzimmer
             style: |
               ha-card {
-                box-shadow: 0px 0px 0px 0px;
+                box-shadow: 1px 1px 1px 1px var(--divider-color);
                 webkit-shadow: 0px 0px 0px 0px;
               }
           #
@@ -3628,7 +3623,7 @@ views:
             name: Google Nest Mini
             style: |
               ha-card {
-                box-shadow: 0px 0px 0px 0px;
+                box-shadow: 1px 1px 1px 1px var(--divider-color);
                 webkit-shadow: 0px 0px 0px 0px;
               }
           #
@@ -3649,8 +3644,7 @@ views:
             name: Sonos Play:1 Werkstatt
             style: |
               ha-card {
-                box-shadow: 0px 0px 0px 0px;
-                webkit-shadow: 0px 0px 0px 0px;
+                box-shadow: 1px 1px 1px 1px var(--divider-color);
               }
           #
           ###MEDIA KÜCHE MEDIEN LABEL CARD################################################
@@ -3670,8 +3664,7 @@ views:
             name: Google Nest Mini
             style: |
               ha-card {
-                box-shadow: 0px 0px 0px 0px;
-                webkit-shadow: 0px 0px 0px 0px;
+                box-shadow: 1px 1px 1px 1px var(--divider-color);
               }
   #
   ###MEDIA MEDIA END##############################################################
@@ -3829,7 +3822,7 @@ views:
                   labels: true
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -3853,7 +3846,7 @@ views:
                   labels: true
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -3879,7 +3872,7 @@ views:
                   labels: true
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -4135,7 +4128,7 @@ views:
                   labels: true
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -4159,7 +4152,7 @@ views:
                   labels: true
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -4185,7 +4178,7 @@ views:
                   labels: true
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -4209,7 +4202,7 @@ views:
                   labels: true
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -4260,7 +4253,7 @@ views:
                   labels: true
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -4284,7 +4277,7 @@ views:
                   labels: true
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -4313,7 +4306,7 @@ views:
                 --st-font-size-title: 16px;
                 --st-font-size-sensors: 14px;
                 --st-spacing: 2px;
-                box-shadow: 0px 0px 0px 0px;
+                box-shadow: 1px 1px 1px 1px var(--divider-color);
                 padding: 10px;
           #
           ###TEMPS WOHNZIMMER HEIZUNG KAMIN###############################################
@@ -4337,7 +4330,7 @@ views:
                 --st-font-size-title: 16px;
                 --st-font-size-sensors: 14px;
                 --st-spacing: 2px;
-                box-shadow: 0px 0px 0px 0px;
+                box-shadow: 1px 1px 1px 1px var(--divider-color);
                 padding: 10px;
           #
           ###TEMPS SCHLAFZIMMER LABEL CARD################################################
@@ -4369,7 +4362,7 @@ views:
                   labels: true
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -4393,7 +4386,7 @@ views:
                   labels: true
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -4422,7 +4415,7 @@ views:
                 --st-font-size-title: 16px;
                 --st-font-size-sensors: 14px;
                 --st-spacing: 2px;
-                box-shadow: 0px 0px 0px 0px;
+                box-shadow: 1px 1px 1px 1px var(--divider-color);
                 padding: 10px;
           #
           ###TEMPS BADEZIMMER LABEL CARD##################################################
@@ -4454,7 +4447,7 @@ views:
                   labels: true
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -4478,7 +4471,7 @@ views:
                   labels: true
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -4507,7 +4500,7 @@ views:
                 --st-font-size-title: 16px;
                 --st-font-size-sensors: 14px;
                 --st-spacing: 2px;
-                box-shadow: 0px 0px 0px 0px;
+                box-shadow: 1px 1px 1px 1px var(--divider-color);
                 padding: 10px;
           #
           ###TEMPS WERKSTATT LABEL CARD###################################################
@@ -4539,7 +4532,7 @@ views:
                   labels: true
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -4563,7 +4556,7 @@ views:
                   labels: true
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -4592,7 +4585,7 @@ views:
                 --st-font-size-title: 16px;
                 --st-font-size-sensors: 14px;
                 --st-spacing: 2px;
-                box-shadow: 0px 0px 0px 0px;
+                box-shadow: 1px 1px 1px 1px var(--divider-color);
                 padding: 10px;
           #
           ###TEMPS KÜCHE LABEL CARD#######################################################
@@ -4624,7 +4617,7 @@ views:
                   labels: true
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -4648,7 +4641,7 @@ views:
                   labels: true
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -4677,7 +4670,7 @@ views:
                 --st-font-size-title: 16px;
                 --st-font-size-sensors: 14px;
                 --st-spacing: 2px;
-                box-shadow: 0px 0px 0px 0px;
+                box-shadow: 1px 1px 1px 1px var(--divider-color);
                 padding: 10px;
   #
   ###TEMPS TAB END################################################################
@@ -4723,7 +4716,7 @@ views:
                 icon: "mdi:cpu-32-bit"
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -4746,7 +4739,7 @@ views:
                   labels: true
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -4771,7 +4764,7 @@ views:
                   labels: true
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -4794,7 +4787,7 @@ views:
                   labels: true
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -4868,7 +4861,7 @@ views:
                 icon: "mdi:cpu-64-bit"
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -4891,7 +4884,7 @@ views:
                   labels: true
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -4917,7 +4910,7 @@ views:
                 icon: "mdi:memory"
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -5004,7 +4997,7 @@ views:
                 icon: "mdi:cpu-64-bit"
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -5027,7 +5020,7 @@ views:
                   labels: true
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -5053,7 +5046,7 @@ views:
                 icon: "mdi:memory"
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -5184,7 +5177,7 @@ views:
                 icon: "mdi:cpu-64-bit"
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -5207,7 +5200,7 @@ views:
                   labels: true
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -5233,7 +5226,7 @@ views:
                 icon: "mdi:memory"
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -5512,7 +5505,7 @@ views:
             name: Playstation 4
             style: |
               ha-card {
-                box-shadow: 0px 0px 0px 0px;
+                box-shadow: 1px 1px 1px 1px var(--divider-color);
                 webkit-shadow: 0px 0px 0px 0px;
               }
           #
@@ -5618,7 +5611,7 @@ views:
                 icon: "mdi:white-balance-sunny"
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -5642,7 +5635,7 @@ views:
                 icon: "mdi:water-outline"
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -5668,7 +5661,7 @@ views:
                 icon: "mdi:thermometer"
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -5788,7 +5781,7 @@ views:
                   labels: true
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -5812,7 +5805,7 @@ views:
                 icon: "mdi:white-balance-sunny"
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -5838,7 +5831,7 @@ views:
                   labels: true
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -5862,7 +5855,7 @@ views:
                 icon: "mdi:thermometer"
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -6122,7 +6115,7 @@ views:
                 icon: "mdi:speedometer"
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -6146,7 +6139,7 @@ views:
                 icon: "mdi:sine-wave"
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
@@ -6172,7 +6165,7 @@ views:
                 icon: "mdi:network-strength-2"
                 style: |
                   ha-card {
-                    box-shadow: 0px 0px 0px 0px;
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
                     color: var(--primary-text-color);
                     padding: 0px;
                   }
