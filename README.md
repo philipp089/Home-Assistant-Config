@@ -62,7 +62,11 @@ I still have to evaluate the Xiami-Plant-Sensors until that, this dashboard is e
 
 A simple dashboard to view all the temperatures in the flat. In my setup i use Homematic HmiP-eTRV-2 devices.
 
-![05_Climate_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/137110687-9d66edf3-b99f-4fc0-af66-555620895293.png)
+![05_Climate_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/139417167-97c36bc4-222d-4e2b-a546-9dc91dc32633.png)
+
+#### The Plugs - Tab Night Mode
+
+![05_Climate_Tab_Mockup_001_Night_Mode](https://user-images.githubusercontent.com/66092908/139417204-22b26e99-7872-46be-94f6-b7744e7598a1.png)
 
 ### The Raspberry - Tab
 
