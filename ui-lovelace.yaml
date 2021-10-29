@@ -95,7 +95,7 @@ button_card_templates:
         - font-size: 10px
         - font-family: Roboto
         - font-weight: bold
-        - border-radius: 2px
+        - border-radius: 0px
         - padding: 8px
   #
   ###BUTTON CARD TEMPLATE QUICK ACCESS CARD#######################################
@@ -115,7 +115,7 @@ button_card_templates:
         - font-size: 10px
         - font-family: Roboto
         - font-weight: bold
-        - border-radius: 2px
+        - border-radius: 0px
         - padding: 10%
       img_cell:
         - padding: "-2px"
@@ -165,7 +165,7 @@ button_card_templates:
         - text-transform: uppercase
         - font-size: 10px
         - font-family: Roboto
-        - border-radius: 2px
+        - border-radius: 0px
         - padding: 10%
         - box-shadow: 1px 1px 1px 1px var(--divider-color)
       custom_fields:
@@ -245,7 +245,7 @@ button_card_templates:
         - color: var(--secondary-text-color)
         - font-size: 10px
         - font-family: Roboto
-        - border-radius: 2px
+        - border-radius: 0px
         - padding: 10%
         - box-shadow: 1px 1px 1px 1px var(--divider-color)
       custom_fields:
@@ -333,7 +333,7 @@ button_card_templates:
         - color: var(--secondary-text-color)
         - font-size: 10px
         - font-family: Roboto
-        - border-radius: 2px
+        - border-radius: 0px
         - padding: 10%
         - box-shadow: 1px 1px 1px 1px var(--divider-color)
       custom_fields:
@@ -421,7 +421,7 @@ button_card_templates:
         - color: var(--primary-text-color)
         - font-size: 10px
         - font-family: Roboto
-        - border-radius: 2px
+        - border-radius: 0px
         - padding: 10%
         - box-shadow: 1px 1px 1px 1px var(--divider-color)
       custom_fields:
@@ -499,7 +499,7 @@ button_card_templates:
         - color: var(--primary-text-color)
         - font-size: 10px
         - font-family: Roboto
-        - border-radius: 2px
+        - border-radius: 0px
         - padding: 10%
         - box-shadow: 1px 1px 1px 1px var(--divider-color)
       custom_fields:
@@ -566,7 +566,7 @@ button_card_templates:
         - color: var(--primary-text-color)
         - font-size: 10px
         - font-family: Roboto
-        - border-radius: 2px
+        - border-radius: 0px
         - padding: 10%
         - box-shadow: 1px 1px 1px 1px var(--divider-color)
       custom_fields:
@@ -633,7 +633,7 @@ button_card_templates:
         - color: var(--primary-text-color)
         - font-size: 10px
         - font-family: Roboto
-        - border-radius: 2px
+        - border-radius: 0px
         - padding: 10%
         - box-shadow: 1px 1px 1px 1px var(--divider-color)
       custom_fields:
@@ -700,7 +700,7 @@ button_card_templates:
         - color: var(--primary-text-color)
         - font-size: 10px
         - font-family: Roboto
-        - border-radius: 2px
+        - border-radius: 0px
         - padding: 10%
         - box-shadow: 1px 1px 1px 1px var(--divider-color)
       custom_fields:
@@ -771,7 +771,7 @@ button_card_templates:
         - color: var(--primary-text-color)
         - font-size: 10px
         - font-family: Roboto
-        - border-radius: 2px
+        - border-radius: 0px
         - padding: 10%
         - box-shadow: 1px 1px 1px 1px var(--divider-color)
       custom_fields:
@@ -853,7 +853,7 @@ button_card_templates:
         - color: var(--primary-text-color)
         - font-size: 10px
         - font-family: Roboto
-        - border-radius: 2px
+        - border-radius: 0px
         - padding: 10%
         - box-shadow: 1px 1px 1px 1px var(--divider-color)
       custom_fields:
@@ -933,7 +933,7 @@ button_card_templates:
         - color: var(--primary-text-color)
         - font-size: 10px
         - font-family: Roboto
-        - border-radius: 2px
+        - border-radius: 0px
         - padding: 10%
         - box-shadow: 1px 1px 1px 1px var(--divider-color)
       custom_fields:
@@ -1015,7 +1015,7 @@ button_card_templates:
         - color: var(--primary-text-color)
         - font-size: 10px
         - font-family: Roboto
-        - border-radius: 2px
+        - border-radius: 0px
         - padding: 10%
         - box-shadow: 1px 1px 1px 1px var(--divider-color)
       custom_fields:
@@ -1068,7 +1068,7 @@ button_card_templates:
         - text-transform: uppercase
         - font-size: 10px
         - font-family: Roboto
-        - border-radius: 2px
+        - border-radius: 0px
         - padding: 10%
         - box-shadow: 1px 1px 1px 1px var(--divider-color)
   #
@@ -1080,7 +1080,7 @@ button_card_templates:
         - text-transform: uppercase
         - font-size: 10px
         - font-family: Roboto
-        - border-radius: 2px
+        - border-radius: 0px
         - padding: 10%
         - box-shadow: 1px 1px 1px 1px var(--divider-color)
   #
@@ -1101,7 +1101,7 @@ button_card_templates:
         - font-size: 10px
         - font-family: Roboto
         - font-weight: bold
-        - border-radius: 2px
+        - border-radius: 0px
         - padding: 10%
         - box-shadow: 1px 1px 1px 1px var(--divider-color)
       img_cell:
@@ -1123,10 +1123,10 @@ button_card_templates:
     styles:
       card:
         - text-transform: uppercase
-        - color: "rgb(102,102,102)"
+        - color: "var(--secondary-text-color)"
         - font-size: 12px
         - font-family: Roboto
-        - border-radius: 2px
+        - border-radius: 0px
         - padding: 1%
         - box-shadow: 1px 1px 1px 1px var(--divider-color)
       img_cell:
@@ -3684,7 +3684,7 @@ views:
   ###PLUGS SCHLAFZIMMER PLUG TAB##################################################
   #
   - title: Plugs
-    icon: "mdi:power-plug"
+    icon: "mdi:power-plug-outline"
     path: plugs
     theme: Google-Light
     #
