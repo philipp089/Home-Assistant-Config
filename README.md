@@ -8,15 +8,21 @@ The Home-Tab is the default Tab and a great way to start searching through featu
 
 The Home-Tab contains a custom-header with each tab above the Presence-Status. The quick access area below is maybe my mostly used way to navigate through the app, as it gives direct access to all dashboards.
 
-![00_Home_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/137134145-41009012-8ecd-4d56-a489-8c1a34a5138a.png)
+![00_Home_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/139396396-70c718e3-8438-437b-bfb0-3a28e81d0f1c.png)
+
+![00_Home_Tab_Mockup_001_Night_Mode](https://user-images.githubusercontent.com/66092908/139396469-99f97732-2d87-4d50-9e65-c45f1e8e1e5f.png)
 
 Aside from that, the  Home-Tab contains a group of custom button cards for each room. 
 
-![00_Home_Tab_Mockup_002](https://user-images.githubusercontent.com/66092908/137135077-4426f206-fea4-4b98-a3b1-3b59eb9587ed.png)
+![00_Home_Tab_Mockup_002](https://user-images.githubusercontent.com/66092908/139396423-e1486fa6-1f59-4056-bea9-74ff928c20fe.png)
+
+![00_Home_Tab_Mockup_002_Night_Mode](https://user-images.githubusercontent.com/66092908/139396482-cf15d2a8-579b-40b6-b660-1e91d1c71649.png)
 
 The Plugs- and the Air-Humidifier Card are custom button card templates as well as all other button card type.
 
-![00_Home_Tab_Mockup_003](https://user-images.githubusercontent.com/66092908/137471175-e28e7fba-3cb9-4846-bbb1-09f9de7edeb6.png)
+![00_Home_Tab_Mockup_003](https://user-images.githubusercontent.com/66092908/139396446-165487a2-5a2c-47a3-a8c6-8e2cc30cc344.png)
+
+![00_Home_Tab_Mockup_003_Night_Mode](https://user-images.githubusercontent.com/66092908/139396504-5235d43b-42f6-485f-bc44-e2d205e5255c.png)
 
 ### The Light - Tab
 
