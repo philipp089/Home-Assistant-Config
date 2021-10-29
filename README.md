@@ -8,33 +8,37 @@ The Home-Tab is the default Tab and a great way to start searching through featu
 
 The Home-Tab contains a custom-header with each tab above the Presence-Status. The quick access area below is maybe my mostly used way to navigate through the app, as it gives direct access to all dashboards.
 
-![00_Home_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/139396396-70c718e3-8438-437b-bfb0-3a28e81d0f1c.png)
+![00_Home_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/139411201-6b6403e7-be74-4b32-8584-520623305b19.png)
 
-![00_Home_Tab_Mockup_001_Night_Mode](https://user-images.githubusercontent.com/66092908/139396469-99f97732-2d87-4d50-9e65-c45f1e8e1e5f.png)
+![00_Home_Tab_Mockup_001_Night_Mode](https://user-images.githubusercontent.com/66092908/139411226-159c4aed-10e7-405c-a9a6-6622cecfdfab.png)
 
 Aside from that, the  Home-Tab contains a group of custom button cards for each room. 
 
-![00_Home_Tab_Mockup_002](https://user-images.githubusercontent.com/66092908/139396423-e1486fa6-1f59-4056-bea9-74ff928c20fe.png)
+![00_Home_Tab_Mockup_002](https://user-images.githubusercontent.com/66092908/139411262-14e362d9-f600-474c-a179-896bc33a29db.png)
 
-![00_Home_Tab_Mockup_002_Night_Mode](https://user-images.githubusercontent.com/66092908/139396482-cf15d2a8-579b-40b6-b660-1e91d1c71649.png)
+![00_Home_Tab_Mockup_002_Night_Mode](https://user-images.githubusercontent.com/66092908/139411286-35da3dca-6901-4fab-bc48-aa0a6f8b0594.png)
 
 The Plugs- and the Air-Humidifier Card are custom button card templates as well as all other button card type.
 
-![00_Home_Tab_Mockup_003](https://user-images.githubusercontent.com/66092908/139396446-165487a2-5a2c-47a3-a8c6-8e2cc30cc344.png)
+![00_Home_Tab_Mockup_003](https://user-images.githubusercontent.com/66092908/139411322-7bdbe469-abb0-45c9-b74d-8d063f32cb52.png)
 
-![00_Home_Tab_Mockup_003_Night_Mode](https://user-images.githubusercontent.com/66092908/139396504-5235d43b-42f6-485f-bc44-e2d205e5255c.png)
+![00_Home_Tab_Mockup_003_Night_Mode](https://user-images.githubusercontent.com/66092908/139411335-56a1515c-3ba0-488c-863d-e26596b69f77.png)
 
 ### The Light - Tab
 
 As the name suggests, in the Light-Tab I handle all my light-scripts. I almost exclusively use Philips Hue bulbs connected to a Raspbee II from dresden electronics as my Zigbee-Gateway. An old IKEA Floalt Panel is the exception. Each of the scenes is also controllable via speech over Google Assistant.
 
-![01_Light_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/136964666-65aad241-69d2-48fc-acb1-351d812ada39.png)
+![01_Light_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/139411362-596376b4-aa8e-4f87-a67f-aa11c694883c.png)
+
+![01_Light_Tab_Mockup_001_Night_Mode](https://user-images.githubusercontent.com/66092908/139411374-9e8ecaca-0bf6-4e1b-9df6-136c3a785afd.png)
 
 ### The Media - Tab
 
 Remote Controls for two televisions and all Media-Players (several Sonos devices, Google Nest Minis) are integrated to this dashboard.
 
-![02_Media_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/136970867-b626a1a4-eb24-4d7d-a948-54e21be33d8f.png)
+![02_Media_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/139411399-9f739e82-baba-4186-93e7-776e248be00e.png)
+
+![02_Media_Tab_Mockup_001_Night_Mode](https://user-images.githubusercontent.com/66092908/139411413-db3fd023-8bc3-4564-aaa5-a4beea865f3a.png)
 
 ### The Plugs - Tab
 
