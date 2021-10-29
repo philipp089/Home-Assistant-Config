@@ -25,7 +25,7 @@ Google - Light:
   ### Text ###
   primary-text-color: "#808080"
   label-card-primary-color: "#ffffff"
-  secondary-text-color: "#b2b2b2"
+  secondary-text-color: "#999999"
   text-primary-color: "#b3b3b3"
   disabled-text-color: "#a1a1a1"
   mmp-text-color: "#808080"
