@@ -78,31 +78,59 @@ A simple dashboard to view all the temperatures in the flat. In my setup i use H
 
 ### The Desktop - PC - Tab
 
-![07_Desktop_PC_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/137187009-eeec948b-f07d-422e-8f43-6abee5f7ea00.png)
+![07_Desktop_PC_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/139476942-8980eb6e-c777-4f25-99ab-71525693a40e.png)
+
+#### The Desktop - Tab Night Mode
+
+![07_Desktop_PC_Tab_Mockup_001_Night_Mode](https://user-images.githubusercontent.com/66092908/139476176-9a3d0a57-092b-4126-86d1-a48e49c17cf9.png)
 
 ### The Playstation - Tab
 
-![08_Playstation_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/137471953-2aeee3c6-eff7-4e72-996c-8e0b347767e6.png)
+![08_Playstation_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/139476914-077e426b-8b32-4dfb-a0fa-3ed3a0840d9e.png)
+
+#### The Playstation - Tab Night Mode
+
+![08_Playstation_Tab_Mockup_001_Night_Mode](https://user-images.githubusercontent.com/66092908/139476263-6720bf57-1b80-43ce-9d2a-3d92fc50db01.png)
 
 ### The Weather - Tab
 
-![09_Weather_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/137126423-4183dece-c998-4464-9aa7-68747d882a2c.png)
+![09_Weather_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/139476891-05c59e36-66f8-47ce-bcf9-8c0cd0f8df51.png)
+
+#### The Weather - Tab Night Mode
+
+![09_Weather_Tab_Mockup_001_Night_Mode](https://user-images.githubusercontent.com/66092908/139476334-78bb256f-7f9c-47d0-9951-26f5b03d4837.png)
 
 ### The Camera - Tab
 
-![10_Camera_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/137129537-e5ca7e22-fc2c-46a4-9a83-a1b6b000bbde.png)
+![10_Camera_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/139476872-7f752de9-1393-4863-9147-1c9b70d10427.png)
+
+#### The Camera - Tab Night Mode
+
+![10_Camera_Tab_Mockup_001_Night_Mode](https://user-images.githubusercontent.com/66092908/139476405-a30f8b18-6d61-441f-862f-2463503b91ef.png)
 
 ### The Smartphone - Tab
 
-![11_Smartphone_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/137131923-fbef05ce-0239-47b1-bc36-563e243bffc3.png)
+![11_Smartphone_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/139476838-eccbb9dc-df6c-4cd7-b676-496e58d81323.png)
+
+#### The Smartphone - Tab Night Mode
+
+![11_Smartphone_Tab_Mockup_001_Night_Mode](https://user-images.githubusercontent.com/66092908/139476487-832a7384-8681-4ab5-8d7d-94607e9bdd8a.png)
 
 ### The Battery - Tab
 
-![12_Battery_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/137132822-427117fe-e4dc-4c2d-8d92-263b880bea53.png)
+![12_Battery_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/139476820-fc1db2ad-1b49-4ea9-b9a5-d95356faf0e8.png)
+
+#### The Battery - Tab Night Mode
+
+![12_Battery_Tab_Mockup_001_Night_Mode](https://user-images.githubusercontent.com/66092908/139476566-506a89cb-388d-43d4-a9f0-7b97e856c4c3.png)
 
 ### The Alarm - Tab
 
-![13_Alarm_Tab_Mockup_003](https://user-images.githubusercontent.com/66092908/137138137-6d73f593-c7c9-4b7a-9afa-44fc430b7c3a.png)
+![13_Alarm_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/139476801-329a28e1-9412-4d0c-b5b0-588a6029bc96.png)
+
+#### The Alarm - Tab Night Mode
+
+![13_Alarm_Tab_Mockup_001_Night_Mode](https://user-images.githubusercontent.com/66092908/139476617-419170fd-df69-4233-90ab-a075ddbb080d.png)
 
 ### The Health - Tab
 
@@ -114,7 +142,12 @@ Work in Progress
 
 ### The Automations - Tab
 
-![14_Automations_Tab_Mockup_003](https://user-images.githubusercontent.com/66092908/137140931-0eedc065-37e2-4d6b-a6cf-8978a2cacf5f.png)
+![14_Automations_Tab_Mockup_003](https://user-images.githubusercontent.com/66092908/139476702-f6a134b2-6656-4602-964a-6018a82c2af0.png)
+
+#### The Automations - Tab Night Mode
+
+![14_Automations_Tab_Mockup_003_Night_Mode](https://user-images.githubusercontent.com/66092908/139476678-8da8cc38-d2c5-4ed7-87d4-bdd4e3a8792d.png)
+
 
 ## Desktop App
 
