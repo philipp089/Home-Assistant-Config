@@ -70,7 +70,11 @@ A simple dashboard to view all the temperatures in the flat. In my setup i use H
 
 ### The Raspberry - Tab
 
-![06_Raspberry_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/137117712-94a21cba-13fe-4d62-9682-dde8638ed7ee.png)
+![06_Raspberry_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/139419353-73fac1d8-d9e2-42dc-a338-0511c65d61c4.png)
+
+#### The Raspberry - Tab Night Mode
+
+![06_Raspberry_Tab_Mockup_001_Night_Mode](https://user-images.githubusercontent.com/66092908/139419402-0dabd2b7-3701-463f-abba-e24424cec546.png)
 
 ### The Desktop - PC - Tab
 
