@@ -36,6 +36,12 @@ resources:
 custom_header:
   active_tab_color: "rgb(153, 153, 153)"
   all_tabs_color: "rgb(179, 179, 179)"
+  shadow: true
+  header_css: "box-shadow: 1px 1px 1px 1px var(--divider-color);"
+#  footer_css: "box-shadow: 1px 1px 1px 1px var(--divider-color);"
+  options_hide: true
+#  split_mode: true
+#  footer_mode: true
   compact_mode: true
   menu_color: "rgb(179, 179, 179)"
   notification_dot_color: "rgb(179, 179, 179)"
@@ -1980,7 +1986,6 @@ views:
             style: |
               ha-card {
                 box-shadow: 1px 1px 1px 1px var(--divider-color);
-                webkit-shadow: 0px 0px 0px 0px;
               }
           #
           ###HOME WERKSTATT WANDSCHALTER##################################################
@@ -2048,7 +2053,6 @@ views:
             style: |
               ha-card {
                 box-shadow: 1px 1px 1px 1px var(--divider-color);
-                webkit-shadow: 0px 0px 0px 0px;
               }
           #
           ###HOME KÜCHE WANDSCHALTER######################################################
@@ -3306,7 +3310,6 @@ views:
             style: |
               ha-card {
                 box-shadow: 1px 1px 1px 1px var(--divider-color);
-                webkit-shadow: 0px 0px 0px 0px;
               }
           #
           ###MEDIA MEDIA PLAYER FERNSEHER WOHNZIMMER######################################
@@ -3318,7 +3321,6 @@ views:
             style: |
               ha-card {
                 box-shadow: 1px 1px 1px 1px var(--divider-color);
-                webkit-shadow: 0px 0px 0px 0px;
               }
           #
           ###MEDIA MEDIA PLAYER PLAYSTATION WOHNZIMMER####################################
@@ -3330,7 +3332,6 @@ views:
             style: |
               ha-card {
                 box-shadow: 1px 1px 1px 1px var(--divider-color);
-                webkit-shadow: 0px 0px 0px 0px;
               }
           #
           ###MEDIA MEDIA PLAYER SONOS ARC WOHNZIMMER######################################
@@ -3342,7 +3343,6 @@ views:
             style: |
               ha-card {
                 box-shadow: 1px 1px 1px 1px var(--divider-color);
-                webkit-shadow: 0px 0px 0px 0px;
               }
           #
           ###MEDIA MEDIA PLAYER SONOS COUCH WOHNZIMMER####################################
@@ -3354,7 +3354,6 @@ views:
             style: |
               ha-card {
                 box-shadow: 1px 1px 1px 1px var(--divider-color);
-                webkit-shadow: 0px 0px 0px 0px;
               }
           #
           ###MEDIA SCHLAFZIMMER MEDIEN LABEL CARD#########################################
@@ -3591,7 +3590,6 @@ views:
             style: |
               ha-card {
                 box-shadow: 1px 1px 1px 1px var(--divider-color);
-                webkit-shadow: 0px 0px 0px 0px;
               }
           #
           ###MEDIA MEDIA PLAYER SONOS SCHLAFZIMMER########################################
@@ -3603,7 +3601,6 @@ views:
             style: |
               ha-card {
                 box-shadow: 1px 1px 1px 1px var(--divider-color);
-                webkit-shadow: 0px 0px 0px 0px;
               }
           #
           ###MEDIA BADEZIMMER MEDIEN LABEL CARD###########################################
@@ -3624,7 +3621,6 @@ views:
             style: |
               ha-card {
                 box-shadow: 1px 1px 1px 1px var(--divider-color);
-                webkit-shadow: 0px 0px 0px 0px;
               }
           #
           ###MEDIA WERKSTATT MEDIEN LABEL CARD############################################
@@ -5057,6 +5053,7 @@ views:
               ###PC GTX 2080 01 EMPTY CARD####################################################
               #
               - type: "custom:button-card"
+                template: empty_card
                 styles:
                   card:
                     - height: 100%
@@ -5237,6 +5234,7 @@ views:
               ###PC GTX 2080 02 EMPTY CARD####################################################
               #
               - type: "custom:button-card"
+                template: empty_card
                 styles:
                   card:
                     - height: 100%
@@ -5526,6 +5524,11 @@ views:
                     - value: "off"
                       color: var(--secondary-text-color)
                       icon: "mdi:sony-playstation"
+                style: |
+                  ha-card {
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
+                    webkit-shadow: 0px 0px 0px 0px;
+                  }
               #
               ###PLAYSTATION TAB X BUTTON##################################################
               #
@@ -5534,6 +5537,11 @@ views:
                 color: "#91b8e3"
                 color_type: icon
                 icon: "mdi:window-close"
+                style: |
+                  ha-card {
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
+                    webkit-shadow: 0px 0px 0px 0px;
+                  }
               #
               ###PLAYSTATION TAB TRIANGLE BUTTON##################################################
               #
@@ -5542,6 +5550,11 @@ views:
                 color: "#1fd0c8"
                 color_type: icon
                 icon: "mdi:triangle-outline"
+                style: |
+                  ha-card {
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
+                    webkit-shadow: 0px 0px 0px 0px;
+                  }
               #
               ###PLAYSTATION TAB SQUARE BUTTON##################################################
               #
@@ -5550,6 +5563,11 @@ views:
                 color: "#d4aad2"
                 color_type: icon
                 icon: "mdi:square-outline"
+                style: |
+                  ha-card {
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
+                    webkit-shadow: 0px 0px 0px 0px;
+                  }
               #
               ###PLAYSTATION TAB CIRCLE BUTTON##################################################
               #
@@ -5558,6 +5576,11 @@ views:
                 color: "#f57b8a"
                 color_type: icon
                 icon: "mdi:circle-outline"
+                style: |
+                  ha-card {
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
+                    webkit-shadow: 0px 0px 0px 0px;
+                  }
   #
   ###WETTER TAB START#############################################################
   #
@@ -5586,6 +5609,11 @@ views:
           - type: "custom:weather-card"
             entity: weather.home
             name: Zuhause
+            style: |
+              ha-card {
+                box-shadow: 1px 1px 1px 1px var(--divider-color);
+                webkit-shadow: 0px 0px 0px 0px;
+              }
           #
           ###WETTER SENSORIK DACHTERRASSE#################################################
           #
@@ -5672,6 +5700,7 @@ views:
               ###WETTER TAB EMPTY CARD########################################################
               #
               - type: "custom:button-card"
+                template: empty_card
                 styles:
                   card:
                     - height: 100%
@@ -5704,6 +5733,11 @@ views:
             cards:
               - type: "custom:webrtc-camera"
                 entity: "camera.wohnzimmer_hd"
+                style: |
+                  ha-card {
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
+                    webkit-shadow: 0px 0px 0px 0px;
+                  }
           #
           ###CAMERAS TAB SCHLAFZIMMER LABEL CARD###################################################
           #
@@ -5715,6 +5749,11 @@ views:
                 tap_action:
                   action: navigate
                   navigation_path: /db-mobile/default-view
+                style: |
+                  ha-card {
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
+                    webkit-shadow: 0px 0px 0px 0px;
+                  }
               #
               ###CAMERA SCHLAFZIMMER LIVE STREAM##############################################
               #
@@ -5722,6 +5761,11 @@ views:
                 cards:
                   - type: "custom:webrtc-camera"
                     entity: "camera.schlafzimmer_hd"
+                    style: |
+                      ha-card {
+                        box-shadow: 1px 1px 1px 1px var(--divider-color);
+                        webkit-shadow: 0px 0px 0px 0px;
+                      }
           #
           ###CAMERAS TAB SCHLAFZIMMER LABEL CARD###################################################
           #
@@ -5740,6 +5784,11 @@ views:
                 cards:
                   - type: "custom:webrtc-camera"
                     entity: "camera.eingang_hd"
+                    style: |
+                      ha-card {
+                        box-shadow: 1px 1px 1px 1px var(--divider-color);
+                        webkit-shadow: 0px 0px 0px 0px;
+                      }
   #
   ###CAMERAS TAB END##############################################################
   #
@@ -6176,6 +6225,7 @@ views:
               ###SMARTPHONE PLACEHOLDER EMPTY#############################################################
               #
               - type: "custom:button-card"
+                template: empty_card
                 styles:
                   card:
                     - height: 100%
@@ -6275,6 +6325,10 @@ views:
                 text-transform: uppercase;
                 color: var(--primary-text-color);
                 font-family: Roboto;
+              }
+              ha-card {
+                box-shadow: 1px 1px 1px 1px var(--divider-color);
+                webkit-shadow: 0px 0px 0px 0px;
               }
 
   #
@@ -6553,6 +6607,10 @@ views:
             whitelist: "word1,word2"
           - entity: calendar.philipp
             blacklist: "word1, word2"
+        style: |
+          ha-card {
+            box-shadow: 1px 1px 1px 1px var(--divider-color);
+          }
   #
   ###AUTOMATIONS TAB BEGIN##########################################################
   #
@@ -6581,6 +6639,10 @@ views:
                 entities:
                   - entity: input_datetime.tagmodus_werktags
                     time:
+                style: |
+                  ha-card {
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
+                  }
           #
           ###NACHTMODUS WERKTAGS #######################################################
           #
@@ -6590,6 +6652,10 @@ views:
                 entities:
                   - entity: input_datetime.nachtmodus_werktags
                     time:
+                style: |
+                  ha-card {
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
+                  }
     #
     ###TAGESRHYTMUS WOCHENENDE TAB LABEL CARD#####################################################
     #
@@ -6608,6 +6674,10 @@ views:
                 entities:
                   - entity: input_datetime.tagmodus_wochenende
                     time:
+                style: |
+                  ha-card {
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
+                  }
           #
           ###NACHTMODUS WOCHENENDE #######################################################
           #
@@ -6617,6 +6687,10 @@ views:
                 entities:
                   - entity: input_datetime.nachtmodus_wochenende
                     time:
+                style: |
+                  ha-card {
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
+                  }
     #
     ###AUTOMATIONS - LICHTWECKER LABEL CARD#####################################################
     #
@@ -6634,6 +6708,10 @@ views:
               - type: entities
                 entities:
                   - entity: input_boolean.lichtwecker
+                style: |
+                  ha-card {
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
+                  }
     #
     ###AUTOMATIONS - TEMPERATUR HAUS LEER LABEL CARD#####################################################
     #
@@ -6651,6 +6729,10 @@ views:
               - type: entities
                 entities:
                   - entity: input_number.heizung_temperatur_away
+                style: |
+                  ha-card {
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
+                  }
         #
         ###AUTOMATIONS LUFTBEFEUCHTER ZEITEN LABEL CARD#####################################################
         #
@@ -6671,6 +6753,10 @@ views:
                     entities:
                       - entity: input_datetime.luftbefeuchter_wohnzimmer_startzeit
                         time:
+                    style: |
+                      ha-card {
+                        box-shadow: 1px 1px 1px 1px var(--divider-color);
+                      }
               #
               ###AUTOMATIONS LUFTBEFEUCHTER ENDZEIT#######################################################
               #
@@ -6680,6 +6766,10 @@ views:
                     entities:
                       - entity: input_datetime.luftbefeuchter_wohnzimmer_endzeit
                         time:
+                    style: |
+                      ha-card {
+                        box-shadow: 1px 1px 1px 1px var(--divider-color);
+                      }
         #
         ###PERSON/CAT DETECTION TAB LABEL CARD#####################################################
         #
@@ -6699,6 +6789,10 @@ views:
                   - type: entities
                     entities:
                       - entity: input_boolean.person_detection_frigate_video_to_telegram
+                    style: |
+                      ha-card {
+                        box-shadow: 1px 1px 1px 1px var(--divider-color);
+                      }
               #
               ###CAT DETECTION INPUT BOOLEAN#######################################################
               #
@@ -6707,3 +6801,7 @@ views:
                   - type: entities
                     entities:
                       - entity: input_boolean.cat_detection_frigate_video_to_telegram
+                    style: |
+                      ha-card {
+                        box-shadow: 1px 1px 1px 1px var(--divider-color);
+                      }

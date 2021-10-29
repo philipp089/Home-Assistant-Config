@@ -77,8 +77,12 @@ Google - Light:
   switch-unchecked-button-color: "var(--paper-toggle-button-unchecked-button-color)"
   switch-unchecked-color: "var(--paper-toggle-button-unchecked-bar-color)"
   switch-unchecked-track-color: "var(--paper-toggle-button-unchecked-bar-color)"
-
-
+  ### Mini Media Player
+  mmp-text-color: "#f2f2f2"
+  mmp-icon-color: "#f2f2f2"
+  mmp-overlay-base-color: "#f2f2f2"
+  mini-media-player-overlay-base-color: "#f2f2f2"
+  
 Google - Dark:
   ### Fonts ###
   primary-font-family: "'Open Sans','Rubik',Roboto,sans-serif"
@@ -98,7 +102,7 @@ Google - Dark:
   ### Main Interface Colors ###
   app-header-background-color: "#333333"
   primary-color: "#b3b3b3"
-  light-primary-color: "#e6e6e6"
+  light-primary-color: "#b3b3b3"
   primary-background-color: "#4d4d4d"
   secondary-background-color: "#333333"
   divider-color: "#282828"
