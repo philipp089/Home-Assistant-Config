@@ -1072,6 +1072,18 @@ button_card_templates:
         - padding: 10%
         - box-shadow: 1px 1px 1px 1px var(--divider-color)
   #
+  ###BUTTON CARD TEMPLATE PLACEHOLDER EMPTY CARD W/O ASPECT##################################
+  #
+  empty_card_wo_aspect:
+    styles:
+      card:
+        - text-transform: uppercase
+        - font-size: 10px
+        - font-family: Roboto
+        - border-radius: 2px
+        - padding: 10%
+        - box-shadow: 1px 1px 1px 1px var(--divider-color)
+  #
   ###BUTTON CARD TEMPLATE LIGHT MODE CARD#########################################
   #
   light_mode:
@@ -3825,6 +3837,10 @@ views:
                 entities:
                   - sensor.000d5a499af358_current_illumination
                 name: Licht
+                style: |
+                  ha-card {
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
+                  }
               #
               ###PFLANZSCHRANK HUMIDITY#######################################################
               #
@@ -3879,6 +3895,7 @@ views:
               ###PFLANZSCHRANK PLACEHOLDER EMPTY CARD#########################################
               #
               - type: "custom:button-card"
+                template: empty_card_wo_aspect
                 styles:
                   card:
                     - height: 100%
@@ -3901,6 +3918,10 @@ views:
                   - type: entities
                     entities:
                       - entity: input_select.pflanzschrank_phase
+                    style: |
+                      ha-card {
+                        box-shadow: 1px 1px 1px 1px var(--divider-color);
+                      }
               #
               ###PFLANZSCHRANK WACHSTUM BEGINN#######################################################
               #
@@ -3910,6 +3931,10 @@ views:
                     entities:
                       - entity: input_datetime.pflanzschrank_tagesbeginn_wachstum
                         time:
+                    style: |
+                      ha-card {
+                        box-shadow: 1px 1px 1px 1px var(--divider-color);
+                      }
               #
               ###PFLANZSCHRANK WACHSTUM ENDE#######################################################
               #
@@ -3918,6 +3943,10 @@ views:
                   - type: entities
                     entities:
                       - entity: input_datetime.pflanzschrank_nachtbeginn_wachstum
+                    style: |
+                      ha-card {
+                        box-shadow: 1px 1px 1px 1px var(--divider-color);
+                      }
               #
               ###PFLANZSCHRANK BLÜTE BEGINN#######################################################
               #
@@ -3927,6 +3956,10 @@ views:
                     entities:
                       - entity: input_datetime.pflanzschrank_tagesbeginn_blute
                         time:
+                    style: |
+                      ha-card {
+                        box-shadow: 1px 1px 1px 1px var(--divider-color);
+                      }
               #
               ###PFLANZSCHRANK BLÜTE ENDE#######################################################
               #
@@ -3935,6 +3968,10 @@ views:
                   - type: entities
                     entities:
                       - entity: input_datetime.pflanzschrank_nachtbeginn_blute
+                    style: |
+                      ha-card {
+                        box-shadow: 1px 1px 1px 1px var(--divider-color);
+                      }
         #
         ###PFLANZSCHRANK ABLUFT LABEL CARD#####################################################
         #
@@ -3955,6 +3992,10 @@ views:
                     entities:
                       - entity: input_datetime.pflanzschrank_abluft_start
                         time:
+                    style: |
+                      ha-card {
+                        box-shadow: 1px 1px 1px 1px var(--divider-color);
+                      }
               #
               ###PFLANZSCHRANK ABLUFT ENDE#######################################################
               #
@@ -3964,6 +4005,10 @@ views:
                     entities:
                       - entity: input_datetime.pflanzschrank_abluft_aus
                         time:
+                    style: |
+                      ha-card {
+                        box-shadow: 1px 1px 1px 1px var(--divider-color);
+                      }
         #
         ###PFLANZSCHRANK VENTILATION LABEL CARD#####################################################
         #
@@ -3984,6 +4029,10 @@ views:
                     entities:
                       - entity: input_datetime.pflanzschrank_ventilation_startzeit
                         time:
+                    style: |
+                      ha-card {
+                        box-shadow: 1px 1px 1px 1px var(--divider-color);
+                      }
               #
               ###PFLANZSCHRANK VENTILATION ENDE#######################################################
               #
@@ -3993,6 +4042,10 @@ views:
                     entities:
                       - entity: input_datetime.pflanzschrank_ventilation_endzeit
                         time:
+                    style: |
+                      ha-card {
+                        box-shadow: 1px 1px 1px 1px var(--divider-color);
+                      }
         #
         ###PFLANZSCHRANK WACHSTUM TAB LABEL CARD#####################################################
         #
@@ -4013,6 +4066,10 @@ views:
                     entities:
                       - entity: input_datetime.pflanzschrank_luftbefeuchter_startzeit
                         time:
+                    style: |
+                      ha-card {
+                        box-shadow: 1px 1px 1px 1px var(--divider-color);
+                      }
               #
               ###PFLANZSCHRANK LUFTBEFEUCHTER ENDE#######################################################
               #
@@ -4022,6 +4079,10 @@ views:
                     entities:
                       - entity: input_datetime.pflanzschrank_luftbefeuchter_endzeit
                         time:
+                    style: |
+                      ha-card {
+                        box-shadow: 1px 1px 1px 1px var(--divider-color);
+                      }
               #
               ###PFLANZSCHRANK MIN LUFTFEUCHTE#######################################################
               #
@@ -4030,6 +4091,10 @@ views:
                   - type: entities
                     entities:
                       - entity: input_number.pflanzschrank_luftfeuchtigkeit
+                    style: |
+                      ha-card {
+                        box-shadow: 1px 1px 1px 1px var(--divider-color);
+                      }
               #
               ###PFLANZSCHRANK MAX LUFTFEUCHTE#######################################################
               #
@@ -4038,6 +4103,10 @@ views:
                   - type: entities
                     entities:
                       - entity: input_number.pflanzschrank_maximale_luftfeuchtigkeit
+                    style: |
+                      ha-card {
+                        box-shadow: 1px 1px 1px 1px var(--divider-color);
+                      }
           #
           ###PFLANZSCHRANK PLUGS LABEL CARD###############################################
           #
@@ -4917,7 +4986,7 @@ views:
               ###PC CPU EMPTY CARD############################################################
               #
               - type: "custom:button-card"
-                template: empty_card
+                template: empty_card_wo_aspect
                 styles:
                   card:
                     - height: 100%
@@ -5053,7 +5122,7 @@ views:
               ###PC GTX 2080 01 EMPTY CARD####################################################
               #
               - type: "custom:button-card"
-                template: empty_card
+                template: empty_card_wo_aspect
                 styles:
                   card:
                     - height: 100%
@@ -5234,7 +5303,7 @@ views:
               ###PC GTX 2080 02 EMPTY CARD####################################################
               #
               - type: "custom:button-card"
-                template: empty_card
+                template: empty_card_wo_aspect
                 styles:
                   card:
                     - height: 100%
@@ -5700,7 +5769,7 @@ views:
               ###WETTER TAB EMPTY CARD########################################################
               #
               - type: "custom:button-card"
-                template: empty_card
+                template: empty_card_wo_aspect
                 styles:
                   card:
                     - height: 100%
@@ -6225,7 +6294,7 @@ views:
               ###SMARTPHONE PLACEHOLDER EMPTY#############################################################
               #
               - type: "custom:button-card"
-                template: empty_card
+                template: empty_card_wo_aspect
                 styles:
                   card:
                     - height: 100%
