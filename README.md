@@ -36,7 +36,7 @@ This Repository contains my personal Smart Home Configuration. At the moment (as
   </h4>
 </div>
 
-<hr>
+<hr style="height:1px;border:none;" />
 
 If you are an experienced Home Assistant user you might be interested in the following files:
 
