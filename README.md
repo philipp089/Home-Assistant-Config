@@ -61,7 +61,7 @@ If you are an experienced Home Assistant user you might be interested in the fol
   Mobile User Interface
 </h2>
 
-At the moment (as of Nov. 21) i control my Smart Home over 16 individual tabs. Use the menu links below to navigate through the tabs. Each tab contains a day and a night mode.
+At the moment (as of Nov. 21) I control my Smart Home over 17 individual tabs. Use the menu links below to navigate through the tabs. Each tab contains a day and a night mode.
 
 ---
 
