@@ -19,8 +19,8 @@ lovelace:
 #
 homeassistant:
   customize: !include customize.yaml
-  whitelist_external_dirs:
-      - "/media/PiNAS-Files/Recordings_Person_Detection"
+#  whitelist_external_dirs:
+#      - "/media/PiNAS-Files/Recordings_Person_Detection"
 #
 # AUTH PROVIDERS
 #
@@ -424,69 +424,6 @@ sensor:
             33 
           {% endif %}
   #
-  # WANDSCHALTER WERKSTATT kWh
-  #
-  - platform: template
-    sensors:
-      wandschalter_werkstatt_verbrauch:
-        friendly_name: "Wandschalter Werkstatt Verbrauch"
-        unit_of_measurement: "kWh"
-        value_template: "{{ state_attr('switch.00085a49a49be1', 'today_energy_kwh') }}"
-  #
-  # WANDSCHALTER WOHNZIMMER kWh
-  #
-  - platform: template
-    sensors:
-      wandschalter_wohnzimmer_verbrauch:
-        friendly_name: "Wandschalter Wohnzimmer Verbrauch"
-        unit_of_measurement: "kWh"
-        value_template: "{{ state_attr('switch.00085a49a49c0f', 'today_energy_kwh') }}"
-  #
-  # WANDSCHALTER SCHLAFZIMMER kWh
-  #
-  - platform: template
-    sensors:
-      wandschalter_schlafzimmer_verbrauch:
-        friendly_name: "Wandschalter Schlafzimmer Verbrauch"
-        unit_of_measurement: "kWh"
-        value_template: "{{ state_attr('switch.00085a49a49f84', 'today_energy_kwh') }}"
-  #
-  # WANDSCHALTER FLUR kWh
-  #
-  - platform: template
-    sensors:
-      wandschalter_flur_verbrauch:
-        friendly_name: "Wandschalter Flur Verbrauch"
-        unit_of_measurement: "kWh"
-        value_template: "{{ state_attr('switch.00085a49a4b411', 'today_energy_kwh') }}"
-  #
-  # WANDSCHALTER KÜCHE kWh
-  #
-  - platform: template
-    sensors:
-      wandschalter_kueche_verbrauch:
-        friendly_name: "Wandschalter Küche Verbrauch"
-        unit_of_measurement: "kWh"
-        value_template: "{{ state_attr('switch.hmip_bsm_00085a49a49be7', 'today_energy_kwh') }}"
-  #
-  # WANDSCHALTER DACHTERRASSE kWh
-  #
-  - platform: template
-    sensors:
-      wandschalter_dachterrasse_verbrauch:
-        friendly_name: "Wandschalter Dachterrasse Verbrauch"
-        unit_of_measurement: "kWh"
-        value_template: "{{ state_attr('switch.hmip_bsm_00085a49a49c91', 'today_energy_kwh') }}"
-  #
-  # WANDSCHALTER BADEZIMMER kWh
-  #
-  - platform: template
-    sensors:
-      wandschalter_badezimmer_verbrauch:
-        friendly_name: "Wandschalter Badezimmer Verbrauch"
-        unit_of_measurement: "kWh"
-        value_template: "{{ state_attr('switch.hmip_bsm_00085a49a4a57e', 'today_energy_kwh') }}"
-  #
   # SENSOR LOKALE UHRZEIT SMARTPHONE PHILIPP
   #
   - platform: template
@@ -545,6 +482,70 @@ sensor:
     access_token: !secret github_ha_integration_personal_accesss_token
     repositories:
       - path: "philipp089/Home-Assistant-Config"
+  #
+  # WANDSCHALTER WERKSTATT kWh
+  #
+template:
+  - sensor:
+    - name: "Wandschalter Werkstatt Verbrauch"
+      unit_of_measurement: "kWh"
+      device_class: "energy"
+      state_class: "total_increasing"
+      state: "{{ state_attr('switch.00085a49a49be1', 'today_energy_kwh') }}"
+  #
+  # WANDSCHALTER WOHNZIMMER kWh
+  #
+  - sensor:
+    - name: "Wandschalter Wohnzimmer Verbrauch"
+      unit_of_measurement: "kWh"
+      device_class: "energy"
+      state_class: "total_increasing"
+      state: "{{ state_attr('switch.00085a49a49c0f', 'today_energy_kwh') }}"
+  #
+  # WANDSCHALTER SCHLAFZIMMER kWh
+  #
+  - sensor:
+    - name: "Wandschalter Schlafzimmer Verbrauch"
+      unit_of_measurement: "kWh"
+      device_class: "energy"
+      state_class: "total_increasing"
+      state: "{{ state_attr('switch.00085a49a49f84', 'today_energy_kwh') }}"
+  #
+  # WANDSCHALTER FLUR kWh
+  #
+  - sensor:
+    - name: "Wandschalter Flur Verbrauch"
+      unit_of_measurement: "kWh"
+      device_class: "energy"
+      state_class: "total_increasing"
+      state: "{{ state_attr('switch.00085a49a4b411', 'today_energy_kwh') }}"
+  #
+  # WANDSCHALTER KÜCHE kWh
+  #
+  - sensor:
+    - name: "Wandschalter Küche Verbrauch"
+      unit_of_measurement: "kWh"
+      device_class: "energy"
+      state_class: "total_increasing"
+      state: "{{ state_attr('switch.hmip_bsm_00085a49a49be7', 'today_energy_kwh') }}"
+  #
+  # WANDSCHALTER DACHTERRASSE kWh
+  #
+  - sensor:
+    - name: "Wandschalter Dachterrasse Verbrauch"
+      unit_of_measurement: "kWh"
+      device_class: "energy"
+      state_class: "total_increasing"
+      state: "{{ state_attr('switch.hmip_bsm_00085a49a49c91', 'today_energy_kwh') }}"
+  #
+  # WANDSCHALTER BADEZIMMER kWh
+  #    
+  - sensor:
+    - name: "Wandschalter Badezimmer Verbrauch"
+      unit_of_measurement: "kWh"
+      device_class: "energy"
+      state_class: "total_increasing"
+      state: "{{ state_attr('switch.hmip_bsm_00085a49a4a57e', 'today_energy_kwh') }}"
 #
 #
 ###LIGHT GROUPS###
@@ -848,13 +849,6 @@ switch:
       - light.color_temperature_light_14
       - light.color_temperature_light_15
 #
-# PINAS MOUNT NAS FOLDER MEDIA BROWSER
-#
-shell_command:
-  mount_nas_folder_person_detection_recordings: !secret Mount_Path_Person_Detection_Recordings
-  move_frigate_files_to_nas: "mv /media/frigate/clips/*.mp4 /media/PiNAS-Files/Recordings_Person_Detection/"
-  move_frigate_image_files_to_nas: "mv /media/frigate/clips/*.jpg /media/PiNAS-Files/Recordings_Person_Detection/"
-#
 # TIMER
 #
 timer:
@@ -891,7 +885,8 @@ timer:
 #
 folder_watcher:
   - folder: /media/frigate/clips/
-  - folder: /media/PiNAS-Files/Recordings_Person_Detection/
+  - folder: /media/frigate/recordings
+
 #
 # API INTEGRATION
 #
