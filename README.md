@@ -20,6 +20,8 @@ The Plugs- and the Air-Humidifier Card are custom button card templates as well 
 
 #### The Home - Tab Night Mode
 
+The corresponding night-mode is shown below:
+
 ![00_Home_Tab_Mockup_001_Night_Mode](https://user-images.githubusercontent.com/66092908/139411226-159c4aed-10e7-405c-a9a6-6622cecfdfab.png)
 
 ![00_Home_Tab_Mockup_002_Night_Mode](https://user-images.githubusercontent.com/66092908/139411286-35da3dca-6901-4fab-bc48-aa0a6f8b0594.png)
@@ -33,6 +35,8 @@ As the name suggests, in the Light-Tab I handle all my light-scripts. I almost e
 ![01_Light_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/139411362-596376b4-aa8e-4f87-a67f-aa11c694883c.png)
 
 #### The Light - Tab Night Mode
+
+The night mode version of the light tab:
 
 ![01_Light_Tab_Mockup_001_Night_Mode](https://user-images.githubusercontent.com/66092908/139411374-9e8ecaca-0bf6-4e1b-9df6-136c3a785afd.png)
 
