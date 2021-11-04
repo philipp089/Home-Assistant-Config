@@ -278,3 +278,47 @@ The Desktop-App is made with Tileboard. For now i only have the first Tab finish
 
 ![Home_Tab_Desktop_UI_v03_web](https://user-images.githubusercontent.com/66092908/136972172-35ea2c69-f50e-4e4f-9beb-c53e5d942822.png)
 
+<h2 align="left">
+  <br>
+  Devices
+</h2>
+
+<div align="center">
+  <h4>
+    <a href="https://github.com/philipp089/Home-Assistant-Config#----mobile-user-interface">
+      Light and Light Control
+    </a>
+    <span> | </span>
+    <a href="https://github.com/philipp089/Home-Assistant-Config#desktop-user-interface">
+      Media
+    </a>
+    <span> | </span>    
+    <a href="">
+      Sensors
+    </a>
+    <span> | </span>      
+    <a href="">
+      Cameras and Security
+    </a>    
+    <span> | </span>
+    <a href="">
+      Smart Plugs
+    </a>
+    <span> | </span>
+    <a href="">
+      Climate Control
+    </a>      
+    <span> | </span>
+    <a href="">
+      Smart Home Hub
+    </a>
+    <span> | </span>      
+    <a href="">
+      PC
+    </a>
+    <span> | </span>      
+    <a href="">
+      Playstation
+    </a>
+  </h4>
+</div>
