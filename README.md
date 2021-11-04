@@ -485,6 +485,33 @@ This section deals with the various device categories. Use the menu links below 
 </tbody>
 </table>
 
+<br>
+
+<table>
+<thead>
+<tr>
+<th>Philips Hue White & Colour Ambiance, E27</th>
+<th>Philips Hue Single Filament Bulb, E27</th>
+<th>Philips Hue White Ambiance, E14</th>
+<th>Philips Hue White Ambiance, GU10</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://user-images.githubusercontent.com/66092908/140317792-9de9c133-a113-4372-af04-e2231e8490c6.png" /></td>
+<td><img src="https://user-images.githubusercontent.com/66092908/140317873-ce933667-e66e-47f2-8633-6d30ed5ff019.png" /></td>
+<td><img src="https://user-images.githubusercontent.com/66092908/140317993-9e33a5d4-3100-4bb6-ad1c-08d8b395aab3.png" /></td>
+<td><img src="https://user-images.githubusercontent.com/66092908/140318124-4c3c6000-d28a-45b2-9cb7-8041eba754aa.png" /></td>
+</tr>
+<tr>
+<td><a href="https://amzn.to/3EBfPF8">Philips Hue White & Colour Ambiance, E27</a></td>
+<td><a href="https://amzn.to/3o0oREK">Philips Hue Single Filament Bulb, E27</a></td>
+<td><a href="https://amzn.to/3o0oREK">Philips Hue White Ambiance, E14</a></td>
+<td><a href="https://amzn.to/3nQpock">Philips Hue White Ambiance, GU10</a></td>
+</tr>
+</tbody>
+</table>
+
 <h2 align="left">
   <br>
   Integrations <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
