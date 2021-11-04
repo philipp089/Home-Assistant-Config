@@ -56,7 +56,7 @@ If you are an experienced Home Assistant user you might be interested in the fol
 * [MDI Icons](https://materialdesignicons.com/) - Icons used in the Interfaces
 * [Google Visual Asset Guidelines](https://www.behance.net/gallery/9028077/Google-Visual-Assets-Guidelines-Part-1) - Google specific design guidelines
 
-<h2 align="left">
+<h2 align="center">
   <br>
   Mobile User Interface
 </h2>
