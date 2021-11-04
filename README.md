@@ -23,7 +23,7 @@ This Repository contains my personal Smart Home Configuration. At the moment (as
     </a>
     <span> | </span>
     <a href="">
-      Lights
+      Custom Components
     </a>
   </h4>
 </div>
