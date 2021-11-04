@@ -340,7 +340,7 @@ Work in Progress
 
 ### The Home - Tab <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-The Desktop-App is made with Tileboard. For now i only have the first Tab finished.
+The Desktop User Interface is made with Tileboard. At the moment I only have the Home - Tab finished.
 
 ![Home_Tab_Desktop_UI_v03_web](https://user-images.githubusercontent.com/66092908/136972172-35ea2c69-f50e-4e4f-9beb-c53e5d942822.png)
 
