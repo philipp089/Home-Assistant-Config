@@ -293,32 +293,20 @@ The Desktop-App is made with Tileboard. For now i only have the first Tab finish
 
 <div align="center">
   <h4>
+    <span> | </span>      
+    <a href="">
+      Cameras and Security
+    </a>
+    <span> | </span>
+    <a href="">
+      Climate Control
+    </a>       
     <a href="https://github.com/philipp089/Home-Assistant-Config#----mobile-user-interface">
       Light and Light Control
     </a>
     <span> | </span>
     <a href="https://github.com/philipp089/Home-Assistant-Config#desktop-user-interface">
       Media
-    </a>
-    <span> | </span>    
-    <a href="">
-      Sensors
-    </a>
-    <span> | </span>      
-    <a href="">
-      Cameras and Security
-    </a>    
-    <span> | </span>
-    <a href="">
-      Smart Plugs
-    </a>
-    <span> | </span>
-    <a href="">
-      Climate Control
-    </a>      
-    <span> | </span>
-    <a href="">
-      Smart Home Hub
     </a>
     <span> | </span>      
     <a href="">
@@ -327,6 +315,18 @@ The Desktop-App is made with Tileboard. For now i only have the first Tab finish
     <span> | </span>      
     <a href="">
       Playstation
-    </a>
+    </a>    
+    <span> | </span>    
+    <a href="">
+      Sensors
+    </a> 
+    <span> | </span>
+    <a href="">
+      Smart Home Hub
+    </a>    
+    <span> | </span>
+    <a href="">
+      Smart Plugs
+    </a>   
   </h4>
 </div>
