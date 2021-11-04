@@ -431,6 +431,33 @@ This section deals with the various device categories. Use the menu links below 
 </tbody>
 </table>
 
+---
+
+<h3 align="left">
+  <br>
+  Climate Control <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+</h3>
+
+<table>
+<thead>
+<tr>
+<th>Homematic IP Radiator Thermostat HmIP-eTRV-2</th>
+<th>Homematic IP Wall Thermostat HMIP-WTH-2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://user-images.githubusercontent.com/66092908/140314613-00eacaf7-93c1-43fb-99ef-e51ac3c72b22.png" /></td>
+<td><img src="https://user-images.githubusercontent.com/66092908/140314660-03c7ea91-f0c1-47a5-a9d7-d9751d2dea9e.png" /></td>
+</tr>
+<tr>
+<td><a href="https://amzn.to/3EEtZFo">Homematic IP HmIP-eTRV-2</a></td>
+<td><a href="https://amzn.to/3bF5wDk">Homematic IP HMIP-WTH-2</a></td>
+</tr>
+</tbody>
+</table>
+
+
 <h2 align="left">
   <br>
   Integrations <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
