@@ -1,5 +1,4 @@
 <h1 align="center">
-  <br>
   Google inspired Home Assistant Configuration (Mobile and Desktop User Interfaces)
 </h1>
 
