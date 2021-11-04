@@ -330,3 +330,13 @@ The Desktop-App is made with Tileboard. For now i only have the first Tab finish
     </a>   
   </h4>
 </div>
+
+<h2 align="left">
+  <br>
+  Integrations
+</h2>
+
+<h2 align="left">
+  <br>
+  Custom Components
+</h2>
