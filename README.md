@@ -39,6 +39,10 @@ If you are an experienced Home Assistant user you might be interested in the fol
 * [automations.yaml](https://github.com/philipp089/Home-Assistant-Config/blob/master/automations.yaml) - All the automations running in my Smart Home
 * [Automations folder](https://github.com/philipp089/Home-Assistant-Config/tree/master/automations) - To organise my automations in a more structured way, i started splitting automations to single files. Find the structure here
 
+#### <a name="Links"></a>Links 
+* [material.io](https://material.io/) - Guidelines for designing User Interfaces
+* [MDI Icons](https://materialdesignicons.com/) - Icons used in the Interfaces
+* [Google Visual Asset Guidelines](https://www.behance.net/gallery/9028077/Google-Visual-Assets-Guidelines-Part-1) - Google specific design guidelines
 
 <h2 align="left">
   <br>
