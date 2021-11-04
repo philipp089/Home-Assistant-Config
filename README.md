@@ -356,7 +356,6 @@ Use the menu links below to navigate through the Device Categories.
 ---
 
 <h3 align="center">
-  <br>
   Device Categories <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 </h3>
 
