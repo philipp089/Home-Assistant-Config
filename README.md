@@ -514,7 +514,7 @@ This section deals with the various device categories. Use the menu links below 
 
 <h3 align="left">
   <br>
-  Media Player <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+  Media Player and Remotes <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 </h3>
 
 <table>
@@ -542,6 +542,32 @@ This section deals with the various device categories. Use the menu links below 
 </tbody>
 </table>
 
+<br>
+
+<table>
+<thead>
+<tr>
+<th>Google Nest Mini</th>
+<th>Samsung Q7FN</th>
+<th>Sony Bravia</th>
+<th>Broadlink RM Pro and Mini</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://user-images.githubusercontent.com/66092908/140329358-ee7a1989-3e50-4111-8156-9ffed4e5cfe3.png" /></td>
+<td><img src="https://user-images.githubusercontent.com/66092908/140329600-83986820-04a0-45d7-9543-dbc63d615186.png" /></td>
+<td><img src="https://user-images.githubusercontent.com/66092908/140329800-609a5c82-1ea0-4b63-91d3-9692852a6b40.png" /></td>
+<td><img src="https://user-images.githubusercontent.com/66092908/140330328-c3994bdf-8f62-4474-8281-928ebf9184ad.png" /></td>
+</tr>
+<tr>
+<td><a href="https://amzn.to/3EI58R9">Google Nest Mini</a></td>
+<td><a href="https://amzn.to/3bGQAVt">Samsung Q7FN</a></td>
+<td><a href="https://amzn.to/3mKaG7G">Sony Bravia</a></td>
+<td><a href="https://amzn.to/2Yll5NK">Broadlink RM Pro and Mini</a></td>
+</tr>
+</tbody>
+</table>
 <h2 align="left">
   <br>
   Integrations <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
