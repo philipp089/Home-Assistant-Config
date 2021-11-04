@@ -12,6 +12,8 @@ This Repository contains my personal Smart Home Configuration. At the moment (as
   Chapter
 </h2>
 
+---
+
 <div align="center">
   <h4>
     <a href="https://github.com/philipp089/Home-Assistant-Config#----mobile-user-interface">
