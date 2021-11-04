@@ -8,6 +8,10 @@
 
 This Repository contains my personal Smart Home Configuration. At the moment (as of Nov. 21) my Smart Home runs on a Raspberry Pi 4 Model B 4 GB with <a href="https://www.home-assistant.io/">Home Assistant</a> installed. Use the menu links below to navigate through the documentation. If there are any open questions or you want to contribute feel free to contact me. 
 
+<h2 align="center">
+  Navigation
+</h2>
+
 <div align="center">
   <h4>
     <a href="https://github.com/philipp089/Home-Assistant-Config#----mobile-user-interface">
