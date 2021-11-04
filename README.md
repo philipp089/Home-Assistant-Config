@@ -8,11 +8,11 @@
 
 This Repository contains my personal Smart Home Configuration. At the moment (as of Nov. 21) my Smart Home runs on a Raspberry Pi 4 Model B 4 GB with <a href="https://www.home-assistant.io/">Home Assistant</a> installed. Use the menu links below to navigate through the documentation. If there are any open questions or you want to contribute feel free to contact me. 
 
-<h2 align="center">
-  Main Sections
-</h2>
-
 ---
+
+<h3 align="center">
+  Main Sections
+</h3>
 
 <div align="center">
   <h4>
@@ -70,8 +70,6 @@ At the moment (as of Nov. 21) i control my Smart Home over 16 individual tabs. U
 <h3 align="center">
   Tab Overview
 </h3>
-
----
 
 <div align="center">
   <h4>
@@ -144,6 +142,8 @@ At the moment (as of Nov. 21) i control my Smart Home over 16 individual tabs. U
     </a>
   </h4>
 </div>
+
+---
 
 <h3 align="left">
   <br>
