@@ -1,6 +1,35 @@
-# Google inspired Home Assistant Configuration (mobile and Desktop UI)
+<h1 align="center">
+  <br>
+  Google inspired Home Assistant Configuration (Mobile and Desktop User Interfaces)
+</h1>
 
-## Mobile-App
+
+<a name="devices"></a>
+<div align="center">
+  <h4>
+    <a href="https://github.com/philipp089/Home-Assistant-Config#mobile-app">
+      Mobile User Interface
+    </a>
+    <span> | </span>
+    <a href="https://github.com/philipp089/Home-Assistant-Config#desktop-app">
+      Desktop User Interface
+    </a>
+    <span> | </span>
+    <a href="">
+      Devices
+    </a>
+    <span> | </span>
+    <a href="">
+      Integrations
+    </a>
+    <span> | </span>
+    <a href="">
+      Lights
+    </a>
+  </h4>
+</div>
+
+## Mobile User Interface
 
 ### The Home - Tab
 
@@ -153,7 +182,7 @@ Work in Progress
 ![14_Automations_Tab_Mockup_003_Night_Mode](https://user-images.githubusercontent.com/66092908/139476678-8da8cc38-d2c5-4ed7-87d4-bdd4e3a8792d.png)
 
 
-## Desktop App
+## Desktop User Interface
 
 ### The Home - Tab
 
