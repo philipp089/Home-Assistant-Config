@@ -490,24 +490,24 @@ This section deals with the various device categories. Use the menu links below 
 <table>
 <thead>
 <tr>
-<th>Philips Hue White & Colour Ambiance, E27</th>
-<th>Philips Hue Single Filament Bulb, E27</th>
-<th>Philips Hue White Ambiance, E14</th>
-<th>Philips Hue White Ambiance, GU10</th>
+<th>Philips Hue Go White & Colour Ambiance, Portable Light</th>
+<th>Philips Hue Lightstrip Plus</th>
+<th>Philips Hue Dimmer Switch</th>
+<th>IKEA Floalt 60 x 60 cm</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><img src="https://user-images.githubusercontent.com/66092908/140317792-9de9c133-a113-4372-af04-e2231e8490c6.png" /></td>
-<td><img src="https://user-images.githubusercontent.com/66092908/140317873-ce933667-e66e-47f2-8633-6d30ed5ff019.png" /></td>
-<td><img src="https://user-images.githubusercontent.com/66092908/140317993-9e33a5d4-3100-4bb6-ad1c-08d8b395aab3.png" /></td>
-<td><img src="https://user-images.githubusercontent.com/66092908/140318124-4c3c6000-d28a-45b2-9cb7-8041eba754aa.png" /></td>
+<td><img src="https://user-images.githubusercontent.com/66092908/140319788-587f9413-2d75-46fb-ae81-ff4050812407.png" /></td>
+<td><img src="https://user-images.githubusercontent.com/66092908/140319872-16687a42-8133-4f79-989c-4398953dfccc.png" /></td>
+<td><img src="https://user-images.githubusercontent.com/66092908/140319936-7bd9d875-2e67-4174-81b8-f5b07b2450ec.png" /></td>
+<td><img src="https://user-images.githubusercontent.com/66092908/140320115-b1f98984-cc87-4c1d-ac45-575d708d39c8.png" /></td>
 </tr>
 <tr>
-<td><a href="https://amzn.to/3EBfPF8">Philips Hue White & Colour Ambiance, E27</a></td>
-<td><a href="https://amzn.to/3o0oREK">Philips Hue Single Filament Bulb, E27</a></td>
-<td><a href="https://amzn.to/3o0oREK">Philips Hue White Ambiance, E14</a></td>
-<td><a href="https://amzn.to/3nQpock">Philips Hue White Ambiance, GU10</a></td>
+<td><a href="https://amzn.to/3CKBZ77">Philips Hue Go White & Colour Ambiance, Portable Light</a></td>
+<td><a href="https://amzn.to/3CKBZ77">Philips Hue Lightstrip Plus</a></td>
+<td><a href="https://amzn.to/3k7u909">Philips Hue Dimmer Switch</a></td>
+<td><a href="https://www.ikea.com/de/de/p/floalt-led-lichtpaneel-dimmbar-weissspektrum-20436317/">IKEA Floalt 60 x 60 cm</a></td>
 </tr>
 </tbody>
 </table>
