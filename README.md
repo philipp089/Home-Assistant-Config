@@ -582,7 +582,7 @@ This section deals with the various device categories. Use the menu links below 
 </thead>
 <tbody>
 <tr>
-<td><img src="https://user-images.githubusercontent.com/66092908/140332925-ee134f45-62cd-403d-82b4-9ba635ac3ea1.png" /></td>
+<td><img src="https://user-images.githubusercontent.com/66092908/140332925-ee134f45-62cd-403d-82b4-9ba635ac3ea1.png" width="225" /></td>
 </tr>
 <tr>
 <td>Custom made PC</td>
