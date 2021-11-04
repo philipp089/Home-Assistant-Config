@@ -512,6 +512,36 @@ This section deals with the various device categories. Use the menu links below 
 </tbody>
 </table>
 
+<h3 align="left">
+  <br>
+  Media Player <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+</h3>
+
+<table>
+<thead>
+<tr>
+<th>Sonos Arc Soundbar</th>
+<th>Sonos Sub</th>
+<th>Sonos Play:1</th>
+<th>Sonos One</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://user-images.githubusercontent.com/66092908/140322277-d2ea03fc-59ae-4c43-a1ad-0974e2e6b845.png" /></td>
+<td><img src="https://user-images.githubusercontent.com/66092908/140322880-ff444ad3-d341-4574-b166-a47a4c8d3576.png" /></td>
+<td><img src="https://user-images.githubusercontent.com/66092908/140323687-d430a23b-4ae9-4127-a772-73edaa1a996c.png" /></td>
+<td><img src="https://user-images.githubusercontent.com/66092908/140323746-5ad85bcc-3b85-497e-9f59-4fdcbd54d992.png" /></td>
+</tr>
+<tr>
+<td><a href="https://amzn.to/3k7QNpo">Sonos Arc Soundbar</a></td>
+<td><a href="https://amzn.to/3k67dhI">Sonos Sub</a></td>
+<td><a href="https://amzn.to/3q7w2ho">Sonos Play:1</a></td>
+<td><a href="https://amzn.to/3k2IgnG">Sonos One</a></td>
+</tr>
+</tbody>
+</table>
+
 <h2 align="left">
   <br>
   Integrations <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
