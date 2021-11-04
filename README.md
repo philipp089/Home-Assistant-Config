@@ -347,14 +347,16 @@ The Desktop-App is made with Tileboard. For now i only have the first Tab finish
 <tr>
 <th>Reolink RTC 410</th>
 <th>Homematic IP Door Sensor</th>
-<th>Philips Hue Motion Sensor</th> 
+<th>Philips Hue Motion Sensor</th>
+<th>Google Coral USB Accelerator</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><img src="https://user-images.githubusercontent.com/66092908/140294042-6b352008-e2e8-4445-8cc1-0200b5112fb2.png" /></td>
 <td><img src="https://user-images.githubusercontent.com/66092908/140294047-01b27e8c-8cfa-4d6c-b714-26f3ebb5b1d1.png" /></td>
-<td><img src="https://user-images.githubusercontent.com/66092908/140294036-82f12662-2f80-4b9c-b01f-573df809ce2c.png" /></td>    
+<td><img src="https://user-images.githubusercontent.com/66092908/140294036-82f12662-2f80-4b9c-b01f-573df809ce2c.png" /></td>
+<td><img src="https://user-images.githubusercontent.com/66092908/140301265-e1a40360-f910-4be3-8834-6d6e4b6c1a27.png" /></td>
 </tr>
 <tr>
 <td><a href="https://amzn.to/3GRAWVG">Reolink RTC 410</a></td>
