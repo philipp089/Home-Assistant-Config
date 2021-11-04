@@ -357,9 +357,9 @@ The Desktop-App is made with Tileboard. For now i only have the first Tab finish
 <td><img src="https://user-images.githubusercontent.com/66092908/140294036-82f12662-2f80-4b9c-b01f-573df809ce2c.png" /></td>    
 </tr>
 <tr>
-<td>cell1_2</td>
-<td>cell2_2</td>
-<td>cell3_2</td>  
+<td><a href="https://amzn.to/3GRAWVG">Reolink RTC 410</a></td>
+<td><a href="https://amzn.to/3BFdJSB">Homematic IP Door Sensor</a></td>
+<td><a href="https://amzn.to/3mGLsHd">Philips Hue Motion Sensor</a></td>  
 </tr>
 </tbody>
 </table>
