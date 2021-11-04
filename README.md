@@ -374,7 +374,7 @@ This section deals with the various device categories. Use the menu links below 
     </a>
     <span> | </span>
     <a href="https://github.com/philipp089/Home-Assistant-Config#desktop-user-interface">
-      Media
+      Media Player
     </a>
     <span> | </span>      
     <a href="">
