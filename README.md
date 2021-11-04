@@ -20,7 +20,7 @@ This Repository contains my personal Smart Home Configuration. At the moment (as
       Mobile User Interface
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config#desktop-user-interface">
+    <a href="https://github.com/philipp089/Home-Assistant-Config#----desktop-user-interface-">
       Desktop User Interface
     </a>
     <span> | </span>
