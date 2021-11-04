@@ -2,6 +2,8 @@
   Google inspired Home Assistant Configuration (Mobile and Desktop User Interfaces)
 </h1>
 
+![Header](https://user-images.githubusercontent.com/66092908/140277877-8dbba7b6-89f9-48d0-bc43-0af4d060022d.png)
+
 ![00_Home_Tab_Mockup_001_Night_Mode](https://user-images.githubusercontent.com/66092908/139411226-159c4aed-10e7-405c-a9a6-6622cecfdfab.png)
 
 This Repository contains my personal Smart Home Configuration. At the moment (as of Nov. 21) my Smart Home runs on a Raspberry Pi 4 Model B 4 GB with <a href="https://www.home-assistant.io/">Home Assistant</a> installed. Use the menu links below to navigate through the documentation. If there are any open questions or you want to contribute feel free to contact me. 
