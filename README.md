@@ -292,8 +292,7 @@ The Desktop-App is made with Tileboard. For now i only have the first Tab finish
 </h2>
 
 <div align="center">
-  <h4>
-    <span> | </span>      
+  <h4>      
     <a href="">
       Cameras and Security
     </a>
