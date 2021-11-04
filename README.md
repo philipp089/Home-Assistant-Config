@@ -7,11 +7,11 @@
 <a name="devices"></a>
 <div align="center">
   <h4>
-    <a href="https://github.com/philipp089/Home-Assistant-Config#mobile-app">
+    <a href="https://github.com/philipp089/Home-Assistant-Config#mobile-user-interface">
       Mobile User Interface
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config#desktop-app">
+    <a href="https://github.com/philipp089/Home-Assistant-Config#desktop-user-interface">
       Desktop User Interface
     </a>
     <span> | </span>
