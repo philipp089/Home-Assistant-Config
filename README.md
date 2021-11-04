@@ -512,6 +512,27 @@ This section deals with the various device categories. Use the menu links below 
 </tbody>
 </table>
 
+<br>
+
+<table>
+<thead>
+<tr>
+<th>IKEA TRÅDFRI Remote</th>
+<th>Raspbee II Zigbee Gateway</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://user-images.githubusercontent.com/66092908/140335542-815f3db2-53c8-460e-9af2-5e233a085d13.png" width="222.25" /></td>
+<td><img src="https://user-images.githubusercontent.com/66092908/140335635-4b70b19d-b037-42dc-a514-357c1893b33f.png" width="222.25" /></td>
+</tr>
+<tr>
+<td><a href="https://www.ikea.com/de/de/p/tradfri-fernbedienung-30443124/">IKEA TRÅDFRI Remote</a></td>
+<td><a href="https://amzn.to/3o029g6">Raspbee II Zigbee Gateway</a></td>
+</tr>
+</tbody>
+</table>
+
 <h3 align="left">
   <br>
   Media Player and Remotes <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
