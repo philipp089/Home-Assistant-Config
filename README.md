@@ -354,7 +354,7 @@ The Desktop-App is made with Tileboard. For now i only have the first Tab finish
 <tr>
 <td><img src="https://user-images.githubusercontent.com/66092908/140290863-ac33a77b-6258-4a28-b016-552f65297c1b.png" /></td>
 <td><img src="https://user-images.githubusercontent.com/66092908/140291364-3953ae0a-6bf9-4e88-b898-bed343a94577.png" /></td>
-<td><img src="https://user-images.githubusercontent.com/66092908/140292645-1ab9b6c7-a05c-4c32-9129-ee1ca720e600.png" /></td>  
+<td><img src="https://user-images.githubusercontent.com/66092908/140293390-71dc8b9f-fb43-4a25-87f2-c2b43282f414.png" /></td>  
 </tr>
 <tr>
 <td>cell1_2</td>
