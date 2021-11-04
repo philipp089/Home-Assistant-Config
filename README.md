@@ -46,6 +46,8 @@ If you are an experienced Home Assistant user you might be interested in the fol
   Mobile User Interface
 </h2>
 
+At the moment (as of Nov. 21) i control my Smart Home over 16 individual tabs. Use the menu links below to navigate through the tabs. Each tab contains a day and a night mode.
+
 <div align="center">
   <h4>
     <a href="https://github.com/philipp089/Home-Assistant-Config#the-home---tab">
