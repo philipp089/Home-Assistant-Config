@@ -299,7 +299,8 @@ The Desktop-App is made with Tileboard. For now i only have the first Tab finish
     <span> | </span>
     <a href="">
       Climate Control
-    </a>       
+    </a>
+    <span> | </span>
     <a href="https://github.com/philipp089/Home-Assistant-Config#----mobile-user-interface">
       Light and Light Control
     </a>
