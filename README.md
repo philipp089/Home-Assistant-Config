@@ -3,6 +3,8 @@
   Google inspired Home Assistant Configuration (Mobile and Desktop User Interfaces)
 </h1>
 
+This Repository contains my personal Smart Home Configuration. At the moment (as of Nov. 21) my Smart Home runs on a Raspberry Pi 4B with <a href="https://www.home-assistant.io/">Home Assistant</a> installed. Use the menu links below to navigate through the documentation. If there are any open questions feel free to ask. 
+
 <div align="center">
   <h4>
     <a href="https://github.com/philipp089/Home-Assistant-Config#mobile-user-interface">
@@ -26,6 +28,18 @@
     </a>
   </h4>
 </div>
+
+If you are an experienced Home Assistant user you might be interested in the following files:
+
+#### <a name="Main Files"></a>Main files and folders of my HA-Config:
+* [ui-lovelace.yaml](https://github.com/philipp089/Home-Assistant-Config/blob/master/ui-lovelace.yaml) - Main file of the Mobile User Interface
+* [config.js](https://github.com/philipp089/Home-Assistant-Config/blob/master/www/tileboard/config.js) - Main file of the Desktop User Interface
+* [configuration.yaml](https://github.com/philipp089/Home-Assistant-Config/blob/master/configuration.yaml) - Main Configuration file of the Smart Home
+* [themes.yaml](https://github.com/philipp089/Home-Assistant-Config/blob/master/themes.yaml) - Theme-File for Day and Night Mode
+* [scrips.yaml](https://github.com/philipp089/Home-Assistant-Config/blob/master/scripts.yaml) - All the scrips running in my Smart Home
+* [automations.yaml](https://github.com/philipp089/Home-Assistant-Config/blob/master/automations.yaml) - All the automations running in my Smart Home
+* [Automations folder](https://github.com/philipp089/Home-Assistant-Config/tree/master/automations) - To organise my automations in a more structured way, i started splitting automations to single files. Find the structure here
+
 
 <h2 align="left">
   <br>
