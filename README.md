@@ -564,7 +564,7 @@ This section deals with the various device categories. Use the menu links below 
 <td><a href="https://amzn.to/3EI58R9">Google Nest Mini</a></td>
 <td><a href="https://amzn.to/3bGQAVt">Samsung Q7FN</a></td>
 <td><a href="https://amzn.to/3mKaG7G">Sony Bravia</a></td>
-<td><a href="https://amzn.to/2Yll5NK">Broadlink RM Pro and Mini</a></td>
+<td><a href="https://amzn.to/31wMHk8">Broadlink RM Pro and Mini</a></td>
 </tr>
 </tbody>
 </table>
