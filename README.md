@@ -439,8 +439,8 @@ This section deals with the various device categories. Use the menu links below 
 <table>
 <thead>
 <tr>
-<th>Homematic IP Radiator Thermostat HmIP-eTRV-2</th>
-<th>Homematic IP Wall Thermostat HMIP-WTH-2</th>
+<th>Homematic IP HmIP-eTRV-2</th>
+<th>Homematic IP HMIP-WTH-2</th>
 </tr>
 </thead>
 <tbody>
