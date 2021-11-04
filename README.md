@@ -342,6 +342,25 @@ The Desktop-App is made with Tileboard. For now i only have the first Tab finish
   Cameras and Security <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 </h3>
 
+<table>
+<thead>
+<tr>
+<th>Reolink RTC 410</th>
+<th>Homematic IP Door Sensor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://user-images.githubusercontent.com/66092908/140290863-ac33a77b-6258-4a28-b016-552f65297c1b.png" /></td>
+<td><img src="https://user-images.githubusercontent.com/66092908/140291364-3953ae0a-6bf9-4e88-b898-bed343a94577.png" /></td>
+</tr>
+<tr>
+<td>cell1_2</td>
+<td>cell2_2</td>
+</tr>
+</tbody>
+</table>
+
 <h2 align="left">
   <br>
   Integrations <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
