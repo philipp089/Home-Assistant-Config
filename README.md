@@ -384,10 +384,6 @@ This section deals with the various device categories. Use the menu links below 
     <a href="">
       Playstation
     </a>    
-    <span> | </span>    
-    <a href="">
-      Sensors
-    </a> 
     <span> | </span>
     <a href="">
       Smart Home Hub
@@ -607,7 +603,27 @@ This section deals with the various device categories. Use the menu links below 
 </tr>
 <tr>
 <td>Custom made PC</td>
+</tr>
+</tbody>
+</table>
 
+<h3 align="left">
+  <br>
+  Playstation <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+</h3>
+
+<table>
+<thead>
+<tr>
+<th>Playstation 4 Pro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://user-images.githubusercontent.com/66092908/140500173-070e4d04-6dfe-43f7-a72f-159bebf0f084.png" width="222.25" /></td>
+</tr>
+<tr>
+  <td><a href="https://amzn.to/3BNntKN">Playstation 4 Pro</a></td>
 </tr>
 </tbody>
 </table>
