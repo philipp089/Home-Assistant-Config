@@ -519,16 +519,19 @@ This section deals with the various device categories. Use the menu links below 
 <tr>
 <th>IKEA TRÅDFRI Remote</th>
 <th>Raspbee II Zigbee Gateway</th>
+<th>Homematic HmIP-BSM</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><img src="https://user-images.githubusercontent.com/66092908/140335542-815f3db2-53c8-460e-9af2-5e233a085d13.png" width="222.25" /></td>
 <td><img src="https://user-images.githubusercontent.com/66092908/140335635-4b70b19d-b037-42dc-a514-357c1893b33f.png" width="222.25" /></td>
+<td><img src="https://user-images.githubusercontent.com/66092908/140503934-423a18b2-5d55-4422-b348-3a5eee6c4efb.png" width="222.25" /></td>
 </tr>
 <tr>
 <td><a href="https://www.ikea.com/de/de/p/tradfri-fernbedienung-30443124/">IKEA TRÅDFRI Remote</a></td>
 <td><a href="https://amzn.to/3o029g6">Raspbee II Zigbee Gateway</a></td>
+<td><a href="https://amzn.to/3EQIXIK">Homematic HmIP-BSMy</a></td>
 </tr>
 </tbody>
 </table>
