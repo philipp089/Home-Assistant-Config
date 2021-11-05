@@ -729,7 +729,7 @@ This section deals with the various device categories. Use the menu links below 
 
 Find all the Integrations i use in my Home Assistant Configuration
 
-#### <a name="Main Files"></a>Used Integrations:
+#### <a name="Integrations"></a>Used Integrations:
 * [AVM FRITZ!SmartHome](https://www.home-assistant.io/integrations/fritzbox/) - AVM FRITZ!SmartHome Integration
 * [Broadlink](https://www.home-assistant.io/integrations/broadlink/) - Integration for Broadlink RM4 Pro and Mini
 * [deCONZ](https://www.home-assistant.io/integrations/deconz/) - deCONZ and Phoscon for control over the Zigbee Devices (Philips Hue, IKEA Tradfri Remote, IKEA Floalt)
@@ -753,3 +753,29 @@ Find all the Integrations i use in my Home Assistant Configuration
   <br>
   Custom Components <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 </h2>
+
+#### <a name="Custom Integrations"></a>HACS Integrations:
+* [BlueIris](https://github.com/elad-bar/ha-blueiris) - Integration with Blue Iris Video Security Software
+* [browser-mod](https://github.com/thomasloven/hass-browser_mod) - A Home Assistant integration to turn your browser into a controllable entity
+* [Circadian Lighting](https://github.com/claytonjn/hass-circadian_lighting) - adds Circadian Lighting to all my lights
+* [favicon](https://github.com/thomasloven/hass-favicon) - customises the favicon of HA
+* [fontawesome](https://github.com/thomasloven/hass-fontawesome) - allows you to use free icons from fontawesome in HA
+* [Frigate](https://github.com/blakeblackshear/frigate-hass-integration) - Integration to run Frigate 
+* [HACS](https://hacs.xyz/) - Home Assistant Community Store - used for Custom Component Integration
+* [Samsung TV Tizen](https://github.com/jaruba/ha-samsungtv-tizen) - a custom Samsung TV Integration
+* [WebRTC Camera](https://github.com/AlexxIT/WebRTC) - Integrates WebRTC to my Camera-Tab
+
+#### <a name="Custom Frontend"></a>HACS Frontend:
+* [Atomic Calendar Revive](https://github.com/totaldebug/atomic-calendar-revive) - my calendar integration of choice
+* [Bar Card](https://github.com/custom-cards/bar-card) - A Bar card used for HDD-space or anything else
+* [Battery State Card](https://github.com/maxwroc/battery-state-card) - main element of my battery-tab
+* [button-card](https://github.com/custom-cards/button-card) - if you get only one custom-component, this is it. Highly recommended, my UI would not be possible without it
+* [card-mod](https://github.com/thomasloven/lovelace-card-mod) - Allows you to apply CSS styles to various elements of the Home Assistant frontend.
+* [card-tools](https://github.com/thomasloven/lovelace-card-tools) - a collection of tools to simplify creating custom cards for Home Assistant 
+* [Light popup card](https://github.com/DBuit/light-popup-card) - Popup lovelace card with brightness slider and optional scene selection or a light switch for lights without brightness.
+* [Lovelace Swipe Navigation](https://github.com/maykar/lovelace-swipe-navigation) - adds the ability to swipe through the tabs in the mobile UI
+* [Mini Media Player](https://github.com/kalkih/mini-media-player) - outstanding Media-Player-card
+* [mini-graph-card](https://github.com/kalkih/mini-graph-card) - the core component of all my graphs
+* [Simple Thermostat](https://github.com/nervetattoo/simple-thermostat) - the climate control card of my choice, used in the climate-tab
+* [Simple Weather Card](https://github.com/kalkih/simple-weather-card) - a simple card for displaying weather information
+* [Weather Card](https://github.com/bramkragten/weather-card) - the weather card used in my weather-tab
