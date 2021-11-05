@@ -391,7 +391,11 @@ This section deals with the various device categories. Use the menu links below 
     <span> | </span>
     <a href="">
       Smart Plugs
-    </a>   
+    </a>
+    <span> | </span>
+    <a href="">
+      3D Printer
+    </a>       
   </h4>
 </div>
 
@@ -624,6 +628,30 @@ This section deals with the various device categories. Use the menu links below 
 </tr>
 <tr>
   <td><a href="https://amzn.to/3BNntKN">Playstation 4 Pro</a></td>
+</tr>
+</tbody>
+</table>
+
+<h3 align="left">
+  <br>
+  Smart Plugs <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+</h3>
+
+<table>
+<thead>
+<tr>
+<th>TP-Link HS100</th>
+<th>TP-Link HS110</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://user-images.githubusercontent.com/66092908/140500815-feea59f3-29f9-459e-b1bc-34c2ac034e2b.png" width="222.25" /></td>
+<td><img src="https://user-images.githubusercontent.com/66092908/140500815-feea59f3-29f9-459e-b1bc-34c2ac034e2b.png" width="222.25" /></td>
+</tr>
+<tr>
+  <td><a href="https://amzn.to/3k5LMO8">TP-Link HS100</a></td>
+  <td><a href="https://amzn.to/2YjT2yb">TP-Link HS110</a></td>
 </tr>
 </tbody>
 </table>
