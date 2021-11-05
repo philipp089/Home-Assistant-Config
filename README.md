@@ -28,7 +28,7 @@ This Repository contains my personal Smart Home Configuration. At the moment (as
       Devices
     </a>
     <span> | </span>
-    <a href="">
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#----integrations-">
       Integrations
     </a>
     <span> | </span>
