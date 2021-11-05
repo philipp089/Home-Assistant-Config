@@ -593,6 +593,24 @@ This section deals with the various device categories. Use the menu links below 
 </tbody>
 </table>
 
+<br>
+
+<table>
+<thead>
+<tr>
+<th>Chromecast Ultra 4K</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://user-images.githubusercontent.com/66092908/140526688-f1314b43-6225-4516-908c-75ebe0c2a291.png" width="222.25" /></td>
+</tr>
+<tr>
+<td><a href="https://amzn.to/2ZZtIOJ">Chromecast Ultra 4K</a></td>
+</tr>
+</tbody>
+</table>
+
 <h3 align="left">
   <br>
   PC <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
