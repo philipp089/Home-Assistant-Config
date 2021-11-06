@@ -4,8 +4,6 @@
 resources:
   - url: /hacsfiles/button-card/button-card.js
     type: module
-  - url: /hacsfiles/custom-header/custom-header.js
-    type: module
   - url: /hacsfiles/light-popup-card/light-popup-card.js
     type: module
   - url: /hacsfiles/lovelace-card-mod/card-mod.js
@@ -30,41 +28,6 @@ resources:
     type: module
   - url: /hacsfiles/lovelace-swipe-navigation/swipe-navigation.js
     type: module
-#
-###CUSTOM HEADER################################################################
-#
-custom_header:
-  active_tab_color: "rgb(153, 153, 153)"
-  all_tabs_color: "rgb(179, 179, 179)"
-  shadow: true
-  header_css: "box-shadow: 1px 1px 1px 1px var(--divider-color);"
-#  footer_css: "box-shadow: 1px 1px 1px 1px var(--divider-color);"
-  options_hide: true
-#  split_mode: true
-#  footer_mode: true
-  compact_mode: true
-  menu_color: "rgb(179, 179, 179)"
-  notification_dot_color: "rgb(179, 179, 179)"
-  options_color: "rgb(179, 179, 179)"
-  tab_indicator_color: "rgb(153, 153, 153)"
-  tabs_color:
-    alarm: "rgb(219, 68, 55)"
-    automations: "rgb(66, 133, 244)"
-    batterien: "rgb(219, 68, 55)"
-    desktop: "rgb(15, 157, 88)"
-    gesundheit: "rgb(15, 157, 88)"
-    home: "rgb(153, 153, 153)"
-    kalender: "rgb(244, 180, 0)"
-    kameras: "rgb(66, 133, 244)"
-    licht: "rgb(244, 180, 0)"
-    media: "rgb(15, 157, 88)"
-    pflanzen: "rgb(147, 52, 230)"
-    playstation: "rgb(66, 133, 244)"
-    plugs: "rgb(66, 133, 244)"
-    raspberry: "rgb(102, 102, 102)"
-    smartphone: "rgb(102, 102, 102)"
-    temperatur: "rgb(219, 68, 55)"
-    wetter: "rgb(244, 180, 0)"
 #
 ###BUTTON CARD TEMPLATES BEGIN###################################################
 #
@@ -1164,7 +1127,7 @@ swipe_nav:
 #
 ###HOME TAB#####################################################################
 #
-title: Schaltzentrale
+#title: Schaltzentrale
 views:
   - title: Home
     icon: "mdi:home"
@@ -1387,7 +1350,7 @@ views:
           #
           - type: "custom:mini-media-player"
             artwork: cover
-            entity: media_player.samsung_tv_tizen
+            entity: media_player.tv_samsung_q7_series_55
             name: Fernseher Wohnzimmer
             style: |
               ha-card {
@@ -1543,7 +1506,7 @@ views:
               - type: "custom:button-card"
                 template: tv_card
                 size: "100%"
-                entity: media_player.samsung_tv_tizen
+                entity: media_player.tv_samsung_q7_series_55
                 name: Fernseher
                 styles:
                   icon:
@@ -3328,7 +3291,7 @@ views:
           #
           - type: "custom:mini-media-player"
             artwork: cover
-            entity: media_player.samsung_tv_tizen
+            entity: media_player.tv_samsung_q7_series_55
             name: Fernseher
             style: |
               ha-card {
@@ -3837,10 +3800,6 @@ views:
                 entities:
                   - sensor.000d5a499af358_current_illumination
                 name: Licht
-                style: |
-                  ha-card {
-                    box-shadow: 1px 1px 1px 1px var(--divider-color);
-                  }
               #
               ###PFLANZSCHRANK HUMIDITY#######################################################
               #

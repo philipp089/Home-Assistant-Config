@@ -193,16 +193,6 @@
     target:
       entity_id: script.wohnzimmer_tageslicht
   mode: single
-- id: '1631217840293'
-  alias: PiNAS - MOUNT NAS FOLDER  - PERSON DETECTION RECORDINGS
-  description: ''
-  trigger:
-  - platform: homeassistant
-    event: start
-  condition: []
-  action:
-  - service: shell_command.mount_nas_folder_person_detection_recordings
-  mode: single
 - id: '1631270447390'
   alias: MOTION DETECTION - SEND CAMERA SNAPSHOT - Eingang
   description: ''
@@ -679,16 +669,6 @@
     target:
       entity_id: script.badezimmer_tageslicht_an
   mode: single
-- id: '1631384831806'
-  alias: PINAS - FRIGATE - Move Image-Files to PiNAS daily
-  description: ''
-  trigger:
-  - platform: time
-    at: 03:00
-  condition: []
-  action:
-  - service: shell_command.move_frigate_image_files_to_nas
-  mode: single
 - id: '1631391610174'
   alias: MOTION SENSOR - Wohnzimmer Kamin - LICHT - Flur an - Werktags tagsüber
   description: ''
@@ -994,16 +974,6 @@
       entity_id:
       - switch.steckdose_wohnzimmer_luftbefeuchter
       - switch.steckdose_wohnzimmer_luftbefeuchter_fenster
-  mode: single
-- id: '1632057508009'
-  alias: PINAS - FRIGATE - Move Video-Files to PiNAS daily
-  description: ''
-  trigger:
-  - platform: time
-    at: 02:00
-  condition: []
-  action:
-  - service: shell_command.move_frigate_files_to_nas
   mode: single
 - id: '1632889086015'
   alias: PFLANZSCHRANK - ABLUFT - Start

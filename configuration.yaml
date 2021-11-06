@@ -11,7 +11,7 @@ lovelace:
     db-mobile:
       mode: yaml
       title: Mobile Dashboard
-      icon: "mdi:cellphone-android"
+      icon: "mdi:cellphone"
       show_in_sidebar: true
       filename: ui-lovelace.yaml
 #
