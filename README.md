@@ -28,11 +28,11 @@ This Repository contains my personal Smart Home Configuration. At the moment (as
       Devices
     </a>
     <span> | </span>
-    <a href="">
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#----integrations-">
       Integrations
     </a>
     <span> | </span>
-    <a href="">
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#----custom-components-">
       Custom Components
     </a>
   </h4>
@@ -593,6 +593,24 @@ This section deals with the various device categories. Use the menu links below 
 </tbody>
 </table>
 
+<br>
+
+<table>
+<thead>
+<tr>
+<th>Chromecast Ultra 4K</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://user-images.githubusercontent.com/66092908/140526688-f1314b43-6225-4516-908c-75ebe0c2a291.png" width="222.25" /></td>
+</tr>
+<tr>
+<td><a href="https://amzn.to/2ZZtIOJ">Chromecast Ultra 4K</a></td>
+</tr>
+</tbody>
+</table>
+
 <h3 align="left">
   <br>
   PC <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
@@ -683,12 +701,81 @@ This section deals with the various device categories. Use the menu links below 
 </tbody>
 </table>
 
+<h3 align="left">
+  <br>
+  3D Printer <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+</h3>
+
+<table>
+<thead>
+<tr>
+<th>Caribou MK3s Rel 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://user-images.githubusercontent.com/66092908/140510505-6dcd27a3-7e2a-4e10-8d97-9a2cacca81ff.png" width="222.25" /></td>
+</tr>
+<tr>
+  <td><a href="https://caribou3d.com/de/caribou-3d-drucker/839-17857-caribou-mk3s-rel-3.html#/29-hotend-e3d/32-heizpatrone-e3d_40w/34-thermistor-e3d/66-wellendurchmesser-8mm/68-betttrager-mk52/70-display-lcd/75-extruder-mk3s_mit_cool_motor/185-height-220">Caribou MK3s Rel 3</a></td>
+</tr>
+</tbody>
+</table>
+
 <h2 align="left">
   <br>
   Integrations <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 </h2>
 
+Find all the Integrations i use in my Home Assistant Configuration
+
+#### <a name="Integrations"></a>Used Integrations:
+* [AVM FRITZ!SmartHome](https://www.home-assistant.io/integrations/fritzbox/) - AVM FRITZ!SmartHome Integration
+* [Broadlink](https://www.home-assistant.io/integrations/broadlink/) - Integration for Broadlink RM4 Pro and Mini
+* [deCONZ](https://www.home-assistant.io/integrations/deconz/) - deCONZ and Phoscon for control over the Zigbee Devices (Philips Hue, IKEA Tradfri Remote, IKEA Floalt)
+* [Frigate](https://github.com/blakeblackshear/frigate-hass-integration#frigate-home-assistant-integration) - Frigate Integration for recordings, snapshots and events. Works with Object Detection with the Google Coral USB Accelerator
+* [Google Cast](https://www.home-assistant.io/integrations/cast/) - Integration for Google Chromecast Devices
+* [HACS](https://hacs.xyz/) - Home Assistant Community Store - used for Custom Component Integration (see next Section)
+* [Supervisor](https://www.home-assistant.io/integrations/hassio/) - Supervisor integration to monitor and control Supervisor add-ons and the operating system from Home Assistant.
+* [Mobile App](https://www.home-assistant.io/integrations/mobile_app/) - The Mobile App integration allows Home Assistant mobile apps to easily integrate with Home Assistant. 
+* [Mosquitto MQTT broker](https://www.home-assistant.io/integrations/mqtt/) - MQTT Broker Integration for Home Assistant
+* [OpenWeatherMap](https://www.home-assistant.io/integrations/openweathermap/) - Weather Integration of Choice
+* [PLEX](https://www.home-assistant.io/integrations/plex/) - Integration of the PLEX-Media server running on my PiNAS
+* [Samsung Smart TV](https://www.home-assistant.io/integrations/samsungtv/) - Integration of Samsung Smart TVs
+* [SONOS](https://www.home-assistant.io/integrations/sonos/) - Integrates SONOS-devices in my Smart Home
+* [Sony Playstation](https://www.home-assistant.io/integrations/ps4/) - Integrates the Sony Playstation in my Smart Home
+* [Spotify](https://www.home-assistant.io/integrations/spotify/) - Spotify Integration for HA
+* [TP-Link Kasa Smart](https://www.home-assistant.io/integrations/tplink/) - Integration of the HS100 and HS110 Smart Plugs
+* [WebRTC Camera](https://github.com/AlexxIT/WebRTC) - Integrates WebRTC to my Camera-Tab
+* [Withings](https://www.home-assistant.io/integrations/withings/) - Integrates the Withings Body+ Scale sensors
+
 <h2 align="left">
   <br>
   Custom Components <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 </h2>
+
+#### <a name="Custom Integrations"></a>HACS Integrations:
+* [BlueIris](https://github.com/elad-bar/ha-blueiris) - Integration with Blue Iris Video Security Software
+* [browser-mod](https://github.com/thomasloven/hass-browser_mod) - A Home Assistant integration to turn your browser into a controllable entity
+* [Circadian Lighting](https://github.com/claytonjn/hass-circadian_lighting) - adds Circadian Lighting to all my lights
+* [favicon](https://github.com/thomasloven/hass-favicon) - customises the favicon of HA
+* [fontawesome](https://github.com/thomasloven/hass-fontawesome) - allows you to use free icons from fontawesome in HA
+* [Frigate](https://github.com/blakeblackshear/frigate-hass-integration) - Integration to run Frigate 
+* [HACS](https://hacs.xyz/) - Home Assistant Community Store - used for Custom Component Integration
+* [Samsung TV Tizen](https://github.com/jaruba/ha-samsungtv-tizen) - a custom Samsung TV Integration
+* [WebRTC Camera](https://github.com/AlexxIT/WebRTC) - Integrates WebRTC to my Camera-Tab
+
+#### <a name="Custom Frontend"></a>HACS Frontend:
+* [Atomic Calendar Revive](https://github.com/totaldebug/atomic-calendar-revive) - my calendar integration of choice
+* [Bar Card](https://github.com/custom-cards/bar-card) - A Bar card used for HDD-space or anything else
+* [Battery State Card](https://github.com/maxwroc/battery-state-card) - main element of my battery-tab
+* [button-card](https://github.com/custom-cards/button-card) - if you get only one custom-component, this is it. Highly recommended, my UI would not be possible without it
+* [card-mod](https://github.com/thomasloven/lovelace-card-mod) - Allows you to apply CSS styles to various elements of the Home Assistant frontend.
+* [card-tools](https://github.com/thomasloven/lovelace-card-tools) - a collection of tools to simplify creating custom cards for Home Assistant 
+* [Light popup card](https://github.com/DBuit/light-popup-card) - Popup lovelace card with brightness slider and optional scene selection or a light switch for lights without brightness.
+* [Lovelace Swipe Navigation](https://github.com/maykar/lovelace-swipe-navigation) - adds the ability to swipe through the tabs in the mobile UI
+* [Mini Media Player](https://github.com/kalkih/mini-media-player) - outstanding Media-Player-card
+* [mini-graph-card](https://github.com/kalkih/mini-graph-card) - the core component of all my graphs
+* [Simple Thermostat](https://github.com/nervetattoo/simple-thermostat) - the climate control card of my choice, used in the climate-tab
+* [Simple Weather Card](https://github.com/kalkih/simple-weather-card) - a simple card for displaying weather information
+* [Weather Card](https://github.com/bramkragten/weather-card) - the weather card used in my weather-tab
