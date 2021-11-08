@@ -623,6 +623,29 @@ This section deals with the various device categories. Use the menu links below 
 
 <h3 align="left">
   <br>
+  Network <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+</h3>
+
+<br>
+
+<table>
+<thead>
+<tr>
+<th>Netgear JGS524PE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://user-images.githubusercontent.com/66092908/140732036-b3acc139-243c-4bed-835f-ef32e6ecce57.png" width="222.25" /></td>
+</tr>
+<tr>
+<td><a href="https://amzn.to/3bRCrou">Netgear JGS524PE</a></td>
+</tr>
+</tbody>
+</table>
+
+<h3 align="left">
+  <br>
   PC <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 </h3>
 
