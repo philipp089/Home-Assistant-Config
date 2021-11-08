@@ -778,6 +778,7 @@ Find all the Integrations i use in my Home Assistant Configuration
 * [Supervisor](https://www.home-assistant.io/integrations/hassio/) - Supervisor integration to monitor and control Supervisor add-ons and the operating system from Home Assistant.
 * [Mobile App](https://www.home-assistant.io/integrations/mobile_app/) - The Mobile App integration allows Home Assistant mobile apps to easily integrate with Home Assistant. 
 * [Mosquitto MQTT broker](https://www.home-assistant.io/integrations/mqtt/) - MQTT Broker Integration for Home Assistant
+* [OpenMediaVault 5](https://www.openmediavault.org/?p=2554) - Not an HA-integration but my PiNAS software of Choice
 * [OpenWeatherMap](https://www.home-assistant.io/integrations/openweathermap/) - Weather Integration of Choice
 * [PLEX](https://www.home-assistant.io/integrations/plex/) - Integration of the PLEX-Media server running on my PiNAS
 * [Samsung Smart TV](https://www.home-assistant.io/integrations/samsungtv/) - Integration of Samsung Smart TVs
