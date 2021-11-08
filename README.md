@@ -71,71 +71,71 @@ At the moment (as of Nov. 21) I control my Smart Home over 17 individual tabs. U
 
 <div align="center">
   <h4>
-    <a href="https://github.com/philipp089/Home-Assistant-Config#the-home---tab">
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#----the-home---tab-">
       Home-Tab
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config#the-light---tab">
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-light---tab-">
       Light-Tab
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config#the-media---tab">
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-media---tab-">
       Media-Tab
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config#the-plugs---tab">
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-plugs---tab-">
       Plugs-Tab
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config#the-plants---tab">
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-plants---tab-">
       Plants-Tab
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config#the-climate---tab">
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-climate---tab-">
       Climate-Tab
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config#the-raspberry---tab">
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-raspberry---tab-">
       Raspberry-Tab
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config#the-desktop---pc---tab">
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-desktop---pc---tab-">
       PC-Tab
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config#the-playstation---tab">
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-playstation---tab-">
       Playstation-Tab
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config#the-weather---tab">
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-weather---tab-">
       Weather-Tab
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config#the-camera---tab">
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-camera---tab-">
       Camera-Tab
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config#the-smartphone---tab">
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-smartphone---tab-">
       Smartphone-Tab
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config#the-battery---tab">
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-battery---tab-">
       Battery-Tab
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config#the-alarm---tab">
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-alarm---tab-">
       Alarm-Tab
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config#the-health---tab">
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-health---tab-">
       Health-Tab
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config#the-calender---tab">
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-calender---tab-">
       Calendar-Tab
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config#the-automations---tab">
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-automations---tab-">
       Automations-Tab
     </a>
   </h4>
