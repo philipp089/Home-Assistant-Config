@@ -447,10 +447,10 @@ This section deals with the various device categories. Use the menu links below 
 </thead>
 <tbody>
 <tr>
-<td><img src="https://user-images.githubusercontent.com/66092908/140314613-00eacaf7-93c1-43fb-99ef-e51ac3c72b22.png" width="222.25" /></td>
-<td><img src="https://user-images.githubusercontent.com/66092908/140314660-03c7ea91-f0c1-47a5-a9d7-d9751d2dea9e.png" width="222.25" /></td>
-<td><img src="https://user-images.githubusercontent.com/66092908/140730653-e2c8fd3f-ca71-4b0b-92dd-13db5a6dc3de.png" width="222.25" /></td>
-<td><img src="https://user-images.githubusercontent.com/66092908/140731052-1d679265-494f-4d33-85a5-c6d25150a508.png" width="222.25" /></td>
+<td><img src="https://user-images.githubusercontent.com/66092908/140314613-00eacaf7-93c1-43fb-99ef-e51ac3c72b22.png"/></td>
+<td><img src="https://user-images.githubusercontent.com/66092908/140314660-03c7ea91-f0c1-47a5-a9d7-d9751d2dea9e.png"/></td>
+<td><img src="https://user-images.githubusercontent.com/66092908/140730653-e2c8fd3f-ca71-4b0b-92dd-13db5a6dc3de.png"/></td>
+<td><img src="https://user-images.githubusercontent.com/66092908/140731052-1d679265-494f-4d33-85a5-c6d25150a508.png"/></td>
 </tr>
 <tr>
 <td><a href="https://amzn.to/3EEtZFo">Homematic IP HmIP-eTRV-2</a></td>
