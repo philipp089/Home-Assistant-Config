@@ -365,39 +365,39 @@ This section deals with the various device categories. Use the menu links below 
       Cameras and Security
     </a>
     <span> | </span>
-    <a href="">
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#----climate-control-">
       Climate Control
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config#----mobile-user-interface">
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#----light-and-light-controls-">
       Light and Light Control
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config#desktop-user-interface">
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#----media-player-and-remotes-">
       Media Player
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config#desktop-user-interface">
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#----network-">
       Network
     </a>
     <span> | </span>      
-    <a href="">
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#----pc-">
       PC
     </a>
     <span> | </span>      
-    <a href="">
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#----playstation-">
       Playstation
     </a>    
     <span> | </span>
-    <a href="">
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#----smart-home-hub-">
       Smart Home Hub
     </a>    
     <span> | </span>
-    <a href="">
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#----smart-plugs-">
       Smart Plugs
     </a>
     <span> | </span>
-    <a href="">
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#----3d-printer-">
       3D Printer
     </a>       
   </h4>
