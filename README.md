@@ -376,6 +376,10 @@ This section deals with the various device categories. Use the menu links below 
     <a href="https://github.com/philipp089/Home-Assistant-Config#desktop-user-interface">
       Media Player
     </a>
+    <span> | </span>
+    <a href="https://github.com/philipp089/Home-Assistant-Config#desktop-user-interface">
+      Network
+    </a>
     <span> | </span>      
     <a href="">
       PC
