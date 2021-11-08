@@ -632,14 +632,20 @@ This section deals with the various device categories. Use the menu links below 
 <thead>
 <tr>
 <th>Netgear JGS524PE</th>
+<th>PiNAS Raspberry Pi 4b 8GB</th>
+<th>NAS Raid HDDs</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><img src="https://user-images.githubusercontent.com/66092908/140732036-b3acc139-243c-4bed-835f-ef32e6ecce57.png" width="222.25" /></td>
+<td><img src="https://user-images.githubusercontent.com/66092908/140733924-65836ca2-1ef8-43f8-bc40-ca9edd86f686.png" width="222.25" /></td>
+<td><img src="https://user-images.githubusercontent.com/66092908/140733985-b8b238da-411e-4850-99c3-3d2abb6635c7.png" width="222.25" /></td>
 </tr>
 <tr>
 <td><a href="https://amzn.to/3bRCrou">Netgear JGS524PE</a></td>
+<td><a href="https://amzn.to/3mTAMVJ">PiNAS Raspberry Pi 4b 8GB</a></td>
+<td><a href="https://amzn.to/3bNcFlk">NAS Raid HDDs</a></td>
 </tr>
 </tbody>
 </table>
