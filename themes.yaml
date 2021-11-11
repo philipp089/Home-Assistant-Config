@@ -1,4 +1,56 @@
 Google - Light:
+
+  ### Card Mod ###
+  card-mod-theme: Google - Light
+  card-mod-root: |
+    paper-tab[aria-label='Licht'] {
+      color: #F4B400;
+    }
+    paper-tab[aria-label='Media'] {
+      color: #0F9D58;
+    }
+    paper-tab[aria-label='Plugs'] {
+      color: #4285F4;
+    }
+    paper-tab[aria-label='pflanzen'] {
+      color: #9334e6;
+    }    
+    paper-tab[aria-label='Temps'] {
+      color: #DB4437;
+    }
+    paper-tab[aria-label='Raspberry'] {
+      color: #666666;
+    }
+    paper-tab[aria-label='Desktop'] {
+      color: #0f9d58;
+    }
+    paper-tab[aria-label='Playstation'] {
+      color: #4285F4;
+    }
+    paper-tab[aria-label='Wetter'] {
+      color: #F4B400;
+    }
+    paper-tab[aria-label='Kameras'] {
+      color: #4285F4;
+    }
+    paper-tab[aria-label='Smartphone'] {
+      color: #666666;
+    }
+    paper-tab[aria-label='Batterien'] {
+      color: #DB4437;
+    }
+    paper-tab[aria-label='Alarm'] {
+      color: #DB4437;
+    }
+    paper-tab[aria-label='Gesundheit'] {
+      color: #0F9D58;
+    }
+    paper-tab[aria-label='Kalender'] {
+      color: #F4B400;
+    }
+    paper-tab[aria-label='Automations'] {
+      color: #4285F4;
+    }
   ### Fonts ###
   primary-font-family: "'Open Sans','Rubik',Roboto,sans-serif"
   paper-font-common-base_-_font-family: "var(--primary-font-family)"
@@ -82,8 +134,62 @@ Google - Light:
   mmp-icon-color: "#f2f2f2"
   mmp-overlay-base-color: "#f2f2f2"
   mini-media-player-overlay-base-color: "#f2f2f2"
-  
+
+
+
 Google - Dark:
+
+  ### Card Mod ###
+  card-mod-theme: Google - Dark
+  card-mod-root: |
+    paper-tab[aria-label='Licht'] {
+      color: #F4B400;
+    }
+    paper-tab[aria-label='Media'] {
+      color: #0F9D58;
+    }
+    paper-tab[aria-label='Plugs'] {
+      color: #4285F4;
+    }
+    paper-tab[aria-label='pflanzen'] {
+      color: #9334e6;
+    }    
+    paper-tab[aria-label='Temps'] {
+      color: #DB4437;
+    }
+    paper-tab[aria-label='Raspberry'] {
+      color: #b3b3b3;
+    }
+    paper-tab[aria-label='Desktop'] {
+      color: #0f9d58;
+    }
+    paper-tab[aria-label='Playstation'] {
+      color: #4285F4;
+    }
+    paper-tab[aria-label='Wetter'] {
+      color: #F4B400;
+    }
+    paper-tab[aria-label='Kameras'] {
+      color: #4285F4;
+    }
+    paper-tab[aria-label='Smartphone'] {
+      color: #b3b3b3;
+    }
+    paper-tab[aria-label='Batterien'] {
+      color: #DB4437;
+    }
+    paper-tab[aria-label='Alarm'] {
+      color: #DB4437;
+    }
+    paper-tab[aria-label='Gesundheit'] {
+      color: #0F9D58;
+    }
+    paper-tab[aria-label='Kalender'] {
+      color: #F4B400;
+    }
+    paper-tab[aria-label='Automations'] {
+      color: #4285F4;
+    }
   ### Fonts ###
   primary-font-family: "'Open Sans','Rubik',Roboto,sans-serif"
   paper-font-common-base_-_font-family: "var(--primary-font-family)"
@@ -168,3 +274,4 @@ Google - Dark:
   mmp-icon-color: "#f2f2f2"
   mmp-overlay-base-color: "#f2f2f2"
   mini-media-player-overlay-base-color: "#f2f2f2"
+
