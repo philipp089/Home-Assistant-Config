@@ -69,6 +69,9 @@ rtsp2webrtc_v4_aarch64
 home-assistant.log
 .cloud
 .storage
+rtsp2webrtc_v5_aarch64
+home-assistant.log.fault
+go2rtc-1.8.5
 
 
 
