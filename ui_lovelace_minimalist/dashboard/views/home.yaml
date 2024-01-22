@@ -1,6 +1,5 @@
 title: "Home"
 icon: "mdi:home"
-theme: "minimalist-desktop"
 path: "Home"
 cards:
   - type: "custom:button-card"
