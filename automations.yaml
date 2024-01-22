@@ -1,28 +1,3 @@
-- id: '1629620807604'
-  alias: Bewegungsmelder Eingang aus
-  description: Bewegungsmelder Eingang aus
-  trigger:
-  - type: no_motion
-    platform: device
-    device_id: 548bd2b8acd64e39af0ea4bb11d3c0ad
-    entity_id: binary_sensor.presence_12
-    domain: binary_sensor
-    for:
-      hours: 0
-      minutes: 3
-      seconds: 0
-      milliseconds: 0
-  condition: []
-  action:
-  - service: switch.turn_off
-    target:
-      entity_id: switch.00085a49a4b411
-  - service: light.turn_off
-    target:
-      area_id: 04366801e60c4c599cc9d39e07493fe0
-    data:
-      transition: 2
-  mode: single
 - id: '1630162475082'
   alias: Media Player leise bei Anruf
   description: ''
@@ -36,9 +11,9 @@
     target:
       entity_id:
       - media_player.sonos_wohnzimmer_couch
-      - media_player.sonos_wohnzimmer_arc
-      - media_player.sonos_werkstatt
-      - media_player.sonos_schlafzimmer
+      - media_player.sonos_arc_wohnzimmer
+      - media_player.sonos_one_schlafzimmer
+      - media_player.sonos_play_1_werkstatt
     data:
       volume_level: 0.1
   mode: single
@@ -72,7 +47,7 @@
       button_right_long:
       - service: script.schlafzimmer_hell
       light:
-        entity_id: light.schlafzimmer
+        entity_id: light.licht_schlafzimmer
 - id: '1630219218437'
   alias: deCONZ - Philips Dimmschalter
   description: ''
@@ -82,20 +57,24 @@
       remote: 7f611988d45f6e230321ffd8d770dfbc
       on_press:
       - service: script.wohnzimmer_hell
+        data: {}
       on_hold:
       - service: script.wohnzimmer_medium
+        data: {}
       off_press:
       - service: script.wohnzimmer_aus
+        data: {}
       off_hold:
       - service: script.wohnzimmer_nacht
+        data: {}
       up_press:
       - service: script.wohnzimmer_konzentration
-      up_hold:
-      - service: script.wohnzimmer_konzentration_50
+        data: {}
+      up_hold: []
       down_press:
       - service: script.wohnzimmer_sexy_light
-      down_hold:
-      - service: script.wohnzimmer_colorloop
+        data: {}
+      down_hold: []
 - id: '1630221547334'
   alias: Bewegungsmelder Werkstatt an
   description: ''
@@ -121,39 +100,6 @@
   condition: []
   action:
   - service: script.werkstatt_aus
-  mode: single
-- id: '1630937644882'
-  alias: PROXIMITY - Haus leer
-  description: ''
-  trigger:
-  - platform: state
-    to: '1'
-    for:
-      hours: 0
-      minutes: 5
-      seconds: 0
-      milliseconds: 0
-    entity_id: proximity.home
-  condition: []
-  action:
-  - service: light.turn_off
-    target:
-      area_id:
-      - f6aab624c505454fa71527ad60cf71ed
-      - 04366801e60c4c599cc9d39e07493fe0
-      - 4b464753ae28423c9ad179a3027094eb
-      - c6acd19307984c2eb4d2ceb8376084fb
-      - 9b7ff4c63c5040569f459d83159fe925
-  - service: climate.set_temperature
-    data_template:
-      entity_id:
-      - climate.000a1a49a12c97
-      - climate.000a1a49a12cad
-      - climate.000a1a49a12d0a
-      - climate.000a1a49a12e89
-      - climate.000a1a49a13110
-      temperature:
-        '[object Object]': 12
   mode: single
 - id: '1631043708265'
   alias: LICHT - Wandschalter Wohnzimmer aus
@@ -191,44 +137,10 @@
   action:
   - service: script.turn_on
     target:
-      entity_id: script.wohnzimmer_tageslicht
+      entity_id:
+      - script.wohnzimmer_hell
+    data: {}
   mode: single
-- id: '1631270447390'
-  alias: MOTION DETECTION - SEND CAMERA SNAPSHOT - Eingang
-  description: ''
-  use_blueprint:
-    path: vorion/send-camera-snapshot-notification-on-motion.yaml
-    input:
-      notification_message: '{{ motion_sensor_name }} hat Bewegung erkannt!'
-      camera: camera.eingang_hd
-      notify_device: fac89688300f48feab9317e8f694c80f
-      notification_title: Bewegung erkannt!
-      motion_sensor: binary_sensor.presence_12
-      delay: 0
-- id: '1631271481801'
-  alias: MOTION DETECTION - SEND CAMERA SNAPSHOT - Wohnzimmer
-  description: ''
-  use_blueprint:
-    path: vorion/send-camera-snapshot-notification-on-motion.yaml
-    input:
-      notification_message: '{{ motion_sensor_name }} hat Bewegung erkannt!'
-      camera: camera.wohnzimmer_hd
-      notify_device: fac89688300f48feab9317e8f694c80f
-      notification_title: Bewegung erkannt!
-      delay: 0
-      motion_sensor: binary_sensor.presence_9
-- id: '1631271510067'
-  alias: MOTION DETECTION - SEND CAMERA SNAPSHOT - Schlafzimmer
-  description: ''
-  use_blueprint:
-    path: vorion/send-camera-snapshot-notification-on-motion.yaml
-    input:
-      notification_message: '{{ motion_sensor_name }} hat Bewegung erkannt!'
-      camera: camera.schlafzimmer_hd
-      notify_device: fac89688300f48feab9317e8f694c80f
-      notification_title: Bewegung erkannt!
-      delay: 0
-      motion_sensor: binary_sensor.presence_24
 - id: '1631366464842'
   alias: LICHT - Wandschalter Wohnzimmer Nacht - Werktags
   description: ''
@@ -281,7 +193,9 @@
   action:
   - service: script.turn_on
     target:
-      entity_id: script.wohnzimmer_tageslicht
+      entity_id:
+      - script.wohnzimmer_hell
+    data: {}
   mode: single
 - id: '1631366755112'
   alias: LICHT - Wandschalter Wohnzimmer Nacht - Wochenende/Urlaub
@@ -310,124 +224,25 @@
     target:
       entity_id: script.wohnzimmer_nacht
   mode: single
-- id: '1631377802779'
-  alias: LICHT - Wandschalter Schlafzimmer aus
+- id: '1631378221690'
+  alias: LICHT - Wandschalter Schlafzimmer an
   description: ''
   trigger:
   - platform: state
-    entity_id: switch.00085a49a49f84
-    to: 'off'
+    entity_id:
+    - switch.00085a49a49f84
+    to: 'on'
   condition: []
   action:
-  - service: script.schlafzimmer_aus
-  mode: single
-- id: '1631377878173'
-  alias: LICHT - Wandschalter Schlafzimmer Nacht - Werktags
-  description: ''
-  trigger:
-  - platform: state
-    entity_id: switch.00085a49a49f84
-    to: 'on'
-  condition:
-  - condition: time
-    after: input_datetime.nachtmodus_werktags
-    weekday:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-    - sat
-    - sun
-    before: input_datetime.tagmodus_werktags
-  - condition: state
-    entity_id: binary_sensor.workday_sensor
-    state: 'on'
-  action:
-  - service: script.turn_on
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 0
+      milliseconds: 200
+  - service: scene.turn_on
+    data: {}
     target:
-      entity_id: script.schlafzimmer_nacht
-  mode: single
-- id: '1631377966864'
-  alias: LICHT - Wandschalter Schlafzimmer Nacht - Wochenende/Urlaub
-  description: ''
-  trigger:
-  - platform: state
-    entity_id: switch.00085a49a49f84
-    to: 'on'
-  condition:
-  - condition: time
-    after: input_datetime.nachtmodus_wochenende
-    weekday:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-    - sat
-    - sun
-    before: input_datetime.tagmodus_wochenende
-  - condition: state
-    entity_id: binary_sensor.workday_sensor
-    state: 'off'
-  action:
-  - service: script.turn_on
-    target:
-      entity_id: script.schlafzimmer_nacht
-  mode: single
-- id: '1631378119012'
-  alias: LICHT - Wandschalter Schlafzimmer Tag - Werktags
-  description: ''
-  trigger:
-  - platform: state
-    entity_id: switch.00085a49a49f84
-    to: 'on'
-  condition:
-  - condition: time
-    after: input_datetime.tagmodus_werktags
-    weekday:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-    - sat
-    - sun
-    before: input_datetime.nachtmodus_werktags
-  - condition: state
-    entity_id: binary_sensor.workday_sensor
-    state: 'on'
-  action:
-  - service: script.turn_on
-    target:
-      entity_id: script.schlafzimmer_tageslicht_an
-  mode: single
-- id: '1631378221690'
-  alias: LICHT - Wandschalter Schlafzimmer Tag - Wochenende/Urlaub
-  description: ''
-  trigger:
-  - platform: state
-    entity_id: switch.00085a49a49f84
-    to: 'on'
-  condition:
-  - condition: time
-    after: input_datetime.tagmodus_wochenende
-    weekday:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-    - sat
-    - sun
-    before: input_datetime.nachtmodus_wochenende
-  - condition: state
-    entity_id: binary_sensor.workday_sensor
-    state: 'off'
-  action:
-  - service: script.turn_on
-    target:
-      entity_id: script.schlafzimmer_tageslicht_an
+      entity_id: scene.licht_schlafzimmer_hell
   mode: single
 - id: '1631378662274'
   alias: LICHT - Wandschalter Werkstatt aus
@@ -464,8 +279,9 @@
     state: 'on'
   action:
   - service: script.turn_on
+    data: {}
     target:
-      entity_id: script.werkstatt_nacht
+      entity_id: script.werkstatt_hell
   mode: single
 - id: '1631379090949'
   alias: LICHT - Wandschalter Werkstatt Nacht - Wochenende/Urlaub
@@ -491,6 +307,7 @@
     state: 'off'
   action:
   - service: script.turn_on
+    data: {}
     target:
       entity_id: script.werkstatt_nacht
   mode: single
@@ -518,8 +335,9 @@
     state: 'on'
   action:
   - service: script.turn_on
+    data: {}
     target:
-      entity_id: script.werkstatt_tageslicht_an
+      entity_id: script.werkstatt_hell
   mode: single
 - id: '1631379212499'
   alias: LICHT - Wandschalter Werkstatt Tag - Wochenende/Urlaub
@@ -545,8 +363,9 @@
     state: 'off'
   action:
   - service: script.turn_on
+    data: {}
     target:
-      entity_id: script.werkstatt_tageslicht_an
+      entity_id: script.werkstatt_hell
   mode: single
 - id: '1631379866625'
   alias: LICHT - Wandschalter Badezimmer aus
@@ -639,8 +458,9 @@
     state: 'on'
   action:
   - service: script.turn_on
+    data: {}
     target:
-      entity_id: script.badezimmer_tageslicht_an
+      entity_id: script.badezimmer_hell
   mode: single
 - id: '1631380268367'
   alias: LICHT - Wandschalter Badezimmer Tag - Wochenende/Urlaub
@@ -666,113 +486,47 @@
     state: 'off'
   action:
   - service: script.turn_on
+    data: {}
     target:
-      entity_id: script.badezimmer_tageslicht_an
-  mode: single
-- id: '1631391610174'
-  alias: MOTION SENSOR - Wohnzimmer Kamin - LICHT - Flur an - Werktags tagsüber
-  description: ''
-  trigger:
-  - platform: state
-    entity_id: binary_sensor.presence_9
-    to: 'on'
-  condition:
-  - condition: time
-    after: input_datetime.tagmodus_werktags
-    before: input_datetime.nachtmodus_werktags
-  - condition: state
-    entity_id: binary_sensor.workday_sensor
-    state: 'on'
-  action:
-  - service: script.turn_on
-    target:
-      entity_id: script.flur_tageslicht
-  mode: single
-- id: '1631391677966'
-  alias: MOTION SENSOR - Wohnzimmer Kamin - LICHT - Flur an - Werktags Nacht
-  description: ''
-  trigger:
-  - platform: state
-    entity_id: binary_sensor.presence_9
-    to: 'on'
-  condition:
-  - condition: time
-    after: input_datetime.nachtmodus_werktags
-    before: input_datetime.tagmodus_werktags
-  - condition: state
-    entity_id: binary_sensor.workday_sensor
-    state: 'on'
-  action:
-  - service: script.turn_on
-    target:
-      entity_id: script.flur_nacht
-  mode: single
-- id: '1631391762180'
-  alias: MOTION SENSOR - Wohnzimmer Kamin - LICHT - Flur an - Wochenende Nacht
-  description: ''
-  trigger:
-  - platform: state
-    entity_id: binary_sensor.presence_9
-    to: 'on'
-  condition:
-  - condition: time
-    after: input_datetime.nachtmodus_wochenende
-    before: input_datetime.tagmodus_wochenende
-  - condition: state
-    entity_id: binary_sensor.workday_sensor
-    state: 'off'
-  action:
-  - service: script.turn_on
-    target:
-      entity_id: script.flur_nacht
+      entity_id: script.badezimmer_hell
   mode: single
 - id: '1631391812468'
-  alias: MOTION SENSOR - Wohnzimmer Kamin - LICHT - Flur an - Wochenende tagsüber
+  alias: MOTION SENSOR - Flur - LICHT - Flur an - Wochenende tagsüber
   description: ''
   trigger:
   - platform: state
-    entity_id: binary_sensor.presence_9
+    entity_id:
+    - binary_sensor.presence_9
+    - binary_sensor.presence_12
     to: 'on'
   condition:
   - condition: time
-    after: input_datetime.tagmodus_werktags
-    before: input_datetime.nachtmodus_werktags
+    after: input_datetime.tagmodus_wochenende
+    before: input_datetime.nachtmodus_wochenende
   - condition: state
     entity_id: binary_sensor.workday_sensor
     state: 'off'
   action:
   - service: script.turn_on
+    data: {}
     target:
-      entity_id: script.flur_tageslicht
+      entity_id: script.flur_hell
   mode: single
 - id: '1631392127589'
-  alias: MOTION SENSOR - Wohnzimmer Kamin - LICHT - Flur Timer
+  alias: MOTION SENSOR - Flur - LICHT - Flur Timer
   description: ''
   trigger:
   - platform: state
-    entity_id: binary_sensor.presence_9
+    entity_id:
+    - binary_sensor.presence_9
+    - binary_sensor.presence_12
     to: 'on'
   condition: []
   action:
   - service: timer.start
-    data:
-      duration: '0'
+    data: {}
     target:
       entity_id: timer.bewegungsmelder_flur
-  mode: single
-- id: '1631393429707'
-  alias: MOTION SENSOR - Wohnzimmer Kamin - LICHT - Flur aus
-  description: ''
-  trigger:
-  - platform: event
-    event_type: timer.finished
-    event_data:
-      entity_id: timer.bewegungsmelder_flur
-  condition: []
-  action:
-  - service: script.turn_on
-    target:
-      entity_id: script.flur_aus
   mode: single
 - id: '1631398918230'
   alias: MOTION SENSOR - Flur - LICHT - Flur aus
@@ -787,13 +541,16 @@
   - service: script.turn_on
     target:
       entity_id: script.flur_aus
+    data: {}
   mode: single
 - id: '1631398974078'
   alias: MOTION SENSOR - Flur - LICHT - Flur an - Werktags Nacht
   description: ''
   trigger:
   - platform: state
-    entity_id: binary_sensor.presence_12
+    entity_id:
+    - binary_sensor.presence_12
+    - binary_sensor.presence_9
     to: 'on'
   condition:
   - condition: time
@@ -806,13 +563,16 @@
   - service: script.turn_on
     target:
       entity_id: script.flur_nacht
+    data: {}
   mode: single
 - id: '1631399071620'
   alias: MOTION SENSOR - Flur - LICHT - Flur an - Werktags tagsüber
   description: ''
   trigger:
   - platform: state
-    entity_id: binary_sensor.presence_12
+    entity_id:
+    - binary_sensor.presence_12
+    - binary_sensor.presence_9
     to: 'on'
   condition:
   - condition: time
@@ -823,15 +583,18 @@
     state: 'on'
   action:
   - service: script.turn_on
+    data: {}
     target:
-      entity_id: script.flur_tageslicht
+      entity_id: script.flur_hell
   mode: single
 - id: '1631399107802'
   alias: MOTION SENSOR - Flur - LICHT - Flur an - Wochenende Nacht
   description: ''
   trigger:
   - platform: state
-    entity_id: binary_sensor.presence_12
+    entity_id:
+    - binary_sensor.presence_12
+    - binary_sensor.presence_9
     to: 'on'
   condition:
   - condition: time
@@ -844,192 +607,50 @@
   - service: script.turn_on
     target:
       entity_id: script.flur_nacht
+    data: {}
   mode: single
-- id: '1631399155092'
-  alias: MOTION SENSOR - Flur - LICHT - Flur an - Wochenende tagsüber
+- id: '1672004851347'
+  alias: MOTION SENSOR - Küche - LICHT - Licht an
+  description: ''
+  trigger:
+  - type: motion
+    platform: device
+    device_id: 8dbcd74b4bbd4af68d2e60c0237c5312
+    entity_id: binary_sensor.presence_21
+    domain: binary_sensor
+  condition: []
+  action:
+  - service: switch.turn_on
+    data: {}
+    target:
+      entity_id: switch.hmip_bsm_00085a49a49be7
+  mode: single
+- id: '1672780505823'
+  alias: LICHT - Wandschalter Schlafzimmer aus
   description: ''
   trigger:
   - platform: state
-    entity_id: binary_sensor.presence_12
-    to: 'on'
-  condition:
-  - condition: time
-    after: input_datetime.tagmodus_werktags
-    before: input_datetime.nachtmodus_werktags
-  - condition: state
-    entity_id: binary_sensor.workday_sensor
-    state: 'off'
-  action:
-  - service: script.turn_on
-    target:
-      entity_id: script.flur_tageslicht
-  mode: single
-- id: '1631554392510'
-  alias: PFLANZSCHRANK - LICHT - Tagesbeginn - Wachstum
-  description: ''
-  trigger:
-  - platform: time
-    at: input_datetime.pflanzschrank_tagesbeginn_wachstum
-  condition:
-  - condition: state
-    entity_id: input_select.pflanzschrank_phase
-    state: Wachstum
-  action:
-  - service: switch.turn_on
-    target:
-      entity_id: switch.steckdose_pflanzschrank_licht
-  mode: single
-- id: '1631554449079'
-  alias: PFLANZSCHRANK - LICHT - Nacht - Wachstum
-  description: ''
-  trigger:
-  - platform: time
-    at: input_datetime.pflanzschrank_nachtbeginn_wachstum
-  condition:
-  - condition: state
-    entity_id: input_select.pflanzschrank_phase
-    state: Wachstum
-  action:
-  - service: switch.turn_off
-    target:
-      entity_id: switch.steckdose_pflanzschrank_licht
-  mode: single
-- id: '1631554492879'
-  alias: PFLANZSCHRANK - LICHT - Nacht - Blüte
-  description: ''
-  trigger:
-  - platform: time
-    at: input_datetime.pflanzschrank_nachtbeginn_blute
-  condition:
-  - condition: state
-    entity_id: input_select.pflanzschrank_phase
-    state: Blüte
-  action:
-  - service: switch.turn_off
-    target:
-      entity_id: switch.steckdose_pflanzschrank_licht
-  mode: single
-- id: '1631554548781'
-  alias: PFLANZSCHRANK - LICHT - Tagesbeginn - Blüte
-  description: ''
-  trigger:
-  - platform: time
-    at: input_datetime.pflanzschrank_tagesbeginn_blute
-  condition:
-  - condition: state
-    entity_id: input_select.pflanzschrank_phase
-    state: Blüte
-  action:
-  - service: switch.turn_on
-    target:
-      entity_id: switch.steckdose_pflanzschrank_licht
-  mode: single
-- id: '1631561076383'
-  alias: LICHT - PERSON DETECTION - Wohnzimmer an
-  description: ''
-  trigger:
-  - platform: state
-    entity_id: sensor.wohnzimmer_fenster_person
-    to: '1'
+    entity_id:
+    - switch.00085a49a49f84
+    to: 'off'
   condition: []
   action:
-  - service: switch.turn_on
+  - service: scene.turn_on
+    data: {}
     target:
-      entity_id: switch.00085a49a49c0f
+      entity_id: scene.licht_schlafzimmer_aus
   mode: single
-- id: '1631619123405'
-  alias: LUFTBEFEUCHTER Wohnzimmer an
+- id: '1693847374649'
+  alias: Frigate Notifications (0.12.0.1)
   description: ''
-  trigger:
-  - platform: time_pattern
-    hours: /2
-  condition:
-  - condition: time
-    after: input_datetime.luftbefeuchter_wohnzimmer_startzeit
-    before: input_datetime.luftbefeuchter_wohnzimmer_endzeit
-  action:
-  - service: switch.turn_on
-    target:
-      entity_id:
-      - switch.steckdose_wohnzimmer_luftbefeuchter
-      - switch.steckdose_wohnzimmer_luftbefeuchter_fenster
-  - service: timer.start
-    data:
-      duration: '0'
-    target:
-      entity_id: timer.luftbefeuchter_wohnzimmer
-  mode: single
-- id: '1631622192860'
-  alias: LUFTBEFEUCHTER Wohnzimmer aus
-  description: ''
-  trigger:
-  - platform: event
-    event_type: timer.finished
-    event_data:
-      entity_id: timer.luftbefeuchter_wohnzimmer
-  condition: []
-  action:
-  - service: switch.turn_off
-    target:
-      entity_id:
-      - switch.steckdose_wohnzimmer_luftbefeuchter
-      - switch.steckdose_wohnzimmer_luftbefeuchter_fenster
-  mode: single
-- id: '1632889086015'
-  alias: PFLANZSCHRANK - ABLUFT - Start
-  description: ''
-  trigger:
-  - platform: time
-    at: input_datetime.pflanzschrank_abluft_start
-  condition: []
-  action:
-  - service: switch.turn_on
-    target:
-      entity_id: switch.steckdose_pflanzschrank_abluft
-  mode: single
-- id: '1632889117332'
-  alias: PFLANZSCHRANK - ABLUFT - Aus
-  description: ''
-  trigger:
-  - platform: time
-    at: input_datetime.pflanzschrank_abluft_aus
-  condition: []
-  action:
-  - service: switch.turn_off
-    target:
-      entity_id: switch.steckdose_pflanzschrank_abluft
-  mode: single
-- id: '1633816061836'
-  alias: PFLANZSCHRANK - LUFTBEFEUCHTER an
-  description: ''
-  trigger:
-  - platform: time_pattern
-    hours: /2
-  condition:
-  - condition: time
-    after: input_datetime.pflanzschrank_luftbefeuchter_startzeit
-    before: input_datetime.pflanzschrank_luftbefeuchter_endzeit
-  action:
-  - service: switch.turn_on
-    target:
-      entity_id: switch.steckdose_luftbefeuchter_pflanzschrank
-  - service: timer.start
-    data:
-      duration: '0'
-    target:
-      entity_id: timer.luftbefeuchter_pflanzschrank
-  mode: single
-- id: '1633816218133'
-  alias: PFLANZSCHRANK - LUFTBEFEUCHTER aus
-  description: ''
-  trigger:
-  - platform: event
-    event_type: timer.finished
-    event_data:
-      entity_id: timer.luftbefeuchter_pflanzschrank
-  condition: []
-  action:
-  - service: switch.turn_off
-    target:
-      entity_id: switch.steckdose_luftbefeuchter_pflanzschrank
-  mode: single
+  use_blueprint:
+    path: SgtBatten/Stable.yaml
+    input:
+      camera: camera.eingang
+      notify_device: fac89688300f48feab9317e8f694c80f
+      labels: []
+      presence_filter: person.philipp
+      state_filter: false
+      attachment: snapshot
+      message: '{{ label }} detected - {{ camera_name }}'
+      silence_timer: 240

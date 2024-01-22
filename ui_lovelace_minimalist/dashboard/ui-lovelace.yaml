@@ -1,0 +1,22 @@
+---
+button_card_templates: !include_dir_merge_named "../../custom_components/ui_lovelace_minimalist/__ui_minimalist__/ulm_templates/"
+
+title: "Mobile"
+theme: "minimalist-mobile"
+background: "var(--background-image)"
+
+views:
+  - !include views/home.yaml
+  - !include views/wohnzimmer.yaml
+  - !include views/schlafzimmer.yaml
+  - !include views/badezimmer.yaml
+  - !include views/kueche.yaml
+  - !include views/werkstatt.yaml
+  - !include views/flur.yaml
+  - !include views/dachterrasse.yaml  
+  - !include views/remote.yaml
+  - !include views/kalender.yaml
+  - !include views/raspberry.yaml
+  - !include views/gesundheit.yaml
+  - !include views/automations.yaml
+  - !include views/grocy.yaml

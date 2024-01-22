@@ -1,5 +1,6 @@
 alias: PERSON DETECTION - FRIGATE VIDEO TO TELEGRAM
 description: Person/cat detection in cameras from Frigate
+id: person_detection_in_cameras_from_frigate
 trigger:
   - platform: mqtt
     topic: frigate/events

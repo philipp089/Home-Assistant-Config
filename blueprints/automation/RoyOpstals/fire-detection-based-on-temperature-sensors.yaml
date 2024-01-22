@@ -1,0 +1,54 @@
+blueprint:
+  name: Fire detection based on temperature sensors
+  description: Detect if there is a fire based on the temperature
+  domain: automation
+  input:
+    threshold:
+      name: Fire temperature level threshold
+      description: The temperature thats not normal only posible when there is a fire.
+      default: 45
+      selector:
+        number:
+          min: 45.0
+          max: 100.0
+          unit_of_measurement: °C
+          mode: slider
+          step: 1.0
+    include:
+      name: Included Sensors
+      description: Temperature sensors to include from detection. Only entities are
+        supported, devices must be expanded!
+      default:
+        entity_id: []
+      selector:
+        target:
+          entity:
+            device_class: temperature
+    actions:
+      name: Actions
+      description: Notifications or similar to be run. {{sensors}} is replaced with
+        the names of sensors with there current exceeded temperature.
+      selector:
+        action: {}
+  source_url: https://gist.github.com/RoyOpstals/1b6e06feb2e828b46b716ad86a1495e1
+variables:
+  threshold: !input threshold
+  include: !input include
+  sensors: "{% set result = namespace(sensors=[]) %} {% for state in states.sensor
+    | selectattr('attributes.device_class', '==', 'temperature') %}\n  {% if 0 <=
+    state.state | int(-1) > threshold | int and state.entity_id in include.entity_id
+    %}\n    {% set result.sensors = result.sensors + [state.name ~ ' (' ~ state.state
+    ~ ' °C)'] %}\n  {% endif %}\n{% endfor %} {% for state in states.binary_sensor
+    | selectattr('attributes.device_class', '==', 'temperature') | selectattr('state',
+    '==', 'on') %}\n  {% if state.entity_id in include.entity_id %}\n    {% set result.sensors
+    = result.sensors + [state.name] %}\n  {% endif %}\n{% endfor %} {{result.sensors|join(',
+    ')}}"
+trigger:
+- platform: time_pattern
+  seconds: /30
+condition:
+- '{{ sensors != '''' }}'
+action:
+- choose: []
+  default: !input actions
+mode: single

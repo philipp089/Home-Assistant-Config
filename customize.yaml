@@ -1,14 +1,11 @@
 person.philipp: {}
-device_tracker.sm_g935f: {}
 sensor.000d5a499af3e3_current_illumination:
   icon: mdi:weather-partly-cloudy
   icon_color: '''#f4b400'''
 sensor.000eda499c8410_actual_temperature:
   color: '#DB4437'
   icon: mdi:thermometer
-sensor.philipp_pc_intel_core_i7_4770k_powers_cpu_package:
-  icon: mdi:lightning-bolt
-switch.steckdose_wohnzimmer_stehlampe: {}
+switch.stehlampe_wohnzimmer: {}
 zone.arbeit:
   icon: mdi:briefcase-outline
 media_player.bad:
@@ -21,15 +18,15 @@ sensor.daylight:
   icon: mdi:white-balance-sunny
 light.flur:
   icon: mdi:lightbulb-outline
-light.bad:
+light.badezimmer:
   icon: mdi:lightbulb-outline
-light.licht_badezimmer_deckenlampe:
+light.extended_color_light_21:
   icon: mdi:lightbulb-outline
 light.color_temperature_light_16:
   icon: mdi:lightbulb-outline
 light.color_temperature_light_17:
   icon: mdi:lightbulb-outline
-light.color_temperature_light_13:
+light.color_temperature_light_2:
   icon: mdi:lightbulb-outline
 light.color_temperature_light_14:
   icon: mdi:lightbulb-outline
@@ -76,50 +73,26 @@ light.lichtgruppe_wohnzimmer_gesamt:
   icon: mdi:lightbulb-outline
 media_player.kuche:
   icon: mdi:google
-media_player.samsung_q7_series_55_zoll:
+media_player.samsung_q7_series_55:
   icon: mdi:television
-light.schlafzimmer:
+light.licht_schlafzimmer:
   icon: mdi:lightbulb-outline
-media_player.sonos_werkstatt:
+media_player.sonos_play_1_werkstatt:
   icon: mdi:music-box-outline
-media_player.sonos_wohnzimmer:
+media_player.sonos_arc_wohnzimmer:
+  icon: mdi:music-box-outline
+media_player.sonos_wohnzimmer_couch:
   icon: mdi:music-box-outline
 light.werkstatt:
   icon: mdi:lightbulb-outline
 light.wohnzimmer:
   icon: mdi:lightbulb-outline
-sensor.ha_release:
-  icon: mdi:home-assistant
-sensor.hdd_temperature:
-  icon: mdi:thermometer
 zone.home:
   icon: mdi:home-outline
 weather.home:
   icon: mdi:weather-partly-snowy-rainy
 sensor.last_boot:
   icon: mdi:clock-outline
-sensor.000d5a499af358_current_illumination:
-  icon: mdi:home-lightbulb-outline
-sensor.000d5a499af358_average_illumination:
-  icon: mdi:home-lightbulb-outline
-sensor.000d5a499af358_highest_illumination:
-  icon: mdi:home-lightbulb-outline
-sensor.000d5a499af358_lowest_illumination:
-  icon: mdi:home-lightbulb-outline
-sensor.000d5a499af3e3_average_illumination:
-  icon: mdi:weather-partly-cloudy
-sensor.000d5a499af3e3_highest_illumination:
-  icon: mdi:weather-partly-cloudy
-sensor.000d5a499af3e3_lowest_illumination:
-  icon: mdi:weather-partly-cloudy
-sensor.philipp_pc_generic_memory_data_available_memory:
-  icon: mdi:memory
-sensor.philipp_pc_generic_memory_data_used_memory:
-  icon: mdi:memory
-sensor.philipp_pc_generic_memory_load_memory:
-  icon: mdi:memory
-light.raspbee_ii:
-  icon: mdi:memory
 sensor.000eda499c8411_humidity:
   icon: mdi:water-outline
 sensor.000eda499c8410_humidity:
@@ -130,24 +103,12 @@ sensor.000a9a49a6f8af_humidity:
   icon: mdi:water-outline
 sensor.000a9a49a6fc5e_humidity:
   icon: mdi:water-outline
-media_player.sonos_schlafzimmer:
-  icon: mdi:music-box-outline
-media_player.sonos_wohnzimmer_02:
-  icon: mdi:music-box-outline
-media_player.sonos_wohnzimmer_arc:
-  icon: mdi:music-box-outline
-media_player.sonos_wohnzimmer_couch:
+media_player.sonos_one_schlafzimmer:
   icon: mdi:music-box-outline
 device_tracker.sm_n975f:
   icon: mdi:account
 media_player.playstation_4:
   icon: mdi:sony-playstation
-light.dimmable_light_22:
-  icon: mdi:lightbulb-outline
-light.badezimmer:
-  icon: mdi:lightbulb-outline
-light.extended_color_light_21:
-  icon: mdi:lightbulb-outline
 light.lichtgruppe_badezimmer_gesamt:
   icon: mdi:lightbulb-outline
 light.extended_color_light_23:

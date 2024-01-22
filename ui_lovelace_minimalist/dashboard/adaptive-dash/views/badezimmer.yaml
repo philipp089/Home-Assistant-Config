@@ -1,0 +1,294 @@
+---
+type: "custom:layout-card"
+layout_type: "custom:grid-layout"
+layout:
+  grid-template-rows: "min-content"
+  grid-template-columns: "1fr 1fr 1fr"
+  grid-template-areas: >
+    "title1 title1 title1"
+    "szenen1 szenen1 szenen1"
+    "title2 title2 title2"
+    "media1 media2 media3"
+    "title3 title3 title3"
+    "klima1 klima2 klima3"
+    "title4 title4 title4"
+    "card1 card2 card3"
+    "card4 card99 card98"
+    "title5 title5 title5"
+    "card5 card97 card96"
+    "title6 title6 title6"
+    "card6 card95 card94"
+    "title7 title7 title7"
+    "card7 card8 card9"
+
+  mediaquery:
+    # Mobile
+    "(max-width: 800px)":
+      grid-template-columns: "1fr 1fr"
+      grid-template-areas: |
+        "title1 title1"
+        "szenen1 szenen1"
+        "title2 title2"
+        "media1 media1"
+        "title3 title3"
+        "klima1 klima1"
+        "klima2 klima3"
+        "title4 title4"
+        "card1 card2"
+        "card3 card4"
+        "title5 title5"
+        "card5 card99"
+        "title6 title6"
+        "card6 card98"
+        "title7 title7"
+        "card7 card8"
+        "card9 card97"
+
+
+view_layout:
+  grid-area: "badezimmer"
+cards:
+  - view_layout:
+      grid-area: "title1"
+    type: "custom:button-card"
+    template: "card_title"
+    name: "Badezimmer"
+    label: "Szenen"
+
+  - view_layout:
+      grid-area: "szenen1"
+    type: "custom:button-card"
+    template: "card_scenes_welcome"
+    variables:
+      entity_1:
+        entity_id: "script.badezimmer_hell"
+        icon: "mdi:weather-sunny"
+        name: "HELL"
+        color: "yellow"
+      entity_2:
+        entity_id: "script.badezimmer_medium"
+        icon: "mdi:weather-sunset-down"
+        name: "MEDIUM"
+        color: "red"
+      entity_3:
+        entity_id: "script.badezimmer_nacht"
+        icon: "mdi:weather-night"
+        name: "NACHT"
+        color: "purple"
+      entity_4:
+        entity_id: "script.badezimmer_aus"
+        icon: "mdi:power"
+        name: "AUS"
+        color: "grey"
+      entity_5:
+        entity_id: "switch.circadian_lighting_badezimmer"
+        icon: "mdi:sun-clock-outline" 
+        name: "TAG" 
+        color: "yellow"
+      entity_6:
+        entity_id: "script.badezimmer_konzentration"
+        icon: "mdi:brain" 
+        name: "KONZ." 
+        color: "blue"
+      entity_7:
+        entity_id: "script.badezimmer_sexy_light"
+        icon: "mdi:chili-mild" 
+        name: "SEXY" 
+        color: "red"
+
+  - view_layout:
+      grid-area: "title2"
+    type: "custom:button-card"
+    template: "card_title"
+    label: "Medien"
+
+  - view_layout:
+      grid-area: "media1"
+    type: "custom:button-card"
+    template: card_media_player
+    entity: media_player.bad
+    variables:
+      ulm_card_media_player_name : Google Nest Mini
+      ulm_card_media_player_enable_art: true
+      ulm_card_media_player_enable_controls: false
+      ulm_card_media_player_enable_volume_buttons: false
+      ulm_card_media_player_color: green
+      ulm_card_media_player_power_button: true
+      ulm_card_media_player_collapsible: true
+      ulm_card_media_player_more_info: true
+      ulm_input_select_option: google_nest_mini_bad
+      ulm_input_select: input_select.minimalist_ui_switch
+
+  - view_layout:
+      grid-area: "title3"
+    type: "custom:button-card"
+    template: "card_title"
+    label: "Klima"
+
+  - view_layout:
+      grid-area: "klima1"
+    type: "custom:button-card"
+    template: card_thermostat
+    entity: climate.000a9a49a8a692
+    variables:
+      ulm_card_thermostat_name: "Thermostat"
+      ulm_card_thermostat_enable_collapse: true
+      ulm_card_thermostat_enable_controls: true
+      ulm_card_thermostat_enable_popup: true
+      ulm_card_thermostat_enable_hvac_modes: true
+      ulm_input_select_option: climate 3
+      ulm_input_select: input_select.minimalist_ui_switch
+
+  - view_layout:
+      grid-area: "klima2"
+    type: "custom:button-card"
+    template: card_graph
+    entity: sensor.000a9a49a8a692_actual_temperature
+    variables:
+      ulm_card_graph_color: "var(--google-red)"
+      ulm_card_graph_name: Temperatur
+      ulm_card_graph_entity: sensor.000a9a49a8a692_actual_temperature
+      ulm_card_graph_type: fill
+      ulm_card_graph_hours: 24
+      ulm_card_graph_group_by: interval
+      ulm_card_graph_line_width: 5
+
+  - view_layout:
+      grid-area: "klima3"
+    type: "custom:button-card"
+    template: card_graph
+    entity: sensor.000a9a49a8a692_humidity
+    variables:
+      ulm_card_graph_color: "var(--google-blue)"
+      ulm_card_graph_name: Luftfeuchte
+      ulm_card_graph_entity: sensor.000a9a49a8a692_humidity
+      ulm_card_graph_type: fill
+      ulm_card_graph_hours: 24
+      ulm_card_graph_group_by: interval
+      ulm_card_graph_line_width: 5
+
+  - view_layout:
+      grid-area: "title4"
+    type: "custom:button-card"
+    template: "card_title"
+    label: "Lichter"
+
+  - view_layout:
+      grid-area: "card1"
+    type: "custom:button-card"
+    template: card_generic_swap
+    entity: switch.hmip_bsm_00085a49a4a57e
+    variables:
+      ulm_card_generic_swap_name:  Wandschalter
+      ulm_card_generic_swap_color: green
+
+  - view_layout:
+      grid-area: "card2"
+    type: "custom:button-card"  
+    template: card_light
+    entity: light.extended_color_light_21
+    variables:
+      ulm_card_light_name: Deckenleuchte
+      ulm_card_light_enable_color: false
+      ulm_card_light_force_background_color: false
+      ulm_card_light_icon: mdi:ceiling-light-outline
+      ulm_input_select_option: badezimmer_deckenleuchte
+      ulm_input_select: input_select.minimalist_ui_switch
+
+  - view_layout:
+      grid-area: "card3"
+    type: 'custom:button-card'
+    template: card_light
+    entity: light.color_temperature_light_16
+    variables:
+      ulm_card_light_name: Spiegel links
+      ulm_card_light_enable_color: false
+      ulm_card_light_force_background_color: false
+      ulm_card_light_icon: mdi:lightbulb
+      ulm_input_select_option: spiegel_links
+      ulm_input_select: input_select.minimalist_ui_switch
+
+  - view_layout:
+      grid-area: "card4"
+    type: "custom:button-card"
+    template: card_light
+    entity: light.color_temperature_light_17
+    variables:
+      ulm_card_light_name: Spiegel rechts
+      ulm_card_light_enable_color: false
+      ulm_card_light_force_background_color: false
+      ulm_card_light_icon: mdi:lightbulb
+      ulm_input_select_option: spiegel_rechts
+      ulm_input_select: input_select.minimalist_ui_switch
+
+  - view_layout:
+      grid-area: "title5"
+    type: "custom:button-card"
+    template: "card_title"
+    label: "Steckdosen"
+
+  - view_layout:
+      grid-area: "card5"
+    type: "custom:button-card"
+    template: card_power_outlet
+    entity: switch.steckdose_waschmaschine_gesamt
+    variables:
+      ulm_card_power_outlet_name:  Waschmaschine
+      ulm_card_power_outlet_color: blue
+      ulm_card_power_outlet_consumption_sensor: sensor.steckdose_waschmaschine_bad_current_consumption
+
+  - view_layout:
+      grid-area: "title6"
+    type: "custom:button-card"
+    template: "card_title"
+    label: "Sensoren"
+
+  - view_layout:
+      grid-area: "card6"
+    type: "custom:button-card"
+    template: card_binary_sensor_alert
+    variables:
+      ulm_card_binary_sensor_alert: true
+      ulm_card_binary_sensor_alert_show_last_changed: true
+      ulm_card_binary_sensor_alert_name: Bewegung
+      ulm_card_binary_sensor_alert_color: red
+    entity: binary_sensor.presence_15
+
+  - view_layout:
+      grid-area: "title7"
+    type: "custom:button-card"
+    template: "card_title"
+    label: "Batterien"
+
+  - view_layout:
+      grid-area: "card7"
+    type: "custom:button-card"
+    template: card_battery
+    entity: sensor.bewegungsmelder_battery_level_3
+    variables:
+      ulm_card_battery_charger_type_entity_id: sensor.bewegungsmelder_battery_level_3
+      ulm_card_battery_battery_level_danger: 20
+      ulm_card_battery_battery_level_warning: 50
+      ulm_card_battery_name: Bewegung
+
+  - view_layout:
+      grid-area: "card8"
+    type: "custom:button-card"
+    template: card_battery
+    entity: sensor.heizthermostat_badezimmer_batterie_prozent
+    variables:
+      ulm_card_battery_charger_type_entity_id: sensor.heizthermostat_badezimmer_batterie_prozent
+      ulm_card_battery_battery_level_danger: 20
+      ulm_card_battery_battery_level_warning: 50
+      ulm_card_battery_name: Heizung
+
+  - view_layout:
+      grid-area: "card9"
+    type: "custom:button-card"
+    template: card_battery
+    entity: sensor.thermostat_badezimmer_batterie_prozent
+    variables:
+      ulm_card_battery_charger_type_entity_id: sensor.thermostat_badezimmer_batterie_prozent
+      ulm_card_battery_battery_level_danger: 20
+      ulm_card_battery_battery_level_warning: 50
+      ulm_card_battery_name: Thermostat

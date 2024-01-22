@@ -1,0 +1,176 @@
+---
+button_card_templates: !include_dir_merge_named "../../../custom_components/ui_lovelace_minimalist/__ui_minimalist__/ulm_templates/"
+
+title: "UI Lovelace Minimalist"
+theme: "minimalist-desktop"
+background: "var(--background-image)"
+views:
+  - type: "custom:grid-layout"
+    title: "Home"
+    icon: "mdi:home"
+    path: "Home"
+    layout:
+      grid-template-columns: "1fr 1fr"
+      grid-template-rows: "min-content"
+      grid-template-areas: |
+        "main popup"
+      mediaquery:
+        "(max-width: 1100px), (orientation: portrait)":
+          grid-template-columns: "100%"
+          grid-template-areas: "main"
+    cards:
+      - !include "views/main.yaml"
+      - !include "popup/popup.yaml"
+
+  - type: "custom:grid-layout"
+    title: "Wohnzimmer"
+    icon: "mdi:sofa-single-outline"
+    path: "Wohnzimmer"
+    layout:
+      grid-template-columns: "1fr 1fr"
+      grid-template-rows: "min-content"
+      grid-template-areas: |
+        "wohnzimmer popup"
+      mediaquery:
+        "(max-width: 1100px), (orientation: portrait)":
+          grid-template-columns: "100%"
+          grid-template-areas: "wohnzimmer"
+    cards:
+      - !include "views/wohnzimmer.yaml"
+      - !include "popup/popup.yaml"
+
+  - type: "custom:grid-layout"
+    title: "Schlafzimmer"
+    icon: "mdi:bed-king-outline"
+    path: "Schlafzimmer"
+    layout:
+      grid-template-columns: "1fr 1fr"
+      grid-template-rows: "min-content"
+      grid-template-areas: |
+        "schlafzimmer popup"
+      mediaquery:
+        "(max-width: 1100px), (orientation: portrait)":
+          grid-template-columns: "100%"
+          grid-template-areas: "schlafzimmer"
+    cards:
+      - !include "views/schlafzimmer.yaml"
+      - !include "popup/popup.yaml"
+
+  - type: "custom:grid-layout"
+    title: "Badezimmer"
+    icon: "mdi:shower"
+    path: "Badezimmer"
+    layout:
+      grid-template-columns: "1fr 1fr"
+      grid-template-rows: "min-content"
+      grid-template-areas: |
+        "badezimmer popup"
+      mediaquery:
+        "(max-width: 1100px), (orientation: portrait)":
+          grid-template-columns: "100%"
+          grid-template-areas: "badezimmer"
+    cards:
+      - !include "views/badezimmer.yaml"
+      - !include "popup/popup.yaml"
+
+  - type: "custom:grid-layout"
+    title: "Küche"
+    icon: "mdi:blender"
+    path: "Küche"
+    layout:
+      grid-template-columns: "1fr 1fr"
+      grid-template-rows: "min-content"
+      grid-template-areas: |
+        "kueche popup"
+      mediaquery:
+        "(max-width: 1100px), (orientation: portrait)":
+          grid-template-columns: "100%"
+          grid-template-areas: "kueche"
+    cards:
+      - !include "views/kueche.yaml"
+      - !include "popup/popup.yaml"
+
+  - type: "custom:grid-layout"
+    title: "Werkstatt"
+    icon: "mdi:bike-pedal-mountain"
+    path: "Werkstatt"
+    layout:
+      grid-template-columns: "1fr 1fr"
+      grid-template-rows: "min-content"
+      grid-template-areas: |
+        "werkstatt popup"
+      mediaquery:
+        "(max-width: 1100px), (orientation: portrait)":
+          grid-template-columns: "100%"
+          grid-template-areas: "werkstatt"
+    cards:
+      - !include "views/werkstatt.yaml"
+      - !include "popup/popup.yaml"
+
+  - type: "custom:grid-layout"
+    title: "Flur"
+    icon: "mdi:door"
+    path: "Flur"
+    layout:
+      grid-template-columns: "1fr 1fr"
+      grid-template-rows: "min-content"
+      grid-template-areas: |
+        "flur popup"
+      mediaquery:
+        "(max-width: 1100px), (orientation: portrait)":
+          grid-template-columns: "100%"
+          grid-template-areas: "flur"
+    cards:
+      - !include "views/flur.yaml"
+      - !include "popup/popup.yaml"
+
+  - type: "custom:grid-layout"
+    title: "Dachterrasse"
+    icon: "mdi:weather-partly-cloudy"
+    path: "Dachterrasse"
+    layout:
+      grid-template-columns: "1fr 1fr"
+      grid-template-rows: "min-content"
+      grid-template-areas: |
+        "dachterrasse popup"
+      mediaquery:
+        "(max-width: 1100px), (orientation: portrait)":
+          grid-template-columns: "100%"
+          grid-template-areas: "dachterrasse"
+    cards:
+      - !include "views/dachterrasse.yaml"
+      - !include "popup/popup.yaml"
+
+  - type: "custom:grid-layout"
+    title: "Remote"
+    icon: "mdi:remote-tv"
+    path: "Remote"
+    layout:
+      grid-template-columns: "1fr 1fr"
+      grid-template-rows: "min-content"
+      grid-template-areas: |
+        "remote popup"
+      mediaquery:
+        "(max-width: 1100px), (orientation: portrait)":
+          grid-template-columns: "100%"
+          grid-template-areas: "remote"
+    cards:
+      - !include "views/remote.yaml"
+      - !include "popup/popup.yaml"
+
+  - type: "custom:grid-layout"
+    title: "Kalender"
+    icon: "mdi:calendar"
+    path: "Kalender"
+    layout:
+      grid-template-columns: "1fr 1fr"
+      grid-template-rows: "min-content"
+      grid-template-areas: |
+        "kalender popup"
+      mediaquery:
+        "(max-width: 1100px), (orientation: portrait)":
+          grid-template-columns: "100%"
+          grid-template-areas: "kalender"
+    cards:
+      - !include "views/kalender.yaml"
+      - !include "popup/popup.yaml"

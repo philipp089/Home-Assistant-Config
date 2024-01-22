@@ -1,0 +1,474 @@
+title: "Remote"
+icon: "mdi:remote-tv"
+theme: "minimalist-desktop"
+path: "Remote"
+cards:
+
+  # - type: "custom:button-card"
+  #   template: chip_back
+  #   variables:
+  #     ulm_chip_back_path: /ui-lovelace-minimalist/home
+
+  - type: 'custom:button-card'
+    template: card_title
+    name: "Fernseher"
+    label: "Samsung Q7 Series"
+
+  #7
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 PRO WOHNZIMMER POWER#######################
+  #
+  - type: horizontal-stack
+    cards: 
+      - type: "custom:button-card"
+        icon: mdi:power
+        size: 50%
+        color: "#E50914"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.samsung_q7_series_power_toggle
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 PRO WOHNZIMMER INPUT SELECT#######################
+  #
+      - type: "custom:button-card"
+        icon: "mdi:video-input-hdmi"
+        size: 50%
+        color: "#808080"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.samsung_q7_series_input_select
+
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 PRO WOHNZIMMER CHANNEL LIST#######################
+  # 
+      - type: "custom:button-card"
+        icon: "mdi:format-list-numbered"
+        size: 50%
+        color: "#0F9D58"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.samsung_q7_series_channel_list
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 PRO WOHNZIMMER CHANNEL UP#######################
+  # 
+      - type: "custom:button-card"
+        icon: "mdi:arrow-up-bold-box-outline"
+        size: 50%
+        color: "#0F9D58"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.samsung_q7_series_channel_increase
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 PRO WOHNZIMMER NAVIGATION BACK#######################
+  #
+  - type: horizontal-stack
+    cards: 
+      - type: "custom:button-card"
+        icon: mdi:arrow-u-left-top
+        size: 50%
+        color: "#808080"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.samsung_q7_series_navigation_back
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 PRO WOHNZIMMER NAVIGATION UP#######################
+  #
+      - type: "custom:button-card"
+        icon: "mdi:arrow-up-bold-circle"
+        size: 50%
+        color: "#4285F4"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.samsung_q7_series_navigation_up
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 PRO WOHNZIMMER NAVIGATION SMART#######################
+  # 
+      - type: "custom:button-card"
+        icon: "mdi:home-outline"
+        size: 50%
+        color: "#808080"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.samsung_q7_series_navigation_smart
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 PRO WOHNZIMMER CHANNEL DECREASE#######################
+  # 
+      - type: "custom:button-card"
+        icon: "mdi:arrow-down-bold-box-outline"
+        size: 50%
+        color: "#0F9D58"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.samsung_q7_series_channel_decrease
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 PRO WOHNZIMMER NAVIGATION LEFT#######################
+  #
+  - type: horizontal-stack
+    cards: 
+      - type: "custom:button-card"
+        icon: "mdi:arrow-left-bold-circle"
+        size: 50%
+        color: "#4285F4"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.samsung_q7_series_navigation_left
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 PRO WOHNZIMMER NAVIGATION RETURN#######################
+  #
+      - type: "custom:button-card"
+        icon: "mdi:keyboard-return"
+        size: 50%
+        color: "#808080"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.samsung_q7_series_navigation_return
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 PRO WOHNZIMMER NAVIGATION RIGHT#######################
+  # 
+      - type: "custom:button-card"
+        icon: "mdi:arrow-right-bold-circle"
+        size: 50%
+        color: "#4285F4"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.samsung_q7_series_navigation_right
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 PRO WOHNZIMMER VOLUME UP#######################
+  # 
+      - type: "custom:button-card"
+        icon: "mdi:volume-plus"
+        size: 50%
+        color: "#f5b400"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.samsung_q7_series_sound_increase
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 PRO WOHNZIMMER MENU#######################
+  #
+  - type: horizontal-stack
+    cards: 
+      - type: "custom:button-card"
+        icon: "mdi:menu"
+        size: 50%
+        color: "#808080"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.samsung_q7_series_navigation_menu
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 PRO WOHNZIMMER NAVIGATION DOWN#######################
+  #
+      - type: "custom:button-card"
+        icon: "mdi:arrow-down-bold-circle"
+        size: 50%
+        color: "#4285F4"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.samsung_q7_series_navigation_down
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 PRO WOHNZIMMER SOUND MUTE#######################
+  #
+      - type: "custom:button-card"
+        icon: "mdi:volume-off"
+        size: 50%
+        color: "#f5b400"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.samsung_q7_series_sound_mute
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 PRO WOHNZIMMER SOUND DECREASE#######################
+  # 
+      - type: "custom:button-card"
+        icon: "mdi:volume-minus"
+        size: 50%
+        color: "#f5b400"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.samsung_q7_series_sound_decrease
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 PRO WOHNZIMMER PLAYER BACK#######################
+  #
+  - type: horizontal-stack
+    cards: 
+      - type: "custom:button-card"
+        icon: "mdi:skip-backward"
+        size: 50%
+        color: "#999999"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.samsung_q7_series_player_back
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 PRO WOHNZIMMER PLAYER PLAY#######################
+  #
+      - type: "custom:button-card"
+        icon: "mdi:play-pause"
+        size: 50%
+        color: "#999999"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.samsung_q7_series_player_play
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 PRO WOHNZIMMER PLAYER STOP#######################
+  # 
+      - type: "custom:button-card"
+        icon: "mdi:stop"
+        size: 50%
+        color: "#999999"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.samsung_q7_series_player_stop
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 PRO WOHNZIMMER PLAYER FORWARD#######################
+  # 
+      - type: "custom:button-card"
+        icon: "mdi:skip-forward"
+        size: 50%
+        color: "#999999"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.samsung_q7_series_player_forward
+ 
+
+  - type: 'custom:button-card'
+    template: card_title
+    label: "Sony Bravia"
+
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 MINI SCHLAFZIMMER POWER#######################
+  #
+  - type: horizontal-stack
+    cards: 
+      - type: "custom:button-card"
+        icon: mdi:power
+        size: 50%
+        color: "#E50914"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.sony_bravia_power_on
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 MINI SCHLAFZIMMER INPUT SELECT#######################
+  #
+      - type: "custom:button-card"
+        icon: "mdi:video-input-hdmi"
+        size: 50%
+        color: "#808080"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.sony_bravia_source
+
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 MINI SCHLAFZIMMER CHANNEL LIST#######################
+  # 
+      - type: "custom:button-card"
+        icon: "mdi:format-list-numbered"
+        size: 50%
+        color: "#0F9D58"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.sony_bravia_program
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 MINI SCHLAFZIMMER CHANNEL UP#######################
+  # 
+      - type: "custom:button-card"
+        icon: "mdi:arrow-up-bold-box-outline"
+        size: 50%
+        color: "#0F9D58"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.sony_bravia_program_up
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 RM4 MINI SCHLAFZIMMER MENU#######################
+  #
+  - type: horizontal-stack
+    cards: 
+      - type: "custom:button-card"
+        icon: "mdi:menu"
+        size: 50%
+        color: "#808080"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.sony_bravia_menu
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 RM4 MINI SCHLAFZIMMER NAVIGATION UP#######################
+  #
+      - type: "custom:button-card"
+        icon: "mdi:arrow-up-bold-circle"
+        size: 50%
+        color: "#4285F4"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.sony_bravia_wheel_up
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 RM4 MINI SCHLAFZIMMER EMPTY#######################
+  # 
+      - type: "custom:button-card"
+        icon: "mdi:card-text-outline"
+        size: 50%
+        color: "#808080"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.sony_bravia_text
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 RM4 MINI SCHLAFZIMMER CHANNEL DECREASE#######################
+  # 
+      - type: "custom:button-card"
+        icon: "mdi:arrow-down-bold-box-outline"
+        size: 50%
+        color: "#0F9D58"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.sony_bravia_program_down
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 RM4 MINI SCHLAFZIMMER NAVIGATION LEFT#######################
+  #
+  - type: horizontal-stack
+    cards: 
+      - type: "custom:button-card"
+        icon: "mdi:arrow-left-bold-circle"
+        size: 50%
+        color: "#4285F4"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.sony_bravia_wheel_left
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 RM4 MINI SCHLAFZIMMER NAVIGATION RETURN#######################
+  #
+      - type: "custom:button-card"
+        icon: "mdi:keyboard-return"
+        size: 50%
+        color: "#808080"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.sony_bravia_return
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 RM4 MINI SCHLAFZIMMER NAVIGATION RIGHT#######################
+  # 
+      - type: "custom:button-card"
+        icon: "mdi:arrow-right-bold-circle"
+        size: 50%
+        color: "#4285F4"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.sony_bravia_return
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 RM4 MINI SCHLAFZIMMER VOLUME UP#######################
+  # 
+      - type: "custom:button-card"
+        icon: "mdi:volume-plus"
+        size: 50%
+        color: "#f5b400"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.sony_bravia_volume_up
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 RM4 MINI SCHLAFZIMMER MENU#######################
+  #
+  - type: horizontal-stack
+    cards: 
+      - type: "custom:button-card"
+        icon: "mdi:image-size-select-large"
+        size: 50%
+        color: "#808080"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.sony_bravia_bildformat
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 RM4 MINI SCHLAFZIMMER NAVIGATION DOWN#######################
+  #
+      - type: "custom:button-card"
+        icon: "mdi:arrow-down-bold-circle"
+        size: 50%
+        color: "#4285F4"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.sony_bravia_wheel_down
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 RM4 MINI SCHLAFZIMMER SOUND MUTE#######################
+  #
+      - type: "custom:button-card"
+        icon: "mdi:volume-off"
+        size: 50%
+        color: "#f5b400"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.sony_bravia_volume_mute
+  #
+  ###MEDIA TV REMOTE SAMSUNG Q7 BROADLINK RM4 RM4 MINI SCHLAFZIMMER SOUND DECREASE#######################
+  # 
+      - type: "custom:button-card"
+        icon: "mdi:volume-minus"
+        size: 50%
+        color: "#f5b400"
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.sony_bravia_volume_down

@@ -1,0 +1,183 @@
+---
+type: "custom:layout-card"
+layout_type: "custom:grid-layout"
+layout:
+  grid-template-rows: "min-content"
+  grid-template-columns: "1fr 1fr 1fr"
+  grid-template-areas: >
+    "title1 title1 title1"
+    "szenen1 szenen1 szenen1"
+    "title2 title2 title2"
+    "card1 card2 card99"
+    "title3 title3 title3"
+    "card3 card4 card5"
+    "title4 title4 title4"
+    "card6 card7 card97"
+
+  mediaquery:
+    # Mobile
+    "(max-width: 800px)":
+      grid-template-columns: "1fr 1fr"
+      grid-template-areas: |
+        "title1 title1"
+        "szenen1 szenen1"
+        "title2 title2"
+        "card1 card2"
+        "title3 title3"
+        "card3 card4"
+        "card5 card96"
+        "title4 title4"
+        "card6 card7"
+
+view_layout:
+  grid-area: "flur"
+cards:
+  - view_layout:
+      grid-area: "title1"
+    type: "custom:button-card"
+    template: "card_title"
+    name: "Flur"
+    label: "Szenen"
+
+  - view_layout:
+      grid-area: "szenen1"
+    type: "custom:button-card"
+    template: "card_scenes_welcome"
+    variables:
+      entity_1:
+        entity_id: "script.flur_hell"
+        icon: "mdi:weather-sunny"
+        name: "HELL"
+        color: "yellow"
+      entity_2:
+        entity_id: "script.flur_medium"
+        icon: "mdi:weather-sunset-down"
+        name: "MEDIUM"
+        color: "red"
+      entity_3:
+        entity_id: "script.flur_nacht"
+        icon: "mdi:weather-night"
+        name: "NACHT"
+        color: "purple"
+      entity_4:
+        entity_id: "script.flur_aus"
+        icon: "mdi:power"
+        name: "AUS"
+        color: "grey"
+      entity_5:
+        entity_id: "switch.circadian_lighting_flur"
+        icon: "mdi:sun-clock-outline" 
+        name: "TAG" 
+        color: "yellow"
+      entity_6:
+        entity_id: "script.flur_konzentration"
+        icon: "mdi:brain" 
+        name: "KONZ." 
+        color: "blue"
+      # entity_7:
+      #   entity_id: ""
+      #   icon: "mdi:chili-mild" 
+      #   name: "SEXY" 
+      #   color: "red"
+
+
+  - view_layout:
+      grid-area: "title2"
+    type: "custom:button-card"
+    template: "card_title"
+    label: "Lichter"
+
+  - view_layout:
+      grid-area: "card1"
+    type: "custom:button-card"
+    template: card_generic_swap
+    entity: switch.00085a49a4b411
+    variables:
+      ulm_card_generic_swap_name:  Wandschalter
+      ulm_card_generic_swap_color: green
+
+  - view_layout:
+      grid-area: "card2"
+    type: "custom:button-card"  
+    template: card_light
+    entity: light.lichtgruppe_flur_deckenleuchte
+    variables:
+      ulm_card_light_name: Deckenleuchte
+      ulm_card_light_enable_color: false
+      ulm_card_light_force_background_color: false
+      ulm_card_light_icon: mdi:ceiling-light-outline
+      ulm_input_select_option: flur_deckenleuchte
+      ulm_input_select: input_select.minimalist_ui_switch
+
+  # - view_layout:
+  #     grid-area: "title6"
+  #   type: "custom:button-card"
+  #   template: "card_title"
+  #   label: "Skripte"
+
+  - view_layout:
+      grid-area: "title3"
+    type: "custom:button-card"
+    template: "card_title"
+    label: "Sensoren"
+
+  - view_layout:
+      grid-area: "card3"
+    type: "custom:button-card"
+    template: card_binary_sensor_alert
+    variables:
+      ulm_card_binary_sensor_alert: true
+      ulm_card_binary_sensor_alert_show_last_changed: true
+      ulm_card_binary_sensor_alert_name: Bewegung
+      ulm_card_binary_sensor_alert_color: red
+    entity: binary_sensor.presence_12
+
+  - view_layout:
+      grid-area: "card4"
+    type: "custom:button-card"
+    template: card_binary_sensor_alert
+    variables:
+      ulm_card_binary_sensor_alert: true
+      ulm_card_binary_sensor_alert_show_last_changed: true
+      ulm_card_binary_sensor_alert_name: Kamera
+      ulm_card_binary_sensor_alert_color: red
+    entity: binary_sensor.eingang_motion
+
+  - view_layout:
+      grid-area: "card5"
+    type: "custom:button-card"
+    template: card_binary_sensor_alert
+    variables:
+      ulm_card_binary_sensor_alert: true
+      ulm_card_binary_sensor_alert_show_last_changed: true
+      ulm_card_binary_sensor_alert_name: Türe
+      ulm_card_binary_sensor_alert_color: red
+    entity: binary_sensor.0023da49a3aecb_state
+
+  - view_layout:
+      grid-area: "title4"
+    type: "custom:button-card"
+    template: "card_title"
+    label: "Batterien"
+
+  - view_layout:
+      grid-area: "card6"
+    type: "custom:button-card"
+    template: card_battery
+    entity: sensor.bewegungsmelder_battery_level_2
+    variables:
+      ulm_card_battery_charger_type_entity_id: sensor.bewegungsmelder_battery_level_2
+      ulm_card_battery_battery_level_danger: 20
+      ulm_card_battery_battery_level_warning: 50
+      ulm_card_battery_name: Bewegung
+
+  - view_layout:
+      grid-area: "card7"
+    type: "custom:button-card"
+    template: card_battery
+    entity: sensor.tuersensor_flur_eingangstuere_batterie_prozent
+    variables:
+      ulm_card_battery_charger_type_entity_id: sensor.tuersensor_flur_eingangstuere_batterie_prozent
+      ulm_card_battery_battery_level_danger: 20
+      ulm_card_battery_battery_level_warning: 50
+      ulm_card_battery_name: Türsensor

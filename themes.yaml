@@ -77,10 +77,10 @@ Google - Light:
   ### Text ###
   primary-text-color: "#808080"
   label-card-primary-color: "#ffffff"
-  secondary-text-color: "#999999"
+  secondary-text-color: "#b3b3b3"
   text-primary-color: "#b3b3b3"
   disabled-text-color: "#a1a1a1"
-  mmp-text-color: "#808080"
+  #mmp-text-color: "#808080"
   app-header-text-color: "#808080"
   ### Sidebar Menu ###
   sidebar-background-color: "#ffffff"
@@ -90,7 +90,7 @@ Google - Light:
   sidebar-selected-icon-color: "#4285F4"
   sidebar-selected-text-color: var(--sidebar-selected-icon-color)
   ### States and Badges ###
-  state-icon-color: "#808080"
+  state-icon-color: "#b3b3b3"
   state-icon-active-color: "#f4b400"
   state-icon-unavailable-color: var(--disabled-text-color)
   ### Sliders ###
@@ -216,7 +216,7 @@ Google - Dark:
   ### Text ###
   primary-text-color: "#b3b3b3"
   label-card-primary-color: "#333333"
-  secondary-text-color: "#999999"
+  secondary-text-color: "#b3b3b3"
   text-primary-color: "#b3b3b3"
   disabled-text-color: "#a1a1a1"
   mmp-text-color: "#b3b3b3"
@@ -270,7 +270,7 @@ Google - Dark:
   switch-unchecked-color: "var(--paper-toggle-button-unchecked-bar-color)"
   switch-unchecked-track-color: "var(--paper-toggle-button-unchecked-bar-color)"
   ### Mini Media Player
-  mmp-text-color: "#f2f2f2"
+#  mmp-text-color: "#f2f2f2"
   mmp-icon-color: "#f2f2f2"
   mmp-overlay-base-color: "#f2f2f2"
   mini-media-player-overlay-base-color: "#f2f2f2"

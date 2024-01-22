@@ -1,5 +1,6 @@
 alias: CAT DETECTION - FRIGATE VIDEO TO TELEGRAM
 description: Cat detection in cameras from Frigate
+id: cat_detection_in_cameras_from_frigate
 trigger:
   - platform: mqtt
     topic: frigate/events

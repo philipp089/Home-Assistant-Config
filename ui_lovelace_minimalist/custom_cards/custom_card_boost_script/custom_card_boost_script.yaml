@@ -1,0 +1,18 @@
+---
+### Card Script ###
+card_boost_script:
+  template:
+    - "icon_only"
+  label: "[[[ return variables.ulm_card_script_title; ]]]"
+  icon: "[[[ return variables.ulm_card_script_icon; ]]]"
+  styles:
+    icon:
+      - color: "rgba(var(--color-red),1.0)"
+    label:
+      - align-self: "center"
+      - font-size: "14px"
+      - filter: "opacity(100%)"
+    img_cell:
+      - background-color: "rgba(var(--color-red), 0.2)"
+    grid:
+      - grid-template-columns: "min-content min-content"

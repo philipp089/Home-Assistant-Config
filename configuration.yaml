@@ -3,38 +3,24 @@
 #
 default_config:
 #
-# LOVELACE YAML MODE
-#
-lovelace:
-  mode: storage
-  dashboards:
-    db-mobile:
-      mode: yaml
-      title: Mobile Dashboard
-      icon: "mdi:cellphone"
-      show_in_sidebar: true
-      filename: ui-lovelace.yaml
-#
 # ALLOW CUSTOMISATION OVER CUSTOMIZE.YAML FILE
 #
 homeassistant:
   customize: !include customize.yaml
-#  whitelist_external_dirs:
-#      - "/media/PiNAS-Files/Recordings_Person_Detection"
 #
 # AUTH PROVIDERS
 #
   auth_providers:
     - type: homeassistant
 #
-# SET MODE TO AUTO-DISCOVERY (RECOMMENDATION FOR RASPBEE II)
+# MEDIA SOURCE
 #
-discovery:
+media_source:
 #
 # FRONTEND
 #
 frontend:
-  themes: !include themes.yaml
+  themes: !include_dir_merge_named themes
 #
 # LOGGER
 #
@@ -44,60 +30,63 @@ logger:
     homeassistant.components.shell_command: debug
     homeassistant.components.webhook: debug
 #
-# COLOR EXTRACTOR
-#
-color_extractor:
-#
-# INFLUXDB INTEGRATION
-#
-influxdb:
-  host: 192.168.178.35
-  port: 8086
-  database: !secret Influx_DB_Database
-  username: !secret Influx_DB_User
-  password: !secret Influx_DB_Pass
-  max_retries: 3
-  default_measurement: state
-#
 # INCLUDES
 #
 group: !include groups.yaml
 automation: !include automations.yaml
-automation badezimmer: !include_dir_list ./automations/bereiche/badezimmer
-automation dachterrasse: !include_dir_list ./automations/bereiche/dachterrasse
-automation flur: !include_dir_list ./automations/bereiche/flur
-automation kueche: !include_dir_list ./automations/bereiche/kueche
-automation pflanzschrank: !include_dir_list ./automations/bereiche/pflanzschrank
-automation schlafzimmer: !include_dir_list ./automations/bereiche/schlafzimmer
-automation werkstatt: !include_dir_list ./automations/bereiche/werkstatt
-automation wohnzimmer: !include_dir_list ./automations/bereiche/wohnzimmer
 automation frigate: !include_dir_list ./automations/frigate
 script: !include scripts.yaml
 scene: !include scenes.yaml
 #
+# INPUT SELECT
+#
+input_select:
+  minimalist_ui_switch:
+    name: Select popup/view
+    options:
+      - wohnzimmer_deckenleuchte
+      - wohnzimmer_kleine_lampe
+      - wohnzimmer_stehlampe
+      - wohnzimmer_lightstrip
+      - schlafzimmer_deckenleuchte
+      - schlafzimmer_hue_go
+      - schlafzimmer_stehlampe
+      - nachttisch_links
+      - nachttisch_rechts
+      - badezimmer_deckenleuchte
+      - spiegel_links
+      - spiegel_rechts
+      - werkstatt_deckenleuchte
+      - flur_deckenleuchte
+      # - light 2
+      - samsung_q7_series
+      - sonos_arc
+      - sonos_couch
+      - chromecast_schlafzimmer
+      - sonos_schlafzimmer
+      - google_nest_mini_bad
+      - google_nest_mini_kueche
+      - sonos_werkstatt
+      - climate 1
+      - climate 2
+      - climate 3
+      - climate 4
+      - climate 5
+      # - power 1
+      # - power 2
+      - wohnzimmer
+      - schlafzimmer
+      - badezimmer
+      - kueche
+      - werkstatt
+      - flur
+      - dachterrasse
+      - remote
+      - kalender
+#
 # SENSOREN
 #
-# SYSTEM MONITOR SENSOREN
-#
 sensor:
-  - platform: systemmonitor
-    resources:
-      - type: processor_use
-      - type: disk_use_percent
-        arg: "/"
-      - type: disk_free
-        arg: "/"
-      - type: memory_use_percent
-      - type: network_in
-        arg: eth0
-      - type: throughput_network_in
-        arg: eth0
-      - type: network_out
-        arg: eth0
-      - type: throughput_network_out
-        arg: eth0
-      - type: processor_temperature
-      - type: last_boot
   #
   # TAGESZEIT
   #
@@ -119,7 +108,7 @@ sensor:
         availability_template: "{{ not is_state('sensor.sm_n975f_next_alarm','unavailable') }}"
         attribute_templates:
           time: "{{ state_attr('sensor.sm_n975f_next_alarm','Local Time') }}"
-  #
+ #
   # HEIZTHERMOSTAT KÜCHE BATTERIE PROZENT
   #
   - platform: template
@@ -280,22 +269,6 @@ sensor:
             33 
           {% endif %}
   #
-  # LICHTSENSOR PFLANZSCHRANK BATTERIE PROZENT
-  #
-  - platform: template
-    sensors:
-      lichtsensor_pflanzschrank_batterie_prozent:
-        friendly_name: "Lichtsensor Pflanzschrank Batterie Prozent"
-        unit_of_measurement: "%"
-        value_template: >-
-          {% if is_state_attr('binary_sensor.000d5a499af358_low_bat', 'battery', 'High')   %}
-            100
-          {% elif is_state_attr('binary_sensor.000d5a499af358_low_bat', 'battery', 'Medium')   %}
-            66
-          {% else %}
-            33 
-          {% endif %}
-  #
   # LICHTSENSOR TERRASSE BATTERIE PROZENT
   #
   - platform: template
@@ -392,22 +365,6 @@ sensor:
             33 
           {% endif %}
   #
-  # TÜRSENSOR SCHLAFZIMMER BATTERIE PROZENT
-  #
-  - platform: template
-    sensors:
-      tuersensor_schlafzimmer_batterie_prozent:
-        friendly_name: "Türsensor Schlafzimmer Batterie Prozent"
-        unit_of_measurement: "%"
-        value_template: >-
-          {% if is_state_attr('binary_sensor.hmip_swdo_pl_0023da49a3b06a_low_bat', 'battery', 'High')   %}
-            100
-          {% elif is_state_attr('binary_sensor.hmip_swdo_pl_0023da49a3b06a_low_bat', 'Medium')   %}
-            66
-          {% else %}
-            33 
-          {% endif %}
-  #
   # TÜRSENSOR FLUR EINGANGSTÜRE BATTERIE PROZENT
   #
   - platform: template
@@ -441,47 +398,26 @@ sensor:
         friendly_name: "Last Reboot Lokale Uhrzeit Philipp Smartphone"
         value_template: "{{ state_attr('sensor.sm_n975f_last_reboot', 'Local Time') }}"
         icon_template: "mdi:sync"
-  #
-  # RASPBERRY HARD DRIVE TEMPERATURE SENSOR
-  #
-  #sensor:
-  #  - platform: hddtemp
-  #    disks:
-  #      - /dev/sda1
-  #
-  # RASPBERRY CPU TEMPERATURE
-  #
-  - platform: command_line
-    name: CPU Temperature
-    command: "cat /sys/class/thermal/thermal_zone0/temp"
-    # If errors occur, make sure configuration file is encoded as UTF-8
-    unit_of_measurement: "°C"
-    value_template: "{{ value | multiply(0.001) | round(1) }}"
-  #
-  # OPENHARDWAREMONITOR PHILIPP PC SENSOREN
-  #
-  - platform: openhardwaremonitor
-    host: 192.168.178.65
-    port: 8085
-  #
-  # Failed Login-Attempts
-  #
-  #  - platform: command_line
-  #    name: badlogin
-  #    command: "grep -c 'Login attempt' /home/hass/.homeassistant/home-assistant.log"
-  #
-  # CURRENT HOME ASSISTANT RELEASE
-  #
-  - platform: command_line
-    command: python3 -c "import requests; print(requests.get('https://pypi.python.org/pypi/homeassistant/json').json()['info']['version'])"
-    name: HA release
-  #
+#
+#
+#
+  - platform: template
+    sensors:
+      philipp_smartphone_home: 
+        value_template: >-
+          {% if states('sensor.sm_n975f_wifi_connection') == "WeLANu-Reeves" %}
+            home
+          {% else %}
+            not_home
+          {% endif %}
+        friendly_name: 'Philipp Smartphone Home (SSID = WeLANu-Reeves)'
+ #
   # GITHUB INTEGRATION
   #
-  - platform: github
-    access_token: !secret github_ha_integration_personal_accesss_token
-    repositories:
-      - path: "philipp089/Home-Assistant-Config"
+  #- platform: github
+  #  access_token: !secret github_ha_integration_personal_accesss_token
+  #  repositories:
+  #    - path: "philipp089/Home-Assistant-Config"
   #
   # WANDSCHALTER WERKSTATT kWh
   #
@@ -580,7 +516,7 @@ light:
   - platform: group
     name: Lichtgruppe Flur Deckenleuchte
     entities:
-      - light.color_temperature_light_13
+      - light.color_temperature_light_2
       - light.color_temperature_light_14
       - light.color_temperature_light_15
   #
@@ -613,85 +549,13 @@ light:
       - light.color_temperature_light_16
       - light.color_temperature_light_17
 #
-# CAMERA MOTION SENSORS
-#
-binary_sensor:
-  - platform: mqtt
-    name: "Schlafzimmer Motion"
-    state_topic: BlueIris/Schlafzimmer_HD
-    payload_on: "1"
-    payload_off: "0"
-    device_class: motion
-    off_delay: 30
-  - platform: mqtt
-    name: "Wohnzimmer Motion"
-    state_topic: BlueIris/Wohnz_Fenster_HD
-    payload_on: "1"
-    payload_off: "0"
-    device_class: motion
-    off_delay: 30
-  - platform: mqtt
-    name: "Eingang Motion"
-    state_topic: BlueIris/Eingang_HD
-    payload_on: "1"
-    payload_off: "0"
-    device_class: motion
-    off_delay: 30
-#
-# WERKTAGE
-#
-  - platform: workday
-    country: DE
-    province: BY
-    add_holidays:
-    #  - YYYY-MM-DD
-#
-# FFMPEG INTEGRATION
-#
-ffmpeg:
-#
-# CAMERA COMPONENT
-#
-camera:
-  - platform: ffmpeg
-    name: Eingang HD
-    input: !secret Camera_Eingang_Source
-
-  - platform: ffmpeg
-    name: Wohnzimmer HD
-    input: !secret Camera_Wohnzimmer_Source
-
-  - platform: ffmpeg
-    name: Schlafzimmer HD
-    input: !secret Camera_Schlafzimmer_Source
-#
-# CAMERA COMPONENT GENERIC
-#
-  - platform: generic
-    name: Eingang HD Generic
-    still_image_url: !secret Camera_URL_Eingang
-    stream_source: !secret Camera_Eingang_Source
-    verify_ssl: false
-
-  - platform: generic
-    name: Wohnzimmer HD Generic
-    still_image_url: !secret Camera_URL_Wohnzimmer
-    stream_source: !secret Camera_Wohnzimmer_Source
-    verify_ssl: false
-
-  - platform: generic
-    name: Schlafzimmer HD Generic
-    still_image_url: !secret Camera_URL_Schlafzimmer
-    stream_source: !secret Camera_Schlafzimmer_Source
-    verify_ssl: false
-#
 # HOMEMATIC INTEGRATION
 #
 homematic:
   interfaces:
     HomeMatic Funk:
       host: 192.168.178.37
-      port: 2001
+      #port: 2001
       resolvenames: "json"
       username: !secret homematic_username
       password: !secret homematic_password
@@ -717,80 +581,9 @@ homematic:
   hosts:
     ccu3:
       host: 192.168.178.37
+      port: 2001
       username: !secret homematic_username
       password: !secret homematic_password
-#
-# SPOTIFY
-#
-spotify:
-  client_id: !secret spotify_client_id
-  client_secret: !secret spotify_client_secret
-#
-# GOOGLE INTEGRATION
-#
-google:
-  client_id: !secret google_homeAssistant_client_ID
-  client_secret: !secret google_homeAssistant_client_key
-#
-# TP-LINK PLUGS
-#
-tplink:
-  discovery: false
-  switch:
-    - host: 192.168.178.34
-    - host: 192.168.178.38
-    - host: 192.168.178.39
-    - host: 192.168.178.40
-    - host: 192.168.178.41
-    - host: 192.168.178.42
-    - host: 192.168.178.51
-    - host: 192.168.178.52
-    - host: 192.168.178.53
-    - host: 192.168.178.54
-    - host: 192.168.178.55
-    - host: 192.168.178.60
-    - host: 192.168.178.62
-    - host: 192.168.178.63
-    - host: 192.168.178.75
-    - host: 192.168.178.82
-#
-# SAMSUNG TV INTEGRATION
-#
-media_player:
-  - platform: samsungtv_tizen
-    name: Samsung TV Tizen
-    host: 192.168.178.70
-    port: 8002
-    mac: !secret samsung_mac_adress
-    api_key: !secret smartthings_api_key
-    device_id: !secret smartthings_device_id
-    app_list: '{"Netflix": "11101200001", "YouTube": "111299001912", "Prime Video": "3201512006785", "Spotify": "3201606009684"}'
-#
-# SAMSUNG WAKE ON LAN
-#
-wake_on_lan:
-
-#samsungtv:
-#  - host: 192.168.178.70
-#    mac: !secret samsung_mac_adress
-#
-# WITHINGS BODY+ INTEGRATION
-#
-withings:
-  client_id: !secret withings_client_id
-  client_secret: !secret withings_client_secret
-
-#
-# PROXIMITY INTEGRATION
-#
-proximity:
-  home:
-    ignored_zones:
-      - Arbeit
-    devices:
-      - device_tracker.sm_n975f
-    tolerance: 50
-    unit_of_measurement: km
 #
 # CIRCADIAN LIGHTING
 #
@@ -845,7 +638,7 @@ switch:
   - platform: circadian_lighting
     name: "Flur"
     lights_ct:
-      - light.color_temperature_light_13
+      - light.color_temperature_light_2
       - light.color_temperature_light_14
       - light.color_temperature_light_15
 #
@@ -853,7 +646,7 @@ switch:
 #
 timer:
   bewegungsmelder_flur:
-    duration: "00:03:00"
+    duration: "00:05:00"
     name: Timer Bewegungsmelder Flur
     icon: "mdi:alarm"
   bewegungsmelder_kueche:
@@ -872,21 +665,6 @@ timer:
     duration: "00:03:00"
     name: Timer Bewegungsmelder Wohnzimmer
     icon: "mdi:alarm"
-  luftbefeuchter_wohnzimmer:
-    duration: "00:15:00"
-    name: Timer Luftbefeuchter Wohnzimmer
-    icon: "mdi:alarm"
-  luftbefeuchter_pflanzschrank:
-    duration: "00:15:00"
-    name: Timer Luftbefeuchter Pflanzschrank
-    icon: "mdi:alarm"
-#
-# FOLDER WATCHER
-#
-folder_watcher:
-  - folder: /media/frigate/clips/
-  - folder: /media/frigate/recordings
-
 #
 # API INTEGRATION
 #
@@ -906,11 +684,15 @@ notify:
   - platform: telegram
     name: Telegram Smart Home Alerts Bot
     chat_id: !secret telegram_chat
-#
-# SSL
-#
-#http:  
-#  ssl_certificate: !secret ssl_fullchain_path
-#  ssl_key: !secret ssl_privkey_path
-#  ip_ban_enabled: true
-#  login_attempts_threshold: 5
+  #
+  # RASPBERRY CPU TEMPERATURE
+  #
+command_line:
+  - sensor:
+      name: CPU Temperature
+      command: "cat /sys/class/thermal/thermal_zone0/temp"
+      # If errors occur, make sure configuration file is encoded as UTF-8
+      unit_of_measurement: "°C"
+      value_template: "{{ value | multiply(0.001) | round(1) }}"
+
+

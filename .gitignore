@@ -66,6 +66,10 @@ frigate.yml
 token-192.168.178.70.txt
 index.html
 rtsp2webrtc_v4_aarch64
+home-assistant.log
+.cloud
+.storage
+
 
 
 

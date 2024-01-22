@@ -1,0 +1,222 @@
+---
+type: "custom:layout-card"
+layout_type: "custom:grid-layout"
+layout:
+  grid-template-rows: "min-content"
+  grid-template-columns: "1fr 1fr 1fr"
+  grid-template-areas: >
+    "title1 title1 title1"
+    "media1 media2 media3"
+    "title2 title2 title2"
+    "klima1 klima2 klima3"
+    "title3 title3 title3"
+    "card1 card99 card98"
+    "title4 title4 title4"
+    "card2 card3 card4"
+    "title6 title6 title6"
+    "card5 card95 card94"
+    "title7 title7 title7"
+    "card7 card8 card9"
+
+  mediaquery:
+    # Mobile
+    "(max-width: 800px)":
+      grid-template-columns: "1fr 1fr"
+      grid-template-areas: |
+        "title1 title1"
+        "media1 media1"
+        "title2 title2"
+        "klima1 klima1"
+        "klima2 klima3"
+        "title3 title3"
+        "card1 card99"
+        "title4 title4"
+        "card2 card3"
+        "card4 card98"
+        "title6 title6"
+        "card5 card97"
+        "title7 title7"
+        "card7 card8"
+        "card9 card96"
+
+view_layout:
+  grid-area: "kueche"
+cards:
+  - view_layout:
+      grid-area: "title1"
+    type: "custom:button-card"
+    template: "card_title"
+    name: "Küche"
+    label: "Medien"
+
+  - view_layout:
+      grid-area: "media1"
+    type: "custom:button-card"
+    template: card_media_player
+    entity: media_player.kuche
+    variables:
+      ulm_card_media_player_name : Google Nest Mini
+      ulm_card_media_player_enable_art: true
+      ulm_card_media_player_enable_controls: false
+      ulm_card_media_player_enable_volume_buttons: false
+      ulm_card_media_player_color: green
+      ulm_card_media_player_power_button: true
+      ulm_card_media_player_collapsible: true
+      ulm_card_media_player_more_info: true
+      ulm_input_select_option: google_nest_mini_kueche
+      ulm_input_select: input_select.minimalist_ui_switch
+
+  - view_layout:
+      grid-area: "title2"
+    type: "custom:button-card"
+    template: "card_title"
+    label: "Klima"
+
+  - view_layout:
+      grid-area: "klima1"
+    type: "custom:button-card"
+    template: card_thermostat
+    entity: climate.000a9a49a6f2b9
+    variables:
+      ulm_card_thermostat_name: "Thermostat"
+      ulm_card_thermostat_enable_collapse: true
+      ulm_card_thermostat_enable_controls: true
+      ulm_card_thermostat_enable_popup: true
+      ulm_card_thermostat_enable_hvac_modes: true
+      ulm_input_select_option: climate 4
+      ulm_input_select: input_select.minimalist_ui_switch
+
+  - view_layout:
+      grid-area: "klima2"
+    type: "custom:button-card"
+    template: card_graph
+    entity: sensor.000a9a49a6f2b9_actual_temperature
+    variables:
+      ulm_card_graph_color: "var(--google-red)"
+      ulm_card_graph_name: Temperatur
+      ulm_card_graph_entity: sensor.000a9a49a6f2b9_actual_temperature
+      ulm_card_graph_type: fill
+      ulm_card_graph_hours: 24
+      ulm_card_graph_group_by: interval
+      ulm_card_graph_line_width: 5
+
+  - view_layout:
+      grid-area: "klima3"
+    type: "custom:button-card"
+    template: card_graph
+    entity: sensor.000a9a49a6f2b9_humidity
+    variables:
+      ulm_card_graph_color: "var(--google-blue)"
+      ulm_card_graph_name: Luftfeuchte
+      ulm_card_graph_entity: sensor.000a9a49a6f2b9_humidity
+      ulm_card_graph_type: fill
+      ulm_card_graph_hours: 24
+      ulm_card_graph_group_by: interval
+      ulm_card_graph_line_width: 5
+
+  - view_layout:
+      grid-area: "title3"
+    type: "custom:button-card"
+    template: "card_title"
+    label: "Lichter"
+
+  - view_layout:
+      grid-area: "card1"
+    type: "custom:button-card"
+    template: card_generic_swap
+    entity: switch.hmip_bsm_00085a49a49be7
+    variables:
+      ulm_card_generic_swap_name:  Wandschalter
+      ulm_card_generic_swap_color: green
+
+  - view_layout:
+      grid-area: "title4"
+    type: "custom:button-card"
+    template: "card_title"
+    label: "Steckdosen"
+
+  - view_layout:
+      grid-area: "card2"
+    type: "custom:button-card"
+    template: card_power_outlet
+    entity: switch.steckdose_kaffeemaschine
+    variables:
+      ulm_card_power_outlet_name:  Kaffeemaschine
+      ulm_card_power_outlet_color: blue
+      ulm_card_power_outlet_consumption_sensor: sensor.steckdose_kaffeemaschine_current_consuption
+
+  - view_layout:
+      grid-area: "card3"
+    type: "custom:button-card"
+    template: card_power_outlet
+    entity: switch.steckdose_kuehlschrank
+    variables:
+      ulm_card_power_outlet_name:  Kühlschrank
+      ulm_card_power_outlet_color: blue
+      ulm_card_power_outlet_consumption_sensor: sensor.steckdose_kuehlschrank_current_consumption
+
+  - view_layout:
+      grid-area: "card4"
+    type: "custom:button-card"
+    template: card_power_outlet
+    entity: switch.steckdose_spuelmaschine
+    variables:
+      ulm_card_power_outlet_name:  Spülmaschine
+      ulm_card_power_outlet_color: blue
+      ulm_card_power_outlet_consumption_sensor: sensor.steckdose_spuelmaschine_current_consumption
+
+  - view_layout:
+      grid-area: "title6"
+    type: "custom:button-card"
+    template: "card_title"
+    label: "Sensoren"
+
+  - view_layout:
+      grid-area: "card5"
+    type: "custom:button-card"
+    template: card_binary_sensor_alert
+    variables:
+      ulm_card_binary_sensor_alert: true
+      ulm_card_binary_sensor_alert_show_last_changed: true
+      ulm_card_binary_sensor_alert_name: Bewegung
+      ulm_card_binary_sensor_alert_color: red
+    entity: binary_sensor.presence_21
+
+  - view_layout:
+      grid-area: "title7"
+    type: "custom:button-card"
+    template: "card_title"
+    label: "Batterien"
+
+  - view_layout:
+      grid-area: "card7"
+    type: "custom:button-card"
+    template: card_battery
+    entity: sensor.bewegungsmelder_battery_level_3
+    variables:
+      ulm_card_battery_charger_type_entity_id: sensor.bewegungsmelder_battery_level_4
+      ulm_card_battery_battery_level_danger: 20
+      ulm_card_battery_battery_level_warning: 50
+      ulm_card_battery_name: Bewegung
+
+  - view_layout:
+      grid-area: "card8"
+    type: "custom:button-card"
+    template: card_battery
+    entity: sensor.heizthermostat_kueche_batterie_prozent
+    variables:
+      ulm_card_battery_charger_type_entity_id: sensor.heizthermostat_kueche_batterie_prozent
+      ulm_card_battery_battery_level_danger: 20
+      ulm_card_battery_battery_level_warning: 50
+      ulm_card_battery_name: Heizung
+
+  - view_layout:
+      grid-area: "card9"
+    type: "custom:button-card"
+    template: card_battery
+    entity: sensor.thermostat_kueche_batterie_prozent
+    variables:
+      ulm_card_battery_charger_type_entity_id: sensor.thermostat_kueche_batterie_prozent
+      ulm_card_battery_battery_level_danger: 20
+      ulm_card_battery_battery_level_warning: 50
+      ulm_card_battery_name: Thermostat

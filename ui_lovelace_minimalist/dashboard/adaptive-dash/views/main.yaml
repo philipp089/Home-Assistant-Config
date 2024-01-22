@@ -1,0 +1,412 @@
+---
+type: "custom:layout-card"
+layout_type: "custom:grid-layout"
+layout:
+  # Tablet portrait
+  grid-template-columns: "1fr 1fr 1fr 1fr"
+  grid-template-areas: |
+    "welcome welcome welcome welcome"
+    "presence presence presence presence"
+    "title1 title1 title1 title1"
+    "raum1 raum2 raum3 raum4"
+    "raum5 raum6 raum7 raum8"
+    "card1 card2 card3 card4"
+    "title2 title2 title2 title2"
+    "card5 card6 card7 card8"
+
+  mediaquery:
+    # Mobile
+    "(max-width: 800px)":
+      grid-template-columns: "1fr 1fr"
+      grid-template-areas: |
+        "welcome welcome"
+        "presence presence"
+        "title1 title1"
+        "raum1 raum2"
+        "raum3 raum4"
+        "raum5 raum6"
+        "raum7 raum8"
+        "card1 card2"
+        "card3 card4"
+        "title2 title2"
+        "card5 card6"
+        "card7 card8"
+view_layout:
+  grid-area: "main"
+cards:
+  - view_layout:
+      grid-area: "title1"
+    type: "custom:button-card"
+    template: "card_title"
+    name: "Räume"
+
+  - view_layout:
+      grid-area: "welcome"
+    type: "custom:button-card"
+    template: "card_esh_welcome"
+    triggers_update: "input_boolean.minimalist_dropdown"
+    variables:
+      ulm_card_esh_welcome_collapse: input_boolean.minimalist_dropdown
+      ulm_weather: "weather.home"
+      entity_1:
+        nav: "Remote"
+        icon: "mdi:remote-tv"
+        # name: ""
+        color: "green"
+      entity_2:
+        nav: "Kalender"
+        icon: "mdi:calendar"
+        # name: ""
+        color: "red"
+      entity_3:
+        nav: "Raspberry"
+        icon: "mdi:raspberry-pi"
+        # name: 
+        color: "purple"
+      entity_4:
+        nav: "Gesundheit"
+        icon: "mdi:heart-outline"
+        # name: 
+        color: "yellow"
+      entity_5:
+        nav: "Grocy"
+        icon: "mdi:spray-bottle"
+        # name: 
+        color: "blue"
+
+  - view_layout:
+      grid-area: "presence"
+    type: 'custom:button-card'
+    template: card_person
+    entity: person.philipp
+    entity_picture: /local/Icon_Philipp.svg
+    variables:
+      ulm_card_person_entity: group.philipp_home
+      ulm_card_person_use_entity_picture: true
+      ulm_card_person_battery: sensor.sm_n975f_battery_level
+      # ulm_card_person_eta: sensor.waze_travel_time_person
+      # ulm_address: sensor.sm_n975f_geocoded_location
+
+  - view_layout:
+      grid-area: "raum1"
+    type: "custom:button-card"
+    template:
+      - card_room
+      - green_no_state
+    name: Wohnzimmer
+    entity: climate.000a9a49a6fc5e
+    icon: mdi:sofa-single-outline
+    tap_action:
+      action: navigate
+      navigation_path: "Wohnzimmer"
+    variables:
+      label_use_temperature: true
+      label_use_brightness: false
+      ulm_input_select_option: wohnzimmer
+      ulm_input_select: input_select.minimalist_ui_switch
+      entity_1:
+        entity_id: light.lichtgruppe_wohnzimmer_gesamt
+        templates:
+          - yellow_on
+        tap_action:
+          action: toggle
+      entity_2:
+        entity_id: switch.00085a49a49c0f
+        templates:
+          - blue_on
+        tap_action:
+          action: toggle
+      entity_3:
+        entity_id: binary_sensor.presence_9
+        templates:
+          - red_on
+          - grey_off
+        tap_action:
+          action: none
+      entity_4:
+        entity_id: media_player.samsung_q7_series_55
+        templates:
+          - green_on
+          - grey_off
+        tap_action:
+          action: toggle
+
+  - view_layout:
+      grid-area: "raum2"
+    type: "custom:button-card"
+    template:
+      - card_room
+      - red_no_state
+    name: Schlafzimmer
+    entity: climate.000a9a49a6f8b1
+    icon: mdi:bed-king-outline
+    tap_action:
+      action: navigate
+      navigation_path: "Schlafzimmer"
+    variables:
+      label_use_temperature: true
+      label_use_brightness: false
+      ulm_input_select_option: schlafzimmer
+      ulm_input_select: input_select.minimalist_ui_switch
+      entity_1:
+        entity_id: light.licht_schlafzimmer
+        templates:
+          - yellow_on
+        tap_action:
+          action: toggle
+      entity_2:
+        entity_id: switch.00085a49a49f84
+        templates:
+          - blue_on
+          - grey_off
+        tap_action:
+          action: toggle
+      entity_3:
+        entity_id: binary_sensor.presence_24
+        templates:
+          - red_on
+          - grey_off
+        tap_action:
+          action: none
+      entity_4:
+        entity_id: media_player.chromecast_schlafzimmer
+        templates:
+          - green_on
+          - grey_off
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.sony_bravia_power_on
+
+  - view_layout:
+      grid-area: "raum3"
+    type: "custom:button-card"
+    template:
+      - card_room
+      - blue_no_state
+    name: Badezimmer
+    entity: climate.000a9a49a8a692
+    icon: mdi:shower
+    tap_action:
+      action: navigate
+      navigation_path: "Badezimmer"
+    variables:
+      label_use_temperature: true
+      label_use_brightness: false
+      ulm_input_select_option: badezimmer
+      ulm_input_select: input_select.minimalist_ui_switch
+      entity_1:
+        entity_id: light.lichtgruppe_badezimmer_gesamt
+        templates:
+          - yellow_on
+        tap_action:
+          action: toggle
+      entity_2:
+        entity_id: switch.hmip_bsm_00085a49a4a57e
+        templates:
+          - blue_on
+          - grey_off
+        tap_action:
+          action: toggle
+      entity_3:
+        entity_id: binary_sensor.presence_15
+        templates:
+          - red_on
+          - grey_off
+        tap_action:
+          action: none
+      entity_4:
+        entity_id: media_player.bad
+        templates:
+          - green_on
+          - grey_off
+        tap_action:
+          action: toggle
+
+  - view_layout:
+      grid-area: "raum4"
+    type: "custom:button-card"
+    template:
+      - card_room
+      - purple_no_state
+    name: Küche
+    entity: climate.000a9a49a6f8b1
+    icon: mdi:blender
+    tap_action:
+      action: navigate
+      navigation_path: "Küche"
+    variables:
+      label_use_temperature: true
+      label_use_brightness: false
+      ulm_input_select_option: kueche
+      ulm_input_select: input_select.minimalist_ui_switch
+      entity_1:
+        entity_id: 
+        templates:
+          - yellow_on
+        tap_action:
+          action: toggle
+      entity_2:
+        entity_id: switch.hmip_bsm_00085a49a49be7
+        templates:
+          - blue_on
+          - grey_off
+        tap_action:
+          action: toggle
+      entity_3:
+        entity_id: binary_sensor.presence_21
+        templates:
+          - red_on
+          - grey_off
+        tap_action:
+          action: none
+      entity_4:
+        entity_id: media_player.kuche
+        templates:
+          - green_on
+          - grey_off
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.sony_bravia_power_on
+
+
+  - view_layout:
+      grid-area: "raum5"
+    type: "custom:button-card"
+    template:
+      - card_room
+      - yellow_no_state
+    name: Werkstatt
+    entity: climate.hmip_etrv_2_000a1a49a13405
+    icon: mdi:bike-pedal-mountain
+    tap_action:
+      action: navigate
+      navigation_path: "Werkstatt"
+    variables:
+      label_use_temperature: true
+      label_use_brightness: false
+      ulm_input_select_option: werkstatt
+      ulm_input_select: input_select.minimalist_ui_switch
+      entity_1:
+        entity_id: light.lichtgruppe_werkstatt_deckenleuchte
+        templates:
+          - yellow_on
+        tap_action:
+          action: toggle
+      entity_2:
+        entity_id: switch.00085a49a49be1
+        templates:
+          - blue_on
+          - grey_off
+        tap_action:
+          action: toggle
+      entity_3:
+        entity_id: binary_sensor.presence_18
+        templates:
+          - red_on
+          - grey_off
+        tap_action:
+          action: none
+      entity_4:
+        entity_id: media_player.sonos_play_1_werkstatt
+        templates:
+          - green_on
+          - grey_off
+        tap_action:
+          action: toggle
+
+  - view_layout:
+      grid-area: "raum6"
+    type: "custom:button-card"
+    template:
+      - card_room
+      - grey_no_state
+    name: Flur
+    entity: climate.000a9a49a8a692
+    icon: mdi:door
+    tap_action:
+      action: navigate
+      navigation_path: "Flur"
+    variables:
+      label_use_temperature: true
+      label_use_brightness: false
+      ulm_input_select_option: flur
+      ulm_input_select: input_select.minimalist_ui_switch
+      entity_1:
+        entity_id: light.flur
+        templates:
+          - yellow_on
+        tap_action:
+          action: toggle
+      entity_2:
+        entity_id: switch.00085a49a4b411
+        templates:
+          - blue_on
+          - grey_off
+        tap_action:
+          action: toggle
+      entity_3:
+        entity_id: binary_sensor.presence_12
+        templates:
+          - red_on
+          - grey_off
+        tap_action:
+          action: none
+      entity_4:
+        entity_id: 
+        templates:
+          - green_on
+          - grey_off
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.sony_bravia_power_on
+
+  - view_layout:
+      grid-area: "raum7"
+    type: "custom:button-card"
+    template:
+      - card_room
+      - pink_no_state
+    name: Dachterrasse
+    entity: sensor.000eda499c8410_actual_temperature
+    icon: mdi:weather-partly-cloudy
+    tap_action:
+      action: navigate
+      navigation_path: "Dachterrasse"
+    variables:
+      label_use_temperature: true
+      label_use_brightness: false
+      ulm_input_select_option: dachterrasse
+      ulm_input_select: input_select.minimalist_ui_switch
+      entity_1:
+        entity_id: 
+        templates:
+          - yellow_on
+        tap_action:
+          action: toggle
+      entity_2:
+        entity_id: switch.hmip_bsm_00085a49a49c91
+        templates:
+          - blue_on
+          - grey_off
+        tap_action:
+          action: toggle
+      entity_3:
+        entity_id: 
+        templates:
+          - red_on
+          - grey_off
+        tap_action:
+          action: toggle
+      entity_4:
+        entity_id: 
+        templates:
+          - green_on
+          - grey_off
+        tap_action:
+          action: toggle

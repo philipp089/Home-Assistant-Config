@@ -1,0 +1,145 @@
+---
+type: "custom:layout-card"
+layout_type: "custom:grid-layout"
+layout:
+  grid-template-rows: "min-content"
+  grid-template-columns: "1fr 1fr 1fr"
+  grid-template-areas: >
+    "title1 title1 title1"
+    "weather weather weather"
+    "title2 title2 title2"
+    "klima1 klima2 klima3"
+    "title3 title3 title3"
+    "card1 card99 card98"
+    "title4 title4 title4"
+    "card2 card3 card97"
+
+  mediaquery:
+    # Mobile
+    "(max-width: 800px)":
+      grid-template-columns: "1fr 1fr"
+      grid-template-areas: |
+        "title1 title1"
+        "weather weather"
+        "title2 title2"
+        "klima1 klima2"
+        "klima3 klima4"
+        "title3 title3"
+        "card1 card99"
+        "title4 title4"
+        "card2 card3"
+
+view_layout:
+  grid-area: "dachterrasse"
+cards:
+  - view_layout:
+      grid-area: "title1"
+    type: "custom:button-card"
+    template: "card_title"
+    name: "Dachterrasse"
+    label: "Wetter"
+
+  - view_layout:
+      grid-area: "weather"
+    type: "custom:weather-card"
+    entity: weather.home
+    name: Dachau
+    style: |
+      ha-card {
+        box-shadow: 1px 1px 1px 1px var(--divider-color);
+        webkit-shadow: 0px 0px 0px 0px;
+      }
+
+  - view_layout:
+      grid-area: "title2"
+    type: "custom:button-card"
+    template: "card_title"
+    label: "Klima"
+
+  - view_layout:
+      grid-area: "klima1"
+    type: "custom:button-card"
+    template: card_graph
+    entity: sensor.000eda499c8410_actual_temperature
+    variables:
+      ulm_card_graph_color: "var(--google-red)"
+      ulm_card_graph_name: Temperatur
+      ulm_card_graph_entity: sensor.000eda499c8410_actual_temperature
+
+      ulm_card_graph_type: fill
+      ulm_card_graph_hours: 24
+      ulm_card_graph_group_by: interval
+      ulm_card_graph_line_width: 6
+
+  - view_layout:
+      grid-area: "klima2"
+    type: "custom:button-card"
+    template: card_graph
+    entity: sensor.000eda499c8410_humidity
+    variables:
+      ulm_card_graph_color: "var(--google-blue)"
+      ulm_card_graph_name: Luftfeuchte
+      ulm_card_graph_entity: sensor.000eda499c8410_humidity
+
+      ulm_card_graph_type: fill
+      ulm_card_graph_hours: 24
+      ulm_card_graph_group_by: interval
+      ulm_card_graph_line_width: 6
+
+  - view_layout:
+      grid-area: "klima3"
+    type: "custom:button-card"
+    template: card_graph
+    entity: sensor.000d5a499af3e3_current_illumination
+    variables:
+      ulm_card_graph_color: "var(--google-yellow)"
+      ulm_card_graph_name: Lichtmenge
+      ulm_card_graph_entity: sensor.000d5a499af3e3_current_illumination
+
+      ulm_card_graph_type: fill
+      ulm_card_graph_hours: 24
+      ulm_card_graph_group_by: interval
+      ulm_card_graph_line_width: 6
+
+  - view_layout:
+      grid-area: "title3"
+    type: "custom:button-card"
+    template: "card_title"
+    label: "Lichter"
+
+  - view_layout:
+      grid-area: "card1"
+    type: "custom:button-card"
+    template: card_generic_swap
+    entity: switch.hmip_bsm_00085a49a49c91
+    variables:
+      ulm_card_generic_swap_name:  Wandschalter
+      ulm_card_generic_swap_color: green
+
+  - view_layout:
+      grid-area: "title4"
+    type: "custom:button-card"
+    template: "card_title"
+    label: "Batterien"
+
+  - view_layout:
+      grid-area: "card2"
+    type: "custom:button-card"
+    template: card_battery
+    entity: sensor.lichtsensor_terrasse_batterie_prozent
+    variables:
+      ulm_card_battery_charger_type_entity_id: sensor.lichtsensor_terrasse_batterie_prozent
+      ulm_card_battery_battery_level_danger: 20
+      ulm_card_battery_battery_level_warning: 50
+      ulm_card_battery_name: Lichtsensor 
+
+  - view_layout:
+      grid-area: "card3"
+    type: "custom:button-card"
+    template: card_battery
+    entity: sensor.temperatursensor_terrasse_batterie_prozent
+    variables:
+      ulm_card_battery_charger_type_entity_id: sensor.temperatursensor_terrasse_batterie_prozent
+      ulm_card_battery_battery_level_danger: 20
+      ulm_card_battery_battery_level_warning: 50
+      ulm_card_battery_name: Temperatursensor

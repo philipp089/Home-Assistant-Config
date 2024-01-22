@@ -1,0 +1,492 @@
+---
+type: "custom:layout-card"
+layout_type: "custom:grid-layout"
+layout:
+  grid-template-rows: "min-content"
+  grid-template-columns: "1fr 1fr 1fr 1fr"
+  grid-template-areas: >
+    "back1 back2 back3 back4"
+    "title1 title1 title1 title1"
+    "card1 card2 card3 card4"
+    "card5 card6 card7 card8"
+    "card9 card10 card11 card12"
+    "card13 card14 card15 card16"
+    "card17 card18 card19 card20"
+    "title2 title2 title2 title2"
+    "card21 card22 card23 card24"
+    "card25 card26 card27 card28"
+    "card29 card30 card31 card32"
+    "card33 card34 card35 card36"
+
+  mediaquery:
+    # Mobile
+    "(max-width: 800px)":
+      grid-template-columns: "1fr 1fr 1fr 1fr"
+      grid-template-areas: |
+        "back1 back2 back3 back4"
+        "title1 title1 title1 title1"
+        "card1 card2 card3 card4"
+        "card5 card6 card7 card8"
+        "card9 card10 card11 card12"
+        "card13 card14 card15 card16"
+        "card17 card18 card19 card20"
+        "title2 title2 title2 title2"
+        "card21 card22 card23 card24"
+        "card25 card26 card27 card28"
+        "card29 card30 card31 card32"
+        "card33 card34 card35 card36"
+
+view_layout:
+  grid-area: "remote"
+cards:
+  # - view_layout:
+    #   grid-area: "back1"
+    # type: "custom:button-card"
+    # template: chip_back
+    # variables:
+    #   ulm_chip_back_path: /adaptive-dash/Home
+
+  - view_layout:
+      grid-area: "title1"
+    type: 'custom:button-card'
+    template: card_title
+    name: "Fernseher"
+    label: "Samsung Q7 Series"
+
+  - view_layout:
+      grid-area: "card1"
+    type: "custom:button-card"
+    icon: mdi:power
+    size: 50%
+    color: "#E50914"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.samsung_q7_series_power_toggle
+
+  - view_layout:
+      grid-area: "card2"
+    type: "custom:button-card"
+    icon: "mdi:video-input-hdmi"
+    size: 50%
+    color: "#808080"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.samsung_q7_series_input_select
+
+  - view_layout:
+      grid-area: "card3"
+    type: "custom:button-card"
+    icon: "mdi:format-list-numbered"
+    size: 50%
+    color: "#0F9D58"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.samsung_q7_series_channel_list
+
+  - view_layout:
+      grid-area: "card4"
+    type: "custom:button-card"
+    icon: "mdi:arrow-up-bold-box-outline"
+    size: 50%
+    color: "#0F9D58"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.samsung_q7_series_channel_increase
+
+  - view_layout:
+      grid-area: "card5"
+    type: "custom:button-card"
+    icon: mdi:arrow-u-left-top
+    size: 50%
+    color: "#808080"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.samsung_q7_series_navigation_back
+
+  - view_layout:
+      grid-area: "card6"
+    type: "custom:button-card"
+    icon: "mdi:arrow-up-bold-circle"
+    size: 50%
+    color: "#4285F4"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.samsung_q7_series_navigation_up
+
+  - view_layout:
+      grid-area: "card7"
+    type: "custom:button-card"
+    icon: "mdi:home-outline"
+    size: 50%
+    color: "#808080"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.samsung_q7_series_navigation_smart
+
+  - view_layout:
+      grid-area: "card8"
+    type: "custom:button-card"
+    icon: "mdi:arrow-down-bold-box-outline"
+    size: 50%
+    color: "#0F9D58"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.samsung_q7_series_channel_decrease
+
+  - view_layout:
+      grid-area: "card9"
+    type: "custom:button-card"
+    icon: "mdi:arrow-left-bold-circle"
+    size: 50%
+    color: "#4285F4"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.samsung_q7_series_navigation_left
+
+  - view_layout:
+      grid-area: "card10"
+    type: "custom:button-card"
+    icon: "mdi:keyboard-return"
+    size: 50%
+    color: "#808080"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.samsung_q7_series_navigation_return
+
+  - view_layout:
+      grid-area: "card11"
+    type: "custom:button-card"
+    icon: "mdi:arrow-right-bold-circle"
+    size: 50%
+    color: "#4285F4"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.samsung_q7_series_navigation_right
+
+  - view_layout:
+      grid-area: "card12"
+    type: "custom:button-card"
+    icon: "mdi:volume-plus"
+    size: 50%
+    color: "#f5b400"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.samsung_q7_series_sound_increase
+
+  - view_layout:
+      grid-area: "card13"
+    type: "custom:button-card"
+    icon: "mdi:menu"
+    size: 50%
+    color: "#808080"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.samsung_q7_series_navigation_menu
+
+  - view_layout:
+      grid-area: "card14"
+    type: "custom:button-card"
+    icon: "mdi:arrow-down-bold-circle"
+    size: 50%
+    color: "#4285F4"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.samsung_q7_series_navigation_down
+
+  - view_layout:
+      grid-area: "card15"
+    type: "custom:button-card"
+    icon: "mdi:volume-off"
+    size: 50%
+    color: "#f5b400"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.samsung_q7_series_sound_mute
+
+  - view_layout:
+      grid-area: "card16"
+    type: "custom:button-card"
+    icon: "mdi:volume-minus"
+    size: 50%
+    color: "#f5b400"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.samsung_q7_series_sound_decrease
+
+  - view_layout:
+      grid-area: "card17"
+    type: "custom:button-card"
+    icon: "mdi:skip-backward"
+    size: 50%
+    color: "#999999"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.samsung_q7_series_player_back
+
+  - view_layout:
+      grid-area: "card18"
+    type: "custom:button-card"
+    icon: "mdi:play-pause"
+    size: 50%
+    color: "#999999"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.samsung_q7_series_player_play
+
+  - view_layout:
+      grid-area: "card19"
+    type: "custom:button-card"
+    icon: "mdi:stop"
+    size: 50%
+    color: "#999999"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.samsung_q7_series_player_stop
+
+  - view_layout:
+      grid-area: "card20"
+    type: "custom:button-card"
+    icon: "mdi:skip-forward"
+    size: 50%
+    color: "#999999"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.samsung_q7_series_player_forward
+
+  - view_layout:
+      grid-area: "title2"
+    type: 'custom:button-card'
+    template: card_title
+    label: "Sony Bravia"
+
+  - view_layout:
+      grid-area: "card21"
+    type: "custom:button-card"
+    icon: mdi:power
+    size: 50%
+    color: "#E50914"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.sony_bravia_power_on
+
+  - view_layout:
+      grid-area: "card22"
+    type: "custom:button-card"
+    icon: "mdi:video-input-hdmi"
+    size: 50%
+    color: "#808080"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.sony_bravia_source
+
+  - view_layout:
+      grid-area: "card23"
+    type: "custom:button-card"
+    icon: "mdi:format-list-numbered"
+    size: 50%
+    color: "#0F9D58"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.sony_bravia_program
+
+  - view_layout:
+      grid-area: "card24"
+    type: "custom:button-card"
+    icon: "mdi:arrow-up-bold-box-outline"
+    size: 50%
+    color: "#0F9D58"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.sony_bravia_program_up
+
+  - view_layout:
+      grid-area: "card25"
+    type: "custom:button-card"
+    icon: "mdi:menu"
+    size: 50%
+    color: "#808080"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.sony_bravia_menu
+
+  - view_layout:
+      grid-area: "card26"
+    type: "custom:button-card"
+    icon: "mdi:arrow-up-bold-circle"
+    size: 50%
+    color: "#4285F4"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.sony_bravia_wheel_up
+
+  - view_layout:
+      grid-area: "card27"
+    type: "custom:button-card"
+    icon: "mdi:card-text-outline"
+    size: 50%
+    color: "#808080"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.sony_bravia_text
+
+  - view_layout:
+      grid-area: "card28"
+    type: "custom:button-card"
+    icon: "mdi:arrow-down-bold-box-outline"
+    size: 50%
+    color: "#0F9D58"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.sony_bravia_program_down
+
+  - view_layout:
+      grid-area: "card29"
+    type: "custom:button-card"
+    icon: "mdi:arrow-left-bold-circle"
+    size: 50%
+    color: "#4285F4"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.sony_bravia_wheel_left
+
+  - view_layout:
+      grid-area: "card30"
+    type: "custom:button-card"
+    icon: "mdi:keyboard-return"
+    size: 50%
+    color: "#808080"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.sony_bravia_return
+
+  - view_layout:
+      grid-area: "card31"
+    type: "custom:button-card"
+    icon: "mdi:arrow-right-bold-circle"
+    size: 50%
+    color: "#4285F4"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.sony_bravia_return
+
+  - view_layout:
+      grid-area: "card32"
+    type: "custom:button-card"
+    icon: "mdi:volume-plus"
+    size: 50%
+    color: "#f5b400"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.sony_bravia_volume_up
+
+  - view_layout:
+      grid-area: "card33"
+    type: "custom:button-card"
+    icon: "mdi:image-size-select-large"
+    size: 50%
+    color: "#808080"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.sony_bravia_bildformat
+
+  - view_layout:
+      grid-area: "card34"
+    type: "custom:button-card"
+    icon: "mdi:arrow-down-bold-circle"
+    size: 50%
+    color: "#4285F4"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.sony_bravia_wheel_down
+
+  - view_layout:
+      grid-area: "card35"
+    type: "custom:button-card"
+    icon: "mdi:volume-off"
+    size: 50%
+    color: "#f5b400"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.sony_bravia_volume_mute
+
+  - view_layout:
+      grid-area: "card36"
+    type: "custom:button-card"
+    icon: "mdi:volume-minus"
+    size: 50%
+    color: "#f5b400"
+    tap_action:
+      action: call-service
+      service: script.turn_on
+      service_data:
+        entity_id: script.sony_bravia_volume_down

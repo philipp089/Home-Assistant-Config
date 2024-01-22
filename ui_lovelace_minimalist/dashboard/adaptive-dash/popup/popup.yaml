@@ -1,0 +1,203 @@
+---
+type: "custom:state-switch"
+view_layout:
+  grid-area: "popup"
+  show:
+    # only show when screen-width is larger than 1100px
+    mediaquery: "(min-width: 1100px)"
+# add your input_select
+entity: input_select.minimalist_ui_switch
+default: "default"
+transition: "slide-down"
+transition_time: 500
+# options set in the input_select
+states:
+  #  Devices
+  ##  Lights
+  wohnzimmer_deckenleuchte:
+    type: "custom:button-card"
+    template: "popup_light_brightness"
+    entity: light.lichtgruppe_wohnzimmer_deckenleuchte
+  wohnzimmer_kleine_lampe:
+    type: "custom:button-card"
+    template: "popup_light_brightness"
+    entity: light.licht_wohnzimmer_kleine_lampe
+  wohnzimmer_stehlampe:
+    type: "custom:button-card"
+    template: "popup_light_brightness"
+    entity: light.dimmable_light_5
+  wohnzimmer_lightstrip:
+    type: "custom:button-card"
+    template: "popup_light_brightness"
+    entity: light.extended_color_light_23
+  schlafzimmer_deckenleuchte:
+    type: "custom:button-card"
+    template: "popup_light_brightness"
+    entity: light.color_temperature_light_18
+  schlafzimmer_hue_go:
+    type: "custom:button-card"
+    template: "popup_light_brightness"
+    entity: light.extended_color_light_2
+  schlafzimmer_stehlampe:
+    type: "custom:button-card"
+    template: "popup_light_brightness"
+    entity: light.licht_schlafzimmer_standleuchte
+  nachttisch_links:
+    type: "custom:button-card"
+    template: "popup_light_brightness"
+    entity: light.extended_color_light_3_2
+  nachttisch_rechts:
+    type: "custom:button-card"
+    template: "popup_light_brightness"
+    entity: light.extended_color_light_3_2
+  badezimmer_deckenleuchte:
+    type: "custom:button-card"
+    template: "popup_light_brightness"
+    entity: light.extended_color_light_21
+  spiegel_links:
+    type: "custom:button-card"
+    template: "popup_light_brightness"
+    entity: light.color_temperature_light_16
+  spiegel_rechts:
+    type: "custom:button-card"
+    template: "popup_light_brightness"
+    entity: light.color_temperature_light_17
+  werkstatt_deckenleuchte:
+    type: "custom:button-card"
+    template: "popup_light_brightness"
+    entity: light.lichtgruppe_werkstatt_deckenleuchte
+  flur_deckenleuchte:
+    type: "custom:button-card"
+    template: "popup_light_brightness"
+    entity: light.lichtgruppe_werkstatt_deckenleuchte
+
+  #
+  ###  Mediaplayers
+  samsung_q7_series:
+    type: "custom:button-card"
+    template: "popup_media_player_infos"
+    entity: media_player.samsung_q7_series_55
+  sonos_arc:
+    type: "custom:button-card"
+    template: "popup_media_player_infos"
+    entity: media_player.sonos_arc_wohnzimmer
+  sonos_couch:
+    type: "custom:button-card"
+    template: "popup_media_player_infos"
+    entity: media_player.sonos_wohnzimmer_couch
+  chromecast_schlafzimmer:
+    type: "custom:button-card"
+    template: "popup_media_player_infos"
+    entity: media_player.chromecast_schlafzimmer    
+  sonos_schlafzimmer:
+    type: "custom:button-card"
+    template: "popup_media_player_infos"
+    entity: media_player.sonos_one_schlafzimmer
+  google_nest_mini_bad:
+    type: "custom:button-card"
+    template: "popup_media_player_infos"
+    entity: media_player.bad
+  google_nest_mini_kueche:
+    type: "custom:button-card"
+    template: "popup_media_player_infos"
+    entity: media_player.kuche
+  sonos_werkstatt:
+    type: "custom:button-card"
+    template: "popup_media_player_infos"
+    entity: media_player.sonos_play_1_werkstatt
+  # mediaplayer 5:
+  #   type: "custom:button-card"
+  #   template: "popup_media_player_infos"
+  #   entity: <your_entity>
+  # mediaplayer 5:
+  #   type: "custom:button-card"
+  #   template: "popup_media_player_infos"
+  #   entity: <your_entity>
+  #
+  ### Thermostats
+  climate 1:
+    type: "custom:button-card"
+    template: "popup_thermostat_temperature"
+    entity: climate.000a9a49a6fc5e
+  climate 2:
+    type: "custom:button-card"
+    template: "popup_thermostat_temperature"
+    entity: climate.000a9a49a6f8b1
+  climate 3:
+    type: "custom:button-card"
+    template: "popup_thermostat_temperature"
+    entity: climate.000a9a49a8a692
+  climate 4:
+    type: "custom:button-card"
+    template: "popup_thermostat_temperature"
+    entity: climate.000a9a49a6f2b9
+  climate 5:
+    type: "custom:button-card"
+    template: "popup_thermostat_temperature"
+    entity: climate.000a9a49a6f8af
+  # climate 5:
+  #   type: "custom:button-card"
+  #   template: "popup_thermostat_temperature"
+  #   entity: <your_entity>
+  # climate 5:
+  #   type: "custom:button-card"
+  #   template: "popup_thermostat_temperature"
+  #   entity: <your_entity>
+  #
+  ### Power
+  # power 1:
+  #   type: "custom:button-card"
+  #   template: "popup_power_outlet_stats"
+  #   entity: <your_entity>
+  #   variables:
+  #     ulm_popup_power_outlet_sensor1:
+  #     ulm_popup_power_outlet_sensor2:
+  #     ulm_popup_power_outlet_graph_sensor:
+  # power 2:
+  #   type: "custom:button-card"
+  #   template: "popup_power_outlet_stats"
+  #   entity: <your_entity>
+  #   variables:
+  #     ulm_popup_power_outlet_sensor1:
+  #     ulm_popup_power_outlet_sensor2:
+  #     ulm_popup_power_outlet_graph_sensor:
+  # power 3:
+  #   type: "custom:button-card"
+  #   template: "popup_power_outlet_stats"
+  #   entity: <your_entity>
+  #   variables:
+  #     ulm_popup_power_outlet_sensor1:
+  #     ulm_popup_power_outlet_sensor2:
+  #     ulm_popup_power_outlet_graph_sensor:
+  # power 4:
+  #   type: "custom:button-card"
+  #   template: "popup_power_outlet_stats"
+  #   entity: <your_entity>
+  #   variables:
+  #     ulm_popup_power_outlet_sensor1:
+  #     ulm_popup_power_outlet_sensor2:
+  #     ulm_popup_power_outlet_graph_sensor:
+  # power 5:
+  #   type: "custom:button-card"
+  #   template: "popup_power_outlet_stats"
+  #   entity: <your_entity>
+  #   variables:
+  #     ulm_popup_power_outlet_sensor1:
+  #     ulm_popup_power_outlet_sensor2:
+  #     ulm_popup_power_outlet_graph_sensor:
+
+  ## Rooms
+  wohnzimmer: !include "../views/wohnzimmer.yaml"
+  schlafzimmer: !include "../views/schlafzimmer.yaml"
+  badezimmer: !include "../views/badezimmer.yaml"
+  kueche: !include "../views/kueche.yaml"
+  werkstatt: !include "../views/werkstatt.yaml"
+  flur: !include "../views/flur.yaml"
+  dachterrasse: !include "../views/dachterrasse.yaml"
+  remote: !include "../views/remote.yaml"
+  # bedroom: !include "../views/bedroom.yaml"
+  # bathroom: !include "../views/bathroom.yaml"
+  # garage: !include "../views/garage.yaml"
+  # lights: !include "../views/lights.yaml"
+
+

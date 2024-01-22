@@ -1,0 +1,132 @@
+title: "Flur"
+icon: mdi:door
+theme: "minimalist-desktop"
+path: "Flur"
+cards:
+  # - type: "custom:button-card"
+  #   template: chip_back
+  #   variables:
+  #     ulm_chip_back_path: /ui-lovelace-minimalist/home
+
+  - type: 'custom:button-card'
+    template: card_title
+    name: "Flur"
+    label: "Szenen"
+
+  - type: "custom:button-card"
+    template: "card_scenes_welcome"
+    variables:
+      entity_1:
+        entity_id: "script.flur_hell"
+        icon: "mdi:weather-sunny"
+        name: "HELL"
+        color: "yellow"
+      entity_2:
+        entity_id: "script.flur_medium"
+        icon: "mdi:weather-sunset-down"
+        name: "MEDIUM"
+        color: "red"
+      entity_3:
+        entity_id: "script.flur_nacht"
+        icon: "mdi:weather-night"
+        name: "NACHT"
+        color: "blue"
+      entity_4:
+        entity_id: "script.flur_aus"
+        icon: "mdi:power"
+        name: "AUS"
+        color: "grey"
+      entity_5:
+        entity_id: "switch.circadian_lighting_flur"
+        icon: "mdi:sun-clock-outline" 
+        name: "TAG" 
+        color: "yellow"
+      entity_6:
+        entity_id: "script.flur_konzentration"
+        icon: "mdi:brain" 
+        name: "KONZ." 
+        color: "blue"
+
+  - type: 'custom:button-card'
+    template: card_title
+    label: "Lichter"
+
+  - type: "horizontal-stack"
+    cards:
+      - type: 'custom:button-card'
+        template: card_generic_swap
+        entity: switch.00085a49a4b411
+        variables:
+          ulm_card_generic_swap_name:  Wandschalter
+          ulm_card_generic_swap_color: green
+
+      - type: "custom:button-card"
+        template: card_light
+        entity: light.lichtgruppe_flur_deckenleuchte
+        variables:
+          ulm_card_light_name: Deckenleuchte
+          ulm_card_light_enable_slider: false
+          ulm_card_light_enable_color: false
+          ulm_card_light_force_background_color: false
+          ulm_card_light_icon: mdi:ceiling-light-outline
+
+  - type: 'custom:button-card'
+    template: card_title
+    label: "Sensoren"
+
+  - type: "horizontal-stack"
+    cards:
+      - type: 'custom:button-card'
+        template: card_binary_sensor_alert
+        variables:
+          ulm_card_binary_sensor_alert: true
+          ulm_card_binary_sensor_alert_show_last_changed: true
+          ulm_card_binary_sensor_alert_name: Bewegung
+          ulm_card_binary_sensor_alert_color: red
+        entity: binary_sensor.presence_12
+
+      - type: 'custom:button-card'
+        template: card_binary_sensor_alert
+        variables:
+          ulm_card_binary_sensor_alert: true
+          ulm_card_binary_sensor_alert_show_last_changed: true
+          ulm_card_binary_sensor_alert_name: Kamera
+          ulm_card_binary_sensor_alert_color: red
+        entity: binary_sensor.eingang_motion_2
+
+  - type: "horizontal-stack"
+    cards:
+      - type: 'custom:button-card'
+        template: card_binary_sensor_alert
+        variables:
+          ulm_card_binary_sensor_alert: true
+          ulm_card_binary_sensor_alert_show_last_changed: true
+          ulm_card_binary_sensor_alert_name: Türe
+          ulm_card_binary_sensor_alert_color: red
+        entity: binary_sensor.0023da49a3aecb_state
+
+  - type: 'custom:button-card'
+    template: card_title
+    label: "Batterien"
+
+  - type: "horizontal-stack"
+    cards:
+      - type: 'custom:button-card'
+        template: card_battery
+        entity: sensor.bewegungsmelder_battery_level_2
+        variables:
+          ulm_card_battery_charger_type_entity_id: sensor.bewegungsmelder_battery_level_2
+          ulm_card_battery_battery_level_danger: 20
+          ulm_card_battery_battery_level_warning: 50
+          ulm_card_battery_name: Bewegung 
+
+      - type: 'custom:button-card'
+        template: card_battery
+        entity: sensor.tuersensor_flur_eingangstuere_batterie_prozent
+        variables:
+          ulm_card_battery_charger_type_entity_id: sensor.tuersensor_flur_eingangstuere_batterie_prozent
+          ulm_card_battery_battery_level_danger: 20
+          ulm_card_battery_battery_level_warning: 50
+          ulm_card_battery_name: Türsensor
+
+

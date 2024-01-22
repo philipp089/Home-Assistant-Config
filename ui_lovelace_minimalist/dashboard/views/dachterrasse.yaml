@@ -1,0 +1,109 @@
+title: "Dachterrasse"
+icon: "mdi:weather-partly-cloudy"
+theme: "minimalist-desktop"
+path: "Dachterrasse"
+cards:
+  # - type: "custom:button-card"
+  #   template: chip_back
+  #   variables:
+  #     ulm_chip_back_path: /ui-lovelace-minimalist/home
+
+  - type: 'custom:button-card'
+    template: card_title
+    name: "Dachterrasse"
+    label: "Wetter"
+
+  - type: "custom:weather-card"
+    entity: weather.home
+    name: Dachau
+    style: |
+      ha-card {
+        box-shadow: 1px 1px 1px 1px var(--divider-color);
+        webkit-shadow: 0px 0px 0px 0px;
+      }
+
+  - type: 'custom:button-card'
+    template: card_title
+    label: "Klima"
+
+  - type: "horizontal-stack"
+    cards:
+      - type: 'custom:button-card'
+        template: card_graph
+        entity: sensor.000eda499c8410_actual_temperature
+        variables:
+          ulm_card_graph_color: "var(--google-red)"
+          ulm_card_graph_name: Temperatur
+          ulm_card_graph_entity: sensor.000eda499c8410_actual_temperature
+
+          ulm_card_graph_type: fill
+          ulm_card_graph_hours: 24
+          ulm_card_graph_group_by: interval
+          ulm_card_graph_line_width: 6
+
+      - type: 'custom:button-card'
+        template: card_graph
+        entity: sensor.000eda499c8410_humidity
+        variables:
+          ulm_card_graph_color: "var(--google-blue)"
+          ulm_card_graph_name: Luftfeuchte
+          ulm_card_graph_entity: sensor.000eda499c8410_humidity
+
+          ulm_card_graph_type: fill
+          ulm_card_graph_hours: 24
+          ulm_card_graph_group_by: interval
+          ulm_card_graph_line_width: 6
+
+  - type: "horizontal-stack"
+    cards:
+      - type: 'custom:button-card'
+        template: card_graph
+        entity: sensor.000d5a499af3e3_current_illumination
+        variables:
+          ulm_card_graph_color: "var(--google-yellow)"
+          ulm_card_graph_name: Lichtmenge
+          ulm_card_graph_entity: sensor.000d5a499af3e3_current_illumination
+
+          ulm_card_graph_type: fill
+          ulm_card_graph_hours: 24
+          ulm_card_graph_group_by: interval
+          ulm_card_graph_line_width: 3
+
+  - type: 'custom:button-card'
+    template: card_title
+    label: "Lichter"
+
+  - type: "horizontal-stack"
+    cards:
+      - type: 'custom:button-card'
+        template: card_generic_swap
+        entity: switch.hmip_bsm_00085a49a49c91
+        variables:
+          ulm_card_generic_swap_name:  Wandschalter
+          ulm_card_generic_swap_color: green
+
+  - type: 'custom:button-card'
+    template: card_title
+    label: "Batterien"
+
+  - type: "horizontal-stack"
+    cards:
+      - type: 'custom:button-card'
+        template: card_battery
+        entity: sensor.lichtsensor_terrasse_batterie_prozent
+        variables:
+          ulm_card_battery_charger_type_entity_id: sensor.lichtsensor_terrasse_batterie_prozent
+          ulm_card_battery_battery_level_danger: 20
+          ulm_card_battery_battery_level_warning: 50
+          ulm_card_battery_name: Lichtsensor 
+
+      - type: 'custom:button-card'
+        template: card_battery
+        entity: sensor.temperatursensor_terrasse_batterie_prozent
+        variables:
+          ulm_card_battery_charger_type_entity_id: sensor.temperatursensor_terrasse_batterie_prozent
+          ulm_card_battery_battery_level_danger: 20
+          ulm_card_battery_battery_level_warning: 50
+          ulm_card_battery_name: Temperatursensor
+
+
