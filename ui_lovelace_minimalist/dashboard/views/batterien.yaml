@@ -1,7 +1,7 @@
-title: "Gesundheit"
-icon: "mdi:heart-outline"
+title: "Batterien"
+icon: "mdi:battery-high"
 theme: "minimalist-desktop"
-path: "Gesundheit"
+path: "Batterien"
 cards:
   - type: "custom:button-card"
     template: chip_back

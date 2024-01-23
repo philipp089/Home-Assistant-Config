@@ -1,7 +1,7 @@
-title: "Gesundheit"
-icon: "mdi:heart-outline"
+title: "Temperatur"
+icon: "mdi:thermometer"
 theme: "minimalist-desktop"
-path: "Gesundheit"
+path: "Temperatur"
 cards:
   - type: "custom:button-card"
     template: chip_back

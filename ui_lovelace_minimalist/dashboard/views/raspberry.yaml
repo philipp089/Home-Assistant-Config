@@ -3,10 +3,10 @@ icon: "mdi:raspberry-pi"
 theme: "minimalist-desktop"
 path: "Raspberry"
 cards:
-  # - type: "custom:button-card"
-  #   template: chip_back
-  #   variables:
-  #     ulm_chip_back_path: /ui-lovelace-minimalist/home
+  - type: "custom:button-card"
+    template: chip_back
+    variables:
+      ulm_chip_back_path: /ui-lovelace-minimalist/home
 
   - type: 'custom:button-card'
     template: card_title

@@ -21,6 +21,9 @@ views:
   - !include views/grocy.yaml
   - !include views/alarm.yaml
   - !include views/automations.yaml
+  - !include views/batterien.yaml
   - !include views/energie.yaml
+  - !include views/hardware.yaml
   - !include views/kameras.yaml
   - !include views/playstation.yaml
+  - !include views/temperatur.yaml

@@ -1,7 +1,7 @@
-title: "Gesundheit"
-icon: "mdi:heart-outline"
+title: "Hardware"
+icon: "mdi:desktop-classic"
 theme: "minimalist-desktop"
-path: "Gesundheit"
+path: "Hardware"
 cards:
   - type: "custom:button-card"
     template: chip_back
