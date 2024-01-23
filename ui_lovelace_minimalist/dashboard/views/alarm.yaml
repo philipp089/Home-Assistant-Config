@@ -1,0 +1,9 @@
+title: "Alarm"
+icon: "mdi:bell-outline"
+theme: "minimalist-desktop"
+path: "Alarm"
+cards:
+  - type: "custom:button-card"
+    template: chip_back
+    variables:
+      ulm_chip_back_path: /ui-lovelace-minimalist/home

@@ -1,0 +1,9 @@
+title: "Kameras"
+icon: "mdi:camera-wireless-outline"
+theme: "minimalist-desktop"
+path: "Kameras"
+cards:
+  - type: "custom:button-card"
+    template: chip_back
+    variables:
+      ulm_chip_back_path: /ui-lovelace-minimalist/home

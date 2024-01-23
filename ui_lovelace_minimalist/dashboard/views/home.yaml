@@ -36,6 +36,54 @@ cards:
 
   - type: "horizontal-stack"
     cards:
+      # - type: "custom:button-card"
+      #   color_type: blank-card
+
+      # - type: "custom:button-card"
+      #   template: chip_navigate
+      #   label: Alarm
+      #   variables:
+      #     ulm_chip_navigate_path: /ui-lovelace-minimalist/Alarm
+      #     ulm_chip_navigate_icon: "mdi:bell-outline"
+      #     ulm_chip_navigate_icon_color: "var(--google-red)"
+
+      - type: "custom:button-card"
+        template: chip_navigate
+        label: Automat.
+        variables:
+          ulm_chip_navigate_path: /ui-lovelace-minimalist/Automations
+          ulm_chip_navigate_icon: "mdi:cog-outline"
+          ulm_chip_navigate_icon_color: "var(--google-blue)"
+
+      - type: "custom:button-card"
+        template: chip_navigate
+        label: Energie
+        variables:
+          ulm_chip_navigate_path: /ui-lovelace-minimalist/Energie
+          ulm_chip_navigate_icon: "mdi:lightning-bolt-outline"
+          ulm_chip_navigate_icon_color: "var(--google-yellow)"
+
+      - type: "custom:button-card"
+        template: chip_navigate
+        label: Kameras
+        variables:
+          ulm_chip_navigate_path: /ui-lovelace-minimalist/Kameras
+          ulm_chip_navigate_icon: "mdi:camera-wireless-outline"
+          ulm_chip_navigate_icon_color: "var(--google-blue)"
+
+      - type: "custom:button-card"
+        template: chip_navigate
+        label: Playstation
+        variables:
+          ulm_chip_navigate_path: /ui-lovelace-minimalist/Playstation
+          ulm_chip_navigate_icon: "mdi:sony-playstation"
+          ulm_chip_navigate_icon_color: "var(--google-violet)"
+
+      # - type: "custom:button-card"
+      #   color_type: blank-card
+
+  - type: "horizontal-stack"
+    cards:
       - type: 'custom:button-card'
         template: card_person
         entity: person.philipp

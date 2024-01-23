@@ -18,5 +18,9 @@ views:
   - !include views/kalender.yaml
   - !include views/raspberry.yaml
   - !include views/gesundheit.yaml
-  - !include views/automations.yaml
   - !include views/grocy.yaml
+  - !include views/alarm.yaml
+  - !include views/automations.yaml
+  - !include views/energie.yaml
+  - !include views/kameras.yaml
+  - !include views/playstation.yaml
