@@ -34,86 +34,138 @@ cards:
         # name: 
         color: "blue"
 
-  - type: "horizontal-stack"
-    cards:
-      - type: "custom:button-card"
-        color_type: blank-card
+  # - type: "custom:button-card"
+  #   template: "card_scenes_welcome"
+  #   variables:
+  #     entity_1:
+  #       entity_id: "Alarm"
+  #       nav_path: "/ui-lovelace-minimalist/Alarm"
+  #       icon: "mdi:bell-outline"
+  #       name: "Alarm" 
+  #       color: "red"
+  #     entity_2:
+  #       entity_id: "Automatisierungen"
+  #       nav_path: "/ui-lovelace-minimalist/Automations"
+  #       icon: "mdi:cog-outline" 
+  #       name: "Autom." 
+  #       color: "blue"
+      # entity_2:
+      #   entity_id: "<YOUR_ENTITY>"
+      #   icon: "mdi:YOUR_ICON" #OPTIONAL
+      #   name: "YOUR_NAME" #OPTIONAL
+      #   color: "red"
+      #   nav_path:
+      # entity_3:
+      #   entity_id: "<YOUR_ENTITY>"
+      #   icon: "mdi:YOUR_ICON" #OPTIONAL
+      #   name: "YOUR_NAME" #OPTIONAL
+      #   color: "green"
+      #   nav_path:
+      # entity_4:
+      #   entity_id: "<YOUR_ENTITY>"
+      #   icon: "mdi:YOUR_ICON" #OPTIONAL
+      #   name: "YOUR_NAME" #OPTIONAL
+      #   color: "purple"
+      #   nav_path:
+      # entity_5:
+      #   entity_id: "<YOUR_ENTITY>"
+      #   icon: "mdi:YOUR_ICON" #OPTIONAL
+      #   name: "YOUR_NAME" #OPTIONAL
+      #   color: "yellow"
+      #   nav_path:
+      # entity_6:
+      #   entity_id: "<YOUR_ENTITY>"
+      #   icon: "mdi:YOUR_ICON" #OPTIONAL
+      #   name: "YOUR_NAME" #OPTIONAL
+      #   color: "pink"
+      #   nav_path:
+      # entity_7:
+      #   entity_id: "<YOUR_ENTITY>"
+      #   icon: "mdi:YOUR_ICON" #OPTIONAL
+      #   name: "YOUR_NAME" #OPTIONAL
+      #   color: "yellow"
+      #   nav_path:
 
-      - type: "custom:button-card"
-        template: chip_navigate
-        label: Alarm
-        variables:
-          ulm_chip_navigate_path: /ui-lovelace-minimalist/Alarm
-          ulm_chip_navigate_icon: "mdi:bell-outline"
-          ulm_chip_navigate_icon_color: "var(--google-red)"
+  # - type: "horizontal-stack"
+  #   cards:
+  #     - type: "custom:button-card"
+  #       color_type: blank-card
 
-      - type: "custom:button-card"
-        template: chip_navigate
-        label: Autom.
-        variables:
-          ulm_chip_navigate_path: /ui-lovelace-minimalist/Automations
-          ulm_chip_navigate_icon: "mdi:cog-outline"
-          ulm_chip_navigate_icon_color: "var(--google-blue)"
+  #     - type: "custom:button-card"
+  #       template: chip_navigate
+  #       label: Alarm
+  #       variables:
+  #         ulm_chip_navigate_path: /ui-lovelace-minimalist/Alarm
+  #         ulm_chip_navigate_icon: "mdi:bell-outline"
+  #         ulm_chip_navigate_icon_color: "var(--google-red)"
 
-      - type: "custom:button-card"
-        template: chip_navigate
-        label: Batt.
-        variables:
-          ulm_chip_navigate_path: /ui-lovelace-minimalist/Batterien
-          ulm_chip_navigate_icon: "mdi:battery-high"
-          ulm_chip_navigate_icon_color: "var(--google-green)"
+  #     - type: "custom:button-card"
+  #       template: chip_navigate
+  #       label: Autom.
+  #       variables:
+  #         ulm_chip_navigate_path: /ui-lovelace-minimalist/Automations
+  #         ulm_chip_navigate_icon: "mdi:cog-outline"
+  #         ulm_chip_navigate_icon_color: "var(--google-blue)"
 
-      - type: "custom:button-card"
-        template: chip_navigate
-        label: Energie
-        variables:
-          ulm_chip_navigate_path: /ui-lovelace-minimalist/Energie
-          ulm_chip_navigate_icon: "mdi:lightning-bolt-outline"
-          ulm_chip_navigate_icon_color: "var(--google-yellow)"
+  #     - type: "custom:button-card"
+  #       template: chip_navigate
+  #       label: Batt.
+  #       variables:
+  #         ulm_chip_navigate_path: /ui-lovelace-minimalist/Batterien
+  #         ulm_chip_navigate_icon: "mdi:battery-high"
+  #         ulm_chip_navigate_icon_color: "var(--google-green)"
 
-      - type: "custom:button-card"
-        color_type: blank-card
+  #     - type: "custom:button-card"
+  #       template: chip_navigate
+  #       label: Energie
+  #       variables:
+  #         ulm_chip_navigate_path: /ui-lovelace-minimalist/Energie
+  #         ulm_chip_navigate_icon: "mdi:lightning-bolt-outline"
+  #         ulm_chip_navigate_icon_color: "var(--google-yellow)"
 
-  - type: "horizontal-stack"
-    cards:
+  #     - type: "custom:button-card"
+  #       color_type: blank-card
 
-      - type: "custom:button-card"
-        color_type: blank-card
+  # - type: "horizontal-stack"
+  #   cards:
 
-      - type: "custom:button-card"
-        template: chip_navigate
-        label: HW
-        variables:
-          ulm_chip_navigate_path: /ui-lovelace-minimalist/Hardware
-          ulm_chip_navigate_icon: "mdi:desktop-classic"
-          ulm_chip_navigate_icon_color: "var(--google-grey)"
+  #     - type: "custom:button-card"
+  #       color_type: blank-card
 
-      - type: "custom:button-card"
-        template: chip_navigate
-        label: Kameras
-        variables:
-          ulm_chip_navigate_path: /ui-lovelace-minimalist/Kameras
-          ulm_chip_navigate_icon: "mdi:camera-wireless-outline"
-          ulm_chip_navigate_icon_color: "var(--google-blue)"
+  #     - type: "custom:button-card"
+  #       template: chip_navigate
+  #       label: HW
+  #       variables:
+  #         ulm_chip_navigate_path: /ui-lovelace-minimalist/Hardware
+  #         ulm_chip_navigate_icon: "mdi:desktop-classic"
+  #         ulm_chip_navigate_icon_color: "var(--google-grey)"
 
-      - type: "custom:button-card"
-        template: chip_navigate
-        label: Playst.
-        variables:
-          ulm_chip_navigate_path: /ui-lovelace-minimalist/Playstation
-          ulm_chip_navigate_icon: "mdi:sony-playstation"
-          ulm_chip_navigate_icon_color: "var(--google-violet)"
+  #     - type: "custom:button-card"
+  #       template: chip_navigate
+  #       label: Kameras
+  #       variables:
+  #         ulm_chip_navigate_path: /ui-lovelace-minimalist/Kameras
+  #         ulm_chip_navigate_icon: "mdi:camera-wireless-outline"
+  #         ulm_chip_navigate_icon_color: "var(--google-blue)"
 
-      - type: "custom:button-card"
-        template: chip_navigate
-        label: Temp.
-        variables:
-          ulm_chip_navigate_path: /ui-lovelace-minimalist/Temperatur
-          ulm_chip_navigate_icon: "mdi:thermometer"
-          ulm_chip_navigate_icon_color: "var(--google-red)"
+  #     - type: "custom:button-card"
+  #       template: chip_navigate
+  #       label: Playst.
+  #       variables:
+  #         ulm_chip_navigate_path: /ui-lovelace-minimalist/Playstation
+  #         ulm_chip_navigate_icon: "mdi:sony-playstation"
+  #         ulm_chip_navigate_icon_color: "var(--google-violet)"
 
-      - type: "custom:button-card"
-        color_type: blank-card
+  #     - type: "custom:button-card"
+  #       template: chip_navigate
+  #       label: Temp.
+  #       variables:
+  #         ulm_chip_navigate_path: /ui-lovelace-minimalist/Temperatur
+  #         ulm_chip_navigate_icon: "mdi:thermometer"
+  #         ulm_chip_navigate_icon_color: "var(--google-red)"
+
+  #     - type: "custom:button-card"
+  #       color_type: blank-card
 
   - type: "horizontal-stack"
     cards:
