@@ -654,3 +654,96 @@
       attachment: snapshot
       message: '{{ label }} detected - {{ camera_name }}'
       silence_timer: 240
+- id: '1706648446084'
+  alias: Voice Assist  - Wohnzimmer hell
+  description: Voice Assist  - Wohnzimmer hell
+  trigger:
+  - platform: conversation
+    command: Wohnzimmer hell
+  condition: []
+  action:
+  - service: script.turn_on
+    metadata: {}
+    data: {}
+    target:
+      entity_id: script.wohnzimmer_hell
+  mode: single
+- id: '1706648549884'
+  alias: Voice Assist  - Wohnzimmer medium
+  description: Voice Assist  - Wohnzimmer medium
+  trigger:
+  - platform: conversation
+    command:
+    - Wohnzimmer medium
+  condition: []
+  action:
+  - service: script.turn_on
+    metadata: {}
+    data: {}
+    target:
+      entity_id: script.wohnzimmer_medium
+  mode: single
+- id: '1706648769592'
+  alias: Voice Assist  - Wohnzimmer Nacht
+  description: Voice Assist  - Wohnzimmer Nacht
+  trigger:
+  - platform: conversation
+    command:
+    - Wohnzimmer Nacht
+    - Wohnzimmer nacht
+    - Wohnzimmer dunkel
+  condition: []
+  action:
+  - service: script.turn_on
+    metadata: {}
+    data: {}
+    target:
+      entity_id: script.wohnzimmer_nacht
+  mode: single
+- id: '1706649110047'
+  alias: Voice Assist  - Wohnzimmer Sexy Light
+  description: Voice Assist  - Wohnzimmer Sexy Light
+  trigger:
+  - platform: conversation
+    command:
+    - Wohnzimmer Sexy Light
+  condition: []
+  action:
+  - service: script.turn_on
+    metadata: {}
+    data: {}
+    target:
+      entity_id: script.wohnzimmer_sexy_light
+  - service: tts.cloud_say
+    data:
+      cache: false
+      entity_id: media_player.sonos_arc_wohnzimmer
+      message: Viel Spaß!
+  mode: single
+- id: '1706653049390'
+  alias: Voice Assist - Wohnzimmer aus
+  description: Voice Assist - Wohnzimmer aus
+  trigger:
+  - platform: conversation
+    command: Wohnzimmer aus
+  condition: []
+  action:
+  - service: script.turn_on
+    metadata: {}
+    data: {}
+    target:
+      entity_id: script.wohnzimmer_aus
+  mode: single
+- id: '1706764930693'
+  alias: Voice Assist - Wohnzimmer Boost
+  description: Voice Assist - Wohnzimmer Boost
+  trigger:
+  - platform: conversation
+    command: Wohnzimmer Boost
+  condition: []
+  action:
+  - service: script.wohnzimmer_boost
+    metadata: {}
+    data: {}
+    response_variable: Wohnzimmer Boost eingeschaltet
+  mode: single
