@@ -2,4 +2,4 @@ philipp_home:
   name: Philipp Home
   entities:
     - device_tracker.sm_n975f
-    - sensor.philipp_smartphone_home
+    - sensor.zuhause_philipp_smartphone

@@ -208,3 +208,12 @@ cards:
             ulm_card_battery_battery_level_warning: 50
             ulm_card_battery_name: Thermostat
 
+
+        - type: 'custom:button-card'
+          template: card_battery
+          entity: sensor.tuersensor_werkstatt_batterie_prozent
+          variables:
+            ulm_card_battery_charger_type_entity_id: sensor.tuersensor_werkstatt_batterie_prozent
+            ulm_card_battery_battery_level_danger: 20
+            ulm_card_battery_battery_level_warning: 50
+            ulm_card_battery_name: Fenstersensor

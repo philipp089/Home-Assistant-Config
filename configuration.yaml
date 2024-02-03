@@ -85,474 +85,19 @@ input_select:
       - remote
       - kalender
 #
-# Conversation
+# CONVERSATION
 #
 conversation:
 #
 # SENSOREN
 #
 sensor:
-  #
-  # TAGESZEIT
-  #
+#
+# TAGESZEIT
+#
   - platform: time_date
     display_options:
       - "time"
-  #
-  # SENSOR NEXT ALARM MINUTES SMARTPHONE PHILIPP
-  #
-  - platform: template
-    sensors:
-      minutes_next_alarm_philipp:
-        friendly_name: "Minutes until Next Alarm Philipp Smartphone"
-        unit_of_measurement: "m"
-        #entity_id: sensor.time
-        value_template: >-
-          {% set dummy = states("sensor.time") %}
-          {{((states('sensor.sm_n975f_next_alarm')|as_timestamp|int - now()|as_timestamp|int)/60)|int}}
-        availability_template: "{{ not is_state('sensor.sm_n975f_next_alarm','unavailable') }}"
-        attribute_templates:
-          time: "{{ state_attr('sensor.sm_n975f_next_alarm','Local Time') }}"
- #
-  # HEIZTHERMOSTAT KÜCHE BATTERIE PROZENT
-  #
-  - platform: template
-    sensors:
-      heizthermostat_kueche_batterie_prozent:
-        friendly_name: "Heizthermostat Küche Batterie Prozent"
-        unit_of_measurement: "%"
-        value_template: >-
-          {% if is_state_attr('binary_sensor.000a1a49a12c97_low_bat', 'battery', 'High')   %}
-            100
-          {% elif is_state_attr('binary_sensor.000a1a49a12c97_low_bat', 'battery', 'Medium')   %}
-            66
-          {% else %}
-            33 
-          {% endif %}
-  #
-  # HEIZTHERMOSTAT SCHLAFZIMMER BATTERIE PROZENT
-  #
-  - platform: template
-    sensors:
-      heizthermostat_schlafzimmer_batterie_prozent:
-        friendly_name: "Heizthermostat Schlafzimmer Batterie Prozent"
-        unit_of_measurement: "%"
-        value_template: >-
-          {% if is_state_attr('binary_sensor.000a1a49a12cad_low_bat', 'battery', 'High')   %}
-            100
-          {% elif is_state_attr('binary_sensor.000a1a49a12cad_low_bat', 'battery', 'Medium')   %}
-            66
-          {% else %}
-            33 
-          {% endif %}
-  #
-  # HEIZTHERMOSTAT WOHNZIMMER BATTERIE PROZENT
-  #
-  - platform: template
-    sensors:
-      heizthermostat_wohnzimmer_batterie_prozent:
-        friendly_name: "Heizthermostat Wohnzimmer Batterie Prozent"
-        unit_of_measurement: "%"
-        value_template: >-
-          {% if is_state_attr('binary_sensor.000a1a49a12d0a_low_bat', 'battery', 'High')   %}
-            100
-          {% elif is_state_attr('binary_sensor.000a1a49a12d0a_low_bat', 'battery', 'Medium')   %}
-            66
-          {% else %}
-            33 
-          {% endif %}
-  #
-  # HEIZTHERMOSTAT WOHNZIMMER TV BATTERIE PROZENT
-  #
-  - platform: template
-    sensors:
-      heizthermostat_wohnzimmer_tv_batterie_prozent:
-        friendly_name: "Heizthermostat Wohnzimmer TV Batterie Prozent"
-        unit_of_measurement: "%"
-        value_template: >-
-          {% if is_state_attr('binary_sensor.000a1a49a12e89_low_bat', 'battery', 'High')   %}
-            100
-          {% elif is_state_attr('binary_sensor.000a1a49a12e89_low_bat', 'battery', 'Medium')   %}
-            66
-          {% else %}
-            33 
-          {% endif %}
-  #
-  # HEIZTHERMOSTAT BADEZIMMER BATTERIE PROZENT
-  #
-  - platform: template
-    sensors:
-      heizthermostat_badezimmer_batterie_prozent:
-        friendly_name: "Heizthermostat Badezimmer Batterie Prozent"
-        unit_of_measurement: "%"
-        value_template: >-
-          {% if is_state_attr('binary_sensor.000a1a49a13110_low_bat', 'battery', 'High')   %}
-            100
-          {% elif is_state_attr('binary_sensor.000a1a49a13110_low_bat', 'battery', 'Medium')   %}
-            66
-          {% else %}
-            33 
-          {% endif %}
-  #
-  # THERMOSTAT KÜCHE BATTERIE PROZENT
-  #
-  - platform: template
-    sensors:
-      thermostat_kueche_batterie_prozent:
-        friendly_name: "Thermostat Küche Batterie Prozent"
-        unit_of_measurement: "%"
-        value_template: >-
-          {% if is_state_attr('binary_sensor.000a9a49a6f2b9_low_bat', 'battery', 'High')   %}
-            100
-          {% elif is_state_attr('binary_sensor.000a9a49a6f2b9_low_bat', 'battery', 'Medium')   %}
-            66
-          {% else %}
-            33 
-          {% endif %}
-  #
-  # THERMOSTAT WERKSTATT BATTERIE PROZENT
-  #
-  - platform: template
-    sensors:
-      thermostat_werkstatt_batterie_prozent:
-        friendly_name: "Thermostat Werkstatt Batterie Prozent"
-        unit_of_measurement: "%"
-        value_template: >-
-          {% if is_state_attr('binary_sensor.000a9a49a6f8af_low_bat', 'battery', 'High')   %}
-            100
-          {% elif is_state_attr('binary_sensor.000a9a49a6f8af_low_bat', 'battery', 'Medium')   %}
-            66
-          {% else %}
-            33 
-          {% endif %}
-  #
-  # THERMOSTAT SCHLAFZIMMER BATTERIE PROZENT
-  #
-  - platform: template
-    sensors:
-      thermostat_schlafzimmer_batterie_prozent:
-        friendly_name: "Thermostat Schlafzimmer Batterie Prozent"
-        unit_of_measurement: "%"
-        value_template: >-
-          {% if is_state_attr('binary_sensor.000a9a49a6f8b1_low_bat', 'battery', 'High')   %}
-            100
-          {% elif is_state_attr('binary_sensor.000a9a49a6f8b1_low_bat', 'battery', 'Medium')   %}
-            66
-          {% else %}
-            33 
-          {% endif %}
-  #
-  # THERMOSTAT WOHNZIMMER BATTERIE PROZENT
-  #
-  - platform: template
-    sensors:
-      thermostat_wohnzimmer_batterie_prozent:
-        friendly_name: "Thermostat Wohnzimmer Batterie Prozent"
-        unit_of_measurement: "%"
-        value_template: >-
-          {% if is_state_attr('binary_sensor.000a9a49a6fc5e_low_bat', 'battery', 'High')   %}
-            100
-          {% elif is_state_attr('binary_sensor.000a9a49a6fc5e_low_bat', 'battery', 'Medium')   %}
-            66
-          {% else %}
-            33 
-          {% endif %}
-  #
-  # THERMOSTAT BADEZIMMER BATTERIE PROZENT
-  #
-  - platform: template
-    sensors:
-      thermostat_badezimmer_batterie_prozent:
-        friendly_name: "Thermostat Badezimmer Batterie Prozent"
-        unit_of_measurement: "%"
-        value_template: >-
-          {% if is_state_attr('binary_sensor.000a9a49a8a692_low_bat', 'battery', 'High')   %}
-            100
-          {% elif is_state_attr('binary_sensor.000a9a49a8a692_low_bat', 'battery', 'Medium')   %}
-            66
-          {% else %}
-            33 
-          {% endif %}
-  #
-  # LICHTSENSOR TERRASSE BATTERIE PROZENT
-  #
-  - platform: template
-    sensors:
-      lichtsensor_terrasse_batterie_prozent:
-        friendly_name: "Lichtsensor Terrasse Batterie Prozent"
-        unit_of_measurement: "%"
-        value_template: >-
-          {% if is_state_attr('binary_sensor.000d5a499af3e3_low_bat', 'battery', 'High')   %}
-            100
-          {% elif is_state_attr('binary_sensor.000d5a499af3e3_low_bat', 'battery', 'Medium')   %}
-            66
-          {% else %}
-            33 
-          {% endif %}
-  #
-  # TEMPERATURSENSOR TERRASSE BATTERIE PROZENT
-  #
-  - platform: template
-    sensors:
-      temperatursensor_terrasse_batterie_prozent:
-        friendly_name: "Temperatursensor Terrasse Batterie Prozent"
-        unit_of_measurement: "%"
-        value_template: >-
-          {% if is_state_attr('binary_sensor.000eda499c8410_low_bat', 'battery', 'High')   %}
-            100
-          {% elif is_state_attr('binary_sensor.000eda499c8410_low_bat', 'battery', 'Medium')   %}
-            66
-          {% else %}
-            33 
-          {% endif %}
-  #
-  # TEMPERATURSENSOR PFLANZSCHRANK BATTERIE PROZENT
-  #
-  - platform: template
-    sensors:
-      temperatursensor_pflanzschrank_batterie_prozent:
-        friendly_name: "Temperatursensor Pflanzschrank Batterie Prozent"
-        unit_of_measurement: "%"
-        value_template: >-
-          {% if is_state_attr('binary_sensor.000eda499c8411_low_bat', 'battery', 'High')   %}
-            100
-          {% elif is_state_attr('binary_sensor.000eda499c8411_low_bat', 'battery', 'Medium')   %}
-            66
-          {% else %}
-            33 
-          {% endif %}
-  #
-  # HEIZTHERMOSTAT WERKSTATT BATTERIE PROZENT
-  #
-  - platform: template
-    sensors:
-      heizthermostat_werkstatt_batterie_prozent:
-        friendly_name: "Heizthermostat Werkstatt Batterie Prozent"
-        unit_of_measurement: "%"
-        value_template: >-
-          {% if is_state_attr('binary_sensor.hmip_etrv_2_000a1a49a13405_low_bat', 'battery', 'High')   %}
-            100
-          {% elif is_state_attr('binary_sensor.hmip_etrv_2_000a1a49a13405_low_bat', 'Medium')   %}
-            66
-          {% else %}
-            33 
-          {% endif %}
-  #
-  # TÜRSENSOR WOHNZIMMER BATTERIE PROZENT
-  #
-  - platform: template
-    sensors:
-      tuersensor_wohnzimmer_batterie_prozent:
-        friendly_name: "Türsensor Wohnzimmer Batterie Prozent"
-        unit_of_measurement: "%"
-        value_template: >-
-          {% if is_state_attr('binary_sensor.hmip_swdo_pl_0023da49a3ae4e_low_bat', 'battery', 'High')   %}
-            100
-          {% elif is_state_attr('binary_sensor.hmip_swdo_pl_0023da49a3ae4e_low_bat', 'Medium')   %}
-            66
-          {% else %}
-            33 
-          {% endif %}
-  #
-  # TÜRSENSOR WERKSTATT BATTERIE PROZENT
-  #
-  - platform: template
-    sensors:
-      tuersensor_werkstatt_batterie_prozent:
-        friendly_name: "Türsensor Werkstatt Batterie Prozent"
-        unit_of_measurement: "%"
-        value_template: >-
-          {% if is_state_attr('binary_sensor.hmip_swdo_pl_0023da49a3ae62_low_bat', 'battery', 'High')   %}
-            100
-          {% elif is_state_attr('binary_sensor.hmip_swdo_pl_0023da49a3ae62_low_bat', 'Medium')   %}
-            66
-          {% else %}
-            33 
-          {% endif %}
-  #
-  # TÜRSENSOR FLUR EINGANGSTÜRE BATTERIE PROZENT
-  #
-  - platform: template
-    sensors:
-      tuersensor_flur_eingangstuere_batterie_prozent:
-        friendly_name: "Türsensor Flur Eingangstüre Batterie Prozent"
-        unit_of_measurement: "%"
-        value_template: >-
-          {% if is_state_attr('binary_sensor.0023da49a3aecb_low_bat', 'battery', 'High')   %}
-            100
-          {% elif is_state_attr('binary_sensor.0023da49a3aecb_low_bat', 'Medium')   %}
-            66
-          {% else %}
-            33 
-          {% endif %}
-  #
-  # SENSOR LOKALE UHRZEIT SMARTPHONE PHILIPP
-  #
-  - platform: template
-    sensors:
-      local_time_philipp_smartphone:
-        friendly_name: "Lokale Uhrzeit Philipp Smartphone"
-        value_template: "{{ state_attr('sensor.sm_n975f_next_alarm', 'Local Time') }}"
-        icon_template: "mdi:alarm"
-  #
-  # SENSOR LOKALE UHRZEIT LAST REBOOT SMARTPHONE PHILIPP
-  #
-  - platform: template
-    sensors:
-      last_reboot_local_time_philipp_smartphone:
-        friendly_name: "Last Reboot Lokale Uhrzeit Philipp Smartphone"
-        value_template: "{{ state_attr('sensor.sm_n975f_last_reboot', 'Local Time') }}"
-        icon_template: "mdi:sync"
-#
-#
-#
-  - platform: template
-    sensors:
-      philipp_smartphone_home: 
-        value_template: >-
-          {% if states('sensor.sm_n975f_wifi_connection') == "WeLANu-Reeves" %}
-            home
-          {% else %}
-            not_home
-          {% endif %}
-        friendly_name: 'Philipp Smartphone Home (SSID = WeLANu-Reeves)'
- #
-  # GITHUB INTEGRATION
-  #
-  #- platform: github
-  #  access_token: !secret github_ha_integration_personal_accesss_token
-  #  repositories:
-  #    - path: "philipp089/Home-Assistant-Config"
-  #
-  # WANDSCHALTER WERKSTATT kWh
-  #
-template:
-  - sensor:
-    - name: "Wandschalter Werkstatt Verbrauch"
-      unit_of_measurement: "kWh"
-      device_class: "energy"
-      state_class: "total_increasing"
-      state: "{{ state_attr('switch.00085a49a49be1', 'today_energy_kwh') }}"
-  #
-  # WANDSCHALTER WOHNZIMMER kWh
-  #
-  - sensor:
-    - name: "Wandschalter Wohnzimmer Verbrauch"
-      unit_of_measurement: "kWh"
-      device_class: "energy"
-      state_class: "total_increasing"
-      state: "{{ state_attr('switch.00085a49a49c0f', 'today_energy_kwh') }}"
-  #
-  # WANDSCHALTER SCHLAFZIMMER kWh
-  #
-  - sensor:
-    - name: "Wandschalter Schlafzimmer Verbrauch"
-      unit_of_measurement: "kWh"
-      device_class: "energy"
-      state_class: "total_increasing"
-      state: "{{ state_attr('switch.00085a49a49f84', 'today_energy_kwh') }}"
-  #
-  # WANDSCHALTER FLUR kWh
-  #
-  - sensor:
-    - name: "Wandschalter Flur Verbrauch"
-      unit_of_measurement: "kWh"
-      device_class: "energy"
-      state_class: "total_increasing"
-      state: "{{ state_attr('switch.00085a49a4b411', 'today_energy_kwh') }}"
-  #
-  # WANDSCHALTER KÜCHE kWh
-  #
-  - sensor:
-    - name: "Wandschalter Küche Verbrauch"
-      unit_of_measurement: "kWh"
-      device_class: "energy"
-      state_class: "total_increasing"
-      state: "{{ state_attr('switch.hmip_bsm_00085a49a49be7', 'today_energy_kwh') }}"
-  #
-  # WANDSCHALTER DACHTERRASSE kWh
-  #
-  - sensor:
-    - name: "Wandschalter Dachterrasse Verbrauch"
-      unit_of_measurement: "kWh"
-      device_class: "energy"
-      state_class: "total_increasing"
-      state: "{{ state_attr('switch.hmip_bsm_00085a49a49c91', 'today_energy_kwh') }}"
-  #
-  # WANDSCHALTER BADEZIMMER kWh
-  #    
-  - sensor:
-    - name: "Wandschalter Badezimmer Verbrauch"
-      unit_of_measurement: "kWh"
-      device_class: "energy"
-      state_class: "total_increasing"
-      state: "{{ state_attr('switch.hmip_bsm_00085a49a4a57e', 'today_energy_kwh') }}"
-#
-#
-###LIGHT GROUPS###
-#
-#
-#
-# WOHNZIMMER DECKENLEUCHTE LIGHT-GROUP
-#
-light:
-  - platform: group
-    name: Lichtgruppe Wohnzimmer Deckenleuchte
-    entities:
-      - light.extended_color_light_3
-      - light.extended_color_light_4
-      - light.extended_color_light_6
-  #
-  # WOHNZIMMER GESAMT LIGHT-GROUP
-  #
-  - platform: group
-    name: Lichtgruppe Wohnzimmer gesamt
-    entities:
-      - light.extended_color_light_3
-      - light.extended_color_light_4
-      - light.extended_color_light_6
-      - light.licht_wohnzimmer_kleine_lampe
-      - light.dimmable_light_5
-      - light.extended_color_light_23
-
-  #
-  # FLUR LIGHT-GROUPS
-  #
-  - platform: group
-    name: Lichtgruppe Flur Deckenleuchte
-    entities:
-      - light.color_temperature_light_2
-      - light.color_temperature_light_14
-      - light.color_temperature_light_15
-  #
-  # WERKSTATT LIGHT-GROUPS
-  #
-  - platform: group
-    name: Lichtgruppe Werkstatt Deckenleuchte
-    entities:
-      - light.color_temperature_light_7
-      - light.color_temperature_light_8
-      - light.color_temperature_light_9
-      - light.color_temperature_light_10
-      - light.color_temperature_light_11
-      - light.color_temperature_light_12
-  #
-  # BADEZIMMER LIGHT-GROUPS
-  #
-  - platform: group
-    name: Lichtgruppe Badezimmer Spiegelbeleuchtung
-    entities:
-      - light.color_temperature_light_16
-      - light.color_temperature_light_17
-  #
-  # BADEZIMMER GESAMT LIGHT-GROUP
-  #
-  - platform: group
-    name: Lichtgruppe Badezimmer gesamt
-    entities:
-      - light.extended_color_light_21
-      - light.color_temperature_light_16
-      - light.color_temperature_light_17
 #
 # HOMEMATIC INTEGRATION
 #
@@ -570,12 +115,12 @@ homematic:
       resolvenames: "json"
       username: !secret homematic_username
       password: !secret homematic_password
-    #    HomeMatic Wired:
-    #      host: 192.168.178.37
-    #      port: 2000
-    #      resolvenames: json
-    #      username: !secret homematic_username
-    #      password: !secret homematic_password
+#    HomeMatic Wired:
+#      host: 192.168.178.37
+#      port: 2000
+#      resolvenames: json
+#      username: !secret homematic_username
+#      password: !secret homematic_password
     groups:
       host: 192.168.178.37
       port: 9292
@@ -589,6 +134,72 @@ homematic:
       port: 2001
       username: !secret homematic_username
       password: !secret homematic_password
+#
+#
+###LIGHT GROUPS###
+#
+#
+#
+# WOHNZIMMER DECKENLEUCHTE LIGHT-GROUP
+#
+light:
+  - platform: group
+    name: Lichtgruppe Wohnzimmer Deckenleuchte
+    entities:
+      - light.extended_color_light_3
+      - light.extended_color_light_4
+      - light.extended_color_light_6
+#
+# WOHNZIMMER GESAMT LIGHT-GROUP
+#
+  - platform: group
+    name: Lichtgruppe Wohnzimmer gesamt
+    entities:
+      - light.extended_color_light_3
+      - light.extended_color_light_4
+      - light.extended_color_light_6
+      - light.licht_wohnzimmer_kleine_lampe
+      - light.dimmable_light_5
+      - light.extended_color_light_23
+
+#
+# FLUR LIGHT-GROUPS
+#
+  - platform: group
+    name: Lichtgruppe Flur Deckenleuchte
+    entities:
+      - light.color_temperature_light_2
+      - light.color_temperature_light_14
+      - light.color_temperature_light_15
+#
+# WERKSTATT LIGHT-GROUPS
+#
+  - platform: group
+    name: Lichtgruppe Werkstatt Deckenleuchte
+    entities:
+      - light.color_temperature_light_7
+      - light.color_temperature_light_8
+      - light.color_temperature_light_9
+      - light.color_temperature_light_10
+      - light.color_temperature_light_11
+      - light.color_temperature_light_12
+#
+# BADEZIMMER LIGHT-GROUPS
+#
+  - platform: group
+    name: Lichtgruppe Badezimmer Spiegelbeleuchtung
+    entities:
+      - light.color_temperature_light_16
+      - light.color_temperature_light_17
+#
+# BADEZIMMER GESAMT LIGHT-GROUP
+#
+  - platform: group
+    name: Lichtgruppe Badezimmer gesamt
+    entities:
+      - light.extended_color_light_21
+      - light.color_temperature_light_16
+      - light.color_temperature_light_17
 #
 # CIRCADIAN LIGHTING
 #
@@ -606,9 +217,9 @@ switch:
       - light.extended_color_light_4
       - light.extended_color_light_3
       - light.extended_color_light_23
-      #
-      # CIRCADIAN LIGHTING SCHLAFZIMMER
-      #
+#
+# CIRCADIAN LIGHTING SCHLAFZIMMER
+#
   - platform: circadian_lighting
     name: "Schlafzimmer"
     lights_ct:
@@ -616,9 +227,9 @@ switch:
       - light.extended_color_light_2
       - light.color_temperature_light_18
       - light.licht_schlafzimmer_standleuchte
-      #
-      # CIRCADIAN LIGHTING WERKSTATT
-      #
+#
+# CIRCADIAN LIGHTING WERKSTATT
+#
   - platform: circadian_lighting
     name: "Werkstatt"
     lights_ct:
@@ -628,48 +239,24 @@ switch:
       - light.color_temperature_light_10
       - light.color_temperature_light_11
       - light.color_temperature_light_12
-      #
-      # CIRCADIAN LIGHTING BADEZIMMER
-      #
+#
+# CIRCADIAN LIGHTING BADEZIMMER
+#
   - platform: circadian_lighting
     name: "Badezimmer"
     lights_ct:
       - light.extended_color_light_21
       - light.color_temperature_light_16
       - light.color_temperature_light_17
-      #
-      # CIRCADIAN LIGHTING FLUR
-      #
+#
+# CIRCADIAN LIGHTING FLUR
+#
   - platform: circadian_lighting
     name: "Flur"
     lights_ct:
       - light.color_temperature_light_2
       - light.color_temperature_light_14
       - light.color_temperature_light_15
-#
-# TIMER
-#
-timer:
-  bewegungsmelder_flur:
-    duration: "00:05:00"
-    name: Timer Bewegungsmelder Flur
-    icon: "mdi:alarm"
-  bewegungsmelder_kueche:
-    duration: "00:03:00"
-    name: Timer Bewegungsmelder Küche
-    icon: "mdi:alarm"
-  bewegungsmelder_werkstatt:
-    duration: "00:03:00"
-    name: Timer Bewegungsmelder Werkstatt
-    icon: "mdi:alarm"
-  bewegungsmelder_schlafzimmer:
-    duration: "00:03:00"
-    name: Timer Bewegungsmelder Schlafzimmer
-    icon: "mdi:alarm"
-  bewegungsmelder_wohnzimmer:
-    duration: "00:03:00"
-    name: Timer Bewegungsmelder Wohnzimmer
-    icon: "mdi:alarm"
 #
 # API INTEGRATION
 #
@@ -689,9 +276,9 @@ notify:
   - platform: telegram
     name: Telegram Smart Home Alerts Bot
     chat_id: !secret telegram_chat
-  #
-  # RASPBERRY CPU TEMPERATURE
-  #
+#
+# RASPBERRY CPU TEMPERATURE
+#
 command_line:
   - sensor:
       name: CPU Temperature
