@@ -3,29 +3,32 @@ icon: "mdi:spray-bottle"
 theme: "minimalist-desktop"
 path: "Grocy"
 cards:
-  - type: "custom:button-card"
-    template: chip_back
-    variables:
-      ulm_chip_back_path: /ui-lovelace-minimalist/home
+  - type: "vertical-stack"
+    cards:
 
-  - type: custom:grocy-chores-card
-    entity:
-      - sensor.grocy_chores
-      # - sensor.grocy_tasks
-    custom_translation:
-      Overdue: "Überfällig"
-      Yesterday: "Gestern"
-      Tomorrow: "Morgen"
-      Today: "Heute"
-      Due: "Fälligkeit"
-      Assigned to: "Zugewiesen an"
-      Last tracked: "Zuletzt ausgeführt"
-      Track: "Erledigt"
-      by: "von"
-      Add task: "Füge eine Aufgabe hinzu"
-      Tracked: "Erledigt"
-    custom_sort: name
-    use_24_hours: true
-    use_long_date: true
-    show_divider: true
+    - type: "custom:button-card"
+      template: chip_back
+      variables:
+        ulm_chip_back_path: /ui-lovelace-minimalist/home
+
+    - type: custom:grocy-chores-card
+      entity:
+        - sensor.grocy_chores
+        # - sensor.grocy_tasks
+      custom_translation:
+        Overdue: "Überfällig"
+        Yesterday: "Gestern"
+        Tomorrow: "Morgen"
+        Today: "Heute"
+        Due: "Fälligkeit"
+        Assigned to: "Zugewiesen an"
+        Last tracked: "Zuletzt ausgeführt"
+        Track: "Erledigt"
+        by: "von"
+        Add task: "Füge eine Aufgabe hinzu"
+        Tracked: "Erledigt"
+      custom_sort: name
+      use_24_hours: true
+      use_long_date: true
+      show_divider: true
 

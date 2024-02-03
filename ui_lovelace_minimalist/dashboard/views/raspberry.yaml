@@ -3,90 +3,93 @@ icon: "mdi:raspberry-pi"
 theme: "minimalist-desktop"
 path: "Raspberry"
 cards:
-  - type: "custom:button-card"
-    template: chip_back
-    variables:
-      ulm_chip_back_path: /ui-lovelace-minimalist/home
-
-  - type: 'custom:button-card'
-    template: card_title
-    name: Raspberry Pi
-    label: Hardware
-
-  - type: "horizontal-stack"
+  - type: "vertical-stack"
     cards:
-      - type: 'custom:button-card'
-        template: card_graph
-        entity: sensor.processor_use
-        variables:
-          ulm_card_graph_color: "var(--google-green)"
-          ulm_card_graph_name: CPU-Auslastung
-          ulm_card_graph_entity: sensor.processor_use
 
-          ulm_card_graph_type: fill
-          ulm_card_graph_hours: 24
-          ulm_card_graph_group_by: interval
-          ulm_card_graph_line_width: 6
-
-      - type: 'custom:button-card'
-        template: card_graph
-        entity: sensor.processor_temperature
-        variables:
-          ulm_card_graph_color: "var(--google-red)"
-          ulm_card_graph_name: CPU-Temperatur
-          ulm_card_graph_entity: sensor.processor_temperature
-
-          ulm_card_graph_type: fill
-          ulm_card_graph_hours: 24
-          ulm_card_graph_group_by: interval
-          ulm_card_graph_line_width: 6
-
-  - type: "horizontal-stack"
-    cards:
-      - type: 'custom:button-card'
-        template: card_graph
-        entity: sensor.memory_use_percent
-        variables:
-          ulm_card_graph_color: "var(--google-yellow)"
-          ulm_card_graph_name: Speicher-Auslastung
-          ulm_card_graph_entity: sensor.memory_use_percent
-
-          ulm_card_graph_type: fill
-          ulm_card_graph_hours: 24
-          ulm_card_graph_group_by: interval
-          ulm_card_graph_line_width: 6
-
-      - type: 'custom:button-card'
-        template: card_graph
-        entity: sensor.disk_use_percent
-        variables:
-          ulm_card_graph_color: "var(--google-red)"
-          ulm_card_graph_name: HDD-Usage
-          ulm_card_graph_entity: sensor.disk_use_percent
-
-          ulm_card_graph_type: fill
-          ulm_card_graph_hours: 24
-          ulm_card_graph_group_by: interval
-          ulm_card_graph_line_width: 6
-
-
-  - type: 'custom:button-card'
-    template: card_title
-    label: Home Assistant
-
-
-  - type: "horizontal-stack"
-    cards:
-    - type: 'custom:button-card'
-      template: card_generic_swap
-      entity: sensor.home_assistant_operating_system_version
+    - type: "custom:button-card"
+      template: chip_back
       variables:
-        ulm_card_generic_swap_color: "var(--google-red)"
-        ulm_card_generic_swap_name: HA Version
+        ulm_chip_back_path: /ui-lovelace-minimalist/home
 
     - type: 'custom:button-card'
-      template: card_generic_swap
-      entity: sensor.sm_n975f_current_version
-      variables:
-        ulm_card_generic_swap_color: "var(--google-red)"
-        ulm_card_generic_swap_name: App Version
+      template: card_title
+      name: Raspberry Pi
+      label: Hardware
+
+    - type: "horizontal-stack"
+      cards:
+        - type: 'custom:button-card'
+          template: card_graph
+          entity: sensor.processor_use
+          variables:
+            ulm_card_graph_color: "var(--google-green)"
+            ulm_card_graph_name: CPU-Auslastung
+            ulm_card_graph_entity: sensor.processor_use
+
+            ulm_card_graph_type: fill
+            ulm_card_graph_hours: 24
+            ulm_card_graph_group_by: interval
+            ulm_card_graph_line_width: 6
+
+        - type: 'custom:button-card'
+          template: card_graph
+          entity: sensor.processor_temperature
+          variables:
+            ulm_card_graph_color: "var(--google-red)"
+            ulm_card_graph_name: CPU-Temperatur
+            ulm_card_graph_entity: sensor.processor_temperature
+
+            ulm_card_graph_type: fill
+            ulm_card_graph_hours: 24
+            ulm_card_graph_group_by: interval
+            ulm_card_graph_line_width: 6
+
+    - type: "horizontal-stack"
+      cards:
+        - type: 'custom:button-card'
+          template: card_graph
+          entity: sensor.memory_use_percent
+          variables:
+            ulm_card_graph_color: "var(--google-yellow)"
+            ulm_card_graph_name: Speicher-Auslastung
+            ulm_card_graph_entity: sensor.memory_use_percent
+
+            ulm_card_graph_type: fill
+            ulm_card_graph_hours: 24
+            ulm_card_graph_group_by: interval
+            ulm_card_graph_line_width: 6
+
+        - type: 'custom:button-card'
+          template: card_graph
+          entity: sensor.disk_use_percent
+          variables:
+            ulm_card_graph_color: "var(--google-red)"
+            ulm_card_graph_name: HDD-Usage
+            ulm_card_graph_entity: sensor.disk_use_percent
+
+            ulm_card_graph_type: fill
+            ulm_card_graph_hours: 24
+            ulm_card_graph_group_by: interval
+            ulm_card_graph_line_width: 6
+
+
+    - type: 'custom:button-card'
+      template: card_title
+      label: Home Assistant
+
+
+    - type: "horizontal-stack"
+      cards:
+      - type: 'custom:button-card'
+        template: card_generic_swap
+        entity: sensor.home_assistant_operating_system_version
+        variables:
+          ulm_card_generic_swap_color: "var(--google-red)"
+          ulm_card_generic_swap_name: HA Version
+
+      - type: 'custom:button-card'
+        template: card_generic_swap
+        entity: sensor.sm_n975f_current_version
+        variables:
+          ulm_card_generic_swap_color: "var(--google-red)"
+          ulm_card_generic_swap_name: App Version

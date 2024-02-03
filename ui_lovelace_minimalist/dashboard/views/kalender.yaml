@@ -3,21 +3,24 @@ icon: "mdi:calendar"
 theme: "minimalist-desktop"
 path: "Kalender"
 cards:
-  - type: "custom:button-card"
-    template: chip_back
-    variables:
-      ulm_chip_back_path: /ui-lovelace-minimalist/home
+  - type: "vertical-stack"
+    cards:
 
-  - type: 'custom:button-card'
-    template: card_title
-    name: "Kalender"
+    - type: "custom:button-card"
+      template: chip_back
+      variables:
+        ulm_chip_back_path: /ui-lovelace-minimalist/home
 
-  - type: "custom:atomic-calendar-revive"
-    entities:
-      - entity: calendar.philipp
-        titleColor: red
-        whitelist: "word1,word2"
-    style: |
-      ha-card {
-        box-shadow: 1px 1px 1px 1px var(--divider-color);
-      }
+    - type: 'custom:button-card'
+      template: card_title
+      name: "Kalender"
+
+    - type: "custom:atomic-calendar-revive"
+      entities:
+        - entity: calendar.philipp
+          titleColor: red
+          whitelist: "word1,word2"
+      style: |
+        ha-card {
+          box-shadow: 1px 1px 1px 1px var(--divider-color);
+        }

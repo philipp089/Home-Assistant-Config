@@ -3,325 +3,327 @@ icon: mdi:bed-king-outline
 theme: "minimalist-desktop"
 path: "Schlafzimmer"
 cards:
-  # - type: "custom:button-card"
-  #   template: chip_back
-  #   variables:
-  #     ulm_chip_back_path: /ui-lovelace-minimalist/home
-
-  - type: 'custom:button-card'
-    template: card_title
-    name: "Schlafzimmer"
-    label: "Szenen"
-
-  - type: "custom:button-card"
-    template: "card_scenes_welcome"
-    variables:
-      entity_1:
-        entity_id: "script.schlafzimmer_hell"
-        icon: "mdi:weather-sunny"
-        name: "HELL"
-        color: "yellow"
-      entity_2:
-        entity_id: "script.schlafzimmer_medium"
-        icon: "mdi:weather-sunset-down"
-        name: "MEDIUM"
-        color: "red"
-      entity_3:
-        entity_id: "script.schlafzimmer_nacht"
-        icon: "mdi:weather-night"
-        name: "NACHT"
-        color: "blue"
-      entity_4:
-        entity_id: "script.schlafzimmer_aus"
-        icon: "mdi:power"
-        name: "AUS"
-        color: "grey"
-      entity_5:
-        entity_id: "switch.circadian_lighting_schlafzimmer"
-        icon: "mdi:sun-clock-outline" 
-        name: "TAG" 
-        color: "yellow"
-      entity_6:
-        entity_id: "script.schlafzimmer_konzentration"
-        icon: "mdi:brain" 
-        name: "KONZ." 
-        color: "blue"
-      entity_7:
-        entity_id: "script.schlafzimmer_sexy_light"
-        icon: "mdi:chili-mild" 
-        name: "SEXY" 
-        color: "red"
-
-  - type: 'custom:button-card'
-    template: card_title
-    label: "Medien"
-
-  - type: "custom:button-card"
-    template: card_media_player
-    entity: media_player.chromecast_schlafzimmer
-    variables:
-      ulm_card_media_player_name : Chromecast
-      ulm_card_media_player_enable_art: true
-      ulm_card_media_player_enable_controls: false
-      ulm_card_media_player_enable_volume_buttons: false
-      ulm_card_media_player_color: green
-      ulm_card_media_player_power_button: true
-      ulm_card_media_player_collapsible: true
-      ulm_card_media_player_more_info: true
-
-  - type: "custom:button-card"
-    template: card_media_player
-    entity: media_player.sonos_one_schlafzimmer
-    variables:
-      ulm_card_media_player_name : Sonos One
-      ulm_card_media_player_enable_art: true
-      ulm_card_media_player_enable_controls: true
-      ulm_card_media_player_enable_volume_buttons: true
-      ulm_card_media_player_color: blue
-      ulm_card_media_player_power_button: true
-      ulm_card_media_player_collapsible: true
-      ulm_card_media_player_more_info: true
-      ulm_input_select_option: sonos_schlafzimmer
-      ulm_input_select: input_select.minimalist_ui_switch
-
-  - type: 'custom:button-card'
-    template: card_title
-    label: "Klima"
-
-  - type: "custom:button-card"
-    template: card_thermostat
-    entity: climate.000a1a49a12cad
-    variables:
-      ulm_card_thermostat_name: "Thermostat"
-      ulm_card_thermostat_enable_collapse: true
-      ulm_card_thermostat_enable_controls: true
-      ulm_card_thermostat_enable_popup: true
-      ulm_card_thermostat_enable_hvac_modes: true
-
-  - type: "horizontal-stack"
+  - type: "vertical-stack"
     cards:
-      - type: 'custom:button-card'
-        template: card_graph
-        entity: sensor.000a9a49a6f8b1_actual_temperature
-        variables:
-          ulm_card_graph_color: "var(--google-red)"
-          ulm_card_graph_name: Temperatur
-          ulm_card_graph_entity: sensor.000a9a49a6f8b1_actual_temperature
+    - type: "custom:button-card"
+      template: chip_back
+      variables:
+        ulm_chip_back_path: /ui-lovelace-minimalist/home
 
-          ulm_card_graph_type: fill
-          ulm_card_graph_hours: 24
-          ulm_card_graph_group_by: interval
-          ulm_card_graph_line_width: 6
+    - type: 'custom:button-card'
+      template: card_title
+      name: "Schlafzimmer"
+      label: "Szenen"
 
-      - type: 'custom:button-card'
-        template: card_graph
-        entity: sensor.000a9a49a6f8b1_humidity
-        variables:
-          ulm_card_graph_color: "var(--google-blue)"
-          ulm_card_graph_name: Luftfeuchte
-          ulm_card_graph_entity: sensor.000a9a49a6f8b1_humidity
+    - type: "custom:button-card"
+      template: "card_scenes_welcome"
+      variables:
+        entity_1:
+          entity_id: "script.schlafzimmer_hell"
+          icon: "mdi:weather-sunny"
+          name: "HELL"
+          color: "yellow"
+        entity_2:
+          entity_id: "script.schlafzimmer_medium"
+          icon: "mdi:weather-sunset-down"
+          name: "MEDIUM"
+          color: "red"
+        entity_3:
+          entity_id: "script.schlafzimmer_nacht"
+          icon: "mdi:weather-night"
+          name: "NACHT"
+          color: "blue"
+        entity_4:
+          entity_id: "script.schlafzimmer_aus"
+          icon: "mdi:power"
+          name: "AUS"
+          color: "grey"
+        entity_5:
+          entity_id: "switch.circadian_lighting_schlafzimmer"
+          icon: "mdi:sun-clock-outline" 
+          name: "TAG" 
+          color: "yellow"
+        entity_6:
+          entity_id: "script.schlafzimmer_konzentration"
+          icon: "mdi:brain" 
+          name: "KONZ." 
+          color: "blue"
+        entity_7:
+          entity_id: "script.schlafzimmer_sexy_light"
+          icon: "mdi:chili-mild" 
+          name: "SEXY" 
+          color: "red"
 
-          ulm_card_graph_type: fill
-          ulm_card_graph_hours: 24
-          ulm_card_graph_group_by: interval
-          ulm_card_graph_line_width: 6
+    - type: 'custom:button-card'
+      template: card_title
+      label: "Medien"
 
-  - type: 'custom:button-card'
-    template: card_title
-    label: "Lichter"
+    - type: "custom:button-card"
+      template: card_media_player
+      entity: media_player.chromecast_schlafzimmer
+      variables:
+        ulm_card_media_player_name : Chromecast
+        ulm_card_media_player_enable_art: true
+        ulm_card_media_player_enable_controls: false
+        ulm_card_media_player_enable_volume_buttons: false
+        ulm_card_media_player_color: green
+        ulm_card_media_player_power_button: true
+        ulm_card_media_player_collapsible: true
+        ulm_card_media_player_more_info: true
 
-  - type: "horizontal-stack"
-    cards:
-      - type: 'custom:button-card'
-        template: card_generic_swap
-        entity: switch.00085a49a49f84
-        variables:
-          ulm_card_generic_swap_name:  Wandschalter
-          ulm_card_generic_swap_color: green
+    - type: "custom:button-card"
+      template: card_media_player
+      entity: media_player.sonos_one_schlafzimmer
+      variables:
+        ulm_card_media_player_name : Sonos One
+        ulm_card_media_player_enable_art: true
+        ulm_card_media_player_enable_controls: true
+        ulm_card_media_player_enable_volume_buttons: true
+        ulm_card_media_player_color: blue
+        ulm_card_media_player_power_button: true
+        ulm_card_media_player_collapsible: true
+        ulm_card_media_player_more_info: true
+        ulm_input_select_option: sonos_schlafzimmer
+        ulm_input_select: input_select.minimalist_ui_switch
 
-      - type: "custom:button-card"
-        template: card_light
-        entity: light.color_temperature_light_18
-        variables:
-          ulm_card_light_name: Deckenleuchte
-          ulm_card_light_enable_slider: false
-          ulm_card_light_enable_color: false
-          ulm_card_light_force_background_color: false
-          ulm_card_light_icon: mdi:ceiling-light-outline
+    - type: 'custom:button-card'
+      template: card_title
+      label: "Klima"
 
-  - type: "horizontal-stack"
-    cards:
-      - type: 'custom:button-card'
-        template: card_light
-        entity: light.extended_color_light_2
-        variables:
-          ulm_card_light_name: Philips Hue
-          ulm_card_light_enable_slider: false
-          ulm_card_light_enable_color: false
-          ulm_card_light_force_background_color: false
-          ulm_card_light_icon: mdi:wall-sconce-round-variant-outline
+    - type: "custom:button-card"
+      template: card_thermostat
+      entity: climate.000a1a49a12cad
+      variables:
+        ulm_card_thermostat_name: "Thermostat"
+        ulm_card_thermostat_enable_collapse: true
+        ulm_card_thermostat_enable_controls: true
+        ulm_card_thermostat_enable_popup: true
+        ulm_card_thermostat_enable_hvac_modes: true
 
-      - type: "custom:button-card"
-        template: card_light
-        entity: light.licht_schlafzimmer_standleuchte
-        variables: 
-          ulm_card_light_name: Stehlampe
-          ulm_card_light_enable_slider: false
-          ulm_card_light_enable_color: false
-          ulm_card_light_force_background_color: false
-          ulm_card_light_icon: mdi:floor-lamp-outline
+    - type: "horizontal-stack"
+      cards:
+        - type: 'custom:button-card'
+          template: card_graph
+          entity: sensor.000a9a49a6f8b1_actual_temperature
+          variables:
+            ulm_card_graph_color: "var(--google-red)"
+            ulm_card_graph_name: Temperatur
+            ulm_card_graph_entity: sensor.000a9a49a6f8b1_actual_temperature
 
-  - type: "horizontal-stack"
-    cards:
-      - type: 'custom:button-card'
-        template: card_light
-        entity: light.extended_color_light_3_2
-        variables:
-          ulm_card_light_name: Nachttisch links
-          ulm_card_light_enable_slider: false
-          ulm_card_light_enable_color: false
-          ulm_card_light_force_background_color: false
-          ulm_card_light_icon: mdi:lamp-outline
+            ulm_card_graph_type: fill
+            ulm_card_graph_hours: 24
+            ulm_card_graph_group_by: interval
+            ulm_card_graph_line_width: 6
 
-      - type: 'custom:button-card'
-        template: card_light
-        entity: light.extended_color_light_3_2
-        variables:
-          ulm_card_light_name: Nachttisch rechts
-          ulm_card_light_enable_slider: false
-          ulm_card_light_enable_color: false
-          ulm_card_light_force_background_color: false
-          ulm_card_light_icon: mdi:lamp-outline
+        - type: 'custom:button-card'
+          template: card_graph
+          entity: sensor.000a9a49a6f8b1_humidity
+          variables:
+            ulm_card_graph_color: "var(--google-blue)"
+            ulm_card_graph_name: Luftfeuchte
+            ulm_card_graph_entity: sensor.000a9a49a6f8b1_humidity
 
-  - type: 'custom:button-card'
-    template: card_title
-    label: "Steckdosen"
+            ulm_card_graph_type: fill
+            ulm_card_graph_hours: 24
+            ulm_card_graph_group_by: interval
+            ulm_card_graph_line_width: 6
 
-  - type: "horizontal-stack"
-    cards:
-      - type: 'custom:button-card'
-        template: card_power_outlet
-        entity: switch.steckdose_schlafzimmer_fernseher
-        variables:
-          ulm_card_power_outlet_name:  Fernseher
-          ulm_card_power_outlet_color: blue
+    - type: 'custom:button-card'
+      template: card_title
+      label: "Lichter"
 
-      - type: "custom:button-card"
-        template: card_power_outlet
-        entity: switch.schlafzimmer_medienwand
-        variables:
-          ulm_card_power_outlet_name:  Medienwand
-          ulm_card_power_outlet_color: blue
-          ulm_card_power_outlet_consumption_sensor: sensor.schlafzimmer_medienwand_current_consumption
+    - type: "horizontal-stack"
+      cards:
+        - type: 'custom:button-card'
+          template: card_generic_swap
+          entity: switch.00085a49a49f84
+          variables:
+            ulm_card_generic_swap_name:  Wandschalter
+            ulm_card_generic_swap_color: green
 
-  - type: "horizontal-stack"
-    cards:
-      - type: 'custom:button-card'
-        template: card_power_outlet
-        entity: switch.steckdose_waeschetrockner
-        variables:
-          ulm_card_power_outlet_name:  Wäschetrockner
-          ulm_card_power_outlet_color: blue
-          ulm_card_power_outlet_consumption_sensor: sensor.steckdose_waeschetrockner_current_consumption
+        - type: "custom:button-card"
+          template: card_light
+          entity: light.color_temperature_light_18
+          variables:
+            ulm_card_light_name: Deckenleuchte
+            ulm_card_light_enable_slider: false
+            ulm_card_light_enable_color: false
+            ulm_card_light_force_background_color: false
+            ulm_card_light_icon: mdi:ceiling-light-outline
 
-  - type: 'custom:button-card'
-    template: card_title
-    label: "Skripte"
+    - type: "horizontal-stack"
+      cards:
+        - type: 'custom:button-card'
+          template: card_light
+          entity: light.extended_color_light_2
+          variables:
+            ulm_card_light_name: Philips Hue
+            ulm_card_light_enable_slider: false
+            ulm_card_light_enable_color: false
+            ulm_card_light_force_background_color: false
+            ulm_card_light_icon: mdi:wall-sconce-round-variant-outline
 
-  - type: "horizontal-stack"
-    cards:
-      - type: 'custom:button-card'
-        template: card_power_script
-        variables:
-          ulm_card_script_title: Fernseher an
-          ulm_card_script_icon: 'mdi:power'
-        tap_action:
-          action: call-service
-          service: script.turn_on
-          service_data:
-            entity_id: script.sony_bravia_power_on
+        - type: "custom:button-card"
+          template: card_light
+          entity: light.licht_schlafzimmer_standleuchte
+          variables: 
+            ulm_card_light_name: Stehlampe
+            ulm_card_light_enable_slider: false
+            ulm_card_light_enable_color: false
+            ulm_card_light_force_background_color: false
+            ulm_card_light_icon: mdi:floor-lamp-outline
 
-      - type: 'custom:button-card'
-        template: card_power_script
-        variables:
-          ulm_card_script_title: Fernseher aus
-          ulm_card_script_icon: 'mdi:power'
-        tap_action:
-          action: call-service
-          service: script.turn_on
-          service_data:
-            entity_id: script.sony_bravia_power_off
+    - type: "horizontal-stack"
+      cards:
+        - type: 'custom:button-card'
+          template: card_light
+          entity: light.extended_color_light_3_2
+          variables:
+            ulm_card_light_name: Nachttisch links
+            ulm_card_light_enable_slider: false
+            ulm_card_light_enable_color: false
+            ulm_card_light_force_background_color: false
+            ulm_card_light_icon: mdi:lamp-outline
 
-  - type: "horizontal-stack"
-    cards:
-      - type: "custom:button-card"
-        template: card_boost_script
-        variables:
-          ulm_card_script_title: Boost
-          ulm_card_script_icon: 'mdi:fire'
-        tap_action:
-          action: call-service
-          service: script.turn_on
-          service_data:
-            entity_id: script.schlafzimmer_boost
+        - type: 'custom:button-card'
+          template: card_light
+          entity: light.extended_color_light_3_2
+          variables:
+            ulm_card_light_name: Nachttisch rechts
+            ulm_card_light_enable_slider: false
+            ulm_card_light_enable_color: false
+            ulm_card_light_force_background_color: false
+            ulm_card_light_icon: mdi:lamp-outline
 
-  - type: 'custom:button-card'
-    template: card_title
-    label: "Sensoren"
+    - type: 'custom:button-card'
+      template: card_title
+      label: "Steckdosen"
 
-  - type: "horizontal-stack"
-    cards:
-      - type: 'custom:button-card'
-        template: card_binary_sensor_alert
-        variables:
-          ulm_card_binary_sensor_alert: true
-          ulm_card_binary_sensor_alert_show_last_changed: true
-          ulm_card_binary_sensor_alert_name: Bewegung
-          ulm_card_binary_sensor_alert_color: red
-        entity: binary_sensor.presence_3
+    - type: "horizontal-stack"
+      cards:
+        - type: 'custom:button-card'
+          template: card_power_outlet
+          entity: switch.steckdose_schlafzimmer_fernseher
+          variables:
+            ulm_card_power_outlet_name:  Fernseher
+            ulm_card_power_outlet_color: blue
 
-      - type: 'custom:button-card'
-        template: card_binary_sensor_alert
-        variables:
-          ulm_card_binary_sensor_alert: true
-          ulm_card_binary_sensor_alert_show_last_changed: true
-          ulm_card_binary_sensor_alert_name: Kamera
-          ulm_card_binary_sensor_alert_color: red
-        entity: binary_sensor.schlafzimmer_motion_2
+        - type: "custom:button-card"
+          template: card_power_outlet
+          entity: switch.schlafzimmer_medienwand
+          variables:
+            ulm_card_power_outlet_name:  Medienwand
+            ulm_card_power_outlet_color: blue
+            ulm_card_power_outlet_consumption_sensor: sensor.schlafzimmer_medienwand_current_consumption
 
-  - type: 'custom:button-card'
-    template: card_title
-    label: "Batterien"
+    - type: "horizontal-stack"
+      cards:
+        - type: 'custom:button-card'
+          template: card_power_outlet
+          entity: switch.steckdose_waeschetrockner
+          variables:
+            ulm_card_power_outlet_name:  Wäschetrockner
+            ulm_card_power_outlet_color: blue
+            ulm_card_power_outlet_consumption_sensor: sensor.steckdose_waeschetrockner_current_consumption
 
-  - type: "horizontal-stack"
-    cards:
-      - type: 'custom:button-card'
-        template: card_battery
-        entity: sensor.bewegungsmelder_battery_level
-        variables:
-          ulm_card_battery_charger_type_entity_id: sensor.bewegungsmelder_battery_level
-          ulm_card_battery_battery_level_danger: 20
-          ulm_card_battery_battery_level_warning: 50
-          ulm_card_battery_name: Bewegung 
+    - type: 'custom:button-card'
+      template: card_title
+      label: "Skripte"
 
-      - type: 'custom:button-card'
-        template: card_battery
-        entity: sensor.heizthermostat_wohnzimmer_tv_batterie_prozent
-        variables:
-          ulm_card_battery_charger_type_entity_id: sensor.heizthermostat_schlafzimmer_batterie_prozent
-          ulm_card_battery_battery_level_danger: 20
-          ulm_card_battery_battery_level_warning: 50
-          ulm_card_battery_name: Heizung
+    - type: "horizontal-stack"
+      cards:
+        - type: 'custom:button-card'
+          template: card_power_script
+          variables:
+            ulm_card_script_title: Fernseher an
+            ulm_card_script_icon: 'mdi:power'
+          tap_action:
+            action: call-service
+            service: script.turn_on
+            service_data:
+              entity_id: script.sony_bravia_power_on
 
-  - type: "horizontal-stack"
-    cards:
-      - type: 'custom:button-card'
-        template: card_battery
-        entity: sensor.thermostat_wohnzimmer_batterie_prozent
-        variables:
-          ulm_card_battery_charger_type_entity_id: sensor.thermostat_schlafzimmer_batterie_prozent
-          ulm_card_battery_battery_level_danger: 20
-          ulm_card_battery_battery_level_warning: 50
-          ulm_card_battery_name: Thermostat
+        - type: 'custom:button-card'
+          template: card_power_script
+          variables:
+            ulm_card_script_title: Fernseher aus
+            ulm_card_script_icon: 'mdi:power'
+          tap_action:
+            action: call-service
+            service: script.turn_on
+            service_data:
+              entity_id: script.sony_bravia_power_off
+
+    - type: "horizontal-stack"
+      cards:
+        - type: "custom:button-card"
+          template: card_boost_script
+          variables:
+            ulm_card_script_title: Boost
+            ulm_card_script_icon: 'mdi:fire'
+          tap_action:
+            action: call-service
+            service: script.turn_on
+            service_data:
+              entity_id: script.schlafzimmer_boost
+
+    - type: 'custom:button-card'
+      template: card_title
+      label: "Sensoren"
+
+    - type: "horizontal-stack"
+      cards:
+        - type: 'custom:button-card'
+          template: card_binary_sensor_alert
+          variables:
+            ulm_card_binary_sensor_alert: true
+            ulm_card_binary_sensor_alert_show_last_changed: true
+            ulm_card_binary_sensor_alert_name: Bewegung
+            ulm_card_binary_sensor_alert_color: red
+          entity: binary_sensor.presence_3
+
+        - type: 'custom:button-card'
+          template: card_binary_sensor_alert
+          variables:
+            ulm_card_binary_sensor_alert: true
+            ulm_card_binary_sensor_alert_show_last_changed: true
+            ulm_card_binary_sensor_alert_name: Kamera
+            ulm_card_binary_sensor_alert_color: red
+          entity: binary_sensor.schlafzimmer_motion_2
+
+    - type: 'custom:button-card'
+      template: card_title
+      label: "Batterien"
+
+    - type: "horizontal-stack"
+      cards:
+        - type: 'custom:button-card'
+          template: card_battery
+          entity: sensor.bewegungsmelder_battery_level
+          variables:
+            ulm_card_battery_charger_type_entity_id: sensor.bewegungsmelder_battery_level
+            ulm_card_battery_battery_level_danger: 20
+            ulm_card_battery_battery_level_warning: 50
+            ulm_card_battery_name: Bewegung 
+
+        - type: 'custom:button-card'
+          template: card_battery
+          entity: sensor.heizthermostat_wohnzimmer_tv_batterie_prozent
+          variables:
+            ulm_card_battery_charger_type_entity_id: sensor.heizthermostat_schlafzimmer_batterie_prozent
+            ulm_card_battery_battery_level_danger: 20
+            ulm_card_battery_battery_level_warning: 50
+            ulm_card_battery_name: Heizung
+
+    - type: "horizontal-stack"
+      cards:
+        - type: 'custom:button-card'
+          template: card_battery
+          entity: sensor.thermostat_wohnzimmer_batterie_prozent
+          variables:
+            ulm_card_battery_charger_type_entity_id: sensor.thermostat_schlafzimmer_batterie_prozent
+            ulm_card_battery_battery_level_danger: 20
+            ulm_card_battery_battery_level_warning: 50
+            ulm_card_battery_name: Thermostat
 
 

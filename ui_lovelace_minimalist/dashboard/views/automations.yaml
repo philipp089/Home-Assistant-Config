@@ -3,115 +3,118 @@ icon: "mdi:cog-outline"
 theme: "minimalist-desktop"
 path: "Automations"
 cards:
-  - type: "custom:button-card"
-    template: chip_back
-    variables:
-      ulm_chip_back_path: /ui-lovelace-minimalist/home
-
-  - type: 'custom:button-card'
-    template: card_title
-    name: "Automationen"
-    label: "Modus Werktags"
-#
-###TAGMODUS WERKTAGS #######################################################
-#
-  - type: horizontal-stack
+  - type: "vertical-stack"
     cards:
-      - type: entities
-        entities:
-          - entity: input_datetime.tagmodus_werktags
-            time:
-        style: |
-          ha-card {
-            box-shadow: 1px 1px 1px 1px var(--divider-color);
-          }
-#
-###NACHTMODUS WERKTAGS #######################################################
-#
-  - type: horizontal-stack
-    cards:
-      - type: entities
-        entities:
-          - entity: input_datetime.nachtmodus_werktags
-            time:
-        style: |
-          ha-card {
-            box-shadow: 1px 1px 1px 1px var(--divider-color);
-          }
 
-  - type: 'custom:button-card'
-    template: card_title
-    label: "Modus Wochenende"
+    - type: "custom:button-card"
+      template: chip_back
+      variables:
+        ulm_chip_back_path: /ui-lovelace-minimalist/home
 
-#
-###TAGMODUS WOCHENENDE #######################################################
-#
-  - type: horizontal-stack
-    cards:
-      - type: entities
-        entities:
-          - entity: input_datetime.tagmodus_wochenende
-            time:
-        style: |
-          ha-card {
-            box-shadow: 1px 1px 1px 1px var(--divider-color);
-          }
-#
-###NACHTMODUS WOCHENENDE #######################################################
-#
-  - type: horizontal-stack
-    cards:
-      - type: entities
-        entities:
-          - entity: input_datetime.nachtmodus_wochenende
-            time:
-        style: |
-          ha-card {
-            box-shadow: 1px 1px 1px 1px var(--divider-color);
-          }
-
-  - type: 'custom:button-card'
-    template: card_title
-    label: "Temperatur bei Abwesenheit"
-
-#
-###AUTOMATIONS - TEMPERATUR HAUS LEER#######################################################
-#
-  - type: horizontal-stack
-    cards:
-      - type: entities
-        entities:
-          - entity: input_number.heizung_temperatur_away
-        style: |
-          ha-card {
-            box-shadow: 1px 1px 1px 1px var(--divider-color);
-          }
-
-
-  - type: 'custom:button-card'
-    template: card_title
-    label: "Objekterkennung"
-#
-###PERSON DETECTION INPUT BOOLEAN#######################################################
-#
-  - type: horizontal-stack
-    cards:
-      - type: entities
-        entities:
-          - entity: input_boolean.person_detection_frigate_video_to_telegram
-        style: |
-          ha-card {
-            box-shadow: 1px 1px 1px 1px var(--divider-color);
-          }
+    - type: 'custom:button-card'
+      template: card_title
+      name: "Automationen"
+      label: "Modus Werktags"
   #
-  ###CAT DETECTION INPUT BOOLEAN#######################################################
+  ###TAGMODUS WERKTAGS #######################################################
   #
-  - type: horizontal-stack
-    cards:
-      - type: entities
-        entities:
-          - entity: input_boolean.cat_detection_frigate_video_to_telegram
-        style: |
-          ha-card {
-            box-shadow: 1px 1px 1px 1px var(--divider-color);
-          }
+    - type: horizontal-stack
+      cards:
+        - type: entities
+          entities:
+            - entity: input_datetime.tagmodus_werktags
+              time:
+          style: |
+            ha-card {
+              box-shadow: 1px 1px 1px 1px var(--divider-color);
+            }
+  #
+  ###NACHTMODUS WERKTAGS #######################################################
+  #
+    - type: horizontal-stack
+      cards:
+        - type: entities
+          entities:
+            - entity: input_datetime.nachtmodus_werktags
+              time:
+          style: |
+            ha-card {
+              box-shadow: 1px 1px 1px 1px var(--divider-color);
+            }
+
+    - type: 'custom:button-card'
+      template: card_title
+      label: "Modus Wochenende"
+
+  #
+  ###TAGMODUS WOCHENENDE #######################################################
+  #
+    - type: horizontal-stack
+      cards:
+        - type: entities
+          entities:
+            - entity: input_datetime.tagmodus_wochenende
+              time:
+          style: |
+            ha-card {
+              box-shadow: 1px 1px 1px 1px var(--divider-color);
+            }
+  #
+  ###NACHTMODUS WOCHENENDE #######################################################
+  #
+    - type: horizontal-stack
+      cards:
+        - type: entities
+          entities:
+            - entity: input_datetime.nachtmodus_wochenende
+              time:
+          style: |
+            ha-card {
+              box-shadow: 1px 1px 1px 1px var(--divider-color);
+            }
+
+    - type: 'custom:button-card'
+      template: card_title
+      label: "Temperatur bei Abwesenheit"
+
+  #
+  ###AUTOMATIONS - TEMPERATUR HAUS LEER#######################################################
+  #
+    - type: horizontal-stack
+      cards:
+        - type: entities
+          entities:
+            - entity: input_number.heizung_temperatur_away
+          style: |
+            ha-card {
+              box-shadow: 1px 1px 1px 1px var(--divider-color);
+            }
+
+
+    - type: 'custom:button-card'
+      template: card_title
+      label: "Objekterkennung"
+  #
+  ###PERSON DETECTION INPUT BOOLEAN#######################################################
+  #
+    - type: horizontal-stack
+      cards:
+        - type: entities
+          entities:
+            - entity: input_boolean.person_detection_frigate_video_to_telegram
+          style: |
+            ha-card {
+              box-shadow: 1px 1px 1px 1px var(--divider-color);
+            }
+    #
+    ###CAT DETECTION INPUT BOOLEAN#######################################################
+    #
+    - type: horizontal-stack
+      cards:
+        - type: entities
+          entities:
+            - entity: input_boolean.cat_detection_frigate_video_to_telegram
+          style: |
+            ha-card {
+              box-shadow: 1px 1px 1px 1px var(--divider-color);
+            }

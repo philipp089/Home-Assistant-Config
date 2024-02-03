@@ -747,3 +747,31 @@
     data: {}
     response_variable: Wohnzimmer Boost eingeschaltet
   mode: single
+- id: '1706935406070'
+  alias: Voice Assist - Wohnzimmer Tageslicht
+  description: Voice Assist - Wohnzimmer Tageslicht
+  trigger:
+  - platform: conversation
+    command:
+    - Wohnzimmer Tageslicht
+  condition: []
+  action:
+  - service: script.wohnzimmer_tageslicht
+    data: {}
+    response_variable: 'message: "erledigt"'
+  mode: single
+- id: '1706936332341'
+  alias: Voice Assist  - Wohnzimmer Konzentration
+  description: Voice Assist  - Wohnzimmer Konzentration
+  trigger:
+  - platform: conversation
+    command:
+    - Wohnzimmer Konzentration
+  condition: []
+  action:
+  - service: script.turn_on
+    metadata: {}
+    data: {}
+    target:
+      entity_id: script.wohnzimmer_konzentration
+  mode: single
