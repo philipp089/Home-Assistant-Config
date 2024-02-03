@@ -68,4 +68,7 @@ media_player.playstation_4:
   icon: mdi:sony-playstation
 light.lichtgruppe_badezimmer_gesamt:
   icon: mdi:lightbulb-outline
-
+light.badezimmer_spiegel_01:
+  icon: mdi:lightbulb-outline
+light.badezimmer_spiegel_02:
+  icon: mdi:lightbulb-outline

@@ -12,7 +12,8 @@ cards:
 
     - type: 'custom:button-card'
       template: card_title
-      name: "Wohnzimmer"
+      name: "Kameras"
+      label: "Wohnzimmer"
 
     - type: "custom:button-card"
       entity: "camera.wohnzimmer_main"
@@ -24,7 +25,7 @@ cards:
 
     - type: 'custom:button-card'
       template: card_title
-      name: "Schlafzimmer"
+      label: "Schlafzimmer"
 
     - type: "custom:button-card"
       entity: "camera.schlafzimmer_main"
@@ -36,7 +37,7 @@ cards:
 
     - type: 'custom:button-card'
       template: card_title
-      name: "Eingang"
+      label: "Eingang"
 
     - type: "custom:button-card"
       entity: "camera.eingang_main"

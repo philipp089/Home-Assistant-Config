@@ -14,6 +14,7 @@ cards:
     - type: 'custom:button-card'
       template: card_title
       name: "Kalender"
+      label: "Philipp"
 
     - type: "custom:atomic-calendar-revive"
       entities:
