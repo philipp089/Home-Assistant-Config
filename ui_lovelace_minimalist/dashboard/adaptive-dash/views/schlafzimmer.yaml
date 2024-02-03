@@ -211,7 +211,7 @@ cards:
       grid-area: "card2"
     type: "custom:button-card"  
     template: card_light
-    entity: light.color_temperature_light_18
+    entity: light.schlafzimmer_deckenleuchte
     variables:
       ulm_card_light_name: Deckenleuchte
       ulm_card_light_enable_color: false
@@ -224,7 +224,7 @@ cards:
       grid-area: "card3"
     type: 'custom:button-card'
     template: card_light
-    entity: light.extended_color_light_2
+    entity: light.schlafzimmer_philips_hue_go
     variables:
       ulm_card_light_name: Philips Hue Go
       ulm_card_light_enable_color: false
@@ -237,7 +237,7 @@ cards:
       grid-area: "card4"
     type: "custom:button-card"
     template: card_light
-    entity: light.licht_schlafzimmer_standleuchte
+    entity: light.schlafzimmer_standleuchte
     variables:
       ulm_card_light_name: Stehlampe
       ulm_card_light_enable_color: false
@@ -250,7 +250,7 @@ cards:
       grid-area: "card5"
     type: "custom:button-card"
     template: card_light
-    entity: light.extended_color_light_3_2
+    entity: light.schlafzimmer_nachttisch_philipp
     variables:
       ulm_card_light_name: Nachttisch links
       ulm_card_light_enable_slider: false
@@ -264,7 +264,7 @@ cards:
       grid-area: "card6"
     type: "custom:button-card"
     template: card_light
-    entity: light.extended_color_light_3_2
+    entity: light.schlafzimmer_nachttisch_philipp
     variables:
       ulm_card_light_name: Nachttisch rechts
       ulm_card_light_enable_slider: false

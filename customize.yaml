@@ -20,47 +20,6 @@ light.flur:
   icon: mdi:lightbulb-outline
 light.badezimmer:
   icon: mdi:lightbulb-outline
-light.extended_color_light_21:
-  icon: mdi:lightbulb-outline
-light.color_temperature_light_16:
-  icon: mdi:lightbulb-outline
-light.color_temperature_light_17:
-  icon: mdi:lightbulb-outline
-light.color_temperature_light_2:
-  icon: mdi:lightbulb-outline
-light.color_temperature_light_14:
-  icon: mdi:lightbulb-outline
-light.color_temperature_light_15:
-  icon: mdi:lightbulb-outline
-light.color_temperature_light_18:
-  icon: mdi:lightbulb-outline
-light.extended_color_light_2:
-  icon: mdi:lightbulb-outline
-light.licht_schlafzimmer_standleuchte:
-  icon: mdi:lightbulb-outline
-light.color_temperature_light_7:
-  icon: mdi:lightbulb-outline
-light.color_temperature_light_8:
-  icon: mdi:lightbulb-outline
-light.color_temperature_light_9:
-  icon: mdi:lightbulb-outline
-light.color_temperature_light_10:
-  icon: mdi:lightbulb-outline
-light.color_temperature_light_11:
-  icon: mdi:lightbulb-outline
-light.color_temperature_light_12:
-  icon: mdi:lightbulb-outline
-light.extended_color_light_3:
-  icon: mdi:lightbulb-outline
-light.extended_color_light_4:
-  icon: mdi:lightbulb-outline
-light.extended_color_light_6:
-  icon: mdi:lightbulb-outline
-light.dimmable_light_5:
-  icon: mdi:lightbulb-outline
-light.licht_wohnzimmer_kleine_lampe:
-  friendly_name: Licht Wohnzimmer kleine Lampe
-  icon: mdi:lightbulb-outline
 light.lichtgruppe_badezimmer_spiegelbeleuchtung:
   icon: mdi:lightbulb-outline
 light.lichtgruppe_flur_deckenleuchte:
@@ -75,8 +34,6 @@ media_player.kuche:
   icon: mdi:google
 media_player.samsung_q7_series_55:
   icon: mdi:television
-light.licht_schlafzimmer:
-  icon: mdi:lightbulb-outline
 media_player.sonos_play_1_werkstatt:
   icon: mdi:music-box-outline
 media_player.sonos_arc_wohnzimmer:
@@ -111,7 +68,4 @@ media_player.playstation_4:
   icon: mdi:sony-playstation
 light.lichtgruppe_badezimmer_gesamt:
   icon: mdi:lightbulb-outline
-light.extended_color_light_23:
-  icon: mdi:lightbulb-outline
-light.extended_color_light_3_2:
-  icon: mdi:lightbulb-outline
+

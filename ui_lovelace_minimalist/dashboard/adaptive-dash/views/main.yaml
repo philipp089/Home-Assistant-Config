@@ -149,7 +149,7 @@ cards:
       ulm_input_select_option: schlafzimmer
       ulm_input_select: input_select.minimalist_ui_switch
       entity_1:
-        entity_id: light.licht_schlafzimmer
+        entity_id: light.schlafzimmer
         templates:
           - yellow_on
         tap_action:

@@ -242,7 +242,7 @@ cards:
             label_use_temperature: true
             label_use_brightness: false
             entity_1:
-              entity_id: light.licht_schlafzimmer
+              entity_id: light.schlafzimmer
               templates:
                 - yellow_on
               tap_action:

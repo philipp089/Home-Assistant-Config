@@ -554,7 +554,6 @@ schlafzimmer_nacht:
       brightness_pct: 5
     target:
       area_id: 4b464753ae28423c9ad179a3027094eb
-      entity_id: light.extended_color_light_3_2
   mode: single
   icon: mdi:lightbulb-outline
 schlafzimmer_hell:
@@ -642,10 +641,10 @@ schlafzimmer_aus:
     data: {}
     target:
       entity_id:
-      - light.extended_color_light_3_2
-      - light.color_temperature_light_18
-      - light.licht_schlafzimmer_standleuchte
-      - light.extended_color_light_2
+      - light.schlafzimmer_deckenleuchte
+      - light.schlafzimmer_nachttisch_philipp
+      - light.schlafzimmer_philips_hue_go
+      - light.schlafzimmer_standleuchte
   mode: single
   icon: mdi:lightbulb-outline
 schlafzimmer_sexy_light:

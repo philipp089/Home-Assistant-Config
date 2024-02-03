@@ -130,7 +130,7 @@ cards:
 
         - type: "custom:button-card"
           template: card_light
-          entity: light.extended_color_light_21
+          entity: light.badezimmer_deckenleuchte
           variables:
             ulm_card_light_name: Deckenleuchte
             ulm_card_light_enable_slider: false
@@ -142,7 +142,7 @@ cards:
       cards:
         - type: 'custom:button-card'
           template: card_light
-          entity: light.color_temperature_light_16
+          entity: light.badezimmer_spiegel_01
           variables:
             ulm_card_light_name: Spiegel links
             ulm_card_light_enable_slider: false
@@ -152,7 +152,7 @@ cards:
 
         - type: "custom:button-card"
           template: card_light
-          entity: light.color_temperature_light_17
+          entity: light.badezimmer_spiegel_02
           variables: 
             ulm_card_light_name: Spiegel rechts
             ulm_card_light_enable_slider: false

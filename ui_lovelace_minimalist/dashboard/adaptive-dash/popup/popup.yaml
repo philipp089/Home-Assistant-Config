@@ -21,47 +21,47 @@ states:
   wohnzimmer_kleine_lampe:
     type: "custom:button-card"
     template: "popup_light_brightness"
-    entity: light.licht_wohnzimmer_kleine_lampe
+    entity: light.wohnzimmer_kleine_lampe
   wohnzimmer_stehlampe:
     type: "custom:button-card"
     template: "popup_light_brightness"
-    entity: light.dimmable_light_5
+    entity: light.wohnzimmer_lampe_rechts
   wohnzimmer_lightstrip:
     type: "custom:button-card"
     template: "popup_light_brightness"
-    entity: light.extended_color_light_23
+    entity: light.wohnzimmer_lightstrip
   schlafzimmer_deckenleuchte:
     type: "custom:button-card"
     template: "popup_light_brightness"
-    entity: light.color_temperature_light_18
+    entity: light.schlafzimmer_deckenleuchte
   schlafzimmer_hue_go:
     type: "custom:button-card"
     template: "popup_light_brightness"
-    entity: light.extended_color_light_2
+    entity: light.schlafzimmer_philips_hue_go
   schlafzimmer_stehlampe:
     type: "custom:button-card"
     template: "popup_light_brightness"
-    entity: light.licht_schlafzimmer_standleuchte
+    entity: light.schlafzimmer_standleuchte
   nachttisch_links:
     type: "custom:button-card"
     template: "popup_light_brightness"
-    entity: light.extended_color_light_3_2
+    entity: light.schlafzimmer_nachttisch_philipp
   nachttisch_rechts:
     type: "custom:button-card"
     template: "popup_light_brightness"
-    entity: light.extended_color_light_3_2
+    entity: light.schlafzimmer_nachttisch_philipp
   badezimmer_deckenleuchte:
     type: "custom:button-card"
     template: "popup_light_brightness"
-    entity: light.extended_color_light_21
+    entity: light.badezimmer_deckenleuchte
   spiegel_links:
     type: "custom:button-card"
     template: "popup_light_brightness"
-    entity: light.color_temperature_light_16
+    entity: light.badezimmer_spiegel_01
   spiegel_rechts:
     type: "custom:button-card"
     template: "popup_light_brightness"
-    entity: light.color_temperature_light_17
+    entity: light.badezimmer_spiegel_02
   werkstatt_deckenleuchte:
     type: "custom:button-card"
     template: "popup_light_brightness"

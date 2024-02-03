@@ -146,21 +146,21 @@ light:
   - platform: group
     name: Lichtgruppe Wohnzimmer Deckenleuchte
     entities:
-      - light.extended_color_light_3
-      - light.extended_color_light_4
-      - light.extended_color_light_6
+      - light.wohnzimmer_deckenlampe_01
+      - light.wohnzimmer_deckenlampe_02
+      - light.wohnzimmer_deckenlampe_03
 #
 # WOHNZIMMER GESAMT LIGHT-GROUP
 #
   - platform: group
     name: Lichtgruppe Wohnzimmer gesamt
     entities:
-      - light.extended_color_light_3
-      - light.extended_color_light_4
-      - light.extended_color_light_6
-      - light.licht_wohnzimmer_kleine_lampe
-      - light.dimmable_light_5
-      - light.extended_color_light_23
+      - light.wohnzimmer_deckenlampe_01
+      - light.wohnzimmer_deckenlampe_02
+      - light.wohnzimmer_deckenlampe_03
+      - light.wohnzimmer_kleine_lampe
+      - light.wohnzimmer_lampe_rechts
+      - light.wohnzimmer_lightstrip
 
 #
 # FLUR LIGHT-GROUPS
@@ -168,38 +168,38 @@ light:
   - platform: group
     name: Lichtgruppe Flur Deckenleuchte
     entities:
-      - light.color_temperature_light_2
-      - light.color_temperature_light_14
-      - light.color_temperature_light_15
+      - light.flur_deckenleuchte_01
+      - light.flur_deckenleuchte_02
+      - light.flur_deckenleuchte_03
 #
 # WERKSTATT LIGHT-GROUPS
 #
   - platform: group
     name: Lichtgruppe Werkstatt Deckenleuchte
     entities:
-      - light.color_temperature_light_7
-      - light.color_temperature_light_8
-      - light.color_temperature_light_9
-      - light.color_temperature_light_10
-      - light.color_temperature_light_11
-      - light.color_temperature_light_12
+      - light.werkstatt_deckenleuchte_01
+      - light.werkstatt_deckenleuchte_02
+      - light.werkstatt_deckenleuchte_03
+      - light.werkstatt_deckenleuchte_04
+      - light.werkstatt_deckenleuchte_05
+      - light.werkstatt_deckenleuchte_06
 #
 # BADEZIMMER LIGHT-GROUPS
 #
   - platform: group
     name: Lichtgruppe Badezimmer Spiegelbeleuchtung
     entities:
-      - light.color_temperature_light_16
-      - light.color_temperature_light_17
+      - light.badezimmer_spiegel_01
+      - light.badezimmer_spiegel_02
 #
 # BADEZIMMER GESAMT LIGHT-GROUP
 #
   - platform: group
     name: Lichtgruppe Badezimmer gesamt
     entities:
-      - light.extended_color_light_21
-      - light.color_temperature_light_16
-      - light.color_temperature_light_17
+      - light.badezimmer_spiegel_01
+      - light.badezimmer_spiegel_02
+      - light.badezimmer_deckenleuchte
 #
 # CIRCADIAN LIGHTING
 #
@@ -211,52 +211,52 @@ switch:
   - platform: circadian_lighting
     name: "Wohnzimmer"
     lights_ct:
-      - light.licht_wohnzimmer_kleine_lampe
-      - light.dimmable_light_5
-      - light.extended_color_light_6
-      - light.extended_color_light_4
-      - light.extended_color_light_3
-      - light.extended_color_light_23
+      - light.wohnzimmer_deckenlampe_01
+      - light.wohnzimmer_deckenlampe_02
+      - light.wohnzimmer_deckenlampe_03
+      - light.wohnzimmer_kleine_lampe
+      - light.wohnzimmer_lampe_rechts
+      - light.wohnzimmer_lightstrip
 #
 # CIRCADIAN LIGHTING SCHLAFZIMMER
 #
   - platform: circadian_lighting
     name: "Schlafzimmer"
     lights_ct:
-      - light.extended_color_light_3_2
-      - light.extended_color_light_2
-      - light.color_temperature_light_18
-      - light.licht_schlafzimmer_standleuchte
+      - light.schlafzimmer_deckenleuchte
+      - light.schlafzimmer_philips_hue_go
+      - light.schlafzimmer_standleuchte
+      - light.schlafzimmer_nachttisch_philipp
 #
 # CIRCADIAN LIGHTING WERKSTATT
 #
   - platform: circadian_lighting
     name: "Werkstatt"
     lights_ct:
-      - light.color_temperature_light_7
-      - light.color_temperature_light_8
-      - light.color_temperature_light_9
-      - light.color_temperature_light_10
-      - light.color_temperature_light_11
-      - light.color_temperature_light_12
+      - light.werkstatt_deckenleuchte_01
+      - light.werkstatt_deckenleuchte_02
+      - light.werkstatt_deckenleuchte_03
+      - light.werkstatt_deckenleuchte_04
+      - light.werkstatt_deckenleuchte_05
+      - light.werkstatt_deckenleuchte_06
 #
 # CIRCADIAN LIGHTING BADEZIMMER
 #
   - platform: circadian_lighting
     name: "Badezimmer"
     lights_ct:
-      - light.extended_color_light_21
-      - light.color_temperature_light_16
-      - light.color_temperature_light_17
+      - light.badezimmer_spiegel_01
+      - light.badezimmer_spiegel_02
+      - light.badezimmer_deckenleuchte
 #
 # CIRCADIAN LIGHTING FLUR
 #
   - platform: circadian_lighting
     name: "Flur"
     lights_ct:
-      - light.color_temperature_light_2
-      - light.color_temperature_light_14
-      - light.color_temperature_light_15
+      - light.flur_deckenleuchte_01
+      - light.flur_deckenleuchte_02
+      - light.flur_deckenleuchte_03
 #
 # API INTEGRATION
 #

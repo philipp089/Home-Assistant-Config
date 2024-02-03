@@ -170,7 +170,7 @@ cards:
       cards:
         - type: 'custom:button-card'
           template: card_light
-          entity: light.licht_wohnzimmer_kleine_lampe
+          entity: light.wohnzimmer_kleine_lampe
           variables:
             ulm_card_light_name: Kleine Lampe
             ulm_card_light_enable_slider: false
@@ -180,7 +180,7 @@ cards:
 
         - type: "custom:button-card"
           template: card_light
-          entity: light.dimmable_light_5
+          entity: light.wohnzimmer_lampe_rechts
           variables:
             ulm_card_light_name: Stehlampe
             ulm_card_light_enable_slider: false
@@ -192,7 +192,7 @@ cards:
       cards:
         - type: 'custom:button-card'
           template: card_light
-          entity: light.extended_color_light_23
+          entity: light.wohnzimmer_lightstrip
           variables:
             ulm_card_light_name: Lightstrip
             ulm_card_light_enable_slider: false

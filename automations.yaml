@@ -47,7 +47,7 @@
       button_right_long:
       - service: script.schlafzimmer_hell
       light:
-        entity_id: light.licht_schlafzimmer
+        entity_id: light.schlafzimmer
 - id: '1630219218437'
   alias: deCONZ - Philips Dimmschalter
   description: ''
