@@ -14,7 +14,7 @@ minimalist-desktop-pki:
   # fix added border-lines in 2022.11
   ha-card-border-width: "0px"
 
-  card-mod-theme: "minimalist-desktop"
+  card-mod-theme: "minimalist-desktop-pki"
   card-mod-view-yaml: |
     "*:first-child$": |
       #columns .column > * {
@@ -22,20 +22,84 @@ minimalist-desktop-pki:
         padding-right: 5px;
         padding-bottom: 5px;
       }
+  card-mod-root: |
+    paper-tab[aria-label='Home'] {
+      color: var(--google-blue);
+    }
+    paper-tab[aria-label='Wohnzimmer'] {
+      color: var(--google-green);
+    }
+    paper-tab[aria-label='Schlafzimmer'] {
+      color: var(--google-red);
+    }
+    paper-tab[aria-label='Badezimmer'] {
+      color: var(--google-blue);
+    }    
+    paper-tab[aria-label='Küche'] {
+      color: #661FFF;
+    }
+    paper-tab[aria-label='Werkstatt'] {
+      color: var(--google-yellow);
+    }
+    paper-tab[aria-label='Flur'] {
+      color: var(--google-grey);
+    }
+    paper-tab[aria-label='Dachterrasse'] {
+      color: #E91E63;
+    }
+    paper-tab[aria-label='Remote'] {
+      color: var(--google-green);
+    }
+    paper-tab[aria-label='Kalender'] {
+      color: var(--google-red);
+    }
+    paper-tab[aria-label='Raspberry'] {
+      color: #661FFF;
+    }
+    paper-tab[aria-label='Gesundheit'] {
+      color: var(--google-yellow);
+    }
+    paper-tab[aria-label='Grocy'] {
+      color: var(--google-blue);
+    }
+    paper-tab[aria-label='Alarm'] {
+      color: var(--google-red);
+    }
+    paper-tab[aria-label='Automations'] {
+      color: var(--google-blue);
+    }
+    paper-tab[aria-label='Batterien'] {
+      color: var(--google-green);
+    }
+    paper-tab[aria-label='Energie'] {
+      color: var(--google-yellow);
+    }
+    paper-tab[aria-label='Hardware'] {
+      color: var(--google-grey);
+    }
+    paper-tab[aria-label='Kameras'] {
+      color: var(--google-blue);
+    }
+    paper-tab[aria-label='Playstation'] {
+      color: #4285F4;
+    }
+    paper-tab[aria-label='Temperatur'] {
+      color: var(--google-red);
+    }
   modes:
     light:
       # text
       primary-text-color: "#212121"
       # main interface colors
       primary-color: "#434343"
-      google-red: "#F54436"
-      google-green: "#01C852"
+      google-red: "#EA4335"
+      google-green: "#34A853"
       google-yellow: "#FF9101"
       google-blue: "#3D5AFE"
       google-violet: "#661FFF"
       google-grey: "#BBBBBB"
-      color-red: "245, 68, 54"
-      color-green: "1, 200, 82"
+      color-red: "234, 67, 53"
+      color-green: "52, 168, 83"
       color-yellow: "255, 145, 1"
       color-blue: "61, 90, 254"
       color-purple: "102, 31, 255"
@@ -70,8 +134,8 @@ minimalist-desktop-pki:
       box-shadow: "0px 2px 4px 0px rgba(0,0,0,0.16)"
       ha-card-box-shadow: "var(--box-shadow)"
       # sidebar
-      sidebar-selected-text-color: "var(--google-red)"
-      sidebar-selected-icon-color: "var(--google-red)"
+      sidebar-selected-text-color: "var(--google-blue)"
+      sidebar-selected-icon-color: "var(--google-blue)"
       sidebar-text-color: "#80868b"
       # switch
       switch-checked-color: "var(--google-blue)"
@@ -82,20 +146,20 @@ minimalist-desktop-pki:
       primary-text-color: "#DDDDDD"
       # main interface colors
       primary-color: "#89B3F8"
-      google-red: "#F18B82"
-      google-green: "#80C994"
-      google-yellow: "#FCD663"
-      google-blue: "#89B3F8"
-      google-violet: "#BB86FC"
+      google-red: "#EA4335"
+      google-green: "#34A853"
+      google-yellow: "#FF9101"
+      google-blue: "#3D5AFE"
+      google-violet: "#661FFF"
       google-grey: "#BBBBBB"
-      color-red: "241, 139, 130"
-      color-green: "128, 201, 148"
-      color-yellow: "252, 214, 99"
-      color-blue: "137, 179, 248"
-      color-theme: "221,221,221"
+      color-red: "234, 67, 53"
+      color-green: "52, 168, 83"
+      color-yellow: "255, 145, 1"
+      color-blue: "61, 90, 254"
       color-purple: "102, 31, 255"
       color-grey: "187, 187, 187"
       color-pink: "233, 30, 99"
+      color-theme: "221,221,221"
       color-background-yellow: "var(--color-yellow)"
       color-background-blue: "var(--color-blue)"
       color-background-green: "var(--color-green)"

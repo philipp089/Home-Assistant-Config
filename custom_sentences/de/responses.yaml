@@ -1,0 +1,8 @@
+# Example config/custom_sentences/de/responses.yaml
+language: "de"
+responses:
+  intents:
+    HassTurnOn:
+      default: "erledigt"
+    action_done:
+      default: "erledigt"

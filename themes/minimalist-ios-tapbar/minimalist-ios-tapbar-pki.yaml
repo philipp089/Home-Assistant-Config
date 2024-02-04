@@ -1,5 +1,7 @@
 ---
-minimalist-mobile-tapbar-pki:
+minimalist-ios-tapbar-pki:
+  # version 1.0.1
+  # By LRvdLinden
   # Journal
   state-icon-color: "rgb(var(--color-theme))"
   border-radius: "20px"
@@ -10,14 +12,12 @@ minimalist-mobile-tapbar-pki:
   info-color: "var(--google-blue)"
   divider-color: "rgba(var(--color-theme),.12)"
   accent-color: "var(--google-yellow)"
-  card-mod-theme: "minimalist-mobile-tapbar"
-  header-height: "calc(var(--header-base-height) + env(safe-area-inset-bottom))"
-  header-base-height: "70px"
-  app-header-selection-bar-color: "transparent"
   ha-dialog-border-radius: "10px"
   # fix added border-lines in 2022.11
   ha-card-border-width: "0px"
 
+  card-mod-theme: "minimalist-ios-tapbar-pki"
+  header-height: "78px"
   card-mod-view-yaml: |
     "*:first-child$": |
       #columns .column > * {
@@ -25,14 +25,20 @@ minimalist-mobile-tapbar-pki:
         padding-right: 5px;
         padding-bottom: 5px;
       }
-
   # Move navbar
   card-mod-root-yaml: |
     ha-tabs$: |
       #tabsContent {
         width: 97%;
       }
+      paper-icon-button {
+        display: none;
+      }
     .: |
+      @media (orientation: portrait) {
+        a.menu-link[target="_blank"], ha-button-menu, ha-menu-button, [main-title] {
+          display: none !important;
+        }
       div#view{
         transform: initial;
         padding: 0 !important;
@@ -47,19 +53,21 @@ minimalist-mobile-tapbar-pki:
         height: var(--header-height) !important;
       }
       .toolbar {
-        height: var(--header-base-height) !important;
-        padding-bottom: env(safe-area-inset-bottom) !important;
+        height: var(--header-height) !important;
+        padding: 10px 0px !important;
+        background: var( --ha-card-background, var(--card-background-color) );
       }
       #view {
         padding-top: calc(-1 * var(--header-height)) !important;
       }
       ha-tabs {
-        --paper-tabs-selection-bar-color: var(--header-tab-indicator-color);
+        --paper-tabs-selection-bar-color: var(--header-tab-indicator-color) !important;
         --mdc-icon-size: 26px;
         display: flex;
         justify-content: space-between;
-        padding: 0 10px;
-        height:50px !important;
+        padding: 10px;
+        margin-top:15px;
+        height:var(--header-height) !important;
       }
       paper-tab[aria-selected=true] {
         color: var(--header-active-tab-color);
@@ -69,12 +77,8 @@ minimalist-mobile-tapbar-pki:
         color: var(--header-all-tabs-color);
         border-radius: 25px;
         height:50px;
-        /*width: calc(100% / 4);
-        padding: 0;*/
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 0 20px;
       }
-
   # Color themes
   modes:
     light:
@@ -113,7 +117,7 @@ minimalist-mobile-tapbar-pki:
       header-all-tabs-color: "var(--paper-item-icon-color)"
       header-tab-indicator-color: "rgba(0, 0, 0, 0)"
       app-header-text-color: "var(--primary-text-color)"
-      app-header-background-color: "var( --ha-card-background, var(--card-background-color, white) )"
+      app-header-background-color: "var(--primary-background-color)"
       paper-tabs-selection-bar-color: "var(--primary-text-color)"
       footer-shadow: "0px -1px 3px 0px rgba(0,0,0,0.12)"
       # background and sidebar
@@ -123,8 +127,8 @@ minimalist-mobile-tapbar-pki:
       # text
       primary-text-color: "#212121"
       # slider
-      slider-color: "rgb(var(--color-blue))"
-      slider-bar-color: "rgba(var(--color-blue),0.38)"
+      slider-color: "rgb(var(--google-blue))"
+      slider-bar-color: "rgba(var(--google-blue),0.38)"
       # cards
       box-shadow: "0px 2px 4px 0px rgba(0,0,0,0.16)"
       ha-card-box-shadow: "var(--box-shadow)"
@@ -173,7 +177,7 @@ minimalist-mobile-tapbar-pki:
       header-all-tabs-color: "var(--paper-item-icon-color)"
       header-tab-indicator-color: "rgba(0, 0, 0, 0)"
       app-header-text-color: "var(--primary-text-color)"
-      app-header-background-color: "var( --ha-card-background, var(--card-background-color, rgb(29, 29, 29)) )"
+      app-header-background-color: "var(--primary-background-color)"
       paper-tabs-selection-bar-color: "var(--primary-text-color)"
       footer-shadow: "0px -1px 3px 0px rgba(0,0,0,0.12)"
       # background and sidebar
