@@ -92,7 +92,6 @@ minimalist-desktop-pki:
       primary-text-color: "#212121"
       # main interface colors
       primary-color: "#434343"
-      green-color: "#34A853"
       google-red: "#EA4335"
       google-green: "#34A853"
       google-yellow: "#FF9101"
@@ -146,7 +145,7 @@ minimalist-desktop-pki:
       # text
       primary-text-color: "#DDDDDD"
       # main interface colors
-      primary-color: "#89B3F8"
+      primary-color: "#3D5AFE"
       google-red: "#EA4335"
       google-green: "#34A853"
       google-yellow: "#FF9101"
@@ -187,6 +186,8 @@ minimalist-desktop-pki:
       # Sidebar
       sidebar-selected-text-color: "rgb(var(--color-blue))"
       sidebar-selected-icon-color: "rgb(var(--color-blue))"
+      # switch
+      switch-checked-color: "var(--google-blue)"
       # Slider
       slider-color: "rgb(var(--color-blue))"
       slider-bar-color: "rgba(var(--color-blue),0.38)"

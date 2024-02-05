@@ -2,7 +2,110 @@ title: "Playstation"
 icon: "mdi:sony-playstation"
 path: "Playstation"
 cards:
-  - type: "custom:button-card"
-    template: chip_back
-    variables:
-      ulm_chip_back_path: /ui-lovelace-minimalist/home
+  - type: vertical-stack
+    cards:
+      - type: "custom:button-card"
+        template: chip_back
+        variables:
+          ulm_chip_back_path: /ui-lovelace-minimalist/home
+
+      - type: 'custom:button-card'
+        template: card_title
+        name: "Playstation"
+        label: ""
+
+      #
+      ###PLAYSTATION TAB MEDIA PLAYER CARD############################################################
+      #
+      - type: vertical-stack
+        cards:
+          - type: "custom:mini-media-player"
+            artwork: full-cover
+            entity: media_player.playstation_4
+            hide:
+              icon: false
+              power: true
+              progress: true
+              source: false
+              volume: false
+            name: Playstation 4
+            style: |
+              ha-card {
+                box-shadow: 1px 1px 1px 1px var(--divider-color);
+                webkit-shadow: 0px 0px 0px 0px;
+              }
+          #
+          ###PLAYSTATION TAB PLAYSTATION BUTTON CARD##################################################
+          #
+          - type: horizontal-stack
+            cards:
+              - type: "custom:button-card"
+                aspect_ratio: "1/1"
+                color: "#003791"
+                color_type: card
+                icon: "mdi:sony-playstation"
+                styles:
+                  state:
+                    - value: "on"
+                      color: "#ffffff"
+                      icon: "mdi:sony-playstation"
+                    - value: "off"
+                      color: var(--secondary-text-color)
+                      icon: "mdi:sony-playstation"
+                style: |
+                  ha-card {
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
+                    webkit-shadow: 0px 0px 0px 0px;
+                  }
+              #
+              ###PLAYSTATION TAB X BUTTON##################################################
+              #
+              - type: "custom:button-card"
+                aspect_ratio: "1/1"
+                color: "#91b8e3"
+                color_type: icon
+                icon: "mdi:window-close"
+                style: |
+                  ha-card {
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
+                    webkit-shadow: 0px 0px 0px 0px;
+                  }
+              #
+              ###PLAYSTATION TAB TRIANGLE BUTTON##################################################
+              #
+              - type: "custom:button-card"
+                aspect_ratio: "1/1"
+                color: "#1fd0c8"
+                color_type: icon
+                icon: "mdi:triangle-outline"
+                style: |
+                  ha-card {
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
+                    webkit-shadow: 0px 0px 0px 0px;
+                  }
+              #
+              ###PLAYSTATION TAB SQUARE BUTTON##################################################
+              #
+              - type: "custom:button-card"
+                aspect_ratio: "1/1"
+                color: "#d4aad2"
+                color_type: icon
+                icon: "mdi:square-outline"
+                style: |
+                  ha-card {
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
+                    webkit-shadow: 0px 0px 0px 0px;
+                  }
+              #
+              ###PLAYSTATION TAB CIRCLE BUTTON##################################################
+              #
+              - type: "custom:button-card"
+                aspect_ratio: "1/1"
+                color: "#f57b8a"
+                color_type: icon
+                icon: "mdi:circle-outline"
+                style: |
+                  ha-card {
+                    box-shadow: 1px 1px 1px 1px var(--divider-color);
+                    webkit-shadow: 0px 0px 0px 0px;
+                  }

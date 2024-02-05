@@ -90,7 +90,7 @@ cards:
       label: "Klima"
 
     - type: "custom:button-card"
-      template: card_thermostat
+      template: custom_card_thermostat
       entity: climate.000a1a49a12cad
       variables:
         ulm_card_thermostat_name: "Thermostat"
