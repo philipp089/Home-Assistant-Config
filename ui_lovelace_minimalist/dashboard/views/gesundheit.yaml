@@ -1,6 +1,5 @@
 title: "Gesundheit"
 icon: "mdi:heart-outline"
-theme: "minimalist-desktop"
 path: "Gesundheit"
 cards:
   - type: "custom:button-card"

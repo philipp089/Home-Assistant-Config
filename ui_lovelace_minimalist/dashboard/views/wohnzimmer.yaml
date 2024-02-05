@@ -1,6 +1,5 @@
 title: "Wohnzimmer"
 icon: mdi:sofa-single-outline
-theme: "minimalist-desktop"
 path: "Wohnzimmer"
 cards:
   - type: "vertical-stack"

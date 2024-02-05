@@ -1,6 +1,5 @@
 title: "Alarm"
 icon: "mdi:bell-outline"
-theme: "minimalist-desktop"
 path: "Alarm"
 cards:
   - type: "custom:button-card"

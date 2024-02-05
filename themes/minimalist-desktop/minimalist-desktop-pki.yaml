@@ -92,6 +92,7 @@ minimalist-desktop-pki:
       primary-text-color: "#212121"
       # main interface colors
       primary-color: "#434343"
+      green-color: "#34A853"
       google-red: "#EA4335"
       google-green: "#34A853"
       google-yellow: "#FF9101"

@@ -1,6 +1,5 @@
 title: "Temperatur"
 icon: "mdi:thermometer"
-theme: "minimalist-desktop"
 path: "Temperatur"
 cards:
   - type: "custom:button-card"

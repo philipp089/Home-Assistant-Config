@@ -1,6 +1,5 @@
 title: "Playstation"
 icon: "mdi:sony-playstation"
-theme: "minimalist-desktop"
 path: "Playstation"
 cards:
   - type: "custom:button-card"

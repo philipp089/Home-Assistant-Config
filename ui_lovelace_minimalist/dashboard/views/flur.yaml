@@ -1,6 +1,5 @@
 title: "Flur"
 icon: mdi:door
-theme: "minimalist-desktop"
 path: "Flur"
 cards:
   - type: "vertical-stack"

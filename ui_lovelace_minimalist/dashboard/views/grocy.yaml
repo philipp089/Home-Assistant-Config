@@ -1,6 +1,5 @@
 title: "Grocy"
 icon: "mdi:spray-bottle"
-theme: "minimalist-desktop"
 path: "Grocy"
 cards:
   - type: "vertical-stack"

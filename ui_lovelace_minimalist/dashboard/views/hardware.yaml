@@ -1,6 +1,5 @@
 title: "Hardware"
 icon: "mdi:desktop-classic"
-theme: "minimalist-desktop"
 path: "Hardware"
 cards:
   - type: "custom:button-card"

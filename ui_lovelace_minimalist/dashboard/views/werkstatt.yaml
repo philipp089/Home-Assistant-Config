@@ -1,6 +1,5 @@
 title: "Werkstatt"
 icon: mdi:bike-pedal-mountain
-theme: "minimalist-desktop"
 path: "Werkstatt"
 cards:
   - type: "vertical-stack"

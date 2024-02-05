@@ -1,6 +1,5 @@
 title: "Schlafzimmer"
 icon: mdi:bed-king-outline
-theme: "minimalist-desktop"
 path: "Schlafzimmer"
 cards:
   - type: "vertical-stack"

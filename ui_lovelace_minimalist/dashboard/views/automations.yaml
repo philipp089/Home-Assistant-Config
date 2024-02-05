@@ -1,6 +1,5 @@
 title: "Automations"
 icon: "mdi:cog-outline"
-theme: "minimalist-desktop"
 path: "Automations"
 cards:
   - type: "vertical-stack"

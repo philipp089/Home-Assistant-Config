@@ -1,6 +1,5 @@
 title: "Dachterrasse"
 icon: "mdi:weather-partly-cloudy"
-theme: "minimalist-desktop"
 path: "Dachterrasse"
 cards:
   - type: "vertical-stack"

@@ -1,6 +1,5 @@
 title: "Kameras"
 icon: "mdi:camera-wireless-outline"
-theme: "minimalist-desktop"
 path: "Kameras"
 cards:
   - type: "vertical-stack"

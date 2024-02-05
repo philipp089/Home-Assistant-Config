@@ -1,6 +1,5 @@
 title: "Remote"
 icon: "mdi:remote-tv"
-theme: "minimalist-desktop"
 path: "Remote"
 cards:
   - type: "vertical-stack"

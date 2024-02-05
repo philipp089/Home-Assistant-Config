@@ -1,6 +1,5 @@
 title: "Küche"
 icon: mdi:blender
-theme: "minimalist-desktop"
 path: "Küche"
 cards:
   - type: "vertical-stack"

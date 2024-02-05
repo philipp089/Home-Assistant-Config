@@ -1,6 +1,5 @@
 title: "Raspberry"
 icon: "mdi:raspberry-pi"
-theme: "minimalist-desktop"
 path: "Raspberry"
 cards:
   - type: "vertical-stack"

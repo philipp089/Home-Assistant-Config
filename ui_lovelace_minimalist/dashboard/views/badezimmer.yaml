@@ -1,6 +1,5 @@
 title: "Badezimmer"
 icon: mdi:shower
-theme: "minimalist-desktop"
 path: "Badezimmer"
 cards:
   - type: "vertical-stack"

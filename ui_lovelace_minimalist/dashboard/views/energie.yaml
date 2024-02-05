@@ -1,6 +1,5 @@
 title: "Energie"
 icon: "mdi:lightning-bolt-outline"
-theme: "minimalist-desktop"
 path: "Energie"
 cards:
   - type: "custom:button-card"

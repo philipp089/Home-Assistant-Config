@@ -1,6 +1,5 @@
 title: "Batterien"
 icon: "mdi:battery-high"
-theme: "minimalist-desktop"
 path: "Batterien"
 cards:
   - type: "custom:button-card"

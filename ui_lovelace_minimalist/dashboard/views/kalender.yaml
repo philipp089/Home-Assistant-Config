@@ -1,6 +1,5 @@
 title: "Kalender"
 icon: "mdi:calendar"
-theme: "minimalist-desktop"
 path: "Kalender"
 cards:
   - type: "vertical-stack"
