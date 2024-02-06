@@ -16,7 +16,7 @@ cards:
       label: "Szenen"
 
     - type: "custom:button-card"
-      template: "card_scenes_welcome"
+      template: "custom_card_scenes_welcome"
       variables:
         entity_1:
           entity_id: "script.badezimmer_hell"
@@ -197,7 +197,7 @@ cards:
     - type: "horizontal-stack"
       cards:
         - type: 'custom:button-card'
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.bewegungsmelder_battery_level_3
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.bewegungsmelder_battery_level_3
@@ -206,7 +206,7 @@ cards:
             ulm_card_battery_name: Bewegung 
 
         - type: 'custom:button-card'
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.heizthermostat_badezimmer_batterie_prozent
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.heizthermostat_badezimmer_batterie_prozent
@@ -217,7 +217,7 @@ cards:
     - type: "horizontal-stack"
       cards:
         - type: 'custom:button-card'
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.thermostat_badezimmer_batterie_prozent
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.thermostat_badezimmer_batterie_prozent

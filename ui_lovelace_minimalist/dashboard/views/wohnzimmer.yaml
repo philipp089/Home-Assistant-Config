@@ -15,7 +15,7 @@ cards:
       label: "Szenen"
 
     - type: "custom:button-card"
-      template: "card_scenes_welcome"
+      template: "custom_card_scenes_welcome"
       variables:
         entity_1:
           entity_id: "script.wohnzimmer_hell"
@@ -270,7 +270,7 @@ cards:
               entity_id: script.samsung_q7_series_power_toggle
 
         - type: 'custom:button-card'
-          template: card_spotify_script
+          template: custom_card_spotify_script
           variables:
             ulm_card_script_title: Playlist Elektro
             ulm_card_script_icon: 'mdi:spotify'
@@ -283,7 +283,7 @@ cards:
     - type: "horizontal-stack"
       cards:
         - type: 'custom:button-card'
-          template: card_spotify_script
+          template: custom_card_spotify_script
           variables:
             ulm_card_script_title: Playlist Lieblingssongs
             ulm_card_script_icon: 'mdi:spotify'
@@ -294,7 +294,7 @@ cards:
               entity_id: script.spotify_playlist_lieblingssongs_wohnzimmer
 
         - type: "custom:button-card"
-          template: card_spotify_script
+          template: custom_card_spotify_script
           variables:
             ulm_card_script_title: Sonos gruppieren
             ulm_card_script_icon: 'mdi:home-group-plus'
@@ -307,7 +307,7 @@ cards:
     - type: "horizontal-stack"
       cards:
         - type: "custom:button-card"
-          template: card_spotify_script
+          template: custom_card_spotify_script
           variables:
             ulm_card_script_title: Sonos trennen
             ulm_card_script_icon: 'mdi:home-group-remove'
@@ -382,7 +382,7 @@ cards:
     - type: "horizontal-stack"
       cards:
         - type: 'custom:button-card'
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.bewegungsmelder_battery_level
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.bewegungsmelder_battery_level
@@ -391,7 +391,7 @@ cards:
             ulm_card_battery_name: Bewegung Kamin
 
         - type: 'custom:button-card'
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.presence_3_battery_level
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.presence_3_battery_level
@@ -402,7 +402,7 @@ cards:
     - type: "horizontal-stack"
       cards:
         - type: 'custom:button-card'
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.heizthermostat_wohnzimmer_batterie_prozent
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.heizthermostat_wohnzimmer_batterie_prozent
@@ -411,7 +411,7 @@ cards:
             ulm_card_battery_name: Heizung Kamin
 
         - type: 'custom:button-card'
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.heizthermostat_wohnzimmer_tv_batterie_prozent
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.heizthermostat_wohnzimmer_tv_batterie_prozent
@@ -422,7 +422,7 @@ cards:
     - type: "horizontal-stack"
       cards:
         - type: "custom:button-card"
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.philips_dimmschalter_battery_level
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.philips_dimmschalter_battery_level
@@ -431,7 +431,7 @@ cards:
             ulm_card_battery_name: Philips Dimmschalter
 
         - type: 'custom:button-card'
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.thermostat_wohnzimmer_batterie_prozent
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.thermostat_wohnzimmer_batterie_prozent
@@ -442,7 +442,7 @@ cards:
     - type: "horizontal-stack"
       cards:
         - type: 'custom:button-card'
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.tuersensor_wohnzimmer_batterie_prozent
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.tuersensor_wohnzimmer_batterie_prozent

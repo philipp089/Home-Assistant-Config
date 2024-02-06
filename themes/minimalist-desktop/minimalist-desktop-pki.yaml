@@ -81,7 +81,7 @@ minimalist-desktop-pki:
       color: var(--google-blue);
     }
     paper-tab[aria-label='Playstation'] {
-      color: #4285F4;
+      color: #661FFF;
     }
     paper-tab[aria-label='Temperatur'] {
       color: var(--google-red);
@@ -182,7 +182,7 @@ minimalist-desktop-pki:
       # header
       app-header-text-color: "var(--primary-text-color)"
       app-header-background-color: "var(--primary-background-color)"
-      paper-tabs-selection-bar-color: "var(--primary-text-color)"
+      # paper-tabs-selection-bar-color: "var(--primary-text-color)"
       # Sidebar
       sidebar-selected-text-color: "rgb(var(--color-blue))"
       sidebar-selected-icon-color: "rgb(var(--color-blue))"

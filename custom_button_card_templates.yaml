@@ -1,4 +1,4 @@
-button_card_templates:
+custom_button_card_templates:
   label_card:
     styles:
       card:

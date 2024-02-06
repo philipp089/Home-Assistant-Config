@@ -13,80 +13,134 @@ cards:
         entity_1:
           nav: "Remote"
           icon: "mdi:remote-tv"
-          # name: ""
+          name: "Remot."
           color: "green"
         entity_2:
           nav: "Kalender"
           icon: "mdi:calendar"
-          # name: ""
+          name: "Kal."
           color: "red"
         entity_3:
           nav: "Raspberry"
           icon: "mdi:raspberry-pi"
-          # name: 
+          name: "Rasp."
           color: "purple"
         entity_4:
           nav: "Gesundheit"
           icon: "mdi:heart-outline"
-          # name: 
+          name: "Gesun."
           color: "yellow"
         entity_5:
           nav: "Grocy"
           icon: "mdi:spray-bottle"
-          # name: 
+          name: "Hausa."
           color: "blue"
 
-  # - type: "custom:button-card"
-  #   template: "card_scenes_welcome"
-  #   variables:
-  #     entity_1:
-  #       entity_id: "Alarm"
-  #       nav_path: "/ui-lovelace-minimalist/Alarm"
-  #       icon: "mdi:bell-outline"
-  #       name: "Alarm" 
-  #       color: "red"
-  #     entity_2:
-  #       entity_id: "Automatisierungen"
-  #       nav_path: "/ui-lovelace-minimalist/Automations"
-  #       icon: "mdi:cog-outline" 
-  #       name: "Autom." 
-  #       color: "blue"
-      # entity_2:
-      #   entity_id: "<YOUR_ENTITY>"
-      #   icon: "mdi:YOUR_ICON" #OPTIONAL
-      #   name: "YOUR_NAME" #OPTIONAL
-      #   color: "red"
-      #   nav_path:
-      # entity_3:
-      #   entity_id: "<YOUR_ENTITY>"
-      #   icon: "mdi:YOUR_ICON" #OPTIONAL
-      #   name: "YOUR_NAME" #OPTIONAL
-      #   color: "green"
-      #   nav_path:
-      # entity_4:
-      #   entity_id: "<YOUR_ENTITY>"
-      #   icon: "mdi:YOUR_ICON" #OPTIONAL
-      #   name: "YOUR_NAME" #OPTIONAL
-      #   color: "purple"
-      #   nav_path:
-      # entity_5:
-      #   entity_id: "<YOUR_ENTITY>"
-      #   icon: "mdi:YOUR_ICON" #OPTIONAL
-      #   name: "YOUR_NAME" #OPTIONAL
-      #   color: "yellow"
-      #   nav_path:
-      # entity_6:
-      #   entity_id: "<YOUR_ENTITY>"
-      #   icon: "mdi:YOUR_ICON" #OPTIONAL
-      #   name: "YOUR_NAME" #OPTIONAL
-      #   color: "pink"
-      #   nav_path:
-      # entity_7:
-      #   entity_id: "<YOUR_ENTITY>"
-      #   icon: "mdi:YOUR_ICON" #OPTIONAL
-      #   name: "YOUR_NAME" #OPTIONAL
-      #   color: "yellow"
-      #   nav_path:
+    - type: "horizontal-stack"
+      cards:
+        - type: "custom:button-card"
+          template: custom_card_scenes_welcome
+          variables:
+            entity_1:
+              entity_id: "Alarm"
+              nav_path: "/ui-lovelace-minimalist/Alarm"
+              icon: "mdi:bell-outline"
+              name: "Alarm"
+              color: "red"
+
+            entity_2:
+              entity_id: "Autom."
+              nav_path: "/ui-lovelace-minimalist/Automations"
+              icon: "mdi:cog-outline" 
+              name: "Autom."
+              color: "blue"
+
+            entity_3:
+              entity_id: "Batterien"
+              nav_path: "/ui-lovelace-minimalist/Automations"
+              icon: "mdi:battery-high" 
+              name: "Batt."
+              color: "green"
+
+            entity_4:
+              entity_id: "Energie"
+              nav_path: "/ui-lovelace-minimalist/Energie"
+              icon: "mdi:lightning-bolt-outline" 
+              name: "Energie"
+              color: "yellow"
+
+            entity_5:
+              entity_id: "Hardware"
+              nav_path: "/ui-lovelace-minimalist/Hardware"
+              icon: "mdi:desktop-classic" 
+              name: "Hardw."
+              color: "grey"
+
+            entity_6:
+              entity_id: "Kameras"
+              nav_path: "/ui-lovelace-minimalist/Kameras"
+              icon: "mdi:camera-wireless-outline"
+              name: "Kamer."
+              color: "blue"
+
+            entity_7:
+              entity_id: "Playstation"
+              nav_path: "/ui-lovelace-minimalist/Playstation"
+              icon: "mdi:sony-playstation"
+              name: "PS4"
+              color: "purple"
+
+    # - type: "custom:button-card"
+    #   template: "card_scenes_welcome"
+    #   variables:
+    #     entity_1:
+    #       entity_id: "Alarm"
+    #       nav_path: "/ui-lovelace-minimalist/Alarm"
+    #       icon: "mdi:bell-outline"
+    #       name: "Alarm" 
+    #       color: "red"
+    #     entity_2:
+    #       entity_id: "Automatisierungen"
+    #       nav_path: "/ui-lovelace-minimalist/Automations"
+    #       icon: "mdi:cog-outline" 
+    #       name: "Autom." 
+    #       color: "blue"
+    #     entity_2:
+    #       entity_id: "Batterien"
+    #       icon: "mdi:battery-high"
+    #       name: "Batterien" 
+    #       color: "green"
+    #       nav_path: "/ui-lovelace-minimalist/Batterien"
+    #     entity_3:
+    #       entity_id: "<YOUR_ENTITY>"
+    #       icon: "mdi:YOUR_ICON" #OPTIONAL
+    #       name: "Energie" #OPTIONAL
+    #       color: "green"
+    #       nav_path:
+    #     entity_4:
+    #       entity_id: "<YOUR_ENTITY>"
+    #       icon: "mdi:YOUR_ICON" #OPTIONAL
+    #       name: "Hardware" #OPTIONAL
+    #       color: "purple"
+    #       nav_path:
+    #     entity_5:
+    #       entity_id: "<YOUR_ENTITY>"
+    #       icon: "mdi:YOUR_ICON" #OPTIONAL
+    #       name: "Kameras" #OPTIONAL
+    #       color: "yellow"
+    #       nav_path:
+    #     entity_6:
+    #       entity_id: "<YOUR_ENTITY>"
+    #       icon: "mdi:YOUR_ICON" #OPTIONAL
+    #       name: "PS4" #OPTIONAL
+    #       color: "pink"
+    #       nav_path:
+    #     entity_7:
+    #       entity_id: "<YOUR_ENTITY>"
+    #       icon: "mdi:YOUR_ICON" #OPTIONAL
+    #       name: "Temps" #OPTIONAL
+    #       color: "yellow"
+    #       nav_path:
 
     # - type: "horizontal-stack"
     #   cards:
@@ -95,7 +149,7 @@ cards:
 
     #     - type: "custom:button-card"
     #       template: chip_navigate
-    #       label: Alarm
+    #       # label: Alarm
     #       variables:
     #         ulm_chip_navigate_path: /ui-lovelace-minimalist/Alarm
     #         ulm_chip_navigate_icon: "mdi:bell-outline"
@@ -103,7 +157,7 @@ cards:
 
     #     - type: "custom:button-card"
     #       template: chip_navigate
-    #       label: Autom.
+    #       # label: Autom.
     #       variables:
     #         ulm_chip_navigate_path: /ui-lovelace-minimalist/Automations
     #         ulm_chip_navigate_icon: "mdi:cog-outline"
@@ -111,7 +165,7 @@ cards:
 
     #     - type: "custom:button-card"
     #       template: chip_navigate
-    #       label: Batt.
+    #       # label: Batt.
     #       variables:
     #         ulm_chip_navigate_path: /ui-lovelace-minimalist/Batterien
     #         ulm_chip_navigate_icon: "mdi:battery-high"
@@ -119,24 +173,15 @@ cards:
 
     #     - type: "custom:button-card"
     #       template: chip_navigate
-    #       label: Energie
+    #       # label: Energie
     #       variables:
     #         ulm_chip_navigate_path: /ui-lovelace-minimalist/Energie
     #         ulm_chip_navigate_icon: "mdi:lightning-bolt-outline"
     #         ulm_chip_navigate_icon_color: "var(--google-yellow)"
 
     #     - type: "custom:button-card"
-    #       color_type: blank-card
-
-    # - type: "horizontal-stack"
-    #   cards:
-
-    #     - type: "custom:button-card"
-    #       color_type: blank-card
-
-    #     - type: "custom:button-card"
     #       template: chip_navigate
-    #       label: HW
+    #       # label: HW
     #       variables:
     #         ulm_chip_navigate_path: /ui-lovelace-minimalist/Hardware
     #         ulm_chip_navigate_icon: "mdi:desktop-classic"
@@ -144,7 +189,7 @@ cards:
 
     #     - type: "custom:button-card"
     #       template: chip_navigate
-    #       label: Kameras
+    #       # label: Kameras
     #       variables:
     #         ulm_chip_navigate_path: /ui-lovelace-minimalist/Kameras
     #         ulm_chip_navigate_icon: "mdi:camera-wireless-outline"
@@ -152,7 +197,7 @@ cards:
 
     #     - type: "custom:button-card"
     #       template: chip_navigate
-    #       label: Playst.
+    #       # label: Playst.
     #       variables:
     #         ulm_chip_navigate_path: /ui-lovelace-minimalist/Playstation
     #         ulm_chip_navigate_icon: "mdi:sony-playstation"
@@ -160,7 +205,7 @@ cards:
 
     #     - type: "custom:button-card"
     #       template: chip_navigate
-    #       label: Temp.
+    #       # label: Temp.
     #       variables:
     #         ulm_chip_navigate_path: /ui-lovelace-minimalist/Temperatur
     #         ulm_chip_navigate_icon: "mdi:thermometer"

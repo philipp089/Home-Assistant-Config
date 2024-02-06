@@ -26,7 +26,7 @@ cards:
         by: "von"
         Add task: "Füge eine Aufgabe hinzu"
         Tracked: "Erledigt"
-      custom_sort: name
+      custom_sort: __due_date
       use_24_hours: true
       use_long_date: true
       show_divider: true

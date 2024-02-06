@@ -11,182 +11,181 @@ cards:
 
     - type: 'custom:button-card'
       template: card_title
-      name: "Wohnzimmer"
-      label: "Sensoren"
+      name: "Sensoren"
+      label: "Wohnzimmer"
 
     - type: horizontal-stack
       cards:
-        - type: "custom:button-card"
+        - type: 'custom:button-card'
           template: card_binary_sensor_alert
+          variables:
+            ulm_card_binary_sensor_alert: true
+            ulm_card_binary_sensor_alert_show_last_changed: true
+            ulm_card_binary_sensor_alert_name: Bewegung Kamin
+            ulm_card_binary_sensor_alert_color: red
           entity: binary_sensor.presence_9
-          name: Wohnzimmer Kamin
 
-        - type: "custom:button-card"
+        - type: 'custom:button-card'
           template: card_binary_sensor_alert
+          variables:
+            ulm_card_binary_sensor_alert: true
+            ulm_card_binary_sensor_alert_show_last_changed: true
+            ulm_card_binary_sensor_alert_name: Bewegung TV
+            ulm_card_binary_sensor_alert_color: red
           entity: binary_sensor.presence_3
-          name: Wohnzimmer TV
 
     - type: horizontal-stack
       cards:
-        - type: "custom:button-card"
+        - type: 'custom:button-card'
           template: card_binary_sensor_alert
-          entity: binary_sensor.wohnzimmer_person_occupancy
-          name: Personen Wohnzimmer
-
-        - type: "custom:button-card"
-          template: card_binary_sensor_alert
+          variables:
+            ulm_card_binary_sensor_alert: true
+            ulm_card_binary_sensor_alert_show_last_changed: true
+            ulm_card_binary_sensor_alert_name: Katzen
+            ulm_card_binary_sensor_alert_color: red
           entity: binary_sensor.wohnzimmer_cat_occupancy
-          name: Katze Wohnzimmer
+
+        - type: 'custom:button-card'
+          template: card_binary_sensor_alert
+          variables:
+            ulm_card_binary_sensor_alert: true
+            ulm_card_binary_sensor_alert_show_last_changed: true
+            ulm_card_binary_sensor_alert_name: Personen
+            ulm_card_binary_sensor_alert_color: red
+          entity: binary_sensor.wohnzimmer_person_occupancy
 
     - type: horizontal-stack
       cards:
-        - type: "custom:button-card"
+        - type: 'custom:button-card'
           template: card_binary_sensor_alert
+          variables:
+            ulm_card_binary_sensor_alert: true
+            ulm_card_binary_sensor_alert_show_last_changed: true
+            ulm_card_binary_sensor_alert_name: Türsensor
+            ulm_card_binary_sensor_alert_color: red
           entity: binary_sensor.hmip_swdo_pl_0023da49a3ae4e_state
-          name: Türe Dachterrasse
 
     - type: 'custom:button-card'
       template: card_title
-      name: "Schlafzimmer"
-      label: "Sensoren"
+      label: "Schlafzimmer"
 
     - type: horizontal-stack
       cards:
-        - type: "custom:button-card"
+        - type: 'custom:button-card'
           template: card_binary_sensor_alert
+          variables:
+            ulm_card_binary_sensor_alert: true
+            ulm_card_binary_sensor_alert_show_last_changed: true
+            ulm_card_binary_sensor_alert_name: Bewegung
+            ulm_card_binary_sensor_alert_color: red
           entity: binary_sensor.presence_24
-          name: Schlafzimmer
-        #
-        ###ALARM SCHLAFZIMMER PERSON DETECT########################################################
-        #
-        - type: "custom:button-card"
+
+        - type: 'custom:button-card'
           template: card_binary_sensor_alert
-          entity: binary_sensor.schlafzimmer_person_occupancy
-          name: Personen Schlafzimmer
-        #
-        ###ALARM SCHLAFZIMMER CAT DETECT #######################################################
-        #
+          variables:
+            ulm_card_binary_sensor_alert: true
+            ulm_card_binary_sensor_alert_show_last_changed: true
+            ulm_card_binary_sensor_alert_name: Katzen
+            ulm_card_binary_sensor_alert_color: red
+          entity: binary_sensor.schlafzimmer_cat_occupancy
+
     - type: horizontal-stack
       cards:
-        - type: "custom:button-card"
+        - type: 'custom:button-card'
           template: card_binary_sensor_alert
-          entity: binary_sensor.schlafzimmer_cat_occupancy
-          name: Katze Schlafzimmer
+          variables:
+            ulm_card_binary_sensor_alert: true
+            ulm_card_binary_sensor_alert_show_last_changed: true
+            ulm_card_binary_sensor_alert_name: Personen
+            ulm_card_binary_sensor_alert_color: red
+          entity: binary_sensor.schlafzimmer_person_occupancy
 
-    # #
-    # ###ALARM EINGANG TAB LABEL CARD#####################################################
-    # #
-    # - type: vertical-stack
-    #   cards:
-    #     - type: "custom:button-card"
-    #       template: label_card
-    #       name: Eingang
-    #       tap_action:
-    #         action: navigate
-    #         navigation_path: /db-mobile/default-view
-    #     #
-    #     ###ALARM EINGANG MOTION SENSOR#######################################################
-    #     #
-    #     - type: horizontal-stack
-    #       cards:
-    #         - type: "custom:button-card"
-    #           template: motion_sensor_card
-    #           entity: binary_sensor.presence_12
-    #           name: Eingang
-    #         #
-    #         ###ALARM EINGANG PERSON DETECT########################################################
-    #         #
-    #         - type: "custom:button-card"
-    #           template: person_detect_card
-    #           entity: binary_sensor.eingang_person_occupancy
-    #           name: Personen Eingang
-    #         #
-    #         ###ALARM EINGANG CAT DETECT #######################################################
-    #         #
-    #     - type: horizontal-stack
-    #       cards:
-    #         - type: "custom:button-card"
-    #           template: cat_detect_card
-    #           entity: binary_sensor.eingang_cat_occupancy
-    #           name: Katze Eingang
-    #         #
-    #         ###ALARM EINGANG DOOR SENSOR#######################################################
-    #         #
-    #         - type: "custom:button-card"
-    #           template: door_sensor_card
-    #           entity: binary_sensor.0023da49a3aecb_state
-    #           name: Eingangstüre
-    # #
-    # ###ALARM BADEZIMMER TAB LABEL CARD#####################################################
-    # #
-    # - type: vertical-stack
-    #   cards:
-    #     - type: "custom:button-card"
-    #       template: label_card
-    #       name: Badezimmer
-    #       tap_action:
-    #         action: navigate
-    #         navigation_path: /db-mobile/default-view
-    #     #
-    #     ###ALARM BADEZIMMER MOTION SENSOR#######################################################
-    #     #
-    #     - type: horizontal-stack
-    #       cards:
-    #         - type: "custom:button-card"
-    #           template: motion_sensor_card
-    #           entity: binary_sensor.presence_15
-    #           name: Badezimmer
-    #         #
-    #         ###ALARM BADEZIMMER MOTION SENSOR KAMIN #######################################################
-    #         #
-    #         - type: "custom:button-card"
-    #           template: empty_card
-    # #
-    # ###ALARM WERKSTATT TAB LABEL CARD#####################################################
-    # #
-    # - type: vertical-stack
-    #   cards:
-    #     - type: "custom:button-card"
-    #       template: label_card
-    #       name: Werkstatt
-    #     #
-    #     ###ALARM WERKSTATT MOTION SENSOR#######################################################
-    #     #
-    #     - type: horizontal-stack
-    #       cards:
-    #         - type: "custom:button-card"
-    #           template: motion_sensor_card
-    #           entity: binary_sensor.presence_18
-    #           name: Werkstatt
-    #         #
-    #         ###ALARM WERKSTATT DOOR SENSOR#######################################################
-    #         #
-    #         - type: "custom:button-card"
-    #           template: door_sensor_card
-    #           entity: binary_sensor.hmip_swdo_pl_0023da49a3ae62_state
-    #           name: Fenster Werkstatt
-    # #
-    # ###ALARM KÜCHE TAB LABEL CARD#####################################################
-    # #
-    # - type: vertical-stack
-    #   cards:
-    #     - type: "custom:button-card"
-    #       template: label_card
-    #       name: Küche
-    #       tap_action:
-    #         action: navigate
-    #         navigation_path: /db-mobile/default-view
-    #     #
-    #     ###ALARM KÜCHE MOTION SENSOR#######################################################
-    #     #
-    #     - type: horizontal-stack
-    #       cards:
-    #         - type: "custom:button-card"
-    #           template: motion_sensor_card
-    #           entity: binary_sensor.presence_21
-    #           name: Küche
-    #         #
-    #         ###ALARM KÜCHE MOTION SENSOR KAMIN #######################################################
-    #         #
-    #         - type: "custom:button-card"
-    #           template: empty_card
+    - type: 'custom:button-card'
+      template: card_title
+      label: "Badezimmer"
+
+    - type: horizontal-stack
+      cards:
+        - type: 'custom:button-card'
+          template: card_binary_sensor_alert
+          variables:
+            ulm_card_binary_sensor_alert: true
+            ulm_card_binary_sensor_alert_show_last_changed: true
+            ulm_card_binary_sensor_alert_name: Bewegung
+            ulm_card_binary_sensor_alert_color: red
+          entity: binary_sensor.presence_15
+
+    - type: 'custom:button-card'
+      template: card_title
+      label: "Küche"
+
+    - type: horizontal-stack
+      cards:
+        - type: 'custom:button-card'
+          template: card_binary_sensor_alert
+          variables:
+            ulm_card_binary_sensor_alert: true
+            ulm_card_binary_sensor_alert_show_last_changed: true
+            ulm_card_binary_sensor_alert_name: Bewegung
+            ulm_card_binary_sensor_alert_color: red
+          entity: binary_sensor.presence_21
+
+    - type: 'custom:button-card'
+      template: card_title
+      label: "Werkstatt"
+
+    - type: horizontal-stack
+      cards:
+        - type: 'custom:button-card'
+          template: card_binary_sensor_alert
+          variables:
+            ulm_card_binary_sensor_alert: true
+            ulm_card_binary_sensor_alert_show_last_changed: true
+            ulm_card_binary_sensor_alert_name: Bewegung
+            ulm_card_binary_sensor_alert_color: red
+          entity: binary_sensor.presence_18
+
+        - type: 'custom:button-card'
+          template: card_binary_sensor_alert
+          variables:
+            ulm_card_binary_sensor_alert: true
+            ulm_card_binary_sensor_alert_show_last_changed: true
+            ulm_card_binary_sensor_alert_name: Fenstersensor
+            ulm_card_binary_sensor_alert_color: red
+          entity: binary_sensor.hmip_swdo_pl_0023da49a3ae62_state
+
+    - type: 'custom:button-card'
+      template: card_title
+      label: "Eingang"
+
+    - type: horizontal-stack
+      cards:
+        - type: 'custom:button-card'
+          template: card_binary_sensor_alert
+          variables:
+            ulm_card_binary_sensor_alert: true
+            ulm_card_binary_sensor_alert_show_last_changed: true
+            ulm_card_binary_sensor_alert_name: Bewegung
+            ulm_card_binary_sensor_alert_color: red
+          entity: binary_sensor.presence_12
+
+        - type: 'custom:button-card'
+          template: card_binary_sensor_alert
+          variables:
+            ulm_card_binary_sensor_alert: true
+            ulm_card_binary_sensor_alert_show_last_changed: true
+            ulm_card_binary_sensor_alert_name: Katzen
+            ulm_card_binary_sensor_alert_color: red
+          entity: binary_sensor.eingang_cat_occupancy
+
+    - type: horizontal-stack
+      cards:
+        - type: 'custom:button-card'
+          template: card_binary_sensor_alert
+          variables:
+            ulm_card_binary_sensor_alert: true
+            ulm_card_binary_sensor_alert_show_last_changed: true
+            ulm_card_binary_sensor_alert_name: Personen
+            ulm_card_binary_sensor_alert_color: red
+          entity: binary_sensor.eingang_person_occupancy
+    
