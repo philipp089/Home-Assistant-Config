@@ -169,7 +169,7 @@ As the name implies, the Room Tab is where I manage all scenes, scripts, plugs a
 
 ### The Weather - Tab <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-This tab mainly serves as the dedicated control hub for my roof terrace but it features the weather forecast from met.no, delivered by the Norwegian Meteorological Institute. Additionally, three sensors provide real-time data on temperature, humidity, and light intensity. The tab also includes control options for the outdoor lights through the wall switch card.
+This tab mainly serves as the dedicated control hub for my roof terrace and it features the weather forecast from met.no, delivered by the Norwegian Meteorological Institute. Additionally, three sensors provide real-time data on temperature, humidity, and light intensity. The tab also includes control options for the outdoor lights through the wall switch card.
 
 ![02_Climate_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/53b4a523-b902-44f3-a680-e309d82edfd1)
 
