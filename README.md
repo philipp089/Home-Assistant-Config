@@ -134,9 +134,9 @@ The Home - Tab <a href="https://github.com/philipp089/Home-Assistant-Config#--go
 
 ![00_Home_Tab_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/09e5d254-9bca-4cbd-815a-3e868bdf052b)
 
-The Home-Tab is the default Tab and a great way to start searching through features as it gives direct access to all tabs in the User Interface. Each card in the whole User-Interface leads back to the Home-Tab by pressing the back-chip on top of each page.
+The Home Tab serves as the default and optimal starting point, providing a convenient way to explore features by granting direct access to all tabs within the User Interface. Navigating back to the Home Tab is made simple—just press the back-chip located at the top of each page.
 
-The Home-Tab contains a custom-header with each tab above the welcome card. The quick access area below is maybe my mostly used way to navigate through the app, as it gives direct access to all dashboards.
+Within the Home Tab, a custom header showcases each tab positioned above the welcome card, ensuring an organized layout. The quick access area below stands out as my preferred method for navigating the app, offering direct entry to all dashboards.
 
 <h4 align="left">
   <br>
@@ -149,7 +149,7 @@ The Home - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-
 
 ### The Room - Tabs <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-As the name suggests, in the Room-Tab I handle all scenes, scripts, plugs and media-players of the according room. For the lights I almost exclusively use Philips Hue bulbs connected to a Raspbee II from dresden electronics as my Zigbee-Gateway, an old IKEA Floalt Panel is the exception. Each of the scenes is also controllable via speech over Google Assistant.
+As the name implies, the Room Tab is where I manage all scenes, scripts, plugs and media players specific to each room. I predominantly use Philips Hue bulbs connected to a Raspbee II from Dresden Electronics as my Zigbee Gateway for lighting with the exception of an old IKEA Floalt Panel. Furthermore, all scenes can be controlled through voice commands via Google Assistant.
 
 ![01_Room_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/a43628c8-bb45-42b3-bf07-3475aa7d3ae0)
 
@@ -169,7 +169,7 @@ As the name suggests, in the Room-Tab I handle all scenes, scripts, plugs and me
 
 ### The Weather - Tab <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-This Tab is basically my roof terrace room tab, it contains the weather forecast from met.no, delivered by the Norwegian Meteorological Institute followed by three sensors for temperature, humidity and light-intensity as well as the wall-switch for the outdoor-lights.
+This tab mainly serves as the dedicated control hub for my roof terrace but it features the weather forecast from met.no, delivered by the Norwegian Meteorological Institute. Additionally, three sensors provide real-time data on temperature, humidity, and light intensity. The tab also includes control options for the outdoor lights through the wall switch card.
 
 ![02_Climate_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/53b4a523-b902-44f3-a680-e309d82edfd1)
 
@@ -179,142 +179,12 @@ This Tab is basically my roof terrace room tab, it contains the weather forecast
 
 ---
 
-### The Plugs - Tab <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
-
-![03_Plugs_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/139414779-996c4732-2860-457f-9551-82cc86443a95.png)
-
-#### The Plugs - Tab Night Mode <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
-
-![03_Plugs_Tab_Mockup_001_Night_Mode](https://user-images.githubusercontent.com/66092908/139414792-d8fe2977-53cc-4817-a8fe-56019490283c.png)
-
----
-
-### The Plants - Tab <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
-
-I still have to evaluate the Xiami-Plant-Sensors until that, this dashboard is empty.
-
----
-
-### The Climate - Tab <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
-
-A simple dashboard to view all the temperatures in the flat. In my setup i use Homematic HmiP-eTRV-2 devices.
-
-![05_Climate_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/139417167-97c36bc4-222d-4e2b-a546-9dc91dc32633.png)
-
-#### The Climate - Tab Night Mode <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
-
-![05_Climate_Tab_Mockup_001_Night_Mode](https://user-images.githubusercontent.com/66092908/139417204-22b26e99-7872-46be-94f6-b7744e7598a1.png)
-
----
-
-### The Raspberry - Tab <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
-
-![06_Raspberry_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/139419353-73fac1d8-d9e2-42dc-a338-0511c65d61c4.png)
-
-#### The Raspberry - Tab Night Mode <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
-
-![06_Raspberry_Tab_Mockup_001_Night_Mode](https://user-images.githubusercontent.com/66092908/139422061-4eb153f7-dd1a-4f5f-8511-d7a8c52956dd.png)
-
----
-
-### The Desktop - PC - Tab <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
-
-![07_Desktop_PC_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/139476942-8980eb6e-c777-4f25-99ab-71525693a40e.png)
-
-#### The Desktop - Tab Night Mode <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
-
-![07_Desktop_PC_Tab_Mockup_001_Night_Mode](https://user-images.githubusercontent.com/66092908/139476176-9a3d0a57-092b-4126-86d1-a48e49c17cf9.png)
-
----
-
-### The Playstation - Tab <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
-
-![08_Playstation_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/139476914-077e426b-8b32-4dfb-a0fa-3ed3a0840d9e.png)
-
-#### The Playstation - Tab Night Mode <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
-
-![08_Playstation_Tab_Mockup_001_Night_Mode](https://user-images.githubusercontent.com/66092908/139476263-6720bf57-1b80-43ce-9d2a-3d92fc50db01.png)
-
----
-
-### The Weather - Tab <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
-
-![09_Weather_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/139476891-05c59e36-66f8-47ce-bcf9-8c0cd0f8df51.png)
-
-#### The Weather - Tab Night Mode <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
-
-![09_Weather_Tab_Mockup_001_Night_Mode](https://user-images.githubusercontent.com/66092908/139476334-78bb256f-7f9c-47d0-9951-26f5b03d4837.png)
-
----
-
-### The Camera - Tab <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
-
-![10_Camera_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/139476872-7f752de9-1393-4863-9147-1c9b70d10427.png)
-
-#### The Camera - Tab Night Mode <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
-
-![10_Camera_Tab_Mockup_001_Night_Mode](https://user-images.githubusercontent.com/66092908/139476405-a30f8b18-6d61-441f-862f-2463503b91ef.png)
-
----
-
-### The Smartphone - Tab <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
-
-![11_Smartphone_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/139476838-eccbb9dc-df6c-4cd7-b676-496e58d81323.png)
-
-#### The Smartphone - Tab Night Mode <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
-
-![11_Smartphone_Tab_Mockup_001_Night_Mode](https://user-images.githubusercontent.com/66092908/139476487-832a7384-8681-4ab5-8d7d-94607e9bdd8a.png)
-
----
-
-### The Battery - Tab <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
-
-![12_Battery_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/139476820-fc1db2ad-1b49-4ea9-b9a5-d95356faf0e8.png)
-
-#### The Battery - Tab Night Mode <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
-
-![12_Battery_Tab_Mockup_001_Night_Mode](https://user-images.githubusercontent.com/66092908/139476566-506a89cb-388d-43d4-a9f0-7b97e856c4c3.png)
-
----
-
-### The Alarm - Tab <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
-
-![13_Alarm_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/139476801-329a28e1-9412-4d0c-b5b0-588a6029bc96.png)
-
-#### The Alarm - Tab Night Mode <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
-
-![13_Alarm_Tab_Mockup_001_Night_Mode](https://user-images.githubusercontent.com/66092908/139476617-419170fd-df69-4233-90ab-a075ddbb080d.png)
-
----
-
-### The Health - Tab <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
-
-Work in Progress
-
----
-
-### The Calender - Tab <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
-
-Work in Progress
-
----
-
-### The Automations - Tab <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
-
-![14_Automations_Tab_Mockup_003](https://user-images.githubusercontent.com/66092908/139476702-f6a134b2-6656-4602-964a-6018a82c2af0.png)
-
-#### The Automations - Tab Night Mode <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
-
-![14_Automations_Tab_Mockup_003_Night_Mode](https://user-images.githubusercontent.com/66092908/139476678-8da8cc38-d2c5-4ed7-87d4-bdd4e3a8792d.png)
-
----
-
 <h2 align="center">
   <br>
   Devices <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 </h2>
 
-This section deals with the various device categories. Use the menu links below to navigate through the Device Categories.
+This section deals with the various device categories in my smart home. Use the menu links below to navigate through the Device Categories.
 
 ---
 
