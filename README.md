@@ -154,26 +154,10 @@ The Home-Tab contains a custom-header with each tab above the Presence-Status. T
 
 ![00_Home_Tab_Mockup_004_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/a1990ab7-b6a2-42eb-94b7-e057d834776f)
 
-Aside from that, the  Home-Tab contains a group of custom button cards for each room. 
-
-![00_Home_Tab_Mockup_002](https://user-images.githubusercontent.com/66092908/139411262-14e362d9-f600-474c-a179-896bc33a29db.png)
-
-The Plugs- and the Air-Humidifier Card are custom button card templates as well as all other button card type.
-
-![00_Home_Tab_Mockup_003](https://user-images.githubusercontent.com/66092908/139411322-7bdbe469-abb0-45c9-b74d-8d063f32cb52.png)
-
 <h4 align="left">
   <br>
-The Home - Tab Night Mode <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+The Home - Tab Night Mode <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://github.com/philipp089/Home-Assistant-Config/assets/66092908/002bbcbb-f579-417b-8636-c6351a885a6a" width="22" ></a>
 </h4>
-  
-The corresponding night-mode is shown below:
-
-![00_Home_Tab_Mockup_001_Night_Mode](https://user-images.githubusercontent.com/66092908/139411226-159c4aed-10e7-405c-a9a6-6622cecfdfab.png)
-
-![00_Home_Tab_Mockup_002_Night_Mode](https://user-images.githubusercontent.com/66092908/139411286-35da3dca-6901-4fab-bc48-aa0a6f8b0594.png)
-
-![00_Home_Tab_Mockup_003_Night_Mode](https://user-images.githubusercontent.com/66092908/139411335-56a1515c-3ba0-488c-863d-e26596b69f77.png)
 
 ---
 
