@@ -23,7 +23,7 @@ views:
   - !include views/batterien.yaml
   - !include views/energie.yaml
   - !include views/hardware.yaml
-  - !include views/kameras.yaml
+  # - !include views/kameras.yaml
   - !include views/playstation.yaml
   # - !include views/temperatur.yaml
 

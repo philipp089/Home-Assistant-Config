@@ -4,7 +4,7 @@
 
 ![Header](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/30f3ed7d-c295-4756-b295-e0b27f4e5069)
 
-![00_Home_Tab_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/532a3d35-3710-4e25-acc7-bad7027ffbb6)
+![00_Home_Tab_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/09e5d254-9bca-4cbd-815a-3e868bdf052b)
 
 This Repository contains my personal Smart Home Configuration. At the moment (as of Feb. 24) my Smart Home runs on a Raspberry Pi 4 Model B 4 GB with [Home Assistant](https://www.home-assistant.io/) installed. Use the menu links below to navigate through the documentation. If there are any open questions or you want to contribute feel free to contact me.
 
@@ -18,10 +18,6 @@ This Repository contains my personal Smart Home Configuration. At the moment (as
   <h4>
     <a href="https://github.com/philipp089/Home-Assistant-Config#----mobile-user-interface">
       Mobile User Interface
-    </a>
-    <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config#----desktop-user-interface-">
-      Desktop User Interface
     </a>
     <span> | </span>
     <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#----devices-">
@@ -43,16 +39,16 @@ This Repository contains my personal Smart Home Configuration. At the moment (as
 If you are an experienced Home Assistant user you might be interested in the following files:
 
 #### <a name="Main Files"></a>Main files and folders of my HA-Config:
-* [ui-lovelace.yaml](https://github.com/philipp089/Home-Assistant-Config/blob/master/ui-lovelace.yaml) - Main file of the Mobile User Interface
-* [config.js](https://github.com/philipp089/Home-Assistant-Config/blob/master/www/tileboard/config.js) - Main file of the Desktop User Interface
+* [Minimalist UI Mobile views](ui_lovelace_minimalist/dashboard/views) - Main folder of the Mobile User Interface Views
 * [configuration.yaml](https://github.com/philipp089/Home-Assistant-Config/blob/master/configuration.yaml) - Main Configuration file of the Smart Home
-* [themes.yaml](https://github.com/philipp089/Home-Assistant-Config/blob/master/themes.yaml) - Theme-File for Day and Night Mode
+* [themes.yaml](https://github.com/philipp089/Home-Assistant-Config/blob/master/themes.yaml) - Theme-File for Dark and Light Mode
 * [scrips.yaml](https://github.com/philipp089/Home-Assistant-Config/blob/master/scripts.yaml) - All the scrips running in my Smart Home
 * [automations.yaml](https://github.com/philipp089/Home-Assistant-Config/blob/master/automations.yaml) - All the automations running in my Smart Home
 
-
 #### <a name="Links"></a>Useful Links: 
+* [Minimalist UI Documentation](https://ui-lovelace-minimalist.github.io/UI/) - Documentation for the Minimalist UI Interface
 * [material.io](https://material.io/) - Guidelines for designing User Interfaces
+* [7ahang´s Behance Profile](https://www.behance.net/gallery/88433905/Redesign-Smart-Home) - Guidelines for designing Smart Home Interfaces
 * [MDI Icons](https://materialdesignicons.com/) - Icons used in the Interfaces
 * [Google Visual Asset Guidelines](https://www.behance.net/gallery/9028077/Google-Visual-Assets-Guidelines-Part-1) - Google specific design guidelines
 
@@ -61,7 +57,7 @@ If you are an experienced Home Assistant user you might be interested in the fol
   Mobile User Interface
 </h2>
 
-At the moment (as of Nov. 21) I control my Smart Home over 17 individual tabs. Use the menu links below to navigate through the tabs. Each tab contains a day and a night mode.
+At the moment (as of Feb. 24) I control my Smart Home over 19 individual tabs. Use the menu links below to navigate through the tabs. Each tab contains a dark and a light mode.
 
 ---
 
@@ -75,68 +71,56 @@ At the moment (as of Nov. 21) I control my Smart Home over 17 individual tabs. U
       Home-Tab
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-light---tab-">
-      Light-Tab
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-room---tab-">
+      Room-Tabs
     </a>
     <span> | </span>
     <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-media---tab-">
-      Media-Tab
-    </a>
-    <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-plugs---tab-">
-      Plugs-Tab
-    </a>
-    <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-plants---tab-">
-      Plants-Tab
-    </a>
-    <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-climate---tab-">
-      Climate-Tab
-    </a>
-    <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-raspberry---tab-">
-      Raspberry-Tab
-    </a>
-    <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-desktop---pc---tab-">
-      PC-Tab
-    </a>
-    <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-playstation---tab-">
-      Playstation-Tab
-    </a>
-    <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-weather---tab-">
       Weather-Tab
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-camera---tab-">
-      Camera-Tab
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-plugs---tab-">
+      Remote-Tab
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-smartphone---tab-">
-      Smartphone-Tab
-    </a>
-    <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-battery---tab-">
-      Battery-Tab
-    </a>
-    <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-alarm---tab-">
-      Alarm-Tab
-    </a>
-    <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-health---tab-">
-      Health-Tab
-    </a>
-    <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-calender---tab-">
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-plants---tab-">
       Calendar-Tab
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-automations---tab-">
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-climate---tab-">
+      Raspberry Pi-Tab
+    </a>
+    <span> | </span>
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-raspberry---tab-">
+      Health-Tab
+    </a>
+    <span> | </span>
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-desktop---pc---tab-">
+      Chores-Tab
+    </a>
+    <span> | </span>
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-playstation---tab-">
+      Alarm-Tab
+    </a>
+    <span> | </span>
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-weather---tab-">
       Automations-Tab
+    </a>
+    <span> | </span>
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-camera---tab-">
+      Batteries-Tab
+    </a>
+    <span> | </span>
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-smartphone---tab-">
+      Energy-Tab
+    </a>
+    <span> | </span>
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-battery---tab-">
+      Hardware-Tab
+    </a>
+    <span> | </span>
+    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-alarm---tab-">
+      Playstation-Tab
     </a>
   </h4>
 </div>
@@ -145,10 +129,10 @@ At the moment (as of Nov. 21) I control my Smart Home over 17 individual tabs. U
 
 <h3 align="left">
   <br>
-  The Home - Tab <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+The Home - Tab <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 </h3>
 
-![00_Home_Tab_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/532a3d35-3710-4e25-acc7-bad7027ffbb6)
+![00_Home_Tab_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/09e5d254-9bca-4cbd-815a-3e868bdf052b)
 
 The Home-Tab is the default Tab and a great way to start searching through features as it gives direct access to all tabs in the User Interface. Each label-card in the whole User-Interface leads back to the Home-Tab by pressing it.
 
@@ -161,7 +145,7 @@ Find the Light-Mode below:
 The Home - Tab Night Mode <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 </h4>
 
-![00_Home_Tab_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/fcf859df-a32e-47ce-9c10-a52e719edc5f)
+![00_Home_Tab_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/21ee2747-1ae1-4f05-8307-ad65d7fea045)
 
 ---
 
@@ -322,19 +306,6 @@ Work in Progress
 #### The Automations - Tab Night Mode <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
 ![14_Automations_Tab_Mockup_003_Night_Mode](https://user-images.githubusercontent.com/66092908/139476678-8da8cc38-d2c5-4ed7-87d4-bdd4e3a8792d.png)
-
----
-
-<h2 align="center">
-  <br>
-  Desktop User Interface <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
-</h2>
-
-### The Home - Tab <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
-
-The Desktop User Interface is made with Tileboard. At the moment I only have the Home - Tab finished.
-
-![Home_Tab_Desktop_UI_v03_web](https://user-images.githubusercontent.com/66092908/136972172-35ea2c69-f50e-4e4f-9beb-c53e5d942822.png)
 
 ---
 

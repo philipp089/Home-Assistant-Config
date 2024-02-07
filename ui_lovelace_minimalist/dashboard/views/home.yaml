@@ -76,12 +76,12 @@ cards:
               name: "Hardw."
               color: "grey"
 
-            entity_6:
-              entity_id: "Kameras"
-              nav_path: "/ui-lovelace-minimalist/Kameras"
-              icon: "mdi:camera-wireless-outline"
-              name: "Kamer."
-              color: "blue"
+            # entity_6:
+            #   entity_id: "Kameras"
+            #   nav_path: "/ui-lovelace-minimalist/Kameras"
+            #   icon: "mdi:camera-wireless-outline"
+            #   name: "Kamer."
+            #   color: "blue"
 
             entity_7:
               entity_id: "Playstation"
