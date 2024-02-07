@@ -165,15 +165,19 @@ The Home - Tab Night Mode <a href="https://github.com/philipp089/Home-Assistant-
 
 ---
 
-### The Light - Tab <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+### The Room - Tab <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-As the name suggests, in the Light-Tab I handle all my light-scripts. I almost exclusively use Philips Hue bulbs connected to a Raspbee II from dresden electronics as my Zigbee-Gateway. An old IKEA Floalt Panel is the exception. Each of the scenes is also controllable via speech over Google Assistant.
+As the name suggests, in the Room-Tab I handle all scenes, scripts, plugs and media-players of the according room. For the lights I almost exclusively use Philips Hue bulbs connected to a Raspbee II from dresden electronics as my Zigbee-Gateway. An old IKEA Floalt Panel is the exception. Each of the scenes is also controllable via speech over Google Assistant.
 
-![00_Home_Tab_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/0527d094-57c4-43bd-bc92-c8595f9a28ab)
+![01_Room_Tab_Mockup_001_Night_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/8d80c6b7-4039-44cd-99c5-9a6e23d95a2f)
 
-#### The Light - Tab Night Mode <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+![01_Room_Tab_Mockup_002_Night_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/ba7dc216-a19f-471c-a8b7-9a3c5b3f5f7b)
 
-The night mode version of the light tab:
+![01_Room_Tab_Mockup_003_Night_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/f28f0e40-a1ac-4a52-bc66-d76452210123)
+
+#### The Room - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+
+
 
 ![01_Light_Tab_Mockup_001_Night_Mode](https://user-images.githubusercontent.com/66092908/139411374-9e8ecaca-0bf6-4e1b-9df6-136c3a785afd.png)
 
