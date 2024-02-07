@@ -1,12 +1,12 @@
 <h1 align="center">
-  Google inspired Home Assistant Configuration (Mobile and Desktop User Interfaces)
+  Home Assistant Configuration (Minimalist UI Setup)
 </h1>
 
-![Header](https://user-images.githubusercontent.com/66092908/140277877-8dbba7b6-89f9-48d0-bc43-0af4d060022d.png)
+![Header](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/30f3ed7d-c295-4756-b295-e0b27f4e5069)
 
-![00_Home_Tab_Mockup_001_Night_Mode](https://user-images.githubusercontent.com/66092908/139411226-159c4aed-10e7-405c-a9a6-6622cecfdfab.png)
+![00_Home_Tab_Mockup_004_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/a1990ab7-b6a2-42eb-94b7-e057d834776f)
 
-This Repository contains my personal Smart Home Configuration. At the moment (as of Nov. 21) my Smart Home runs on a Raspberry Pi 4 Model B 4 GB with <a href="https://www.home-assistant.io/">Home Assistant</a> installed. Use the menu links below to navigate through the documentation. If there are any open questions or you want to contribute feel free to contact me. 
+This Repository contains my personal Smart Home Configuration. At the moment (as of Feb. 24) my Smart Home runs on a Raspberry Pi 4 Model B 4 GB with [Home Assistant](https://www.home-assistant.io/) installed. Use the menu links below to navigate through the documentation. If there are any open questions or you want to contribute feel free to contact me.
 
 ---
 
@@ -49,7 +49,7 @@ If you are an experienced Home Assistant user you might be interested in the fol
 * [themes.yaml](https://github.com/philipp089/Home-Assistant-Config/blob/master/themes.yaml) - Theme-File for Day and Night Mode
 * [scrips.yaml](https://github.com/philipp089/Home-Assistant-Config/blob/master/scripts.yaml) - All the scrips running in my Smart Home
 * [automations.yaml](https://github.com/philipp089/Home-Assistant-Config/blob/master/automations.yaml) - All the automations running in my Smart Home
-* [Automations folder](https://github.com/philipp089/Home-Assistant-Config/tree/master/automations) - To organise my automations in a more structured way, i started splitting automations to single files. Find the structure here
+
 
 #### <a name="Links"></a>Useful Links: 
 * [material.io](https://material.io/) - Guidelines for designing User Interfaces
@@ -152,7 +152,7 @@ The Home-Tab is the default Tab and a great way to start searching through featu
 
 The Home-Tab contains a custom-header with each tab above the Presence-Status. The quick access area below is maybe my mostly used way to navigate through the app, as it gives direct access to all dashboards.
 
-![00_Home_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/139411201-6b6403e7-be74-4b32-8584-520623305b19.png)
+![00_Home_Tab_Mockup_004_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/a1990ab7-b6a2-42eb-94b7-e057d834776f)
 
 Aside from that, the  Home-Tab contains a group of custom button cards for each room. 
 

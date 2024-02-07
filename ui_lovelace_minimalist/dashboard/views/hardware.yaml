@@ -2,7 +2,76 @@ title: "Hardware"
 icon: "mdi:desktop-classic"
 path: "Hardware"
 cards:
-  - type: "custom:button-card"
-    template: chip_back
-    variables:
-      ulm_chip_back_path: /ui-lovelace-minimalist/home
+  - type: "vertical-stack"
+    cards:
+
+    - type: "custom:button-card"
+      template: chip_back
+      variables:
+        ulm_chip_back_path: /ui-lovelace-minimalist/home
+
+    - type: 'custom:button-card'
+      template: card_title
+      name: PiNAS
+      label: OpenMediaVault
+
+    - type: "horizontal-stack"
+      cards:
+        - type: 'custom:button-card'
+          template: card_graph
+          entity: sensor.omv_system_cpu_load
+          variables:
+            ulm_card_graph_color: "var(--google-green)"
+            ulm_card_graph_name: CPU-Auslastung
+            ulm_card_graph_entity: sensor.omv_system_cpu_load
+
+            ulm_card_graph_type: fill
+            ulm_card_graph_hours: 24
+            ulm_card_graph_group_by: interval
+            ulm_card_graph_line_width: 6
+
+        - type: 'custom:button-card'
+          template: card_graph
+          entity: sensor.omv_system_memory
+          variables:
+            ulm_card_graph_color: "var(--google-yellow)"
+            ulm_card_graph_name: Speicher-Auslastung
+            ulm_card_graph_entity: sensor.omv_system_memory
+
+            ulm_card_graph_type: fill
+            ulm_card_graph_hours: 24
+            ulm_card_graph_group_by: interval
+            ulm_card_graph_line_width: 6
+
+    - type: "horizontal-stack"
+      cards:
+        - type: 'custom:button-card'
+          template: card_graph
+          entity: sensor.omv_disk_2
+          variables:
+            ulm_card_graph_color: "var(--google-red)"
+            ulm_card_graph_name: OMV Disk Temp 1
+            ulm_card_graph_entity: sensor.omv_disk_2
+
+            ulm_card_graph_type: fill
+            ulm_card_graph_hours: 24
+            ulm_card_graph_group_by: interval
+            ulm_card_graph_line_width: 6
+
+        - type: 'custom:button-card'
+          template: card_graph
+          entity: sensor.omv_disk_3
+          variables:
+            ulm_card_graph_color: "var(--google-red)"
+            ulm_card_graph_name: OMV Disk Temp 2
+            ulm_card_graph_entity: sensor.omv_disk_3
+
+            ulm_card_graph_type: fill
+            ulm_card_graph_hours: 24
+            ulm_card_graph_group_by: interval
+            ulm_card_graph_line_width: 6
+
+    - type: 'custom:button-card'
+      template: card_title
+      label: Computer
+

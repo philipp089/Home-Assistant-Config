@@ -133,17 +133,6 @@ cards:
 
     - type: 'custom:button-card'
       template: card_title
-      label: "Steckdosen"
-
-    - type: "custom:button-card"
-      template: card_power_outlet
-      entity: switch.steckdose_pinas
-      variables:
-        ulm_card_power_outlet_name:  PiNAS
-        ulm_card_power_outlet_color: blue
-
-    - type: 'custom:button-card'
-      template: card_title
       label: "Skripte"
 
     - type: "custom:button-card"
@@ -156,6 +145,17 @@ cards:
         service: script.turn_on
         service_data:
           entity_id: script.werkstatt_boost
+
+    - type: 'custom:button-card'
+      template: card_title
+      label: "Steckdosen"
+
+    - type: "custom:button-card"
+      template: card_power_outlet
+      entity: switch.steckdose_pinas
+      variables:
+        ulm_card_power_outlet_name:  PiNAS
+        ulm_card_power_outlet_color: blue
 
     - type: 'custom:button-card'
       template: card_title

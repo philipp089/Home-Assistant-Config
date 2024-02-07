@@ -2,7 +2,6 @@
 button_card_templates: !include_dir_merge_named "../../custom_components/ui_lovelace_minimalist/__ui_minimalist__/ulm_templates/"
 
 title: "Mobile"
-theme: "minimalist-mobile"
 background: "var(--background-image)"
 
 views:
@@ -26,5 +25,5 @@ views:
   - !include views/hardware.yaml
   - !include views/kameras.yaml
   - !include views/playstation.yaml
-  - !include views/temperatur.yaml
+  # - !include views/temperatur.yaml
 

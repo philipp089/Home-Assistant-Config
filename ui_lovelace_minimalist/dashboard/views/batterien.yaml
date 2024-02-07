@@ -17,7 +17,7 @@ cards:
     - type: "horizontal-stack"
       cards:
         - type: 'custom:button-card'
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.bewegungsmelder_battery_level
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.bewegungsmelder_battery_level
@@ -26,7 +26,7 @@ cards:
             ulm_card_battery_name: Bewegung Kamin
 
         - type: 'custom:button-card'
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.presence_3_battery_level
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.presence_3_battery_level
@@ -37,7 +37,7 @@ cards:
     - type: "horizontal-stack"
       cards:
         - type: 'custom:button-card'
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.heizthermostat_wohnzimmer_batterie_prozent
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.heizthermostat_wohnzimmer_batterie_prozent
@@ -46,7 +46,7 @@ cards:
             ulm_card_battery_name: Heizung Kamin
 
         - type: 'custom:button-card'
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.heizthermostat_wohnzimmer_tv_batterie_prozent
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.heizthermostat_wohnzimmer_tv_batterie_prozent
@@ -57,7 +57,7 @@ cards:
     - type: "horizontal-stack"
       cards:
         - type: "custom:button-card"
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.philips_dimmschalter_battery_level
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.philips_dimmschalter_battery_level
@@ -66,7 +66,7 @@ cards:
             ulm_card_battery_name: Philips Dimmschalter
 
         - type: 'custom:button-card'
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.thermostat_wohnzimmer_batterie_prozent
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.thermostat_wohnzimmer_batterie_prozent
@@ -77,7 +77,7 @@ cards:
     - type: "horizontal-stack"
       cards:
         - type: 'custom:button-card'
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.tuersensor_wohnzimmer_batterie_prozent
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.tuersensor_wohnzimmer_batterie_prozent
@@ -92,7 +92,7 @@ cards:
     - type: "horizontal-stack"
       cards:
         - type: 'custom:button-card'
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.bewegungsmelder_battery_level
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.bewegungsmelder_battery_level
@@ -101,7 +101,7 @@ cards:
             ulm_card_battery_name: Bewegung 
 
         - type: 'custom:button-card'
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.heizthermostat_wohnzimmer_tv_batterie_prozent
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.heizthermostat_schlafzimmer_batterie_prozent
@@ -112,7 +112,7 @@ cards:
     - type: "horizontal-stack"
       cards:
         - type: 'custom:button-card'
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.thermostat_wohnzimmer_batterie_prozent
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.thermostat_schlafzimmer_batterie_prozent
@@ -127,7 +127,7 @@ cards:
     - type: "horizontal-stack"
       cards:
         - type: 'custom:button-card'
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.bewegungsmelder_battery_level_3
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.bewegungsmelder_battery_level_3
@@ -136,7 +136,7 @@ cards:
             ulm_card_battery_name: Bewegung 
 
         - type: 'custom:button-card'
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.heizthermostat_badezimmer_batterie_prozent
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.heizthermostat_badezimmer_batterie_prozent
@@ -147,7 +147,7 @@ cards:
     - type: "horizontal-stack"
       cards:
         - type: 'custom:button-card'
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.thermostat_badezimmer_batterie_prozent
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.thermostat_badezimmer_batterie_prozent
@@ -162,7 +162,7 @@ cards:
     - type: "horizontal-stack"
       cards:
         - type: 'custom:button-card'
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.bewegungsmelder_battery_level_4
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.bewegungsmelder_battery_level_4
@@ -171,7 +171,7 @@ cards:
             ulm_card_battery_name: Bewegung 
 
         - type: 'custom:button-card'
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.heizthermostat_kueche_batterie_prozent
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.heizthermostat_kueche_batterie_prozent
@@ -182,7 +182,7 @@ cards:
     - type: "horizontal-stack"
       cards:
         - type: 'custom:button-card'
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.thermostat_kueche_batterie_prozent
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.thermostat_kueche_batterie_prozent
@@ -197,7 +197,7 @@ cards:
     - type: "horizontal-stack"
       cards:
         - type: 'custom:button-card'
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.bewegungsmelder_werkstatt_battery_level
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.bewegungsmelder_werkstatt_battery_level
@@ -206,7 +206,7 @@ cards:
             ulm_card_battery_name: Bewegung 
 
         - type: 'custom:button-card'
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.heizthermostat_werkstatt_batterie_prozent
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.heizthermostat_werkstatt_batterie_prozent
@@ -217,7 +217,7 @@ cards:
     - type: "horizontal-stack"
       cards:
         - type: 'custom:button-card'
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.thermostat_werkstatt_batterie_prozent
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.thermostat_werkstatt_batterie_prozent
@@ -227,7 +227,7 @@ cards:
 
 
         - type: 'custom:button-card'
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.tuersensor_werkstatt_batterie_prozent
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.tuersensor_werkstatt_batterie_prozent
@@ -242,7 +242,7 @@ cards:
     - type: "horizontal-stack"
       cards:
         - type: 'custom:button-card'
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.bewegungsmelder_battery_level_2
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.bewegungsmelder_battery_level_2
@@ -251,7 +251,7 @@ cards:
             ulm_card_battery_name: Bewegung 
 
         - type: 'custom:button-card'
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.tuersensor_flur_eingangstuere_batterie_prozent
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.tuersensor_flur_eingangstuere_batterie_prozent
@@ -266,7 +266,7 @@ cards:
     - type: "horizontal-stack"
       cards:
         - type: 'custom:button-card'
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.lichtsensor_terrasse_batterie_prozent
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.lichtsensor_terrasse_batterie_prozent
@@ -275,7 +275,7 @@ cards:
             ulm_card_battery_name: Lichtsensor 
 
         - type: 'custom:button-card'
-          template: card_battery
+          template: custom_card_battery
           entity: sensor.temperatursensor_terrasse_batterie_prozent
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.temperatursensor_terrasse_batterie_prozent
