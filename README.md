@@ -4,7 +4,7 @@
 
 ![Header](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/30f3ed7d-c295-4756-b295-e0b27f4e5069)
 
-![00_Home_Tab_Mockup_004_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/a1990ab7-b6a2-42eb-94b7-e057d834776f)
+![00_Home_Tab_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/532a3d35-3710-4e25-acc7-bad7027ffbb6)
 
 This Repository contains my personal Smart Home Configuration. At the moment (as of Feb. 24) my Smart Home runs on a Raspberry Pi 4 Model B 4 GB with [Home Assistant](https://www.home-assistant.io/) installed. Use the menu links below to navigate through the documentation. If there are any open questions or you want to contribute feel free to contact me.
 
@@ -148,6 +148,8 @@ At the moment (as of Nov. 21) I control my Smart Home over 17 individual tabs. U
   The Home - Tab <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 </h3>
 
+![00_Home_Tab_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/532a3d35-3710-4e25-acc7-bad7027ffbb6)
+
 The Home-Tab is the default Tab and a great way to start searching through features as it gives direct access to all tabs in the User Interface. Each label-card in the whole User-Interface leads back to the Home-Tab by pressing it.
 
 The Home-Tab contains a custom-header with each tab above the Presence-Status. The quick access area below is maybe my mostly used way to navigate through the app, as it gives direct access to all dashboards.
@@ -165,7 +167,7 @@ The Home - Tab Night Mode <a href="https://github.com/philipp089/Home-Assistant-
 
 As the name suggests, in the Light-Tab I handle all my light-scripts. I almost exclusively use Philips Hue bulbs connected to a Raspbee II from dresden electronics as my Zigbee-Gateway. An old IKEA Floalt Panel is the exception. Each of the scenes is also controllable via speech over Google Assistant.
 
-![01_Light_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/139411362-596376b4-aa8e-4f87-a67f-aa11c694883c.png)
+![00_Home_Tab_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/0527d094-57c4-43bd-bc92-c8595f9a28ab)
 
 #### The Light - Tab Night Mode <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
