@@ -158,8 +158,10 @@ Find the Light-Mode below:
 
 <h4 align="left">
   <br>
-The Home - Tab Night Mode <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://github.com/philipp089/Home-Assistant-Config/assets/66092908/fcf859df-a32e-47ce-9c10-a52e719edc5f" width="22" ></a>
+The Home - Tab Night Mode <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 </h4>
+
+![00_Home_Tab_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/fcf859df-a32e-47ce-9c10-a52e719edc5f)
 
 ---
 
