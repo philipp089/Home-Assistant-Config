@@ -154,11 +154,11 @@ The Home-Tab is the default Tab and a great way to start searching through featu
 
 The Home-Tab contains a custom-header with each tab above the Presence-Status. The quick access area below is maybe my mostly used way to navigate through the app, as it gives direct access to all dashboards.
 
-![00_Home_Tab_Mockup_004_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/a1990ab7-b6a2-42eb-94b7-e057d834776f)
+Find the Light-Mode below:
 
 <h4 align="left">
   <br>
-The Home - Tab Night Mode <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://github.com/philipp089/Home-Assistant-Config/assets/66092908/002bbcbb-f579-417b-8636-c6351a885a6a" width="22" ></a>
+The Home - Tab Night Mode <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://github.com/philipp089/Home-Assistant-Config/assets/66092908/fcf859df-a32e-47ce-9c10-a52e719edc5f" width="22" ></a>
 </h4>
 
 ---
