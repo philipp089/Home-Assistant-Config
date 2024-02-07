@@ -134,9 +134,9 @@ The Home - Tab <a href="https://github.com/philipp089/Home-Assistant-Config#--go
 
 ![00_Home_Tab_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/09e5d254-9bca-4cbd-815a-3e868bdf052b)
 
-The Home-Tab is the default Tab and a great way to start searching through features as it gives direct access to all tabs in the User Interface. Each label-card in the whole User-Interface leads back to the Home-Tab by pressing it.
+The Home-Tab is the default Tab and a great way to start searching through features as it gives direct access to all tabs in the User Interface. Each card in the whole User-Interface leads back to the Home-Tab by pressing the back-chip on top of each page.
 
-The Home-Tab contains a custom-header with each tab above the Presence-Status. The quick access area below is maybe my mostly used way to navigate through the app, as it gives direct access to all dashboards.
+The Home-Tab contains a custom-header with each tab above the welcome card. The quick access area below is maybe my mostly used way to navigate through the app, as it gives direct access to all dashboards.
 
 <h4 align="left">
   <br>
@@ -149,7 +149,7 @@ The Home - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-
 
 ### The Room - Tabs <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-As the name suggests, in the Room-Tab I handle all scenes, scripts, plugs and media-players of the according room. For the lights I almost exclusively use Philips Hue bulbs connected to a Raspbee II from dresden electronics as my Zigbee-Gateway. An old IKEA Floalt Panel is the exception. Each of the scenes is also controllable via speech over Google Assistant.
+As the name suggests, in the Room-Tab I handle all scenes, scripts, plugs and media-players of the according room. For the lights I almost exclusively use Philips Hue bulbs connected to a Raspbee II from dresden electronics as my Zigbee-Gateway, an old IKEA Floalt Panel is the exception. Each of the scenes is also controllable via speech over Google Assistant.
 
 ![01_Room_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/a43628c8-bb45-42b3-bf07-3475aa7d3ae0)
 
@@ -167,15 +167,15 @@ As the name suggests, in the Room-Tab I handle all scenes, scripts, plugs and me
 
 ---
 
-### The Media - Tab <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+### The Weather - Tab <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-Remote Controls for two televisions and all Media-Players (several Sonos devices, Google Nest Minis) are integrated to this dashboard.
+This Tab is basically my roof terrace room tab, it contains the weather forecast from met.no, delivered by the Norwegian Meteorological Institute followed by three sensors for temperature, humidity and light-intensity as well as the wall-switch for the outdoor-lights.
 
-![02_Media_Tab_Mockup_001](https://user-images.githubusercontent.com/66092908/139411399-9f739e82-baba-4186-93e7-776e248be00e.png)
+![02_Climate_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/53b4a523-b902-44f3-a680-e309d82edfd1)
 
-#### The Media - Tab Night Mode <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+#### The Weather - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-![02_Media_Tab_Mockup_001_Night_Mode](https://user-images.githubusercontent.com/66092908/139411413-db3fd023-8bc3-4564-aaa5-a4beea865f3a.png)
+![02_Climate_Tab_Mockup_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/695717ea-45e8-460f-8176-cccce86319e8)
 
 ---
 
