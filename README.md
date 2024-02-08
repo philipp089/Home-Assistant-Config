@@ -2,7 +2,7 @@
   Home Assistant Configuration (Minimalist UI Setup)
 </h1>
 
-![Header](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/30f3ed7d-c295-4756-b295-e0b27f4e5069)
+![Header](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/d4c7f55f-40a2-460c-bbd3-2d0bf6d79ffa)
 
 ![00_Home_Tab_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/09e5d254-9bca-4cbd-815a-3e868bdf052b)
 
@@ -87,7 +87,7 @@ At the moment (as of Feb. 24) I control my Smart Home over 19 individual tabs. U
       Calendar-Tab
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-climate---tab-">
+    <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#the-raspberry---tab-">
       Raspberry Pi-Tab
     </a>
     <span> | </span>
@@ -198,11 +198,11 @@ Welcome to my Home Raspberry Pie Dashboard, where I have a unified view of all v
 
 The dashboard also integrates GitHub states, allowing me to track repository updates and stars. I need more of those by the way.
 
-![06_Raspberry_Tab_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/b4a09a6b-07a2-49c6-95a5-8d3431589c74)
+![06_Raspberry_Tab_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/ef7588c4-1541-4b1b-af6f-798232a1a8e2)
 
 #### The Raspberry - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-![06_Raspberry_Tab_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/98e6a872-e91a-4d6e-bdc4-bc7b8eb0274e)
+![06_Raspberry_Tab_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/284a7094-608b-4272-97a3-c7be86c80ecb)
 
 ---
 
