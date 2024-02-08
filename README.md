@@ -67,19 +67,19 @@ At the moment (as of Feb. 24) I control my Smart Home over 19 individual tabs. U
 
 <div align="center">
   <h4>
-    <a href="https://github.com/philipp089/Home-Assistant-Config#--the-home---tab-">
+    <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--the-home---tab-">
       Home-Tab
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config#the-room---tabs-">
+    <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#the-room---tabs-">
       Room-Tabs
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config#the-weather---tab-">
+    <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#the-weather---tab-">
       Weather-Tab
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config#the-remote---tab-">
+    <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#the-remote---tab-">
       Remote-Tab
     </a>
     <span> | </span>
@@ -95,7 +95,7 @@ At the moment (as of Feb. 24) I control my Smart Home over 19 individual tabs. U
       Health-Tab
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config#the-chores---tab-">
+    <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#the-chores---tab-">
       Chores-Tab
     </a>
     <span> | </span>
@@ -129,27 +129,27 @@ At the moment (as of Feb. 24) I control my Smart Home over 19 individual tabs. U
 
 <h3 align="left">
   <br>
-The Home - Tab <a href="https://github.com/philipp089/Home-Assistant-Config#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+The Home - Tab <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 </h3>
 
 ![00_Home_Tab_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/09e5d254-9bca-4cbd-815a-3e868bdf052b)
 
-The Home Tab serves as the default and optimal starting point, providing a convenient way to explore features by granting direct access to all tabs within the User Interface. Navigating back to the Home Tab is made simple—just press the back-chip located at the top of each page.
+The Home Tab acts as the default and ideal starting point, offering a convenient way to explore features with direct access to all tabs within the User Interface. Returning to the Home Tab is easy – simply press the back-chip at the top of each page.
 
-Within the Home Tab, a custom header showcases each tab positioned above the welcome card, ensuring an organized layout. The quick access area below stands out as my preferred method for navigating the app, offering direct entry to all dashboards.
+In the Home Tab, a personalized header displays each tab above the welcome card, maintaining an organized layout. The quick access area below is my preferred method for navigating the app, providing direct entry to all dashboards.
 
 <h4 align="left">
   <br>
-The Home - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+The Home - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 </h4>
 
 ![00_Home_Tab_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/21ee2747-1ae1-4f05-8307-ad65d7fea045)
 
 ---
 
-### The Room - Tabs <a href="https://github.com/philipp089/Home-Assistant-Config#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+### The Room - Tabs <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-As the name implies, the Room Tab is where I manage all scenes, scripts, plugs and media players specific to each room. I predominantly use Philips Hue bulbs connected to a Raspbee II from Dresden Electronics as my Zigbee Gateway for lighting with the exception of an old IKEA Floalt Panel. Furthermore, all scenes can be controlled through voice commands via Google Assistant.
+In my smart home setup, the Room Tab is where I manage my light scenes, scripts, plugs, and media players specific to each room. For my lighting, I rely mostly on Philips Hue bulbs connected to a Raspbee II from Dresden Electronics, which acts as my Zigbee Gateway. The only exception is an old IKEA Floalt Panel. Plus, I've set up voice control through Google Assistant, allowing me to effortlessly command and control all my scenes.
 
 ![01_Room_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/a43628c8-bb45-42b3-bf07-3475aa7d3ae0)
 
@@ -157,7 +157,7 @@ As the name implies, the Room Tab is where I manage all scenes, scripts, plugs a
 
 ![01_Room_Tab_Mockup_003_Night_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/f28f0e40-a1ac-4a52-bc66-d76452210123)
 
-#### The Room - Tabs Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+#### The Room - Tabs Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
 ![01_Room_Tab_Mockup_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/83e961f2-3eb5-4f78-90f0-9bcdad860498)
 
@@ -167,37 +167,37 @@ As the name implies, the Room Tab is where I manage all scenes, scripts, plugs a
 
 ---
 
-### The Weather - Tab <a href="https://github.com/philipp089/Home-Assistant-Config#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+### The Weather - Tab <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
 This tab mainly serves as the dedicated control hub for my roof terrace and it features the weather forecast from met.no, delivered by the Norwegian Meteorological Institute. Additionally, three sensors provide real-time data on temperature, humidity, and light intensity. The tab also includes control options for the outdoor lights through the wall switch card.
 
 ![02_Climate_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/53b4a523-b902-44f3-a680-e309d82edfd1)
 
-#### The Weather - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+#### The Weather - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
 ![02_Climate_Tab_Mockup_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/695717ea-45e8-460f-8176-cccce86319e8)
 
 ---
 
-### The Remote - Tab <a href="https://github.com/philipp089/Home-Assistant-Config#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+### The Remote - Tab <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
 Welcome to my smart home's ultimate TV control hub! With this Home Assistant view, I effortlessly manage two televisions using custom script buttons. From powering on/off to adjusting volume and switching channels, it's all at my fingertips. No more juggling multiple remotes or dealing with complex setups — I've personalized and streamlined my entertainment experience. Elevating my smart home with intuitive TV control has never been easier (especially if i can´t find the normal remote again)!
 
 ![03_Remote_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/e338fe1d-1432-4963-aff4-13dced0f27d2)
 
-#### The Remote - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+#### The Remote - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
 ![03_Remote_Tab_Mockup_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/f19883d8-5d30-4218-a226-d0bf013ec959)
 
 ---
 
-### The Chores - Tab <a href="https://github.com/philipp089/Home-Assistant-Config#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+### The Chores - Tab <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
 Welcome to my customized chore management hub in Home Assistant! With this dedicated view, I effortlessly organize my to-do list, prioritizing tasks by due date for a smooth workflow. Each chore features a handy "Done" button, making it easy to mark completed tasks and stay on track. No more chaotic chore management – this Home Assistant view simplifies my daily tasks, making productivity a breeze. My smart home has become an organized haven, giving me the power to conquer chores effortlessly and maintain order. Welcome to a hassle-free approach to managing my tasks! I should really clean my windows again...
 
 ![05_Chores_Tab_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/fc45648e-5967-4666-8eca-12e65c471cc7)
 
-#### The Chores - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+#### The Chores - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
 ![05_Chores_Tab_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/eb310dc1-5892-44e9-a63f-34b372aafcc9)
 
