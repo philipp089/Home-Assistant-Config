@@ -83,7 +83,7 @@ At the moment (as of Feb. 24) I control my Smart Home over 19 individual tabs. U
       Remote-Tab
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-plants---tab-">
+    <a href="">
       Calendar-Tab
     </a>
     <span> | </span>
@@ -91,7 +91,7 @@ At the moment (as of Feb. 24) I control my Smart Home over 19 individual tabs. U
       Raspberry Pi-Tab
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-raspberry---tab-">
+    <a href="">
       Health-Tab
     </a>
     <span> | </span>
@@ -99,7 +99,7 @@ At the moment (as of Feb. 24) I control my Smart Home over 19 individual tabs. U
       Chores-Tab
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-playstation---tab-">
+    <a href="">
       Alarm-Tab
     </a>
     <span> | </span>
@@ -111,11 +111,11 @@ At the moment (as of Feb. 24) I control my Smart Home over 19 individual tabs. U
       Batteries-Tab
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-smartphone---tab-">
+    <a href="">
       Energy-Tab
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-battery---tab-">
+    <a href="">
       Hardware-Tab
     </a>
     <span> | </span>
@@ -191,6 +191,17 @@ Welcome to my smart home's ultimate TV control hub! With this Home Assistant vie
 
 ---
 
+### The Calendar - Tab <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+
+Coming soon!
+
+
+
+#### The Calendar - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+
+
+
+---
 ### The Raspberry - Tab <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
 
@@ -206,6 +217,19 @@ The dashboard also integrates GitHub states, allowing me to track repository upd
 
 ---
 
+### The Health - Tab <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+
+
+Coming soon!
+
+
+
+#### The Health - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+
+
+
+---
+
 ### The Chores - Tab <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
 Welcome to my customized chore management hub in Home Assistant! With this dedicated view, I effortlessly organize my to-do list, prioritizing tasks by due date for a smooth workflow. Each chore features a handy "Done" button, making it easy to mark completed tasks and stay on track. No more chaotic chore management – this Home Assistant view simplifies my daily tasks, making productivity a breeze. My smart home has become an organized haven, giving me the power to conquer chores effortlessly and maintain order. Welcome to a hassle-free approach to managing my tasks! I should really clean my windows again...
@@ -215,6 +239,78 @@ Welcome to my customized chore management hub in Home Assistant! With this dedic
 #### The Chores - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
 ![05_Chores_Tab_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/eb310dc1-5892-44e9-a63f-34b372aafcc9)
+
+---
+
+### The Alarm - Tab <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+
+Coming soon!
+
+
+
+#### The Alarm - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+
+
+
+---
+
+### The Automations - Tab <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+
+Coming soon!
+
+
+
+#### The Automations - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+
+
+
+---
+
+### The Batteries - Tab <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+
+Coming soon!
+
+
+
+#### The Batteries - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+
+
+
+---
+
+### The Energy - Tab <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+
+Coming soon!
+
+
+
+#### The Energy - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+
+
+
+---
+
+### The Hardware - Tab <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+
+Coming soon!
+
+
+
+#### The Hardware - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+
+
+
+---
+
+### The Playstation - Tab <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+
+Coming soon!
+
+
+
+#### The Playstation - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+
+
 
 ---
 
