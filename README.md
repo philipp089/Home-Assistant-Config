@@ -83,7 +83,7 @@ At the moment (as of Feb. 24) I control my Smart Home over 19 individual tabs. U
       Remote-Tab
     </a>
     <span> | </span>
-    <a href="">
+    <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#the-calendar---tab-">
       Calendar-Tab
     </a>
     <span> | </span>
@@ -91,7 +91,7 @@ At the moment (as of Feb. 24) I control my Smart Home over 19 individual tabs. U
       Raspberry Pi-Tab
     </a>
     <span> | </span>
-    <a href="">
+    <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#the-health---tab-">
       Health-Tab
     </a>
     <span> | </span>
@@ -99,27 +99,27 @@ At the moment (as of Feb. 24) I control my Smart Home over 19 individual tabs. U
       Chores-Tab
     </a>
     <span> | </span>
-    <a href="">
+    <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#the-alarm---tab-">
       Alarm-Tab
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-weather---tab-">
+    <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#the-automations---tab-">
       Automations-Tab
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-camera---tab-">
+    <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#the-batteries---tab-">
       Batteries-Tab
     </a>
     <span> | </span>
-    <a href="">
+    <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#the-energy---tab-">
       Energy-Tab
     </a>
     <span> | </span>
-    <a href="">
+    <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#the-hardware---tab-">
       Hardware-Tab
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#the-alarm---tab-">
+    <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#the-playstation---tab-">
       Playstation-Tab
     </a>
   </h4>
