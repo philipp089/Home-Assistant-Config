@@ -16,19 +16,19 @@ This Repository contains my personal Smart Home Configuration. At the moment (as
 
 <div align="center">
   <h4>
-    <a href="https://github.com/philipp089/Home-Assistant-Config#----mobile-user-interface">
+    <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#----mobile-user-interface">
       Mobile User Interface
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#----devices-">
+    <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#----devices-">
       Devices
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#----integrations-">
+    <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#----integrations-">
       Integrations
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config/blob/master/README.md#----custom-components-">
+    <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#----custom-components-">
       Custom Components
     </a>
   </h4>
@@ -39,9 +39,9 @@ This Repository contains my personal Smart Home Configuration. At the moment (as
 If you are an experienced Home Assistant user you might be interested in the following files:
 
 #### <a name="Main Files"></a>Main files and folders of my HA-Config:
-* [Minimalist UI Mobile views](ui_lovelace_minimalist/dashboard/views) - Main folder of the Mobile User Interface Views
+* [Minimalist UI Mobile views](https://github.com/philipp089/Home-Assistant-Config/tree/master/ui_lovelace_minimalist/dashboard/views) - Main folder of the Mobile User Interface Views
 * [configuration.yaml](https://github.com/philipp089/Home-Assistant-Config/blob/master/configuration.yaml) - Main Configuration file of the Smart Home
-* [themes.yaml](https://github.com/philipp089/Home-Assistant-Config/blob/master/themes.yaml) - Theme-File for Dark and Light Mode
+* [themes](https://github.com/philipp089/Home-Assistant-Config/tree/master/themes) - Theme-Files for Dark and Light Mode
 * [scrips.yaml](https://github.com/philipp089/Home-Assistant-Config/blob/master/scripts.yaml) - All the scrips running in my Smart Home
 * [automations.yaml](https://github.com/philipp089/Home-Assistant-Config/blob/master/automations.yaml) - All the automations running in my Smart Home
 
@@ -205,7 +205,7 @@ Welcome to my customized chore management hub in Home Assistant! With this dedic
 
 <h2 align="center">
   <br>
-  Devices <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+  Devices <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--home-assistant-configuration-minimalist-ui-setup"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 </h2>
 
 This section deals with the various device categories in my smart home. Use the menu links below to navigate through the Device Categories.
@@ -213,7 +213,7 @@ This section deals with the various device categories in my smart home. Use the 
 ---
 
 <h3 align="center">
-  Device Categories <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+  Device Categories <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--home-assistant-configuration-minimalist-ui-setup"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 </h3>
 
 <div align="center">
@@ -264,7 +264,7 @@ This section deals with the various device categories in my smart home. Use the 
 
 <h3 align="left">
   <br>
-  Cameras and Security <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+  Cameras and Security <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--home-assistant-configuration-minimalist-ui-setup"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 </h3>
 
 <table>
@@ -294,7 +294,7 @@ This section deals with the various device categories in my smart home. Use the 
 
 <h3 align="left">
   <br>
-  Climate Control <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+  Climate Control <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--home-assistant-configuration-minimalist-ui-setup"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 </h3>
 
 <table>
@@ -324,7 +324,7 @@ This section deals with the various device categories in my smart home. Use the 
 
 <h3 align="left">
   <br>
-  Light and Light Controls <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+  Light and Light Controls <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--home-assistant-configuration-minimalist-ui-setup"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 </h3>
 
 <table>
@@ -405,7 +405,7 @@ This section deals with the various device categories in my smart home. Use the 
 
 <h3 align="left">
   <br>
-  Media Player and Remotes <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+  Media Player and Remotes <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--home-assistant-configuration-minimalist-ui-setup"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 </h3>
 
 <table>
@@ -480,7 +480,7 @@ This section deals with the various device categories in my smart home. Use the 
 
 <h3 align="left">
   <br>
-  Network <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+  Network <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--home-assistant-configuration-minimalist-ui-setup"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 </h3>
 
 <br>
@@ -509,7 +509,7 @@ This section deals with the various device categories in my smart home. Use the 
 
 <h3 align="left">
   <br>
-  PC <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+  PC <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--home-assistant-configuration-minimalist-ui-setup"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 </h3>
 
 <table>
@@ -530,7 +530,7 @@ This section deals with the various device categories in my smart home. Use the 
 
 <h3 align="left">
   <br>
-  Playstation <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+  Playstation <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--home-assistant-configuration-minimalist-ui-setup"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 </h3>
 
 <table>
@@ -551,7 +551,7 @@ This section deals with the various device categories in my smart home. Use the 
 
 <h3 align="left">
   <br>
-  Smart Home Hub <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+  Smart Home Hub <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--home-assistant-configuration-minimalist-ui-setup"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 </h3>
 
 <table>
@@ -575,7 +575,7 @@ This section deals with the various device categories in my smart home. Use the 
 
 <h3 align="left">
   <br>
-  Smart Plugs <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+  Smart Plugs <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--home-assistant-configuration-minimalist-ui-setup"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 </h3>
 
 <table>
@@ -599,7 +599,7 @@ This section deals with the various device categories in my smart home. Use the 
 
 <h3 align="left">
   <br>
-  3D Printer <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+  3D Printer <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--home-assistant-configuration-minimalist-ui-setup"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 </h3>
 
 <table>
@@ -620,7 +620,7 @@ This section deals with the various device categories in my smart home. Use the 
 
 <h2 align="left">
   <br>
-  Integrations <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+  Integrations <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--home-assistant-configuration-minimalist-ui-setup"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 </h2>
 
 Find all the Integrations i use in my Home Assistant Configuration
@@ -648,7 +648,7 @@ Find all the Integrations i use in my Home Assistant Configuration
 
 <h2 align="left">
   <br>
-  Custom Components <a href="https://github.com/philipp089/Home-Assistant-Config#--google-inspired-home-assistant-configuration-mobile-and-desktop-user-interfaces"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+  Custom Components <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--home-assistant-configuration-minimalist-ui-setup"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 </h2>
 
 #### <a name="Custom Integrations"></a>HACS Integrations:
