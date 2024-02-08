@@ -57,7 +57,7 @@ cards:
 
             entity_3:
               entity_id: "Batterien"
-              nav_path: "/ui-lovelace-minimalist/Automations"
+              nav_path: "/ui-lovelace-minimalist/Batterien"
               icon: "mdi:battery-high" 
               name: "Batt."
               color: "green"
