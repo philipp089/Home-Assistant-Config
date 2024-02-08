@@ -76,7 +76,6 @@ cards:
       template: card_title
       label: Home Assistant
 
-
     - type: "horizontal-stack"
       cards:
       - type: 'custom:button-card'
@@ -84,7 +83,23 @@ cards:
         entity: sensor.home_assistant_operating_system_version
         variables:
           ulm_card_generic_swap_color: "var(--google-red)"
-          ulm_card_generic_swap_name: HA Version
+          ulm_card_generic_swap_name: HA OS Version
+
+      - type: 'custom:button-card'
+        template: card_generic_swap
+        entity: sensor.home_assistant_core_version
+        variables:
+          ulm_card_generic_swap_color: "var(--google-red)"
+          ulm_card_generic_swap_name: HA Core Version
+
+    - type: "horizontal-stack"
+      cards:
+      - type: 'custom:button-card'
+        template: card_generic_swap
+        entity: sensor.home_assistant_supervisor_version
+        variables:
+          ulm_card_generic_swap_color: "var(--google-red)"
+          ulm_card_generic_swap_name: HA Supervisor Version
 
       - type: 'custom:button-card'
         template: card_generic_swap
@@ -92,3 +107,24 @@ cards:
         variables:
           ulm_card_generic_swap_color: "var(--google-red)"
           ulm_card_generic_swap_name: App Version
+
+    - type: 'custom:button-card'
+      template: card_title
+      label: GitHub
+
+
+    - type: "horizontal-stack"
+      cards:
+      - type: 'custom:button-card'
+        template: card_generic_swap
+        entity: sensor.philipp089_home_assistant_config_latest_commit
+        variables:
+          ulm_card_generic_swap_color: "var(--google-red)"
+          ulm_card_generic_swap_name: Letzter Commit
+
+      - type: 'custom:button-card'
+        template: card_generic_swap
+        entity: sensor.philipp089_home_assistant_config_stars
+        variables:
+          ulm_card_generic_swap_color: "var(--google-red)"
+          ulm_card_generic_swap_name: Sterne
