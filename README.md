@@ -304,7 +304,7 @@ Coming soon!
 
 ### The Playstation - Tab <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-Coming soon!
+Welcome to my PlayStation 4 Control Hub – the ultimate command center for my gaming experience. With a few taps, I can power up my PS4, launch games, and have a look at the media playback. Whether solo or with friends, my PlayStation 4 Control Hub turns gaming into a personalized, seamless adventure – putting control at my fingertips. 
 
 ![13_Playstation_Tab_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/6156db51-c669-4809-a44d-6af05bf84474)
 
