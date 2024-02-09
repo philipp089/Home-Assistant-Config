@@ -270,11 +270,11 @@ Coming soon!
 
 Coming soon!
 
-
+![10_Battery_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/dfad7c55-cc0d-4a40-b6b8-02865df0d286)
 
 #### The Batteries - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-
+![10_Battery_Tab_Mockup_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/271688c3-044f-41a4-8290-c52eb783c662)
 
 ---
 
