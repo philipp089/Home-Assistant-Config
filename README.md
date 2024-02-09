@@ -258,11 +258,11 @@ Coming soon!
 
 Coming soon!
 
-
+![09_Automations_Tab_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/f2c6c669-5a14-469b-b7a8-7401cf8c3c1a)
 
 #### The Automations - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-
+![09_Automations_Tab_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/162bea63-a5a0-40e4-b6a1-32efe7f73b24)
 
 ---
 
