@@ -306,11 +306,11 @@ Coming soon!
 
 Coming soon!
 
-
+![13_Playstation_Tab_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/f78e1b43-8c08-4601-af75-7c5e806f85f2)
 
 #### The Playstation - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-
+![13_Playstation_Tab_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/b79b0aaf-4d25-46a5-ab16-0766ba14fd7b)
 
 ---
 
