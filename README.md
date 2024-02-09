@@ -195,11 +195,11 @@ Welcome to my smart home's ultimate TV control hub! With this Home Assistant vie
 
 Meet my Calendar view, where Google Calendar seamlessly integrates into my daily life. This sleek dashboard keeps me organized with upcoming events displayed intuitively, complete with color-coded entries for quick identification. Reminders ensure I never miss a beat, and the voice assistant feature keeps me informed hands-free. Customizable and user-friendly, this view also controls my smart home devices, making daily tasks a breeze. Simplify your life, stay organized, and enjoy the convenience of a fully connected home. 
 
-![04_Calendar_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/a1353eb1-701b-449b-8101-9bdfa870506b)
+![04_Calendar_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/98cffc2f-9916-412c-a32d-1dbeae36c756)
 
 #### The Calendar - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-![04_Calendar_Tab_Mockup_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/526f05c5-a8cb-48fe-b0fd-0a3832780476)
+![04_Calendar_Tab_Mockup_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/6b483994-65c9-4e4f-9a1d-51570410eb3c)
 
 ---
 ### The Raspberry - Tab <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
