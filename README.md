@@ -246,11 +246,11 @@ Welcome to my customized chore management hub in Home Assistant! With this dedic
 
 Coming soon!
 
-
+![08_Alarm_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/8cea9a77-e5c0-46d2-b3c6-76738d42d95c)
 
 #### The Alarm - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-
+![08_Alarm_Tab_Mockup_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/e21c5ac7-a77e-4461-a719-4417259c3e19)
 
 ---
 
