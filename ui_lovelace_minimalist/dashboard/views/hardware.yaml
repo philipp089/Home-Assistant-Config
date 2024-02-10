@@ -71,7 +71,81 @@ cards:
             ulm_card_graph_group_by: interval
             ulm_card_graph_line_width: 6
 
+    - type: "horizontal-stack"
+      cards:
+        - type: "custom:button-card"
+          template: card_power_outlet
+          entity: switch.steckdose_pinas
+          variables:
+            ulm_card_power_outlet_name:  PiNAS
+            ulm_card_power_outlet_color: blue
+
     - type: 'custom:button-card'
       template: card_title
-      label: Computer
+      name: Computer
+      label: Open Hardware Monitor
 
+    - type: "horizontal-stack"
+      cards:
+        - type: 'custom:button-card'
+          template: card_graph
+          entity: sensor.philipp_desktop_intel_core_i9_9900k_load_cpu_total
+          variables:
+            ulm_card_graph_color: "var(--google-green)"
+            ulm_card_graph_name: CPU-Auslastung
+            ulm_card_graph_entity: sensor.philipp_desktop_intel_core_i9_9900k_load_cpu_total
+
+            ulm_card_graph_type: fill
+            ulm_card_graph_hours: 24
+            ulm_card_graph_group_by: interval
+            ulm_card_graph_line_width: 6
+
+        - type: 'custom:button-card'
+          template: card_graph
+          entity: sensor.philipp_desktop_generic_memory_load_memory
+          variables:
+            ulm_card_graph_color: "var(--google-yellow)"
+            ulm_card_graph_name: Speicher-Auslastung
+            ulm_card_graph_entity: sensor.philipp_desktop_generic_memory_load_memory
+
+            ulm_card_graph_type: fill
+            ulm_card_graph_hours: 24
+            ulm_card_graph_group_by: interval
+            ulm_card_graph_line_width: 6
+
+    - type: "horizontal-stack"
+      cards:
+        - type: 'custom:button-card'
+          template: card_graph
+          entity: sensor.philipp_desktop_generic_hard_disk_load_used_space
+          variables:
+            ulm_card_graph_color: "var(--google-blue)"
+            ulm_card_graph_name: "WINDOWS (C:)"
+            ulm_card_graph_entity: sensor.philipp_desktop_generic_hard_disk_load_used_space
+
+            ulm_card_graph_type: fill
+            ulm_card_graph_hours: 24
+            ulm_card_graph_group_by: interval
+            ulm_card_graph_line_width: 6
+
+        - type: 'custom:button-card'
+          template: card_graph
+          entity: sensor.philipp_desktop_samsung_ssd_840_evo_500gb_load_used_space
+          variables:
+            ulm_card_graph_color: "var(--google-blue)"
+            ulm_card_graph_name: "3D/DOKUMENTE (D:)"
+            ulm_card_graph_entity: sensor.philipp_desktop_samsung_ssd_840_evo_500gb_load_used_space
+
+            ulm_card_graph_type: fill
+            ulm_card_graph_hours: 24
+            ulm_card_graph_group_by: interval
+            ulm_card_graph_line_width: 6
+          
+    - type: "horizontal-stack"
+      cards:
+        - type: "custom:button-card"
+          template: card_power_outlet
+          entity: switch.steckdose_wohnzimmer_computer
+          variables:
+            ulm_card_power_outlet_name:  Computer
+            ulm_card_power_outlet_color: blue

@@ -6,3 +6,22 @@ cards:
     template: chip_back
     variables:
       ulm_chip_back_path: /ui-lovelace-minimalist/home
+
+  - type: "vertical-stack"
+    cards:
+      - type: 'custom:button-card'
+        template: card_title
+        name: "Energie"
+        label: "Wohnzimmer"
+
+      - type: custom:mini-graph-card
+        entities:
+          - entity: sensor.steckdose_wohnzimmer_medienwand_today_s_consumption
+        name: Medienwand
+        show:
+          graph: bar   
+        hours_to_show: 24
+        points_per_hour: 1
+        aggregate_func: max
+        bar_spacing: 4
+        line_color: "var(--google-blue)"

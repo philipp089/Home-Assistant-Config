@@ -294,11 +294,11 @@ Coming soon!
 
 Coming soon!
 
-
+![12_Hardware_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/41fdf187-c42c-421f-9313-6f151d8556b7)
 
 #### The Hardware - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-
+![12_Hardware_Tab_Mockup_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/06268cec-d89e-4003-9a03-a876bc542246)
 
 ---
 

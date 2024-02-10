@@ -99,6 +99,12 @@ sensor:
     display_options:
       - "time"
 #
+# Open Hardware Monitor
+#
+  - platform: openhardwaremonitor
+    host: 192.168.178.65
+    port: 8085
+#
 # HOMEMATIC INTEGRATION
 #
 homematic:

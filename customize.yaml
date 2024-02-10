@@ -72,3 +72,11 @@ light.badezimmer_spiegel_01:
   icon: mdi:lightbulb-outline
 light.badezimmer_spiegel_02:
   icon: mdi:lightbulb-outline
+sensor.philipp_desktop_intel_core_i9_9900k_load_cpu_total:
+  icon: mdi:cpu-64-bit
+sensor.philipp_desktop_generic_memory_load_memory:
+  icon: mdi:memory
+sensor.philipp_desktop_generic_hard_disk_load_used_space:
+  icon: mdi:harddisk
+sensor.philipp_desktop_samsung_ssd_840_evo_500gb_load_used_space:
+  icon: mdi:harddisk
