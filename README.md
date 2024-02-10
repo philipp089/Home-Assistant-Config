@@ -149,7 +149,7 @@ The Home - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-
 
 ### The Room - Tabs <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-In my smart home setup, the Room Tab is where I manage my light scenes, scripts, plugs, and media players specific to each room. For my lighting, I rely mostly on Philips Hue bulbs connected to a Raspbee II from Dresden Electronics, which acts as my Zigbee Gateway. The only exception is an old IKEA Floalt Panel. Plus, I've set up voice control through Google Assistant, allowing me to effortlessly command and control all my scenes.
+In my smart home setup, the Room Tab is where I manage light scenes, scripts, plugs, and media players tailored to each room. I primarily use Philips Hue bulbs connected to a Raspbee II from Dresden Electronics, serving as my Zigbee Gateway. The only exception is an older IKEA Floalt Panel. Additionally, I've implemented voice control through Google Assistant (Assist will be integrated in the future), enabling me to effortlessly command and control all my light scenes, scripts, plugs and battery states via voice commands.
 
 ![01_Room_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/a43628c8-bb45-42b3-bf07-3475aa7d3ae0)
 
@@ -220,7 +220,7 @@ The dashboard also integrates GitHub states, allowing me to track repository upd
 ### The Health - Tab <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
 
-Coming soon!
+You knew this would be the last view to be finished! Priorities are a little of at the moment :-P
 
 
 
@@ -244,7 +244,9 @@ Welcome to my customized chore management hub in Home Assistant! With this dedic
 
 ### The Alarm - Tab <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-Coming soon!
+Have a look at my alarm dashboard. It relies mainly on motion sensors strategically placed throughout my home, detecting not only human presence but also the playful antics of my feline companions. With object detection capabilities (realised through a Coral Edge TPU device), my system distinguishes between individuals and furry friends and sends notifications and videos when i am not at home.
+
+I can navigate effortlessly through rooms, each equipped with its own camera feed, motion sensors, and intelligent object detection for enhanced security, convenience, and peace of mind.
 
 ![08_Alarm_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/8cea9a77-e5c0-46d2-b3c6-76738d42d95c)
 
@@ -256,7 +258,7 @@ Coming soon!
 
 ### The Automations - Tab <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-Coming soon!
+Welcome to my Home Assistant Automation Dashboard. I've shaped every detail to create a personalized smart home experience and navigate effortlessly through automations that contain input daytime values, switches or any other helper entity. 
 
 ![09_Automations_Tab_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/f2c6c669-5a14-469b-b7a8-7401cf8c3c1a)
 
@@ -268,7 +270,7 @@ Coming soon!
 
 ### The Batteries - Tab <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-Coming soon!
+Stay in control with my Battery State Dashboard, where real-time insights into power levels empower your day. I effortlessly monitor the status of my devices and gadgets, ensuring I never get caught off guard. From my smartphones over thermostats, this dashboard keeps me informed on the state of every single battery device in my home so I can focus on what matters without interruption. Notifications are sent over my telegram bot to my smartphone. 
 
 ![10_Battery_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/dfad7c55-cc0d-4a40-b6b8-02865df0d286)
 
@@ -292,7 +294,7 @@ Coming soon!
 
 ### The Hardware - Tab <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-Coming soon!
+Welcome to my crafted command center – a dashboard where I've consolidated key data for a seamless tech experience. Monitor temperatures, disk space, and more from my NAS and desktop computer at a glance. This personalized hub offers real-time insights, ensuring optimal performance and efficiency. With every detail meticulously curated, this dashboard reflects my commitment to a tech-savvy, organized, and effortlessly managed digital domain. Stay in control, stay efficient.
 
 ![12_Hardware_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/41fdf187-c42c-421f-9313-6f151d8556b7)
 
