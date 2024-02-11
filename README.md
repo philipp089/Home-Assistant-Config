@@ -284,11 +284,11 @@ Stay in control with my Battery State Dashboard, where real-time insights into p
 
 Coming soon!
 
-
+![11_Energy_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/8be775ec-c83a-4ab3-a154-198904758e03)
 
 #### The Energy - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-
+![11_Energy_Tab_Mockup_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/12954fc8-942e-4111-9c8b-a6da4111a397)
 
 ---
 
