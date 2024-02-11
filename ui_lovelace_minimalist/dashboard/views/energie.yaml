@@ -12,16 +12,191 @@ cards:
       - type: 'custom:button-card'
         template: card_title
         name: "Energie"
-        label: "Wohnzimmer"
+        label: "Gesamtverbrauch"
 
-      - type: custom:mini-graph-card
+      - type: custom:energy-period-selector-plus
+        card_background: true
+
+      - type: custom:energy-flow-card-plus
         entities:
-          - entity: sensor.steckdose_wohnzimmer_medienwand_today_s_consumption
-        name: Medienwand
-        show:
-          graph: bar   
-        hours_to_show: 24
-        points_per_hour: 1
-        aggregate_func: max
-        bar_spacing: 4
-        line_color: "var(--google-blue)"
+          grid:
+            entity:
+              consumption: 
+                - sensor.steckdose_wohnzimmer_medienwand_today_s_consumption
+                - sensor.schlafzimmer_medienwand_today_s_consumption
+                - sensor.steckdose_kaffeemaschine_total_consumption
+                - sensor.steckdose_kuehlschrank_total_consumption
+                - sensor.steckdose_spuelmaschine_total_consumption
+                - sensor.steckdose_waeschetrockner_total_consumption
+                - sensor.steckdose_waschmaschine_today_s_consumption
+                - sensor.wandschalter_badezimmer_taglich
+                - sensor.wandschalter_flur_taglich
+                - sensor.wandschalter_kuche_taglich
+                - sensor.wandschalter_schlafzimmer_taglich
+                - sensor.wandschalter_werkstatt_taglich
+                - sensor.wandschalter_wohnzimmer_taglich
+              # production: sensor.grid_returned_energy_daily
+            color: 
+              consumption: "#FF9101"
+        kwh_decimals: 1
+        wh_kwh_threshold: 0
+
+      - type: 'custom:button-card'
+        template: card_title
+        name: "Wohnzimmer"
+
+      - type: horizontal-stack
+        cards:
+        - type: custom:mini-graph-card
+          entities:
+            - entity: sensor.wandschalter_wohnzimmer_taglich
+          name: Deckenleuchte
+          show:
+            graph: bar   
+          hours_to_show: 24
+          points_per_hour: 0.5
+          aggregate_func: max
+          bar_spacing: 8
+          line_color: "var(--google-blue)"
+
+        - type: custom:mini-graph-card
+          entities:
+            - entity: sensor.steckdose_wohnzimmer_medienwand_today_s_consumption
+          name: Medienwand
+          show:
+            graph: bar   
+          hours_to_show: 24
+          points_per_hour: 0.5
+          aggregate_func: max
+          bar_spacing: 8
+          line_color: "var(--google-blue)"
+
+      - type: 'custom:button-card'
+        template: card_title
+        name: "Schlafzimmer"
+
+      - type: horizontal-stack
+        cards:
+        - type: custom:mini-graph-card
+          entities:
+            - entity: sensor.wandschalter_schlafzimmer_taglich
+          name: Deckenleuchte
+          show:
+            graph: bar   
+          hours_to_show: 24
+          points_per_hour: 0.5
+          aggregate_func: max
+          bar_spacing: 8
+          line_color: "var(--google-blue)"
+
+        - type: custom:mini-graph-card
+          entities:
+            - entity: sensor.schlafzimmer_medienwand_today_s_consumption
+          name: Medienwand
+          show:
+            graph: bar   
+          hours_to_show: 24
+          points_per_hour: 0.5
+          aggregate_func: max
+          bar_spacing: 8
+          line_color: "var(--google-blue)"
+
+      - type: horizontal-stack
+        cards:
+        - type: custom:mini-graph-card
+          entities:
+            - entity: sensor.waeschetrockner_heutiger_verbrauch
+          name: Wäschetrockner
+          show:
+            graph: bar   
+          hours_to_show: 24
+          points_per_hour: 0.5
+          aggregate_func: max
+          bar_spacing: 8
+          line_color: "var(--google-blue)"
+
+      - type: 'custom:button-card'
+        template: card_title
+        name: "Badezimmer"
+
+      - type: horizontal-stack
+        cards:
+        - type: custom:mini-graph-card
+          entities:
+            - entity: sensor.wandschalter_badezimmer_taglich
+          name: Deckenleuchte
+          show:
+            graph: bar   
+          hours_to_show: 24
+          points_per_hour: 0.5
+          aggregate_func: max
+          bar_spacing: 8
+          line_color: "var(--google-blue)"
+
+        - type: custom:mini-graph-card
+          entities:
+            - entity: sensor.steckdose_waschmaschine_today_s_consumption
+          name: Waschmaschine
+          show:
+            graph: bar   
+          hours_to_show: 24
+          points_per_hour: 0.5
+          aggregate_func: max
+          bar_spacing: 8
+          line_color: "var(--google-blue)"
+
+      - type: 'custom:button-card'
+        template: card_title
+        name: "Küche"
+
+      - type: horizontal-stack
+        cards:
+        - type: custom:mini-graph-card
+          entities:
+            - entity: sensor.wandschalter_kuche_taglich
+          name: Deckenleuchte
+          show:
+            graph: bar   
+          hours_to_show: 24
+          points_per_hour: 0.5
+          aggregate_func: max
+          bar_spacing: 8
+          line_color: "var(--google-blue)"
+
+        - type: custom:mini-graph-card
+          entities:
+            - entity: sensor.kaffeemaschine_heutiger_verbrauch            
+          name: Kaffeemaschine
+          show:
+            graph: bar   
+          hours_to_show: 24
+          points_per_hour: 0.5
+          aggregate_func: max
+          bar_spacing: 8
+          line_color: "var(--google-blue)"
+
+      - type: horizontal-stack
+        cards:
+        - type: custom:mini-graph-card
+          entities:
+            - entity: sensor.kuehlschrank_heutiger_verbrauch
+          name: Kühlschrank
+          show:
+            graph: bar   
+          hours_to_show: 24
+          points_per_hour: 0.5
+          aggregate_func: max
+          bar_spacing: 8
+          line_color: "var(--google-blue)"
+
+        - type: custom:mini-graph-card
+          entities:
+            - entity: sensor.spuelmaschine_heutiger_verbrauch
+          name: Spülmaschine
+          show:
+            graph: bar   
+          hours_to_show: 24
+          points_per_hour: 0.5
+          aggregate_func: max
+          bar_spacing: 8
+          line_color: "var(--google-blue)"
