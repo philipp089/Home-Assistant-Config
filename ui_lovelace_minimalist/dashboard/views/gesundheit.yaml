@@ -2,7 +2,75 @@ title: "Gesundheit"
 icon: "mdi:heart-outline"
 path: "Gesundheit"
 cards:
-  - type: "custom:button-card"
-    template: chip_back
-    variables:
-      ulm_chip_back_path: /ui-lovelace-minimalist/home
+  - type: "vertical-stack"
+    cards:
+    - type: "custom:button-card"
+      template: chip_back
+      variables:
+        ulm_chip_back_path: /ui-lovelace-minimalist/home
+
+    - type: 'custom:button-card'
+      template: card_title
+      name: "Gesundheit"
+      label: "Schrittzähler"
+
+    - type: horizontal-stack
+      cards:
+      - type: custom:mini-graph-card
+        entities:
+          - entity: sensor.schritte_taglich
+        name: Schritte heute
+        show:
+          graph: bar   
+        hours_to_show: 24
+        points_per_hour: 0.5
+        aggregate_func: max
+        bar_spacing: 8
+        line_color: "var(--google-green)"
+
+      - type: custom:mini-graph-card
+        entities:
+          - entity: sensor.sm_n975f_steps_sensor
+        name: Schritte gesamt
+        show:
+          graph: bar   
+        hours_to_show: 24
+        points_per_hour: 0.50
+        aggregate_func: max
+        bar_spacing: 8
+        line_color: "var(--google-yellow)"
+
+    # - type: "horizontal-stack"
+    #   cards:
+    #     - type: 'custom:button-card'
+    #       template: card_generic_swap
+    #       entity: sensor.schritte_taglich
+    #       variables:
+    #         ulm_card_generic_swap_name: Schritte heute
+    #         # ulm_card_generic_swap_icon: ""
+    #         # ulm_card_generic_swap_color: "#34A853"
+    #         # ulm_card_generic_swap_force_background_color: "#34A853"
+
+    #     - type: 'custom:button-card'
+    #       template: card_generic_swap
+    #       entity: sensor.sm_n975f_steps_sensor
+    #       variables:
+    #         ulm_card_generic_swap_name: Schritte gesamt
+    #         # ulm_card_generic_swap_icon: ""
+    #         # ulm_card_generic_swap_color:
+    #         # ulm_card_generic_swap_force_background_color:
+
+    - type: 'custom:button-card'
+      template: card_title
+      # name: "Gesundheit"
+      label: "Herzfrequenz"
+
+    # - type: 'custom:button-card'
+    #   template: card_title
+    #   # name: "Gesundheit"
+    #   label: "Gewicht"
+
+    # - type: 'custom:button-card'
+    #   template: card_title
+    #   # name: "Gesundheit"
+    #   label: "Schlaffrequenz"

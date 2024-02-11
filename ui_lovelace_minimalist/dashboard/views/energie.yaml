@@ -233,6 +233,28 @@ cards:
 
       - type: 'custom:button-card'
         template: card_title
+        name: "Flur"
+        label: "Einzelverbraucher"
+
+      - type: horizontal-stack
+        cards:
+        - type: custom:mini-graph-card
+          entities:
+            - entity: sensor.wandschalter_flur_taglich
+          name: Deckenleuchte
+          show:
+            graph: bar   
+          hours_to_show: 24
+          points_per_hour: 0.5
+          aggregate_func: max
+          bar_spacing: 8
+          line_color: "var(--google-blue)"
+
+        - type: "custom:button-card"
+          color_type: blank-card
+
+      - type: 'custom:button-card'
+        template: card_title
         name: "Dachterrasse"
         label: "Einzelverbraucher"
 
