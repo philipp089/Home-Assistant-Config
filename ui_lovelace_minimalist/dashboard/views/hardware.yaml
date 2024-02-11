@@ -80,6 +80,9 @@ cards:
             ulm_card_power_outlet_name:  PiNAS
             ulm_card_power_outlet_color: blue
 
+        - type: "custom:button-card"
+          color_type: blank-card
+
     - type: 'custom:button-card'
       template: card_title
       name: Computer
@@ -149,3 +152,6 @@ cards:
           variables:
             ulm_card_power_outlet_name:  Computer
             ulm_card_power_outlet_color: blue
+
+        - type: "custom:button-card"
+          color_type: blank-card

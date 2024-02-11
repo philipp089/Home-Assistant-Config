@@ -72,6 +72,9 @@ cards:
             ulm_card_binary_sensor_alert_color: red
           entity: binary_sensor.hmip_swdo_pl_0023da49a3ae4e_state
 
+        - type: "custom:button-card"
+          color_type: blank-card
+
     - type: 'custom:button-card'
       template: card_title
       name: "Schlafzimmer"
@@ -115,6 +118,9 @@ cards:
             ulm_card_binary_sensor_alert_color: red
           entity: binary_sensor.schlafzimmer_person_occupancy
 
+        - type: "custom:button-card"
+          color_type: blank-card
+
     - type: 'custom:button-card'
       template: card_title
       name: "Badezimmer"
@@ -130,6 +136,9 @@ cards:
             ulm_card_binary_sensor_alert_color: red
           entity: binary_sensor.presence_15
 
+        - type: "custom:button-card"
+          color_type: blank-card
+
     - type: 'custom:button-card'
       template: card_title
       name: "Küche"
@@ -144,6 +153,9 @@ cards:
             ulm_card_binary_sensor_alert_name: Bewegung
             ulm_card_binary_sensor_alert_color: red
           entity: binary_sensor.presence_21
+
+        - type: "custom:button-card"
+          color_type: blank-card
 
     - type: 'custom:button-card'
       template: card_title
@@ -211,4 +223,6 @@ cards:
             ulm_card_binary_sensor_alert_name: Personen
             ulm_card_binary_sensor_alert_color: red
           entity: binary_sensor.eingang_person_occupancy
-    
+
+        - type: "custom:button-card"
+          color_type: blank-card    

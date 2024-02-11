@@ -35,6 +35,7 @@ cards:
                 - sensor.wandschalter_schlafzimmer_taglich
                 - sensor.wandschalter_werkstatt_taglich
                 - sensor.wandschalter_wohnzimmer_taglich
+                - sensor.wandschalter_dachterrasse_taeglich
               # production: sensor.grid_returned_energy_daily
             color: 
               consumption: "#FF9101"
@@ -44,6 +45,7 @@ cards:
       - type: 'custom:button-card'
         template: card_title
         name: "Wohnzimmer"
+        label: "Einzelverbraucher"
 
       - type: horizontal-stack
         cards:
@@ -74,6 +76,7 @@ cards:
       - type: 'custom:button-card'
         template: card_title
         name: "Schlafzimmer"
+        label: "Einzelverbraucher"
 
       - type: horizontal-stack
         cards:
@@ -115,9 +118,13 @@ cards:
           bar_spacing: 8
           line_color: "var(--google-blue)"
 
+        - type: "custom:button-card"
+          color_type: blank-card
+
       - type: 'custom:button-card'
         template: card_title
         name: "Badezimmer"
+        label: "Einzelverbraucher"
 
       - type: horizontal-stack
         cards:
@@ -148,6 +155,7 @@ cards:
       - type: 'custom:button-card'
         template: card_title
         name: "Küche"
+        label: "Einzelverbraucher"
 
       - type: horizontal-stack
         cards:
@@ -200,3 +208,47 @@ cards:
           aggregate_func: max
           bar_spacing: 8
           line_color: "var(--google-blue)"
+
+      - type: 'custom:button-card'
+        template: card_title
+        name: "Werkstatt"
+        label: "Einzelverbraucher"
+
+      - type: horizontal-stack
+        cards:
+        - type: custom:mini-graph-card
+          entities:
+            - entity: sensor.wandschalter_werkstatt_taglich
+          name: Deckenleuchte
+          show:
+            graph: bar   
+          hours_to_show: 24
+          points_per_hour: 0.5
+          aggregate_func: max
+          bar_spacing: 8
+          line_color: "var(--google-blue)"
+
+        - type: "custom:button-card"
+          color_type: blank-card
+
+      - type: 'custom:button-card'
+        template: card_title
+        name: "Dachterrasse"
+        label: "Einzelverbraucher"
+
+      - type: horizontal-stack
+        cards:
+        - type: custom:mini-graph-card
+          entities:
+            - entity: sensor.wandschalter_dachterrasse_taeglich
+          name: Außenbeleuchtung
+          show:
+            graph: bar   
+          hours_to_show: 24
+          points_per_hour: 0.5
+          aggregate_func: max
+          bar_spacing: 8
+          line_color: "var(--google-blue)"
+
+        - type: "custom:button-card"
+          color_type: blank-card

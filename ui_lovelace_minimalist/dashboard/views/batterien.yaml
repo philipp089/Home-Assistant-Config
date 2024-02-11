@@ -85,6 +85,9 @@ cards:
             ulm_card_battery_battery_level_warning: 50
             ulm_card_battery_name: Türsensor
 
+        - type: "custom:button-card"
+          color_type: blank-card
+
     - type: 'custom:button-card'
       template: card_title
       label: "Schlafzimmer"
@@ -119,6 +122,9 @@ cards:
             ulm_card_battery_battery_level_danger: 20
             ulm_card_battery_battery_level_warning: 50
             ulm_card_battery_name: Thermostat
+
+        - type: "custom:button-card"
+          color_type: blank-card
 
     - type: 'custom:button-card'
       template: card_title
@@ -155,6 +161,9 @@ cards:
             ulm_card_battery_battery_level_warning: 50
             ulm_card_battery_name: Thermostat
 
+        - type: "custom:button-card"
+          color_type: blank-card
+
     - type: 'custom:button-card'
       template: card_title
       label: "Küche"
@@ -189,6 +198,9 @@ cards:
             ulm_card_battery_battery_level_danger: 20
             ulm_card_battery_battery_level_warning: 50
             ulm_card_battery_name: Thermostat
+
+        - type: "custom:button-card"
+          color_type: blank-card
 
     - type: 'custom:button-card'
       template: card_title

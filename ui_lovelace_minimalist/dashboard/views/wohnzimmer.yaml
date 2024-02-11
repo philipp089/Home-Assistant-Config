@@ -199,6 +199,9 @@ cards:
             ulm_card_light_force_background_color: false
             ulm_card_light_icon: mdi:led-strip-variant
 
+        - type: "custom:button-card"
+          color_type: blank-card
+
     - type: 'custom:button-card'
       template: card_title
       label: "Skripte"
@@ -450,5 +453,6 @@ cards:
             ulm_card_battery_battery_level_warning: 50
             ulm_card_battery_name: Türsensor
 
-
+        - type: "custom:button-card"
+          color_type: blank-card
 

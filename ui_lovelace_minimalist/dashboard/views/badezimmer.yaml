@@ -173,7 +173,8 @@ cards:
             ulm_card_power_outlet_color: blue
             ulm_card_power_outlet_consumption_sensor: sensor.steckdose_waschmaschine_bad_current_consumption
 
-
+        - type: "custom:button-card"
+          color_type: blank-card
 
     - type: 'custom:button-card'
       template: card_title
@@ -189,6 +190,9 @@ cards:
             ulm_card_binary_sensor_alert_name: Bewegung
             ulm_card_binary_sensor_alert_color: red
           entity: binary_sensor.presence_15
+
+        - type: "custom:button-card"
+          color_type: blank-card
 
     - type: 'custom:button-card'
       template: card_title
@@ -225,5 +229,7 @@ cards:
             ulm_card_battery_battery_level_warning: 50
             ulm_card_battery_name: Thermostat
 
+        - type: "custom:button-card"
+          color_type: blank-card
 
 

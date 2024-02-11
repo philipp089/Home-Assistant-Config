@@ -135,27 +135,37 @@ cards:
       template: card_title
       label: "Skripte"
 
-    - type: "custom:button-card"
-      template: card_boost_script
-      variables:
-        ulm_card_script_title: Boost
-        ulm_card_script_icon: 'mdi:fire'
-      tap_action:
-        action: call-service
-        service: script.turn_on
-        service_data:
-          entity_id: script.werkstatt_boost
+    - type: "horizontal-stack"
+      cards:
+      - type: "custom:button-card"
+        template: card_boost_script
+        variables:
+          ulm_card_script_title: Boost
+          ulm_card_script_icon: 'mdi:fire'
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.werkstatt_boost
+
+      - type: "custom:button-card"
+        color_type: blank-card
 
     - type: 'custom:button-card'
       template: card_title
       label: "Steckdosen"
 
-    - type: "custom:button-card"
-      template: card_power_outlet
-      entity: switch.steckdose_pinas
-      variables:
-        ulm_card_power_outlet_name:  PiNAS
-        ulm_card_power_outlet_color: blue
+    - type: "horizontal-stack"
+      cards:
+      - type: "custom:button-card"
+        template: card_power_outlet
+        entity: switch.steckdose_pinas
+        variables:
+          ulm_card_power_outlet_name:  PiNAS
+          ulm_card_power_outlet_color: blue
+
+      - type: "custom:button-card"
+        color_type: blank-card
 
     - type: 'custom:button-card'
       template: card_title
@@ -171,6 +181,9 @@ cards:
             ulm_card_binary_sensor_alert_name: Bewegung
             ulm_card_binary_sensor_alert_color: red
           entity: binary_sensor.presence_18
+
+        - type: "custom:button-card"
+          color_type: blank-card
 
     - type: 'custom:button-card'
       template: card_title

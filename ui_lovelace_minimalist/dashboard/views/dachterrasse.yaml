@@ -84,6 +84,9 @@ cards:
             ulm_card_generic_swap_name:  Wandschalter
             ulm_card_generic_swap_color: green
 
+        - type: "custom:button-card"
+          color_type: blank-card
+
     - type: 'custom:button-card'
       template: card_title
       label: "Batterien"
