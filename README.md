@@ -153,7 +153,7 @@ In my smart home setup, the Room Tab is where I manage light scenes, scripts, pl
 
 ![01_Room_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/a43628c8-bb45-42b3-bf07-3475aa7d3ae0)
 
-![01_Room_Tab_Mockup_002_Night_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/ba7dc216-a19f-471c-a8b7-9a3c5b3f5f7b)
+![01_Room_Tab_Mockup_002_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/a28ae925-94d4-45ca-a1a9-ab084d2fbbad)
 
 ![01_Room_Tab_Mockup_003_Night_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/f28f0e40-a1ac-4a52-bc66-d76452210123)
 
@@ -161,7 +161,7 @@ In my smart home setup, the Room Tab is where I manage light scenes, scripts, pl
 
 ![01_Room_Tab_Mockup_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/83e961f2-3eb5-4f78-90f0-9bcdad860498)
 
-![01_Room_Tab_Mockup_002_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/d363756c-7a2d-4e88-971d-9f4a1b8a9812)
+![01_Room_Tab_Mockup_002_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/6250bb3c-507e-4af5-a79b-e3bde6a05178)
 
 ![01_Room_Tab_Mockup_003_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/a4209935-2023-442e-a560-552a1a615083)
 
@@ -296,11 +296,11 @@ Coming soon!
 
 Welcome to my crafted command center – a dashboard where I've consolidated key data for a seamless tech experience. Monitor temperatures, disk space, and more from my NAS and desktop computer at a glance. This personalized hub offers real-time insights, ensuring optimal performance and efficiency. With every detail meticulously curated, this dashboard reflects my commitment to a tech-savvy, organized, and effortlessly managed digital domain. Stay in control, stay efficient.
 
-![12_Hardware_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/41fdf187-c42c-421f-9313-6f151d8556b7)
+![12_Hardware_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/2782c541-6d5c-4f1c-bf57-76f97b3e7b03)
 
 #### The Hardware - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-![12_Hardware_Tab_Mockup_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/06268cec-d89e-4003-9a03-a876bc542246)
+![12_Hardware_Tab_Mockup_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/6cde6380-3377-4439-95fb-54ba5d53fa70)
 
 ---
 
