@@ -282,7 +282,7 @@ Stay in control with my Battery State Dashboard, where real-time insights into p
 
 ### The Energy - Tab <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-Coming soon!
+Meet my Home Assistant Energy Dashboard — a powerful tool for visualisation of my energy usage. With a customizable energy period selector, I can easily analyze and compare consumption over time, making informed decisions for efficiency. The total household consumption display gives me a quick overview of my environmental impact, while real-time sensors provide live data for each energy source. From lighting to appliances, I can monitor and manage every aspect of my energy use, promoting a more sustainable and cost-effective lifestyle. It's not just a dashboard; it's my key to a greener and smarter home.
 
 ![11_Energy_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/8be775ec-c83a-4ab3-a154-198904758e03)
 
