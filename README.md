@@ -4,7 +4,7 @@
 
 ![Header](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/d4c7f55f-40a2-460c-bbd3-2d0bf6d79ffa)
 
-![00_Home_Tab_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/09e5d254-9bca-4cbd-815a-3e868bdf052b)
+![00_Home_Tab_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/ea0dd5b8-4a42-43ab-af36-299c2dbd7812)
 
 This Repository contains my personal Smart Home Configuration. At the moment (as of Feb. 24) my Smart Home runs on a Raspberry Pi 4 Model B 4 GB with [Home Assistant](https://www.home-assistant.io/) installed. Use the menu links below to navigate through the documentation. If there are any open questions or you want to contribute feel free to contact me.
 
