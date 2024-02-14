@@ -4,37 +4,98 @@ path: "Home"
 cards:
   - type: "vertical-stack"
     cards:
+
     - type: "custom:button-card"
-      template: "card_esh_welcome"
+      template: "custom_card_welcome_scenes"
       triggers_update: "input_boolean.minimalist_dropdown"
+      #entity: input_boolean.<Your_boolean>
       variables:
-        ulm_card_esh_welcome_collapse: input_boolean.minimalist_dropdown
+        ulm_card_welcome_scenes_collapse: input_boolean.minimalist_dropdown
         ulm_weather: "weather.home"
         entity_1:
-          nav: "Remote"
+          entity_id: "Remote"
+          nav_path: "Remote"
           icon: "mdi:remote-tv"
           name: "Remot."
           color: "green"
+          state: "on"
         entity_2:
-          nav: "Kalender"
+          entity_id: "Kalender"
+          nav_path: "Kalender"
           icon: "mdi:calendar"
           name: "Kal."
           color: "red"
+          state: "off"
         entity_3:
-          nav: "Raspberry"
+          entity_id: "Raspberry"
+          nav_path: "Raspberry"
           icon: "mdi:raspberry-pi"
           name: "Rasp."
           color: "purple"
+          state: "off"
         entity_4:
-          nav: "Gesundheit"
+          entity_id: "Gesundheit"
+          nav_path: "Gesundheit"
           icon: "mdi:heart-outline"
           name: "Gesun."
           color: "yellow"
+          state: "off"
         entity_5:
-          nav: "Grocy"
+          entity_id: "Grocy"
+          nav_path: "Grocy"
           icon: "mdi:spray-bottle"
           name: "Hausa."
           color: "blue"
+          state: "off"
+        # entity_6:
+        #   entity_id: "<YOUR_ENTITY>"
+        #   icon: "mdi:YOUR_ICON" #OPTIONAL
+        #   name: "YOUR_NAME" #OPTIONAL
+        #   color: "pink"
+        # entity_7:
+        #   entity_id: "<YOUR_ENTITY>"
+        #   icon: "mdi:YOUR_ICON" #OPTIONAL
+        #   name: "YOUR_NAME" #OPTIONAL
+        #   color: "yellow"
+
+    # - type: "custom:button-card"
+    #   template: "card_esh_welcome"
+    #   triggers_update: "input_boolean.minimalist_dropdown"
+    #   entity: input_boolean.trigger_update_welcome_card
+    #   variables:
+    #     ulm_card_esh_welcome_collapse: input_boolean.minimalist_dropdown
+    #     ulm_weather: "weather.home"
+    #     state: "off"
+    #     entity_1:
+    #       nav: "Remote"
+    #       icon: "mdi:remote-tv"
+    #       name: "Remot."
+    #       color: "green"
+    #       state: input_boolean.trigger_update_welcome_card
+    #     entity_2:
+    #       nav: "Kalender"
+    #       icon: "mdi:calendar"
+    #       name: "Kal."
+    #       color: "red"
+    #       state: "off"
+    #     entity_3:
+    #       nav: "Raspberry"
+    #       icon: "mdi:raspberry-pi"
+    #       name: "Rasp."
+    #       color: "purple"
+    #       state: "off"
+    #     entity_4:
+    #       nav: "Gesundheit"
+    #       icon: "mdi:heart-outline"
+    #       name: "Gesun."
+    #       color: "yellow"
+    #       state: "off"
+    #     entity_5:
+    #       nav: "Grocy"
+    #       icon: "mdi:spray-bottle"
+    #       name: "Hausa."
+    #       color: "blue"
+    #       state: "off"
 
     - type: "horizontal-stack"
       cards:
@@ -47,6 +108,7 @@ cards:
               icon: "mdi:bell-outline"
               name: "Alarm"
               color: "red"
+              state: "off"
 
             entity_2:
               entity_id: "Autom."
@@ -54,6 +116,7 @@ cards:
               icon: "mdi:cog-outline" 
               name: "Autom."
               color: "blue"
+              state: "off"
 
             entity_3:
               entity_id: "Batterien"
@@ -61,6 +124,7 @@ cards:
               icon: "mdi:battery-high" 
               name: "Batt."
               color: "green"
+              state: "off"
 
             entity_4:
               entity_id: "Energie"
@@ -68,6 +132,7 @@ cards:
               icon: "mdi:lightning-bolt-outline" 
               name: "Energie"
               color: "yellow"
+              state: "off"
 
             entity_5:
               entity_id: "Hardware"
@@ -75,6 +140,7 @@ cards:
               icon: "mdi:desktop-classic" 
               name: "Hardw."
               color: "grey"
+              state: "off"
 
             # entity_6:
             #   entity_id: "Kameras"
@@ -89,6 +155,7 @@ cards:
               icon: "mdi:sony-playstation"
               name: "PS4"
               color: "purple"
+              state: "off"
 
     # - type: "custom:button-card"
     #   template: "card_scenes_welcome"

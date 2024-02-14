@@ -233,6 +233,7 @@ switch:
       - light.schlafzimmer_philips_hue_go
       - light.schlafzimmer_standleuchte
       - light.schlafzimmer_nachttisch_philipp
+      - light.schlafzimmer_nachttisch_rechts
 #
 # CIRCADIAN LIGHTING WERKSTATT
 #

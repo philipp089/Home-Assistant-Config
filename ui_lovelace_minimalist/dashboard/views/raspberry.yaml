@@ -106,7 +106,7 @@ cards:
         entity: sensor.sm_n975f_current_version
         variables:
           ulm_card_generic_swap_color: "var(--google-red)"
-          ulm_card_generic_swap_name: App Version
+          ulm_card_generic_swap_name: HA App Version
 
     - type: 'custom:button-card'
       template: card_title

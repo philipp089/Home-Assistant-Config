@@ -132,7 +132,7 @@ At the moment (as of Feb. 24) I control my Smart Home over 19 individual tabs. U
 The Home - Tab <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 </h3>
 
-![00_Home_Tab_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/09e5d254-9bca-4cbd-815a-3e868bdf052b)
+![00_Home_Tab_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/ea0dd5b8-4a42-43ab-af36-299c2dbd7812)
 
 The Home Tab acts as the default and ideal starting point, offering a convenient way to explore features with direct access to all tabs within the User Interface. Returning to the Home Tab is easy – simply press the back-chip at the top of each page.
 
@@ -143,7 +143,7 @@ In the Home Tab, a personalized header displays each tab above the welcome card,
 The Home - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 </h4>
 
-![00_Home_Tab_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/21ee2747-1ae1-4f05-8307-ad65d7fea045)
+![00_Home_Tab_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/db33783d-efdc-4a1c-9503-c8b85f7b9a3c)
 
 ---
 

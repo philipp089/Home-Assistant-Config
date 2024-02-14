@@ -69,7 +69,10 @@ cards:
             ulm_card_graph_type: fill
             ulm_card_graph_hours: 24
             ulm_card_graph_group_by: interval
-            ulm_card_graph_line_width: 3
+            ulm_card_graph_line_width: 6
+
+        - type: "custom:button-card"
+          color_type: blank-card
 
     - type: 'custom:button-card'
       template: card_title

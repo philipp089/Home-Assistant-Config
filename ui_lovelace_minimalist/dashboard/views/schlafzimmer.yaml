@@ -186,7 +186,7 @@ cards:
 
         - type: 'custom:button-card'
           template: card_light
-          entity: light.schlafzimmer_nachttisch_philipp
+          entity: light.schlafzimmer_nachttisch_rechts
           variables:
             ulm_card_light_name: Nachttisch rechts
             ulm_card_light_enable_slider: false

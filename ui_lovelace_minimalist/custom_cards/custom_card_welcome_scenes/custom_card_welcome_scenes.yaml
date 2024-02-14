@@ -83,15 +83,15 @@ custom_card_welcome_scenes:
       - box-shadow: "var(--box-shadow)"
       - padding: "10px"
     custom_fields:
-      item3:
-        - display: >
-            [[[
-              if(variables.ulm_card_welcome_scenes_collapse && states[variables.ulm_card_welcome_scenes_collapse].state == 'on'){
-                return "none";
-              } else {
-                return "block";
-              }
-            ]]]
+      # item3:
+      #   - display: >
+      #       [[[
+      #         if(variables.ulm_card_welcome_scenes_collapse && states[variables.ulm_card_welcome_scenes_collapse].state == 'on'){
+      #           return "none";
+      #         } else {
+      #           return "block";
+      #         }
+      #       ]]]
       item4:
         - display: >
             [[[
@@ -153,43 +153,43 @@ custom_card_welcome_scenes:
           card:
             - box-shadow: "none"
             - padding-bottom: "8px"
-    item3:
-      card:
-        type: "custom:button-card"
-        show_icon: true
-        show_label: true
-        show_name: true
-        show_entity_picture: false
-        name: "[[[ return variables.ulm_translation_scenes ]]]"
-        icon: "mdi:dots-vertical"
-        styles:
-          icon:
-            - height: "20px"
-            - filter: "opacity(50%)"
-          name:
-            - align-self: "start"
-            - justify-self: "start"
-            - font-weight: "bold"
-            - font-size: "18px"
-            - margin-left: "16px"
-          grid:
-            - grid-template-areas: "'n i'"
-            - grid-template-columns: "6fr 1fr"
-            - grid-template-rows: "min-content min-content"
-            - text-align: "start"
-          card:
-            - box-shadow: "none"
-            - padding-bottom: "0px"
-            - bottom: "10px"
+    # item3:
+    #   card:
+    #     type: "custom:button-card"
+    #     show_icon: true
+    #     show_label: true
+    #     show_name: true
+    #     show_entity_picture: false
+    #     name: "[[[ return variables.ulm_translation_scenes ]]]"
+    #     icon: "mdi:dots-vertical"
+    #     styles:
+    #       icon:
+    #         - height: "20px"
+    #         - filter: "opacity(50%)"
+    #       name:
+    #         - align-self: "start"
+    #         - justify-self: "start"
+    #         - font-weight: "bold"
+    #         - font-size: "18px"
+    #         - margin-left: "16px"
+    #       grid:
+    #         - grid-template-areas: "'n i'"
+    #         - grid-template-columns: "6fr 1fr"
+    #         - grid-template-rows: "min-content min-content"
+    #         - text-align: "start"
+    #       card:
+    #         - box-shadow: "none"
+    #         - padding-bottom: "0px"
+    #         - bottom: "10px"
     item4:
       card:
         type: "custom:button-card"
         template: >
           [[[
             if(variables?.entity_1?.entity_id != ""){
-              return 'card_scenes_welcome'
+              return 'custom_card_scenes_welcome'
             } else {
-              return 'card_scenes_welcome_auto'
+              return 'custom_card_scenes_welcome_auto'
             }
           ]]]
         styles:
@@ -479,7 +479,7 @@ card_topbar_welcome:
           card:
             - align-self: "end"
 # auto-entities
-card_scenes_welcome_auto:
+custom_card_scenes_welcome_auto:
   show_icon: false
   show_name: true
   show_label: false
@@ -515,7 +515,7 @@ card_scenes_welcome_auto:
             - domain: "light"
               options:
                 type: "custom:button-card"
-                template: "card_scenes_pill_welcome"
+                template: "custom_card_scenes_pill_welcome"
                 custom_fields:
                   item1:
                     card:
@@ -526,7 +526,7 @@ card_scenes_welcome_auto:
                           - color: >
                               [[[
                                 var color = variables.colors
-                                if(hass.themes.darkMode){var color = "#FAFAFA";}
+                                if(hass.themes.darkMode){var color = variables?.color}
                                 return `rgba(var(--color-${color}), 1)`;
                               ]]]
                           - width: "20px"
@@ -535,7 +535,7 @@ card_scenes_welcome_auto:
                               [[[
                                 var color = variables.colors
                                 var opacity = '0.20'
-                                if(hass.themes.darkMode){var opacity = '1'}
+                                if(hass.themes.darkMode){var opacity = '0.20'}
                                 return `rgba(var(--color-${color}), ${opacity})`;
                               ]]]
                   item2:
