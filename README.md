@@ -2,9 +2,9 @@
   Home Assistant Configuration (Minimalist UI Setup)
 </h1>
 
-![Header](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/d4c7f55f-40a2-460c-bbd3-2d0bf6d79ffa)
+![Header](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/3dfd1c3a-2049-4ef6-badf-52d981f811d5)
 
-![00_Home_Tab_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/ea0dd5b8-4a42-43ab-af36-299c2dbd7812)
+![00_Home_Tab_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/f4363620-c7d5-444c-ac4a-8e3c8e7a14bb)
 
 This Repository contains my personal Smart Home Configuration. At the moment (as of Feb. 24) my Smart Home runs on a Raspberry Pi 4 Model B 4 GB with [Home Assistant](https://www.home-assistant.io/) installed. Use the menu links below to navigate through the documentation. If there are any open questions or you want to contribute feel free to contact me.
 
@@ -132,7 +132,7 @@ At the moment (as of Feb. 24) I control my Smart Home over 19 individual tabs. U
 The Home - Tab <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 </h3>
 
-![00_Home_Tab_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/ea0dd5b8-4a42-43ab-af36-299c2dbd7812)
+![00_Home_Tab_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/092d4c5a-58d3-47cd-a623-b8e4314cbdc8)
 
 The Home Tab acts as the default and ideal starting point, offering a convenient way to explore features with direct access to all tabs within the User Interface. Returning to the Home Tab is easy – simply press the back-chip at the top of each page.
 
@@ -143,7 +143,7 @@ In the Home Tab, a personalized header displays each tab above the welcome card,
 The Home - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 </h4>
 
-![00_Home_Tab_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/db33783d-efdc-4a1c-9503-c8b85f7b9a3c)
+![00_Home_Tab_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/f4363620-c7d5-444c-ac4a-8e3c8e7a14bb)
 
 ---
 
