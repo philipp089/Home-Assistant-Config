@@ -1,0 +1,35 @@
+---
+### Card Script ###
+custom_card_youtube_script:
+  show_entity_picture: true
+  show_label: true
+  show_icon: false
+  label: "[[[ return variables.ulm_card_script_title; ]]]"
+  # icon: "[[[ return variables.ulm_card_script_icon; ]]]"
+  styles:
+    card:
+    label:
+      - justify-self: "start"
+      - align-self: "center"
+      - font-weight: "bold"
+      - margin-left: "12px"
+      - font-size: "14px"
+      - filter: "opacity(100%)"
+    img_cell:
+      - place-self: "center"
+      - width: "42px"
+      - height: "42px"
+      - background-color: "rgba(var(--color-red), 0.2)"
+      - border-radius: "50%"
+    grid:
+      - grid-template-areas: "'i l'"
+      - grid-template-columns: "min-content auto"
+      - grid-template-rows: "min-content"
+    card:
+      - border-radius: "var(--border-radius)"
+      - box-shadow: "var(--box-shadow)"
+      - padding: "12px"
+  size: "22px"
+
+
+

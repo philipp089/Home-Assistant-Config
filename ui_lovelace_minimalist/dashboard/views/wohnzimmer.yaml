@@ -42,11 +42,11 @@ cards:
           icon: "mdi:sun-clock-outline" 
           name: "TAG" 
           color: "yellow"
-        entity_6:
-          entity_id: "script.wohnzimmer_konzentration"
-          icon: "mdi:brain" 
-          name: "KONZ." 
-          color: "blue"
+        # entity_6:
+        #   entity_id: "script.wohnzimmer_konzentration"
+        #   icon: "mdi:brain" 
+        #   name: "KONZ." 
+        #   color: "blue"
         entity_7:
           entity_id: "script.wohnzimmer_sexy_light"
           icon: "mdi:chili-mild" 
@@ -219,10 +219,23 @@ cards:
             service_data:
               entity_id: script.samsung_q7_series_power_toggle
 
+        - type: "custom:button-card"
+          template: custom_card_netflix_script
+          entity_picture: /local/Icon_Netflix.svg
+          variables:
+            ulm_card_script_title: Netflix
+          tap_action:
+            action: call-service
+            service: script.turn_on
+            service_data:
+              entity_id: script.samsung_q7_series_netflix
+
+    - type: "horizontal-stack"
+      cards:
         - type: 'custom:button-card'
           template: custom_card_spotify_script
           variables:
-            ulm_card_script_title: Playlist Elektro
+            ulm_card_script_title: Elektro
             ulm_card_script_icon: 'mdi:spotify'
           tap_action:
             action: call-service
@@ -230,12 +243,10 @@ cards:
             service_data:
               entity_id: script.spotify_elektro_auf_sonos
 
-    - type: "horizontal-stack"
-      cards:
-        - type: 'custom:button-card'
+        - type: 'custom:button-card'              
           template: custom_card_spotify_script
           variables:
-            ulm_card_script_title: Playlist Lieblingssongs
+            ulm_card_script_title: Lieblingssongs
             ulm_card_script_icon: 'mdi:spotify'
           tap_action:
             action: call-service
@@ -243,8 +254,11 @@ cards:
             service_data:
               entity_id: script.spotify_playlist_lieblingssongs_wohnzimmer
 
+    - type: "horizontal-stack"
+      cards:
         - type: "custom:button-card"
-          template: custom_card_spotify_script
+          template: custom_card_sonos_script
+          entity_picture: /local/Icon_Sonos.svg
           variables:
             ulm_card_script_title: Sonos gruppieren
             ulm_card_script_icon: 'mdi:home-group-plus'
@@ -254,13 +268,24 @@ cards:
             service_data:
               entity_id: script.sonos_wohnzimmer_gruppieren
 
+        - type: "custom:button-card"
+          template: custom_card_sonos_script
+          entity_picture: /local/Icon_Sonos.svg
+          variables:
+            ulm_card_script_title: Sonos trennen
+          tap_action:
+            action: call-service
+            service: script.turn_on
+            service_data:
+              entity_id: script.sonos_wohnzimmer_trennen
+
     - type: "horizontal-stack"
       cards:
         - type: "custom:button-card"
-          template: custom_card_spotify_script
+          template: custom_card_youtube_script
+          entity_picture: /local/Icon_Youtube.svg
           variables:
-            ulm_card_script_title: Sonos trennen
-            ulm_card_script_icon: 'mdi:home-group-remove'
+            ulm_card_script_title: Youtube
           tap_action:
             action: call-service
             service: script.turn_on
@@ -385,7 +410,7 @@ cards:
     - type: "horizontal-stack"
       cards:
         - type: 'custom:button-card'
-          template: custom_card_battery
+          template: card_battery
           entity: sensor.bewegungsmelder_battery_level
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.bewegungsmelder_battery_level
@@ -394,7 +419,7 @@ cards:
             ulm_card_battery_name: Bewegung Kamin
 
         - type: 'custom:button-card'
-          template: custom_card_battery
+          template: card_battery
           entity: sensor.presence_3_battery_level
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.presence_3_battery_level
@@ -405,7 +430,7 @@ cards:
     - type: "horizontal-stack"
       cards:
         - type: 'custom:button-card'
-          template: custom_card_battery
+          template: card_battery
           entity: sensor.heizthermostat_wohnzimmer_batterie_prozent
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.heizthermostat_wohnzimmer_batterie_prozent
@@ -414,7 +439,7 @@ cards:
             ulm_card_battery_name: Heizung Kamin
 
         - type: 'custom:button-card'
-          template: custom_card_battery
+          template: card_battery
           entity: sensor.heizthermostat_wohnzimmer_tv_batterie_prozent
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.heizthermostat_wohnzimmer_tv_batterie_prozent
@@ -425,7 +450,7 @@ cards:
     - type: "horizontal-stack"
       cards:
         - type: "custom:button-card"
-          template: custom_card_battery
+          template: card_battery
           entity: sensor.philips_dimmschalter_battery_level
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.philips_dimmschalter_battery_level
@@ -434,7 +459,7 @@ cards:
             ulm_card_battery_name: Philips Dimmschalter
 
         - type: 'custom:button-card'
-          template: custom_card_battery
+          template: card_battery
           entity: sensor.thermostat_wohnzimmer_batterie_prozent
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.thermostat_wohnzimmer_batterie_prozent
@@ -445,7 +470,7 @@ cards:
     - type: "horizontal-stack"
       cards:
         - type: 'custom:button-card'
-          template: custom_card_battery
+          template: card_battery
           entity: sensor.tuersensor_wohnzimmer_batterie_prozent
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.tuersensor_wohnzimmer_batterie_prozent

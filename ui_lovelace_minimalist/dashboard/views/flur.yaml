@@ -117,7 +117,7 @@ cards:
     - type: "horizontal-stack"
       cards:
         - type: 'custom:button-card'
-          template: custom_card_battery
+          template: card_battery
           entity: sensor.bewegungsmelder_battery_level_2
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.bewegungsmelder_battery_level_2
@@ -126,7 +126,7 @@ cards:
             ulm_card_battery_name: Bewegung 
 
         - type: 'custom:button-card'
-          template: custom_card_battery
+          template: card_battery
           entity: sensor.tuersensor_flur_eingangstuere_batterie_prozent
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.tuersensor_flur_eingangstuere_batterie_prozent

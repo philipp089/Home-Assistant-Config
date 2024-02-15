@@ -302,7 +302,7 @@ cards:
       cards:
         - type: 'custom:button-card'
           template:
-            - card_room
+            - custom_card_room
             - green_no_state
           name: Wohnzimmer
           entity: climate.000a9a49a6fc5e
@@ -312,7 +312,7 @@ cards:
             navigation_path: "Wohnzimmer"
           variables:
             label_use_temperature: true
-            label_use_brightness: false
+            label_use_brightness: true
             entity_1:
               entity_id: light.lichtgruppe_wohnzimmer_gesamt
               templates:

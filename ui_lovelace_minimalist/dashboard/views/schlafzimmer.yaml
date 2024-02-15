@@ -42,11 +42,11 @@ cards:
           icon: "mdi:sun-clock-outline" 
           name: "TAG" 
           color: "yellow"
-        entity_6:
-          entity_id: "script.schlafzimmer_konzentration"
-          icon: "mdi:brain" 
-          name: "KONZ." 
-          color: "blue"
+        # entity_6:
+        #   entity_id: "script.schlafzimmer_konzentration"
+        #   icon: "mdi:brain" 
+        #   name: "KONZ." 
+        #   color: "blue"
         entity_7:
           entity_id: "script.schlafzimmer_sexy_light"
           icon: "mdi:chili-mild" 
@@ -303,7 +303,7 @@ cards:
     - type: "horizontal-stack"
       cards:
         - type: 'custom:button-card'
-          template: custom_card_battery
+          template: card_battery
           entity: sensor.bewegungsmelder_battery_level
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.bewegungsmelder_battery_level
@@ -312,7 +312,7 @@ cards:
             ulm_card_battery_name: Bewegung 
 
         - type: 'custom:button-card'
-          template: custom_card_battery
+          template: card_battery
           entity: sensor.heizthermostat_wohnzimmer_tv_batterie_prozent
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.heizthermostat_schlafzimmer_batterie_prozent
@@ -323,7 +323,7 @@ cards:
     - type: "horizontal-stack"
       cards:
         - type: 'custom:button-card'
-          template: custom_card_battery
+          template: card_battery
           entity: sensor.thermostat_wohnzimmer_batterie_prozent
           variables:
             ulm_card_battery_charger_type_entity_id: sensor.thermostat_schlafzimmer_batterie_prozent
