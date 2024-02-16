@@ -301,306 +301,457 @@ cards:
     - type: "horizontal-stack"
       cards:
         - type: 'custom:button-card'
-          template:
-            - custom_card_room
-            - green_no_state
+          template: custom_card_room
           name: Wohnzimmer
-          entity: climate.000a9a49a6fc5e
+          entity: sensor.000a9a49a6fc5e_actual_temperature
           icon: mdi:sofa-single-outline
           tap_action:
             action: navigate
             navigation_path: "Wohnzimmer"
-          variables:
-            label_use_temperature: true
-            label_use_brightness: true
-            entity_1:
-              entity_id: light.lichtgruppe_wohnzimmer_gesamt
-              templates:
-                - yellow_on
-              tap_action:
-                action: toggle
-            entity_2:
-              entity_id: switch.00085a49a49c0f
-              templates:
-                - blue_on
-              tap_action:
-                action: toggle
-            entity_3:
-              entity_id: binary_sensor.presence_9
-              templates:
-                - red_on
-                - grey_off
-              tap_action:
-                action: none
-            entity_4:
-              entity_id: media_player.samsung_q7_series_55
-              templates:
-                - green_on
-                - grey_off
-              tap_action:
-                action: toggle
+          styles:
+            img_cell:
+              - background-color: "rgba(52, 168, 83,0.2)"
+            icon:
+              - color: "rgb(52, 168, 83)"
 
         - type: 'custom:button-card'
-          template:
-            - card_room
-            - red_no_state
+          template: custom_card_room
           name: Schlafzimmer
-          entity: climate.000a9a49a6f8b1
+          entity: sensor.000a9a49a6f8b1_actual_temperature
           icon: mdi:bed-king-outline
           tap_action:
             action: navigate
             navigation_path: "Schlafzimmer"
-          variables:
-            label_use_temperature: true
-            label_use_brightness: false
-            entity_1:
-              entity_id: light.schlafzimmer
-              templates:
-                - yellow_on
-              tap_action:
-                action: toggle
-            entity_2:
-              entity_id: switch.00085a49a49f84
-              templates:
-                - blue_on
-                - grey_off
-              tap_action:
-                action: toggle
-            entity_3:
-              entity_id: binary_sensor.presence_24
-              templates:
-                - red_on
-                - grey_off
-              tap_action:
-                action: none
-            entity_4:
-              entity_id: media_player.chromecast_schlafzimmer
-              templates:
-                - green_on
-                - grey_off
-              tap_action:
-                action: call-service
-                service: script.turn_on
-                service_data:
-                  entity_id: script.sony_bravia_power_on
-
+          styles:
+            img_cell:
+              - background-color: "rgba(234, 67, 53,0.2)"
+            icon:
+              - color: "rgb(234, 67, 53)"
 
     - type: "horizontal-stack"
       cards:
         - type: 'custom:button-card'
-          template:
-            - card_room
-            - blue_no_state
+          template: custom_card_room
           name: Badezimmer
-          entity: climate.000a9a49a8a692
+          entity: sensor.000a9a49a8a692_actual_temperature
           icon: mdi:shower
           tap_action:
             action: navigate
             navigation_path: "Badezimmer"
-          variables:
-            label_use_temperature: true
-            label_use_brightness: false
-            entity_1:
-              entity_id: light.lichtgruppe_badezimmer_gesamt
-              templates:
-                - yellow_on
-              tap_action:
-                action: toggle
-            entity_2:
-              entity_id: switch.hmip_bsm_00085a49a4a57e
-              templates:
-                - blue_on
-                - grey_off
-              tap_action:
-                action: toggle
-            entity_3:
-              entity_id: binary_sensor.presence_15
-              templates:
-                - red_on
-                - grey_off
-              tap_action:
-                action: none
-            entity_4:
-              entity_id: media_player.bad
-              templates:
-                - green_on
-                - grey_off
-              tap_action:
-                action: toggle
+          styles:
+            img_cell:
+              - background-color: "rgba(61, 90, 254,0.2)"
+            icon:
+              - color: "rgb(61, 90, 254)"
 
         - type: 'custom:button-card'
-          template:
-            - card_room
-            - purple_no_state
+          template: custom_card_room
           name: Küche
-          entity: climate.000a9a49a6f8b1
+          entity: sensor.000a9a49a6f2b9_actual_temperature
           icon: mdi:blender
           tap_action:
             action: navigate
             navigation_path: "Küche"
-          variables:
-            label_use_temperature: true
-            label_use_brightness: false
-            entity_1:
-              entity_id: 
-              templates:
-                - yellow_on
-              tap_action:
-                action: toggle
-            entity_2:
-              entity_id: switch.hmip_bsm_00085a49a49be7
-              templates:
-                - blue_on
-                - grey_off
-              tap_action:
-                action: toggle
-            entity_3:
-              entity_id: binary_sensor.presence_21
-              templates:
-                - red_on
-                - grey_off
-              tap_action:
-                action: none
-            entity_4:
-              entity_id: media_player.kuche
-              templates:
-                - green_on
-                - grey_off
-              tap_action:
-                action: call-service
-                service: script.turn_on
-                service_data:
-                  entity_id: script.sony_bravia_power_on
+          styles:
+            img_cell:
+              - background-color: "rgba(102, 31, 255,0.2)"
+            icon:
+              - color: "rgb(102, 31, 255)"
 
     - type: "horizontal-stack"
       cards:
         - type: 'custom:button-card'
-          template:
-            - card_room
-            - yellow_no_state
+          template: custom_card_room
           name: Werkstatt
-          entity: climate.hmip_etrv_2_000a1a49a13405
+          entity: sensor.000a9a49a6f8af_actual_temperature
           icon: mdi:bike-pedal-mountain
           tap_action:
             action: navigate
             navigation_path: "Werkstatt"
-          variables:
-            label_use_temperature: true
-            label_use_brightness: false
-            entity_1:
-              entity_id: light.lichtgruppe_werkstatt_deckenleuchte
-              templates:
-                - yellow_on
-              tap_action:
-                action: toggle
-            entity_2:
-              entity_id: switch.00085a49a49be1
-              templates:
-                - blue_on
-                - grey_off
-              tap_action:
-                action: toggle
-            entity_3:
-              entity_id: binary_sensor.presence_18
-              templates:
-                - red_on
-                - grey_off
-              tap_action:
-                action: none
-            entity_4:
-              entity_id: media_player.sonos_play_1_werkstatt
-              templates:
-                - green_on
-                - grey_off
-              tap_action:
-                action: toggle
+          styles:
+            img_cell:
+              - background-color: "rgba(255, 145, 1,0.2)"
+            icon:
+              - color: "rgb(255, 145, 1)"
+              - width: 26px
 
         - type: 'custom:button-card'
-          template:
-            - card_room
-            - grey_no_state
+          template: custom_card_room
           name: Flur
-          entity: climate.000a9a49a8a692
+          entity: sensor.temperature_13
           icon: mdi:door
           tap_action:
             action: navigate
             navigation_path: "Flur"
-          variables:
-            label_use_temperature: true
-            label_use_brightness: false
-            entity_1:
-              entity_id: light.flur
-              templates:
-                - yellow_on
-              tap_action:
-                action: toggle
-            entity_2:
-              entity_id: switch.00085a49a4b411
-              templates:
-                - blue_on
-                - grey_off
-              tap_action:
-                action: toggle
-            entity_3:
-              entity_id: binary_sensor.presence_12
-              templates:
-                - red_on
-                - grey_off
-              tap_action:
-                action: none
-            entity_4:
-              entity_id: 
-              templates:
-                - green_on
-                - grey_off
-              tap_action:
-                action: call-service
-                service: script.turn_on
-                service_data:
-                  entity_id: script.sony_bravia_power_on
+          styles:
+            img_cell:
+              - background-color: "rgba(187, 187, 187,0.2)"
+            icon:
+              - color: "rgb(187, 187, 187)"
 
     - type: "horizontal-stack"
       cards:
         - type: 'custom:button-card'
-          template:
-            - card_room
-            - pink_no_state
+          template: custom_card_room
           name: Dachterrasse
           entity: sensor.000eda499c8410_actual_temperature
           icon: mdi:weather-partly-cloudy
           tap_action:
             action: navigate
             navigation_path: "Dachterrasse"
-          variables:
-            label_use_temperature: true
-            label_use_brightness: false
-            entity_1:
-              entity_id: 
-              templates:
-                - yellow_on
-              tap_action:
-                action: toggle
-            entity_2:
-              entity_id: switch.hmip_bsm_00085a49a49c91
-              templates:
-                - blue_on
-                - grey_off
-              tap_action:
-                action: toggle
-            entity_3:
-              entity_id: 
-              templates:
-                - red_on
-                - grey_off
-              tap_action:
-                action: toggle
-            entity_4:
-              entity_id: 
-              templates:
-                - green_on
-                - grey_off
-              tap_action:
-                action: toggle
+          styles:
+            img_cell:
+              - background-color: "rgba(233, 30, 99,0.2)"
+            icon:
+              - color: "rgb(233, 30, 99)"
 
         - type: "custom:button-card"
           color_type: blank-card
+
+    # - type: "horizontal-stack"
+    #   cards:
+    #     - type: 'custom:button-card'
+    #       template:
+    #         - card_room
+    #         - green_no_state
+    #       name: Wohnzimmer
+    #       entity: climate.000a9a49a6fc5e
+    #       icon: mdi:sofa-single-outline
+    #       tap_action:
+    #         action: navigate
+    #         navigation_path: "Wohnzimmer"
+    #       variables:
+    #         label_use_temperature: true
+    #         label_use_brightness: true
+    #         entity_1:
+    #           entity_id: light.lichtgruppe_wohnzimmer_gesamt
+    #           templates:
+    #             - yellow_on
+    #           tap_action:
+    #             action: toggle
+    #         entity_2:
+    #           entity_id: switch.00085a49a49c0f
+    #           templates:
+    #             - blue_on
+    #           tap_action:
+    #             action: toggle
+    #         entity_3:
+    #           entity_id: binary_sensor.presence_9
+    #           templates:
+    #             - red_on
+    #             - grey_off
+    #           tap_action:
+    #             action: none
+    #         entity_4:
+    #           entity_id: media_player.samsung_q7_series_55
+    #           templates:
+    #             - green_on
+    #             - grey_off
+    #           tap_action:
+    #             action: toggle
+
+    #     - type: 'custom:button-card'
+    #       template:
+    #         - card_room
+    #         - red_no_state
+    #       name: Schlafzimmer
+    #       entity: climate.000a9a49a6f8b1
+    #       icon: mdi:bed-king-outline
+    #       tap_action:
+    #         action: navigate
+    #         navigation_path: "Schlafzimmer"
+    #       variables:
+    #         label_use_temperature: true
+    #         label_use_brightness: false
+    #         entity_1:
+    #           entity_id: light.schlafzimmer
+    #           templates:
+    #             - yellow_on
+    #           tap_action:
+    #             action: toggle
+    #         entity_2:
+    #           entity_id: switch.00085a49a49f84
+    #           templates:
+    #             - blue_on
+    #             - grey_off
+    #           tap_action:
+    #             action: toggle
+    #         entity_3:
+    #           entity_id: binary_sensor.presence_24
+    #           templates:
+    #             - red_on
+    #             - grey_off
+    #           tap_action:
+    #             action: none
+    #         entity_4:
+    #           entity_id: media_player.chromecast_schlafzimmer
+    #           templates:
+    #             - green_on
+    #             - grey_off
+    #           tap_action:
+    #             action: call-service
+    #             service: script.turn_on
+    #             service_data:
+    #               entity_id: script.sony_bravia_power_on
+
+
+    # - type: "horizontal-stack"
+    #   cards:
+    #     - type: 'custom:button-card'
+    #       template:
+    #         - card_room
+    #         - blue_no_state
+    #       name: Badezimmer
+    #       entity: climate.000a9a49a8a692
+    #       icon: mdi:shower
+    #       tap_action:
+    #         action: navigate
+    #         navigation_path: "Badezimmer"
+    #       variables:
+    #         label_use_temperature: true
+    #         label_use_brightness: false
+    #         entity_1:
+    #           entity_id: light.lichtgruppe_badezimmer_gesamt
+    #           templates:
+    #             - yellow_on
+    #           tap_action:
+    #             action: toggle
+    #         entity_2:
+    #           entity_id: switch.hmip_bsm_00085a49a4a57e
+    #           templates:
+    #             - blue_on
+    #             - grey_off
+    #           tap_action:
+    #             action: toggle
+    #         entity_3:
+    #           entity_id: binary_sensor.presence_15
+    #           templates:
+    #             - red_on
+    #             - grey_off
+    #           tap_action:
+    #             action: none
+    #         entity_4:
+    #           entity_id: media_player.bad
+    #           templates:
+    #             - green_on
+    #             - grey_off
+    #           tap_action:
+    #             action: toggle
+
+    #     - type: 'custom:button-card'
+    #       template:
+    #         - card_room
+    #         - purple_no_state
+    #       name: Küche
+    #       entity: climate.000a9a49a6f8b1
+    #       icon: mdi:blender
+    #       tap_action:
+    #         action: navigate
+    #         navigation_path: "Küche"
+    #       variables:
+    #         label_use_temperature: true
+    #         label_use_brightness: false
+    #         entity_1:
+    #           entity_id: 
+    #           templates:
+    #             - yellow_on
+    #           tap_action:
+    #             action: toggle
+    #         entity_2:
+    #           entity_id: switch.hmip_bsm_00085a49a49be7
+    #           templates:
+    #             - blue_on
+    #             - grey_off
+    #           tap_action:
+    #             action: toggle
+    #         entity_3:
+    #           entity_id: binary_sensor.presence_21
+    #           templates:
+    #             - red_on
+    #             - grey_off
+    #           tap_action:
+    #             action: none
+    #         entity_4:
+    #           entity_id: media_player.kuche
+    #           templates:
+    #             - green_on
+    #             - grey_off
+    #           tap_action:
+    #             action: call-service
+    #             service: script.turn_on
+    #             service_data:
+    #               entity_id: script.sony_bravia_power_on
+
+    # - type: "horizontal-stack"
+    #   cards:
+    #     - type: 'custom:button-card'
+    #       template:
+    #         - card_room
+    #         - yellow_no_state
+    #       name: Werkstatt
+    #       entity: climate.hmip_etrv_2_000a1a49a13405
+    #       icon: mdi:bike-pedal-mountain
+    #       tap_action:
+    #         action: navigate
+    #         navigation_path: "Werkstatt"
+    #       variables:
+    #         label_use_temperature: true
+    #         label_use_brightness: false
+    #         entity_1:
+    #           entity_id: light.lichtgruppe_werkstatt_deckenleuchte
+    #           templates:
+    #             - yellow_on
+    #           tap_action:
+    #             action: toggle
+    #         entity_2:
+    #           entity_id: switch.00085a49a49be1
+    #           templates:
+    #             - blue_on
+    #             - grey_off
+    #           tap_action:
+    #             action: toggle
+    #         entity_3:
+    #           entity_id: binary_sensor.presence_18
+    #           templates:
+    #             - red_on
+    #             - grey_off
+    #           tap_action:
+    #             action: none
+    #         entity_4:
+    #           entity_id: media_player.sonos_play_1_werkstatt
+    #           templates:
+    #             - green_on
+    #             - grey_off
+    #           tap_action:
+    #             action: toggle
+
+    #     - type: 'custom:button-card'
+    #       template:
+    #         - card_room
+    #         - grey_no_state
+    #       name: Flur
+    #       entity: climate.000a9a49a8a692
+    #       icon: mdi:door
+    #       tap_action:
+    #         action: navigate
+    #         navigation_path: "Flur"
+    #       variables:
+    #         label_use_temperature: true
+    #         label_use_brightness: false
+    #         entity_1:
+    #           entity_id: light.flur
+    #           templates:
+    #             - yellow_on
+    #           tap_action:
+    #             action: toggle
+    #         entity_2:
+    #           entity_id: switch.00085a49a4b411
+    #           templates:
+    #             - blue_on
+    #             - grey_off
+    #           tap_action:
+    #             action: toggle
+    #         entity_3:
+    #           entity_id: binary_sensor.presence_12
+    #           templates:
+    #             - red_on
+    #             - grey_off
+    #           tap_action:
+    #             action: none
+    #         entity_4:
+    #           entity_id: 
+    #           templates:
+    #             - green_on
+    #             - grey_off
+    #           tap_action:
+    #             action: call-service
+    #             service: script.turn_on
+    #             service_data:
+    #               entity_id: script.sony_bravia_power_on
+
+    # - type: "horizontal-stack"
+    #   cards:
+    #     - type: 'custom:button-card'
+    #       template:
+    #         - card_room
+    #         - pink_no_state
+    #       name: Dachterrasse
+    #       entity: sensor.000eda499c8410_actual_temperature
+    #       icon: mdi:weather-partly-cloudy
+    #       tap_action:
+    #         action: navigate
+    #         navigation_path: "Dachterrasse"
+    #       variables:
+    #         label_use_temperature: true
+    #         label_use_brightness: false
+    #         entity_1:
+    #           entity_id: 
+    #           templates:
+    #             - yellow_on
+    #           tap_action:
+    #             action: toggle
+    #         entity_2:
+    #           entity_id: switch.hmip_bsm_00085a49a49c91
+    #           templates:
+    #             - blue_on
+    #             - grey_off
+    #           tap_action:
+    #             action: toggle
+    #         entity_3:
+    #           entity_id: 
+    #           templates:
+    #             - red_on
+    #             - grey_off
+    #           tap_action:
+    #             action: toggle
+    #         entity_4:
+    #           entity_id: 
+    #           templates:
+    #             - green_on
+    #             - grey_off
+    #           tap_action:
+    #             action: toggle
+
+    #     - type: 'custom:button-card'
+    #       template: custom_card_room
+    #       name: Wohnzimmer
+    #       entity: sensor.000a9a49a6fc5e_actual_temperature
+    #       icon: mdi:sofa-single-outline
+    #       tap_action:
+    #         action: navigate
+    #         navigation_path: "Wohnzimmer"
+    #       styles:
+    #         img_cell:
+    #           - background-color: "rgba(52, 168, 83,0.38)"
+    #         icon:
+    #           - color: "rgb(52, 168, 83)"
+
+            # entity_1:
+            #   entity_id: light.lichtgruppe_wohnzimmer_gesamt
+            #   templates:
+            #     - yellow_on
+            #   tap_action:
+            #     action: toggle
+            # entity_2:
+            #   entity_id: switch.00085a49a49c0f
+            #   templates:
+            #     - blue_on
+            #   tap_action:
+            #     action: toggle
+            # entity_3:
+            #   entity_id: binary_sensor.presence_9
+            #   templates:
+            #     - red_on
+            #     - grey_off
+            #   tap_action:
+            #     action: none
+            # entity_4:
+            #   entity_id: media_player.samsung_q7_series_55
+            #   templates:
+            #     - green_on
+            #     - grey_off
+            #   tap_action:
+            #     action: toggle
+
+        # - type: "custom:button-card"
+        #   color_type: blank-card
