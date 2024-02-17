@@ -10,10 +10,18 @@ custom_card_room:
       [[[
         return '<ha-icon icon="mdi:chevron-right" style="width:16px;height:16px;"></ha-icon>'
       ]]]
+    divider: |
+      [[[
+        return '<ha-icon icon="mdi:circle-small" style="width:16px;height:16px;"></ha-icon>'
+      ]]]
+    hum: |
+      [[[
+        return states['sensor.000a9a49a6fc5e_humidity'].state + ' %' 
+      ]]]
   styles:
     grid:
-      - grid-template-areas: '"i n arrow" "i s arrow"'
-      - grid-template-columns: min-content auto min-content;
+      - grid-template-areas: '"i n n n arrow" "i s divider hum arrow"'
+      - grid-template-columns: 1fr max-content min-content 1fr 1fr;
       - grid-template-rows: "min-content min-content"
     card:
       - border-radius: "var(--border-radius)"
@@ -47,3 +55,18 @@ custom_card_room:
         - font-size: 14px
         - padding-left: 10px
         - opacity: 0.7
+      hum:
+        - justify-self: "start"
+        - align-self: "start"
+        - font-weight: "bolder"
+        - font-size: "12px"
+        - filter: "opacity(40%)"
+        - margin-left: "-3px"
+      divider:
+        - justify-self: "center"
+        - align-self: "start"
+        - font-weight: "bolder"
+        - font-size: "12px"
+        - filter: "opacity(40%)"
+        - margin-left: "-3px"
+

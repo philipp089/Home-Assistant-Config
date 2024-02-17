@@ -1,0 +1,18 @@
+title: "Sonos"
+icon: "mdi:music-box-outline"
+path: "Sonos"
+cards:
+  - type: "vertical-stack"
+    cards:
+
+    - type: "custom:button-card"
+      template: chip_back
+      variables:
+        ulm_chip_back_path: /ui-lovelace-minimalist/home
+
+    - type: 'custom:button-card'
+      template: card_title
+      name: Sonos
+
+    - type: custom:sonos-card
+      

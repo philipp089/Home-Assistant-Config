@@ -327,6 +327,11 @@ cards:
               - background-color: "rgba(234, 67, 53,0.2)"
             icon:
               - color: "rgb(234, 67, 53)"
+          custom_fields:
+            hum: |
+              [[[
+                return states['sensor.000a9a49a6f8b1_humidity'].state + ' %' 
+              ]]]
 
     - type: "horizontal-stack"
       cards:
@@ -343,6 +348,11 @@ cards:
               - background-color: "rgba(61, 90, 254,0.2)"
             icon:
               - color: "rgb(61, 90, 254)"
+          custom_fields:
+            hum: |
+              [[[
+                return states['sensor.000a9a49a8a692_humidity'].state + ' %' 
+              ]]]
 
         - type: 'custom:button-card'
           template: custom_card_room
@@ -357,6 +367,12 @@ cards:
               - background-color: "rgba(102, 31, 255,0.2)"
             icon:
               - color: "rgb(102, 31, 255)"
+          custom_fields:
+            hum: |
+              [[[
+                return states['sensor.000a9a49a6f2b9_humidity'].state + ' %' 
+              ]]]
+
 
     - type: "horizontal-stack"
       cards:
@@ -374,6 +390,11 @@ cards:
             icon:
               - color: "rgb(255, 145, 1)"
               - width: 26px
+          custom_fields:
+            hum: |
+              [[[
+                return states['sensor.000a9a49a6f8af_humidity'].state + ' %' 
+              ]]]
 
         - type: 'custom:button-card'
           template: custom_card_room
@@ -388,6 +409,11 @@ cards:
               - background-color: "rgba(187, 187, 187,0.2)"
             icon:
               - color: "rgb(187, 187, 187)"
+          custom_fields:
+            hum: |
+              [[[
+                return states['sensor.000a9a49a8a692_humidity'].state + ' %' 
+              ]]]
 
     - type: "horizontal-stack"
       cards:
@@ -404,6 +430,11 @@ cards:
               - background-color: "rgba(233, 30, 99,0.2)"
             icon:
               - color: "rgb(233, 30, 99)"
+          custom_fields:
+            hum: |
+              [[[
+                return states['sensor.000eda499c8410_humidity'].state + ' %' 
+              ]]]
 
         - type: "custom:button-card"
           color_type: blank-card
