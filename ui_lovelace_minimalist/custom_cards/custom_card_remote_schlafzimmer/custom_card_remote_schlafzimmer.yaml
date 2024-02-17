@@ -1,38 +1,38 @@
 ---
 ### Remote Card ###
-custom_card_remote:
+custom_card_remote_schlafzimmer:
   template:
     - "icon_more_info_new"
     - "ulm_translation_engine"
   variables:
-    ulm_card_media_player_remote_name: "[[[ return entity.attributes.friendly_name ]]]"
-    ulm_card_media_player_remote_icon: false
-    ulm_card_media_player_remote_enable_art: false
-    ulm_card_media_player_remote_enable_controls: false
-    ulm_card_media_player_remote_enable_volume_slider: false
-    ulm_card_media_player_remote_enable_remote: false
-    ulm_card_media_player_remote_enable_volume_buttons: false
-    ulm_card_media_player_remote_enable_volume_adjust: 0
-    ulm_card_media_player_remote_collapsible: false
-    ulm_card_media_player_remote_player_controls_entity: "[[[ return entity.entity_id ]]]"
-    ulm_card_media_player_remote_enable_popup: false
-    ulm_card_media_player_remote_more_info: false
-    ulm_card_media_player_remote_power_button: false
-    ulm_card_media_player_remote_force_background_color: false
-    ulm_card_media_player_remote_color: "blue"
+    ulm_card_media_player_remote_schlafzimmer_name: "[[[ return entity.attributes.friendly_name ]]]"
+    ulm_card_media_player_remote_schlafzimmer_icon: false
+    ulm_card_media_player_remote_schlafzimmer_enable_art: false
+    ulm_card_media_player_remote_schlafzimmer_enable_controls: false
+    ulm_card_media_player_remote_schlafzimmer_enable_volume_slider: false
+    ulm_card_media_player_remote_schlafzimmer_enable_remote: false
+    ulm_card_media_player_remote_schlafzimmer_enable_volume_buttons: false
+    ulm_card_media_player_remote_schlafzimmer_enable_volume_adjust: 0
+    ulm_card_media_player_remote_schlafzimmer_collapsible: false
+    ulm_card_media_player_remote_schlafzimmer_player_controls_entity: "[[[ return entity.entity_id ]]]"
+    ulm_card_media_player_remote_schlafzimmer_enable_popup: false
+    ulm_card_media_player_remote_schlafzimmer_more_info: false
+    ulm_card_media_player_remote_schlafzimmer_power_button: false
+    ulm_card_media_player_remote_schlafzimmer_force_background_color: false
+    ulm_card_media_player_remote_schlafzimmer_color: "blue"
   show_icon: false
   show_name: false
   show_label: false
   state:
     - operator: "template"
-      value: "[[[ return variables.ulm_active_state && !variables.ulm_card_media_player_remote_enable_art ]]]"
+      value: "[[[ return variables.ulm_active_state && !variables.ulm_card_media_player_remote_schlafzimmer_enable_art ]]]"
       styles:
         card:
           - background-color: >
               [[[
-                  if (variables.ulm_card_media_player_remote_color) {
-                    if (variables.ulm_card_media_player_remote_force_background_color) {
-                      var color = variables.ulm_card_media_player_remote_color;
+                  if (variables.ulm_card_media_player_remote_schlafzimmer_color) {
+                    if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color) {
+                      var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                       return 'rgba(var(--color-' + color + '),var(--opacity-bg))';
                     }
                   }
@@ -42,28 +42,28 @@ custom_card_remote:
       - grid-template-areas: |
           [[[
             var areas = "'item1'";
-            if (variables.ulm_card_media_player_remote_enable_controls){
+            if (variables.ulm_card_media_player_remote_schlafzimmer_enable_controls){
               areas = areas + " 'item2'";
             }
-            if (variables.ulm_card_media_player_remote_enable_volume_slider){
+            if (variables.ulm_card_media_player_remote_schlafzimmer_enable_volume_slider){
               areas = areas + " 'item3'";
             }
-            if (variables.ulm_card_media_player_remote_enable_volume_buttons){
+            if (variables.ulm_card_media_player_remote_schlafzimmer_enable_volume_buttons){
               areas = areas + " 'item4'";
             }
-            if (variables.ulm_card_media_player_remote_enable_remote){
+            if (variables.ulm_card_media_player_remote_schlafzimmer_enable_remote){
               areas = areas + " 'item5'";
             }
-            if (variables.ulm_card_media_player_remote_enable_remote){
+            if (variables.ulm_card_media_player_remote_schlafzimmer_enable_remote){
               areas = areas + " 'item6'";
             }
-            if (variables.ulm_card_media_player_remote_enable_remote){
+            if (variables.ulm_card_media_player_remote_schlafzimmer_enable_remote){
               areas = areas + " 'item7'";
             }
-            if (variables.ulm_card_media_player_remote_enable_remote){
+            if (variables.ulm_card_media_player_remote_schlafzimmer_enable_remote){
               areas = areas + " 'item8'";
             }
-            if (variables.ulm_card_media_player_remote_enable_remote){
+            if (variables.ulm_card_media_player_remote_schlafzimmer_enable_remote){
               areas = areas + " 'item9'";
             }
             return areas;
@@ -72,23 +72,23 @@ custom_card_remote:
       - grid-template-rows: |
           [[[
             var rows = "min-content";
-            if (variables.ulm_card_media_player_remote_enable_controls){
+            if (variables.ulm_card_media_player_remote_schlafzimmer_enable_controls){
               rows = rows + " min-content";
             }
-            if (variables.ulm_card_media_player_remote_enable_volume_slider){
+            if (variables.ulm_card_media_player_remote_schlafzimmer_enable_volume_slider){
               rows = rows + " min-content";
             }
-            if (variables.ulm_card_media_player_remote_enable_volume_buttons){
+            if (variables.ulm_card_media_player_remote_schlafzimmer_enable_volume_buttons){
               rows = rows + " min-content";
             }
-            if (variables.ulm_card_media_player_remote_enable_remote){
+            if (variables.ulm_card_media_player_remote_schlafzimmer_enable_remote){
               rows = rows + " min-content";
             }
             return rows;
           ]]]
       - row-gap: |-
           [[[
-            if (!variables.ulm_card_media_player_remote_collapsible) {
+            if (!variables.ulm_card_media_player_remote_schlafzimmer_collapsible) {
                 return "12px";
               } else {
                 return (entity.state === "off" || entity.state === "standby") ? "0px" : "12px";
@@ -100,21 +100,21 @@ custom_card_remote:
       - padding: "12px"
       - background: |
           [[[
-            return variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null
+            return variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null
             ? 'center / cover url(' + states[entity.entity_id].attributes.entity_picture + ') rgba(0, 0, 0, 0.15)'
             : ''
           ]]]
     custom_fields:
       power:
-        - display: "[[[ return variables.ulm_card_media_player_remote_power_button ? 'block' : 'none']]]"
+        - display: "[[[ return variables.ulm_card_media_player_remote_schlafzimmer_power_button ? 'block' : 'none']]]"
         - position: "absolute"
         - top: "12px"
         - right: "12px"
       item2:
         - display: |
             [[[
-              if(variables.ulm_card_media_player_remote_enable_controls) {
-                if(variables.ulm_card_media_player_remote_collapsible){
+              if(variables.ulm_card_media_player_remote_schlafzimmer_enable_controls) {
+                if(variables.ulm_card_media_player_remote_schlafzimmer_collapsible){
                 return (entity.state === "off" || entity.state === "standby") ? "none" : "block";
                 }
                 return "block";
@@ -125,7 +125,7 @@ custom_card_remote:
         - border-radius: "14px"
         - background-color: >
             [[[
-              if(variables.ulm_card_media_player_remote_enable_art){
+              if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art){
                 return 'transparent'
               }
               if(!hass.themes.darkMode){
@@ -134,8 +134,8 @@ custom_card_remote:
             ]]]
         - display: |
             [[[
-              if(variables.ulm_card_media_player_remote_enable_volume_slider) {
-                if(variables.ulm_card_media_player_remote_collapsible){
+              if(variables.ulm_card_media_player_remote_schlafzimmer_enable_volume_slider) {
+                if(variables.ulm_card_media_player_remote_schlafzimmer_collapsible){
                 return (entity.state === "off" || entity.state === "standby") ? "none" : "block";
                 }
                 return "block";
@@ -145,8 +145,8 @@ custom_card_remote:
       item4:
         - display: |
             [[[
-              if(variables.ulm_card_media_player_remote_enable_volume_buttons) {
-                if(variables.ulm_card_media_player_remote_collapsible){
+              if(variables.ulm_card_media_player_remote_schlafzimmer_enable_volume_buttons) {
+                if(variables.ulm_card_media_player_remote_schlafzimmer_collapsible){
                 return (entity.state === "off" || entity.state === "standby") ? "none" : "block";
                 }
                 return "block";
@@ -156,8 +156,8 @@ custom_card_remote:
       item5:
         - display: |
             [[[
-              if(variables.ulm_card_media_player_remote_enable_remote) {
-                if(variables.ulm_card_media_player_remote_collapsible){
+              if(variables.ulm_card_media_player_remote_schlafzimmer_enable_remote) {
+                if(variables.ulm_card_media_player_remote_schlafzimmer_collapsible){
                 return (entity.state === "off" || entity.state === "standby") ? "none" : "block";
                 }
                 return "block";
@@ -167,8 +167,8 @@ custom_card_remote:
       item6:
         - display: |
             [[[
-              if(variables.ulm_card_media_player_remote_enable_remote) {
-                if(variables.ulm_card_media_player_remote_collapsible){
+              if(variables.ulm_card_media_player_remote_schlafzimmer_enable_remote) {
+                if(variables.ulm_card_media_player_remote_schlafzimmer_collapsible){
                 return (entity.state === "off" || entity.state === "standby") ? "none" : "block";
                 }
                 return "block";
@@ -178,8 +178,8 @@ custom_card_remote:
       item7:
         - display: |
             [[[
-              if(variables.ulm_card_media_player_remote_enable_remote) {
-                if(variables.ulm_card_media_player_remote_collapsible){
+              if(variables.ulm_card_media_player_remote_schlafzimmer_enable_remote) {
+                if(variables.ulm_card_media_player_remote_schlafzimmer_collapsible){
                 return (entity.state === "off" || entity.state === "standby") ? "none" : "block";
                 }
                 return "block";
@@ -189,8 +189,8 @@ custom_card_remote:
       item8:
         - display: |
             [[[
-              if(variables.ulm_card_media_player_remote_enable_remote) {
-                if(variables.ulm_card_media_player_remote_collapsible){
+              if(variables.ulm_card_media_player_remote_schlafzimmer_enable_remote) {
+                if(variables.ulm_card_media_player_remote_schlafzimmer_collapsible){
                 return (entity.state === "off" || entity.state === "standby") ? "none" : "block";
                 }
                 return "block";
@@ -200,8 +200,8 @@ custom_card_remote:
       item9:
         - display: |
             [[[
-              if(variables.ulm_card_media_player_remote_enable_remote) {
-                if(variables.ulm_card_media_player_remote_collapsible){
+              if(variables.ulm_card_media_player_remote_schlafzimmer_enable_remote) {
+                if(variables.ulm_card_media_player_remote_schlafzimmer_collapsible){
                 return (entity.state === "off" || entity.state === "standby") ? "none" : "block";
                 }
                 return "block";
@@ -224,10 +224,10 @@ custom_card_remote:
           card:
             - background-color: |
                 [[[
-                  if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                  if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                     return 'rgba(0, 0, 0, 0.2)'
                   }
-                  if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_force_background_color){
+                  if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_schlafzimmer_force_background_color){
                     if (variables.ulm_active_state){
                       return 'rgb(250,250,250)'
                     }
@@ -239,8 +239,8 @@ custom_card_remote:
             - heigth: "42px"
             - background-color: >
                 [[[
-                  if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_enable_art) {
-                    var color = variables.ulm_card_media_player_remote_color;
+                  if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_schlafzimmer_enable_art) {
+                    var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                     return 'rgba(var(--color-' + color + '),0.2)';
                   }
                   return 'rgba(var(--color-theme),0.05)';
@@ -248,11 +248,11 @@ custom_card_remote:
           icon:
             - color: |
                 [[[
-                  if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                  if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                     return 'white'
                   }
-                  if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state) {
-                    var color = variables.ulm_card_media_player_remote_color;
+                  if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state) {
+                    var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                     return 'rgba(var(--color-' + color + '),1)';
                   }
                   return 'rgba(var(--color-red),0.9)';
@@ -269,7 +269,7 @@ custom_card_remote:
               variables: >
                 [[[
                   let vars = variables;
-                  if(variables.ulm_card_media_player_remote_enable_popup) {
+                  if(variables.ulm_card_media_player_remote_schlafzimmer_enable_popup) {
                     vars.ulm_custom_popup = {
                       'template': 'popup_media_player_infos'
                     };
@@ -294,37 +294,37 @@ custom_card_remote:
                       "bluetooth audio": "mdi:bluetooth"
                     }
                   }
-                  return variables.ulm_card_media_player_remote_icon || icon[app];
+                  return variables.ulm_card_media_player_remote_schlafzimmer_icon || icon[app];
                 ]]]
               styles:
                 icon:
                   - color: |
                       [[[
-                        var color = variables.ulm_card_media_player_remote_color;
+                        var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                         var active_color = 'rgba(var(--color-theme),0.2)'
                         if (variables.ulm_active_state){
                           active_color = 'rgba(var(--color-' + color + '),1)';
                         }
-                        return variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null
+                        return variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null
                         ? 'white'
                         : active_color
                       ]]]
                 img_cell:
                   - background-color: |
                       [[[
-                        var color = variables.ulm_card_media_player_remote_color;
+                        var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                         var active_color = 'rgba(var(--color-theme),0.05)'
                         if (variables.ulm_active_state){
                           active_color = 'rgba(var(--color-' + color + '),0.2)';
                         }
-                        return variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null
+                        return variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null
                         ? 'rgba(0, 0, 0, 0.2)'
                         : active_color
                       ]]]
                 card:
                   - background: >
                       [[[
-                        if(!variables.ulm_card_media_player_remote_enable_art && variables.ulm_card_media_player_remote_force_background_color && !hass.themes.darkMode){
+                        if(!variables.ulm_card_media_player_remote_schlafzimmer_enable_art && variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && !hass.themes.darkMode){
                           return 'rgb(250,250,250)'
                         }
                         return 'none'
@@ -336,7 +336,7 @@ custom_card_remote:
               variables: >
                 [[[
                   let vars = variables;
-                  if(variables.ulm_card_media_player_remote_enable_popup) {
+                  if(variables.ulm_card_media_player_remote_schlafzimmer_enable_popup) {
                     vars.ulm_custom_popup = {
                       'template': 'popup_media_player_infos'
                     };
@@ -349,21 +349,21 @@ custom_card_remote:
                   value: "[[[ return entity.state == 'off' ]]]"
                   name: |
                     [[[
-                      let name = variables.ulm_card_media_player_remote_name || states[entity.entity_id].attributes.friendly_name;
+                      let name = variables.ulm_card_media_player_remote_schlafzimmer_name || states[entity.entity_id].attributes.friendly_name;
                       return name;
                     ]]]
                 - operator: "template"
                   value: "[[[ return entity.state == 'standby' ]]]"
                   name: |
                     [[[
-                      let name = variables.ulm_card_media_player_remote_name || states[entity.entity_id].attributes.friendly_name;
+                      let name = variables.ulm_card_media_player_remote_schlafzimmer_name || states[entity.entity_id].attributes.friendly_name;
                       return name;
                     ]]]
                 - operator: "template"
                   value: "[[[ return entity.state != 'off'  || entity.state != 'standby']]]"
                   name: |
                     [[[
-                      let name = variables.ulm_card_media_player_remote_name || states[entity.entity_id].attributes.friendly_name;
+                      let name = variables.ulm_card_media_player_remote_schlafzimmer_name || states[entity.entity_id].attributes.friendly_name;
                       if(states[entity.entity_id].attributes.media_title){
                           name = states[entity.entity_id].attributes.media_title;
                       }
@@ -372,7 +372,7 @@ custom_card_remote:
                   label: |
                     [[[
                       let label = variables.ulm_translation_on;
-                      if (variables.ulm_card_media_player_remote_more_info && states[entity.entity_id].attributes.media_artist
+                      if (variables.ulm_card_media_player_remote_schlafzimmer_more_info && states[entity.entity_id].attributes.media_artist
                           && states[entity.entity_id].attributes.media_album_name) {
                           label = states[entity.entity_id].attributes.media_artist + " • " + states[entity.entity_id].attributes.media_album_name;
                       } else if(states[entity.entity_id].attributes.media_album_name) {
@@ -388,16 +388,16 @@ custom_card_remote:
                   - filter: "opacity(100%)"
                   - text-shadow: |
                       [[[
-                        return variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null
+                        return variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null
                         ? '0 0 black'
                         : 'none'
                       ]]]
                   - color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'white'
                         }
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state){
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state){
                           return 'rgba(250,250,250,0.5)'
                         }
                         return 'rgba(var(--color-theme), .5)'
@@ -405,10 +405,10 @@ custom_card_remote:
                 name:
                   - color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'white'
                         }
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state){
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state){
                           return 'rgb(250,250,250)'
                         }
                         return'rgba(var(--color-theme), 1)'
@@ -437,7 +437,7 @@ custom_card_remote:
               hold_action:
                 action: >
                   [[[
-                      return variables.ulm_card_media_player_remote_enable_popup ? "fire-dom-event" : "more-info";
+                      return variables.ulm_card_media_player_remote_schlafzimmer_enable_popup ? "fire-dom-event" : "more-info";
                   ]]]
                 browser_mod:
                   service: "browser_mod.popup"
@@ -459,10 +459,10 @@ custom_card_remote:
                 card:
                   - background-color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'rgba(0, 0, 0, 0.2)'
                         }
-                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_force_background_color){
+                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_schlafzimmer_force_background_color){
                           if (variables.ulm_active_state){
                             return 'rgb(250,250,250)'
                           }
@@ -472,8 +472,8 @@ custom_card_remote:
                 img_cell:
                   - background-color: >
                       [[[
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_enable_art) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_schlafzimmer_enable_art) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),0.2)';
                         }
                         return 'rgba(var(--color-theme),0.05)';
@@ -481,11 +481,11 @@ custom_card_remote:
                 icon:
                   - color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'white'
                         }
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),1)';
                         }
                         return 'rgba(var(--color-theme),0.9)';
@@ -494,11 +494,11 @@ custom_card_remote:
             card:
               type: "custom:button-card"
               template: "widget_icon"
-              entity: "[[[ return variables.ulm_card_media_player_remote_player_controls_entity ]]]"
+              entity: "[[[ return variables.ulm_card_media_player_remote_schlafzimmer_player_controls_entity ]]]"
               hold_action:
                 action: >
                   [[[
-                      return variables.ulm_card_media_player_remote_enable_popup ? "fire-dom-event" : "more-info";
+                      return variables.ulm_card_media_player_remote_schlafzimmer_enable_popup ? "fire-dom-event" : "more-info";
                   ]]]
                 browser_mod:
                   service: "browser_mod.popup"
@@ -519,10 +519,10 @@ custom_card_remote:
                 card:
                   - background-color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'rgba(0, 0, 0, 0.2)'
                         }
-                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_force_background_color){
+                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_schlafzimmer_force_background_color){
                           if (variables.ulm_active_state){
                             return 'rgb(250,250,250)'
                           }
@@ -532,8 +532,8 @@ custom_card_remote:
                 img_cell:
                   - background-color: >
                       [[[
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_enable_art) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_schlafzimmer_enable_art) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),0.2)';
                         }
                         return 'rgba(var(--color-theme),0.05)';
@@ -541,11 +541,11 @@ custom_card_remote:
                 icon:
                   - color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'white'
                         }
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),1)';
                         }
                         return 'rgba(var(--color-theme),0.9)';
@@ -557,7 +557,7 @@ custom_card_remote:
               hold_action:
                 action: >
                   [[[
-                      return variables.ulm_card_media_player_remote_enable_popup ? "fire-dom-event" : "more-info";
+                      return variables.ulm_card_media_player_remote_schlafzimmer_enable_popup ? "fire-dom-event" : "more-info";
                   ]]]
                 browser_mod:
                   service: "browser_mod.popup"
@@ -578,10 +578,10 @@ custom_card_remote:
                 card:
                   - background-color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'rgba(0, 0, 0, 0.2)'
                         }
-                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_force_background_color){
+                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_schlafzimmer_force_background_color){
                           if (variables.ulm_active_state){
                             return 'rgb(250,250,250)'
                           }
@@ -591,8 +591,8 @@ custom_card_remote:
                 img_cell:
                   - background-color: >
                       [[[
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_enable_art) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_schlafzimmer_enable_art) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),0.2)';
                         }
                         return 'rgba(var(--color-theme),0.05)';
@@ -600,11 +600,11 @@ custom_card_remote:
                 icon:
                   - color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'white'
                         }
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),1)';
                         }
                         return 'rgba(var(--color-theme),0.9)';
@@ -619,10 +619,10 @@ custom_card_remote:
                 card:
                   - background-color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'rgba(0, 0, 0, 0.2)'
                         }
-                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_force_background_color){
+                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_schlafzimmer_force_background_color){
                           if (variables.ulm_active_state){
                             return 'rgb(250,250,250)'
                           }
@@ -632,8 +632,8 @@ custom_card_remote:
                 img_cell:
                   - background-color: >
                       [[[
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_enable_art) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_schlafzimmer_enable_art) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),0.2)';
                         }
                         return 'rgba(var(--color-theme),0.05)';
@@ -641,11 +641,11 @@ custom_card_remote:
                 icon:
                   - color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'white'
                         }
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),1)';
                         }
                         return 'rgba(var(--color-theme),0.9)';
@@ -653,7 +653,7 @@ custom_card_remote:
               hold_action:
                 action: >
                   [[[
-                      return variables.ulm_card_media_player_remote_enable_popup && entity.attributes?.source_list ? "fire-dom-event" : "more-info";
+                      return variables.ulm_card_media_player_remote_schlafzimmer_enable_popup && entity.attributes?.source_list ? "fire-dom-event" : "more-info";
                   ]]]
                 browser_mod:
                   service: "browser_mod.popup"
@@ -667,7 +667,7 @@ custom_card_remote:
               tap_action:
                 action: >
                   [[[
-                      return variables.ulm_card_media_player_remote_enable_popup && entity.attributes?.source_list ? "fire-dom-event" : "more-info";
+                      return variables.ulm_card_media_player_remote_schlafzimmer_enable_popup && entity.attributes?.source_list ? "fire-dom-event" : "more-info";
                   ]]]
                 browser_mod:
                   service: "browser_mod.popup"
@@ -704,22 +704,22 @@ custom_card_remote:
         height: "42px"
         mainSliderColor: |
           [[[
-            var color = variables.ulm_card_media_player_remote_color;
-            if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+            var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
+            if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
               return 'rgba(0, 0, 0, 0.5)'
             }
-            if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state) {
+            if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state) {
               return 'rgb(250,250,250)';
             }
             return 'rgba(var(--color-' + color + '),1)'
           ]]]
         secondarySliderColor: |
           [[[
-            var color = variables.ulm_card_media_player_remote_color;
-            if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+            var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
+            if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
               return 'rgba(0, 0, 0, 0.3)'
             }
-            if (variables.ulm_card_media_player_remote_force_background_color) {
+            if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color) {
               return 'rgba(var(--color-' + color + '),0.3)';
             }
             return 'rgba(var(--color-' + color + '),0.2)'
@@ -751,11 +751,11 @@ custom_card_remote:
             card:
               type: "custom:button-card"
               template: "widget_icon"
-              entity: "[[[ return variables.ulm_card_media_player_remote_player_controls_entity ]]]"
+              entity: "[[[ return variables.ulm_card_media_player_remote_schlafzimmer_player_controls_entity ]]]"
               hold_action:
                 action: >
                   [[[
-                      return variables.ulm_card_media_player_remote_enable_popup ? "fire-dom-event" : "more-info";
+                      return variables.ulm_card_media_player_remote_schlafzimmer_enable_popup ? "fire-dom-event" : "more-info";
                   ]]]
                 browser_mod:
                   service: "browser_mod.popup"
@@ -776,10 +776,10 @@ custom_card_remote:
                 card:
                   - background-color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'rgba(0, 0, 0, 0.2)'
                         }
-                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_force_background_color){
+                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_schlafzimmer_force_background_color){
                           if (variables.ulm_active_state){
                             return 'rgb(250,250,250)'
                           }
@@ -789,8 +789,8 @@ custom_card_remote:
                 img_cell:
                   - background-color: >
                       [[[
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_enable_art) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_schlafzimmer_enable_art) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),0.2)';
                         }
                         return 'rgba(var(--color-theme),0.05)';
@@ -798,11 +798,11 @@ custom_card_remote:
                 icon:
                   - color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'white'
                         }
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),1)';
                         }
                         return 'rgba(var(--color-theme),0.9)';
@@ -811,11 +811,11 @@ custom_card_remote:
             card:
               type: "custom:button-card"
               template: "widget_icon"
-              entity: "[[[ return variables.ulm_card_media_player_remote_player_controls_entity ]]]"
+              entity: "[[[ return variables.ulm_card_media_player_remote_schlafzimmer_player_controls_entity ]]]"
               hold_action:
                 action: >
                   [[[
-                      return variables.ulm_card_media_player_remote_enable_popup ? "fire-dom-event" : "more-info";
+                      return variables.ulm_card_media_player_remote_schlafzimmer_enable_popup ? "fire-dom-event" : "more-info";
                   ]]]
                 browser_mod:
                   service: "browser_mod.popup"
@@ -837,10 +837,10 @@ custom_card_remote:
                 card:
                   - background-color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'rgba(0, 0, 0, 0.2)'
                         }
-                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_force_background_color){
+                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_schlafzimmer_force_background_color){
                           if (variables.ulm_active_state){
                             return 'rgb(250,250,250)'
                           }
@@ -850,8 +850,8 @@ custom_card_remote:
                 img_cell:
                   - background-color: >
                       [[[
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_enable_art) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_schlafzimmer_enable_art) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),0.2)';
                         }
                         return 'rgba(var(--color-theme),0.05)';
@@ -859,11 +859,11 @@ custom_card_remote:
                 icon:
                   - color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'white'
                         }
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),1)';
                         }
                         return 'rgba(var(--color-theme),0.9)';
@@ -872,11 +872,11 @@ custom_card_remote:
             card:
               type: "custom:button-card"
               template: "widget_icon"
-              entity: "[[[ return variables.ulm_card_media_player_remote_player_controls_entity ]]]"
+              entity: "[[[ return variables.ulm_card_media_player_remote_schlafzimmer_player_controls_entity ]]]"
               hold_action:
                 action: >
                   [[[
-                      return variables.ulm_card_media_player_remote_enable_popup ? "fire-dom-event" : "more-info";
+                      return variables.ulm_card_media_player_remote_schlafzimmer_enable_popup ? "fire-dom-event" : "more-info";
                   ]]]
                 browser_mod:
                   service: "browser_mod.popup"
@@ -898,10 +898,10 @@ custom_card_remote:
                 card:
                   - background-color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'rgba(0, 0, 0, 0.2)'
                         }
-                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_force_background_color){
+                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_schlafzimmer_force_background_color){
                           if (variables.ulm_active_state){
                             return 'rgb(250,250,250)'
                           }
@@ -911,8 +911,8 @@ custom_card_remote:
                 img_cell:
                   - background-color: >
                       [[[
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_enable_art) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_schlafzimmer_enable_art) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),0.2)';
                         }
                         return 'rgba(var(--color-theme),0.05)';
@@ -920,11 +920,11 @@ custom_card_remote:
                 icon:
                   - color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'white'
                         }
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),1)';
                         }
                         return 'rgba(var(--color-theme),0.9)';
@@ -955,10 +955,10 @@ custom_card_remote:
                 card:
                   - background-color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'rgba(0, 0, 0, 0.2)'
                         }
-                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_force_background_color){
+                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_schlafzimmer_force_background_color){
                           if (variables.ulm_active_state){
                             return 'rgb(250,250,250)'
                           }
@@ -968,8 +968,8 @@ custom_card_remote:
                 img_cell:
                   - background-color: >
                       [[[
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_enable_art) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_schlafzimmer_enable_art) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),0.2)';
                         }
                         return 'rgba(var(--color-theme),0.05)';
@@ -977,11 +977,11 @@ custom_card_remote:
                 icon:
                   - color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'white'
                         }
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),1)';
                         }
                         return 'rgba(var(--color-theme),0.9)';
@@ -1000,10 +1000,10 @@ custom_card_remote:
                 card:
                   - background-color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'rgba(0, 0, 0, 0.2)'
                         }
-                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_force_background_color){
+                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_schlafzimmer_force_background_color){
                           if (variables.ulm_active_state){
                             return 'rgb(250,250,250)'
                           }
@@ -1013,8 +1013,8 @@ custom_card_remote:
                 img_cell:
                   - background-color: >
                       [[[
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_enable_art) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_schlafzimmer_enable_art) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),0.2)';
                         }
                         return 'rgba(var(--color-theme),0.05)';
@@ -1022,11 +1022,11 @@ custom_card_remote:
                 icon:
                   - color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'white'
                         }
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),1)';
                         }
                         return 'rgba(var(--color-theme),0.9)';
@@ -1045,10 +1045,10 @@ custom_card_remote:
                 card:
                   - background-color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'rgba(0, 0, 0, 0.2)'
                         }
-                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_force_background_color){
+                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_schlafzimmer_force_background_color){
                           if (variables.ulm_active_state){
                             return 'rgb(250,250,250)'
                           }
@@ -1058,8 +1058,8 @@ custom_card_remote:
                 img_cell:
                   - background-color: >
                       [[[
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_enable_art) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_schlafzimmer_enable_art) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),0.2)';
                         }
                         return 'rgba(var(--color-theme),0.05)';
@@ -1067,11 +1067,11 @@ custom_card_remote:
                 icon:
                   - color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'white'
                         }
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),1)';
                         }
                         return 'rgba(var(--color-theme),0.9)';
@@ -1103,10 +1103,10 @@ custom_card_remote:
                 card:
                   - background-color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'rgba(0, 0, 0, 0.2)'
                         }
-                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_force_background_color){
+                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_schlafzimmer_force_background_color){
                           if (variables.ulm_active_state){
                             return 'rgb(250,250,250)'
                           }
@@ -1116,8 +1116,8 @@ custom_card_remote:
                 img_cell:
                   - background-color: >
                       [[[
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_enable_art) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_schlafzimmer_enable_art) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),0.2)';
                         }
                         return 'rgba(var(--color-theme),0.05)';
@@ -1125,11 +1125,11 @@ custom_card_remote:
                 icon:
                   - color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'white'
                         }
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),1)';
                         }
                         return 'rgba(var(--color-theme),0.9)';
@@ -1148,10 +1148,10 @@ custom_card_remote:
                 card:
                   - background-color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'rgba(0, 0, 0, 0.2)'
                         }
-                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_force_background_color){
+                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_schlafzimmer_force_background_color){
                           if (variables.ulm_active_state){
                             return 'rgb(250,250,250)'
                           }
@@ -1161,8 +1161,8 @@ custom_card_remote:
                 img_cell:
                   - background-color: >
                       [[[
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_enable_art) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_schlafzimmer_enable_art) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),0.2)';
                         }
                         return 'rgba(var(--color-theme),0.05)';
@@ -1170,11 +1170,11 @@ custom_card_remote:
                 icon:
                   - color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'white'
                         }
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),1)';
                         }
                         return 'rgba(var(--color-blue),0.9)';
@@ -1193,10 +1193,10 @@ custom_card_remote:
                 card:
                   - background-color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'rgba(0, 0, 0, 0.2)'
                         }
-                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_force_background_color){
+                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_schlafzimmer_force_background_color){
                           if (variables.ulm_active_state){
                             return 'rgb(250,250,250)'
                           }
@@ -1206,8 +1206,8 @@ custom_card_remote:
                 img_cell:
                   - background-color: >
                       [[[
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_enable_art) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_schlafzimmer_enable_art) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),0.2)';
                         }
                         return 'rgba(var(--color-theme),0.05)';
@@ -1215,11 +1215,11 @@ custom_card_remote:
                 icon:
                   - color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'white'
                         }
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),1)';
                         }
                         return 'rgba(var(--color-theme),0.9)';
@@ -1251,10 +1251,10 @@ custom_card_remote:
                 card:
                   - background-color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'rgba(0, 0, 0, 0.2)'
                         }
-                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_force_background_color){
+                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_schlafzimmer_force_background_color){
                           if (variables.ulm_active_state){
                             return 'rgb(250,250,250)'
                           }
@@ -1264,8 +1264,8 @@ custom_card_remote:
                 img_cell:
                   - background-color: >
                       [[[
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_enable_art) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_schlafzimmer_enable_art) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),0.2)';
                         }
                         return 'rgba(var(--color-theme),0.05)';
@@ -1273,11 +1273,11 @@ custom_card_remote:
                 icon:
                   - color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'white'
                         }
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),1)';
                         }
                         return 'rgba(var(--color-blue),0.9)';
@@ -1296,10 +1296,10 @@ custom_card_remote:
                 card:
                   - background-color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'rgba(0, 0, 0, 0.2)'
                         }
-                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_force_background_color){
+                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_schlafzimmer_force_background_color){
                           if (variables.ulm_active_state){
                             return 'rgb(250,250,250)'
                           }
@@ -1309,8 +1309,8 @@ custom_card_remote:
                 img_cell:
                   - background-color: >
                       [[[
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_enable_art) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_schlafzimmer_enable_art) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),0.2)';
                         }
                         return 'rgba(var(--color-theme),0.05)';
@@ -1318,11 +1318,11 @@ custom_card_remote:
                 icon:
                   - color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'white'
                         }
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),1)';
                         }
                         return 'rgba(var(--color-theme),0.9)';
@@ -1341,10 +1341,10 @@ custom_card_remote:
                 card:
                   - background-color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'rgba(0, 0, 0, 0.2)'
                         }
-                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_force_background_color){
+                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_schlafzimmer_force_background_color){
                           if (variables.ulm_active_state){
                             return 'rgb(250,250,250)'
                           }
@@ -1354,8 +1354,8 @@ custom_card_remote:
                 img_cell:
                   - background-color: >
                       [[[
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_enable_art) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_schlafzimmer_enable_art) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),0.2)';
                         }
                         return 'rgba(var(--color-theme),0.05)';
@@ -1363,11 +1363,11 @@ custom_card_remote:
                 icon:
                   - color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'white'
                         }
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),1)';
                         }
                         return 'rgba(var(--color-blue),0.9)';
@@ -1398,10 +1398,10 @@ custom_card_remote:
                 card:
                   - background-color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'rgba(0, 0, 0, 0.2)'
                         }
-                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_force_background_color){
+                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_schlafzimmer_force_background_color){
                           if (variables.ulm_active_state){
                             return 'rgb(250,250,250)'
                           }
@@ -1411,8 +1411,8 @@ custom_card_remote:
                 img_cell:
                   - background-color: >
                       [[[
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_enable_art) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_schlafzimmer_enable_art) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),0.2)';
                         }
                         return 'rgba(var(--color-theme),0.05)';
@@ -1420,11 +1420,11 @@ custom_card_remote:
                 icon:
                   - color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'white'
                         }
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),1)';
                         }
                         return 'rgba(var(--color-theme),0.9)';
@@ -1443,10 +1443,10 @@ custom_card_remote:
                 card:
                   - background-color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'rgba(0, 0, 0, 0.2)'
                         }
-                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_force_background_color){
+                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_schlafzimmer_force_background_color){
                           if (variables.ulm_active_state){
                             return 'rgb(250,250,250)'
                           }
@@ -1456,8 +1456,8 @@ custom_card_remote:
                 img_cell:
                   - background-color: >
                       [[[
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_enable_art) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_schlafzimmer_enable_art) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),0.2)';
                         }
                         return 'rgba(var(--color-theme),0.05)';
@@ -1465,11 +1465,11 @@ custom_card_remote:
                 icon:
                   - color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'white'
                         }
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),1)';
                         }
                         return 'rgba(var(--color-blue),0.9)';
@@ -1488,10 +1488,10 @@ custom_card_remote:
                 card:
                   - background-color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'rgba(0, 0, 0, 0.2)'
                         }
-                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_force_background_color){
+                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_schlafzimmer_force_background_color){
                           if (variables.ulm_active_state){
                             return 'rgb(250,250,250)'
                           }
@@ -1501,8 +1501,8 @@ custom_card_remote:
                 img_cell:
                   - background-color: >
                       [[[
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_enable_art) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_schlafzimmer_enable_art) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),0.2)';
                         }
                         return 'rgba(var(--color-theme),0.05)';
@@ -1510,11 +1510,11 @@ custom_card_remote:
                 icon:
                   - color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'white'
                         }
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),1)';
                         }
                         return 'rgba(var(--color-theme),0.9)';
@@ -1545,10 +1545,10 @@ custom_card_remote:
                 card:
                   - background-color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'rgba(0, 0, 0, 0.2)'
                         }
-                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_force_background_color){
+                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_schlafzimmer_force_background_color){
                           if (variables.ulm_active_state){
                             return 'rgb(250,250,250)'
                           }
@@ -1558,8 +1558,8 @@ custom_card_remote:
                 img_cell:
                   - background-color: >
                       [[[
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_enable_art) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_schlafzimmer_enable_art) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),0.2)';
                         }
                         return 'rgba(var(--color-theme),0.05)';
@@ -1567,11 +1567,11 @@ custom_card_remote:
                 icon:
                   - color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'white'
                         }
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),1)';
                         }
                         return 'rgba(var(--color-red),0.9)';
@@ -1590,10 +1590,10 @@ custom_card_remote:
                 card:
                   - background-color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'rgba(0, 0, 0, 0.2)'
                         }
-                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_force_background_color){
+                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_schlafzimmer_force_background_color){
                           if (variables.ulm_active_state){
                             return 'rgb(250,250,250)'
                           }
@@ -1603,8 +1603,8 @@ custom_card_remote:
                 img_cell:
                   - background-color: >
                       [[[
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_enable_art) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_schlafzimmer_enable_art) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),0.2)';
                         }
                         return 'rgba(var(--color-theme),0.05)';
@@ -1612,11 +1612,11 @@ custom_card_remote:
                 icon:
                   - color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'white'
                         }
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),1)';
                         }
                         return 'rgba(var(--color-theme),0.9)';
@@ -1635,10 +1635,10 @@ custom_card_remote:
                 card:
                   - background-color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'rgba(0, 0, 0, 0.2)'
                         }
-                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_force_background_color){
+                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_schlafzimmer_force_background_color){
                           if (variables.ulm_active_state){
                             return 'rgb(250,250,250)'
                           }
@@ -1648,8 +1648,8 @@ custom_card_remote:
                 img_cell:
                   - background-color: >
                       [[[
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_enable_art) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_schlafzimmer_enable_art) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),0.2)';
                         }
                         return 'rgba(var(--color-theme),0.05)';
@@ -1657,11 +1657,11 @@ custom_card_remote:
                 icon:
                   - color: |
                       [[[
-                        if(variables.ulm_card_media_player_remote_enable_art && states[entity.entity_id].attributes.entity_picture != null){
+                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
                           return 'white'
                         }
-                        if (variables.ulm_card_media_player_remote_force_background_color && variables.ulm_active_state) {
-                          var color = variables.ulm_card_media_player_remote_color;
+                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state) {
+                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),1)';
                         }
                         return 'rgba(var(--color-red),0.9)';

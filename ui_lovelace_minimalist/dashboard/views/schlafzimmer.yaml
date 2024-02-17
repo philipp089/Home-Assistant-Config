@@ -165,21 +165,36 @@ cards:
           # - entity_id: media_player.sonos_wohnzimmer_couch
           #   name: Sonos Couch
 
+    # - type: "custom:button-card"
+    #   template: card_media_player_chromecast_with_controls
+    #   variables:
+    #     ulm_card_media_player_with_controls_name: "Chromecast"
+    #     ulm_card_media_player_with_controls_entity: media_player.chromecast_schlafzimmer
+    #     # ulm_card_media_player_name : Chromecast
+    #     # ulm_card_media_player_enable_art: true
+    #     # ulm_card_media_player_enable_controls: false
+    #     # ulm_card_media_player_enable_volume_buttons: false
+    #     # ulm_card_media_player_color: green
+    #     # ulm_card_media_player_power_button: true
+    #     # ulm_card_media_player_collapsible: true
+    #     # ulm_card_media_player_more_info: true
+
     - type: "custom:button-card"
-      template: card_media_player_chromecast_with_controls
+      template: custom_card_remote_schlafzimmer
+      entity: media_player.chromecast_schlafzimmer
       variables:
-        ulm_card_media_player_with_controls_name: "Chromecast"
-        ulm_card_media_player_with_controls_entity: media_player.chromecast_schlafzimmer
-        # ulm_card_media_player_name : Chromecast
-        # ulm_card_media_player_enable_art: true
-        # ulm_card_media_player_enable_controls: false
-        # ulm_card_media_player_enable_volume_buttons: false
-        # ulm_card_media_player_color: green
-        # ulm_card_media_player_power_button: true
-        # ulm_card_media_player_collapsible: true
-        # ulm_card_media_player_more_info: true
-
-
+        ulm_card_media_player_remote_schlafzimmer_name : Sony Bravia
+        ulm_card_media_player_remote_schlafzimmer_enable_art: false
+        ulm_card_media_player_remote_schlafzimmer_enable_controls: true
+        ulm_card_media_player_remote_schlafzimmer_enable_volume_buttons: true
+        ulm_card_media_player_remote_schlafzimmer_enable_remote: true
+        ulm_card_media_player_remote_schlafzimmer_color: green
+        ulm_card_media_player_remote_schlafzimmer_power_button: true
+        ulm_card_media_player_remote_schlafzimmer_collapsible: true
+        ulm_card_media_player_remote_schlafzimmer_more_info: true
+        ulm_card_media_player_remote_schlafzimmer_enable_popup: false
+        ulm_card_media_player_remote_schlafzimmer_player_controls_entity: media_player.chromecast_schlafzimmer
+        # ulm_card_media_player_remote_schlafzimmer_enable_volume_adjust: 0.05
 
     - type: 'custom:button-card'
       template: card_title
