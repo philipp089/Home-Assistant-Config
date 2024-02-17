@@ -13,7 +13,7 @@ cards:
     - type: 'custom:button-card'
       template: card_title
       name: "Werkstatt"
-      label: "Szenen"
+      label: "Lichter"
 
     - type: "custom:button-card"
       template: "custom_card_scenes_welcome"
@@ -49,69 +49,6 @@ cards:
           name: "KONZ." 
           color: "blue"
 
-    - type: 'custom:button-card'
-      template: card_title
-      label: "Medien"
-
-    - type: "custom:button-card"
-      template: card_media_player
-      entity: media_player.sonos_play_1_werkstatt
-      variables:
-        ulm_card_media_player_name : Sonos Play:1
-        ulm_card_media_player_enable_art: true
-        ulm_card_media_player_enable_controls: false
-        ulm_card_media_player_enable_volume_buttons: false
-        ulm_card_media_player_color: green
-        ulm_card_media_player_power_button: true
-        ulm_card_media_player_collapsible: true
-        ulm_card_media_player_more_info: true
-
-    - type: 'custom:button-card'
-      template: card_title
-      label: "Klima"
-
-    - type: "custom:button-card"
-      template: custom_card_thermostat
-      entity: climate.000a9a49a6f8af
-      variables:
-        ulm_card_thermostat_name: "Thermostat"
-        ulm_card_thermostat_enable_collapse: true
-        ulm_card_thermostat_enable_controls: true
-        ulm_card_thermostat_enable_popup: true
-        ulm_card_thermostat_enable_hvac_modes: true
-
-    - type: "horizontal-stack"
-      cards:
-        - type: 'custom:button-card'
-          template: card_graph
-          entity: sensor.000a9a49a6f8af_actual_temperature
-          variables:
-            ulm_card_graph_color: "var(--google-red)"
-            ulm_card_graph_name: Temperatur
-            ulm_card_graph_entity: sensor.000a9a49a6f8af_actual_temperature
-
-            ulm_card_graph_type: fill
-            ulm_card_graph_hours: 24
-            ulm_card_graph_group_by: interval
-            ulm_card_graph_line_width: 6
-
-        - type: 'custom:button-card'
-          template: card_graph
-          entity: sensor.000a9a49a6f8af_humidity
-          variables:
-            ulm_card_graph_color: "var(--google-blue)"
-            ulm_card_graph_name: Luftfeuchte
-            ulm_card_graph_entity: sensor.000a9a49a6f8af_humidity
-
-            ulm_card_graph_type: fill
-            ulm_card_graph_hours: 24
-            ulm_card_graph_group_by: interval
-            ulm_card_graph_line_width: 6
-
-    - type: 'custom:button-card'
-      template: card_title
-      label: "Lichter"
-
     - type: "horizontal-stack"
       cards:
         - type: 'custom:button-card'
@@ -133,23 +70,76 @@ cards:
 
     - type: 'custom:button-card'
       template: card_title
-      label: "Skripte"
+      label: "Medien"
 
-    - type: "horizontal-stack"
-      cards:
-      - type: "custom:button-card"
-        template: card_boost_script
-        variables:
-          ulm_card_script_title: Boost
-          ulm_card_script_icon: 'mdi:fire'
-        tap_action:
-          action: call-service
-          service: script.turn_on
-          service_data:
-            entity_id: script.werkstatt_boost
+    - type: "custom:mini-media-player"
+      entity: media_player.sonos_play_1_werkstatt
+      artwork: cover
+      group: false
+      name: Sonos Play:1
+      # volume_stateless: true
+      hide:
+        power: true
+      shortcuts:
+          columns: 3 # Max buttons per row
+          buttons:
+            # Lieblingssongs Playlist
+            - icon: mdi:spotify
+              type: playlist
+              id: spotify:user:1144139767:playlist:05ct524tpyl2vIMBzQzCxb
+            # Elektro Playlist
+            - icon: mdi:spotify
+              type: playlist
+              id: spotify:user:1144139767:playlist:5dV18GMH2nBimD8u0jU2Bh
+            # # Change the source to bathroom
+            # - icon: mdi:dog
+            #   type: source
+            #   id: Bathroom
+            # # Trigger script
+            # - icon: mdi:dog
+            #   type: script
+            #   id: script.script_name
+            # # Trigger custom service
+            # - name: Lieblingssongs
+            #   type: service
+            #   id: spotcast.start
+            #   data:
+            #     entity_id: media_player.googlehome1234
+            #     uri: spotify:playlist:37i9dQZF1DX9XiAcF7t1s5
+      speaker_group: 
+        platform: sonos
+        sync_volume: true
+        show_group_count: true
+        entities:
+          - entity_id: media_player.sonos_play_1_werkstatt
+            name: Sonos Play:1
+          # - entity_id: media_player.sonos_wohnzimmer_couch
+          #   name: Sonos Couch
 
-      - type: "custom:button-card"
-        color_type: blank-card
+    - type: 'custom:button-card'
+      template: card_title
+      label: "Klima"
+
+    - type: "custom:button-card"
+      template: custom_card_thermostat
+      entity: climate.000a9a49a6f8af
+      variables:
+        ulm_card_thermostat_name: "Thermostat"
+        ulm_card_thermostat_enable_collapse: true
+        ulm_card_thermostat_enable_controls: true
+        ulm_card_thermostat_enable_popup: true
+        ulm_card_thermostat_enable_hvac_modes: true
+      custom_fields: 
+        item3:
+          card:
+            custom_fields:
+              heat:
+                card:
+                  type: "custom:button-card"
+                  tap_action:
+                    action: call-service
+                    service: script.werkstatt_boost
+                    data: {}
 
     - type: 'custom:button-card'
       template: card_title
@@ -166,66 +156,3 @@ cards:
 
       - type: "custom:button-card"
         color_type: blank-card
-
-    - type: 'custom:button-card'
-      template: card_title
-      label: "Sensoren"
-
-    - type: "horizontal-stack"
-      cards:
-        - type: 'custom:button-card'
-          template: card_binary_sensor_alert
-          variables:
-            ulm_card_binary_sensor_alert: true
-            ulm_card_binary_sensor_alert_show_last_changed: true
-            ulm_card_binary_sensor_alert_name: Bewegung
-            ulm_card_binary_sensor_alert_color: red
-          entity: binary_sensor.presence_18
-
-        - type: "custom:button-card"
-          color_type: blank-card
-
-    - type: 'custom:button-card'
-      template: card_title
-      label: "Batterien"
-
-    - type: "horizontal-stack"
-      cards:
-        - type: 'custom:button-card'
-          template: card_battery
-          entity: sensor.bewegungsmelder_werkstatt_battery_level
-          variables:
-            ulm_card_battery_charger_type_entity_id: sensor.bewegungsmelder_werkstatt_battery_level
-            ulm_card_battery_battery_level_danger: 20
-            ulm_card_battery_battery_level_warning: 50
-            ulm_card_battery_name: Bewegung 
-
-        - type: 'custom:button-card'
-          template: card_battery
-          entity: sensor.heizthermostat_werkstatt_batterie_prozent
-          variables:
-            ulm_card_battery_charger_type_entity_id: sensor.heizthermostat_werkstatt_batterie_prozent
-            ulm_card_battery_battery_level_danger: 20
-            ulm_card_battery_battery_level_warning: 50
-            ulm_card_battery_name: Heizung
-
-    - type: "horizontal-stack"
-      cards:
-        - type: 'custom:button-card'
-          template: card_battery
-          entity: sensor.thermostat_werkstatt_batterie_prozent
-          variables:
-            ulm_card_battery_charger_type_entity_id: sensor.thermostat_werkstatt_batterie_prozent
-            ulm_card_battery_battery_level_danger: 20
-            ulm_card_battery_battery_level_warning: 50
-            ulm_card_battery_name: Thermostat
-
-
-        - type: 'custom:button-card'
-          template: card_battery
-          entity: sensor.tuersensor_werkstatt_batterie_prozent
-          variables:
-            ulm_card_battery_charger_type_entity_id: sensor.tuersensor_werkstatt_batterie_prozent
-            ulm_card_battery_battery_level_danger: 20
-            ulm_card_battery_battery_level_warning: 50
-            ulm_card_battery_name: Fenstersensor

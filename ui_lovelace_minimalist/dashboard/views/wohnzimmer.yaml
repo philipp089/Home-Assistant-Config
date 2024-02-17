@@ -199,6 +199,50 @@ cards:
     #                 target:
     #                   entity_id: media_player.sonos_arc_wohnzimmer
 
+    - type: "custom:mini-media-player"
+      entity: media_player.sonos_wohnzimmer_couch
+      artwork: cover
+      group: false
+      name: Sonos
+      # volume_stateless: true
+      hide:
+        power: true
+      shortcuts:
+          columns: 3 # Max buttons per row
+          buttons:
+            # Lieblingssongs Playlist
+            - icon: mdi:spotify
+              type: playlist
+              id: spotify:user:1144139767:playlist:05ct524tpyl2vIMBzQzCxb
+            # Elektro Playlist
+            - icon: mdi:spotify
+              type: playlist
+              id: spotify:user:1144139767:playlist:5dV18GMH2nBimD8u0jU2Bh
+            # # Change the source to bathroom
+            # - icon: mdi:dog
+            #   type: source
+            #   id: Bathroom
+            # # Trigger script
+            # - icon: mdi:dog
+            #   type: script
+            #   id: script.script_name
+            # # Trigger custom service
+            # - name: Lieblingssongs
+            #   type: service
+            #   id: spotcast.start
+            #   data:
+            #     entity_id: media_player.googlehome1234
+            #     uri: spotify:playlist:37i9dQZF1DX9XiAcF7t1s5
+      speaker_group: 
+        platform: sonos
+        sync_volume: true
+        show_group_count: true
+        entities:
+          - entity_id: media_player.sonos_arc_wohnzimmer
+            name: Sonos Arc
+          - entity_id: media_player.sonos_wohnzimmer_couch
+            name: Sonos Couch
+
     - type: "custom:button-card"
       template: custom_card_remote
       entity: media_player.samsung_q7_series_55
@@ -215,53 +259,6 @@ cards:
         ulm_card_media_player_remote_enable_popup: false
         ulm_card_media_player_remote_player_controls_entity: media_player.sonos_arc_wohnzimmer
         # ulm_card_media_player_remote_enable_volume_adjust: 0.05
-
-    - type: "horizontal-stack"
-      cards:
-        - type: "custom:mini-media-player"
-          entity: media_player.sonos_wohnzimmer_couch
-          artwork: cover
-          group: false
-          name: Sonos
-          # volume_stateless: true
-          hide:
-            power: true
-          shortcuts:
-              columns: 3 # Max buttons per row
-              buttons:
-                # Lieblingssongs Playlist
-                - icon: mdi:spotify
-                  type: playlist
-                  id: spotify:user:1144139767:playlist:05ct524tpyl2vIMBzQzCxb
-                # Elektro Playlist
-                - icon: mdi:spotify
-                  type: playlist
-                  id: spotify:user:1144139767:playlist:5dV18GMH2nBimD8u0jU2Bh
-                # # Change the source to bathroom
-                # - icon: mdi:dog
-                #   type: source
-                #   id: Bathroom
-                # # Trigger script
-                # - icon: mdi:dog
-                #   type: script
-                #   id: script.script_name
-                # # Trigger custom service
-                # - name: Lieblingssongs
-                #   type: service
-                #   id: spotcast.start
-                #   data:
-                #     entity_id: media_player.googlehome1234
-                #     uri: spotify:playlist:37i9dQZF1DX9XiAcF7t1s5
-          speaker_group: 
-            platform: sonos
-            sync_volume: true
-            show_group_count: true
-            entities:
-              - entity_id: media_player.sonos_arc_wohnzimmer
-                name: Sonos Arc
-              - entity_id: media_player.sonos_wohnzimmer_couch
-                name: Sonos Couch
-
 
     - type: 'custom:button-card'
       template: card_title

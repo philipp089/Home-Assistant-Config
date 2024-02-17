@@ -13,7 +13,7 @@ views:
   - !include views/werkstatt.yaml
   - !include views/flur.yaml
   - !include views/dachterrasse.yaml  
-  - !include views/remote.yaml
+  - !include views/sonos.yaml
   - !include views/kalender.yaml
   - !include views/raspberry.yaml
   - !include views/gesundheit.yaml
@@ -26,4 +26,4 @@ views:
   # - !include views/kameras.yaml
   - !include views/playstation.yaml
   # - !include views/temperatur.yaml
-  - !include views/sonos.yaml
+  - !include views/remote.yaml

@@ -13,10 +13,10 @@ cards:
         ulm_card_welcome_scenes_collapse: input_boolean.minimalist_dropdown
         ulm_weather: "weather.home"
         entity_1:
-          entity_id: "Remote"
-          nav_path: "Remote"
-          icon: "mdi:remote-tv"
-          name: "Remote"
+          entity_id: "Sonos"
+          nav_path: "Sonos"
+          icon: "mdi:music-box-outline"
+          name: "Sonos"
           color: "green"
           state: "on"
         entity_2:

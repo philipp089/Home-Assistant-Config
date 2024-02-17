@@ -47,7 +47,7 @@ minimalist-desktop-pki:
     paper-tab[aria-label='Dachterrasse'] {
       color: #E91E63;
     }
-    paper-tab[aria-label='Remote'] {
+    paper-tab[aria-label='Sonos'] {
       color: var(--google-green);
     }
     paper-tab[aria-label='Kalender'] {

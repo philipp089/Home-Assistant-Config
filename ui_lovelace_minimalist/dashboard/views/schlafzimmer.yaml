@@ -121,6 +121,50 @@ cards:
       template: card_title
       label: "Medien"
 
+    - type: "custom:mini-media-player"
+      entity: media_player.sonos_one_schlafzimmer
+      artwork: cover
+      group: false
+      name: Sonos
+      # volume_stateless: true
+      hide:
+        power: true
+      shortcuts:
+          columns: 3 # Max buttons per row
+          buttons:
+            # Lieblingssongs Playlist
+            - icon: mdi:spotify
+              type: playlist
+              id: spotify:user:1144139767:playlist:05ct524tpyl2vIMBzQzCxb
+            # Elektro Playlist
+            - icon: mdi:spotify
+              type: playlist
+              id: spotify:user:1144139767:playlist:5dV18GMH2nBimD8u0jU2Bh
+            # # Change the source to bathroom
+            # - icon: mdi:dog
+            #   type: source
+            #   id: Bathroom
+            # # Trigger script
+            # - icon: mdi:dog
+            #   type: script
+            #   id: script.script_name
+            # # Trigger custom service
+            # - name: Lieblingssongs
+            #   type: service
+            #   id: spotcast.start
+            #   data:
+            #     entity_id: media_player.googlehome1234
+            #     uri: spotify:playlist:37i9dQZF1DX9XiAcF7t1s5
+      speaker_group: 
+        platform: sonos
+        sync_volume: true
+        show_group_count: true
+        entities:
+          - entity_id: media_player.sonos_one_schlafzimmer
+            name: Sonos One
+          # - entity_id: media_player.sonos_wohnzimmer_couch
+          #   name: Sonos Couch
+
     - type: "custom:button-card"
       template: card_media_player_chromecast_with_controls
       variables:
@@ -135,51 +179,7 @@ cards:
         # ulm_card_media_player_collapsible: true
         # ulm_card_media_player_more_info: true
 
-    - type: "horizontal-stack"
-      cards:
-        - type: "custom:mini-media-player"
-          entity: media_player.sonos_one_schlafzimmer
-          artwork: cover
-          group: false
-          name: Sonos
-          # volume_stateless: true
-          hide:
-            power: true
-          shortcuts:
-              columns: 3 # Max buttons per row
-              buttons:
-                # Lieblingssongs Playlist
-                - icon: mdi:spotify
-                  type: playlist
-                  id: spotify:user:1144139767:playlist:05ct524tpyl2vIMBzQzCxb
-                # Elektro Playlist
-                - icon: mdi:spotify
-                  type: playlist
-                  id: spotify:user:1144139767:playlist:5dV18GMH2nBimD8u0jU2Bh
-                # # Change the source to bathroom
-                # - icon: mdi:dog
-                #   type: source
-                #   id: Bathroom
-                # # Trigger script
-                # - icon: mdi:dog
-                #   type: script
-                #   id: script.script_name
-                # # Trigger custom service
-                # - name: Lieblingssongs
-                #   type: service
-                #   id: spotcast.start
-                #   data:
-                #     entity_id: media_player.googlehome1234
-                #     uri: spotify:playlist:37i9dQZF1DX9XiAcF7t1s5
-          speaker_group: 
-            platform: sonos
-            sync_volume: true
-            show_group_count: true
-            entities:
-              - entity_id: media_player.sonos_one_schlafzimmer
-                name: Sonos One
-              # - entity_id: media_player.sonos_wohnzimmer_couch
-              #   name: Sonos Couch
+
 
     - type: 'custom:button-card'
       template: card_title
@@ -194,6 +194,17 @@ cards:
         ulm_card_thermostat_enable_controls: true
         ulm_card_thermostat_enable_popup: true
         ulm_card_thermostat_enable_hvac_modes: true
+      custom_fields: 
+        item3:
+          card:
+            custom_fields:
+              heat:
+                card:
+                  type: "custom:button-card"
+                  tap_action:
+                    action: call-service
+                    service: script.schlafzimmer_boost
+                    data: {}
 
     - type: 'custom:button-card'
       template: card_title
@@ -222,22 +233,6 @@ cards:
             service: script.turn_on
             service_data:
               entity_id: script.sony_bravia_power_off
-
-    - type: "horizontal-stack"
-      cards:
-        - type: "custom:button-card"
-          template: card_boost_script
-          variables:
-            ulm_card_script_title: Boost
-            ulm_card_script_icon: 'mdi:fire'
-          tap_action:
-            action: call-service
-            service: script.turn_on
-            service_data:
-              entity_id: script.schlafzimmer_boost
-
-        - type: "custom:button-card"
-          color_type: blank-card
 
     - type: 'custom:button-card'
       template: card_title
