@@ -151,19 +151,19 @@ The Home - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-
 
 In my smart home setup, the Room Tab is where I manage light scenes, scripts, plugs, and media players tailored to each room. I primarily use Philips Hue bulbs connected to a Raspbee II from Dresden Electronics, serving as my Zigbee Gateway. The only exception is an older IKEA Floalt Panel. Additionally, I've implemented voice control through Google Assistant (Assist will be integrated in the future), enabling me to effortlessly command and control all my light scenes, scripts, plugs and battery states via voice commands.
 
-![01_Room_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/a43628c8-bb45-42b3-bf07-3475aa7d3ae0)
+![01_Room_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/e7932423-6dc9-4779-851e-dd33082102fa)
 
-![01_Room_Tab_Mockup_002_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/a28ae925-94d4-45ca-a1a9-ab084d2fbbad)
+![01_Room_Tab_Mockup_002_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/38f65bbf-8aec-47da-a238-84c45d9be4b7)
 
-![01_Room_Tab_Mockup_003_Night_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/f28f0e40-a1ac-4a52-bc66-d76452210123)
+![01_Room_Tab_Mockup_003_Night_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/6765cc1f-c647-421b-87a3-a3cfeef01a22)
 
 #### The Room - Tabs Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-![01_Room_Tab_Mockup_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/83e961f2-3eb5-4f78-90f0-9bcdad860498)
+![01_Room_Tab_Mockup_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/b8ab561c-0009-48cd-85b3-6d01cd2e8b97)
 
-![01_Room_Tab_Mockup_002_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/6250bb3c-507e-4af5-a79b-e3bde6a05178)
+![01_Room_Tab_Mockup_002_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/8f814de3-ce6a-4d71-81cb-da1aad6b4b5d)
 
-![01_Room_Tab_Mockup_003_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/a4209935-2023-442e-a560-552a1a615083)
+![01_Room_Tab_Mockup_003_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/9fe63729-7897-4c2d-90c9-a710bf3ebf91)
 
 ---
 
