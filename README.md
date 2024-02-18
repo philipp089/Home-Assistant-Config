@@ -79,7 +79,7 @@ At the moment (as of Feb. 24) I control my Smart Home over 19 individual tabs. U
       Weather-Tab
     </a>
     <span> | </span>
-    <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#the-remote---tab-">
+    <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#the-remote---card-">
       Remote-Card
     </a>
     <span> | </span>
