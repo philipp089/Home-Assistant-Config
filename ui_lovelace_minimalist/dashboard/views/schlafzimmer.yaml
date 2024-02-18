@@ -165,25 +165,11 @@ cards:
           # - entity_id: media_player.sonos_wohnzimmer_couch
           #   name: Sonos Couch
 
-    # - type: "custom:button-card"
-    #   template: card_media_player_chromecast_with_controls
-    #   variables:
-    #     ulm_card_media_player_with_controls_name: "Chromecast"
-    #     ulm_card_media_player_with_controls_entity: media_player.chromecast_schlafzimmer
-    #     # ulm_card_media_player_name : Chromecast
-    #     # ulm_card_media_player_enable_art: true
-    #     # ulm_card_media_player_enable_controls: false
-    #     # ulm_card_media_player_enable_volume_buttons: false
-    #     # ulm_card_media_player_color: green
-    #     # ulm_card_media_player_power_button: true
-    #     # ulm_card_media_player_collapsible: true
-    #     # ulm_card_media_player_more_info: true
-
     - type: "custom:button-card"
       template: custom_card_remote_schlafzimmer
       entity: media_player.chromecast_schlafzimmer
       variables:
-        ulm_card_media_player_remote_schlafzimmer_name : Sony Bravia
+        ulm_card_media_player_remote_schlafzimmer_name : Chromecast
         ulm_card_media_player_remote_schlafzimmer_enable_art: false
         ulm_card_media_player_remote_schlafzimmer_enable_controls: true
         ulm_card_media_player_remote_schlafzimmer_enable_volume_buttons: true
@@ -202,7 +188,7 @@ cards:
 
     - type: "custom:button-card"
       template: custom_card_thermostat
-      entity: climate.000a1a49a12cad
+      entity: climate.000a9a49a6f8b1
       variables:
         ulm_card_thermostat_name: "Thermostat"
         ulm_card_thermostat_enable_collapse: true
@@ -221,33 +207,33 @@ cards:
                     service: script.schlafzimmer_boost
                     data: {}
 
-    - type: 'custom:button-card'
-      template: card_title
-      label: "Skripte"
+    # - type: 'custom:button-card'
+    #   template: card_title
+    #   label: "Skripte"
 
-    - type: "horizontal-stack"
-      cards:
-        - type: 'custom:button-card'
-          template: card_power_script
-          variables:
-            ulm_card_script_title: Fernseher an
-            ulm_card_script_icon: 'mdi:power'
-          tap_action:
-            action: call-service
-            service: script.turn_on
-            service_data:
-              entity_id: script.sony_bravia_power_on
+    # - type: "horizontal-stack"
+    #   cards:
+    #     - type: 'custom:button-card'
+    #       template: card_power_script
+    #       variables:
+    #         ulm_card_script_title: Fernseher an
+    #         ulm_card_script_icon: 'mdi:power'
+    #       tap_action:
+    #         action: call-service
+    #         service: script.turn_on
+    #         service_data:
+    #           entity_id: script.sony_bravia_power_on
 
-        - type: 'custom:button-card'
-          template: card_power_script
-          variables:
-            ulm_card_script_title: Fernseher aus
-            ulm_card_script_icon: 'mdi:power'
-          tap_action:
-            action: call-service
-            service: script.turn_on
-            service_data:
-              entity_id: script.sony_bravia_power_off
+    #     - type: 'custom:button-card'
+    #       template: card_power_script
+    #       variables:
+    #         ulm_card_script_title: Fernseher aus
+    #         ulm_card_script_icon: 'mdi:power'
+    #       tap_action:
+    #         action: call-service
+    #         service: script.turn_on
+    #         service_data:
+    #           entity_id: script.sony_bravia_power_off
 
     - type: 'custom:button-card'
       template: card_title

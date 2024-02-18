@@ -63,9 +63,6 @@ custom_card_remote_schlafzimmer:
             if (variables.ulm_card_media_player_remote_schlafzimmer_enable_remote){
               areas = areas + " 'item8'";
             }
-            if (variables.ulm_card_media_player_remote_schlafzimmer_enable_remote){
-              areas = areas + " 'item9'";
-            }
             return areas;
           ]]]
       - grid-template-columns: "1fr"
@@ -197,17 +194,6 @@ custom_card_remote_schlafzimmer:
               }
               return "none";
             ]]]
-      item9:
-        - display: |
-            [[[
-              if(variables.ulm_card_media_player_remote_schlafzimmer_enable_remote) {
-                if(variables.ulm_card_media_player_remote_schlafzimmer_collapsible){
-                return (entity.state === "off" || entity.state === "standby") ? "none" : "block";
-                }
-                return "block";
-              }
-              return "none";
-            ]]]
   custom_fields:
     power:
       card:
@@ -217,9 +203,10 @@ custom_card_remote_schlafzimmer:
         icon: "mdi:power"
         tap_action:
           action: call-service
-          service: script.turn_on
-          service_data:
-            entity_id: script.samsung_q7_series_power_toggle
+          service: media_player.toggle
+          data: {}
+          target:
+            entity_id: media_player.chromecast_schlafzimmer
         styles:
           card:
             - background-color: |
@@ -452,7 +439,7 @@ custom_card_remote_schlafzimmer:
                 action: call-service
                 service: script.turn_on
                 service_data:
-                  entity_id: script.samsung_q7_series_navigation_left
+                  entity_id: script.sony_bravia_wheel_left
               icon: "mdi:skip-previous"
               entity: "[[[ return entity.entity_id ]]]"
               styles:
@@ -513,7 +500,7 @@ custom_card_remote_schlafzimmer:
                 action: call-service
                 service: script.turn_on
                 service_data:
-                  entity_id: script.samsung_q7_series_navigation_return
+                  entity_id: script.sony_bravia_return
               icon: "mdi:play-pause"
               styles:
                 card:
@@ -554,6 +541,7 @@ custom_card_remote_schlafzimmer:
             card:
               type: "custom:button-card"
               template: "widget_icon"
+              entity: "[[[ return variables.ulm_card_media_player_remote_schlafzimmer_player_controls_entity ]]]"
               hold_action:
                 action: >
                   [[[
@@ -572,7 +560,7 @@ custom_card_remote_schlafzimmer:
                 action: call-service
                 service: script.turn_on
                 service_data:
-                  entity_id: script.samsung_q7_series_navigation_right
+                  entity_id: script.sony_bravia_wheel_right
               icon: "mdi:skip-next"
               styles:
                 card:
@@ -767,10 +755,10 @@ custom_card_remote_schlafzimmer:
                       template: "popup_media_player_infos"
                       entity: "[[[ return entity.entity_id; ]]]"
               tap_action:
-                action: "call-service"
+                action: call-service
                 service: script.turn_on
                 service_data:
-                  entity_id: script.samsung_q7_series_sound_mute
+                  entity_id: script.sony_bravia_volume_mute
               icon: "mdi:volume-mute"
               styles:
                 card:
@@ -827,11 +815,10 @@ custom_card_remote_schlafzimmer:
                       template: "popup_media_player_infos"
                       entity: "[[[ return entity.entity_id; ]]]"
               tap_action:
-                action: "call-service"
-                service: media_player.volume_down
-                data: {}
-                target:
-                  entity_id: media_player.sonos_arc_wohnzimmer   
+                action: call-service
+                service: script.turn_on
+                service_data:
+                  entity_id: script.sony_bravia_volume_down
               icon: "mdi:volume-minus"
               styles:
                 card:
@@ -888,11 +875,10 @@ custom_card_remote_schlafzimmer:
                       template: "popup_media_player_infos"
                       entity: "[[[ return entity.entity_id; ]]]"
               tap_action:
-                action: "call-service"
-                service: media_player.volume_up
-                data: {}
-                target:
-                  entity_id: media_player.sonos_arc_wohnzimmer
+                action: call-service
+                service: script.turn_on
+                service_data:
+                  entity_id: script.sony_bravia_volume_up
               icon: "mdi:volume-plus"
               styles:
                 card:
@@ -950,7 +936,7 @@ custom_card_remote_schlafzimmer:
                 action: call-service
                 service: script.turn_on
                 service_data:
-                  entity_id: script.samsung_q7_series_channel_increase
+                  entity_id: script.sony_bravia_program_up
               styles:
                 card:
                   - background-color: |
@@ -995,7 +981,7 @@ custom_card_remote_schlafzimmer:
                 action: call-service
                 service: script.turn_on
                 service_data:
-                  entity_id: script.samsung_q7_series_channel_list
+                  entity_id: script.sony_bravia_program
               styles:
                 card:
                   - background-color: |
@@ -1035,12 +1021,12 @@ custom_card_remote_schlafzimmer:
             card:
               type: "custom:button-card"
               template: "widget_icon"
-              icon: "mdi:video-input-hdmi"
+              icon: "mdi:power"
               tap_action:
                 action: call-service
                 service: script.turn_on
                 service_data:
-                  entity_id: script.samsung_q7_series_input_select
+                  entity_id: script.sony_bravia_power_on
               styles:
                 card:
                   - background-color: |
@@ -1074,9 +1060,8 @@ custom_card_remote_schlafzimmer:
                           var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
                           return 'rgba(var(--color-' + color + '),1)';
                         }
-                        return 'rgba(var(--color-theme),0.9)';
+                        return 'rgba(var(--color-red),0.9)';
                       ]]]
-
 
     item6:
       card:
@@ -1098,7 +1083,7 @@ custom_card_remote_schlafzimmer:
                 action: call-service
                 service: script.turn_on
                 service_data:
-                  entity_id: script.samsung_q7_series_channel_decrease
+                  entity_id: script.sony_bravia_program_down
               styles:
                 card:
                   - background-color: |
@@ -1143,7 +1128,7 @@ custom_card_remote_schlafzimmer:
                 action: call-service
                 service: script.turn_on
                 service_data:
-                  entity_id: script.samsung_q7_series_navigation_up
+                  entity_id: script.sony_bravia_wheel_up
               styles:
                 card:
                   - background-color: |
@@ -1183,12 +1168,12 @@ custom_card_remote_schlafzimmer:
             card:
               type: "custom:button-card"
               template: "widget_icon"
-              icon: "mdi:home-outline"
+              icon: "mdi:video-input-hdmi"
               tap_action:
                 action: call-service
                 service: script.turn_on
                 service_data:
-                  entity_id: script.samsung_q7_series_navigation_smart
+                  entity_id: script.sony_bravia_source
               styles:
                 card:
                   - background-color: |
@@ -1246,7 +1231,7 @@ custom_card_remote_schlafzimmer:
                 action: call-service
                 service: script.turn_on
                 service_data:
-                  entity_id: script.samsung_q7_series_navigation_left
+                  entity_id: script.sony_bravia_wheel_left
               styles:
                 card:
                   - background-color: |
@@ -1291,7 +1276,7 @@ custom_card_remote_schlafzimmer:
                 action: call-service
                 service: script.turn_on
                 service_data:
-                  entity_id: script.samsung_q7_series_navigation_return
+                  entity_id: script.sony_bravia_return
               styles:
                 card:
                   - background-color: |
@@ -1336,7 +1321,7 @@ custom_card_remote_schlafzimmer:
                 action: call-service
                 service: script.turn_on
                 service_data:
-                  entity_id: script.samsung_q7_series_navigation_right
+                  entity_id: script.sony_bravia_wheel_right
               styles:
                 card:
                   - background-color: |
@@ -1393,7 +1378,7 @@ custom_card_remote_schlafzimmer:
                 action: call-service
                 service: script.turn_on
                 service_data:
-                  entity_id: script.samsung_q7_series_navigation_menu
+                  entity_id: script.sony_bravia_menu
               styles:
                 card:
                   - background-color: |
@@ -1438,7 +1423,7 @@ custom_card_remote_schlafzimmer:
                 action: call-service
                 service: script.turn_on
                 service_data:
-                  entity_id: script.samsung_q7_series_navigation_down
+                  entity_id: script.sony_bravia_wheel_down
               styles:
                 card:
                   - background-color: |
@@ -1478,12 +1463,12 @@ custom_card_remote_schlafzimmer:
             card:
               type: "custom:button-card"
               template: "widget_icon"
-              icon: mdi:arrow-u-left-top
+              icon: "mdi:image-size-select-large"
               tap_action:
                 action: call-service
                 service: script.turn_on
                 service_data:
-                  entity_id: script.samsung_q7_series_navigation_back
+                  entity_id: script.sony_bravia_bildformat
               styles:
                 card:
                   - background-color: |
@@ -1520,149 +1505,3 @@ custom_card_remote_schlafzimmer:
                         return 'rgba(var(--color-theme),0.9)';
                       ]]]
 
-    item9:
-      card:
-        type: "custom:button-card"
-        template: "list_3_items"
-        styles:
-          card:
-            - padding: "0px"
-            - background: "none"
-            - border-radius: "0"
-            - box-shadow: "none"
-        custom_fields:
-          item1:
-            card:
-              type: "custom:button-card"
-              template: "widget_icon"
-              icon: "mdi:netflix"
-              tap_action:
-                action: call-service
-                service: script.turn_on
-                service_data:
-                  entity_id: script.samsung_q7_series_netflix
-              styles:
-                card:
-                  - background-color: |
-                      [[[
-                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
-                          return 'rgba(0, 0, 0, 0.2)'
-                        }
-                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_schlafzimmer_force_background_color){
-                          if (variables.ulm_active_state){
-                            return 'rgb(250,250,250)'
-                          }
-                        }
-                        return 'rgba(var(--color-theme),0.05)'
-                      ]]]
-                img_cell:
-                  - background-color: >
-                      [[[
-                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_schlafzimmer_enable_art) {
-                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
-                          return 'rgba(var(--color-' + color + '),0.2)';
-                        }
-                        return 'rgba(var(--color-theme),0.05)';
-                      ]]]
-                icon:
-                  - color: |
-                      [[[
-                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
-                          return 'white'
-                        }
-                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state) {
-                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
-                          return 'rgba(var(--color-' + color + '),1)';
-                        }
-                        return 'rgba(var(--color-red),0.9)';
-                      ]]]
-          item2:
-            card:
-              type: "custom:button-card"
-              template: "widget_icon"
-              icon: "mdi:plex"
-              tap_action:
-                action: call-service
-                service: script.turn_on
-                service_data:
-                  entity_id: script.samsung_q7_series_navigation_return
-              styles:
-                card:
-                  - background-color: |
-                      [[[
-                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
-                          return 'rgba(0, 0, 0, 0.2)'
-                        }
-                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_schlafzimmer_force_background_color){
-                          if (variables.ulm_active_state){
-                            return 'rgb(250,250,250)'
-                          }
-                        }
-                        return 'rgba(var(--color-theme),0.05)'
-                      ]]]
-                img_cell:
-                  - background-color: >
-                      [[[
-                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_schlafzimmer_enable_art) {
-                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
-                          return 'rgba(var(--color-' + color + '),0.2)';
-                        }
-                        return 'rgba(var(--color-theme),0.05)';
-                      ]]]
-                icon:
-                  - color: |
-                      [[[
-                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
-                          return 'white'
-                        }
-                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state) {
-                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
-                          return 'rgba(var(--color-' + color + '),1)';
-                        }
-                        return 'rgba(var(--color-theme),0.9)';
-                      ]]]
-          item3:
-            card:
-              type: "custom:button-card"
-              template: "widget_icon"
-              icon: "mdi:youtube"
-              tap_action:
-                action: call-service
-                service: script.turn_on
-                service_data:
-                  entity_id: script.samsung_q7_series_navigation_right
-              styles:
-                card:
-                  - background-color: |
-                      [[[
-                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
-                          return 'rgba(0, 0, 0, 0.2)'
-                        }
-                        if(!hass.themes.darkMode && variables.ulm_card_media_player_remote_schlafzimmer_force_background_color){
-                          if (variables.ulm_active_state){
-                            return 'rgb(250,250,250)'
-                          }
-                        }
-                        return 'rgba(var(--color-theme),0.05)'
-                      ]]]
-                img_cell:
-                  - background-color: >
-                      [[[
-                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state && !variables.ulm_card_media_player_remote_schlafzimmer_enable_art) {
-                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
-                          return 'rgba(var(--color-' + color + '),0.2)';
-                        }
-                        return 'rgba(var(--color-theme),0.05)';
-                      ]]]
-                icon:
-                  - color: |
-                      [[[
-                        if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
-                          return 'white'
-                        }
-                        if (variables.ulm_card_media_player_remote_schlafzimmer_force_background_color && variables.ulm_active_state) {
-                          var color = variables.ulm_card_media_player_remote_schlafzimmer_color;
-                          return 'rgba(var(--color-' + color + '),1)';
-                        }
-                        return 'rgba(var(--color-red),0.9)';
-                      ]]]

@@ -257,7 +257,7 @@ cards:
         ulm_card_media_player_remote_collapsible: true
         ulm_card_media_player_remote_more_info: true
         ulm_card_media_player_remote_enable_popup: false
-        ulm_card_media_player_remote_player_controls_entity: media_player.sonos_arc_wohnzimmer
+        ulm_card_media_player_remote_player_controls_entity: media_player.samsung_q7_series_55
         # ulm_card_media_player_remote_enable_volume_adjust: 0.05
 
     - type: 'custom:button-card'

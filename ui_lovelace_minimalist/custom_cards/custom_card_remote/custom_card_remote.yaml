@@ -434,6 +434,7 @@ custom_card_remote:
             card:
               type: "custom:button-card"
               template: "widget_icon"
+              entity: "[[[ return variables.ulm_card_media_player_remote_player_controls_entity ]]]"
               hold_action:
                 action: >
                   [[[
@@ -554,6 +555,7 @@ custom_card_remote:
             card:
               type: "custom:button-card"
               template: "widget_icon"
+              entity: "[[[ return variables.ulm_card_media_player_remote_player_controls_entity ]]]"
               hold_action:
                 action: >
                   [[[
@@ -751,7 +753,7 @@ custom_card_remote:
             card:
               type: "custom:button-card"
               template: "widget_icon"
-              entity: "[[[ return variables.ulm_card_media_player_remote_player_controls_entity ]]]"
+              entity: "media_player.sonos_arc_wohnzimmer"
               hold_action:
                 action: >
                   [[[
@@ -811,7 +813,7 @@ custom_card_remote:
             card:
               type: "custom:button-card"
               template: "widget_icon"
-              entity: "[[[ return variables.ulm_card_media_player_remote_player_controls_entity ]]]"
+              entity: "media_player.sonos_arc_wohnzimmer"
               hold_action:
                 action: >
                   [[[
@@ -872,7 +874,7 @@ custom_card_remote:
             card:
               type: "custom:button-card"
               template: "widget_icon"
-              entity: "[[[ return variables.ulm_card_media_player_remote_player_controls_entity ]]]"
+              entity: "media_player.sonos_arc_wohnzimmer"
               hold_action:
                 action: >
                   [[[
