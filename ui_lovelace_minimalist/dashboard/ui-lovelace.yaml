@@ -26,4 +26,3 @@ views:
   # - !include views/kameras.yaml
   - !include views/playstation.yaml
   # - !include views/temperatur.yaml
-  - !include views/remote.yaml
