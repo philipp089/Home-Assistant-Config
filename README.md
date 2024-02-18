@@ -80,7 +80,7 @@ At the moment (as of Feb. 24) I control my Smart Home over 19 individual tabs. U
     </a>
     <span> | </span>
     <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#the-remote---tab-">
-      Remote-Tab
+      Remote-Card
     </a>
     <span> | </span>
     <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#the-calendar---tab-">
@@ -171,23 +171,23 @@ In my smart home setup, the Room Tab is where I manage light scenes, scripts, pl
 
 This tab mainly serves as the dedicated control hub for my roof terrace and it features the weather forecast from met.no, delivered by the Norwegian Meteorological Institute. Additionally, three sensors provide real-time data on temperature, humidity, and light intensity. The tab also includes control options for the outdoor lights through the wall switch card.
 
-![02_Climate_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/53b4a523-b902-44f3-a680-e309d82edfd1)
+![02_Climate_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/f2ff8927-f601-4417-a673-0992537bd725)
 
 #### The Weather - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-![02_Climate_Tab_Mockup_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/695717ea-45e8-460f-8176-cccce86319e8)
+![02_Climate_Tab_Mockup_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/74b9ff72-024a-4122-a253-cf79bd3dda7f)
 
 ---
 
-### The Remote - Tab <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+### The Remote - Card <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-Welcome to my smart home's ultimate TV control hub! With this Home Assistant view, I effortlessly manage two televisions using custom script buttons. From powering on/off to adjusting volume and switching channels, it's all at my fingertips. No more juggling multiple remotes or dealing with complex setups — I've personalized and streamlined my entertainment experience. Elevating my smart home with intuitive TV control has never been easier (especially if i can´t find the normal remote again)!
+Welcome to my smart home's ultimate TV control hub! With this custom made Home Assistant card, I effortlessly manage my television using custom script buttons. From powering on/off to adjusting volume and switching channels, it's all at my fingertips. No more juggling multiple remotes or dealing with complex setups — I've personalized and streamlined my entertainment experience. Elevating my smart home with intuitive TV control has never been easier (especially if i can´t find the normal remote again) and if the TV is turned off, no unused screenspace is allocated as the remote collapses two a single row card.
 
-![03_Remote_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/e338fe1d-1432-4963-aff4-13dced0f27d2)
+![03_Remote_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/b924285d-0462-47f7-839e-d87da77d04f4)
 
-#### The Remote - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
+#### The Remote - Card Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-![03_Remote_Tab_Mockup_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/f19883d8-5d30-4218-a226-d0bf013ec959)
+![03_Remote_Tab_Mockup_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/e63391ce-70a9-4a1d-b994-5230c52cacc2)
 
 ---
 
