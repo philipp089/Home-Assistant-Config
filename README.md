@@ -209,11 +209,11 @@ Welcome to my Home Raspberry Pie Dashboard, where I have a unified view of all v
 
 The dashboard also integrates GitHub states, allowing me to track repository updates and stars. I need more of those by the way.
 
-![06_Raspberry_Tab_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/ef7588c4-1541-4b1b-af6f-798232a1a8e2)
+![06_Raspberry_Tab_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/2de418b5-87d9-4a0e-b234-9f2fe7831900)
 
 #### The Raspberry - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-![06_Raspberry_Tab_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/284a7094-608b-4272-97a3-c7be86c80ecb)
+![06_Raspberry_Tab_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/7853132e-6456-4954-82c4-d8638997d79d)
 
 ---
 
