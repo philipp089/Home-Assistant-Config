@@ -248,11 +248,11 @@ Have a look at my alarm dashboard. It relies mainly on motion sensors strategica
 
 I can navigate effortlessly through rooms, each equipped with its own camera feed, motion sensors, and intelligent object detection for enhanced security, convenience, and peace of mind.
 
-![08_Alarm_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/8cea9a77-e5c0-46d2-b3c6-76738d42d95c)
+![08_Alarm_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/ee12db6c-461a-4ca4-9a7e-4f7cfde13d83)
 
 #### The Alarm - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-![08_Alarm_Tab_Mockup_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/e21c5ac7-a77e-4461-a719-4417259c3e19)
+![08_Alarm_Tab_Mockup_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/a3f58cc8-81ab-4cfc-ace7-a0fdf924a822)
 
 ---
 
