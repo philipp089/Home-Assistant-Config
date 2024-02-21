@@ -389,7 +389,7 @@ custom_card_remote_schlafzimmer:
                         }
                         return 'rgba(var(--color-theme), .5)'
                       ]]]
-                name:
+                name: 
                   - color: |
                       [[[
                         if(variables.ulm_card_media_player_remote_schlafzimmer_enable_art && states[entity.entity_id].attributes.entity_picture != null){
@@ -401,6 +401,9 @@ custom_card_remote_schlafzimmer:
                         return'rgba(var(--color-theme), 1)'
                       ]]]
                   - text-shadow: "0 0 black"
+                  - max-width: 75%;
+                  - text-overflow: ellipsis;
+                  - overflow: hidden; 
                 card:
                   - padding: "0px"
                   - background: "none"
