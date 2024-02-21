@@ -234,11 +234,11 @@ You knew this would be the last view to be finished! Priorities are a little of 
 
 Welcome to my customized chore management hub in Home Assistant! With this dedicated view, I effortlessly organize my to-do list, prioritizing tasks by due date for a smooth workflow. Each chore features a handy "Done" button, making it easy to mark completed tasks and stay on track. No more chaotic chore management – this Home Assistant view simplifies my daily tasks, making productivity a breeze. My smart home has become an organized haven, giving me the power to conquer chores effortlessly and maintain order. Welcome to a hassle-free approach to managing my tasks! I should really clean my windows again...
 
-![05_Chores_Tab_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/fc45648e-5967-4666-8eca-12e65c471cc7)
+![05_Chores_Tab_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/b2cde858-5752-4394-8376-2ce911dbe236)
 
 #### The Chores - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-![05_Chores_Tab_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/eb310dc1-5892-44e9-a63f-34b372aafcc9)
+![05_Chores_Tab_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/6b14c712-f598-44fe-ba86-faa628967326)
 
 ---
 
