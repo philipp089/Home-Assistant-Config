@@ -272,11 +272,11 @@ Welcome to my Home Assistant Automation Dashboard. I've shaped every detail to c
 
 Stay in control with my Battery State Dashboard, where real-time insights into power levels empower your day. I effortlessly monitor the status of my devices and gadgets, ensuring I never get caught off guard. From my smartphones over thermostats, this dashboard keeps me informed on the state of every single battery device in my home so I can focus on what matters without interruption. Notifications are sent over my telegram bot to my smartphone. 
 
-![10_Battery_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/dfad7c55-cc0d-4a40-b6b8-02865df0d286)
+![10_Battery_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/8a1b5a8e-7f75-49c4-86e7-a5a6ab4c1396)
 
 #### The Batteries - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-![10_Battery_Tab_Mockup_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/271688c3-044f-41a4-8290-c52eb783c662)
+![10_Battery_Tab_Mockup_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/df264ac2-18a7-49e3-bbae-1c90cb2e5fc7)
 
 ---
 
