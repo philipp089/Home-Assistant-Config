@@ -284,11 +284,11 @@ Stay in control with my Battery State Dashboard, where real-time insights into p
 
 Meet my Home Assistant Energy Dashboard — a powerful tool for visualisation of my energy usage. With a customizable energy period selector, I can easily analyze and compare consumption over time, making informed decisions for efficiency. The total household consumption display gives me a quick overview of my environmental impact, while real-time sensors provide live data for each energy source. From lighting to appliances, I can monitor and manage every aspect of my energy use, promoting a more sustainable and cost-effective lifestyle. It's not just a dashboard; it's my key to a greener and smarter home.
 
-![11_Energy_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/8be775ec-c83a-4ab3-a154-198904758e03)
+![11_Energy_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/5d9061a8-6137-4f66-9142-e3c4ee5dfb6b)
 
 #### The Energy - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-![11_Energy_Tab_Mockup_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/12954fc8-942e-4111-9c8b-a6da4111a397)
+![11_Energy_Tab_Mockup_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/a39b114e-b199-4961-9b10-27ad397541a7)
 
 ---
 
@@ -296,11 +296,11 @@ Meet my Home Assistant Energy Dashboard — a powerful tool for visualisation of
 
 Welcome to my crafted command center – a dashboard where I've consolidated key data for a seamless tech experience. Monitor temperatures, disk space, and more from my NAS and desktop computer at a glance. This personalized hub offers real-time insights, ensuring optimal performance and efficiency. With every detail meticulously curated, this dashboard reflects my commitment to a tech-savvy, organized, and effortlessly managed digital domain. Stay in control, stay efficient.
 
-![12_Hardware_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/2782c541-6d5c-4f1c-bf57-76f97b3e7b03)
+![12_Hardware_Tab_Mockup_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/545f86b8-2998-4652-ab18-f68724fc0e76)
 
 #### The Hardware - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-![12_Hardware_Tab_Mockup_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/6cde6380-3377-4439-95fb-54ba5d53fa70)
+![12_Hardware_Tab_Mockup_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/e0ec2ff1-fd16-4d27-a24e-94eecb44cf3c)
 
 ---
 
@@ -308,11 +308,11 @@ Welcome to my crafted command center – a dashboard where I've consolidated key
 
 Welcome to my PlayStation 4 Control Hub – the ultimate command center for my gaming experience. With a few taps, I can power up my PS4, launch games, and have a look at the media playback. Whether solo or with friends, my PlayStation 4 Control Hub turns gaming into a personalized, seamless adventure – putting control at my fingertips. 
 
-![13_Playstation_Tab_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/6156db51-c669-4809-a44d-6af05bf84474)
+![13_Playstation_Tab_001_Dark_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/81a47460-02da-4894-b37b-4bc049b9339c)
 
 #### The Playstation - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-![13_Playstation_Tab_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/9a445a7a-ce39-4d47-9971-9627fe20aa70)
+![13_Playstation_Tab_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/fe970e01-61a3-475f-9c53-dbb8ba13d4e2)
 
 ---
 
