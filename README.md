@@ -288,7 +288,7 @@ Meet my Home Assistant Energy Dashboard — a powerful tool for visualisation of
 
 #### The Energy - Tab Light Mode <a href="https://github.com/philipp089/Home-Assistant-Config?tab=readme-ov-file#--tab-overview"><img align="right" border="0" src="https://user-images.githubusercontent.com/66092908/140279500-3e863252-433b-4e6f-8dc4-31b0e351ad69.png" width="22" ></a>
 
-![11_Energy_Tab_Mockup_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/a39b114e-b199-4961-9b10-27ad397541a7)
+![11_Energy_Tab_Mockup_001_Light_Mode](https://github.com/philipp089/Home-Assistant-Config/assets/66092908/e9be6929-2837-46a7-8c4b-cbf1296e6091)
 
 ---
 
