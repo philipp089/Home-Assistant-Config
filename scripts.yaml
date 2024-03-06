@@ -551,9 +551,11 @@ schlafzimmer_nacht:
     data:
       transition: 1
       kelvin: 2500
-      brightness_pct: 5
+      brightness_pct: 2
     target:
-      area_id: 4b464753ae28423c9ad179a3027094eb
+      entity_id:
+      - light.schlafzimmer_nachttisch_philipp
+      - light.schlafzimmer_nachttisch_rechts
   mode: single
   icon: mdi:lightbulb-outline
 schlafzimmer_hell:
@@ -645,6 +647,7 @@ schlafzimmer_aus:
       - light.schlafzimmer_nachttisch_philipp
       - light.schlafzimmer_philips_hue_go
       - light.schlafzimmer_standleuchte
+      - light.schlafzimmer_nachttisch_rechts
   mode: single
   icon: mdi:lightbulb-outline
 schlafzimmer_sexy_light:

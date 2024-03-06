@@ -239,10 +239,8 @@
       minutes: 0
       seconds: 0
       milliseconds: 200
-  - service: scene.turn_on
+  - service: script.schlafzimmer_hell
     data: {}
-    target:
-      entity_id: scene.licht_schlafzimmer_hell
   mode: single
 - id: '1631378662274'
   alias: LICHT - Wandschalter Werkstatt aus
@@ -635,10 +633,8 @@
     to: 'off'
   condition: []
   action:
-  - service: scene.turn_on
+  - service: script.schlafzimmer_aus
     data: {}
-    target:
-      entity_id: scene.licht_schlafzimmer_aus
   mode: single
 - id: '1693847374649'
   alias: Frigate Notifications (0.12.0.1)

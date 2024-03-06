@@ -36,6 +36,9 @@ cards:
                 - sensor.wandschalter_werkstatt_taglich
                 - sensor.wandschalter_wohnzimmer_taglich
                 - sensor.wandschalter_dachterrasse_taeglich
+                - sensor.steckdose_computer_gesamtverbrauch
+                - sensor.steckdose_technik_links_gesamtverbrauch
+                - sensor.steckdose_technik_rechts_gesamtverbrauch
               # production: sensor.grid_returned_energy_daily
             color: 
               consumption: "#FF9101"
@@ -49,6 +52,20 @@ cards:
 
       - type: horizontal-stack
         cards:
+
+        - type: custom:mini-graph-card
+          entities:
+            - entity: sensor.computer_heutiger_verbrauch
+          name: Computer
+          show:
+            graph: bar   
+          hours_to_show: 24
+          points_per_hour: 0.5
+          aggregate_func: max
+          bar_spacing: 8
+          line_color: "var(--google-blue)"
+
+
         - type: custom:mini-graph-card
           entities:
             - entity: sensor.wandschalter_wohnzimmer_taglich
@@ -61,6 +78,8 @@ cards:
           bar_spacing: 8
           line_color: "var(--google-blue)"
 
+      - type: horizontal-stack
+        cards:
         - type: custom:mini-graph-card
           entities:
             - entity: sensor.steckdose_wohnzimmer_medienwand_today_s_consumption
@@ -72,6 +91,9 @@ cards:
           aggregate_func: max
           bar_spacing: 8
           line_color: "var(--google-blue)"
+
+        - type: "custom:button-card"
+          color_type: blank-card
 
       - type: 'custom:button-card'
         template: card_title
@@ -220,6 +242,32 @@ cards:
           entities:
             - entity: sensor.wandschalter_werkstatt_taglich
           name: Deckenleuchte
+          show:
+            graph: bar   
+          hours_to_show: 24
+          points_per_hour: 0.5
+          aggregate_func: max
+          bar_spacing: 8
+          line_color: "var(--google-blue)"
+
+        - type: custom:mini-graph-card
+          entities:
+            - entity: sensor.technik_links_taglich
+          name: Technik links
+          show:
+            graph: bar   
+          hours_to_show: 24
+          points_per_hour: 0.5
+          aggregate_func: max
+          bar_spacing: 8
+          line_color: "var(--google-blue)"
+
+      - type: horizontal-stack
+        cards:
+        - type: custom:mini-graph-card
+          entities:
+            - entity: sensor.technik_rechts_taglich
+          name: Technik rechts
           show:
             graph: bar   
           hours_to_show: 24
