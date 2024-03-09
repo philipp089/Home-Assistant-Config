@@ -134,9 +134,13 @@ wohnzimmer_nacht:
 wohnzimmer_aus:
   sequence:
   - service: light.turn_off
-    target:
-      area_id: 9b7ff4c63c5040569f459d83159fe925
     data: {}
+    target:
+      entity_id:
+      - light.wohnzimmer_lightstrip
+      - light.wohnzimmer_kleine_lampe
+      - light.wohnzimmer_lampe_rechts
+      - light.lichtgruppe_wohnzimmer_deckenleuchte
   - service: switch.turn_off
     metadata: {}
     data: {}
@@ -433,7 +437,7 @@ flur_aus:
     metadata: {}
     data: {}
     target:
-      area_id: 04366801e60c4c599cc9d39e07493fe0
+      entity_id: light.lichtgruppe_flur_deckenleuchte
   mode: single
   icon: mdi:lightbulb-outline
 werkstatt_hell:
@@ -520,8 +524,9 @@ werkstatt_aus:
   alias: Werkstatt aus
   sequence:
   - service: light.turn_off
+    data: {}
     target:
-      area_id: c6acd19307984c2eb4d2ceb8376084fb
+      entity_id: light.lichtgruppe_werkstatt_deckenleuchte
   mode: single
   icon: mdi:lightbulb-outline
 schlafzimmer_nacht:
@@ -544,8 +549,8 @@ schlafzimmer_nacht:
   - delay:
       hours: 0
       minutes: 0
-      seconds: 0
-      milliseconds: 200
+      seconds: 1
+      milliseconds: 0
   - service: light.turn_on
     metadata: {}
     data:
@@ -555,7 +560,7 @@ schlafzimmer_nacht:
     target:
       entity_id:
       - light.schlafzimmer_nachttisch_philipp
-      - light.schlafzimmer_nachttisch_rechts
+      - light.schlafzimmer_philips_hue_go
   mode: single
   icon: mdi:lightbulb-outline
 schlafzimmer_hell:
