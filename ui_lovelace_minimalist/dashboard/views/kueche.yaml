@@ -13,6 +13,22 @@ cards:
     - type: 'custom:button-card'
       template: card_title
       name: "Küche"
+      label: "Lichter"
+
+    - type: "horizontal-stack"
+      cards:
+        - type: 'custom:button-card'
+          template: card_generic_swap
+          entity: switch.hmip_bsm_00085a49a49be7
+          variables:
+            ulm_card_generic_swap_name:  Wandschalter
+            ulm_card_generic_swap_color: green
+
+        - type: "custom:button-card"
+          color_type: blank-card
+
+    - type: 'custom:button-card'
+      template: card_title
       label: "Medien"
 
     - type: "custom:mini-media-player"
@@ -66,22 +82,6 @@ cards:
 
     - type: 'custom:button-card'
       template: card_title
-      label: "Lichter"
-
-    - type: "horizontal-stack"
-      cards:
-        - type: 'custom:button-card'
-          template: card_generic_swap
-          entity: switch.hmip_bsm_00085a49a49be7
-          variables:
-            ulm_card_generic_swap_name:  Wandschalter
-            ulm_card_generic_swap_color: green
-
-        - type: "custom:button-card"
-          color_type: blank-card
-
-    - type: 'custom:button-card'
-      template: card_title
       label: "Steckdosen"
 
     - type: "horizontal-stack"
@@ -112,5 +112,13 @@ cards:
             ulm_card_power_outlet_color: blue
             ulm_card_power_outlet_consumption_sensor: sensor.steckdose_spuelmaschine_current_consumption
 
-        - type: "custom:button-card"
-          color_type: blank-card
+        - type: 'custom:button-card'
+          template: card_power_outlet
+          entity: switch.steckdose_technik_kueche
+          variables:
+            ulm_card_power_outlet_name:  Technik
+            ulm_card_power_outlet_color: blue
+            ulm_card_power_outlet_consumption_sensor: sensor.steckdose_technik_kueche_aktueller_verbrauch
+
+        # - type: "custom:button-card"
+        #   color_type: blank-card

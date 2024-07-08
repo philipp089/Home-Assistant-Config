@@ -205,12 +205,14 @@ badezimmer_hell:
       seconds: 0
       milliseconds: 200
   - service: light.turn_on
-    target:
-      area_id: f6aab624c505454fa71527ad60cf71ed
     data:
-      transition: 2
       kelvin: 4300
       brightness_pct: 100
+    target:
+      entity_id:
+      - light.badezimmer_deckenleuchte
+      - light.badezimmer_spiegel_01
+      - light.badezimmer_spiegel_02
   mode: single
   icon: mdi:lightbulb-outline
 badezimmer_medium:
@@ -268,12 +270,14 @@ badezimmer_nacht:
       seconds: 0
       milliseconds: 200
   - service: light.turn_on
-    target:
-      area_id: f6aab624c505454fa71527ad60cf71ed
     data:
-      transition: 2
       kelvin: 2500
       brightness_pct: 25
+    target:
+      entity_id:
+      - light.badezimmer_spiegel_01
+      - light.badezimmer_spiegel_02
+      - light.badezimmer_deckenleuchte
   mode: single
   icon: mdi:lightbulb-outline
 badezimmer_aus:

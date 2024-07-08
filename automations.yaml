@@ -494,8 +494,8 @@
   trigger:
   - platform: state
     entity_id:
-    - binary_sensor.presence_9
     - binary_sensor.presence_12
+    - binary_sensor.presence_9
     to: 'on'
   condition:
   - condition: time
